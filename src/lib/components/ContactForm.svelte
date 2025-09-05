@@ -1,9 +1,9 @@
-<script lang="ts">
+<script>
 	import { createEventDispatcher } from 'svelte';
 	
-	export let title: string = 'Get In Touch';
-	export let subtitle: string = 'Ready to start your real estate journey? Contact me today!';
-	export let showPhone: boolean = true;
+	export let title = 'Get In Touch';
+	export let subtitle = 'Ready to start your real estate journey? Contact me today!';
+	export let showPhone = true;
 	
 	const dispatch = createEventDispatcher();
 	
@@ -18,9 +18,9 @@
 	};
 	
 	let isSubmitting = false;
-	let submitStatus: 'idle' | 'success' | 'error' = 'idle';
+	let submitStatus = 'idle';
 	
-	async function handleSubmit(event: Event) {
+	async function handleSubmit(event) {
 		event.preventDefault();
 		isSubmitting = true;
 		submitStatus = 'idle';

@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 import ContactForm from '$lib/components/ContactForm.svelte';
 </script>
 
