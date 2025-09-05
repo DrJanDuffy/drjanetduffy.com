@@ -10,6 +10,7 @@
 		{ name: 'Properties', href: '/properties', icon: '🏘️', description: 'West Summerlin Homes', hasDropdown: true },
 		{ name: 'Home Value', href: '/home-value', icon: '💰', description: 'Get Your Home Value' },
 		{ name: 'Rentals', href: '/rentals', icon: '🔑', description: 'Luxury Rentals' },
+		{ name: 'Quotes', href: '/quotes', icon: '💬', description: 'Motivational Quotes' },
 		{ name: 'About', href: '/about', icon: '👩‍💼', description: 'Meet Dr. Janet Duffy' },
 		{ name: 'Contact', href: '/contact', icon: '📞', description: 'Schedule Consultation' }
 	];

@@ -502,6 +502,60 @@ onMount(() => {
 	</div>
 </section>
 
+<!-- Motivational Quotes Section -->
+<section class="py-16 bg-gradient-to-b from-vegas-gold-50 to-white">
+	<div class="container mx-auto px-4">
+		<div class="max-w-6xl mx-auto">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl font-bold mb-6 text-vegas-deep-900">
+					Words of Wisdom
+				</h2>
+				<p class="text-lg text-vegas-deep-700">
+					Inspirational quotes from industry leaders to motivate and guide your real estate journey.
+				</p>
+			</div>
+			
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-vegas-gold-600">
+					<blockquote class="text-lg text-vegas-deep-900 font-medium mb-4">
+						"To be successful in real estate, you must always and consistently put your clients' best interests first."
+					</blockquote>
+					<div class="text-sm text-vegas-gold-600 font-semibold">Anthony Hitt</div>
+					<div class="text-xs text-gray-500">Real Estate Executive</div>
+				</div>
+				
+				<div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-vegas-gold-600">
+					<blockquote class="text-lg text-vegas-deep-900 font-medium mb-4">
+						"Don't wait to buy real estate. Buy real estate and wait."
+					</blockquote>
+					<div class="text-sm text-vegas-gold-600 font-semibold">Will Rogers</div>
+					<div class="text-xs text-gray-500">Actor & Social Commentator</div>
+				</div>
+				
+				<div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-vegas-gold-600">
+					<blockquote class="text-lg text-vegas-deep-900 font-medium mb-4">
+						"Owning a home is a keystone of wealth, both financial affluence and emotional security."
+					</blockquote>
+					<div class="text-sm text-vegas-gold-600 font-semibold">Suze Orman</div>
+					<div class="text-xs text-gray-500">Financial Advisor</div>
+				</div>
+			</div>
+			
+			<div class="text-center mt-8">
+				<a 
+					href="/quotes" 
+					class="inline-flex items-center text-vegas-gold-600 hover:text-vegas-gold-700 font-semibold transition-colors"
+				>
+					View All Motivational Quotes
+					<svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
 <!-- CTA Section -->
 <section class="py-20 bg-gradient-to-r from-vegas-deep-900 to-vegas-gold-600 text-white">
 	<div class="container mx-auto px-4 text-center">
