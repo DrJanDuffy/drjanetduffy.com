@@ -1,26 +1,11 @@
-<script>
-import { browser } from '$app/env';
-import { page } from '$app/stores';
-import Menu from '$lib/components/Menu.svelte';
-import Footer from '$lib/components/Footer.svelte';
-import { webVitals } from '$lib/vitals';
-import '../app.css';
+<script lang="ts">
+	import favicon from '$lib/assets/favicon.svg';
 
-const analyticsId = import.meta.env.VERCEL_ANALYTICS_ID;
-
-$: if (browser && analyticsId) {
-  webVitals({
-    path: $page.url.pathname,
-    params: $page.params,
-    analyticsId,
-  });
-}
+	let { children } = $props();
 </script>
 
-<Menu />
+<svelte:head>
+	<link rel="icon" href={favicon} />
+</svelte:head>
 
-<main>
-	<slot />
-</main>
-
-<Footer />
+{@render children?.()}

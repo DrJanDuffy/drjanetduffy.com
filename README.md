@@ -1,70 +1,38 @@
-# Dr. Jan Duffy REALTOR - Las Vegas Real Estate Website
+# sv
 
-A modern, professional real estate website built with SvelteKit, featuring RealScout integration for property listings, search functionality, and lead management.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## Features
+## Creating a project
 
-- **RealScout Integration**: Multiple widget types for property search, listings, and home valuation
-- **Responsive Design**: Built with Tailwind CSS for mobile-first, responsive design
-- **SEO Optimized**: Meta tags, structured data, and search engine optimization
-- **Multiple Property Views**: Grid view, list view, and embedded presentations
-- **Contact Forms**: Lead capture and contact management
-- **Professional Branding**: Custom color scheme and branding for Dr. Jan Duffy
+If you're seeing this, you've probably already done this step. Congrats!
 
-## Tech Stack
+```sh
+# create a new project in the current directory
+npx sv create
 
-- **Framework**: SvelteKit
-- **Styling**: Tailwind CSS
-- **Property Listings**: RealScout Web Components
-- **Icons**: Lucide Svelte
-- **Deployment**: Vercel
-
-## RealScout Widgets Implemented
-
-- `realscout-office-listings` - Property listings with filtering
-- `realscout-advanced-search` - Advanced property search
-- `realscout-simple-search` - Quick property search
-- `realscout-home-value` - Home valuation tool
-- `realscout-your-listings` - Complete property portfolio
-- Embedded search and listing components
-
-## Pages
-
-- **Home** (`/`) - Hero section with search and featured properties
-- **Properties** (`/properties`) - All active property listings
-- **Home Value** (`/home-value`) - Home valuation calculator
-- **Rentals** (`/rentals`) - Rental property listings
-- **Past Sales** (`/past-sales`) - Complete property history
-- **About** (`/about`) - Dr. Jan Duffy's professional profile
-- **Contact** (`/contact`) - Contact form and information
-
-## Development
-
-Install dependencies:
-```bash
-pnpm install
+# create a new project in my-app
+npx sv create my-app
 ```
 
-Start development server:
-```bash
-pnpm run dev
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```sh
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
 ```
 
-Build for production:
-```bash
-pnpm run build
+## Building
+
+To create a production version of your app:
+
+```sh
+npm run build
 ```
 
-## Deployment
+You can preview the production build with `npm run preview`.
 
-This project is configured for Vercel deployment. The build process is handled automatically by Vercel when code is pushed to the main branch.
-
-## RealScout Configuration
-
-The website uses RealScout with agent ID `QWdlbnQtMjI1MDUw` for Dr. Jan Duffy. All widgets are configured with custom styling to match the brand colors (#c41e3a).
-
-## Contact
-
-- **Phone**: (702) 555-1234
-- **Email**: jan@drjanduffy.com
-- **Website**: https://drjanduffy.com
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
