@@ -1,13 +1,15 @@
 <script>
-let mobileMenuOpen = false;
-
-function toggleMobileMenu() {
-  mobileMenuOpen = !mobileMenuOpen;
-}
-
-function closeMobileMenu() {
-  mobileMenuOpen = false;
-}
+	import { page } from '$app/stores';
+	
+	let mobileMenuOpen = false;
+	
+	function toggleMobileMenu() {
+		mobileMenuOpen = !mobileMenuOpen;
+	}
+	
+	function closeMobileMenu() {
+		mobileMenuOpen = false;
+	}
 </script>
 
 <nav class="bg-white shadow-lg sticky top-0 z-50">
