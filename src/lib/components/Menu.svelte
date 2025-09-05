@@ -49,6 +49,13 @@
 		{ name: 'Seven Hills', href: '/properties?neighborhood=seven-hills', icon: '🌸', zip: 'Investment' }
 	];
 	
+	const quickLinks = [
+		{ name: 'Home Value', href: '/home-value', icon: '💰' },
+		{ name: 'Market Report', href: '/about#market-insights', icon: '📊' },
+		{ name: 'Testimonials', href: '/about#testimonials', icon: '⭐' },
+		{ name: 'Contact', href: '/contact', icon: '📞' }
+	];
+	
 	function toggleMobileMenu() {
 		mobileMenuOpen = !mobileMenuOpen;
 	}
