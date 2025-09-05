@@ -1,47 +1,47 @@
 <script>
-	// This could be expanded to load dynamic content from a CMS
-	const achievements = [
-		{
-			title: "150+ Properties Sold",
-			description: "Successfully closed transactions across Las Vegas",
-			icon: "🏠"
-		},
-		{
-			title: "$50M+ Sales Volume",
-			description: "Total value of properties sold",
-			icon: "💰"
-		},
-		{
-			title: "15 Years Experience",
-			description: "Dedicated real estate expertise",
-			icon: "⏰"
-		},
-		{
-			title: "98% Client Satisfaction",
-			description: "Based on client feedback and reviews",
-			icon: "⭐"
-		}
-	];
-	
-	const services = [
-		"Residential Sales & Purchases",
-		"Luxury Home Specialization",
-		"First-Time Buyer Guidance",
-		"Investment Property Consulting",
-		"Market Analysis & Pricing",
-		"Negotiation & Transaction Management",
-		"Rental Property Management",
-		"Relocation Services"
-	];
-	
-	const certifications = [
-		"Licensed REALTOR in Nevada",
-		"Certified Residential Specialist (CRS)",
-		"Accredited Buyer's Representative (ABR)",
-		"Graduate, REALTOR Institute (GRI)",
-		"Luxury Home Marketing Specialist",
-		"Certified Negotiation Expert (CNE)"
-	];
+// This could be expanded to load dynamic content from a CMS
+const achievements = [
+  {
+    title: '150+ Properties Sold',
+    description: 'Successfully closed transactions across Las Vegas',
+    icon: '🏠',
+  },
+  {
+    title: '$50M+ Sales Volume',
+    description: 'Total value of properties sold',
+    icon: '💰',
+  },
+  {
+    title: '15 Years Experience',
+    description: 'Dedicated real estate expertise',
+    icon: '⏰',
+  },
+  {
+    title: '98% Client Satisfaction',
+    description: 'Based on client feedback and reviews',
+    icon: '⭐',
+  },
+];
+
+const services = [
+  'Residential Sales & Purchases',
+  'Luxury Home Specialization',
+  'First-Time Buyer Guidance',
+  'Investment Property Consulting',
+  'Market Analysis & Pricing',
+  'Negotiation & Transaction Management',
+  'Rental Property Management',
+  'Relocation Services',
+];
+
+const certifications = [
+  'Licensed REALTOR in Nevada',
+  'Certified Residential Specialist (CRS)',
+  "Accredited Buyer's Representative (ABR)",
+  'Graduate, REALTOR Institute (GRI)',
+  'Luxury Home Marketing Specialist',
+  'Certified Negotiation Expert (CNE)',
+];
 </script>
 
 <svelte:head>

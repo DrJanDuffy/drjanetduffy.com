@@ -1,12 +1,12 @@
 <script>
-	import { onMount } from 'svelte';
-	import { browser } from '$app/env';
-	
-	let mounted = false;
-	
-	onMount(() => {
-		mounted = true;
-	});
+import { onMount } from 'svelte';
+import { browser } from '$app/env';
+
+let mounted = false;
+
+onMount(() => {
+  mounted = true;
+});
 </script>
 
 <svelte:head>

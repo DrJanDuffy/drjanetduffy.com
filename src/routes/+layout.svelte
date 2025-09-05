@@ -1,19 +1,19 @@
 <script>
-	import Header from '$lib/components/Header.svelte';
-	import { webVitals } from '$lib/vitals';
-	import { browser } from '$app/env';
-	import { page } from '$app/stores';
-	import '../app.css';
+import { browser } from '$app/env';
+import { page } from '$app/stores';
+import Header from '$lib/components/Header.svelte';
+import { webVitals } from '$lib/vitals';
+import '../app.css';
 
-	let analyticsId = import.meta.env.VERCEL_ANALYTICS_ID;
+const analyticsId = import.meta.env.VERCEL_ANALYTICS_ID;
 
-	$: if (browser && analyticsId) {
-		webVitals({
-			path: $page.url.pathname,
-			params: $page.params,
-			analyticsId
-		})
-	}
+$: if (browser && analyticsId) {
+  webVitals({
+    path: $page.url.pathname,
+    params: $page.params,
+    analyticsId,
+  });
+}
 </script>
 
 <Header />
@@ -27,8 +27,8 @@
 		<div class="grid md:grid-cols-4 gap-8">
 			<div class="md:col-span-2">
 				<div class="flex items-center space-x-2 mb-4">
-					<div class="w-10 h-10 bg-primary-600 rounded-full flex items-center justify-center">
-						<span class="text-white font-bold text-lg">JD</span>
+					<div class="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center">
+						<span class="text-white font-bold text-sm">JD</span>
 					</div>
 					<div>
 						<h3 class="text-xl font-bold">Dr. Jan Duffy</h3>

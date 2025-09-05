@@ -1,47 +1,51 @@
 <script>
-	import { onMount } from 'svelte';
-	import { browser } from '$app/env';
-	import { page } from '$app/stores';
-	
-	let realScoutReady = false;
-	let mobileMenuOpen = false;
-	
-	onMount(() => {
-		if (browser) {
-			// Wait for RealScout to load - check for any RealScout components
-			if (window.customElements && 
-				(customElements.get('realscout-office-listings') || 
-				 customElements.get('realscout-advanced-search') || 
-				 customElements.get('realscout-home-value') ||
-				 customElements.get('realscout-simple-search') ||
-				 customElements.get('realscout-your-listings'))) {
-				realScoutReady = true;
-			} else {
-				// Wait for the components to be defined
-				const checkInterval = setInterval(() => {
-					if (window.customElements && 
-						(customElements.get('realscout-office-listings') || 
-						 customElements.get('realscout-advanced-search') || 
-						 customElements.get('realscout-home-value') ||
-						 customElements.get('realscout-simple-search') ||
-						 customElements.get('realscout-your-listings'))) {
-						clearInterval(checkInterval);
-						realScoutReady = true;
-					}
-				}, 100);
-				
-				// Timeout after 5 seconds
-				setTimeout(() => {
-					clearInterval(checkInterval);
-					realScoutReady = true; // Show fallback
-				}, 5000);
-			}
-		}
-	});
-	
-	function toggleMobileMenu() {
-		mobileMenuOpen = !mobileMenuOpen;
-	}
+import { onMount } from 'svelte';
+import { browser } from '$app/env';
+import { page } from '$app/stores';
+
+let realScoutReady = false;
+let mobileMenuOpen = false;
+
+onMount(() => {
+  if (browser) {
+    // Wait for RealScout to load - check for any RealScout components
+    if (
+      window.customElements &&
+      (customElements.get('realscout-office-listings') ||
+        customElements.get('realscout-advanced-search') ||
+        customElements.get('realscout-home-value') ||
+        customElements.get('realscout-simple-search') ||
+        customElements.get('realscout-your-listings'))
+    ) {
+      realScoutReady = true;
+    } else {
+      // Wait for the components to be defined
+      const checkInterval = setInterval(() => {
+        if (
+          window.customElements &&
+          (customElements.get('realscout-office-listings') ||
+            customElements.get('realscout-advanced-search') ||
+            customElements.get('realscout-home-value') ||
+            customElements.get('realscout-simple-search') ||
+            customElements.get('realscout-your-listings'))
+        ) {
+          clearInterval(checkInterval);
+          realScoutReady = true;
+        }
+      }, 100);
+
+      // Timeout after 5 seconds
+      setTimeout(() => {
+        clearInterval(checkInterval);
+        realScoutReady = true; // Show fallback
+      }, 5000);
+    }
+  }
+});
+
+function toggleMobileMenu() {
+  mobileMenuOpen = !mobileMenuOpen;
+}
 </script>
 
 <header class="bg-white shadow-lg sticky top-0 z-50">

@@ -1,19 +1,19 @@
 <script>
-	let formData = {
-		name: '',
-		email: '',
-		phone: '',
-		message: '',
-		propertyInterest: ''
-	};
-	
-	let submitted = false;
-	
-	function handleSubmit() {
-		// In a real implementation, this would send data to FollowUp Boss
-		console.log('Form submitted:', formData);
-		submitted = true;
-	}
+const formData = {
+  name: '',
+  email: '',
+  phone: '',
+  message: '',
+  propertyInterest: '',
+};
+
+let submitted = false;
+
+function handleSubmit() {
+  // In a real implementation, this would send data to FollowUp Boss
+  console.log('Form submitted:', formData);
+  submitted = true;
+}
 </script>
 
 <svelte:head>

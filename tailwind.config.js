@@ -27,16 +27,16 @@ export default {
           700: '#334155',
           800: '#1e293b',
           900: '#0f172a',
-        }
+        },
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         serif: ['Georgia', 'serif'],
       },
       spacing: {
-        '18': '4.5rem',
-        '88': '22rem',
-      }
+        18: '4.5rem',
+        88: '22rem',
+      },
     },
   },
   plugins: [
@@ -44,4 +44,4 @@ export default {
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),
   ],
-}
+};
