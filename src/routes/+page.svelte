@@ -39,38 +39,104 @@ onMount(() => {
 </script>
 
 <svelte:head>
-	<title>Dr. Jan Duffy REALTOR - Las Vegas Real Estate Expert</title>
-	<meta name="description" content="Find your dream home in Las Vegas with Dr. Jan Duffy, your trusted REALTOR. Expert guidance, local market knowledge, and personalized service for buyers and sellers." />
-	<meta name="keywords" content="Las Vegas real estate, REALTOR, homes for sale, property search, real estate agent" />
+	<title>Dr. Janet Duffy, REALTOR® | Berkshire Hathaway Nevada Properties - Luxury Las Vegas Real Estate</title>
+	<meta name="description" content="Dr. Janet Duffy, REALTOR® specializes in luxury Las Vegas real estate, California relocations, and corporate moves. West Summerlin expert serving 89138, 89144, 89135. Direct: 702-222-1964 | drduffy@bhhsnv.com" />
+	<meta name="keywords" content="Dr. Janet Duffy REALTOR, Berkshire Hathaway Nevada Properties, luxury Las Vegas real estate, West Summerlin, California relocation, corporate relocation, executive homes, 89138, 89144, 89135" />
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://drjanduffy.com/" />
-	<meta property="og:title" content="Dr. Jan Duffy REALTOR - Las Vegas Real Estate Expert" />
-	<meta property="og:description" content="Find your dream home in Las Vegas with Dr. Jan Duffy, your trusted REALTOR." />
+	<meta property="og:url" content="https://drjanetduffy.com/" />
+	<meta property="og:title" content="Dr. Janet Duffy, REALTOR® | Berkshire Hathaway Nevada Properties" />
+	<meta property="og:description" content="Luxury Las Vegas real estate specialist for executives, California relocations, and corporate moves. West Summerlin expert serving 89138, 89144, 89135." />
+	<meta property="og:image" content="https://drjanetduffy.com/og-image.jpg" />
 	
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://drjanduffy.com/" />
-	<meta property="twitter:title" content="Dr. Jan Duffy REALTOR - Las Vegas Real Estate Expert" />
-	<meta property="twitter:description" content="Find your dream home in Las Vegas with Dr. Jan Duffy, your trusted REALTOR." />
+	<meta property="twitter:url" content="https://drjanetduffy.com/" />
+	<meta property="twitter:title" content="Dr. Janet Duffy, REALTOR® | Berkshire Hathaway Nevada Properties" />
+	<meta property="twitter:description" content="Luxury Las Vegas real estate specialist for executives, California relocations, and corporate moves." />
+	<meta property="twitter:image" content="https://drjanetduffy.com/og-image.jpg" />
+	
+	<!-- Schema.org structured data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "RealEstateAgent",
+		"name": "Dr. Janet Duffy",
+		"jobTitle": "REALTOR®",
+		"description": "Luxury Las Vegas Real Estate Specialist with Berkshire Hathaway Nevada Properties",
+		"url": "https://drjanetduffy.com",
+		"telephone": "702-222-1964",
+		"email": "drduffy@bhhsnv.com",
+		"worksFor": {
+			"@type": "RealEstateAgent",
+			"name": "Berkshire Hathaway Nevada Properties"
+		},
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Las Vegas",
+			"addressRegion": "NV",
+			"addressCountry": "US"
+		},
+		"areaServed": [
+			"West Summerlin", "Summerlin", "89138", "89144", "89135", 
+			"Henderson", "Green Valley", "Anthem", "Las Vegas"
+		],
+		"serviceType": ["Luxury Real Estate Sales", "Corporate Relocation", "California Relocation", "Executive Home Sales"],
+		"image": "https://drjanetduffy.com/dr-janet-duffy-headshot.jpg"
+	}
+	</script>
 </svelte:head>
 
 <!-- Hero Section -->
-<section class="hero-section bg-gradient-to-r from-primary-600 to-primary-700 text-white py-20">
-	<div class="container mx-auto px-4 text-center">
-		<h1 class="text-5xl md:text-6xl font-bold mb-6">
-			Find Your Dream Home in Las Vegas
-		</h1>
-		<p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-			Expert real estate guidance with Dr. Jan Duffy, your trusted Las Vegas REALTOR
-		</p>
-		<div class="flex flex-col sm:flex-row gap-4 justify-center">
-			<a href="/properties" class="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-				View All Properties
+<section class="hero-section bg-gradient-to-br from-vegas-deep-900 via-vegas-deep-800 to-vegas-gold-600 text-white py-32 relative overflow-hidden">
+	<!-- Luxury background pattern -->
+	<div class="absolute inset-0 opacity-5">
+		<div class="absolute top-20 left-20 w-32 h-32 border border-white rounded-full"></div>
+		<div class="absolute top-40 right-32 w-24 h-24 border border-white rounded-full"></div>
+		<div class="absolute bottom-32 left-1/3 w-16 h-16 border border-white rounded-full"></div>
+		<div class="absolute bottom-20 right-1/4 w-12 h-12 border border-white rounded-full"></div>
+		<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 border border-white rounded-full"></div>
+	</div>
+	
+	<div class="container mx-auto px-4 text-center relative z-10">
+		<div class="mb-8">
+			<!-- Berkshire Hathaway branding -->
+			<div class="mb-4">
+				<span class="inline-block bg-vegas-gold-600 text-vegas-deep-900 px-4 py-2 rounded-full text-sm font-semibold uppercase tracking-wide">
+					Berkshire Hathaway Nevada Properties
+				</span>
+			</div>
+			
+			<h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in">
+				Dr. Janet Duffy
+			</h1>
+			<div class="text-3xl md:text-4xl lg:text-5xl font-light mb-4 animate-slide-up">
+				REALTOR<sup>®</sup>
+			</div>
+			<p class="text-xl md:text-2xl lg:text-3xl mb-8 max-w-5xl mx-auto animate-slide-up font-light">
+				Luxury Las Vegas Real Estate Specialist
+			</p>
+			<p class="text-lg md:text-xl mb-8 max-w-4xl mx-auto animate-slide-up text-vegas-gold-200">
+				Executive Relocations • California Migration • West Summerlin Expert
+			</p>
+		</div>
+		
+		<!-- Direct contact info -->
+		<div class="mb-12">
+			<div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto">
+				<div class="text-2xl md:text-3xl font-bold mb-2">Direct: 702-222-1964</div>
+				<div class="text-lg md:text-xl text-vegas-gold-200">drduffy@bhhsnv.com</div>
+				<div class="text-sm text-vegas-gold-300 mt-2">Serving 89138 • 89144 • 89135</div>
+			</div>
+		</div>
+		
+		<div class="flex flex-col sm:flex-row gap-6 justify-center">
+			<a href="/contact" class="bg-vegas-gold-600 text-vegas-deep-900 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-vegas-gold-500 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:-translate-y-2">
+				Book Your Consultation Today
 			</a>
-			<a href="/contact" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors">
-				Get in Touch
+			<a href="/properties" class="border-2 border-white text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-white hover:text-vegas-deep-900 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:-translate-y-2">
+				Discover Your Next Summerlin Address
 			</a>
 		</div>
 	</div>
@@ -164,52 +230,68 @@ onMount(() => {
 </section>
 
 <!-- About Section -->
-<section class="py-16 bg-gray-50">
+<section class="py-20 bg-gradient-to-b from-white to-vegas-gold-50">
 	<div class="container mx-auto px-4">
 		<div class="max-w-6xl mx-auto">
-			<div class="text-center mb-12">
-				<h2 class="text-3xl font-bold mb-6 text-gray-800">
-					Why Choose Dr. Jan Duffy?
+			<div class="text-center mb-16">
+				<h2 class="text-4xl font-bold mb-6 text-vegas-deep-900">
+					Why Choose Dr. Janet Duffy, REALTOR<sup>®</sup>?
 				</h2>
-				<p class="text-lg text-gray-600 max-w-3xl mx-auto">
-					With over 15 years of experience in Las Vegas real estate, Dr. Jan Duffy brings unparalleled expertise, 
-					local market knowledge, and a commitment to exceptional service to every transaction.
+				<p class="text-xl text-vegas-deep-700 max-w-4xl mx-auto">
+					With Berkshire Hathaway Nevada Properties, Dr. Janet Duffy delivers luxury real estate expertise 
+					for executives, California relocations, and corporate moves in West Summerlin's most prestigious communities.
 				</p>
 			</div>
 			
 			<div class="grid md:grid-cols-3 gap-8 mb-12">
-				<div class="text-center bg-white p-6 rounded-lg shadow-md">
-					<h3 class="text-xl font-semibold mb-3 text-primary-600">Local Expertise</h3>
-					<p class="text-gray-600">Deep knowledge of Las Vegas neighborhoods, market trends, and local regulations. From Summerlin to Henderson, I know every corner of the valley.</p>
+				<div class="text-center bg-white p-8 rounded-2xl shadow-xl border border-vegas-gold-200">
+					<div class="w-16 h-16 bg-vegas-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
+						<svg class="w-8 h-8 text-vegas-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+						</svg>
+					</div>
+					<h3 class="text-2xl font-bold mb-4 text-vegas-deep-900">West Summerlin Expert</h3>
+					<p class="text-vegas-deep-700">Specialized knowledge of 89138, 89144, and 89135 zip codes. Deep understanding of luxury market trends, timing advantages, and failed competitor listings for strategic positioning.</p>
 				</div>
-				<div class="text-center bg-white p-6 rounded-lg shadow-md">
-					<h3 class="text-xl font-semibold mb-3 text-primary-600">Proven Results</h3>
-					<p class="text-gray-600">Over 500 successful transactions and countless satisfied clients. I consistently exceed expectations and deliver results that matter.</p>
+				<div class="text-center bg-white p-8 rounded-2xl shadow-xl border border-vegas-gold-200">
+					<div class="w-16 h-16 bg-vegas-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
+						<svg class="w-8 h-8 text-vegas-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+						</svg>
+					</div>
+					<h3 class="text-2xl font-bold mb-4 text-vegas-deep-900">Executive Relocations</h3>
+					<p class="text-vegas-deep-700">Dedicated expertise in corporate relocations and California migration. Proven track record with C-suite executives, investment sales, and divorce relocation scenarios.</p>
 				</div>
-				<div class="text-center bg-white p-6 rounded-lg shadow-md">
-					<h3 class="text-xl font-semibold mb-3 text-primary-600">Personal Service</h3>
-					<p class="text-gray-600">Dedicated attention to your unique real estate needs and goals. Every client receives personalized service tailored to their specific situation.</p>
+				<div class="text-center bg-white p-8 rounded-2xl shadow-xl border border-vegas-gold-200">
+					<div class="w-16 h-16 bg-vegas-gold-100 rounded-full flex items-center justify-center mx-auto mb-4">
+						<svg class="w-8 h-8 text-vegas-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+						</svg>
+					</div>
+					<h3 class="text-2xl font-bold mb-4 text-vegas-deep-900">Timing Advantage</h3>
+					<p class="text-vegas-deep-700">Strategic market insights and urgent messaging about rate changes, hot listings, and market opportunities. Turn market volatility into your competitive advantage.</p>
 				</div>
 			</div>
 			
 			<!-- Stats Section -->
-			<div class="bg-primary-600 text-white rounded-lg p-8">
+			<div class="bg-gradient-to-r from-vegas-deep-900 to-vegas-gold-600 text-white rounded-2xl p-12 shadow-2xl">
 				<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
 					<div>
-						<div class="text-3xl font-bold mb-2">500+</div>
-						<div class="text-primary-100">Homes Sold</div>
+						<div class="text-4xl font-bold mb-2 text-vegas-gold-300">$200M+</div>
+						<div class="text-vegas-gold-100 font-semibold">Luxury Sales Volume</div>
 					</div>
 					<div>
-						<div class="text-3xl font-bold mb-2">15+</div>
-						<div class="text-primary-100">Years Experience</div>
+						<div class="text-4xl font-bold mb-2 text-vegas-gold-300">15+</div>
+						<div class="text-vegas-gold-100 font-semibold">Years Experience</div>
 					</div>
 					<div>
-						<div class="text-3xl font-bold mb-2">98%</div>
-						<div class="text-primary-100">Client Satisfaction</div>
+						<div class="text-4xl font-bold mb-2 text-vegas-gold-300">98%</div>
+						<div class="text-vegas-gold-100 font-semibold">Client Satisfaction</div>
 					</div>
 					<div>
-						<div class="text-3xl font-bold mb-2">$50M+</div>
-						<div class="text-primary-100">Total Sales Volume</div>
+						<div class="text-4xl font-bold mb-2 text-vegas-gold-300">300+</div>
+						<div class="text-vegas-gold-100 font-semibold">Executive Relocations</div>
 					</div>
 				</div>
 			</div>
@@ -218,50 +300,65 @@ onMount(() => {
 </section>
 
 <!-- Services Section -->
-<section class="py-16">
+<section class="py-20 bg-vegas-deep-50">
 	<div class="container mx-auto px-4">
 		<div class="max-w-6xl mx-auto">
-			<div class="text-center mb-12">
-				<h2 class="text-3xl font-bold mb-6 text-gray-800">
-					Comprehensive Real Estate Services
+			<div class="text-center mb-16">
+				<h2 class="text-4xl font-bold mb-6 text-vegas-deep-900">
+					Luxury Real Estate Services
 				</h2>
-				<p class="text-lg text-gray-600 max-w-3xl mx-auto">
-					Whether you're buying your first home, selling your current property, or looking for investment opportunities, 
-					I provide expert guidance every step of the way.
+				<p class="text-xl text-vegas-deep-700 max-w-4xl mx-auto">
+					Specialized expertise for executives, California relocations, and corporate moves in West Summerlin's 
+					most prestigious communities. Turn market volatility into your competitive advantage.
 				</p>
 			</div>
 			
 			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-				<div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-primary-600">
-					<h3 class="text-xl font-semibold mb-3 text-gray-800">Home Buying</h3>
-					<p class="text-gray-600 mb-4">Expert guidance through the entire home buying process, from initial search to closing day.</p>
-					<ul class="text-sm text-gray-500 space-y-1">
-						<li>• Market analysis and pricing</li>
-						<li>• Property search and tours</li>
-						<li>• Negotiation and offers</li>
-						<li>• Inspection coordination</li>
+				<div class="bg-white p-8 rounded-2xl shadow-xl border-l-4 border-vegas-gold-600 hover:shadow-2xl transition-all duration-300">
+					<div class="w-12 h-12 bg-vegas-gold-100 rounded-lg flex items-center justify-center mb-4">
+						<svg class="w-6 h-6 text-vegas-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+						</svg>
+					</div>
+					<h3 class="text-2xl font-bold mb-4 text-vegas-deep-900">Executive Home Buying</h3>
+					<p class="text-vegas-deep-700 mb-4">Luxury home acquisition with strategic market timing and failed competitor listing advantages.</p>
+					<ul class="text-sm text-vegas-deep-600 space-y-2">
+						<li>• West Summerlin luxury market expertise</li>
+						<li>• California relocation coordination</li>
+						<li>• Corporate relocation packages</li>
+						<li>• Investment property analysis</li>
 					</ul>
 				</div>
 				
-				<div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-primary-600">
-					<h3 class="text-xl font-semibold mb-3 text-gray-800">Home Selling</h3>
-					<p class="text-gray-600 mb-4">Maximize your home's value with professional marketing and strategic pricing.</p>
-					<ul class="text-sm text-gray-500 space-y-1">
-						<li>• Home valuation and pricing</li>
-						<li>• Professional photography</li>
-						<li>• Marketing and advertising</li>
-						<li>• Negotiation and closing</li>
+				<div class="bg-white p-8 rounded-2xl shadow-xl border-l-4 border-vegas-gold-600 hover:shadow-2xl transition-all duration-300">
+					<div class="w-12 h-12 bg-vegas-gold-100 rounded-lg flex items-center justify-center mb-4">
+						<svg class="w-6 h-6 text-vegas-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+						</svg>
+					</div>
+					<h3 class="text-2xl font-bold mb-4 text-vegas-deep-900">Luxury Home Selling</h3>
+					<p class="text-vegas-deep-700 mb-4">Maximize value with strategic pricing, urgent market messaging, and premium marketing.</p>
+					<ul class="text-sm text-vegas-deep-600 space-y-2">
+						<li>• Strategic pricing and market timing</li>
+						<li>• Luxury photography and staging</li>
+						<li>• Executive marketing campaigns</li>
+						<li>• Divorce relocation expertise</li>
 					</ul>
 				</div>
 				
-				<div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-primary-600">
-					<h3 class="text-xl font-semibold mb-3 text-gray-800">Investment Properties</h3>
-					<p class="text-gray-600 mb-4">Strategic investment advice to help you build wealth through real estate.</p>
-					<ul class="text-sm text-gray-500 space-y-1">
-						<li>• Market analysis</li>
-						<li>• ROI calculations</li>
-						<li>• Property management</li>
-						<li>• Portfolio building</li>
+				<div class="bg-white p-8 rounded-2xl shadow-xl border-l-4 border-vegas-gold-600 hover:shadow-2xl transition-all duration-300">
+					<div class="w-12 h-12 bg-vegas-gold-100 rounded-lg flex items-center justify-center mb-4">
+						<svg class="w-6 h-6 text-vegas-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+						</svg>
+					</div>
+					<h3 class="text-2xl font-bold mb-4 text-vegas-deep-900">Investment Sales</h3>
+					<p class="text-vegas-deep-700 mb-4">Strategic investment opportunities with market timing advantages and rate change insights.</p>
+					<ul class="text-sm text-vegas-deep-600 space-y-2">
+						<li>• Market volatility advantage</li>
+						<li>• ROI optimization strategies</li>
+						<li>• Portfolio diversification</li>
+						<li>• Hot listing opportunities</li>
 					</ul>
 				</div>
 			</div>
@@ -269,71 +366,84 @@ onMount(() => {
 	</div>
 </section>
 
-<!-- Las Vegas Neighborhoods Section -->
-<section class="py-16 bg-gray-50">
+<!-- West Summerlin Luxury Communities Section -->
+<section class="py-20 bg-gradient-to-b from-vegas-gold-50 to-white">
 	<div class="container mx-auto px-4">
 		<div class="max-w-6xl mx-auto">
-			<div class="text-center mb-12">
-				<h2 class="text-3xl font-bold mb-6 text-gray-800">
-					Popular Las Vegas Neighborhoods
+			<div class="text-center mb-16">
+				<h2 class="text-4xl font-bold mb-6 text-vegas-deep-900">
+					West Summerlin Luxury Communities
 				</h2>
-				<p class="text-lg text-gray-600 max-w-3xl mx-auto">
-					Explore the diverse neighborhoods of Las Vegas, each offering unique lifestyle opportunities and investment potential.
+				<p class="text-xl text-vegas-deep-700 max-w-4xl mx-auto">
+					Exclusive access to Las Vegas's most prestigious neighborhoods. Specialized expertise in 89138, 89144, 
+					and 89135 zip codes for executives, California relocations, and luxury investment opportunities.
 				</p>
 			</div>
 			
-			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-				<div class="bg-white p-6 rounded-lg shadow-md">
-					<h3 class="text-xl font-semibold mb-3 text-gray-800">Summerlin</h3>
-					<p class="text-gray-600 mb-4">Master-planned community with golf courses, parks, and top-rated schools.</p>
-					<div class="text-sm text-gray-500">
-						<span class="font-semibold">Avg. Home Price:</span> $650,000<br>
-						<span class="font-semibold">Property Types:</span> Single Family, Condos
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div class="bg-white p-8 rounded-2xl shadow-xl border border-vegas-gold-200 hover:shadow-2xl transition-all duration-300">
+					<div class="text-vegas-gold-600 font-bold text-sm uppercase tracking-wide mb-2">89138</div>
+					<h3 class="text-2xl font-bold mb-4 text-vegas-deep-900">West Summerlin</h3>
+					<p class="text-vegas-deep-700 mb-4">Ultra-luxury master-planned community with championship golf courses, private clubs, and executive estates.</p>
+					<div class="text-sm text-vegas-deep-600 space-y-1">
+						<div><span class="font-semibold">Price Range:</span> $1.2M - $8M+</div>
+						<div><span class="font-semibold">Property Types:</span> Luxury Estates, Custom Homes</div>
+						<div><span class="font-semibold">Specialty:</span> Executive Relocations</div>
 					</div>
 				</div>
 				
-				<div class="bg-white p-6 rounded-lg shadow-md">
-					<h3 class="text-xl font-semibold mb-3 text-gray-800">Henderson</h3>
-					<p class="text-gray-600 mb-4">Family-friendly area with excellent schools and recreational facilities.</p>
-					<div class="text-sm text-gray-500">
-						<span class="font-semibold">Avg. Home Price:</span> $450,000<br>
-						<span class="font-semibold">Property Types:</span> Single Family, Townhomes
+				<div class="bg-white p-8 rounded-2xl shadow-xl border border-vegas-gold-200 hover:shadow-2xl transition-all duration-300">
+					<div class="text-vegas-gold-600 font-bold text-sm uppercase tracking-wide mb-2">89144</div>
+					<h3 class="text-2xl font-bold mb-4 text-vegas-deep-900">The Ridges</h3>
+					<p class="text-vegas-deep-700 mb-4">Exclusive gated community with mountain views, private golf, and luxury amenities for discerning buyers.</p>
+					<div class="text-sm text-vegas-deep-600 space-y-1">
+						<div><span class="font-semibold">Price Range:</span> $800K - $5M+</div>
+						<div><span class="font-semibold">Property Types:</span> Luxury Villas, Custom Estates</div>
+						<div><span class="font-semibold">Specialty:</span> California Relocations</div>
 					</div>
 				</div>
 				
-				<div class="bg-white p-6 rounded-lg shadow-md">
-					<h3 class="text-xl font-semibold mb-3 text-gray-800">Green Valley</h3>
-					<p class="text-gray-600 mb-4">Established neighborhood with mature trees and convenient location.</p>
-					<div class="text-sm text-gray-500">
-						<span class="font-semibold">Avg. Home Price:</span> $400,000<br>
-						<span class="font-semibold">Property Types:</span> Single Family, Condos
+				<div class="bg-white p-8 rounded-2xl shadow-xl border border-vegas-gold-200 hover:shadow-2xl transition-all duration-300">
+					<div class="text-vegas-gold-600 font-bold text-sm uppercase tracking-wide mb-2">89135</div>
+					<h3 class="text-2xl font-bold mb-4 text-vegas-deep-900">Red Rock Country Club</h3>
+					<p class="text-vegas-deep-700 mb-4">Prestigious golf community with luxury homes, private country club access, and mountain views.</p>
+					<div class="text-sm text-vegas-deep-600 space-y-1">
+						<div><span class="font-semibold">Price Range:</span> $600K - $3M+</div>
+						<div><span class="font-semibold">Property Types:</span> Golf Course Homes, Estates</div>
+						<div><span class="font-semibold">Specialty:</span> Investment Properties</div>
 					</div>
 				</div>
 				
-				<div class="bg-white p-6 rounded-lg shadow-md">
-					<h3 class="text-xl font-semibold mb-3 text-gray-800">Anthem</h3>
-					<p class="text-gray-600 mb-4">Gated community with luxury amenities and golf course access.</p>
-					<div class="text-sm text-gray-500">
-						<span class="font-semibold">Avg. Home Price:</span> $750,000<br>
-						<span class="font-semibold">Property Types:</span> Single Family, Luxury
+				<div class="bg-white p-8 rounded-2xl shadow-xl border border-vegas-gold-200 hover:shadow-2xl transition-all duration-300">
+					<div class="text-vegas-gold-600 font-bold text-sm uppercase tracking-wide mb-2">Luxury</div>
+					<h3 class="text-2xl font-bold mb-4 text-vegas-deep-900">Anthem Country Club</h3>
+					<p class="text-vegas-deep-700 mb-4">Gated luxury community with championship golf, resort-style amenities, and executive lifestyle.</p>
+					<div class="text-sm text-vegas-deep-600 space-y-1">
+						<div><span class="font-semibold">Price Range:</span> $750K - $4M+</div>
+						<div><span class="font-semibold">Property Types:</span> Luxury Homes, Estates</div>
+						<div><span class="font-semibold">Specialty:</span> Corporate Relocations</div>
 					</div>
 				</div>
 				
-				<div class="bg-white p-6 rounded-lg shadow-md">
-					<h3 class="text-xl font-semibold mb-3 text-gray-800">Centennial Hills</h3>
-					<p class="text-gray-600 mb-4">Northwest Las Vegas with newer construction and mountain views.</p>
-					<div class="text-sm text-gray-500">
-						<span class="font-semibold">Avg. Home Price:</span> $500,000<br>
-						<span class="font-semibold">Property Types:</span> Single Family, New Construction
+				<div class="bg-white p-8 rounded-2xl shadow-xl border border-vegas-gold-200 hover:shadow-2xl transition-all duration-300">
+					<div class="text-vegas-gold-600 font-bold text-sm uppercase tracking-wide mb-2">Executive</div>
+					<h3 class="text-2xl font-bold mb-4 text-vegas-deep-900">MacDonald Highlands</h3>
+					<p class="text-vegas-deep-700 mb-4">Ultra-exclusive community with custom estates, private golf, and unparalleled luxury amenities.</p>
+					<div class="text-sm text-vegas-deep-600 space-y-1">
+						<div><span class="font-semibold">Price Range:</span> $1.5M - $10M+</div>
+						<div><span class="font-semibold">Property Types:</span> Custom Estates, Mansions</div>
+						<div><span class="font-semibold">Specialty:</span> Ultra-Luxury Sales</div>
 					</div>
 				</div>
 				
-				<div class="bg-white p-6 rounded-lg shadow-md">
-					<h3 class="text-xl font-semibold mb-3 text-gray-800">Spring Valley</h3>
-					<p class="text-gray-600 mb-4">Convenient location with diverse housing options and great value.</p>
-					<div class="text-sm text-gray-500">
-						<span class="font-semibold">Avg. Home Price:</span> $350,000<br>
-						<span class="font-semibold">Property Types:</span> Single Family, Condos, Townhomes
+				<div class="bg-white p-8 rounded-2xl shadow-xl border border-vegas-gold-200 hover:shadow-2xl transition-all duration-300">
+					<div class="text-vegas-gold-600 font-bold text-sm uppercase tracking-wide mb-2">Investment</div>
+					<h3 class="text-2xl font-bold mb-4 text-vegas-deep-900">Seven Hills</h3>
+					<p class="text-vegas-deep-700 mb-4">Established luxury community with mature landscaping, golf course access, and strong investment potential.</p>
+					<div class="text-sm text-vegas-deep-600 space-y-1">
+						<div><span class="font-semibold">Price Range:</span> $500K - $2M+</div>
+						<div><span class="font-semibold">Property Types:</span> Luxury Homes, Condos</div>
+						<div><span class="font-semibold">Specialty:</span> Market Timing Advantage</div>
 					</div>
 				</div>
 			</div>
@@ -393,16 +503,26 @@ onMount(() => {
 </section>
 
 <!-- CTA Section -->
-<section class="py-16 bg-primary-600 text-white">
+<section class="py-20 bg-gradient-to-r from-vegas-deep-900 to-vegas-gold-600 text-white">
 	<div class="container mx-auto px-4 text-center">
-		<h2 class="text-3xl font-bold mb-4">Ready to Start Your Real Estate Journey?</h2>
-		<p class="text-xl mb-8">Contact Dr. Jan Duffy today for a free consultation</p>
-		<div class="flex flex-col sm:flex-row gap-4 justify-center">
-			<a href="tel:+17025551234" class="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-				Call (702) 555-1234
+		<h2 class="text-4xl font-bold mb-6">Ready to Discover Your Next Summerlin Address?</h2>
+		<p class="text-xl mb-8 text-vegas-gold-200">Book your consultation with Dr. Janet Duffy, REALTOR<sup>®</sup> today</p>
+		
+		<!-- Direct contact info -->
+		<div class="mb-12">
+			<div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-3xl mx-auto">
+				<div class="text-3xl font-bold mb-2">Direct: 702-222-1964</div>
+				<div class="text-xl text-vegas-gold-200 mb-4">drduffy@bhhsnv.com</div>
+				<div class="text-sm text-vegas-gold-300">Berkshire Hathaway Nevada Properties</div>
+			</div>
+		</div>
+		
+		<div class="flex flex-col sm:flex-row gap-6 justify-center">
+			<a href="tel:+17022221964" class="bg-vegas-gold-600 text-vegas-deep-900 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-vegas-gold-500 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:-translate-y-2">
+				Call Direct: 702-222-1964
 			</a>
-			<a href="mailto:jan@drjanduffy.com" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors">
-				Email Me
+			<a href="mailto:drduffy@bhhsnv.com" class="border-2 border-white text-white px-10 py-5 rounded-2xl font-bold text-xl hover:bg-white hover:text-vegas-deep-900 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:-translate-y-2">
+				Email Dr. Duffy
 			</a>
 		</div>
 	</div>

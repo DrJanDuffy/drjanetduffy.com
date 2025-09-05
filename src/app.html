@@ -5,37 +5,31 @@
     <link rel="icon" href="%sveltekit.assets%/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
-    <!-- RealScout Global Setup -->
+    <!-- RealScout Web Components -->
     <script src="https://em.realscout.com/widgets/realscout-web-components.umd.js" type="module"></script>
     
-    <!-- RealScout Embedded Script (Alternative Presentation) -->
-    <script id="rs-embedded">
-       (function() {
-            var script = document.createElement('script')
-            script.className = 'rs-embedded-script'
-            script.async = true
-            script.src = 'https://em.realscout.com/assets/em/v3/all.js'
-            var entry = document.getElementsByTagName('script')[0]
-            entry.parentNode.insertBefore(script, entry)
-          })()
-    </script>
+    <!-- Preconnect to RealScout for performance -->
+    <link rel="preconnect" href="https://em.realscout.com">
+    <link rel="dns-prefetch" href="https://em.realscout.com">
     <style>
-      /* Global RealScout Styles */
+      /* Global RealScout Styles - Vegas Theme */
       realscout-office-listings {
         --rs-listing-divider-color: rgb(101, 141, 172);
-        --rs-primary-color: #c41e3a; /* Dr. Jan Duffy brand color */
-        --rs-hover-color: #a01729;
-        --rs-text-color: #333333;
+        --rs-primary-color: #f59e0b; /* Vegas Gold */
+        --rs-hover-color: #d97706;
+        --rs-text-color: #1e293b;
         --rs-background-color: #ffffff;
-        --rs-border-radius: 8px;
-        --rs-card-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        --rs-border-radius: 12px;
+        --rs-card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         width: 100%;
         display: block;
+        min-height: 400px;
       }
       
       realscout-listing-search {
-        --rs-search-bg: #f3f4f6;
-        --rs-button-bg: #c41e3a;
+        --rs-search-bg: #f8fafc;
+        --rs-button-bg: #f59e0b;
+        --rs-button-hover: #d97706;
         width: 100%;
         display: block;
       }
@@ -43,42 +37,49 @@
       realscout-advanced-search {
         --rs-as-button-text-color: #ffffff;
         --rs-as-background-color: #ffffff;
-        --rs-as-button-color: #c41e3a;
+        --rs-as-button-color: #f59e0b;
+        --rs-as-button-hover: #d97706;
         --rs-as-widget-width: 100% !important;
         width: 100%;
         display: block;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
       }
       
       realscout-listing-detail {
         --rs-gallery-height: 400px;
+        --rs-primary-color: #f59e0b;
         width: 100%;
         display: block;
       }
       
       realscout-featured-listings {
         --rs-listing-divider-color: rgb(101, 141, 172);
-        --rs-primary-color: #c41e3a;
+        --rs-primary-color: #f59e0b;
+        --rs-hover-color: #d97706;
         width: 100%;
         display: block;
       }
       
       realscout-home-value {
         --rs-hvw-background-color: #ffffff;
-        --rs-hvw-title-color: #000000;
-        --rs-hvw-subtitle-color: rgba(28, 30, 38, 0.5);
+        --rs-hvw-title-color: #1e293b;
+        --rs-hvw-subtitle-color: rgba(30, 41, 59, 0.6);
         --rs-hvw-primary-button-text-color: #ffffff;
-        --rs-hvw-primary-button-color: #c41e3a;
-        --rs-hvw-secondary-button-text-color: #c41e3a;
+        --rs-hvw-primary-button-color: #f59e0b;
+        --rs-hvw-secondary-button-text-color: #f59e0b;
         --rs-hvw-secondary-button-color: #ffffff;
         --rs-hvw-widget-width: auto;
         width: 100%;
         display: block;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
       }
       
       realscout-simple-search {
-        --rs-ss-font-primary-color: #6a6d72;
-        --rs-ss-searchbar-border-color: hsl(0, 0%, 80%);
-        --rs-ss-box-shadow: 0 10px 15px -3px #0000001a;
+        --rs-ss-font-primary-color: #475569;
+        --rs-ss-searchbar-border-color: #e2e8f0;
+        --rs-ss-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         --rs-ss-widget-width: 100% !important;
         width: 100%;
         display: block;
@@ -86,12 +87,12 @@
       
       realscout-your-listings {
         --rs-listing-divider-color: rgb(101, 141, 172);
-        --rs-primary-color: #c41e3a;
-        --rs-hover-color: #a01729;
-        --rs-text-color: #333333;
+        --rs-primary-color: #f59e0b;
+        --rs-hover-color: #d97706;
+        --rs-text-color: #1e293b;
         --rs-background-color: #ffffff;
-        --rs-border-radius: 8px;
-        --rs-card-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        --rs-border-radius: 12px;
+        --rs-card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         width: 100%;
         display: block;
       }
@@ -143,17 +144,20 @@
       }
       
       .realscout-search .search-button {
-        background-color: #c41e3a !important;
+        background-color: #f59e0b !important;
         color: #ffffff !important;
         border: none;
-        border-radius: 6px;
+        border-radius: 8px;
         padding: 12px 24px;
         font-weight: 600;
-        transition: background-color 0.3s ease;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 4px rgba(245, 158, 11, 0.3);
       }
       
       .realscout-search .search-button:hover {
-        background-color: #a01729 !important;
+        background-color: #d97706 !important;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba(245, 158, 11, 0.4);
       }
     </style>
     
