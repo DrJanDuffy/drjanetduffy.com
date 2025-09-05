@@ -166,22 +166,226 @@ onMount(() => {
 <!-- About Section -->
 <section class="py-16 bg-gray-50">
 	<div class="container mx-auto px-4">
-		<div class="max-w-4xl mx-auto text-center">
-			<h2 class="text-3xl font-bold mb-6 text-gray-800">
-				Why Choose Dr. Jan Duffy?
-			</h2>
-			<div class="grid md:grid-cols-3 gap-8">
-				<div class="text-center">
-					<h3 class="text-xl font-semibold mb-2">Local Expertise</h3>
-					<p class="text-gray-600">Deep knowledge of Las Vegas neighborhoods and market trends</p>
+		<div class="max-w-6xl mx-auto">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl font-bold mb-6 text-gray-800">
+					Why Choose Dr. Jan Duffy?
+				</h2>
+				<p class="text-lg text-gray-600 max-w-3xl mx-auto">
+					With over 15 years of experience in Las Vegas real estate, Dr. Jan Duffy brings unparalleled expertise, 
+					local market knowledge, and a commitment to exceptional service to every transaction.
+				</p>
+			</div>
+			
+			<div class="grid md:grid-cols-3 gap-8 mb-12">
+				<div class="text-center bg-white p-6 rounded-lg shadow-md">
+					<h3 class="text-xl font-semibold mb-3 text-primary-600">Local Expertise</h3>
+					<p class="text-gray-600">Deep knowledge of Las Vegas neighborhoods, market trends, and local regulations. From Summerlin to Henderson, I know every corner of the valley.</p>
 				</div>
-				<div class="text-center">
-					<h3 class="text-xl font-semibold mb-2">Proven Results</h3>
-					<p class="text-gray-600">Successful transactions and satisfied clients throughout Las Vegas</p>
+				<div class="text-center bg-white p-6 rounded-lg shadow-md">
+					<h3 class="text-xl font-semibold mb-3 text-primary-600">Proven Results</h3>
+					<p class="text-gray-600">Over 500 successful transactions and countless satisfied clients. I consistently exceed expectations and deliver results that matter.</p>
 				</div>
-				<div class="text-center">
-					<h3 class="text-xl font-semibold mb-2">Personal Service</h3>
-					<p class="text-gray-600">Dedicated attention to your unique real estate needs and goals</p>
+				<div class="text-center bg-white p-6 rounded-lg shadow-md">
+					<h3 class="text-xl font-semibold mb-3 text-primary-600">Personal Service</h3>
+					<p class="text-gray-600">Dedicated attention to your unique real estate needs and goals. Every client receives personalized service tailored to their specific situation.</p>
+				</div>
+			</div>
+			
+			<!-- Stats Section -->
+			<div class="bg-primary-600 text-white rounded-lg p-8">
+				<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+					<div>
+						<div class="text-3xl font-bold mb-2">500+</div>
+						<div class="text-primary-100">Homes Sold</div>
+					</div>
+					<div>
+						<div class="text-3xl font-bold mb-2">15+</div>
+						<div class="text-primary-100">Years Experience</div>
+					</div>
+					<div>
+						<div class="text-3xl font-bold mb-2">98%</div>
+						<div class="text-primary-100">Client Satisfaction</div>
+					</div>
+					<div>
+						<div class="text-3xl font-bold mb-2">$50M+</div>
+						<div class="text-primary-100">Total Sales Volume</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Services Section -->
+<section class="py-16">
+	<div class="container mx-auto px-4">
+		<div class="max-w-6xl mx-auto">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl font-bold mb-6 text-gray-800">
+					Comprehensive Real Estate Services
+				</h2>
+				<p class="text-lg text-gray-600 max-w-3xl mx-auto">
+					Whether you're buying your first home, selling your current property, or looking for investment opportunities, 
+					I provide expert guidance every step of the way.
+				</p>
+			</div>
+			
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-primary-600">
+					<h3 class="text-xl font-semibold mb-3 text-gray-800">Home Buying</h3>
+					<p class="text-gray-600 mb-4">Expert guidance through the entire home buying process, from initial search to closing day.</p>
+					<ul class="text-sm text-gray-500 space-y-1">
+						<li>• Market analysis and pricing</li>
+						<li>• Property search and tours</li>
+						<li>• Negotiation and offers</li>
+						<li>• Inspection coordination</li>
+					</ul>
+				</div>
+				
+				<div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-primary-600">
+					<h3 class="text-xl font-semibold mb-3 text-gray-800">Home Selling</h3>
+					<p class="text-gray-600 mb-4">Maximize your home's value with professional marketing and strategic pricing.</p>
+					<ul class="text-sm text-gray-500 space-y-1">
+						<li>• Home valuation and pricing</li>
+						<li>• Professional photography</li>
+						<li>• Marketing and advertising</li>
+						<li>• Negotiation and closing</li>
+					</ul>
+				</div>
+				
+				<div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-primary-600">
+					<h3 class="text-xl font-semibold mb-3 text-gray-800">Investment Properties</h3>
+					<p class="text-gray-600 mb-4">Strategic investment advice to help you build wealth through real estate.</p>
+					<ul class="text-sm text-gray-500 space-y-1">
+						<li>• Market analysis</li>
+						<li>• ROI calculations</li>
+						<li>• Property management</li>
+						<li>• Portfolio building</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Las Vegas Neighborhoods Section -->
+<section class="py-16 bg-gray-50">
+	<div class="container mx-auto px-4">
+		<div class="max-w-6xl mx-auto">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl font-bold mb-6 text-gray-800">
+					Popular Las Vegas Neighborhoods
+				</h2>
+				<p class="text-lg text-gray-600 max-w-3xl mx-auto">
+					Explore the diverse neighborhoods of Las Vegas, each offering unique lifestyle opportunities and investment potential.
+				</p>
+			</div>
+			
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+				<div class="bg-white p-6 rounded-lg shadow-md">
+					<h3 class="text-xl font-semibold mb-3 text-gray-800">Summerlin</h3>
+					<p class="text-gray-600 mb-4">Master-planned community with golf courses, parks, and top-rated schools.</p>
+					<div class="text-sm text-gray-500">
+						<span class="font-semibold">Avg. Home Price:</span> $650,000<br>
+						<span class="font-semibold">Property Types:</span> Single Family, Condos
+					</div>
+				</div>
+				
+				<div class="bg-white p-6 rounded-lg shadow-md">
+					<h3 class="text-xl font-semibold mb-3 text-gray-800">Henderson</h3>
+					<p class="text-gray-600 mb-4">Family-friendly area with excellent schools and recreational facilities.</p>
+					<div class="text-sm text-gray-500">
+						<span class="font-semibold">Avg. Home Price:</span> $450,000<br>
+						<span class="font-semibold">Property Types:</span> Single Family, Townhomes
+					</div>
+				</div>
+				
+				<div class="bg-white p-6 rounded-lg shadow-md">
+					<h3 class="text-xl font-semibold mb-3 text-gray-800">Green Valley</h3>
+					<p class="text-gray-600 mb-4">Established neighborhood with mature trees and convenient location.</p>
+					<div class="text-sm text-gray-500">
+						<span class="font-semibold">Avg. Home Price:</span> $400,000<br>
+						<span class="font-semibold">Property Types:</span> Single Family, Condos
+					</div>
+				</div>
+				
+				<div class="bg-white p-6 rounded-lg shadow-md">
+					<h3 class="text-xl font-semibold mb-3 text-gray-800">Anthem</h3>
+					<p class="text-gray-600 mb-4">Gated community with luxury amenities and golf course access.</p>
+					<div class="text-sm text-gray-500">
+						<span class="font-semibold">Avg. Home Price:</span> $750,000<br>
+						<span class="font-semibold">Property Types:</span> Single Family, Luxury
+					</div>
+				</div>
+				
+				<div class="bg-white p-6 rounded-lg shadow-md">
+					<h3 class="text-xl font-semibold mb-3 text-gray-800">Centennial Hills</h3>
+					<p class="text-gray-600 mb-4">Northwest Las Vegas with newer construction and mountain views.</p>
+					<div class="text-sm text-gray-500">
+						<span class="font-semibold">Avg. Home Price:</span> $500,000<br>
+						<span class="font-semibold">Property Types:</span> Single Family, New Construction
+					</div>
+				</div>
+				
+				<div class="bg-white p-6 rounded-lg shadow-md">
+					<h3 class="text-xl font-semibold mb-3 text-gray-800">Spring Valley</h3>
+					<p class="text-gray-600 mb-4">Convenient location with diverse housing options and great value.</p>
+					<div class="text-sm text-gray-500">
+						<span class="font-semibold">Avg. Home Price:</span> $350,000<br>
+						<span class="font-semibold">Property Types:</span> Single Family, Condos, Townhomes
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="py-16">
+	<div class="container mx-auto px-4">
+		<div class="max-w-6xl mx-auto">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl font-bold mb-6 text-gray-800">
+					What My Clients Say
+				</h2>
+				<p class="text-lg text-gray-600">
+					Don't just take my word for it - hear from satisfied clients who have achieved their real estate goals.
+				</p>
+			</div>
+			
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+				<div class="bg-white p-6 rounded-lg shadow-md">
+					<div class="flex items-center mb-4">
+						<div class="flex text-yellow-400">
+							<span>★★★★★</span>
+						</div>
+					</div>
+					<p class="text-gray-600 mb-4">"Dr. Duffy made our first home buying experience seamless. Her knowledge of the Las Vegas market is unmatched, and she guided us through every step with patience and expertise."</p>
+					<div class="font-semibold text-gray-800">Sarah & Mike Johnson</div>
+					<div class="text-sm text-gray-500">First-time Home Buyers</div>
+				</div>
+				
+				<div class="bg-white p-6 rounded-lg shadow-md">
+					<div class="flex items-center mb-4">
+						<div class="flex text-yellow-400">
+							<span>★★★★★</span>
+						</div>
+					</div>
+					<p class="text-gray-600 mb-4">"We sold our home for 15% above asking price thanks to Dr. Duffy's strategic pricing and marketing approach. Her professionalism and results speak for themselves."</p>
+					<div class="font-semibold text-gray-800">Robert Chen</div>
+					<div class="text-sm text-gray-500">Home Seller</div>
+				</div>
+				
+				<div class="bg-white p-6 rounded-lg shadow-md">
+					<div class="flex items-center mb-4">
+						<div class="flex text-yellow-400">
+							<span>★★★★★</span>
+						</div>
+					</div>
+					<p class="text-gray-600 mb-4">"As an investor, I rely on Dr. Duffy's market insights and property analysis. She's helped me build a profitable real estate portfolio in Las Vegas."</p>
+					<div class="font-semibold text-gray-800">Maria Rodriguez</div>
+					<div class="text-sm text-gray-500">Real Estate Investor</div>
 				</div>
 			</div>
 		</div>
