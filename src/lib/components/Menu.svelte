@@ -6,33 +6,46 @@
 	let searchQuery = '';
 	
 	const mainMenu = [
-		{ name: 'Home', href: '/', icon: '🏠' },
-		{ name: 'Properties', href: '/properties', icon: '🏘️' },
-		{ name: 'Home Value', href: '/home-value', icon: '💰' },
-		{ name: 'Rentals', href: '/rentals', icon: '🔑' },
-		{ name: 'About', href: '/about', icon: '👩‍💼' },
-		{ name: 'Contact', href: '/contact', icon: '📞' }
+		{ name: 'Home', href: '/', icon: '🏠', description: 'Luxury Las Vegas Real Estate' },
+		{ name: 'Properties', href: '/properties', icon: '🏘️', description: 'West Summerlin Homes', hasDropdown: true },
+		{ name: 'Home Value', href: '/home-value', icon: '💰', description: 'Get Your Home Value' },
+		{ name: 'Rentals', href: '/rentals', icon: '🔑', description: 'Luxury Rentals' },
+		{ name: 'About', href: '/about', icon: '👩‍💼', description: 'Meet Dr. Janet Duffy' },
+		{ name: 'Contact', href: '/contact', icon: '📞', description: 'Schedule Consultation' }
 	];
 	
 	const propertySubmenu = [
-		{ name: 'All Properties', href: '/properties', icon: '🏘️' },
-		{ name: 'Grid View', href: '/listings-embedded', icon: '⊞' },
-		{ name: 'List View', href: '/listings-list', icon: '☰' },
-		{ name: 'Past Sales', href: '/past-sales', icon: '📈' }
+		{ name: 'All Properties', href: '/properties', icon: '🏘️', description: 'Complete inventory' },
+		{ name: 'Grid View', href: '/listings-embedded', icon: '⊞', description: 'Visual property search' },
+		{ name: 'List View', href: '/listings-list', icon: '☰', description: 'Detailed listings' },
+		{ name: 'Past Sales', href: '/past-sales', icon: '📈', description: 'Recent transactions' }
 	];
 	
-	const quickLinks = [
-		{ name: 'Market Analysis', href: '/home-value', icon: '📊' },
-		{ name: 'Investment Properties', href: '/properties?type=investment', icon: '🏢' },
-		{ name: 'First Time Buyers', href: '/about#first-time-buyers', icon: '🔑' },
-		{ name: 'Relocation Services', href: '/about#relocation', icon: '✈️' }
+	const luxuryCommunities = [
+		{ name: 'West Summerlin', href: '/properties?neighborhood=west-summerlin', icon: '🌴', zip: '89138' },
+		{ name: 'The Ridges', href: '/properties?neighborhood=the-ridges', icon: '🏔️', zip: '89144' },
+		{ name: 'Red Rock Country Club', href: '/properties?neighborhood=red-rock', icon: '⛳', zip: '89135' },
+		{ name: 'Anthem Country Club', href: '/properties?neighborhood=anthem', icon: '🏰', zip: 'Luxury' },
+		{ name: 'MacDonald Highlands', href: '/properties?neighborhood=macdonald', icon: '🏡', zip: 'Executive' },
+		{ name: 'Seven Hills', href: '/properties?neighborhood=seven-hills', icon: '🌸', zip: 'Investment' }
+	];
+	
+	const luxuryServices = [
+		{ name: 'Executive Relocations', href: '/about#executive-relocations', icon: '👔', description: 'C-suite moves' },
+		{ name: 'California Migration', href: '/about#california-migration', icon: '🌴', description: 'CA to NV moves' },
+		{ name: 'Investment Sales', href: '/properties?type=investment', icon: '📈', description: 'ROI properties' },
+		{ name: 'Divorce Relocation', href: '/about#divorce-relocation', icon: '🤝', description: 'Life transitions' },
+		{ name: 'Market Analysis', href: '/home-value', icon: '📊', description: 'Home valuation' },
+		{ name: 'Timing Advantage', href: '/about#timing-advantage', icon: '⚡', description: 'Market insights' }
 	];
 	
 	const neighborhoods = [
-		{ name: 'Summerlin', href: '/properties?neighborhood=summerlin', icon: '🌴' },
-		{ name: 'Henderson', href: '/properties?neighborhood=henderson', icon: '🏞️' },
-		{ name: 'Green Valley', href: '/properties?neighborhood=green-valley', icon: '🌳' },
-		{ name: 'Anthem', href: '/properties?neighborhood=anthem', icon: '🏰' }
+		{ name: 'West Summerlin', href: '/properties?neighborhood=west-summerlin', icon: '🌴', zip: '89138' },
+		{ name: 'The Ridges', href: '/properties?neighborhood=the-ridges', icon: '🏔️', zip: '89144' },
+		{ name: 'Red Rock Country Club', href: '/properties?neighborhood=red-rock', icon: '⛳', zip: '89135' },
+		{ name: 'Anthem Country Club', href: '/properties?neighborhood=anthem', icon: '🏰', zip: 'Luxury' },
+		{ name: 'MacDonald Highlands', href: '/properties?neighborhood=macdonald', icon: '🏡', zip: 'Executive' },
+		{ name: 'Seven Hills', href: '/properties?neighborhood=seven-hills', icon: '🌸', zip: 'Investment' }
 	];
 	
 	function toggleMobileMenu() {
@@ -65,12 +78,12 @@
 		<div class="flex justify-between items-center h-16">
 			<!-- Logo -->
 			<div class="flex items-center space-x-3">
-				<div class="w-10 h-10 bg-primary-600 rounded-full flex items-center justify-center">
+				<div class="w-10 h-10 bg-vegas-gold-600 rounded-full flex items-center justify-center">
 					<span class="text-white font-bold text-lg">JD</span>
 				</div>
 				<div>
-					<h1 class="text-xl font-bold text-gray-800">Dr. Jan Duffy</h1>
-					<p class="text-sm text-gray-600">REALTOR</p>
+					<h1 class="text-xl font-bold text-vegas-deep-900">Dr. Janet Duffy</h1>
+					<p class="text-sm text-vegas-gold-600 font-semibold">REALTOR<sup>®</sup></p>
 				</div>
 			</div>
 			
@@ -87,32 +100,53 @@
 						</a>
 						
 						{#if item.name === 'Properties'}
-							<div class="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+							<div class="absolute top-full left-0 mt-2 w-96 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
 								<div class="p-6">
-									<h3 class="text-lg font-semibold text-gray-800 mb-4">Property Search</h3>
+									<h3 class="text-lg font-semibold text-vegas-deep-900 mb-4">Luxury Property Search</h3>
 									
 									<div class="mb-6">
-										<h4 class="text-sm font-semibold text-gray-700 mb-3">Browse Properties</h4>
+										<h4 class="text-sm font-semibold text-vegas-gold-600 mb-3">Browse Properties</h4>
 										<div class="space-y-2">
 											{#each propertySubmenu as subItem}
 												<a 
 													href={subItem.href} 
-													class="flex items-center space-x-3 px-3 py-2 text-gray-600 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors"
+													class="flex items-center space-x-3 px-3 py-2 text-gray-600 hover:text-vegas-gold-600 hover:bg-vegas-gold-50 rounded-md transition-colors"
 												>
 													<span class="text-lg">{subItem.icon}</span>
-													<span class="font-medium text-sm">{subItem.name}</span>
+													<div>
+														<div class="font-medium text-sm">{subItem.name}</div>
+														<div class="text-xs text-gray-500">{subItem.description}</div>
+													</div>
+												</a>
+											{/each}
+										</div>
+									</div>
+									
+									<div class="border-t border-gray-200 pt-4 mb-4">
+										<h4 class="text-sm font-semibold text-vegas-gold-600 mb-3">West Summerlin Communities</h4>
+										<div class="grid grid-cols-2 gap-2">
+											{#each luxuryCommunities as community}
+												<a 
+													href={community.href} 
+													class="flex items-center space-x-2 px-3 py-2 text-sm text-gray-600 hover:text-vegas-gold-600 hover:bg-vegas-gold-50 rounded-md transition-colors"
+												>
+													<span class="text-lg">{community.icon}</span>
+													<div>
+														<div class="font-medium">{community.name}</div>
+														<div class="text-xs text-gray-500">{community.zip}</div>
+													</div>
 												</a>
 											{/each}
 										</div>
 									</div>
 									
 									<div class="border-t border-gray-200 pt-4">
-										<h4 class="text-sm font-semibold text-gray-700 mb-3">Quick Access</h4>
+										<h4 class="text-sm font-semibold text-vegas-gold-600 mb-3">Quick Access</h4>
 										<div class="grid grid-cols-2 gap-2">
 											{#each quickLinks as link}
 												<a 
 													href={link.href} 
-													class="flex items-center space-x-2 px-3 py-2 text-sm text-gray-600 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors"
+													class="flex items-center space-x-2 px-3 py-2 text-sm text-gray-600 hover:text-vegas-gold-600 hover:bg-vegas-gold-50 rounded-md transition-colors"
 												>
 													<span class="text-lg">{link.icon}</span>
 													<span>{link.name}</span>
@@ -166,10 +200,10 @@
 				
 				<!-- CTA Button -->
 				<a 
-					href="tel:+17025551234" 
-					class="ml-4 bg-primary-600 text-white px-6 py-2 rounded-lg font-medium hover:bg-primary-700 transition-colors"
+					href="tel:+17022221964" 
+					class="ml-4 bg-vegas-gold-600 text-vegas-deep-900 px-6 py-2 rounded-lg font-semibold hover:bg-vegas-gold-700 transition-colors shadow-lg hover:shadow-xl"
 				>
-					Call Now
+					Call: 702-222-1964
 				</a>
 			</div>
 			
@@ -275,19 +309,22 @@
 						</div>
 					</div>
 					
-					<!-- Neighborhoods for Mobile -->
+					<!-- Luxury Communities for Mobile -->
 					<div class="border-t border-gray-200 my-2"></div>
 					<div class="px-3 py-2">
-						<h4 class="text-sm font-semibold text-gray-700 mb-3">Popular Neighborhoods</h4>
+						<h4 class="text-sm font-semibold text-vegas-gold-600 mb-3">West Summerlin Communities</h4>
 						<div class="grid grid-cols-2 gap-2">
-							{#each neighborhoods as neighborhood}
+							{#each luxuryCommunities as community}
 								<a 
-									href={neighborhood.href} 
-									class="flex items-center space-x-2 px-3 py-2 text-sm text-gray-600 hover:text-primary-600 hover:bg-white rounded-md transition-colors"
+									href={community.href} 
+									class="flex items-center space-x-2 px-3 py-2 text-sm text-gray-600 hover:text-vegas-gold-600 hover:bg-vegas-gold-50 rounded-md transition-colors"
 									on:click={closeMobileMenu}
 								>
-									<span class="text-lg">{neighborhood.icon}</span>
-									<span class="font-medium">{neighborhood.name}</span>
+									<span class="text-lg">{community.icon}</span>
+									<div>
+										<div class="font-medium">{community.name}</div>
+										<div class="text-xs text-gray-500">{community.zip}</div>
+									</div>
 								</a>
 							{/each}
 						</div>
@@ -296,23 +333,23 @@
 					<!-- Contact Options for Mobile -->
 					<div class="border-t border-gray-200 my-2"></div>
 					<div class="px-3 py-2">
-						<h4 class="text-sm font-semibold text-gray-700 mb-3">Get In Touch</h4>
+						<h4 class="text-sm font-semibold text-vegas-gold-600 mb-3">Get In Touch</h4>
 						<div class="space-y-2">
 							<a 
-								href="tel:+17025551234" 
-								class="flex items-center space-x-3 px-3 py-2 text-sm bg-primary-600 text-white hover:bg-primary-700 transition-colors rounded-md"
+								href="tel:+17022221964" 
+								class="flex items-center space-x-3 px-3 py-2 text-sm bg-vegas-gold-600 text-vegas-deep-900 hover:bg-vegas-gold-700 transition-colors rounded-md font-semibold"
 								on:click={closeMobileMenu}
 							>
 								<span class="text-lg">📞</span>
-								<span class="font-medium">Call Now - (702) 555-1234</span>
+								<span class="font-medium">Call Direct: 702-222-1964</span>
 							</a>
 							<a 
-								href="mailto:jan@drjanduffy.com" 
-								class="flex items-center space-x-3 px-3 py-2 text-sm text-gray-600 hover:text-primary-600 hover:bg-white transition-colors rounded-md"
+								href="mailto:drduffy@bhhsnv.com" 
+								class="flex items-center space-x-3 px-3 py-2 text-sm text-gray-600 hover:text-vegas-gold-600 hover:bg-vegas-gold-50 transition-colors rounded-md"
 								on:click={closeMobileMenu}
 							>
 								<span class="text-lg">✉️</span>
-								<span class="font-medium">Email Us</span>
+								<span class="font-medium">drduffy@bhhsnv.com</span>
 							</a>
 						</div>
 					</div>
