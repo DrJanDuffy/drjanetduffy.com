@@ -57,41 +57,21 @@ onMount(() => {
 			<div>
 				<h2 class="text-2xl font-bold mb-6 text-gray-800">How Our Valuation Works</h2>
 				<div class="space-y-4">
-					<div class="flex items-start space-x-3">
-						<div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-							<span class="text-primary-600 font-bold text-sm">1</span>
-						</div>
-						<div>
-							<h3 class="font-semibold text-gray-800">Market Analysis</h3>
-							<p class="text-gray-600">We analyze recent sales of similar properties in your neighborhood and surrounding areas.</p>
-						</div>
+					<div>
+						<h3 class="font-semibold text-gray-800">Market Analysis</h3>
+						<p class="text-gray-600">We analyze recent sales of similar properties in your neighborhood and surrounding areas.</p>
 					</div>
-					<div class="flex items-start space-x-3">
-						<div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-							<span class="text-primary-600 font-bold text-sm">2</span>
-						</div>
-						<div>
-							<h3 class="font-semibold text-gray-800">Property Details</h3>
-							<p class="text-gray-600">Your home's size, age, condition, and unique features are factored into the valuation.</p>
-						</div>
+					<div>
+						<h3 class="font-semibold text-gray-800">Property Details</h3>
+						<p class="text-gray-600">Your home's size, age, condition, and unique features are factored into the valuation.</p>
 					</div>
-					<div class="flex items-start space-x-3">
-						<div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-							<span class="text-primary-600 font-bold text-sm">3</span>
-						</div>
-						<div>
-							<h3 class="font-semibold text-gray-800">Current Market Trends</h3>
-							<p class="text-gray-600">We consider current Las Vegas market conditions, inventory levels, and buyer demand.</p>
-						</div>
+					<div>
+						<h3 class="font-semibold text-gray-800">Current Market Trends</h3>
+						<p class="text-gray-600">We consider current Las Vegas market conditions, inventory levels, and buyer demand.</p>
 					</div>
-					<div class="flex items-start space-x-3">
-						<div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-							<span class="text-primary-600 font-bold text-sm">4</span>
-						</div>
-						<div>
-							<h3 class="font-semibold text-gray-800">Instant Results</h3>
-							<p class="text-gray-600">Get your home value estimate immediately with detailed breakdown and comparable sales.</p>
-						</div>
+					<div>
+						<h3 class="font-semibold text-gray-800">Instant Results</h3>
+						<p class="text-gray-600">Get your home value estimate immediately with detailed breakdown and comparable sales.</p>
 					</div>
 				</div>
 			</div>

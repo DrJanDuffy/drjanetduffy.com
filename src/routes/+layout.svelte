@@ -1,7 +1,7 @@
 <script>
 import { browser } from '$app/env';
 import { page } from '$app/stores';
-import Header from '$lib/components/Header.svelte';
+import Navigation from '$lib/components/Navigation.svelte';
 import { webVitals } from '$lib/vitals';
 import '../app.css';
 
@@ -16,7 +16,7 @@ $: if (browser && analyticsId) {
 }
 </script>
 
-<Header />
+<Navigation />
 
 <main>
 	<slot />

@@ -91,11 +91,6 @@ onMount(() => {
 		<h2 class="text-2xl font-bold mb-6 text-gray-800">Choose Your Preferred View</h2>
 		<div class="grid md:grid-cols-3 gap-8">
 			<div class="text-center">
-				<div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-					<svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path>
-					</svg>
-				</div>
 				<h3 class="text-lg font-semibold mb-2">Grid View</h3>
 				<p class="text-gray-600 mb-4">Visual cards with images and key details</p>
 				<a href="/listings-embedded" class="text-primary-600 hover:text-primary-700 font-semibold">
@@ -104,22 +99,12 @@ onMount(() => {
 			</div>
 			
 			<div class="text-center">
-				<div class="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
-					<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
-					</svg>
-				</div>
 				<h3 class="text-lg font-semibold mb-2">List View</h3>
 				<p class="text-gray-600 mb-4">Detailed rows with comprehensive information</p>
 				<span class="text-primary-600 font-semibold">Current View</span>
 			</div>
 			
 			<div class="text-center">
-				<div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-					<svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-					</svg>
-				</div>
 				<h3 class="text-lg font-semibold mb-2">Web Components</h3>
 				<p class="text-gray-600 mb-4">Modern interactive interface</p>
 				<a href="/properties" class="text-primary-600 hover:text-primary-700 font-semibold">

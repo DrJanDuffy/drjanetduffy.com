@@ -103,32 +103,17 @@ onMount(() => {
 		<div class="bg-gray-50 rounded-lg p-6">
 			<h3 class="text-xl font-semibold mb-4 text-gray-800">Rental Process</h3>
 			<div class="space-y-4">
-				<div class="flex items-start space-x-3">
-					<div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-						<span class="text-primary-600 font-bold text-sm">1</span>
-					</div>
-					<div>
-						<h4 class="font-semibold text-gray-800">Property Search</h4>
-						<p class="text-gray-600">Browse available rentals and schedule viewings</p>
-					</div>
+				<div>
+					<h4 class="font-semibold text-gray-800">Property Search</h4>
+					<p class="text-gray-600">Browse available rentals and schedule viewings</p>
 				</div>
-				<div class="flex items-start space-x-3">
-					<div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-						<span class="text-primary-600 font-bold text-sm">2</span>
-					</div>
-					<div>
-						<h4 class="font-semibold text-gray-800">Application Process</h4>
-						<p class="text-gray-600">Complete rental application and provide documentation</p>
-					</div>
+				<div>
+					<h4 class="font-semibold text-gray-800">Application Process</h4>
+					<p class="text-gray-600">Complete rental application and provide documentation</p>
 				</div>
-				<div class="flex items-start space-x-3">
-					<div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-						<span class="text-primary-600 font-bold text-sm">3</span>
-					</div>
-					<div>
-						<h4 class="font-semibold text-gray-800">Lease Signing</h4>
-						<p class="text-gray-600">Review lease terms and complete move-in process</p>
-					</div>
+				<div>
+					<h4 class="font-semibold text-gray-800">Lease Signing</h4>
+					<p class="text-gray-600">Review lease terms and complete move-in process</p>
 				</div>
 			</div>
 		</div>

@@ -172,30 +172,14 @@ onMount(() => {
 			</h2>
 			<div class="grid md:grid-cols-3 gap-8">
 				<div class="text-center">
-					<div class="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
-						<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-						</svg>
-					</div>
 					<h3 class="text-xl font-semibold mb-2">Local Expertise</h3>
 					<p class="text-gray-600">Deep knowledge of Las Vegas neighborhoods and market trends</p>
 				</div>
 				<div class="text-center">
-					<div class="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
-						<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-						</svg>
-					</div>
 					<h3 class="text-xl font-semibold mb-2">Proven Results</h3>
 					<p class="text-gray-600">Successful transactions and satisfied clients throughout Las Vegas</p>
 				</div>
 				<div class="text-center">
-					<div class="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
-						<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-						</svg>
-					</div>
 					<h3 class="text-xl font-semibold mb-2">Personal Service</h3>
 					<p class="text-gray-600">Dedicated attention to your unique real estate needs and goals</p>
 				</div>

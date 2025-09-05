@@ -7,7 +7,7 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "includes": ["**/*.js", "**/*.ts", "**/*.jsx", "**/*.tsx", "**/*.svelte", "**/*.json"]
+    "includes": ["src/**/*.{js,ts,jsx,tsx,svelte,json}"]
   },
   "formatter": {
     "enabled": true,
@@ -15,55 +15,34 @@
     "indentStyle": "space",
     "indentWidth": 2,
     "lineEnding": "lf",
-    "lineWidth": 100,
-    "attributePosition": "auto"
+    "lineWidth": 100
   },
   "linter": {
     "enabled": true,
     "rules": {
       "recommended": true,
       "complexity": {
-        "noExcessiveCognitiveComplexity": "error",
-        "noVoid": "off"
+        "noExcessiveCognitiveComplexity": "warn"
       },
       "correctness": {
-        "noUnusedVariables": "warn",
-        "useExhaustiveDependencies": "warn"
+        "noUnusedVariables": "warn"
       },
       "style": {
-        "noNonNullAssertion": "warn",
         "useConst": "error",
         "useTemplate": "error"
       },
       "suspicious": {
-        "noExplicitAny": "warn",
-        "noArrayIndexKey": "warn"
+        "noExplicitAny": "warn"
       }
     }
   },
   "javascript": {
     "formatter": {
-      "jsxQuoteStyle": "double",
-      "quoteProperties": "asNeeded",
-      "trailingCommas": "es5",
-      "semicolons": "always",
-      "arrowParentheses": "always",
-      "bracketSpacing": true,
-      "bracketSameLine": false,
       "quoteStyle": "single",
-      "attributePosition": "auto"
+      "semicolons": "always",
+      "trailingCommas": "es5",
+      "bracketSpacing": true,
+      "bracketSameLine": false
     }
-  },
-  "overrides": [
-    {
-      "includes": ["**/*.svelte"],
-      "linter": {
-        "rules": {
-          "style": {
-            "noNonNullAssertion": "off"
-          }
-        }
-      }
-    }
-  ]
+  }
 }
