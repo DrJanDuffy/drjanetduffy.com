@@ -4,22 +4,18 @@ const achievements = [
   {
     title: '150+ Properties Sold',
     description: 'Successfully closed transactions across Las Vegas',
-    icon: '🏠',
   },
   {
     title: '$50M+ Sales Volume',
     description: 'Total value of properties sold',
-    icon: '💰',
   },
   {
     title: '15 Years Experience',
     description: 'Dedicated real estate expertise',
-    icon: '⏰',
   },
   {
     title: '98% Client Satisfaction',
     description: 'Based on client feedback and reviews',
-    icon: '⭐',
   },
 ];
 
@@ -95,36 +91,11 @@ const certifications = [
 			<div class="bg-gray-50 rounded-lg p-8">
 				<h3 class="text-xl font-semibold mb-4 text-gray-800">Quick Facts</h3>
 				<ul class="space-y-3">
-					<li class="flex items-center">
-						<svg class="w-5 h-5 text-primary-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-							<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-						</svg>
-						<span class="text-gray-600">Las Vegas native</span>
-					</li>
-					<li class="flex items-center">
-						<svg class="w-5 h-5 text-primary-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-							<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-						</svg>
-						<span class="text-gray-600">15+ years in real estate</span>
-					</li>
-					<li class="flex items-center">
-						<svg class="w-5 h-5 text-primary-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-							<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-						</svg>
-						<span class="text-gray-600">Luxury home specialist</span>
-					</li>
-					<li class="flex items-center">
-						<svg class="w-5 h-5 text-primary-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-							<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-						</svg>
-						<span class="text-gray-600">Investment property expert</span>
-					</li>
-					<li class="flex items-center">
-						<svg class="w-5 h-5 text-primary-600 mr-3" fill="currentColor" viewBox="0 0 20 20">
-							<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-						</svg>
-						<span class="text-gray-600">Available 7 days a week</span>
-					</li>
+					<li class="text-gray-600">• Las Vegas native</li>
+					<li class="text-gray-600">• 15+ years in real estate</li>
+					<li class="text-gray-600">• Luxury home specialist</li>
+					<li class="text-gray-600">• Investment property expert</li>
+					<li class="text-gray-600">• Available 7 days a week</li>
 				</ul>
 			</div>
 		</div>
@@ -176,15 +147,6 @@ const certifications = [
 		<h2 class="text-3xl font-bold text-center mb-12 text-gray-800">What My Clients Say</h2>
 		<div class="grid md:grid-cols-3 gap-8">
 			<div class="bg-white rounded-lg shadow-lg p-6">
-				<div class="flex items-center mb-4">
-					<div class="flex text-yellow-400">
-						{#each Array(5) as _}
-							<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-								<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-							</svg>
-						{/each}
-					</div>
-				</div>
 				<p class="text-gray-600 mb-4">
 					"Dr. Duffy made our first home buying experience seamless. Her knowledge of the Las Vegas market and attention to detail helped us find the perfect home within our budget."
 				</p>
@@ -193,15 +155,6 @@ const certifications = [
 			</div>
 			
 			<div class="bg-white rounded-lg shadow-lg p-6">
-				<div class="flex items-center mb-4">
-					<div class="flex text-yellow-400">
-						{#each Array(5) as _}
-							<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-								<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-							</svg>
-						{/each}
-					</div>
-				</div>
 				<p class="text-gray-600 mb-4">
 					"Jan's expertise in luxury properties is unmatched. She helped us sell our home for 15% above asking price and found us an incredible investment property."
 				</p>
@@ -210,15 +163,6 @@ const certifications = [
 			</div>
 			
 			<div class="bg-white rounded-lg shadow-lg p-6">
-				<div class="flex items-center mb-4">
-					<div class="flex text-yellow-400">
-						{#each Array(5) as _}
-							<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-								<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-							</svg>
-						{/each}
-					</div>
-				</div>
 				<p class="text-gray-600 mb-4">
 					"Professional, responsive, and results-driven. Jan's market knowledge and negotiation skills saved us thousands on our home purchase."
 				</p>

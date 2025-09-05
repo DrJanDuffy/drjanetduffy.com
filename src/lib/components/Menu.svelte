@@ -6,54 +6,54 @@
 	let searchQuery = '';
 	
 	const mainMenu = [
-		{ name: 'Home', href: '/', icon: '🏠', description: 'Luxury Las Vegas Real Estate' },
-		{ name: 'Properties', href: '/properties', icon: '🏘️', description: 'West Summerlin Homes', hasDropdown: true },
-		{ name: 'Home Value', href: '/home-value', icon: '💰', description: 'Get Your Home Value' },
-		{ name: 'Rentals', href: '/rentals', icon: '🔑', description: 'Luxury Rentals' },
-		{ name: 'Quotes', href: '/quotes', icon: '💬', description: 'Motivational Quotes' },
-		{ name: 'About', href: '/about', icon: '👩‍💼', description: 'Meet Dr. Janet Duffy' },
-		{ name: 'Contact', href: '/contact', icon: '📞', description: 'Schedule Consultation' }
+		{ name: 'Home', href: '/', description: 'Luxury Las Vegas Real Estate' },
+		{ name: 'Properties', href: '/properties', description: 'West Summerlin Homes', hasDropdown: true },
+		{ name: 'Home Value', href: '/home-value', description: 'Get Your Home Value' },
+		{ name: 'Rentals', href: '/rentals', description: 'Luxury Rentals' },
+		{ name: 'Quotes', href: '/quotes', description: 'Motivational Quotes' },
+		{ name: 'About', href: '/about', description: 'Meet Dr. Janet Duffy' },
+		{ name: 'Contact', href: '/contact', description: 'Schedule Consultation' }
 	];
 	
 	const propertySubmenu = [
-		{ name: 'All Properties', href: '/properties', icon: '🏘️', description: 'Complete inventory' },
-		{ name: 'Grid View', href: '/listings-embedded', icon: '⊞', description: 'Visual property search' },
-		{ name: 'List View', href: '/listings-list', icon: '☰', description: 'Detailed listings' },
-		{ name: 'Past Sales', href: '/past-sales', icon: '📈', description: 'Recent transactions' }
+		{ name: 'All Properties', href: '/properties', description: 'Complete inventory' },
+		{ name: 'Grid View', href: '/listings-embedded', description: 'Visual property search' },
+		{ name: 'List View', href: '/listings-list', description: 'Detailed listings' },
+		{ name: 'Past Sales', href: '/past-sales', description: 'Recent transactions' }
 	];
 	
 	const luxuryCommunities = [
-		{ name: 'West Summerlin', href: '/properties?neighborhood=west-summerlin', icon: '🌴', zip: '89138' },
-		{ name: 'The Ridges', href: '/properties?neighborhood=the-ridges', icon: '🏔️', zip: '89144' },
-		{ name: 'Red Rock Country Club', href: '/properties?neighborhood=red-rock', icon: '⛳', zip: '89135' },
-		{ name: 'Anthem Country Club', href: '/properties?neighborhood=anthem', icon: '🏰', zip: 'Luxury' },
-		{ name: 'MacDonald Highlands', href: '/properties?neighborhood=macdonald', icon: '🏡', zip: 'Executive' },
-		{ name: 'Seven Hills', href: '/properties?neighborhood=seven-hills', icon: '🌸', zip: 'Investment' }
+		{ name: 'West Summerlin', href: '/properties?neighborhood=west-summerlin', zip: '89138' },
+		{ name: 'The Ridges', href: '/properties?neighborhood=the-ridges', zip: '89144' },
+		{ name: 'Red Rock Country Club', href: '/properties?neighborhood=red-rock', zip: '89135' },
+		{ name: 'Anthem Country Club', href: '/properties?neighborhood=anthem', zip: 'Luxury' },
+		{ name: 'MacDonald Highlands', href: '/properties?neighborhood=macdonald', zip: 'Executive' },
+		{ name: 'Seven Hills', href: '/properties?neighborhood=seven-hills', zip: 'Investment' }
 	];
 	
 	const luxuryServices = [
-		{ name: 'Executive Relocations', href: '/about#executive-relocations', icon: '👔', description: 'C-suite moves' },
-		{ name: 'California Migration', href: '/about#california-migration', icon: '🌴', description: 'CA to NV moves' },
-		{ name: 'Investment Sales', href: '/properties?type=investment', icon: '📈', description: 'ROI properties' },
-		{ name: 'Divorce Relocation', href: '/about#divorce-relocation', icon: '🤝', description: 'Life transitions' },
-		{ name: 'Market Analysis', href: '/home-value', icon: '📊', description: 'Home valuation' },
-		{ name: 'Timing Advantage', href: '/about#timing-advantage', icon: '⚡', description: 'Market insights' }
+		{ name: 'Executive Relocations', href: '/about#executive-relocations', description: 'C-suite moves' },
+		{ name: 'California Migration', href: '/about#california-migration', description: 'CA to NV moves' },
+		{ name: 'Investment Sales', href: '/properties?type=investment', description: 'ROI properties' },
+		{ name: 'Divorce Relocation', href: '/about#divorce-relocation', description: 'Life transitions' },
+		{ name: 'Market Analysis', href: '/home-value', description: 'Home valuation' },
+		{ name: 'Timing Advantage', href: '/about#timing-advantage', description: 'Market insights' }
 	];
 	
 	const neighborhoods = [
-		{ name: 'West Summerlin', href: '/properties?neighborhood=west-summerlin', icon: '🌴', zip: '89138' },
-		{ name: 'The Ridges', href: '/properties?neighborhood=the-ridges', icon: '🏔️', zip: '89144' },
-		{ name: 'Red Rock Country Club', href: '/properties?neighborhood=red-rock', icon: '⛳', zip: '89135' },
-		{ name: 'Anthem Country Club', href: '/properties?neighborhood=anthem', icon: '🏰', zip: 'Luxury' },
-		{ name: 'MacDonald Highlands', href: '/properties?neighborhood=macdonald', icon: '🏡', zip: 'Executive' },
-		{ name: 'Seven Hills', href: '/properties?neighborhood=seven-hills', icon: '🌸', zip: 'Investment' }
+		{ name: 'West Summerlin', href: '/properties?neighborhood=west-summerlin', zip: '89138' },
+		{ name: 'The Ridges', href: '/properties?neighborhood=the-ridges', zip: '89144' },
+		{ name: 'Red Rock Country Club', href: '/properties?neighborhood=red-rock', zip: '89135' },
+		{ name: 'Anthem Country Club', href: '/properties?neighborhood=anthem', zip: 'Luxury' },
+		{ name: 'MacDonald Highlands', href: '/properties?neighborhood=macdonald', zip: 'Executive' },
+		{ name: 'Seven Hills', href: '/properties?neighborhood=seven-hills', zip: 'Investment' }
 	];
 	
 	const quickLinks = [
-		{ name: 'Home Value', href: '/home-value', icon: '💰' },
-		{ name: 'Market Report', href: '/about#market-insights', icon: '📊' },
-		{ name: 'Testimonials', href: '/about#testimonials', icon: '⭐' },
-		{ name: 'Contact', href: '/contact', icon: '📞' }
+		{ name: 'Home Value', href: '/home-value' },
+		{ name: 'Market Report', href: '/about#market-insights' },
+		{ name: 'Testimonials', href: '/about#testimonials' },
+		{ name: 'Contact', href: '/contact' }
 	];
 	
 	function toggleMobileMenu() {
@@ -103,7 +103,6 @@
 							href={item.href} 
 							class="px-4 py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors rounded-lg hover:bg-gray-50 {$page.url.pathname === item.href ? 'text-primary-600 bg-primary-50' : ''}"
 						>
-							<span class="mr-1">{item.icon}</span>
 							{item.name}
 						</a>
 						
@@ -120,7 +119,6 @@
 													href={subItem.href} 
 													class="flex items-center space-x-3 px-3 py-2 text-gray-600 hover:text-vegas-gold-600 hover:bg-vegas-gold-50 rounded-md transition-colors"
 												>
-													<span class="text-lg">{subItem.icon}</span>
 													<div>
 														<div class="font-medium text-sm">{subItem.name}</div>
 														<div class="text-xs text-gray-500">{subItem.description}</div>
@@ -138,7 +136,6 @@
 													href={community.href} 
 													class="flex items-center space-x-2 px-3 py-2 text-sm text-gray-600 hover:text-vegas-gold-600 hover:bg-vegas-gold-50 rounded-md transition-colors"
 												>
-													<span class="text-lg">{community.icon}</span>
 													<div>
 														<div class="font-medium">{community.name}</div>
 														<div class="text-xs text-gray-500">{community.zip}</div>
@@ -156,7 +153,6 @@
 													href={link.href} 
 													class="flex items-center space-x-2 px-3 py-2 text-sm text-gray-600 hover:text-vegas-gold-600 hover:bg-vegas-gold-50 rounded-md transition-colors"
 												>
-													<span class="text-lg">{link.icon}</span>
 													<span>{link.name}</span>
 												</a>
 											{/each}
@@ -276,7 +272,6 @@
 							class="flex items-center space-x-3 px-3 py-3 text-gray-700 hover:text-primary-600 font-medium transition-colors rounded-lg hover:bg-white {$page.url.pathname === item.href ? 'text-primary-600 bg-white' : ''}"
 							on:click={closeMobileMenu}
 						>
-							<span class="text-lg">{item.icon}</span>
 							<span class="font-medium">{item.name}</span>
 						</a>
 					{/each}
@@ -292,7 +287,6 @@
 									class="flex items-center space-x-3 px-3 py-2 text-sm text-gray-600 hover:text-primary-600 hover:bg-white transition-colors rounded-md"
 									on:click={closeMobileMenu}
 								>
-									<span class="text-lg">{subItem.icon}</span>
 									<span class="font-medium">{subItem.name}</span>
 								</a>
 							{/each}
@@ -310,7 +304,6 @@
 									class="flex items-center space-x-3 px-3 py-2 text-sm text-gray-600 hover:text-primary-600 hover:bg-white rounded-md transition-colors"
 									on:click={closeMobileMenu}
 								>
-									<span class="text-lg">{link.icon}</span>
 									<span class="font-medium">{link.name}</span>
 								</a>
 							{/each}
@@ -328,7 +321,6 @@
 									class="flex items-center space-x-2 px-3 py-2 text-sm text-gray-600 hover:text-vegas-gold-600 hover:bg-vegas-gold-50 rounded-md transition-colors"
 									on:click={closeMobileMenu}
 								>
-									<span class="text-lg">{community.icon}</span>
 									<div>
 										<div class="font-medium">{community.name}</div>
 										<div class="text-xs text-gray-500">{community.zip}</div>
@@ -348,7 +340,6 @@
 								class="flex items-center space-x-3 px-3 py-2 text-sm bg-vegas-gold-600 text-vegas-deep-900 hover:bg-vegas-gold-700 transition-colors rounded-md font-semibold"
 								on:click={closeMobileMenu}
 							>
-								<span class="text-lg">📞</span>
 								<span class="font-medium">Call Direct: 702-222-1964</span>
 							</a>
 							<a 
@@ -356,7 +347,6 @@
 								class="flex items-center space-x-3 px-3 py-2 text-sm text-gray-600 hover:text-vegas-gold-600 hover:bg-vegas-gold-50 transition-colors rounded-md"
 								on:click={closeMobileMenu}
 							>
-								<span class="text-lg">✉️</span>
 								<span class="font-medium">drduffy@bhhsnv.com</span>
 							</a>
 						</div>
