@@ -1,30 +1,70 @@
-# SvelteKit
+# Dr. Jan Duffy REALTOR - Las Vegas Real Estate Website
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte), deployed to [Vercel](https://vercel.com).
+A modern, professional real estate website built with SvelteKit, featuring RealScout integration for property listings, search functionality, and lead management.
 
-## Deploy Your Own
+## Features
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fvercel%2Ftree%2Fmain%2Fexamples%2Fsveltekit&project-name=sveltekit-vercel&repository-name=sveltekit-vercel&demo-title=SvelteKit%20%2B%20Vercel&demo-description=A%20SvelteKit%20app%20optimized%20Edge-first.&demo-url=https%3A%2F%2Fsveltekit-template.vercel.app%2F)
+- **RealScout Integration**: Multiple widget types for property search, listings, and home valuation
+- **Responsive Design**: Built with Tailwind CSS for mobile-first, responsive design
+- **SEO Optimized**: Meta tags, structured data, and search engine optimization
+- **Multiple Property Views**: Grid view, list view, and embedded presentations
+- **Contact Forms**: Lead capture and contact management
+- **Professional Branding**: Custom color scheme and branding for Dr. Jan Duffy
 
-_Live Example: https://sveltekit-template.vercel.app_
+## Tech Stack
 
-## Developing
+- **Framework**: SvelteKit
+- **Styling**: Tailwind CSS
+- **Property Listings**: RealScout Web Components
+- **Icons**: Lucide Svelte
+- **Deployment**: Vercel
 
-Once you've installed dependencies with `pnpm install`, start a development server:
+## RealScout Widgets Implemented
 
+- `realscout-office-listings` - Property listings with filtering
+- `realscout-advanced-search` - Advanced property search
+- `realscout-simple-search` - Quick property search
+- `realscout-home-value` - Home valuation tool
+- `realscout-your-listings` - Complete property portfolio
+- Embedded search and listing components
+
+## Pages
+
+- **Home** (`/`) - Hero section with search and featured properties
+- **Properties** (`/properties`) - All active property listings
+- **Home Value** (`/home-value`) - Home valuation calculator
+- **Rentals** (`/rentals`) - Rental property listings
+- **Past Sales** (`/past-sales`) - Complete property history
+- **About** (`/about`) - Dr. Jan Duffy's professional profile
+- **Contact** (`/contact`) - Contact form and information
+
+## Development
+
+Install dependencies:
 ```bash
-pnpm run dev
-
-# or start the server and open the app in a new browser tab
-pnpm run dev -- --open
+pnpm install
 ```
 
-## Building
+Start development server:
+```bash
+pnpm run dev
+```
 
-To create a production version of your app:
-
+Build for production:
 ```bash
 pnpm run build
 ```
 
-You can preview the production build with `npm run preview`.
+## Deployment
+
+This project is configured for Vercel deployment. The build process is handled automatically by Vercel when code is pushed to the main branch.
+
+## RealScout Configuration
+
+The website uses RealScout with agent ID `QWdlbnQtMjI1MDUw` for Dr. Jan Duffy. All widgets are configured with custom styling to match the brand colors (#c41e3a).
+
+## Contact
+
+- **Phone**: (702) 555-1234
+- **Email**: jan@drjanduffy.com
+- **Website**: https://drjanduffy.com
