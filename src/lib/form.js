@@ -31,9 +31,34 @@ import { invalidate } from '$app/navigation';
 export function enhance(form, { pending, error, result } = {}) {
   let current_token;
 
+  function handleSuccess(data, response) {
+    if (result) result({ data, form, response });
+
+    const url = new URL(form.action);
+    url.search = url.hash = '';
+    invalidate(url.href);
+  }
+
+  function handleError(data, response) {
+    if (error) {
+      error({ data, form, error: null, response });
+    } else {
+      console.error('Form submission failed');
+    }
+  }
+
+  function handleException(data, err) {
+    if (error && err instanceof Error) {
+      error({ data, form, error: err, response: null });
+    } else {
+      throw err;
+    }
+  }
+
   /** @param {SubmitEvent} event */
   async function handle_submit(event) {
-    const token = (current_token = {});
+    current_token = {};
+    const token = current_token;
 
     event.preventDefault();
 
@@ -53,22 +78,12 @@ export function enhance(form, { pending, error, result } = {}) {
       if (token !== current_token) return;
 
       if (response.ok) {
-        if (result) result({ data, form, response });
-
-        const url = new URL(form.action);
-        url.search = url.hash = '';
-        invalidate(url.href);
-      } else if (error) {
-        error({ data, form, error: null, response });
+        handleSuccess(data, response);
       } else {
-        console.error(await response.text());
+        handleError(data, response);
       }
     } catch (err) {
-      if (error && err instanceof Error) {
-        error({ data, form, error: err, response: null });
-      } else {
-        throw err;
-      }
+      handleException(data, err);
     }
   }
 

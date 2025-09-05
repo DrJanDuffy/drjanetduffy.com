@@ -1,9 +1,8 @@
 <script>
 import { onMount } from 'svelte';
 import { browser } from '$app/env';
-import { page } from '$app/stores';
 
-let realScoutReady = false;
+let _realScoutReady = false;
 let mobileMenuOpen = false;
 
 onMount(() => {
@@ -30,20 +29,20 @@ onMount(() => {
             customElements.get('realscout-your-listings'))
         ) {
           clearInterval(checkInterval);
-          realScoutReady = true;
+          _realScoutReady = true;
         }
       }, 100);
 
       // Timeout after 5 seconds
       setTimeout(() => {
         clearInterval(checkInterval);
-        realScoutReady = true; // Show fallback
+        _realScoutReady = true; // Show fallback
       }, 5000);
     }
   }
 });
 
-function toggleMobileMenu() {
+function _toggleMobileMenu() {
   mobileMenuOpen = !mobileMenuOpen;
 }
 </script>
