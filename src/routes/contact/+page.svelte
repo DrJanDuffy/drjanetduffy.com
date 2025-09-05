@@ -117,74 +117,32 @@ function handleSubmit() {
 				<h2 class="text-2xl font-semibold mb-6 text-gray-800">Get in Touch</h2>
 				
 				<div class="space-y-6">
-					<div class="flex items-start space-x-4">
-						<div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-							<svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-							</svg>
-						</div>
-						<div>
-							<h3 class="font-semibold text-gray-800">Phone</h3>
-							<p class="text-gray-600">(702) 555-1234</p>
-							<p class="text-sm text-gray-500">Available 7 days a week</p>
-						</div>
+					<div>
+						<h3 class="font-semibold text-gray-800">Phone</h3>
+						<p class="text-gray-600">(702) 555-1234</p>
+						<p class="text-sm text-gray-500">Available 7 days a week</p>
 					</div>
 					
-					<div class="flex items-start space-x-4">
-						<div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-							<svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-							</svg>
-						</div>
-						<div>
-							<h3 class="font-semibold text-gray-800">Email</h3>
-							<p class="text-gray-600">jan@drjanduffy.com</p>
-							<p class="text-sm text-gray-500">Response within 24 hours</p>
-						</div>
+					<div>
+						<h3 class="font-semibold text-gray-800">Email</h3>
+						<p class="text-gray-600">jan@drjanduffy.com</p>
+						<p class="text-sm text-gray-500">Response within 24 hours</p>
 					</div>
 					
-					<div class="flex items-start space-x-4">
-						<div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-							<svg class="w-6 h-6 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-							</svg>
-						</div>
-						<div>
-							<h3 class="font-semibold text-gray-800">Office Location</h3>
-							<p class="text-gray-600">Las Vegas, NV</p>
-							<p class="text-sm text-gray-500">Serving the greater Las Vegas area</p>
-						</div>
+					<div>
+						<h3 class="font-semibold text-gray-800">Office Location</h3>
+						<p class="text-gray-600">Las Vegas, NV</p>
+						<p class="text-sm text-gray-500">Serving the greater Las Vegas area</p>
 					</div>
 				</div>
 				
 				<div class="mt-8 p-6 bg-gray-50 rounded-lg">
 					<h3 class="font-semibold text-gray-800 mb-3">Why Choose Dr. Jan Duffy?</h3>
 					<ul class="space-y-2 text-sm text-gray-600">
-						<li class="flex items-center">
-							<svg class="w-4 h-4 text-primary-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-							</svg>
-							Local market expertise
-						</li>
-						<li class="flex items-center">
-							<svg class="w-4 h-4 text-primary-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-							</svg>
-							Proven track record
-						</li>
-						<li class="flex items-center">
-							<svg class="w-4 h-4 text-primary-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-							</svg>
-							Personalized service
-						</li>
-						<li class="flex items-center">
-							<svg class="w-4 h-4 text-primary-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-							</svg>
-							Free consultation
-						</li>
+						<li>Local market expertise</li>
+						<li>Proven track record</li>
+						<li>Personalized service</li>
+						<li>Free consultation</li>
 					</ul>
 				</div>
 			</div>
