@@ -1,0 +1,30 @@
+﻿.toolbar .tabset .ico
+{
+	top: 4px;
+}
+
+.toolbar .btn .ico
+{
+	top: 1px;
+}
+
+.tabset.pills li .ico
+{
+	margin-top: -4px !important;
+}
+
+.popup #content
+{
+	width: 100% !important;
+	padding-left: 0;
+}
+
+.close.btn .ico
+{
+	margin-top: -7px;
+}
+
+article .btnset .btn.strong
+{
+	padding-top: 8px; padding-bottom: 4px;
+}

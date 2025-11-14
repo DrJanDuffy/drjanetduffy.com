@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.lasvegashomesbyleslie.com/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /idx/
+Disallow: /inc/
+Disallow: /listing/
+
+# Allow important pages
+Allow: /index.html
+Allow: /summerlin.php
+Allow: /henderson-homes.php
+Allow: /las-vegas-homes.php
+Allow: /las-vegas-condos.php
+Allow: /blog/
+
+# Crawl delay (optional, adjust as needed)
+Crawl-delay: 1
+
