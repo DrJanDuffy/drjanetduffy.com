@@ -29,6 +29,7 @@ const routes = [
 	{ url: 'communities/summerlin', priority: '0.8', changefreq: 'weekly' },
 	{ url: 'communities/henderson', priority: '0.8', changefreq: 'weekly' },
 	{ url: 'communities/green-valley', priority: '0.8', changefreq: 'weekly' },
+	{ url: 'communities/north-las-vegas', priority: '0.8', changefreq: 'weekly' },
 	
 	// Property Type Pages
 	{ url: 'property-types/luxury-homes', priority: '0.8', changefreq: 'weekly' },
@@ -39,6 +40,8 @@ const routes = [
 	{ url: 'property-types/gated-communities', priority: '0.8', changefreq: 'weekly' },
 	{ url: 'property-types/golf-communities', priority: '0.8', changefreq: 'weekly' },
 	{ url: 'property-types/55-plus-communities', priority: '0.8', changefreq: 'weekly' },
+	{ url: 'property-types/foreclosures', priority: '0.7', changefreq: 'weekly' },
+	{ url: 'property-types/short-sales', priority: '0.7', changefreq: 'weekly' },
 	
 	// Property Search Pages
 	{ url: 'listings-embedded', priority: '0.8', changefreq: 'daily' },

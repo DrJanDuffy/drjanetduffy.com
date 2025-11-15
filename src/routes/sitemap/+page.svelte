@@ -26,6 +26,7 @@
 		{ url: '/communities/summerlin', title: 'Summerlin Real Estate', description: 'Luxury master-planned community', category: 'Communities' },
 		{ url: '/communities/henderson', title: 'Henderson Real Estate', description: 'Family-friendly community', category: 'Communities' },
 		{ url: '/communities/green-valley', title: 'Green Valley Real Estate', description: 'Established Henderson community', category: 'Communities' },
+		{ url: '/communities/north-las-vegas', title: 'North Las Vegas Real Estate', description: 'Affordable housing and growth', category: 'Communities' },
 		
 		// Property Types
 		{ url: '/property-types/luxury-homes', title: 'Luxury Homes', description: 'Exclusive luxury properties', category: 'Properties' },
@@ -36,6 +37,8 @@
 		{ url: '/property-types/gated-communities', title: 'Gated Communities', description: 'Secure gated communities', category: 'Properties' },
 		{ url: '/property-types/golf-communities', title: 'Golf Communities', description: 'Golf course communities', category: 'Properties' },
 		{ url: '/property-types/55-plus-communities', title: '55+ Communities', description: 'Active adult communities', category: 'Properties' },
+		{ url: '/property-types/foreclosures', title: 'Foreclosures', description: 'Foreclosure properties', category: 'Properties' },
+		{ url: '/property-types/short-sales', title: 'Short Sales', description: 'Short sale properties', category: 'Properties' },
 		
 		// Property Search
 		{ url: '/listings-embedded', title: 'Property Grid View', description: 'View properties in grid format', category: 'Properties' },
