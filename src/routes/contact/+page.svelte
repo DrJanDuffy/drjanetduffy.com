@@ -19,8 +19,10 @@ import ContactForm from '$lib/components/ContactForm.svelte';
 		"email": "drduffy@bhhsnv.com",
 			"address": {
 				"@type": "PostalAddress",
+				"streetAddress": "6153 S Rainbow Blvd, Bldg 1",
 				"addressLocality": "Las Vegas",
 				"addressRegion": "NV",
+				"postalCode": "89118",
 				"addressCountry": "US"
 			}
 		}
@@ -67,7 +69,9 @@ import ContactForm from '$lib/components/ContactForm.svelte';
 					<div>
 						<h3 class="font-semibold text-gray-800">Office Location</h3>
 						<p class="text-gray-600">Berkshire Hathaway Nevada Properties</p>
-						<p class="text-sm text-gray-500">Serving West Summerlin (89138, 89144, 89135)</p>
+						<p class="text-gray-600">6153 S Rainbow Blvd, Bldg 1</p>
+						<p class="text-gray-600">Las Vegas, NV 89118</p>
+						<p class="text-sm text-gray-500 mt-2">Serving West Summerlin (89138, 89144, 89135)</p>
 					</div>
 					
 					<div>

@@ -46,13 +46,17 @@
 				</p>
 				<div class="space-y-2">
 					<p class="text-sm text-gray-300">
-						<span class="font-semibold">Phone:</span> (702) 555-1234
+						<span class="font-semibold">Office:</span> Berkshire Hathaway Nevada Properties
 					</p>
 					<p class="text-sm text-gray-300">
-						<span class="font-semibold">Email:</span> jan@drjanduffy.com
+						6153 S Rainbow Blvd, Bldg 1<br>
+						Las Vegas, NV 89118
 					</p>
 					<p class="text-sm text-gray-300">
-						<span class="font-semibold">License:</span> #12345
+						<span class="font-semibold">Phone:</span> (702) 222-1964
+					</p>
+					<p class="text-sm text-gray-300">
+						<span class="font-semibold">Email:</span> drduffy@bhhsnv.com
 					</p>
 				</div>
 			</div>
