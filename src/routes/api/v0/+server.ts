@@ -1,6 +1,6 @@
 import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import { V0_API_KEY } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 
 // V0 API endpoint - check https://v0.dev/docs/v0-platform-api for latest endpoint
 const V0_API_BASE = 'https://api.v0.dev';
@@ -14,6 +14,8 @@ export const POST: RequestHandler = async ({ request }) => {
 			return json({ error: 'Prompt is required' }, { status: 400 });
 		}
 
+		const V0_API_KEY = env.V0_API_KEY;
+		
 		if (!V0_API_KEY) {
 			return json({ 
 				error: 'V0_API_KEY not configured. Please set it in your environment variables.' 
@@ -82,6 +84,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
 // GET endpoint to check API status
 export const GET: RequestHandler = async () => {
+	const V0_API_KEY = env.V0_API_KEY;
 	return json({
 		status: 'ok',
 		configured: !!V0_API_KEY,
