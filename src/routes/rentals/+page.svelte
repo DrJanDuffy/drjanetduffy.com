@@ -10,24 +10,6 @@ onMount(() => {
 </script>
 
 <svelte:head>
-	<title>Rental Properties | Dr. Jan Duffy REALTOR</title>
-	<meta name="description" content="Find rental properties in Las Vegas with Dr. Jan Duffy. Browse available rentals, apartments, and homes for rent in the Las Vegas area." />
-	<meta name="keywords" content="Las Vegas rentals, rental properties, apartments for rent, homes for rent, rental listings" />
-	
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://drjanduffy.com/rentals" />
-	<meta property="og:title" content="Rental Properties | Dr. Jan Duffy REALTOR" />
-	<meta property="og:description" content="Find rental properties in Las Vegas with Dr. Jan Duffy. Browse available rentals, apartments, and homes for rent." />
-	
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://drjanduffy.com/rentals" />
-	<meta property="twitter:title" content="Rental Properties | Dr. Jan Duffy REALTOR" />
-	<meta property="twitter:description" content="Find rental properties in Las Vegas with Dr. Jan Duffy. Browse available rentals, apartments, and homes for rent." />
-</svelte:head>
-
-<svelte:head>
 	<title>Rental Properties | Dr. Janet Duffy REALTOR®</title>
 	<meta name="description" content="Find rental properties in Las Vegas with Dr. Janet Duffy. Browse available rentals, apartments, and homes for rent in the Las Vegas area." />
 	<meta name="keywords" content="Las Vegas rentals, rental properties, apartments for rent, homes for rent, rental listings" />

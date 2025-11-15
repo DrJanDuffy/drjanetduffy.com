@@ -10,24 +10,6 @@ onMount(() => {
 </script>
 
 <svelte:head>
-	<title>Las Vegas Homes for Sale | Dr. Jan Duffy REALTOR</title>
-	<meta name="description" content="Browse all available Las Vegas homes for sale. Updated listings from the MLS. Contact Dr. Jan Duffy for showings." />
-	<meta name="keywords" content="Las Vegas homes for sale, property listings, MLS, real estate, Dr. Jan Duffy" />
-	
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://drjanduffy.com/properties" />
-	<meta property="og:title" content="Las Vegas Homes for Sale | Dr. Jan Duffy REALTOR" />
-	<meta property="og:description" content="Browse all available Las Vegas homes for sale. Updated listings from the MLS." />
-	
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://drjanduffy.com/properties" />
-	<meta property="twitter:title" content="Las Vegas Homes for Sale | Dr. Jan Duffy REALTOR" />
-	<meta property="twitter:description" content="Browse all available Las Vegas homes for sale. Updated listings from the MLS." />
-</svelte:head>
-
-<svelte:head>
 	<title>Las Vegas Homes for Sale | Dr. Janet Duffy REALTOR®</title>
 	<meta name="description" content="Browse all available Las Vegas homes for sale. Updated listings from the MLS. Contact Dr. Janet Duffy for showings." />
 	<meta name="keywords" content="Las Vegas homes for sale, property listings, MLS, real estate, Dr. Janet Duffy" />
