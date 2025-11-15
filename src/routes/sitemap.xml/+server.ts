@@ -30,6 +30,11 @@ const routes = [
 	{ url: 'communities/henderson', priority: '0.8', changefreq: 'weekly' },
 	{ url: 'communities/green-valley', priority: '0.8', changefreq: 'weekly' },
 	{ url: 'communities/north-las-vegas', priority: '0.8', changefreq: 'weekly' },
+	{ url: 'communities/boulder-city', priority: '0.8', changefreq: 'weekly' },
+	{ url: 'communities/seven-hills', priority: '0.8', changefreq: 'weekly' },
+	{ url: 'communities/southern-highlands', priority: '0.8', changefreq: 'weekly' },
+	{ url: 'communities/mountains-edge', priority: '0.8', changefreq: 'weekly' },
+	{ url: 'communities/anthem', priority: '0.8', changefreq: 'weekly' },
 	
 	// Property Type Pages
 	{ url: 'property-types/luxury-homes', priority: '0.8', changefreq: 'weekly' },
