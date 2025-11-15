@@ -1,5 +1,5 @@
 <script>
-	import { Home, TrendingUp, Award, MapPin, Star, DollarSign, Calendar, Building2, BarChart3 } from 'lucide-svelte';
+	import { Home, TrendingUp, Award, MapPin, Star, DollarSign, Calendar, Building2 } from 'lucide-svelte';
 	import { goto } from '$app/navigation';
 
 	function handleSearch(event) {
