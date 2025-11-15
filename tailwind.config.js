@@ -44,6 +44,18 @@ export default {
           }
         },
         primary: {
+          50: '#f0f9ff',
+          100: '#e0f2fe',
+          200: '#bae6fd',
+          300: '#7dd3fc',
+          400: '#38bdf8',
+          500: '#0ea5e9',
+          600: '#0284c7',
+          700: '#0369a1',
+          800: '#075985',
+          900: '#0c4a6e',
+        },
+        gold: {
           50: '#fffbeb',
           100: '#fef3c7',
           200: '#fde68a',
@@ -70,7 +82,8 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
-        serif: ['Georgia', 'serif'],
+        display: ['Playfair Display', 'Georgia', 'serif'],
+        serif: ['Playfair Display', 'Georgia', 'serif'],
         mono: ['Fira Code', 'monospace'],
       },
       spacing: {
