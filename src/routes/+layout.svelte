@@ -2,6 +2,7 @@
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import Navigation from '$lib/components/Navigation.svelte';
+	import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
 	import { Facebook, Linkedin, Twitter } from 'lucide-svelte';
 
 	let { children } = $props();
@@ -24,6 +25,7 @@
 </svelte:head>
 
 <Navigation />
+<Breadcrumbs />
 
 <main>
 	{@render children?.()}
