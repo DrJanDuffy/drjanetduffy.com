@@ -12,17 +12,17 @@
 	}
 </script>
 
-<nav class="bg-white shadow-lg sticky top-0 z-50">
-	<div class="container mx-auto px-4">
-		<div class="flex justify-between items-center h-16">
+<nav class="bg-white/95 backdrop-blur-premium shadow-premium sticky top-0 z-50 border-b border-gray-100">
+	<div class="container-premium">
+		<div class="flex justify-between items-center h-20">
 			<!-- Logo -->
-			<div class="flex items-center space-x-2">
-				<div class="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center">
+			<div class="flex items-center space-x-3">
+				<div class="w-10 h-10 bg-gradient-to-br from-primary-600 to-primary-800 rounded-full flex items-center justify-center shadow-lg">
 					<span class="text-white font-bold text-sm">JD</span>
 				</div>
 				<div>
-					<h1 class="text-xl font-bold text-gray-800">Dr. Jan Duffy</h1>
-					<p class="text-sm text-gray-600">REALTOR</p>
+					<h1 class="text-xl font-display font-bold text-gray-900">Dr. Jan Duffy</h1>
+					<p class="text-xs text-gray-600 font-medium">REALTOR®</p>
 				</div>
 			</div>
 			
@@ -30,49 +30,49 @@
 			<div class="hidden md:flex items-center space-x-8">
 				<a 
 					href="/" 
-					class="text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/' ? 'text-primary-600' : ''}"
+					class="nav-link {$page.url.pathname === '/' ? 'active text-primary-600' : ''}"
 				>
 					Home
 				</a>
 				<a 
 					href="/properties" 
-					class="text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/properties' ? 'text-primary-600' : ''}"
+					class="nav-link {$page.url.pathname === '/properties' ? 'active text-primary-600' : ''}"
 				>
 					Properties
 				</a>
 				<a 
 					href="/home-value" 
-					class="text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/home-value' ? 'text-primary-600' : ''}"
+					class="nav-link {$page.url.pathname === '/home-value' ? 'active text-primary-600' : ''}"
 				>
 					Home Value
 				</a>
 				<a 
 					href="/rentals" 
-					class="text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/rentals' ? 'text-primary-600' : ''}"
+					class="nav-link {$page.url.pathname === '/rentals' ? 'active text-primary-600' : ''}"
 				>
 					Rentals
 				</a>
 				<a 
 					href="/blog" 
-					class="text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/blog' ? 'text-primary-600' : ''}"
+					class="nav-link {$page.url.pathname === '/blog' ? 'active text-primary-600' : ''}"
 				>
 					Blog
 				</a>
 				<a 
 					href="/about" 
-					class="text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/about' ? 'text-primary-600' : ''}"
+					class="nav-link {$page.url.pathname === '/about' ? 'active text-primary-600' : ''}"
 				>
 					About
 				</a>
 				<a 
 					href="/contact" 
-					class="text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/contact' ? 'text-primary-600' : ''}"
+					class="nav-link {$page.url.pathname === '/contact' ? 'active text-primary-600' : ''}"
 				>
 					Contact
 				</a>
 				<a 
 					href="tel:+17025551234" 
-					class="bg-primary-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-primary-700 transition-colors"
+					class="btn-primary px-6 py-2.5"
 				>
 					Call Now
 				</a>
