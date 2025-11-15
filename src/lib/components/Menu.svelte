@@ -32,12 +32,12 @@
 	];
 	
 	const luxuryServices = [
-		{ name: 'Executive Relocations', href: '/about#executive-relocations', description: 'C-suite moves' },
-		{ name: 'California Migration', href: '/about#california-migration', description: 'CA to NV moves' },
+		{ name: 'Executive Relocations', href: '/relocation', description: 'C-suite moves' },
+		{ name: 'California Migration', href: '/relocation', description: 'CA to NV moves' },
 		{ name: 'Investment Sales', href: '/properties?type=investment', description: 'ROI properties' },
-		{ name: 'Divorce Relocation', href: '/about#divorce-relocation', description: 'Life transitions' },
+		{ name: 'Divorce Relocation', href: '/relocation', description: 'Life transitions' },
 		{ name: 'Market Analysis', href: '/home-value', description: 'Home valuation' },
-		{ name: 'Timing Advantage', href: '/about#timing-advantage', description: 'Market insights' }
+		{ name: 'Timing Advantage', href: '/market-insights', description: 'Market insights' }
 	];
 	
 	const neighborhoods = [
@@ -51,8 +51,8 @@
 	
 	const quickLinks = [
 		{ name: 'Home Value', href: '/home-value' },
-		{ name: 'Market Report', href: '/about#market-insights' },
-		{ name: 'Testimonials', href: '/about#testimonials' },
+		{ name: 'Market Report', href: '/market-insights' },
+		{ name: 'Testimonials', href: '/testimonials' },
 		{ name: 'Contact', href: '/contact' }
 	];
 	

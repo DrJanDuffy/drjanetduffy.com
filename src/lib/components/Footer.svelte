@@ -11,10 +11,10 @@
 	];
 	
 	const services = [
-		{ name: 'Home Buying', href: '/about#home-buying' },
-		{ name: 'Home Selling', href: '/about#home-selling' },
+		{ name: 'Home Buying', href: '/buying-guide' },
+		{ name: 'Home Selling', href: '/selling-guide' },
 		{ name: 'Market Analysis', href: '/home-value' },
-		{ name: 'Investment Consulting', href: '/about#investment' }
+		{ name: 'Investment Consulting', href: '/investment-guide' }
 	];
 	
 	const neighborhoods = [

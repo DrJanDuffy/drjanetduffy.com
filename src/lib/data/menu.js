@@ -123,28 +123,28 @@ export const menuStructure = {
     },
     {
       name: 'First Time Buyers',
-      href: '/about#first-time-buyers',
+      href: '/first-time-buyers',
       description: 'Buying your first home',
       icon: '🔑',
       category: 'Services'
     },
     {
       name: 'Relocation Services',
-      href: '/about#relocation',
+      href: '/relocation',
       description: 'Moving to Las Vegas',
       icon: '✈️',
       category: 'Services'
     },
     {
       name: 'Market Reports',
-      href: '/about#market-reports',
+      href: '/resources/market-reports',
       description: 'Las Vegas market data',
       icon: '📈',
       category: 'Resources'
     },
     {
       name: 'Testimonials',
-      href: '/about#testimonials',
+      href: '/testimonials',
       description: 'Client success stories',
       icon: '⭐',
       category: 'About'
@@ -193,13 +193,13 @@ export const menuStructure = {
   services: [
     {
       name: 'Home Buying',
-      href: '/about#home-buying',
+      href: '/buying-guide',
       description: 'Expert guidance for buyers',
       icon: '🏠'
     },
     {
       name: 'Home Selling',
-      href: '/about#home-selling',
+      href: '/selling-guide',
       description: 'Maximize your home value',
       icon: '💼'
     },
@@ -211,7 +211,7 @@ export const menuStructure = {
     },
     {
       name: 'Investment Consulting',
-      href: '/about#investment',
+      href: '/investment-guide',
       description: 'Real estate investment advice',
       icon: '📈'
     }
