@@ -66,9 +66,16 @@
 		</div>
 
 		<!-- Luxury Features -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Features Define Las Vegas Luxury Homes?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas luxury homes feature high-end finishes and materials, premium locations with stunning views, custom architecture and design, resort-style amenities, gated communities, privacy and security features, smart home technology, and professional landscaping that create an exceptional living experience.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Luxury Home Features</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Premium Features</h3>
 				<ul class="space-y-4">
 					{#each luxuryFeatures as feature}
 						<li class="flex items-start gap-3">
@@ -80,15 +87,15 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Why Invest in Luxury?</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Investment Benefits</h3>
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
 							<TrendingUp class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Strong Appreciation</h3>
-							<p class="text-gray-700">Luxury properties maintain and increase value over time</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Strong Property Appreciation</h3>
+							<p class="text-gray-700">Luxury properties maintain and increase value over time, providing excellent long-term investment returns</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -96,8 +103,8 @@
 							<Shield class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Privacy & Security</h3>
-							<p class="text-gray-700">Gated communities and exclusive locations</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Enhanced Privacy and Security</h3>
+							<p class="text-gray-700">Gated communities and exclusive locations provide privacy, security, and peace of mind</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -105,17 +112,28 @@
 							<Award class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Premium Lifestyle</h3>
-							<p class="text-gray-700">Resort-style amenities and world-class facilities</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Premium Resort-Style Lifestyle</h3>
+							<p class="text-gray-700">Resort-style amenities and world-class facilities create an unparalleled living experience</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<!-- Why Invest in Luxury -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Should You Invest in Las Vegas Luxury Real Estate?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas luxury real estate offers strong property appreciation, enhanced privacy and security, and a premium resort-style lifestyle. These benefits combine with exclusive locations, gated communities, and world-class amenities to create exceptional long-term investment value and unparalleled living experiences.
+			</p>
+		</div>
+
 		<!-- Luxury Areas -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Premier Luxury Communities</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Which Las Vegas Communities Offer Premier Luxury Homes?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas premier luxury communities include The Ridges, Red Rock Country Club, Southern Highlands, and Seven Hills. Each community offers exclusive gated neighborhoods, custom luxury homes, resort-style amenities, and prestigious lifestyles that attract discerning buyers seeking privacy, luxury, and exclusivity.
+			</p>
 			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 				{#each luxuryAreas as area}
 					<div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all">
@@ -129,7 +147,10 @@
 
 		<!-- Luxury Properties -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Featured Luxury Properties</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Luxury Properties Are Available in Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas luxury properties include custom estates, upscale homes, and premium residences featuring high-end finishes, premium locations, custom architecture, resort-style amenities, and gated community access. Properties range from $750K to multi-million dollar estates in premier communities.
+			</p>
 			{#if mounted && browser}
 				<div class="realscout-wrapper">
 					<realscout-office-listings 
@@ -162,9 +183,9 @@
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Interested in Luxury Real Estate?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Dream Luxury Home in Las Vegas?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				Let me help you find your perfect luxury home in Las Vegas
+				Let me help you find your perfect luxury home in Las Vegas. With deep knowledge of luxury markets, premier communities, and exclusive properties, I'll guide you through every step of your luxury home buying journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

@@ -59,9 +59,16 @@
 		</div>
 
 		<!-- Benefits -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Should You Choose a Single Family Home in Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas single family homes offer privacy and space, yards for outdoor living, room to grow, strong investment value, customization options, family-friendly environments, pet-friendly spaces, and storage space that make them ideal for growing families, long-term investors, and buyers seeking independence and space.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose a Single Family Home?</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
 				<ul class="space-y-4">
 					{#each benefits as benefit}
 						<li class="flex items-start gap-3">
@@ -73,7 +80,7 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Perfect For</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Ideal Buyers</h3>
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
@@ -81,7 +88,7 @@
 						</div>
 						<div>
 							<h3 class="text-xl font-bold text-gray-900 mb-2">Growing Families</h3>
-							<p class="text-gray-700">Space for children and room to expand</p>
+							<p class="text-gray-700">Spacious homes with yards provide space for children and room to expand as families grow</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -89,8 +96,8 @@
 							<TrendingUp class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Long-Term Investment</h3>
-							<p class="text-gray-700">Strong appreciation and resale value</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Long-Term Real Estate Investors</h3>
+							<p class="text-gray-700">Strong appreciation and resale value make single family homes excellent long-term investments</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -98,8 +105,8 @@
 							<Home class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Privacy & Independence</h3>
-							<p class="text-gray-700">Your own space without shared walls</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Buyers Seeking Privacy and Independence</h3>
+							<p class="text-gray-700">Your own space without shared walls provides complete privacy and independence</p>
 						</div>
 					</div>
 				</div>
@@ -108,7 +115,10 @@
 
 		<!-- Properties -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Available Single Family Homes</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Single Family Homes Are Available in Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas single family homes include starter homes, family residences, and luxury estates featuring spacious layouts, private yards, multiple bedrooms and bathrooms, and excellent investment potential. Properties range from affordable family homes to multi-million dollar estates throughout the Las Vegas Valley.
+			</p>
 			{#if mounted && browser}
 				<div class="realscout-wrapper">
 					<realscout-office-listings 
@@ -141,9 +151,9 @@
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Interested in Single Family Homes?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Dream Single Family Home in Las Vegas?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				Let me help you find your perfect single family home in Las Vegas
+				Let me help you find your perfect single family home in Las Vegas. With deep knowledge of Las Vegas neighborhoods, family-friendly communities, and single family home markets, I'll guide you through every step of your home buying journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

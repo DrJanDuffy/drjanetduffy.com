@@ -59,14 +59,21 @@
 		</div>
 
 		<!-- About Southern Highlands -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Makes Southern Highlands a Premier Golf Course Community?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Southern Highlands is a premier master-planned community located in southwest Las Vegas, offering luxury living with world-class amenities. The community spans over 3,000 acres and features championship golf courses, gated neighborhoods, resort-style facilities, custom-built luxury homes, and meticulously planned environments that create an exceptional lifestyle.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">About Southern Highlands</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Community Overview</h3>
 				<p class="text-gray-700 leading-relaxed mb-4">
-					Southern Highlands is a premier master-planned community located in southwest Las Vegas, offering luxury living with world-class amenities. The community spans over 3,000 acres and features championship golf courses, gated neighborhoods, and resort-style facilities.
+					Southern Highlands features championship golf courses, gated neighborhoods, and resort-style facilities within a meticulously planned and maintained environment. Residents enjoy access to the Southern Highlands Golf Club, multiple parks, walking trails, and community centers.
 				</p>
 				<p class="text-gray-700 leading-relaxed mb-6">
-					Residents enjoy access to the Southern Highlands Golf Club, multiple parks, walking trails, and community centers. The area features a mix of custom-built luxury homes, estate properties, and upscale townhomes, all within a meticulously planned and maintained environment.
+					The area features a mix of custom-built luxury homes, estate properties, and upscale townhomes, all designed to complement the community's golf course lifestyle and resort-style amenities.
 				</p>
 				<ul class="space-y-3">
 					{#each features as feature}
@@ -79,15 +86,15 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose Southern Highlands?</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
 							<Flag class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Golf Course Living</h3>
-							<p class="text-gray-700">Championship golf courses and country club amenities</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Championship Golf Course Living</h3>
+							<p class="text-gray-700">Championship golf courses and exclusive country club amenities create a premier golf lifestyle</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -95,8 +102,8 @@
 							<Award class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Luxury Homes</h3>
-							<p class="text-gray-700">Custom-built estates and upscale properties</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Custom Luxury Estates</h3>
+							<p class="text-gray-700">Custom-built estates and upscale properties with premium finishes and features</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -104,8 +111,8 @@
 							<Users class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Resort Amenities</h3>
-							<p class="text-gray-700">Pools, fitness centers, parks, and community events</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Resort-Style Amenities</h3>
+							<p class="text-gray-700">Pools, fitness centers, parks, walking trails, and community events provide resort-style living</p>
 						</div>
 					</div>
 				</div>
@@ -114,7 +121,10 @@
 
 		<!-- Properties -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Properties in Southern Highlands</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Properties Are Available in Southern Highlands?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Southern Highlands offers luxury properties including custom-built homes, estate properties, and upscale townhomes. Properties feature golf course views, resort-style amenities, and premium finishes within gated neighborhoods and a master-planned environment.
+			</p>
 			{#if mounted && browser}
 				<div class="realscout-wrapper">
 					<realscout-office-listings 
@@ -147,9 +157,9 @@
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Interested in Southern Highlands Real Estate?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Dream Home in Southern Highlands?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				Let me help you find your perfect home in this premier community
+				Let me help you find your perfect home in this premier community. With deep knowledge of Southern Highlands' golf course lifestyle, luxury properties, and resort amenities, I'll guide you through every step of your home buying journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

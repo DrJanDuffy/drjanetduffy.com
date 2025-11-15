@@ -168,9 +168,9 @@
 		</div>
 
 		<div class="mt-16 bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Still Have Questions?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Still Have Questions About Las Vegas Real Estate?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				I'm here to help! Contact me directly for personalized answers to your specific real estate questions.
+				I'm here to help! Contact me directly for personalized answers to your specific real estate questions. With 15+ years of Las Vegas real estate experience, I'll provide expert guidance on buying, selling, financing, market conditions, and working with me to help you achieve your real estate goals.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

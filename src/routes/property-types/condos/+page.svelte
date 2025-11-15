@@ -59,9 +59,16 @@
 		</div>
 
 		<!-- Benefits -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Should You Choose a Condo in Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas condos offer low-maintenance lifestyle, affordable entry point into homeownership, community amenities, great value for first-time buyers, investment opportunities, prime locations, security features, and resort-style living that make them ideal for buyers seeking convenience, affordability, and lifestyle benefits.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose a Condo?</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
 				<ul class="space-y-4">
 					{#each benefits as benefit}
 						<li class="flex items-start gap-3">
@@ -73,15 +80,15 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Perfect For</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Ideal Buyers</h3>
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
 							<Key class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">First-Time Buyers</h3>
-							<p class="text-gray-700">Affordable entry into homeownership</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">First-Time Homebuyers</h3>
+							<p class="text-gray-700">Affordable entry into homeownership with lower down payments and maintenance costs</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -89,8 +96,8 @@
 							<Users class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Downsizers</h3>
-							<p class="text-gray-700">Low-maintenance lifestyle for empty nesters</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Downsizers and Empty Nesters</h3>
+							<p class="text-gray-700">Low-maintenance lifestyle perfect for those seeking convenience without yard work</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -98,8 +105,8 @@
 							<DollarSign class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Investors</h3>
-							<p class="text-gray-700">Strong rental demand and ROI potential</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Real Estate Investors</h3>
+							<p class="text-gray-700">Strong rental demand and ROI potential make condos excellent investment properties</p>
 						</div>
 					</div>
 				</div>
@@ -108,7 +115,10 @@
 
 		<!-- Properties -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Available Condos & Townhomes</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Condos and Townhomes Are Available in Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas condos and townhomes include affordable units, upscale residences, and luxury properties featuring low-maintenance living, community amenities, prime locations, and excellent value. Properties range from starter condos to luxury townhomes in premier communities throughout the Las Vegas Valley.
+			</p>
 			{#if mounted && browser}
 				<div class="realscout-wrapper">
 					<realscout-office-listings 
@@ -141,9 +151,9 @@
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Interested in Condos or Townhomes?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Perfect Condo or Townhome in Las Vegas?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				Let me help you find the perfect condo or townhome in Las Vegas
+				Let me help you find the perfect condo or townhome in Las Vegas. With deep knowledge of Las Vegas condo markets, communities, and investment opportunities, I'll guide you through every step of your home buying journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

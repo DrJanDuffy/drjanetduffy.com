@@ -93,7 +93,10 @@
 
 		<!-- What Inspectors Check -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">What Inspectors Check</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Do Home Inspectors Check During Las Vegas Home Inspections?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas home inspectors check structural systems including foundation and roof, electrical systems with main panel and wiring, plumbing systems with water supply and drainage, HVAC systems for heating and cooling, exterior elements like siding and windows, and interior features including walls, floors, and doors to identify potential issues and safety concerns.
+			</p>
 			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 				{#each inspectionAreas as area}
 					<div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
@@ -116,7 +119,10 @@
 
 		<!-- Common Issues -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Common Inspection Issues</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Are Common Home Inspection Issues in Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Common Las Vegas home inspection issues include foundation problems, roof damage, electrical issues, plumbing problems, HVAC replacement needs, and mold or water damage. These issues range from medium to high severity with repair costs from $1,000 to $50,000+ depending on the problem and scope.
+			</p>
 			<div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
 				<div class="overflow-x-auto">
 					<table class="w-full">
@@ -148,9 +154,16 @@
 		</div>
 
 		<!-- Inspection Process -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Does the Las Vegas Home Inspection Process Work?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				The Las Vegas home inspection process includes scheduling inspection within 7-10 days of accepted offer, attending inspection to see issues firsthand, receiving detailed written report with photos, and negotiating repairs, credits, or price adjustments based on inspection findings.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">The Inspection Process</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">The Inspection Process</h3>
 				<ol class="space-y-4">
 					<li class="flex items-start gap-3">
 						<span class="flex-shrink-0 w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center text-primary-600 font-bold">1</span>
@@ -184,7 +197,7 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Using Inspection Results</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Using Inspection Results</h3>
 				<div class="space-y-6">
 					<div>
 						<h3 class="text-xl font-bold text-gray-900 mb-2">Request Repairs</h3>
@@ -208,9 +221,9 @@
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Need Help With Home Inspections?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Navigate Your Las Vegas Home Inspection?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				I can recommend qualified inspectors and help you navigate the inspection process
+				I can recommend qualified inspectors and help you navigate the inspection process. With deep knowledge of Las Vegas home inspections, common issues, and negotiation strategies, I'll guide you through every step of your inspection journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

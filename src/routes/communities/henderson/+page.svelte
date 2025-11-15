@@ -59,14 +59,21 @@
 		</div>
 
 		<!-- About Henderson -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Makes Henderson a Great Place to Live?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Henderson is Nevada's second-largest city and consistently ranked as one of the safest cities in America. Located just southeast of Las Vegas, Henderson offers a family-friendly atmosphere with excellent schools, beautiful parks, affordable housing, and a strong sense of community that makes it an ideal choice for families, professionals, and retirees.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">About Henderson</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Community Overview</h3>
 				<p class="text-gray-700 leading-relaxed mb-4">
-					Henderson is Nevada's second-largest city and consistently ranked as one of the safest cities in America. Located just southeast of Las Vegas, Henderson offers a family-friendly atmosphere with excellent schools, beautiful parks, and a strong sense of community.
+					Henderson has experienced significant growth while maintaining its small-town feel. The city offers a diverse economy, top-rated schools, and affordable housing options that appeal to a wide range of buyers seeking quality living in the Las Vegas area.
 				</p>
 				<p class="text-gray-700 leading-relaxed mb-6">
-					The city has experienced significant growth while maintaining its small-town feel. With a diverse economy, top-rated schools, and affordable housing options, Henderson is an ideal choice for families, professionals, and retirees seeking quality living in the Las Vegas area.
+					With over 320,000 residents, Henderson combines urban amenities with suburban comfort, creating an ideal environment for families and professionals seeking excellent schools, safe neighborhoods, and strong community connections.
 				</p>
 				<ul class="space-y-3">
 					{#each features as feature}
@@ -79,15 +86,15 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose Henderson?</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
 							<Award class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Top Schools</h3>
-							<p class="text-gray-700">A+ rated school district with excellent educational opportunities</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Top-Rated School District</h3>
+							<p class="text-gray-700">A+ rated school district with excellent educational opportunities and high academic performance</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -95,8 +102,8 @@
 							<Shield class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Safety</h3>
-							<p class="text-gray-700">Consistently ranked among the safest cities in Nevada</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Exceptional Safety Record</h3>
+							<p class="text-gray-700">Consistently ranked among the safest cities in Nevada, providing peace of mind for families</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -104,8 +111,8 @@
 							<DollarSign class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Affordability</h3>
-							<p class="text-gray-700">More affordable than Las Vegas with great value</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Affordable Housing Options</h3>
+							<p class="text-gray-700">More affordable than Las Vegas with great value and diverse housing options</p>
 						</div>
 					</div>
 				</div>
@@ -114,7 +121,10 @@
 
 		<!-- Properties in Henderson -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Properties in Henderson</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Properties Are Available in Henderson?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Henderson offers diverse property types including single-family homes, townhomes, condos, and luxury estates. Properties range from affordable starter homes to upscale properties, all within safe neighborhoods with excellent schools and community amenities.
+			</p>
 			{#if mounted && browser}
 				<div class="realscout-wrapper">
 					<realscout-office-listings 
@@ -147,9 +157,9 @@
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Interested in Henderson Real Estate?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Dream Home in Henderson?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				Let me help you find your perfect home in Henderson
+				Let me help you find your perfect home in Henderson. With deep knowledge of the city's neighborhoods, schools, and market conditions, I'll guide you through every step of your home buying journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

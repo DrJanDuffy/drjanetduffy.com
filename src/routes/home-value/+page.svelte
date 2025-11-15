@@ -74,7 +74,10 @@ onMount(() => {
 		<!-- Information Section -->
 		<div class="grid-premium md:grid-cols-2 gap-12 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="font-display text-3xl font-bold mb-8 text-gray-900" style="letter-spacing: -0.02em;">How Our Valuation Works</h2>
+				<h2 class="font-display text-3xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">How Does Our Las Vegas Home Valuation Work?</h2>
+				<p class="text-gray-700 mb-8 leading-relaxed">
+					Our Las Vegas home valuation works by analyzing recent sales of similar properties in your neighborhood, factoring in your home's size, age, condition, and unique features, considering current market trends and inventory levels, and providing instant results with detailed breakdown and comparable sales data.
+				</p>
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 					<div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-md">
@@ -116,7 +119,10 @@ onMount(() => {
 			</div>
 			
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="font-display text-3xl font-bold mb-8 text-gray-900" style="letter-spacing: -0.02em;">Why Get Your Home Valued?</h2>
+				<h2 class="font-display text-3xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">Why Should You Get Your Las Vegas Home Valued?</h2>
+				<p class="text-gray-700 mb-8 leading-relaxed">
+					Get your Las Vegas home valued for selling planning to set the right price and timeline, refinancing decisions based on current value, investment tracking to monitor appreciation, and insurance purposes to ensure coverage matches property value, helping you make informed decisions about your real estate investment.
+				</p>
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
@@ -160,7 +166,10 @@ onMount(() => {
 		
 		<!-- Market Insights -->
 		<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 mb-16 shadow-lg border border-gray-100">
-			<h2 class="font-display text-3xl font-bold mb-8 text-center text-gray-900" style="letter-spacing: -0.02em;">Las Vegas Market Insights</h2>
+			<h2 class="font-display text-3xl font-bold mb-6 text-center text-gray-900" style="letter-spacing: -0.02em;">What Are the Current Las Vegas Market Insights?</h2>
+			<p class="text-gray-700 mb-8 text-center leading-relaxed max-w-3xl mx-auto">
+				Current Las Vegas market insights show 8.5% average home price increase in 2024, average 28 days on market indicating fast-moving market, and $485K median home price that reflects strong market fundamentals and continued growth potential throughout the Las Vegas Valley.
+			</p>
 			<div class="grid-premium md:grid-cols-3 gap-8">
 				<div class="text-center bg-white rounded-xl p-8 shadow-md">
 					<div class="text-5xl font-display font-bold text-primary-600 mb-3">+8.5%</div>
@@ -184,9 +193,9 @@ onMount(() => {
 				<div class="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
 			</div>
 			<div class="relative z-10">
-				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-white" style="text-shadow: 0 2px 10px rgba(0,0,0,0.2);">Need a Professional Valuation?</h2>
+				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-white" style="text-shadow: 0 2px 10px rgba(0,0,0,0.2);">Ready to Get Your Professional Las Vegas Home Valuation?</h2>
 				<p class="text-xl mb-8 text-white/95 max-w-2xl mx-auto">
-					While our online tool provides a great starting point, a professional appraisal or CMA (Comparative Market Analysis) can give you the most accurate valuation for your specific situation.
+					While our online tool provides a great starting point, a professional appraisal or CMA (Comparative Market Analysis) can give you the most accurate valuation for your specific situation. With deep knowledge of Las Vegas market conditions, neighborhood trends, and property values, I'll provide comprehensive valuation services to help you make informed real estate decisions.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-6 justify-center">
 					<a href="/contact" class="group relative overflow-hidden bg-white text-primary-700 px-10 py-5 rounded-xl font-bold text-lg shadow-2xl hover:shadow-white/30 transition-all duration-300 hover:scale-110 hover:-translate-y-1">

@@ -59,14 +59,21 @@
 		</div>
 
 		<!-- About Boulder City -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Makes Boulder City a Unique Las Vegas Area Community?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Boulder City is a unique community located just 30 minutes southeast of Las Vegas, offering a peaceful small-town atmosphere with easy access to big city amenities. Founded in 1931 during the construction of Hoover Dam, Boulder City maintains its historic charm while providing modern conveniences, family-friendly environment, and world-class outdoor recreation at Lake Mead.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">About Boulder City</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Community Overview</h3>
 				<p class="text-gray-700 leading-relaxed mb-4">
-					Boulder City is a unique community located just 30 minutes southeast of Las Vegas, offering a peaceful small-town atmosphere with easy access to big city amenities. Founded in 1931 during the construction of Hoover Dam, Boulder City maintains its historic charm while providing modern conveniences.
+					Boulder City is known for its prohibition on gambling, creating a family-friendly environment distinct from Las Vegas. The historic downtown features unique shops, restaurants, and community events that celebrate the city's heritage while providing modern amenities.
 				</p>
 				<p class="text-gray-700 leading-relaxed mb-6">
-					The city is known for its prohibition on gambling, creating a family-friendly environment. With Lake Mead National Recreation Area nearby, residents enjoy world-class outdoor recreation including boating, fishing, hiking, and water sports. The historic downtown features unique shops, restaurants, and community events.
+					With Lake Mead National Recreation Area nearby, residents enjoy world-class outdoor recreation including boating, fishing, hiking, and water sports. The city's small-town charm, low crime rate, and strong community make it an ideal choice for those seeking peaceful living near Las Vegas.
 				</p>
 				<ul class="space-y-3">
 					{#each features as feature}
@@ -79,15 +86,15 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose Boulder City?</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
 							<Mountain class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Outdoor Paradise</h3>
-							<p class="text-gray-700">Lake Mead access, hiking trails, and scenic mountain views</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Outdoor Recreation Paradise</h3>
+							<p class="text-gray-700">Lake Mead access, hiking trails, and scenic mountain views provide endless outdoor activities</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -95,8 +102,8 @@
 							<Award class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Historic Charm</h3>
-							<p class="text-gray-700">Preserved historic downtown with unique character</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Preserved Historic Character</h3>
+							<p class="text-gray-700">Historic downtown with unique shops, restaurants, and community events celebrating heritage</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -104,8 +111,8 @@
 							<Users class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Strong Community</h3>
-							<p class="text-gray-700">Tight-knit community with low crime and friendly neighbors</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Tight-Knit Community</h3>
+							<p class="text-gray-700">Strong community connections with low crime rate and friendly neighbors</p>
 						</div>
 					</div>
 				</div>
@@ -114,7 +121,10 @@
 
 		<!-- Properties -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Properties in Boulder City</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Properties Are Available in Boulder City?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Boulder City offers diverse property types including single-family homes, historic properties, and newer construction. Properties feature peaceful settings, scenic views, and excellent value within a family-friendly community just 30 minutes from Las Vegas.
+			</p>
 			{#if mounted && browser}
 				<div class="realscout-wrapper">
 					<realscout-office-listings 
@@ -147,9 +157,9 @@
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Interested in Boulder City Real Estate?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Dream Home in Boulder City?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				Let me help you find your perfect home in this peaceful community
+				Let me help you find your perfect home in this peaceful community. With deep knowledge of Boulder City's unique character, historic properties, and outdoor lifestyle, I'll guide you through every step of your home buying journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

@@ -59,14 +59,21 @@
 		</div>
 
 		<!-- About Anthem -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Makes Anthem a Premier Henderson Golf Community?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Anthem is a premier master-planned community located in Henderson, offering luxury living with world-class golf and country club amenities. The community spans over 5,000 acres and features championship golf courses, gated neighborhoods, resort-style facilities, luxury homes, custom estates, and an active lifestyle with numerous amenities and social activities.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">About Anthem</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Community Overview</h3>
 				<p class="text-gray-700 leading-relaxed mb-4">
-					Anthem is a premier master-planned community located in Henderson, offering luxury living with world-class golf and country club amenities. The community spans over 5,000 acres and features championship golf courses, gated neighborhoods, and resort-style facilities.
+					Anthem features championship golf courses, gated neighborhoods, and resort-style facilities within a beautifully maintained and secure environment. Residents enjoy access to Anthem Country Club, multiple parks, community centers, and walking trails.
 				</p>
 				<p class="text-gray-700 leading-relaxed mb-6">
-					Residents enjoy access to Anthem Country Club, multiple parks, community centers, and walking trails. The area features a mix of luxury homes, custom estates, and upscale townhomes, all within a beautifully maintained and secure environment. Anthem offers an active lifestyle with numerous amenities and social activities.
+					The area features a mix of luxury homes, custom estates, and upscale townhomes, all designed to complement the community's golf course lifestyle. Anthem offers an active lifestyle with numerous amenities and social activities that create a vibrant, resort-style living experience.
 				</p>
 				<ul class="space-y-3">
 					{#each features as feature}
@@ -79,15 +86,15 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose Anthem?</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
 							<Flag class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Country Club Living</h3>
-							<p class="text-gray-700">Championship golf courses and exclusive club amenities</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Championship Golf Course Living</h3>
+							<p class="text-gray-700">Championship golf courses and exclusive Anthem Country Club amenities create a premier golf lifestyle</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -95,8 +102,8 @@
 							<Award class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Luxury Properties</h3>
-							<p class="text-gray-700">Upscale homes with premium finishes and features</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Luxury Homes and Estates</h3>
+							<p class="text-gray-700">Upscale homes, custom estates, and premium finishes within gated neighborhoods</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -104,8 +111,8 @@
 							<Users class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Active Lifestyle</h3>
-							<p class="text-gray-700">Resort-style amenities and community activities</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Active Resort-Style Lifestyle</h3>
+							<p class="text-gray-700">Resort-style amenities, community activities, parks, and social events provide an active lifestyle</p>
 						</div>
 					</div>
 				</div>
@@ -114,7 +121,10 @@
 
 		<!-- Properties -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Properties in Anthem</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Properties Are Available in Anthem?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Anthem offers luxury properties including custom estates, upscale homes, and premium townhomes. Properties feature golf course views, resort-style amenities, and premium finishes within gated neighborhoods and a master-planned environment with country club access.
+			</p>
 			{#if mounted && browser}
 				<div class="realscout-wrapper">
 					<realscout-office-listings 
@@ -147,9 +157,9 @@
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Interested in Anthem Real Estate?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Dream Home in Anthem?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				Let me help you find your perfect home in this premier Henderson community
+				Let me help you find your perfect home in this premier Henderson community. With deep knowledge of Anthem's golf course lifestyle, luxury properties, and country club amenities, I'll guide you through every step of your home buying journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

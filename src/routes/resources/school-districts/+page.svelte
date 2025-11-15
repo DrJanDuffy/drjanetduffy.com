@@ -56,7 +56,10 @@
 
 		<!-- School Districts -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Major School Districts</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Are the Major Las Vegas School Districts?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas major school districts include Clark County School District, Henderson Area Schools, and Summerlin Schools. Each district offers diverse programs, excellent test scores, comprehensive educational opportunities, and top-rated schools that serve families throughout the Las Vegas Valley.
+			</p>
 			<div class="grid md:grid-cols-3 gap-6">
 				{#each districts as district}
 					<div class="bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:shadow-xl transition-all">
@@ -87,7 +90,10 @@
 
 		<!-- Top Schools -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Top-Rated Schools</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Which Las Vegas Schools Are Top-Rated?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas top-rated schools include Coronado High School, Palo Verde High School, Green Valley High School, Sig Rogich Middle School, and Vanderburg Elementary. These schools consistently achieve A and A+ ratings with excellent academic performance, comprehensive programs, and strong community support.
+			</p>
 			<div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
 				<div class="overflow-x-auto">
 					<table class="w-full">

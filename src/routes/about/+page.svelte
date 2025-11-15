@@ -113,9 +113,11 @@ const certifications = [
 		<!-- Why Choose Dr. Janet Duffy -->
 		<div class="mb-20">
 			<div class="text-center mb-16">
-				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">Why Choose Dr. Janet Duffy?</h2>
+				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">Why Should You Choose Dr. Janet Duffy as Your Las Vegas REALTOR?</h2>
 				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
-				<p class="text-lg text-gray-600">Experience the difference of working with a dedicated expert</p>
+				<p class="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
+					Choose Dr. Janet Duffy for 15+ years of Las Vegas real estate experience, expert guidance with personalized service tailored to your unique needs, and deep local expertise in Las Vegas neighborhoods and communities that ensures you make informed decisions and achieve your real estate goals.
+				</p>
 			</div>
 
 			<div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -147,9 +149,14 @@ const certifications = [
 
 		<!-- About Story -->
 		<div class="max-w-6xl mx-auto mb-20">
+			<div class="mb-8 text-center">
+				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">What Is Dr. Janet Duffy's Real Estate Story?</h2>
+				<p class="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
+					Dr. Janet Duffy's real estate story spans over 15 years of experience in the Las Vegas market, building a reputation for exceptional results, personalized service, expert guidance, market insights, and unwavering support that helps buyers, sellers, and investors achieve their real estate goals throughout the greater Las Vegas area.
+				</p>
+			</div>
 			<div class="grid md:grid-cols-2 gap-16 items-center">
 				<div>
-					<h2 class="font-display text-4xl md:text-5xl font-bold mb-8 text-gray-900" style="letter-spacing: -0.02em;">My Story</h2>
 					<div class="space-y-6 text-gray-700 leading-relaxed text-lg">
 						<p>
 							With over 15 years of experience in the Las Vegas real estate market, I've built a reputation for delivering exceptional results and personalized service. My journey in real estate began with a passion for helping people find their perfect home and has evolved into a comprehensive practice serving buyers, sellers, and investors.
@@ -193,8 +200,11 @@ const certifications = [
 		<!-- Achievements -->
 		<div class="mb-20">
 			<div class="text-center mb-16">
-				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">My Achievements</h2>
+				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">What Are Dr. Janet Duffy's Real Estate Achievements?</h2>
 				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
+				<p class="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
+					Dr. Janet Duffy's real estate achievements include 150+ properties sold across Las Vegas, $50M+ in total sales volume, 15 years of dedicated real estate expertise, and 98% client satisfaction based on client feedback and reviews that demonstrate proven results and exceptional service.
+				</p>
 			</div>
                 <div class="grid-premium md:grid-cols-4 gap-8">
                     <div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 hover:scale-105 group">
@@ -231,8 +241,11 @@ const certifications = [
 		<!-- Services -->
 		<div class="mb-20">
 			<div class="text-center mb-16">
-				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">Services I Provide</h2>
+				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">What Real Estate Services Does Dr. Janet Duffy Provide?</h2>
 				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
+				<p class="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
+					Dr. Janet Duffy provides comprehensive real estate services including residential sales and purchases, luxury home specialization, first-time buyer guidance, investment property consulting, market analysis and pricing, negotiation and transaction management, rental property management, and relocation services throughout Las Vegas.
+				</p>
 			</div>
 			<div class="max-w-5xl mx-auto">
 				<div class="grid md:grid-cols-2 gap-6">
@@ -248,8 +261,11 @@ const certifications = [
 		<!-- Buying Guide -->
 		<div class="mb-20" id="buying">
 			<div class="text-center mb-16">
-				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">Buying Guide</h2>
+				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">How Does Dr. Janet Duffy Guide Las Vegas Home Buyers?</h2>
 				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
+				<p class="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
+					Dr. Janet Duffy guides Las Vegas home buyers through comprehensive market analysis, property search tailored to your needs, expert negotiation, seamless transaction management, financing options understanding, thorough property inspections, and best terms negotiation to find the perfect property at the right price with a smooth, stress-free experience.
+				</p>
 			</div>
 			<div class="max-w-4xl mx-auto">
 				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-xl border border-gray-100">
@@ -271,8 +287,11 @@ const certifications = [
 		<!-- Selling Guide -->
 		<div class="mb-20" id="selling">
 			<div class="text-center mb-16">
-				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">Selling Guide</h2>
+				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">How Does Dr. Janet Duffy Help Las Vegas Home Sellers?</h2>
 				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
+				<p class="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
+					Dr. Janet Duffy helps Las Vegas home sellers maximize property value through professional home staging recommendations, comprehensive market analysis for optimal pricing, professional photography and marketing, expert negotiation for best terms, home preparation guidance, effective marketing to qualified buyers, and complete transaction management that demonstrates proven success in helping sellers achieve their goals.
+				</p>
 			</div>
 			<div class="max-w-4xl mx-auto">
 				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-xl border border-gray-100">
@@ -294,8 +313,11 @@ const certifications = [
 		<!-- Mortgage Calculator Info -->
 		<div class="mb-20" id="mortgage">
 			<div class="text-center mb-16">
-				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">Mortgage & Financing</h2>
+				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">How Does Dr. Janet Duffy Help With Mortgage and Financing?</h2>
 				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
+				<p class="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
+					Dr. Janet Duffy helps with mortgage and financing by working with trusted mortgage professionals to find the best loan programs and rates, helping you understand different mortgage types, calculating monthly payments, determining affordability, and connecting you with reputable lenders offering competitive rates and excellent service for your Las Vegas home purchase.
+				</p>
 			</div>
 			<div class="max-w-4xl mx-auto">
 				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-xl border border-gray-100">
@@ -317,8 +339,11 @@ const certifications = [
 		<!-- Certifications -->
 		<div class="mb-20">
 			<div class="text-center mb-16">
-				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">Professional Certifications</h2>
+				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">What Professional Certifications Does Dr. Janet Duffy Hold?</h2>
 				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
+				<p class="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
+					Dr. Janet Duffy holds professional certifications including Licensed REALTOR in Nevada, Certified Residential Specialist (CRS), Accredited Buyer's Representative (ABR), Graduate REALTOR Institute (GRI), Luxury Home Marketing Specialist, and Certified Negotiation Expert (CNE) that demonstrate advanced expertise and commitment to excellence in Las Vegas real estate.
+				</p>
 			</div>
 			<div class="max-w-5xl mx-auto">
 				<div class="grid md:grid-cols-2 gap-6">
@@ -334,8 +359,11 @@ const certifications = [
 		<!-- Client Testimonials -->
 		<div class="mb-20" id="testimonials">
 			<div class="text-center mb-16">
-				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">What My Clients Say</h2>
+				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">What Do Dr. Janet Duffy's Clients Say About Her Service?</h2>
 				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
+				<p class="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
+					Dr. Janet Duffy's clients consistently praise her seamless home buying experiences, extensive Las Vegas market knowledge, attention to detail, luxury property expertise, negotiation skills that save thousands, and professional, responsive, results-driven service that helps first-time buyers, luxury sellers, investors, and relocating families achieve their real estate goals.
+				</p>
 			</div>
 			<div class="grid-premium md:grid-cols-3 gap-8">
                     <div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:scale-105 border border-gray-100">
@@ -392,9 +420,9 @@ const certifications = [
 				<div class="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
 			</div>
 			<div class="relative z-10">
-				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-white" style="text-shadow: 0 2px 10px rgba(0,0,0,0.2);">Ready to Work Together?</h2>
+				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-white" style="text-shadow: 0 2px 10px rgba(0,0,0,0.2);">Ready to Work With Dr. Janet Duffy on Your Las Vegas Real Estate Goals?</h2>
 				<p class="text-xl mb-8 text-white/95 max-w-2xl mx-auto">
-					Let's discuss your real estate goals and how I can help you achieve them. I'm here to provide expert guidance every step of the way.
+					Let's discuss your real estate goals and how I can help you achieve them. With 15+ years of experience, proven results, and personalized service, I'm here to provide expert guidance every step of the way to help you buy, sell, or invest in Las Vegas real estate successfully.
 				</p>
 				<div class="flex flex-col sm:flex-row gap-6 justify-center">
 					<a href="/contact" class="group relative overflow-hidden bg-white text-primary-700 px-10 py-5 rounded-xl font-bold text-lg shadow-2xl hover:shadow-white/30 transition-all duration-300 hover:scale-110 hover:-translate-y-1">

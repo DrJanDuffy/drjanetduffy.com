@@ -59,9 +59,16 @@
 		</div>
 
 		<!-- Benefits -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Should You Choose a 55+ Community in Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas 55+ active adult communities offer age-restricted living, active adult lifestyle, low-maintenance living, social activities and clubs, recreation centers, age-appropriate amenities, quiet neighborhoods, and affordable pricing that make them ideal for retirees, empty nesters, and active adults seeking community, convenience, and lifestyle benefits.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose a 55+ Community?</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
 				<ul class="space-y-4">
 					{#each benefits as benefit}
 						<li class="flex items-start gap-3">
@@ -73,15 +80,15 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Community Features</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Community Features</h3>
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
 							<Users class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Social Activities</h3>
-							<p class="text-gray-700">Clubs, events, and activities designed for active adults</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Active Social Activities</h3>
+							<p class="text-gray-700">Clubs, events, and activities designed specifically for active adults create vibrant community connections</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -89,8 +96,8 @@
 							<Heart class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Recreation Centers</h3>
-							<p class="text-gray-700">Fitness centers, pools, pickleball courts, and more</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Comprehensive Recreation Centers</h3>
+							<p class="text-gray-700">Fitness centers, pools, pickleball courts, and more provide endless opportunities for active living</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -98,8 +105,8 @@
 							<Home class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Low Maintenance</h3>
-							<p class="text-gray-700">HOA handles landscaping and exterior maintenance</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Low-Maintenance Living</h3>
+							<p class="text-gray-700">HOA handles landscaping and exterior maintenance, allowing residents to enjoy life without yard work</p>
 						</div>
 					</div>
 				</div>
@@ -108,7 +115,10 @@
 
 		<!-- Properties -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Homes in 55+ Communities</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Homes Are Available in Las Vegas 55+ Communities?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas 55+ communities offer single-family homes, condos, and townhomes featuring low-maintenance living, age-appropriate amenities, active adult lifestyle, and affordable pricing. Properties range from affordable starter homes to upscale residences in premier active adult communities throughout the Las Vegas Valley.
+			</p>
 			{#if mounted && browser}
 				<div class="realscout-wrapper">
 					<realscout-office-listings 
@@ -141,9 +151,9 @@
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Interested in 55+ Communities?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Perfect 55+ Active Adult Community Home in Las Vegas?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				Let me help you find your perfect active adult community home
+				Let me help you find your perfect active adult community home. With deep knowledge of Las Vegas 55+ communities, active adult lifestyle, and senior housing options, I'll guide you through every step of your home buying journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

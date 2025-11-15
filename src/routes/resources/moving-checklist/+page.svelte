@@ -67,6 +67,13 @@
 		</div>
 
 		<!-- Checklist Timeline -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Should You Include in Your Las Vegas Moving Checklist?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Your Las Vegas moving checklist should include tasks from 8 weeks before moving through moving week, covering moving company research, decluttering, address changes, utility transfers, medical records, insurance updates, and final preparations to ensure a smooth relocation to your new Las Vegas home.
+			</p>
+		</div>
+
 		<div class="space-y-8 mb-16">
 			{#each checklistItems as category}
 				<div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100">
@@ -74,7 +81,7 @@
 						<div class="flex-shrink-0 w-16 h-16 bg-primary-100 rounded-lg flex items-center justify-center">
 							<svelte:component this={category.icon} class="w-8 h-8 text-primary-600" />
 						</div>
-						<h2 class="text-2xl font-bold text-gray-900">{category.category}</h2>
+						<h3 class="text-2xl font-bold text-gray-900">{category.category}</h3>
 					</div>
 					<ul class="space-y-3">
 						{#each category.items as item}
@@ -89,9 +96,16 @@
 		</div>
 
 		<!-- Important Contacts -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Essential Contacts Do You Need for Your Las Vegas Move?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Essential contacts for your Las Vegas move include utility companies like NV Energy and Southwest Gas, government services for address changes and vehicle registration, and service providers for internet, cable, and other utilities to ensure seamless transition to your new Las Vegas home.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Essential Contacts</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Essential Contacts</h3>
 				<div class="space-y-4">
 					<div>
 						<h3 class="font-bold text-gray-900 mb-2">Utilities</h3>
@@ -113,7 +127,7 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Moving Tips</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Moving Tips</h3>
 				<ul class="space-y-4">
 					<li class="flex items-start gap-3">
 						<Home class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" />
@@ -141,9 +155,9 @@
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Planning Your Move to Las Vegas?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Plan Your Move to Las Vegas?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				I can help you with relocation services and finding your perfect Las Vegas home
+				I can help you with relocation services and finding your perfect Las Vegas home. With deep knowledge of Las Vegas neighborhoods, moving resources, and relocation assistance, I'll guide you through every step of your move.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

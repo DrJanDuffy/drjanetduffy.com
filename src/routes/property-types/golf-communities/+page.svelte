@@ -66,9 +66,16 @@
 		</div>
 
 		<!-- Benefits -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Should You Choose a Golf Community in Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas golf communities offer championship golf courses, resort-style amenities, prestigious lifestyle, strong property values, social community, beautiful landscaping, country club access, and exclusive neighborhoods that make them ideal for golf enthusiasts, luxury buyers, and those seeking an active, resort-style lifestyle.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose a Golf Community?</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
 				<ul class="space-y-4">
 					{#each benefits as benefit}
 						<li class="flex items-start gap-3">
@@ -80,15 +87,15 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Golf Community Features</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Golf Community Features</h3>
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
 							<Flag class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Championship Courses</h3>
-							<p class="text-gray-700">World-class golf courses designed by renowned architects</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Championship Golf Courses</h3>
+							<p class="text-gray-700">World-class golf courses designed by renowned architects provide exceptional golfing experiences</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -96,8 +103,8 @@
 							<Award class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Country Club Access</h3>
-							<p class="text-gray-700">Fine dining, spa, fitness centers, and social events</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Exclusive Country Club Access</h3>
+							<p class="text-gray-700">Fine dining, spa, fitness centers, and social events create a resort-style lifestyle</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -105,8 +112,8 @@
 							<DollarSign class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Property Values</h3>
-							<p class="text-gray-700">Golf course properties maintain strong resale values</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Strong Property Values</h3>
+							<p class="text-gray-700">Golf course properties maintain strong resale values and excellent investment potential</p>
 						</div>
 					</div>
 				</div>
@@ -115,7 +122,10 @@
 
 		<!-- Featured Communities -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Featured Golf Communities</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Which Las Vegas Golf Communities Offer Premier Golf Living?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas premier golf communities include Red Rock Country Club, Anthem Country Club, Southern Highlands, and The Ridges. Each community offers championship golf courses, exclusive country club access, resort-style amenities, and prestigious lifestyles that attract golf enthusiasts and luxury buyers.
+			</p>
 			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 				{#each communities as community}
 					<div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all">
@@ -129,7 +139,10 @@
 
 		<!-- Properties -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Homes in Golf Communities</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Homes Are Available in Las Vegas Golf Communities?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas golf communities offer luxury homes, custom estates, and upscale properties featuring golf course views, championship golf access, resort-style amenities, and country club living. Properties range from upscale homes to multi-million dollar estates in premier golf communities throughout the Las Vegas Valley.
+			</p>
 			{#if mounted && browser}
 				<div class="realscout-wrapper">
 					<realscout-office-listings 
@@ -162,9 +175,9 @@
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Interested in Golf Community Living?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Dream Home in a Las Vegas Golf Community?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				Let me help you find your perfect home in a premier golf community
+				Let me help you find your perfect home in a premier golf community. With deep knowledge of Las Vegas golf communities, championship courses, and luxury properties, I'll guide you through every step of your home buying journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

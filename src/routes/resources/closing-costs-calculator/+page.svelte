@@ -50,10 +50,17 @@
 			</p>
 		</div>
 
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Are Las Vegas Home Closing Costs?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas home closing costs include loan origination fees, title insurance, escrow fees, recording fees, transfer taxes, home inspection, appraisal, prepaid interest, homeowners insurance, and property taxes. These costs typically range from 2-5% of the home price and are paid at closing in addition to your down payment.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<!-- Calculator Form -->
 			<div class="bg-white rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-2xl font-bold text-gray-900 mb-6">Loan Details</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Loan Details</h3>
 				<div class="space-y-6">
 					<div>
 						<label for="homePrice" class="block text-sm font-semibold text-gray-700 mb-2">
@@ -115,7 +122,7 @@
 
 			<!-- Results -->
 			<div class="bg-gradient-to-br from-primary-600 to-primary-700 rounded-2xl p-10 shadow-lg text-white">
-				<h2 class="text-2xl font-bold mb-6">Estimated Closing Costs</h2>
+				<h3 class="text-2xl font-bold mb-6">Estimated Closing Costs</h3>
 				
 				<div class="space-y-4 mb-6 bg-white/10 rounded-xl p-6 backdrop-blur-sm">
 					<div class="flex justify-between text-sm">
@@ -200,9 +207,9 @@
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Need Help Understanding Closing Costs?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Understand Your Las Vegas Closing Costs?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				I can help you understand all costs associated with buying a home and connect you with trusted lenders
+				I can help you understand all costs associated with buying a home and connect you with trusted lenders. With deep knowledge of Las Vegas closing costs, loan processes, and financing options, I'll guide you through every step of your home purchase journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

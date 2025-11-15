@@ -59,14 +59,21 @@
 		</div>
 
 		<!-- About Green Valley -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Makes Green Valley a Desirable Henderson Neighborhood?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Green Valley is one of Henderson's most established and desirable neighborhoods, known for its mature trees, well-maintained homes, and strong sense of community. Located in the heart of Henderson, Green Valley offers residents a perfect blend of suburban tranquility and urban convenience with excellent schools, numerous parks, and convenient access to shopping and dining.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">About Green Valley</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Community Overview</h3>
 				<p class="text-gray-700 leading-relaxed mb-4">
-					Green Valley is one of Henderson's most established and desirable neighborhoods, known for its mature trees, well-maintained homes, and strong sense of community. Located in the heart of Henderson, Green Valley offers residents a perfect blend of suburban tranquility and urban convenience.
+					Green Valley features a mix of single-family homes, townhomes, and condos, making it accessible to buyers at various price points. The community has been established for over 30 years, creating a mature, stable neighborhood with proven property values and strong community connections.
 				</p>
 				<p class="text-gray-700 leading-relaxed mb-6">
-					The community features a mix of single-family homes, townhomes, and condos, making it accessible to buyers at various price points. With excellent schools, numerous parks, and convenient access to shopping and dining, Green Valley continues to be a top choice for families and professionals.
+					With mature trees, well-maintained properties, and convenient location, Green Valley continues to be a top choice for families and professionals seeking established neighborhoods with excellent amenities and strong resale values.
 				</p>
 				<ul class="space-y-3">
 					{#each features as feature}
@@ -79,15 +86,15 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose Green Valley?</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
 							<Award class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Established Area</h3>
-							<p class="text-gray-700">Mature community with proven track record and stability</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Established Community</h3>
+							<p class="text-gray-700">Mature community with proven track record, stability, and strong property values</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -95,8 +102,8 @@
 							<Shield class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Great Value</h3>
-							<p class="text-gray-700">Affordable prices with excellent location and amenities</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Excellent Value</h3>
+							<p class="text-gray-700">Affordable prices with excellent location, mature landscaping, and community amenities</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -104,8 +111,8 @@
 							<Users class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Community Feel</h3>
-							<p class="text-gray-700">Strong neighborhood connections and community events</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Strong Community Connections</h3>
+							<p class="text-gray-700">Active neighborhood associations, community events, and strong sense of belonging</p>
 						</div>
 					</div>
 				</div>
@@ -114,7 +121,10 @@
 
 		<!-- Properties in Green Valley -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Properties in Green Valley</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Properties Are Available in Green Valley?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Green Valley offers diverse property types including single-family homes, townhomes, and condos. Properties feature mature landscaping, well-maintained exteriors, and excellent value within an established Henderson neighborhood with top-rated schools and convenient amenities.
+			</p>
 			{#if mounted && browser}
 				<div class="realscout-wrapper">
 					<realscout-office-listings 
@@ -147,9 +157,9 @@
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Interested in Green Valley Real Estate?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Dream Home in Green Valley?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				Let me help you find your perfect home in Green Valley
+				Let me help you find your perfect home in Green Valley. With deep knowledge of this established Henderson neighborhood, I'll guide you through every step of your home buying journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

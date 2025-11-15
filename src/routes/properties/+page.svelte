@@ -63,6 +63,13 @@ const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 				Discover your perfect Las Vegas home from our comprehensive collection of active listings. Updated daily from the MLS.
 			</p>
 		</div>
+
+		<div class="mb-12 text-center">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Las Vegas Homes and Properties Are Available for Sale?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
+				Available Las Vegas homes and properties for sale include single-family homes, condos, townhomes, luxury estates, and investment properties across premier neighborhoods like Summerlin, Henderson, Green Valley, and The Ridges. Properties are updated daily from the MLS and feature diverse price points, sizes, and amenities to match every buyer's needs and budget.
+			</p>
+		</div>
 	
 		{#if mounted && browser}
 			<div class="realscout-wrapper">
@@ -92,7 +99,14 @@ const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 		{/if}
 		
 		<!-- Quick Links Section -->
-		<div class="mt-16 grid-premium md:grid-cols-3 gap-8">
+		<div class="mt-16 mb-8 text-center">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How Can You Explore Las Vegas Properties in Different Views?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
+				Explore Las Vegas properties in different views including grid view for visual browsing, list view for detailed property information, and past sales to understand market trends. Each view provides unique insights to help you find your perfect Las Vegas home and make informed real estate decisions.
+			</p>
+		</div>
+
+		<div class="grid-premium md:grid-cols-3 gap-8">
 			<a href="/listings-embedded" class="group relative bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2">
 				<div class="text-center">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">

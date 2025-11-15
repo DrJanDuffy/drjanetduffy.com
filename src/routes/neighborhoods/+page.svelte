@@ -89,6 +89,12 @@
 <section class="section bg-white">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto">
+			<div class="mb-12 text-center">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are the Best Las Vegas Neighborhoods to Live In?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
+					The best Las Vegas neighborhoods to live in include West Summerlin with luxury homes and world-class amenities, The Ridges with exclusive gated communities and mountain views, Red Rock Country Club with resort-style living, Henderson with family-friendly communities and excellent schools, Green Valley with established neighborhoods, and Seven Hills with upscale custom homes and scenic views.
+				</p>
+			</div>
 			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
 				{#each neighborhoods as neighborhood}
 					<div class="card hover:shadow-xl transition-all duration-300">
@@ -128,8 +134,8 @@
 <section class="section bg-primary-600 text-white">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-4xl mx-auto text-center">
-			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Explore Las Vegas Neighborhoods?</h2>
-			<p class="text-lg text-white text-opacity-90 mb-8">Let Dr. Janet Duffy help you find the perfect community for your lifestyle</p>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Explore Las Vegas Neighborhoods and Find Your Perfect Community?</h2>
+			<p class="text-lg text-white text-opacity-90 mb-8">Let Dr. Janet Duffy help you find the perfect community for your lifestyle. With deep knowledge of Las Vegas neighborhoods, local amenities, schools, and market conditions, I'll guide you to the ideal area that matches your needs and preferences.</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Schedule a Tour</a>
 				<a href="/properties" class="btn-secondary border-white text-white hover:bg-white hover:text-primary-600">View All Properties</a>

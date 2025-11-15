@@ -136,6 +136,13 @@
 			</div>
 		</div>
 
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Real Estate Terms Should You Know for Las Vegas Transactions?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Understanding real estate terms is essential for Las Vegas transactions. Key terms include financing terms like appraisal, mortgage, and pre-approval, transaction terms like closing, escrow, and title insurance, contract terms like contingency, and property types like foreclosure and short sale that help you navigate the Las Vegas real estate market confidently.
+			</p>
+		</div>
+
 		<!-- Terms by Category -->
 		<div class="space-y-12">
 			{#each categories as category}
@@ -164,9 +171,9 @@
 
 		<!-- CTA Section -->
 		<div class="mt-16 bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Have Questions About Real Estate Terms?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Have Questions About Las Vegas Real Estate Terms?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				I'm here to help explain any real estate concepts and guide you through the process
+				I'm here to help explain any real estate concepts and guide you through the process. With deep knowledge of Las Vegas real estate terminology, transaction processes, and industry practices, I'll ensure you understand every aspect of your real estate journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

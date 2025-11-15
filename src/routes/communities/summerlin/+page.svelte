@@ -66,14 +66,21 @@
 		</div>
 
 		<!-- About Summerlin -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Makes Summerlin Las Vegas's Premier Community?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Summerlin is Las Vegas's premier master-planned community, spanning over 22,500 acres in the western Las Vegas Valley. Developed by The Howard Hughes Corporation, Summerlin offers a unique blend of luxury living, world-class amenities, and natural beauty through multiple villages, top-rated schools, extensive parks and trails, championship golf courses, and premier shopping.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">About Summerlin</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Community Overview</h3>
 				<p class="text-gray-700 leading-relaxed mb-4">
-					Summerlin is Las Vegas's premier master-planned community, spanning over 22,500 acres in the western Las Vegas Valley. Developed by The Howard Hughes Corporation, Summerlin offers a unique blend of luxury living, world-class amenities, and natural beauty.
+					Summerlin features multiple villages, each with its own character and amenities, from upscale gated communities to family-friendly neighborhoods. The community represents the pinnacle of Las Vegas living with carefully planned development, exceptional amenities, and strong property values.
 				</p>
 				<p class="text-gray-700 leading-relaxed mb-6">
-					The community features multiple villages, each with its own character and amenities, from upscale gated communities to family-friendly neighborhoods. With top-rated schools, extensive parks and trails, championship golf courses, and premier shopping, Summerlin represents the pinnacle of Las Vegas living.
+					With over 22,500 acres of master-planned development, Summerlin offers diverse housing options from luxury estates to family homes, all within a beautifully maintained environment with extensive parks, trails, and community facilities.
 				</p>
 				<ul class="space-y-3">
 					{#each features as feature}
@@ -86,7 +93,7 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose Summerlin?</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
@@ -94,7 +101,7 @@
 						</div>
 						<div>
 							<h3 class="text-xl font-bold text-gray-900 mb-2">Top-Rated Schools</h3>
-							<p class="text-gray-700">Excellent public and private schools serving the community</p>
+							<p class="text-gray-700">Excellent public and private schools serving the community with high academic performance and comprehensive programs</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -102,8 +109,8 @@
 							<TrendingUp class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Strong Investment</h3>
-							<p class="text-gray-700">Consistent appreciation and strong resale values</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Strong Investment Potential</h3>
+							<p class="text-gray-700">Consistent appreciation and strong resale values make Summerlin properties excellent long-term investments</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -111,8 +118,8 @@
 							<Users class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Active Lifestyle</h3>
-							<p class="text-gray-700">Parks, trails, recreation centers, and community events</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Active Lifestyle Opportunities</h3>
+							<p class="text-gray-700">Parks, trails, recreation centers, and community events provide endless opportunities for active living</p>
 						</div>
 					</div>
 				</div>
@@ -121,7 +128,10 @@
 
 		<!-- Summerlin Neighborhoods -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Summerlin Neighborhoods</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Which Neighborhoods Are Available in Summerlin?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Summerlin features diverse neighborhoods from exclusive gated communities like The Ridges to family-friendly areas like The Trails. Each neighborhood offers unique character, amenities, and price points to match different lifestyles and budgets.
+			</p>
 			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 				{#each neighborhoods as neighborhood}
 					<div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all">
@@ -135,7 +145,10 @@
 
 		<!-- Properties in Summerlin -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Properties in Summerlin</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Properties Are Available in Summerlin?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Summerlin offers diverse property types including luxury estates, single-family homes, townhomes, and condos. Properties range from affordable family homes to multi-million dollar estates, all within master-planned communities with exceptional amenities.
+			</p>
 			{#if mounted && browser}
 				<div class="realscout-wrapper">
 					<realscout-office-listings 
@@ -168,9 +181,9 @@
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Interested in Summerlin Real Estate?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Dream Home in Summerlin?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				Let me help you find your perfect home in Summerlin
+				Let me help you find your perfect home in Summerlin. With deep knowledge of the community, neighborhoods, and market conditions, I'll guide you through every step of your home buying journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

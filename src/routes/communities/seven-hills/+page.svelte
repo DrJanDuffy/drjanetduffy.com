@@ -59,14 +59,21 @@
 		</div>
 
 		<!-- About Seven Hills -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Makes Seven Hills an Exclusive Luxury Community?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Seven Hills is an exclusive upscale community located in Henderson, known for its custom-built luxury homes and stunning mountain views. The community offers a prestigious lifestyle with gated neighborhoods, private amenities, custom architecture, high-end finishes, and panoramic views that attract discerning buyers seeking privacy, luxury, and exclusivity.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">About Seven Hills</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Community Overview</h3>
 				<p class="text-gray-700 leading-relaxed mb-4">
-					Seven Hills is an exclusive upscale community located in Henderson, known for its custom-built luxury homes and stunning mountain views. The community offers a prestigious lifestyle with gated neighborhoods, private amenities, and meticulously maintained properties.
+					Seven Hills features custom architecture, high-end finishes, and spacious lots with panoramic views of the Las Vegas Valley and surrounding mountains. The community's meticulously maintained properties and exclusive location create a prestigious living environment.
 				</p>
 				<p class="text-gray-700 leading-relaxed mb-6">
-					Homes in Seven Hills feature custom architecture, high-end finishes, and spacious lots with panoramic views of the Las Vegas Valley and surrounding mountains. The community attracts discerning buyers seeking privacy, luxury, and exclusivity in a well-established neighborhood.
+					The well-established neighborhood attracts discerning buyers seeking privacy, luxury, and exclusivity. Gated neighborhoods and private amenities ensure residents enjoy a secure, upscale lifestyle in one of Henderson's most desirable communities.
 				</p>
 				<ul class="space-y-3">
 					{#each features as feature}
@@ -79,15 +86,15 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose Seven Hills?</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
 							<Award class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Luxury Living</h3>
-							<p class="text-gray-700">Custom-built homes with premium finishes and features</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Custom Luxury Homes</h3>
+							<p class="text-gray-700">Custom-built homes with premium finishes, high-end features, and spacious lots</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -95,8 +102,8 @@
 							<TrendingUp class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Property Values</h3>
-							<p class="text-gray-700">Strong appreciation and maintained property values</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Strong Property Values</h3>
+							<p class="text-gray-700">Consistent appreciation and maintained property values make Seven Hills an excellent investment</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -104,8 +111,8 @@
 							<MapPin class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Prime Location</h3>
-							<p class="text-gray-700">Convenient access to Las Vegas and Henderson amenities</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Prime Henderson Location</h3>
+							<p class="text-gray-700">Convenient access to Las Vegas and Henderson amenities while maintaining exclusivity</p>
 						</div>
 					</div>
 				</div>
@@ -114,7 +121,10 @@
 
 		<!-- Properties -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Properties in Seven Hills</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Properties Are Available in Seven Hills?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Seven Hills offers exclusive luxury properties including custom-built homes, estate properties, and upscale residences. Properties feature custom architecture, high-end finishes, spacious lots, and panoramic mountain views within gated neighborhoods.
+			</p>
 			{#if mounted && browser}
 				<div class="realscout-wrapper">
 					<realscout-office-listings 
@@ -147,9 +157,9 @@
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Interested in Seven Hills Real Estate?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Dream Luxury Home in Seven Hills?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				Let me help you find your perfect luxury home in Seven Hills
+				Let me help you find your perfect luxury home in Seven Hills. With deep knowledge of this exclusive Henderson community, custom properties, and luxury market, I'll guide you through every step of your home buying journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

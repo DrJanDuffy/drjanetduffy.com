@@ -115,8 +115,10 @@
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto">
 			<div class="text-center mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Properties</h2>
-				<p class="text-lg text-gray-600">Explore our hand-picked selection of premium homes</p>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Featured Las Vegas Properties Are Available?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
+					Featured Las Vegas properties include hand-picked premium homes, luxury estates, single-family homes, condos, and townhomes across Summerlin, Henderson, and other premier communities. These properties feature exceptional value, prime locations, and quality amenities that make them stand out in the Las Vegas real estate market.
+				</p>
 			</div>
 
 			{#if mounted && browser}
@@ -159,8 +161,10 @@
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto">
 			<div class="text-center mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Explore Our Services & Resources</h2>
-				<p class="text-lg text-gray-600">Everything you need for your Las Vegas real estate journey</p>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Services and Resources Are Available for Your Las Vegas Real Estate Journey?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
+					Services and resources available for your Las Vegas real estate journey include expert buyer and seller representation, comprehensive guides for buying and selling, neighborhood exploration tools, client testimonials, buying and selling guides, helpful resources, and frequently asked questions that provide everything you need to successfully navigate Las Vegas real estate transactions.
+				</p>
 			</div>
 			
 			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
@@ -238,8 +242,10 @@
 <section class="section bg-white">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-4xl mx-auto text-center">
-			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Ready to Find Your Dream Home?</h2>
-			<p class="text-lg text-gray-600 mb-8">Contact Dr. Janet Duffy today for personalized assistance</p>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Find Your Dream Home in Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+				Contact Dr. Janet Duffy today for personalized assistance. With 15+ years of Las Vegas real estate experience, proven results, and comprehensive services, I'll help you find your perfect home, get accurate home valuations, and navigate every step of your real estate journey with confidence and success.
+			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary">Schedule a Consultation</a>
 				<a href="/home-value" class="btn-secondary">Get a Home Valuation</a>

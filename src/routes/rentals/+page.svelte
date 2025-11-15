@@ -45,7 +45,10 @@ onMount(() => {
 	
 		<!-- Rental Search -->
 		<div class="mb-16 bg-white rounded-2xl shadow-xl p-10 border border-gray-100">
-			<h2 class="font-display text-3xl font-bold mb-8 text-center text-gray-900" style="letter-spacing: -0.02em;">Search Rental Properties</h2>
+			<h2 class="font-display text-3xl font-bold mb-6 text-center text-gray-900" style="letter-spacing: -0.02em;">How Can You Search for Las Vegas Rental Properties?</h2>
+			<p class="text-gray-700 mb-8 text-center leading-relaxed max-w-3xl mx-auto">
+				Search for Las Vegas rental properties using advanced rental search with detailed filters for location, price, bedrooms, and amenities, or quick search for fast results. Both search options help you find short-term rentals, long-term leases, and investment properties that match your needs and budget throughout the Las Vegas area.
+			</p>
 			<div class="grid-premium md:grid-cols-2 gap-8">
 				<div class="bg-gradient-to-br from-primary-50/50 to-white rounded-xl p-6">
 					<h3 class="font-display text-xl font-bold mb-4 text-gray-900">Advanced Rental Search</h3>
@@ -71,8 +74,11 @@ onMount(() => {
 		<!-- Rental Listings -->
 		<div class="mb-16">
 			<div class="text-center mb-12">
-				<h2 class="font-display text-4xl font-bold mb-4 text-gray-900" style="letter-spacing: -0.02em;">Available Rental Properties</h2>
-				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto"></div>
+				<h2 class="font-display text-4xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">What Rental Properties Are Available in Las Vegas?</h2>
+				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
+					Available Las Vegas rental properties include luxury apartments, single-family homes, townhomes, and condos for rent across premier neighborhoods. Properties range from affordable options to upscale rentals, offering diverse choices for short-term rentals, long-term leases, and investment opportunities throughout the Las Vegas Valley.
+				</p>
 			</div>
 		{#if mounted && browser}
 			<div class="realscout-listings office" 
@@ -107,7 +113,10 @@ onMount(() => {
 		<!-- Rental Information -->
 		<div class="grid-premium md:grid-cols-2 gap-8 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h3 class="font-display text-2xl font-bold mb-6 text-gray-900">Rental Process</h3>
+				<h3 class="font-display text-2xl font-bold mb-6 text-gray-900">How Does the Las Vegas Rental Process Work?</h3>
+				<p class="text-gray-700 mb-6 leading-relaxed">
+					The Las Vegas rental process includes property search and viewing scheduling, application completion with documentation, credit and background screening, lease term review, and move-in process completion that ensures a smooth rental experience for tenants and landlords.
+				</p>
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-md">
@@ -140,7 +149,10 @@ onMount(() => {
 			</div>
 			
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h3 class="font-display text-2xl font-bold mb-6 text-gray-900">Rental Requirements</h3>
+				<h3 class="font-display text-2xl font-bold mb-6 text-gray-900">What Are the Requirements for Renting in Las Vegas?</h3>
+				<p class="text-gray-700 mb-6 leading-relaxed">
+					Requirements for renting in Las Vegas include proof of income showing 3x monthly rent, credit check and background screening, security deposit typically 1-2 months rent, valid government-issued ID, and references from previous landlords that help property owners verify tenant qualifications and ensure successful rental relationships.
+				</p>
 				<ul class="space-y-4">
 					<li class="flex items-start gap-3">
 						<CheckCircle class="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
@@ -173,7 +185,10 @@ onMount(() => {
 				<div class="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
 			</div>
 			<div class="relative z-10">
-				<h2 class="font-display text-4xl font-bold mb-10 text-center text-white" style="text-shadow: 0 2px 10px rgba(0,0,0,0.2);">Las Vegas Rental Market Overview</h2>
+				<h2 class="font-display text-4xl font-bold mb-6 text-center text-white" style="text-shadow: 0 2px 10px rgba(0,0,0,0.2);">What Is the Las Vegas Rental Market Overview?</h2>
+				<p class="text-lg text-white text-opacity-90 mb-10 text-center max-w-3xl mx-auto leading-relaxed">
+					The Las Vegas rental market overview shows average rent of $1,850 for 1BR, $2,400 for 2BR, and $3,200 for 3BR properties, with 95% occupancy rate indicating strong rental demand. These statistics reflect a healthy rental market with diverse options for tenants and strong investment potential for property owners throughout the Las Vegas Valley.
+				</p>
 				<div class="grid-premium md:grid-cols-4 gap-8">
 					<div class="text-center bg-white/10 backdrop-blur-sm rounded-xl p-8">
 						<div class="text-5xl font-display font-bold mb-3">$1,850</div>
@@ -197,9 +212,9 @@ onMount(() => {
 		
 		<!-- CTA Section -->
 		<div class="relative overflow-hidden bg-gradient-to-br from-white to-primary-50/30 rounded-3xl p-12 text-center shadow-xl border border-gray-100">
-			<h2 class="font-display text-4xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">Ready to Find Your Perfect Rental?</h2>
+			<h2 class="font-display text-4xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">Ready to Find Your Perfect Las Vegas Rental Property?</h2>
 			<p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
-				Let me help you navigate the Las Vegas rental market and find the perfect property for your needs and budget.
+				Let me help you navigate the Las Vegas rental market and find the perfect property for your needs and budget. With deep knowledge of Las Vegas rental properties, market conditions, neighborhoods, and rental processes, I'll guide you through every step to secure your ideal rental home.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-6 justify-center">
 				<a href="/contact" class="group relative overflow-hidden bg-primary-600 text-white px-10 py-5 rounded-xl font-bold text-lg shadow-2xl hover:shadow-primary-600/30 transition-all duration-300 hover:scale-110 hover:-translate-y-1">

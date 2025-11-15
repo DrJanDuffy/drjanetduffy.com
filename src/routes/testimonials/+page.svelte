@@ -88,6 +88,12 @@
 <section class="section bg-white">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto">
+			<div class="mb-12 text-center">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Do Las Vegas Real Estate Clients Say About Dr. Janet Duffy?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
+					Las Vegas real estate clients consistently praise Dr. Janet Duffy for helping find dream homes in West Summerlin, selling homes above asking price through strategic marketing and negotiation, professional and knowledgeable service, guiding first-time buyers through every step, unmatched market knowledge for investment properties, and going above and beyond to ensure client success.
+				</p>
+			</div>
 			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
 				{#each testimonials as testimonial}
 					<div class="card relative">

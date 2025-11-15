@@ -84,8 +84,10 @@
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto">
 			<div class="text-center mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Market Trends</h2>
-				<p class="text-lg text-gray-600">Key indicators for Las Vegas real estate</p>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are the Current Las Vegas Real Estate Market Trends?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
+					Current Las Vegas real estate market trends show 2.1% monthly price appreciation, 98% list-to-sale ratio indicating strong seller market conditions, 1.2 months of inventory creating competitive buyer environment, and $285 price per square foot that reflects continued market strength and growth potential throughout the Las Vegas Valley.
+				</p>
 			</div>
 			
 			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -114,8 +116,10 @@
 <section class="section bg-gray-50">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-4xl mx-auto text-center">
-			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get Your Personalized Market Analysis</h2>
-			<p class="text-lg text-gray-600 mb-8">Understand your property's value in today's Las Vegas market</p>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Ready to Get Your Personalized Las Vegas Market Analysis?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+				Understand your property's value in today's Las Vegas market. With deep knowledge of current market trends, neighborhood data, and property values, I'll provide comprehensive market analysis to help you make informed real estate decisions whether you're buying, selling, or investing in Las Vegas.
+			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/home-value" class="btn-primary">Get Home Valuation</a>
 				<a href="/contact" class="btn-secondary">Schedule Consultation</a>

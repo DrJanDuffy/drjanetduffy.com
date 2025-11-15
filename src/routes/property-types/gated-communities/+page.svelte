@@ -66,9 +66,16 @@
 		</div>
 
 		<!-- Benefits -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Should You Choose a Gated Community in Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas gated communities offer 24/7 security, privacy and exclusivity, controlled access, enhanced property values, community amenities, peace of mind, prestigious locations, and well-maintained common areas that make them ideal for buyers seeking security, privacy, and premium lifestyle benefits.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose a Gated Community?</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
 				<ul class="space-y-4">
 					{#each benefits as benefit}
 						<li class="flex items-start gap-3">
@@ -80,15 +87,15 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Security Features</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Security Features</h3>
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
 							<Lock class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Controlled Access</h3>
-							<p class="text-gray-700">Gated entry with security personnel or keypad access</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Controlled Access Entry</h3>
+							<p class="text-gray-700">Gated entry with security personnel or keypad access ensures only authorized visitors enter</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -96,8 +103,8 @@
 							<Shield class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Enhanced Privacy</h3>
-							<p class="text-gray-700">Reduced traffic and limited access to residents and guests</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Enhanced Privacy and Security</h3>
+							<p class="text-gray-700">Reduced traffic and limited access to residents and guests provide enhanced privacy and security</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -105,8 +112,8 @@
 							<Award class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Property Values</h3>
-							<p class="text-gray-700">Gated communities typically maintain higher property values</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Strong Property Values</h3>
+							<p class="text-gray-700">Gated communities typically maintain higher property values and strong resale potential</p>
 						</div>
 					</div>
 				</div>
@@ -115,7 +122,10 @@
 
 		<!-- Featured Communities -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Featured Gated Communities</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Which Las Vegas Gated Communities Offer Premier Living?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas premier gated communities include The Ridges, Red Rock Country Club, Southern Highlands, and Seven Hills. Each community offers exclusive luxury living, 24/7 security, enhanced privacy, prestigious locations, and strong property values that attract discerning buyers seeking security and exclusivity.
+			</p>
 			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 				{#each communities as community}
 					<div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all">
@@ -129,7 +139,10 @@
 
 		<!-- Properties -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Homes in Gated Communities</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Homes Are Available in Las Vegas Gated Communities?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas gated communities offer luxury homes, custom estates, and upscale properties featuring 24/7 security, enhanced privacy, controlled access, and strong property values. Properties range from upscale homes to multi-million dollar estates in premier gated communities throughout the Las Vegas Valley.
+			</p>
 			{#if mounted && browser}
 				<div class="realscout-wrapper">
 					<realscout-office-listings 
@@ -162,9 +175,9 @@
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Interested in Gated Communities?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Dream Home in a Las Vegas Gated Community?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				Let me help you find your perfect home in a secure gated community
+				Let me help you find your perfect home in a secure gated community. With deep knowledge of Las Vegas gated communities, security features, and luxury properties, I'll guide you through every step of your home buying journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

@@ -172,12 +172,46 @@
 			</p>
 		</div>
 
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Real Estate Resources Are Available for Las Vegas Buyers and Sellers?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas real estate resources include comprehensive buying guides, selling guides, market insights, investment information, moving checklists, school district information, calculators, and expert services that help buyers, sellers, and investors navigate the Las Vegas real estate market with confidence and success.
+			</p>
+		</div>
+
 		<div class="space-y-16">
 			{#each resources as resource}
 				<div>
-					<div class="flex items-center gap-4 mb-8">
-						<svelte:component this={resource.icon} class="w-8 h-8 text-primary-600" />
-						<h2 class="text-3xl font-bold text-gray-900">{resource.category}</h2>
+					<div class="mb-6">
+						<div class="flex items-center gap-4 mb-4">
+							<svelte:component this={resource.icon} class="w-8 h-8 text-primary-600" />
+							<h2 class="text-3xl font-bold text-gray-900">{resource.category}</h2>
+						</div>
+						{#if resource.category === 'Buying Resources'}
+							<p class="text-gray-700 leading-relaxed max-w-3xl">
+								Essential resources for homebuyers including first-time buyer guides, buyer representation services, and mortgage guidance to help you successfully purchase your Las Vegas home.
+							</p>
+						{:else if resource.category === 'Selling Resources'}
+							<p class="text-gray-700 leading-relaxed max-w-3xl">
+								Comprehensive selling resources including home value calculators, seller representation services, pricing strategies, and home staging guides to maximize your home's value and appeal.
+							</p>
+						{:else if resource.category === 'Market Information'}
+							<p class="text-gray-700 leading-relaxed max-w-3xl">
+								Current market information including market insights, detailed quarterly reports, neighborhood guides, and past sales data to help you understand Las Vegas real estate trends.
+							</p>
+						{:else if resource.category === 'Moving & Relocation'}
+							<p class="text-gray-700 leading-relaxed max-w-3xl">
+								Moving and relocation resources including comprehensive moving checklists and relocation guides to help you smoothly transition to Las Vegas.
+							</p>
+						{:else if resource.category === 'Education'}
+							<p class="text-gray-700 leading-relaxed max-w-3xl">
+								Educational resources including school district information and top-rated schools to help families find the best educational opportunities in Las Vegas.
+							</p>
+						{:else if resource.category === 'Investment Resources'}
+							<p class="text-gray-700 leading-relaxed max-w-3xl">
+								Investment resources including comprehensive investment guides, real estate investing services, and property management services for investors seeking Las Vegas opportunities.
+							</p>
+						{/if}
 					</div>
 					
 					<div class="grid md:grid-cols-3 gap-6">
@@ -207,7 +241,10 @@
 
 		<!-- Additional Resources -->
 		<div class="mt-16 bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-white">
-			<h2 class="text-3xl font-bold mb-6 text-center">Need More Help?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">Need Additional Real Estate Help and Support?</h2>
+			<p class="text-lg text-white text-opacity-90 mb-8 max-w-3xl mx-auto text-center">
+				Access frequently asked questions, read client testimonials, and contact me directly for personalized assistance with your Las Vegas real estate needs.
+			</p>
 			<div class="grid md:grid-cols-3 gap-8">
 				<div class="text-center">
 					<FileText class="w-12 h-12 mx-auto mb-4 text-white opacity-90" />

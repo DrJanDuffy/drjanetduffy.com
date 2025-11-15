@@ -58,10 +58,17 @@
 			</p>
 		</div>
 
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Should You Rent or Buy a Home in Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Deciding whether to rent or buy in Las Vegas depends on monthly costs, down payment availability, interest rates, time period, and long-term financial goals. Use this calculator to compare total costs, equity building, and net ownership benefits to make an informed decision about your Las Vegas housing choice.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<!-- Input Form -->
 			<div class="bg-white rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-2xl font-bold text-gray-900 mb-6">Comparison Inputs</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Comparison Inputs</h3>
 				<div class="space-y-6">
 					<div>
 						<label for="monthlyRent" class="block text-sm font-semibold text-gray-700 mb-2">Monthly Rent</label>

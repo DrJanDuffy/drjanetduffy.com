@@ -75,9 +75,16 @@
 		</div>
 
 		<!-- Benefits -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Should You Consider Foreclosure Properties in Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas foreclosure properties offer below-market prices, investment opportunities, potential for equity, quick purchase process, as-is condition, cash buyer preference, fixer-upper potential, and portfolio diversification that make them attractive to investors, cash buyers, and buyers seeking value opportunities with specialized expertise.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Why Consider Foreclosures?</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
 				<ul class="space-y-4">
 					{#each benefits as benefit}
 						<li class="flex items-start gap-3">
@@ -89,15 +96,15 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">What to Know</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Important Considerations</h3>
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
 							<AlertCircle class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">As-Is Condition</h3>
-							<p class="text-gray-700">Properties are sold without warranties or repairs</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">As-Is Property Condition</h3>
+							<p class="text-gray-700">Properties are sold without warranties or repairs, requiring thorough inspection and potential renovation costs</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -105,8 +112,8 @@
 							<DollarSign class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Financing Challenges</h3>
-							<p class="text-gray-700">Many require cash or specialized financing</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Financing Challenges and Requirements</h3>
+							<p class="text-gray-700">Many foreclosure properties require cash purchases or specialized financing, limiting buyer options</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -114,8 +121,8 @@
 							<TrendingUp class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Due Diligence</h3>
-							<p class="text-gray-700">Thorough inspection and research essential</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Essential Due Diligence Process</h3>
+							<p class="text-gray-700">Thorough inspection, title research, and property condition assessment are essential before purchase</p>
 						</div>
 					</div>
 				</div>
@@ -124,7 +131,10 @@
 
 		<!-- Properties -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Foreclosure Properties Available</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Foreclosure Properties Are Available in Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas foreclosure properties include single-family homes, condos, and townhomes sold as-is at below-market prices. Properties require cash purchases or specialized financing and offer investment opportunities for qualified buyers seeking value and potential equity gains.
+			</p>
 			{#if mounted && browser}
 				<div class="realscout-wrapper">
 					<realscout-office-listings 
@@ -157,9 +167,9 @@
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Interested in Foreclosure Properties?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Explore Foreclosure Investment Opportunities in Las Vegas?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				I can help you navigate the foreclosure process and identify investment opportunities
+				I can help you navigate the foreclosure process and identify investment opportunities. With deep knowledge of Las Vegas foreclosure markets, distressed properties, and specialized transaction expertise, I'll guide you through every step of your foreclosure purchase journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

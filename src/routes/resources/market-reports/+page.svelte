@@ -85,7 +85,10 @@
 
 		<!-- Current Market Trends -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Current Market Trends</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Are the Current Las Vegas Real Estate Market Trends?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas real estate market trends show strong price appreciation at 8.5% year-over-year, fast-moving market with 19 days on market, low inventory levels at 1.2 months supply creating a seller's market, and stable sales volume with consistent transaction activity that indicates continued market strength.
+			</p>
 			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 				{#each trends as trend}
 					<div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 text-center">
@@ -102,7 +105,10 @@
 
 		<!-- Quarterly Data -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Quarterly Market Data</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Does Quarterly Las Vegas Market Data Show?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Quarterly Las Vegas market data shows consistent price growth from $545K in Q2 2024 to $575K in Q4 2024, decreasing days on market from 25 to 19 days, stable inventory levels around 400-450 homes, and months supply remaining low at 1.2-1.4 months indicating strong seller market conditions.
+			</p>
 			<div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
 				<div class="overflow-x-auto">
 					<table class="w-full">
@@ -139,9 +145,16 @@
 		</div>
 
 		<!-- Market Analysis -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Is the Las Vegas Real Estate Market Outlook?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				The Las Vegas real estate market outlook shows strong fundamentals with steady price appreciation, low inventory levels favoring sellers, competitive conditions for buyers, and continued growth potential driven by job growth, population expansion, and economic resilience.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Market Outlook</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Market Outlook Analysis</h3>
 				<p class="text-gray-700 leading-relaxed mb-4">
 					The Las Vegas real estate market continues to show strong fundamentals with steady price appreciation and low inventory levels. The market remains favorable for sellers, with homes selling quickly and often above asking price.
 				</p>
@@ -151,33 +164,34 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Key Factors</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Market Factors</h3>
 				<ul class="space-y-4">
 					<li class="flex items-start gap-3">
 						<DollarSign class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" />
-						<span class="text-gray-700">Strong job growth and economic expansion</span>
+						<span class="text-gray-700">Strong job growth and economic expansion drive housing demand and support price appreciation</span>
 					</li>
 					<li class="flex items-start gap-3">
 						<Home class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" />
-						<span class="text-gray-700">Limited new construction keeping inventory low</span>
+						<span class="text-gray-700">Limited new construction keeping inventory low creates competitive conditions for buyers</span>
 					</li>
 					<li class="flex items-start gap-3">
 						<TrendingUp class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" />
-						<span class="text-gray-700">Continued population growth and demand</span>
+						<span class="text-gray-700">Continued population growth and demand maintain strong market fundamentals</span>
 					</li>
 					<li class="flex items-start gap-3">
 						<Calendar class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" />
-						<span class="text-gray-700">Seasonal patterns affecting market activity</span>
+						<span class="text-gray-700">Seasonal patterns affecting market activity create opportunities for strategic buyers and sellers</span>
 					</li>
 				</ul>
 			</div>
 		</div>
+		</div>
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Need Personalized Market Analysis?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Get Your Personalized Las Vegas Market Analysis?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				Get a detailed market report for your specific property or neighborhood
+				Get a detailed market report for your specific property or neighborhood. With deep knowledge of Las Vegas market trends, neighborhood data, and property values, I'll provide comprehensive market analysis to guide your real estate decisions.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/home-value" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Get Home Value</a>

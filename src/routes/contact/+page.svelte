@@ -78,7 +78,10 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, MessageCircle } from 'lucide-s
 			<!-- Enhanced Contact Information -->
 			<div class="space-y-6">
 				<div class="bg-gradient-to-br from-white via-primary-50/20 to-white rounded-3xl shadow-xl p-8 border border-gray-200/50 backdrop-blur-sm">
-					<h2 class="font-display text-3xl font-bold mb-8 text-gray-900" style="letter-spacing: -0.02em;">Get in Touch</h2>
+					<h2 class="font-display text-3xl font-bold mb-4 text-gray-900" style="letter-spacing: -0.02em;">How Can You Get in Touch With Dr. Janet Duffy?</h2>
+					<p class="text-gray-700 mb-8 leading-relaxed">
+						Get in touch with Dr. Janet Duffy by phone at 702-500-1955 (available 7 days a week), email at info@drjanetduffy.com (response within 24 hours), visiting the office at 1980 Festival Plaza Drive Suite 300 in Las Vegas, or using the contact form to discuss your Las Vegas real estate needs.
+					</p>
 					
 					<div class="space-y-6">
 						<a href="tel:+17025001955" class="group flex items-start gap-4 p-4 rounded-2xl hover:bg-white/80 transition-all duration-300 hover:shadow-md">
@@ -140,7 +143,10 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, MessageCircle } from 'lucide-s
 				</div>
 				
 				<div class="bg-gradient-to-br from-white via-primary-50/20 to-white rounded-3xl shadow-xl p-8 border border-gray-200/50 backdrop-blur-sm">
-					<h3 class="font-display text-2xl font-bold mb-6 text-gray-900">Why Choose Dr. Jan Duffy?</h3>
+					<h3 class="font-display text-2xl font-bold mb-4 text-gray-900">Why Should You Choose Dr. Janet Duffy?</h3>
+					<p class="text-gray-700 mb-6 leading-relaxed text-sm">
+						Choose Dr. Janet Duffy for local market expertise, proven track record, personalized service, and free consultation that helps Las Vegas buyers, sellers, and investors achieve their real estate goals with exceptional results and dedicated support.
+					</p>
 					<ul class="space-y-4">
 						<li class="flex items-center gap-4 p-3 rounded-xl hover:bg-white/50 transition-colors">
 							<div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">

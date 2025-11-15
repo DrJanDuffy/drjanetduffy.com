@@ -59,14 +59,21 @@
 		</div>
 
 		<!-- About North Las Vegas -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Makes North Las Vegas an Affordable Home Buying Opportunity?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				North Las Vegas is one of Nevada's fastest-growing cities, offering affordable housing and a strong economy. Located just north of Las Vegas, the city provides residents with easy access to employment centers, entertainment, and amenities while maintaining lower housing costs through new master-planned communities, excellent schools, and ongoing infrastructure improvements.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">About North Las Vegas</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Community Overview</h3>
 				<p class="text-gray-700 leading-relaxed mb-4">
-					North Las Vegas is one of Nevada's fastest-growing cities, offering affordable housing and a strong economy. Located just north of Las Vegas, the city provides residents with easy access to employment centers, entertainment, and amenities while maintaining lower housing costs.
+					North Las Vegas features new master-planned communities, excellent schools, and numerous parks and recreational facilities. With ongoing development and infrastructure improvements, the area represents excellent value for homebuyers and investors seeking affordable housing in the Las Vegas area.
 				</p>
 				<p class="text-gray-700 leading-relaxed mb-6">
-					The area features new master-planned communities, excellent schools, and numerous parks and recreational facilities. With ongoing development and infrastructure improvements, North Las Vegas represents excellent value for homebuyers and investors.
+					The city's rapid growth has created opportunities for new construction, established neighborhoods, and diverse housing options that appeal to first-time buyers, growing families, and investors seeking value and growth potential.
 				</p>
 				<ul class="space-y-3">
 					{#each features as feature}
@@ -79,15 +86,15 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Why Choose North Las Vegas?</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
 							<DollarSign class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Affordability</h3>
-							<p class="text-gray-700">Lower home prices compared to Las Vegas and Henderson</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Affordable Housing Options</h3>
+							<p class="text-gray-700">Lower home prices compared to Las Vegas and Henderson, making homeownership accessible</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -95,8 +102,8 @@
 							<TrendingUp class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Growth Potential</h3>
-							<p class="text-gray-700">Rapid development and increasing property values</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Strong Growth Potential</h3>
+							<p class="text-gray-700">Rapid development and increasing property values create excellent investment opportunities</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -104,8 +111,8 @@
 							<Users class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">Family-Friendly</h3>
-							<p class="text-gray-700">Great schools, parks, and safe neighborhoods</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Family-Friendly Environment</h3>
+							<p class="text-gray-700">Great schools, parks, safe neighborhoods, and community amenities for families</p>
 						</div>
 					</div>
 				</div>
@@ -114,7 +121,10 @@
 
 		<!-- Properties -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Properties in North Las Vegas</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Properties Are Available in North Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				North Las Vegas offers diverse property types including new construction homes, established single-family homes, townhomes, and condos. Properties provide excellent value with affordable pricing, modern amenities, and access to growing neighborhoods with strong investment potential.
+			</p>
 			{#if mounted && browser}
 				<div class="realscout-wrapper">
 					<realscout-office-listings 
@@ -147,9 +157,9 @@
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Interested in North Las Vegas Real Estate?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Dream Home in North Las Vegas?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				Let me help you find your perfect home in North Las Vegas
+				Let me help you find your perfect home in North Las Vegas. With deep knowledge of the area's neighborhoods, new developments, and market conditions, I'll guide you through every step of your home buying journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

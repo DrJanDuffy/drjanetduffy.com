@@ -75,9 +75,16 @@
 		</div>
 
 		<!-- Benefits -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Should You Consider Short Sale Properties in Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas short sale properties offer below-market prices, negotiated deals with lenders, potential savings, investment opportunities, less competition, longer timeline, lender approval requirements, and professional guidance needs that make them attractive to patient buyers and investors seeking value with specialized expertise.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Why Consider Short Sales?</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
 				<ul class="space-y-4">
 					{#each benefits as benefit}
 						<li class="flex items-start gap-3">
@@ -89,15 +96,15 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">The Short Sale Process</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">The Short Sale Process</h3>
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
 							<FileText class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">1. Offer Submission</h3>
-							<p class="text-gray-700">Submit offer to seller, who presents to lender</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Step 1: Offer Submission and Documentation</h3>
+							<p class="text-gray-700">Submit offer to seller with required documentation, who then presents complete package to lender for review</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -105,8 +112,8 @@
 							<AlertCircle class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">2. Lender Review</h3>
-							<p class="text-gray-700">Lender evaluates offer and seller's financial hardship</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Step 2: Lender Review and Financial Hardship Evaluation</h3>
+							<p class="text-gray-700">Lender evaluates offer, seller's financial hardship documentation, and property value to determine approval</p>
 						</div>
 					</div>
 					<div class="flex items-start gap-4">
@@ -114,8 +121,8 @@
 							<TrendingUp class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
-							<h3 class="text-xl font-bold text-gray-900 mb-2">3. Approval & Closing</h3>
-							<p class="text-gray-700">Once approved, proceed to closing (typically 30-45 days)</p>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Step 3: Lender Approval and Closing Process</h3>
+							<p class="text-gray-700">Once lender approves short sale, proceed to closing process which typically takes 30-45 days after approval</p>
 						</div>
 					</div>
 				</div>
@@ -124,7 +131,10 @@
 
 		<!-- Properties -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Short Sale Properties Available</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Short Sale Properties Are Available in Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Las Vegas short sale properties include single-family homes, condos, and townhomes sold below mortgage balance with lender approval. Properties offer below-market prices but require longer timelines, lender approval, and specialized expertise to navigate the complex transaction process.
+			</p>
 			{#if mounted && browser}
 				<div class="realscout-wrapper">
 					<realscout-office-listings 
@@ -157,9 +167,9 @@
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Interested in Short Sale Properties?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Explore Short Sale Opportunities in Las Vegas?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				I have extensive experience navigating short sales and can help you through the process
+				I have extensive experience navigating short sales and can help you through the process. With deep knowledge of Las Vegas short sale markets, lender negotiations, and distressed property transactions, I'll guide you through every step of your short sale purchase journey.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>
