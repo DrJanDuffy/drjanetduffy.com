@@ -15,16 +15,16 @@
 		{ url: '/listings-list', title: 'Property List View', description: 'View properties in list format', category: 'Properties' },
 		{ url: '/past-sales', title: 'Past Sales', description: 'View past sales history', category: 'Properties' },
 		
-		// Major Communities
-		{ url: '/communities/summerlin', title: 'Summerlin', description: 'Luxury homes in Summerlin', category: 'Communities' },
-		{ url: '/communities/henderson', title: 'Henderson', description: 'Henderson real estate', category: 'Communities' },
-		{ url: '/communities/green-valley', title: 'Green Valley', description: 'Green Valley homes', category: 'Communities' },
-		{ url: '/communities/north-las-vegas', title: 'North Las Vegas', description: 'North Las Vegas real estate', category: 'Communities' },
-		{ url: '/communities/boulder-city', title: 'Boulder City', description: 'Boulder City homes', category: 'Communities' },
-		{ url: '/communities/seven-hills', title: 'Seven Hills', description: 'Seven Hills community', category: 'Communities' },
-		{ url: '/communities/southern-highlands', title: 'Southern Highlands', description: 'Southern Highlands homes', category: 'Communities' },
-		{ url: '/communities/mountains-edge', title: 'Mountains Edge', description: 'Mountains Edge community', category: 'Communities' },
-		{ url: '/communities/anthem', title: 'Anthem', description: 'Anthem Country Club', category: 'Communities' },
+		// Major Communities (pointing to properties page with filters)
+		{ url: '/properties?neighborhood=summerlin', title: 'Summerlin', description: 'Luxury homes in Summerlin', category: 'Communities' },
+		{ url: '/properties?neighborhood=henderson', title: 'Henderson', description: 'Henderson real estate', category: 'Communities' },
+		{ url: '/properties?neighborhood=green-valley', title: 'Green Valley', description: 'Green Valley homes', category: 'Communities' },
+		{ url: '/properties?neighborhood=north-las-vegas', title: 'North Las Vegas', description: 'North Las Vegas real estate', category: 'Communities' },
+		{ url: '/properties?neighborhood=boulder-city', title: 'Boulder City', description: 'Boulder City homes', category: 'Communities' },
+		{ url: '/properties?neighborhood=seven-hills', title: 'Seven Hills', description: 'Seven Hills community', category: 'Communities' },
+		{ url: '/properties?neighborhood=southern-highlands', title: 'Southern Highlands', description: 'Southern Highlands homes', category: 'Communities' },
+		{ url: '/properties?neighborhood=mountains-edge', title: 'Mountains Edge', description: 'Mountains Edge community', category: 'Communities' },
+		{ url: '/properties?neighborhood=anthem', title: 'Anthem', description: 'Anthem Country Club', category: 'Communities' },
 		
 		// Property Types
 		{ url: '/properties/homes', title: 'Single Family Homes', description: 'Browse single family homes', category: 'Properties' },
