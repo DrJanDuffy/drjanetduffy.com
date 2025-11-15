@@ -1,5 +1,5 @@
 <script>
-	import { MapPin, Home, Award, CheckCircle, DollarSign, Users, Golf } from 'lucide-svelte';
+	import { MapPin, Home, Award, CheckCircle, DollarSign, Users, Flag } from 'lucide-svelte';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
 	
@@ -83,7 +83,7 @@
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
-							<Golf class="w-6 h-6 text-primary-600" />
+							<Flag class="w-6 h-6 text-primary-600" />
 						</div>
 						<div>
 							<h3 class="text-xl font-bold text-gray-900 mb-2">Golf Course Living</h3>
