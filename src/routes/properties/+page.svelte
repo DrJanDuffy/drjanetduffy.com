@@ -1,6 +1,7 @@
 <script>
 import { onMount } from 'svelte';
 import { browser } from '$app/environment';
+import { Grid3x3, List, TrendingUp } from 'lucide-svelte';
 
 let mounted = false;
 
@@ -95,7 +96,7 @@ const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 			<a href="/listings-embedded" class="group relative bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2">
 				<div class="text-center">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-						<span class="text-3xl">📊</span>
+						<Grid3x3 class="w-8 h-8 text-white" />
 					</div>
 					<h3 class="font-display text-xl font-bold mb-2 text-gray-900">Grid View</h3>
 					<p class="text-gray-600 text-sm">Browse properties in a visual grid layout</p>
@@ -104,7 +105,7 @@ const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 			<a href="/listings-list" class="group relative bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2">
 				<div class="text-center">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-						<span class="text-3xl">📋</span>
+						<List class="w-8 h-8 text-white" />
 					</div>
 					<h3 class="font-display text-xl font-bold mb-2 text-gray-900">List View</h3>
 					<p class="text-gray-600 text-sm">View detailed property information in list format</p>
@@ -113,7 +114,7 @@ const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 			<a href="/past-sales" class="group relative bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2">
 				<div class="text-center">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-						<span class="text-3xl">📈</span>
+						<TrendingUp class="w-8 h-8 text-white" />
 					</div>
 					<h3 class="font-display text-xl font-bold mb-2 text-gray-900">Past Sales</h3>
 					<p class="text-gray-600 text-sm">Explore recently sold properties and market trends</p>

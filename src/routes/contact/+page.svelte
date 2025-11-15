@@ -1,6 +1,6 @@
 <script>
 import ContactForm from '$lib/components/ContactForm.svelte';
-import { Phone, Mail, MapPin, Clock, CheckCircle } from 'lucide-svelte';
+import { Phone, Mail, MapPin, Clock, CheckCircle, MessageCircle } from 'lucide-svelte';
 </script>
 
 <svelte:head>
@@ -53,7 +53,7 @@ import { Phone, Mail, MapPin, Clock, CheckCircle } from 'lucide-svelte';
 	<div class="container-premium relative z-10">
 		<div class="text-center mb-16">
 			<div class="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-semibold mb-6">
-				<span>💬</span>
+				<MessageCircle class="w-4 h-4" />
 				<span>Let's Connect</span>
 			</div>
 			<h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">

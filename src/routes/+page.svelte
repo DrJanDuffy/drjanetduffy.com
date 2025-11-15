@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
-	import { Search, ChevronRight, Heart, MapPin, Home, Bath, Square, Phone, Mail, Clock, CheckCircle, Star } from 'lucide-svelte';
+	import { Search, ChevronRight, Heart, MapPin, Home, Bath, Square, Phone, Mail, Clock, CheckCircle, Star, Trophy, Target, DollarSign, Key, BarChart3, Award } from 'lucide-svelte';
 </script>
 
 <svelte:head>
@@ -68,7 +68,7 @@
 			<!-- Hero Content -->
 			<div class="text-center mb-12 animate-fade-in">
 				<div class="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-semibold mb-6">
-					<span>🏆</span>
+					<Trophy class="w-4 h-4" />
 					<span>15+ Years of Excellence</span>
 				</div>
 				<h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 tracking-tight leading-tight">
@@ -87,7 +87,8 @@
 						<div class="md:col-span-2">
 							<label class="block text-sm font-semibold text-gray-700 mb-2">
 								<span class="flex items-center gap-2">
-									📍 Location
+									<MapPin class="w-4 h-4" />
+									Location
 								</span>
 							</label>
 							<input 
@@ -99,7 +100,8 @@
 						<div>
 							<label class="block text-sm font-semibold text-gray-700 mb-2">
 								<span class="flex items-center gap-2">
-									🏠 Property Type
+									<Home class="w-4 h-4" />
+									Property Type
 								</span>
 							</label>
 							<select class="w-full px-4 py-3.5 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white transition-all duration-200 hover:border-gray-300 cursor-pointer">
@@ -113,7 +115,8 @@
 						<div>
 							<label class="block text-sm font-semibold text-gray-700 mb-2">
 								<span class="flex items-center gap-2">
-									💰 Price Range
+									<DollarSign class="w-4 h-4" />
+									Price Range
 								</span>
 							</label>
 							<select class="w-full px-4 py-3.5 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white transition-all duration-200 hover:border-gray-300 cursor-pointer">
@@ -401,7 +404,7 @@
 			<div class="grid md:grid-cols-3 gap-8 lg:gap-10">
 				<div class="group text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 hover:border-primary-300 transform hover:-translate-y-1">
 					<div class="w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-						<span class="text-4xl">🏆</span>
+						<Trophy class="w-10 h-10 text-white" />
 					</div>
 					<h3 class="text-2xl font-bold text-gray-900 mb-3">15+ Years Experience</h3>
 					<p class="text-gray-600 leading-relaxed">
@@ -410,7 +413,7 @@
 				</div>
 				<div class="group text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 hover:border-primary-300 transform hover:-translate-y-1">
 					<div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-						<span class="text-4xl">🎯</span>
+						<Target class="w-10 h-10 text-white" />
 					</div>
 					<h3 class="text-2xl font-bold text-gray-900 mb-3">Expert Guidance</h3>
 					<p class="text-gray-600 leading-relaxed">
@@ -419,7 +422,7 @@
 				</div>
 				<div class="group text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 hover:border-primary-300 transform hover:-translate-y-1">
 					<div class="w-20 h-20 bg-gradient-to-br from-primary-600 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
-						<span class="text-4xl">📍</span>
+						<MapPin class="w-10 h-10 text-white" />
 					</div>
 					<h3 class="text-2xl font-bold text-gray-900 mb-3">Local Expertise</h3>
 					<p class="text-gray-600 leading-relaxed">
@@ -442,28 +445,28 @@
 			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 				<a href="/properties" class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-200 group">
 					<div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-600 transition-colors">
-						<span class="text-2xl">🏠</span>
+						<Home class="w-6 h-6 text-primary-600 group-hover:text-white transition-colors" />
 					</div>
 					<h3 class="text-lg font-bold text-gray-900 mb-2">Buying</h3>
 					<p class="text-gray-600 text-sm">Find your perfect home with expert guidance</p>
 				</a>
 				<a href="/home-value" class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-200 group">
 					<div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-600 transition-colors">
-						<span class="text-2xl">💰</span>
+						<DollarSign class="w-6 h-6 text-primary-600 group-hover:text-white transition-colors" />
 					</div>
 					<h3 class="text-lg font-bold text-gray-900 mb-2">Selling</h3>
 					<p class="text-gray-600 text-sm">Maximize your home's value</p>
 				</a>
 				<a href="/rentals" class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-200 group">
 					<div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-600 transition-colors">
-						<span class="text-2xl">🔑</span>
+						<Key class="w-6 h-6 text-primary-600 group-hover:text-white transition-colors" />
 					</div>
 					<h3 class="text-lg font-bold text-gray-900 mb-2">Rentals</h3>
 					<p class="text-gray-600 text-sm">Luxury rental properties</p>
 				</a>
 				<a href="/properties" class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-200 group">
 					<div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-600 transition-colors">
-						<span class="text-2xl">📊</span>
+						<BarChart3 class="w-6 h-6 text-primary-600 group-hover:text-white transition-colors" />
 					</div>
 					<h3 class="text-lg font-bold text-gray-900 mb-2">Investments</h3>
 					<p class="text-gray-600 text-sm">Build your portfolio</p>
