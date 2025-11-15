@@ -28,11 +28,15 @@ const routes = [
 	// Community Pages
 	{ url: 'communities/summerlin', priority: '0.8', changefreq: 'weekly' },
 	{ url: 'communities/henderson', priority: '0.8', changefreq: 'weekly' },
+	{ url: 'communities/green-valley', priority: '0.8', changefreq: 'weekly' },
 	
 	// Property Type Pages
 	{ url: 'property-types/luxury-homes', priority: '0.8', changefreq: 'weekly' },
 	{ url: 'property-types/condos', priority: '0.8', changefreq: 'weekly' },
 	{ url: 'property-types/single-family', priority: '0.8', changefreq: 'weekly' },
+	{ url: 'property-types/townhomes', priority: '0.8', changefreq: 'weekly' },
+	{ url: 'property-types/new-construction', priority: '0.8', changefreq: 'weekly' },
+	{ url: 'property-types/gated-communities', priority: '0.8', changefreq: 'weekly' },
 	
 	// Property Search Pages
 	{ url: 'listings-embedded', priority: '0.8', changefreq: 'daily' },

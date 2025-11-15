@@ -25,11 +25,15 @@
 		// Communities
 		{ url: '/communities/summerlin', title: 'Summerlin Real Estate', description: 'Luxury master-planned community', category: 'Communities' },
 		{ url: '/communities/henderson', title: 'Henderson Real Estate', description: 'Family-friendly community', category: 'Communities' },
+		{ url: '/communities/green-valley', title: 'Green Valley Real Estate', description: 'Established Henderson community', category: 'Communities' },
 		
 		// Property Types
 		{ url: '/property-types/luxury-homes', title: 'Luxury Homes', description: 'Exclusive luxury properties', category: 'Properties' },
 		{ url: '/property-types/condos', title: 'Condos & Townhomes', description: 'Affordable condos and townhomes', category: 'Properties' },
 		{ url: '/property-types/single-family', title: 'Single Family Homes', description: 'Spacious single family homes', category: 'Properties' },
+		{ url: '/property-types/townhomes', title: 'Townhomes', description: 'Low-maintenance townhomes', category: 'Properties' },
+		{ url: '/property-types/new-construction', title: 'New Construction', description: 'Brand new homes', category: 'Properties' },
+		{ url: '/property-types/gated-communities', title: 'Gated Communities', description: 'Secure gated communities', category: 'Properties' },
 		
 		// Property Search
 		{ url: '/listings-embedded', title: 'Property Grid View', description: 'View properties in grid format', category: 'Properties' },
