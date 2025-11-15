@@ -10,12 +10,6 @@ onMount(() => {
 </script>
 
 <svelte:head>
-	<title>Property Listings - Alternative View | Dr. Jan Duffy REALTOR</title>
-	<meta name="description" content="Browse Las Vegas property listings with our alternative presentation view. See active, pending, and sold properties in a different format." />
-	<meta name="keywords" content="Las Vegas listings, property search, alternative view, real estate listings" />
-</svelte:head>
-
-<svelte:head>
 	<title>Property Listings - Grid View | Dr. Janet Duffy REALTOR®</title>
 	<meta name="description" content="Browse Las Vegas property listings with our grid view. See active, pending, and sold properties in a visual grid format." />
 	<meta name="keywords" content="Las Vegas listings, property search, grid view, real estate listings" />

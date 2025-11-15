@@ -7,32 +7,6 @@ import ContactForm from '$lib/components/ContactForm.svelte';
 	<meta name="description" content="Contact Dr. Janet Duffy, REALTOR® for luxury Las Vegas real estate expertise. Direct: 702-222-1964 | drduffy@bhhsnv.com. West Summerlin specialist for executives and California relocations." />
 	<meta name="keywords" content="Dr. Janet Duffy REALTOR, Berkshire Hathaway Nevada Properties, luxury Las Vegas real estate, West Summerlin, executive relocation, 702-222-1964" />
 	
-	<!-- Schema.org structured data -->
-	<script type="application/ld+json">
-	{
-		"@context": "https://schema.org",
-		"@type": "ContactPage",
-		"mainEntity": {
-			"@type": "RealEstateAgent",
-					"name": "Dr. Janet Duffy",
-		"telephone": "702-222-1964",
-		"email": "drduffy@bhhsnv.com",
-			"address": {
-				"@type": "PostalAddress",
-				"addressLocality": "Las Vegas",
-				"addressRegion": "NV",
-				"addressCountry": "US"
-			}
-		}
-	}
-	</script>
-</svelte:head>
-
-<svelte:head>
-	<title>Contact Dr. Janet Duffy, REALTOR® | Berkshire Hathaway Nevada Properties</title>
-	<meta name="description" content="Contact Dr. Janet Duffy, REALTOR® for luxury Las Vegas real estate expertise. Direct: 702-222-1964 | drduffy@bhhsnv.com. West Summerlin specialist for executives and California relocations." />
-	<meta name="keywords" content="Dr. Janet Duffy REALTOR, Berkshire Hathaway Nevada Properties, luxury Las Vegas real estate, West Summerlin, executive relocation, 702-222-1964" />
-	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://drjanetduffy.com/contact" />
