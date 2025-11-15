@@ -27,7 +27,7 @@
 			</a>
 			
 			<!-- Navigation Menu - Always visible horizontally -->
-			<nav class="flex items-center flex-1 justify-end sm:justify-center mx-2 sm:mx-4 lg:mx-8 overflow-x-auto" role="navigation" aria-label="Main navigation">
+			<nav class="flex items-center flex-1 justify-end sm:justify-center mx-2 sm:mx-4 lg:mx-8 overflow-x-auto" aria-label="Main navigation">
 				<div class="flex items-center space-x-2 sm:space-x-4 lg:space-x-8">
 					{#each navItems as item}
 						<a
