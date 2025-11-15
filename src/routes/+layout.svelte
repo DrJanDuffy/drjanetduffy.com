@@ -120,6 +120,7 @@
 							<li><a href="/relocation" class="text-gray-400 hover:text-white transition-colors">Relocation</a></li>
 							<li><a href="/resources" class="text-gray-400 hover:text-white transition-colors">Resources</a></li>
 							<li><a href="/faq" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
+							<li><a href="/mortgage-calculator" class="text-gray-400 hover:text-white transition-colors">Mortgage Calculator</a></li>
 							<li><a href="/testimonials" class="text-gray-400 hover:text-white transition-colors">Testimonials</a></li>
 							<li><a href="/market-insights" class="text-gray-400 hover:text-white transition-colors">Market Insights</a></li>
 						</ul>

@@ -20,6 +20,16 @@
 		{ url: '/investment-guide', title: 'Investment Guide', description: 'Real estate investment guide', category: 'Resources' },
 		{ url: '/buying-guide', title: 'Buying Guide', description: 'Complete home buying guide', category: 'Resources' },
 		{ url: '/selling-guide', title: 'Selling Guide', description: 'Complete home selling guide', category: 'Resources' },
+		{ url: '/mortgage-calculator', title: 'Mortgage Calculator', description: 'Calculate your monthly mortgage payment', category: 'Resources' },
+		
+		// Communities
+		{ url: '/communities/summerlin', title: 'Summerlin Real Estate', description: 'Luxury master-planned community', category: 'Communities' },
+		{ url: '/communities/henderson', title: 'Henderson Real Estate', description: 'Family-friendly community', category: 'Communities' },
+		
+		// Property Types
+		{ url: '/property-types/luxury-homes', title: 'Luxury Homes', description: 'Exclusive luxury properties', category: 'Properties' },
+		{ url: '/property-types/condos', title: 'Condos & Townhomes', description: 'Affordable condos and townhomes', category: 'Properties' },
+		{ url: '/property-types/single-family', title: 'Single Family Homes', description: 'Spacious single family homes', category: 'Properties' },
 		
 		// Property Search
 		{ url: '/listings-embedded', title: 'Property Grid View', description: 'View properties in grid format', category: 'Properties' },

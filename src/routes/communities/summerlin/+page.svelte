@@ -1,5 +1,5 @@
 <script>
-	import { MapPin, Home, Award, TrendingUp, DollarSign, Users, Camera } from 'lucide-svelte';
+	import { MapPin, Home, Award, TrendingUp, DollarSign, Users, Camera, CheckCircle } from 'lucide-svelte';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
 	

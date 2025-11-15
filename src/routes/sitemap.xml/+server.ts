@@ -23,6 +23,16 @@ const routes = [
 	{ url: 'investment-guide', priority: '0.7', changefreq: 'monthly' },
 	{ url: 'buying-guide', priority: '0.7', changefreq: 'monthly' },
 	{ url: 'selling-guide', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'mortgage-calculator', priority: '0.6', changefreq: 'monthly' },
+	
+	// Community Pages
+	{ url: 'communities/summerlin', priority: '0.8', changefreq: 'weekly' },
+	{ url: 'communities/henderson', priority: '0.8', changefreq: 'weekly' },
+	
+	// Property Type Pages
+	{ url: 'property-types/luxury-homes', priority: '0.8', changefreq: 'weekly' },
+	{ url: 'property-types/condos', priority: '0.8', changefreq: 'weekly' },
+	{ url: 'property-types/single-family', priority: '0.8', changefreq: 'weekly' },
 	
 	// Property Search Pages
 	{ url: 'listings-embedded', priority: '0.8', changefreq: 'daily' },
