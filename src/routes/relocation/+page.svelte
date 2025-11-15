@@ -1,5 +1,5 @@
 <script>
-	import { MapPin, Plane, Home, Users, CheckCircle, Building2 } from 'lucide-svelte';
+	import { MapPin, Plane, Home, Users, CheckCircle, Building2, DollarSign } from 'lucide-svelte';
 </script>
 
 <svelte:head>

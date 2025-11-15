@@ -40,10 +40,20 @@
 			</p>
 		</div>
 
+		<div class="mb-12 text-center">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How Can You Calculate Your Las Vegas Mortgage Payment?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
+				Calculate your Las Vegas mortgage payment by entering home price, down payment percentage, interest rate, and loan term. The calculator provides monthly payment, total interest, and total cost estimates to help you understand your financing options and plan your Las Vegas home purchase budget.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-2 gap-12 mb-16">
 			<!-- Calculator Form -->
 			<div class="bg-white rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-2xl font-bold text-gray-900 mb-6">Loan Details</h2>
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">What Loan Details Do You Need to Enter?</h3>
+				<p class="text-gray-700 mb-6 leading-relaxed text-sm">
+					Enter loan details including home price, down payment percentage, interest rate, and loan term (15 or 30 years) to calculate your monthly mortgage payment and understand total financing costs for your Las Vegas home purchase.
+				</p>
 				<div class="space-y-6">
 					<div>
 						<label for="homePrice" class="block text-sm font-semibold text-gray-700 mb-2">
@@ -125,7 +135,10 @@
 
 			<!-- Results -->
 			<div class="bg-gradient-to-br from-primary-600 to-primary-700 rounded-2xl p-10 shadow-lg text-white">
-				<h2 class="text-2xl font-bold mb-6">Monthly Payment</h2>
+				<h3 class="text-2xl font-bold mb-6">What Is Your Estimated Monthly Payment?</h3>
+				<p class="text-white text-opacity-90 mb-6 text-sm leading-relaxed">
+					Your estimated monthly payment includes principal and interest based on your loan details. Review total interest and total cost to understand the full financial commitment of your Las Vegas mortgage.
+				</p>
 				<div class="text-5xl font-bold mb-8">{formatCurrency(monthlyPayment)}</div>
 				
 				<div class="space-y-4 bg-white/10 rounded-xl p-6 backdrop-blur-sm">
@@ -150,6 +163,13 @@
 		</div>
 
 		<!-- Loan Types Info -->
+		<div class="mb-12 text-center">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Mortgage Loan Types Are Available for Las Vegas Home Buyers?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
+				Mortgage loan types available for Las Vegas home buyers include conventional loans with 20% down payment, FHA loans with 3.5% down payment for first-time buyers, and VA loans with 0% down payment for veterans and active military. Each loan type offers different requirements, benefits, and eligibility criteria to match your financial situation and home buying goals.
+			</p>
+		</div>
+
 		<div class="grid md:grid-cols-3 gap-6 mb-16">
 			<div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
 				<h3 class="text-lg font-bold text-gray-900 mb-3">Conventional Loans</h3>
@@ -172,9 +192,9 @@
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl font-bold mb-4">Need Help With Financing?</h2>
-			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				I can connect you with trusted lenders and help you understand your financing options
+			<h2 class="text-3xl font-bold mb-6">Need Help With Las Vegas Mortgage Financing?</h2>
+			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto leading-relaxed">
+				I can connect you with trusted lenders and help you understand your financing options. With deep knowledge of Las Vegas mortgage programs, loan types, and lender networks, I'll guide you through pre-approval, loan selection, and financing strategies to secure the best mortgage terms for your Las Vegas home purchase.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Get Pre-Approved</a>

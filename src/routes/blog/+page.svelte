@@ -76,10 +76,16 @@
 
 <div class="container mx-auto px-4 py-8 max-w-6xl">
 	<div class="mb-8">
-		<h1 class="text-4xl font-bold mb-4">Las Vegas Real Estate News & Market Insights</h1>
-		<p class="text-gray-600 text-lg">
+		<h1 class="text-4xl font-bold mb-6">Las Vegas Real Estate News & Market Insights</h1>
+		<p class="text-gray-600 text-lg mb-8 leading-relaxed">
 			Stay informed about the latest Las Vegas real estate market trends, community insights, and expert advice.
 		</p>
+		<div class="mb-8">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Las Vegas Real Estate News and Market Insights Are Available?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
+				Las Vegas real estate news and market insights include latest market trends, community developments, expert real estate advice, neighborhood updates, investment opportunities, and buying and selling strategies that help you stay informed and make informed decisions about Las Vegas real estate transactions.
+			</p>
+		</div>
 	</div>
 
 	{#if loading}

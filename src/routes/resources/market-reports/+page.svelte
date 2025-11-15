@@ -185,7 +185,6 @@
 				</ul>
 			</div>
 		</div>
-		</div>
 
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
