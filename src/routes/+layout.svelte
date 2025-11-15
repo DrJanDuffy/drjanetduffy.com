@@ -55,26 +55,26 @@
 				</ul>
 			</div>
 			
-			<!-- Properties -->
-			<div>
-				<h3 class="text-lg font-display font-bold mb-4 text-white">Properties</h3>
-				<ul class="space-y-2 text-sm">
-					<li><a href="/rentals" class="text-gray-400 hover:text-white transition-colors">Rentals</a></li>
-					<li><a href="/listings-embedded" class="text-gray-400 hover:text-white transition-colors">Grid View</a></li>
-					<li><a href="/listings-list" class="text-gray-400 hover:text-white transition-colors">List View</a></li>
-					<li><a href="/past-sales" class="text-gray-400 hover:text-white transition-colors">Past Sales</a></li>
-					<li><a href="/properties/homes" class="text-gray-400 hover:text-white transition-colors">Single Family</a></li>
-					<li><a href="/properties/condos" class="text-gray-400 hover:text-white transition-colors">Condos</a></li>
-					<li><a href="/properties/townhomes" class="text-gray-400 hover:text-white transition-colors">Townhomes</a></li>
-					<li><a href="/properties/new-construction" class="text-gray-400 hover:text-white transition-colors">New Construction</a></li>
-					<li><a href="/properties/luxury" class="text-gray-400 hover:text-white transition-colors">Luxury Estates</a></li>
-					<li><a href="/properties/gated-communities" class="text-gray-400 hover:text-white transition-colors">Gated Communities</a></li>
-					<li><a href="/properties/golf-communities" class="text-gray-400 hover:text-white transition-colors">Golf Communities</a></li>
-					<li><a href="/properties/55-plus" class="text-gray-400 hover:text-white transition-colors">55+ Communities</a></li>
-					<li><a href="/properties/foreclosures" class="text-gray-400 hover:text-white transition-colors">Foreclosures</a></li>
-					<li><a href="/properties/short-sales" class="text-gray-400 hover:text-white transition-colors">Short Sales</a></li>
-				</ul>
-			</div>
+					<!-- Properties -->
+					<div>
+						<h3 class="text-lg font-display font-bold mb-4 text-white">Properties</h3>
+						<ul class="space-y-2 text-sm">
+							<li><a href="/rentals" class="text-gray-400 hover:text-white transition-colors">Rentals</a></li>
+							<li><a href="/listings-embedded" class="text-gray-400 hover:text-white transition-colors">Grid View</a></li>
+							<li><a href="/listings-list" class="text-gray-400 hover:text-white transition-colors">List View</a></li>
+							<li><a href="/past-sales" class="text-gray-400 hover:text-white transition-colors">Past Sales</a></li>
+							<li><a href="/properties?type=single-family" class="text-gray-400 hover:text-white transition-colors">Single Family</a></li>
+							<li><a href="/properties?type=condos" class="text-gray-400 hover:text-white transition-colors">Condos</a></li>
+							<li><a href="/properties?type=townhomes" class="text-gray-400 hover:text-white transition-colors">Townhomes</a></li>
+							<li><a href="/properties?type=new-construction" class="text-gray-400 hover:text-white transition-colors">New Construction</a></li>
+							<li><a href="/properties?type=luxury" class="text-gray-400 hover:text-white transition-colors">Luxury Estates</a></li>
+							<li><a href="/properties?type=gated" class="text-gray-400 hover:text-white transition-colors">Gated Communities</a></li>
+							<li><a href="/properties?type=golf" class="text-gray-400 hover:text-white transition-colors">Golf Communities</a></li>
+							<li><a href="/properties?type=55-plus" class="text-gray-400 hover:text-white transition-colors">55+ Communities</a></li>
+							<li><a href="/properties?type=foreclosures" class="text-gray-400 hover:text-white transition-colors">Foreclosures</a></li>
+							<li><a href="/properties?type=short-sales" class="text-gray-400 hover:text-white transition-colors">Short Sales</a></li>
+						</ul>
+					</div>
 			
 			<!-- Communities -->
 			<div>
@@ -95,14 +95,14 @@
 			
 			<!-- Services & Contact -->
 			<div>
-				<h3 class="text-lg font-display font-bold mb-4 text-white">Services</h3>
-				<ul class="space-y-2 text-sm mb-6">
-					<li><a href="/home-value" class="text-gray-400 hover:text-white transition-colors">Home Value</a></li>
-					<li><a href="/services/buying" class="text-gray-400 hover:text-white transition-colors">Buying Guide</a></li>
-					<li><a href="/services/selling" class="text-gray-400 hover:text-white transition-colors">Selling Guide</a></li>
-					<li><a href="/services/mortgage-calculator" class="text-gray-400 hover:text-white transition-colors">Mortgage Calculator</a></li>
-					<li><a href="/services/testimonials" class="text-gray-400 hover:text-white transition-colors">Testimonials</a></li>
-				</ul>
+						<h3 class="text-lg font-display font-bold mb-4 text-white">Services</h3>
+						<ul class="space-y-2 text-sm mb-6">
+							<li><a href="/home-value" class="text-gray-400 hover:text-white transition-colors">Home Value</a></li>
+							<li><a href="/about#buying" class="text-gray-400 hover:text-white transition-colors">Buying Guide</a></li>
+							<li><a href="/about#selling" class="text-gray-400 hover:text-white transition-colors">Selling Guide</a></li>
+							<li><a href="/about#mortgage" class="text-gray-400 hover:text-white transition-colors">Mortgage Calculator</a></li>
+							<li><a href="/about#testimonials" class="text-gray-400 hover:text-white transition-colors">Testimonials</a></li>
+						</ul>
 				
 				<h3 class="text-lg font-display font-bold mb-4 text-white mt-6">Contact</h3>
 				<div class="space-y-3 text-sm text-gray-400">

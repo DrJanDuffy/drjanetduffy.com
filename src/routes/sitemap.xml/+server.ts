@@ -47,34 +47,8 @@ const routes = [
 	// { url: 'communities/westwood', priority: '0.5', changefreq: 'monthly' },
 	// { url: 'communities/the-palisades', priority: '0.5', changefreq: 'monthly' },
 	
-	// Property Type Pages
-	{ url: 'properties/homes', priority: '0.9', changefreq: 'daily' },
-	{ url: 'properties/condos', priority: '0.9', changefreq: 'daily' },
-	{ url: 'properties/townhomes', priority: '0.8', changefreq: 'weekly' },
-	{ url: 'properties/new-construction', priority: '0.8', changefreq: 'weekly' },
-	{ url: 'properties/luxury', priority: '0.8', changefreq: 'weekly' },
-	{ url: 'properties/gated-communities', priority: '0.7', changefreq: 'monthly' },
-	{ url: 'properties/golf-communities', priority: '0.7', changefreq: 'monthly' },
-	{ url: 'properties/55-plus', priority: '0.6', changefreq: 'monthly' },
-	{ url: 'properties/lakefront', priority: '0.6', changefreq: 'monthly' },
-	{ url: 'properties/casitas', priority: '0.6', changefreq: 'monthly' },
-	{ url: 'properties/pools', priority: '0.6', changefreq: 'monthly' },
-	{ url: 'properties/rv-parking', priority: '0.5', changefreq: 'monthly' },
-	{ url: 'properties/foreclosures', priority: '0.6', changefreq: 'weekly' },
-	{ url: 'properties/short-sales', priority: '0.6', changefreq: 'weekly' },
-	{ url: 'properties/sold', priority: '0.7', changefreq: 'weekly' },
-	{ url: 'properties/high-rise', priority: '0.7', changefreq: 'weekly' },
-	{ url: 'properties/condo-hotels', priority: '0.6', changefreq: 'monthly' },
-	{ url: 'properties/master-planned', priority: '0.7', changefreq: 'monthly' },
-	
-	// Service Pages
-	{ url: 'services/buying', priority: '0.8', changefreq: 'monthly' },
-	{ url: 'services/selling', priority: '0.8', changefreq: 'monthly' },
-	{ url: 'services/investment', priority: '0.7', changefreq: 'monthly' },
-	{ url: 'services/home-finder', priority: '0.7', changefreq: 'monthly' },
-	{ url: 'services/mortgage-calculator', priority: '0.6', changefreq: 'monthly' },
-	{ url: 'services/marketing-plan', priority: '0.6', changefreq: 'monthly' },
-	{ url: 'services/testimonials', priority: '0.6', changefreq: 'monthly' },
+            // Property Type Pages - Removed non-existent pages, use query parameters on /properties instead
+            // Service Pages - Removed non-existent pages, use anchor links on /about instead
 	
 	// Legal/Info Pages
 	{ url: 'privacy', priority: '0.3', changefreq: 'yearly' },

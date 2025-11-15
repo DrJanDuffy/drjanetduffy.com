@@ -26,23 +26,23 @@
 		{ url: '/properties?neighborhood=mountains-edge', title: 'Mountains Edge', description: 'Mountains Edge community', category: 'Communities' },
 		{ url: '/properties?neighborhood=anthem', title: 'Anthem', description: 'Anthem Country Club', category: 'Communities' },
 		
-		// Property Types
-		{ url: '/properties/homes', title: 'Single Family Homes', description: 'Browse single family homes', category: 'Properties' },
-		{ url: '/properties/condos', title: 'Condos', description: 'Browse condos and townhomes', category: 'Properties' },
-		{ url: '/properties/townhomes', title: 'Townhomes', description: 'Browse townhomes', category: 'Properties' },
-		{ url: '/properties/new-construction', title: 'New Construction', description: 'New home construction', category: 'Properties' },
-		{ url: '/properties/luxury', title: 'Luxury Estates', description: 'Luxury real estate', category: 'Properties' },
-		{ url: '/properties/gated-communities', title: 'Gated Communities', description: 'Gated community homes', category: 'Properties' },
-		{ url: '/properties/golf-communities', title: 'Golf Communities', description: 'Golf course communities', category: 'Properties' },
-		{ url: '/properties/55-plus', title: '55+ Communities', description: 'Retirement communities', category: 'Properties' },
-		{ url: '/properties/foreclosures', title: 'Foreclosures', description: 'Foreclosure properties', category: 'Properties' },
-		{ url: '/properties/short-sales', title: 'Short Sales', description: 'Short sale properties', category: 'Properties' },
-		
-		// Services
-		{ url: '/services/buying', title: 'Buying Guide', description: 'Home buying guide', category: 'Services' },
-		{ url: '/services/selling', title: 'Selling Guide', description: 'Home selling guide', category: 'Services' },
-		{ url: '/services/mortgage-calculator', title: 'Mortgage Calculator', description: 'Calculate your mortgage', category: 'Services' },
-		{ url: '/services/testimonials', title: 'Testimonials', description: 'Client testimonials', category: 'Services' },
+				// Property Types (using query parameters)
+				{ url: '/properties?type=single-family', title: 'Single Family Homes', description: 'Browse single family homes', category: 'Properties' },
+				{ url: '/properties?type=condos', title: 'Condos', description: 'Browse condos and townhomes', category: 'Properties' },
+				{ url: '/properties?type=townhomes', title: 'Townhomes', description: 'Browse townhomes', category: 'Properties' },
+				{ url: '/properties?type=new-construction', title: 'New Construction', description: 'New home construction', category: 'Properties' },
+				{ url: '/properties?type=luxury', title: 'Luxury Estates', description: 'Luxury real estate', category: 'Properties' },
+				{ url: '/properties?type=gated', title: 'Gated Communities', description: 'Gated community homes', category: 'Properties' },
+				{ url: '/properties?type=golf', title: 'Golf Communities', description: 'Golf course communities', category: 'Properties' },
+				{ url: '/properties?type=55-plus', title: '55+ Communities', description: 'Retirement communities', category: 'Properties' },
+				{ url: '/properties?type=foreclosures', title: 'Foreclosures', description: 'Foreclosure properties', category: 'Properties' },
+				{ url: '/properties?type=short-sales', title: 'Short Sales', description: 'Short sale properties', category: 'Properties' },
+				
+				// Services (using anchor links to about page)
+				{ url: '/about#buying', title: 'Buying Guide', description: 'Home buying guide', category: 'Services' },
+				{ url: '/about#selling', title: 'Selling Guide', description: 'Home selling guide', category: 'Services' },
+				{ url: '/about#mortgage', title: 'Mortgage Calculator', description: 'Calculate your mortgage', category: 'Services' },
+				{ url: '/about#testimonials', title: 'Testimonials', description: 'Client testimonials', category: 'Services' },
 		
 		// Legal
 		{ url: '/privacy', title: 'Privacy Policy', description: 'Privacy policy and data protection', category: 'Legal' },
