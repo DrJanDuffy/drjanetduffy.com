@@ -183,6 +183,14 @@
 	.realscout-wrapper {
 		min-height: 400px;
 		width: 100%;
+		contain: layout style paint;
+		position: relative;
+	}
+
+	.loading-skeleton {
+		min-height: 400px;
+		width: 100%;
 	}
 </style>
+
 

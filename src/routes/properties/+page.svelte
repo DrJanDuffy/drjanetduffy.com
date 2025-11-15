@@ -142,6 +142,13 @@ const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 	.realscout-wrapper {
 		min-height: 600px;
 		width: 100%;
+		contain: layout style paint;
+		position: relative;
+	}
+	
+	.loading-skeleton {
+		min-height: 600px;
+		width: 100%;
 	}
 	
 	/* Override RealScout styles for this page */

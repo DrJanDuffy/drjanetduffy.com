@@ -362,6 +362,14 @@
 	.realscout-wrapper {
 		min-height: 400px;
 		width: 100%;
+		contain: layout style paint;
+		position: relative;
+	}
+	
+	/* Ensure loading skeleton matches RealScout dimensions */
+	.loading-skeleton {
+		min-height: 400px;
+		width: 100%;
 	}
 	
 	/* Override RealScout styles for homepage */

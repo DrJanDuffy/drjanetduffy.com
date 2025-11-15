@@ -8,6 +8,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* CLS Optimization: Font Display Swap */
+@font-face {
+  font-family: 'Inter';
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-display: swap;
+}
+
 /* Enhanced Animations */
 @keyframes float {
   0%, 100% {
@@ -112,6 +123,19 @@
     line-height: 1.625;
     min-height: 100vh;
     margin: 0;
+  }
+  
+  /* CLS Optimization: Prevent layout shifts */
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Reserve space for dynamic content */
+  .realscout-wrapper,
+  .loading-skeleton {
+    contain: layout style paint;
+    will-change: contents;
   }
   
   h1, h2, h3, h4, h5, h6 {
