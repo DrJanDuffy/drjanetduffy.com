@@ -1,6 +1,14 @@
 <script>
 	import { Home, TrendingUp, Award, MapPin, Star, DollarSign, Calendar, Building2 } from 'lucide-svelte';
 	import { goto } from '$app/navigation';
+	import { onMount } from 'svelte';
+	import { browser } from '$app/environment';
+	
+	let mounted = false;
+	
+	onMount(() => {
+		mounted = true;
+	});
 
 	function handleSearch(event) {
 		event.preventDefault();
@@ -47,49 +55,55 @@
 			<!-- Property Search Form -->
 			<div class="max-w-4xl mx-auto">
 				<div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
-					<form on:submit={handleSearch} class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
-						<div>
-							<label for="location" class="form-label">Location</label>
-							<input type="text" id="location" name="location" placeholder="City, Zip, or Area" class="form-input" />
-						</div>
-						<div>
-							<label for="property-type" class="form-label">Property Type</label>
-							<select id="property-type" name="property-type" class="form-select">
-								<option value="">All Types</option>
-								<option value="single-family">Single Family</option>
-								<option value="condo">Condo</option>
-								<option value="townhome">Townhome</option>
-								<option value="luxury">Luxury</option>
-							</select>
-						</div>
-						<div>
-							<label for="price-range" class="form-label">Price Range</label>
-							<select id="price-range" name="price-range" class="form-select">
-								<option value="">Any Price</option>
-								<option value="0-300000">Under $300K</option>
-								<option value="300000-500000">$300K - $500K</option>
-								<option value="500000-750000">$500K - $750K</option>
-								<option value="750000-1000000">$750K - $1M</option>
-								<option value="1000000+">$1M+</option>
-							</select>
-						</div>
-						<div>
-							<label for="bedrooms" class="form-label">Bedrooms</label>
-							<select id="bedrooms" name="bedrooms" class="form-select">
-								<option value="">Any</option>
-								<option value="1">1+</option>
-								<option value="2">2+</option>
-								<option value="3">3+</option>
-								<option value="4">4+</option>
-								<option value="5">5+</option>
-							</select>
-						</div>
-						<div class="flex items-end">
-							<button type="submit" class="btn-primary w-full">
-								Search Properties
-							</button>
-						</div>
-					</form>
+					{#if mounted && browser}
+						<realscout-advanced-search 
+							agent-encoded-id="QWdlbnQtMjI1MDUw">
+						</realscout-advanced-search>
+					{:else}
+						<form on:submit={handleSearch} class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+							<div>
+								<label for="location" class="form-label">Location</label>
+								<input type="text" id="location" name="location" placeholder="City, Zip, or Area" class="form-input" />
+							</div>
+							<div>
+								<label for="property-type" class="form-label">Property Type</label>
+								<select id="property-type" name="property-type" class="form-select">
+									<option value="">All Types</option>
+									<option value="single-family">Single Family</option>
+									<option value="condo">Condo</option>
+									<option value="townhome">Townhome</option>
+									<option value="luxury">Luxury</option>
+								</select>
+							</div>
+							<div>
+								<label for="price-range" class="form-label">Price Range</label>
+								<select id="price-range" name="price-range" class="form-select">
+									<option value="">Any Price</option>
+									<option value="0-300000">Under $300K</option>
+									<option value="300000-500000">$300K - $500K</option>
+									<option value="500000-750000">$500K - $750K</option>
+									<option value="750000-1000000">$750K - $1M</option>
+									<option value="1000000+">$1M+</option>
+								</select>
+							</div>
+							<div>
+								<label for="bedrooms" class="form-label">Bedrooms</label>
+								<select id="bedrooms" name="bedrooms" class="form-select">
+									<option value="">Any</option>
+									<option value="1">1+</option>
+									<option value="2">2+</option>
+									<option value="3">3+</option>
+									<option value="4">4+</option>
+									<option value="5">5+</option>
+								</select>
+							</div>
+							<div class="flex items-end">
+								<button type="submit" class="btn-primary w-full">
+									Search Properties
+								</button>
+							</div>
+						</form>
+					{/if}
 				</div>
 			</div>
 		</div>
@@ -105,70 +119,33 @@
 				<p class="text-lg text-gray-600">Explore our hand-picked selection of premium homes</p>
 			</div>
 
-			<div class="grid md:grid-cols-3 gap-6">
-				<!-- Property 1 -->
-				<div class="property-card">
-					<div class="h-48 bg-gradient-to-br from-primary-100 to-primary-200 rounded-t-xl"></div>
-					<div class="p-6">
-						<h3 class="text-xl font-bold text-gray-900 mb-2">Luxury Home in West Summerlin</h3>
-						<p class="text-gray-600 mb-2">1234 Desert View Dr, Las Vegas, NV 89138</p>
-						<div class="flex flex-wrap items-center gap-3 sm:gap-4 text-sm mb-3">
-							<span class="font-bold text-lg text-gray-900">$875,000</span>
-							<span class="text-gray-600">4 Beds</span>
-							<span class="text-gray-600">·</span>
-							<span class="text-gray-600">3 Baths</span>
-							<span class="text-gray-600">·</span>
-							<span class="text-gray-600">3,200 sqft</span>
-						</div>
-						<p class="text-sm text-gray-500 mb-4">Listed 3 days ago</p>
-						<a href="/properties" class="text-primary-600 hover:text-primary-700 font-semibold inline-flex items-center gap-2">
-							View Details →
-						</a>
-					</div>
+			{#if mounted && browser}
+				<div class="realscout-wrapper">
+					<realscout-office-listings 
+						agent-encoded-id="QWdlbnQtMjI1MDUw"
+						sort-order="STATUS_AND_SIGNIFICANT_CHANGE"
+						listing-status="For Sale"
+						property-types="SFR,MF,TC"
+						max-results="6">
+					</realscout-office-listings>
 				</div>
-
-				<!-- Property 2 -->
-				<div class="property-card">
-					<div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-t-xl"></div>
-					<div class="p-6">
-						<h3 class="text-xl font-bold text-gray-900 mb-2">Modern Estate in The Ridges</h3>
-						<p class="text-gray-600 mb-2">5678 Mountain Peak Way, Las Vegas, NV 89144</p>
-						<div class="flex flex-wrap items-center gap-3 sm:gap-4 text-sm mb-3">
-							<span class="font-bold text-lg text-gray-900">$1,250,000</span>
-							<span class="text-gray-600">5 Beds</span>
-							<span class="text-gray-600">·</span>
-							<span class="text-gray-600">4 Baths</span>
-							<span class="text-gray-600">·</span>
-							<span class="text-gray-600">4,500 sqft</span>
-						</div>
-						<p class="text-sm text-gray-500 mb-4">Listed 1 week ago</p>
-						<a href="/properties" class="text-primary-600 hover:text-primary-700 font-semibold inline-flex items-center gap-2">
-							View Details →
-						</a>
+			{:else}
+				<div class="loading-skeleton">
+					<div class="grid md:grid-cols-3 gap-6">
+						{#each Array(3) as _}
+							<div class="animate-pulse bg-white rounded-2xl shadow-lg overflow-hidden">
+								<div class="bg-gray-200 h-64"></div>
+								<div class="p-6 space-y-4">
+									<div class="h-6 bg-gray-200 rounded w-3/4"></div>
+									<div class="h-5 bg-gray-200 rounded w-1/2"></div>
+									<div class="h-4 bg-gray-200 rounded w-2/3"></div>
+								</div>
+							</div>
+						{/each}
 					</div>
+					<p class="text-center text-gray-600 mt-8 text-lg">Loading featured properties...</p>
 				</div>
-
-				<!-- Property 3 -->
-				<div class="property-card">
-					<div class="h-48 bg-gradient-to-br from-primary-50 to-primary-100 rounded-t-xl"></div>
-					<div class="p-6">
-						<h3 class="text-xl font-bold text-gray-900 mb-2">Charming Condo in Green Valley</h3>
-						<p class="text-gray-600 mb-2">9012 Valley View Blvd, Henderson, NV 89014</p>
-						<div class="flex flex-wrap items-center gap-3 sm:gap-4 text-sm mb-3">
-							<span class="font-bold text-lg text-gray-900">$425,000</span>
-							<span class="text-gray-600">2 Beds</span>
-							<span class="text-gray-600">·</span>
-							<span class="text-gray-600">2 Baths</span>
-							<span class="text-gray-600">·</span>
-							<span class="text-gray-600">1,800 sqft</span>
-						</div>
-						<p class="text-sm text-gray-500 mb-4">Listed 5 days ago</p>
-						<a href="/properties" class="text-primary-600 hover:text-primary-700 font-semibold inline-flex items-center gap-2">
-							View Details →
-						</a>
-					</div>
-				</div>
-			</div>
+			{/if}
 		</div>
 	</div>
 </section>
@@ -387,3 +364,21 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	.realscout-wrapper {
+		min-height: 400px;
+		width: 100%;
+	}
+	
+	/* Override RealScout styles for homepage */
+	.realscout-wrapper :global(realscout-office-listings) {
+		--rs-grid-columns: 3;
+		--rs-card-hover-shadow: 0 10px 20px rgba(0,0,0,0.15);
+	}
+	
+	/* Style RealScout search widget */
+	:global(realscout-advanced-search) {
+		width: 100%;
+	}
+</style>

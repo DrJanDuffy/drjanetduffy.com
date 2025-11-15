@@ -18,6 +18,9 @@
 		gtag('js', new Date());
 		gtag('config', 'G-CPD9RR8GTX');
 	</script>
+	
+	<!-- RealScout Widgets Script -->
+	<script async src="https://widgets.realscout.com/js/realscout-widgets.js"></script>
 </svelte:head>
 
 <Navigation />
