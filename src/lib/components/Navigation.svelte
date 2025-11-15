@@ -12,27 +12,34 @@
 	];
 </script>
 
-<nav class="sticky top-0 z-50 w-full bg-white shadow-sm">
+<header class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur border-b border-gray-100">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="flex h-16 items-center justify-between gap-2 sm:gap-4">
+		<div class="flex flex-wrap items-center justify-between gap-3 py-3">
 			<!-- Logo -->
-			<a href="/" class="flex items-center space-x-2 sm:space-x-3 flex-shrink-0 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded" aria-label="Dr. Janet Duffy Home">
-				<div class="w-8 h-8 sm:w-10 sm:h-10 bg-primary-600 rounded-full flex items-center justify-center">
-					<span class="text-white font-bold text-sm sm:text-lg">JD</span>
+			<a
+				href="/"
+				class="flex items-center space-x-2 sm:space-x-3 flex-shrink-0 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded no-underline"
+				aria-label="Dr. Janet Duffy Home"
+			>
+				<div class="w-9 h-9 sm:w-11 sm:h-11 bg-primary-600 rounded-full flex items-center justify-center shadow-sm">
+					<span class="text-white font-bold text-sm sm:text-lg tracking-tight">JD</span>
 				</div>
-				<div>
-					<h1 class="text-base sm:text-xl font-bold text-gray-800">Dr. Janet Duffy</h1>
-					<p class="text-xs sm:text-sm text-gray-600">REALTOR<sup>®</sup></p>
+				<div class="leading-tight">
+					<span class="block text-lg sm:text-xl font-bold text-gray-900">Dr. Janet Duffy</span>
+					<span class="block text-xs sm:text-sm text-gray-500 tracking-wide">REALTOR<sup>®</sup></span>
 				</div>
 			</a>
-			
-			<!-- Navigation Menu - Always visible horizontally -->
-			<nav class="flex items-center flex-1 justify-center mx-2 sm:mx-4 lg:mx-8 overflow-x-auto scrollbar-hide" aria-label="Main navigation">
-				<div class="flex items-center space-x-3 sm:space-x-4 md:space-x-6 lg:space-x-8">
+
+			<!-- Navigation Menu -->
+			<nav
+				class="flex-1 flex items-center justify-center order-3 lg:order-none w-full lg:w-auto"
+				aria-label="Main navigation"
+			>
+				<div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8">
 					{#each navItems as item}
 						<a
 							href={item.href}
-							class="text-sm sm:text-base font-medium text-gray-700 hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-md px-2 sm:px-3 py-2 transition-colors whitespace-nowrap {$page.url.pathname === item.href ? 'text-primary-600 font-semibold' : ''}"
+							class="text-sm sm:text-base font-medium text-gray-700 hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-md px-3 py-2 transition-colors whitespace-nowrap no-underline {$page.url.pathname === item.href ? 'text-primary-600 font-semibold bg-primary-50' : ''}"
 							aria-current={$page.url.pathname === item.href ? 'page' : undefined}
 						>
 							{item.label}
@@ -40,9 +47,23 @@
 					{/each}
 				</div>
 			</nav>
+
+			<!-- Contact shortcut -->
+			<div class="flex items-center gap-3">
+				<a href="mailto:info@DrJanetDuffy.com" class="hidden sm:flex text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors no-underline">
+					info@DrJanetDuffy.com
+				</a>
+				<a
+					href="tel:+17025001955"
+					class="inline-flex items-center gap-2 rounded-full border border-primary-500 px-4 py-2 text-sm font-semibold text-primary-600 hover:bg-primary-50 transition-colors no-underline"
+				>
+					<span>Call</span>
+					<span class="hidden sm:inline">702-500-1955</span>
+				</a>
+			</div>
 		</div>
 	</div>
-</nav>
+</header>
 
 <style>
 	.scrollbar-hide {
