@@ -14,7 +14,7 @@
 
 <nav class="sticky top-0 z-50 w-full bg-white shadow-sm">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="flex h-16 items-center justify-between">
+		<div class="flex h-16 items-center justify-between gap-2 sm:gap-4">
 			<!-- Logo -->
 			<a href="/" class="flex items-center space-x-2 sm:space-x-3 flex-shrink-0 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded" aria-label="Dr. Janet Duffy Home">
 				<div class="w-8 h-8 sm:w-10 sm:h-10 bg-primary-600 rounded-full flex items-center justify-center">

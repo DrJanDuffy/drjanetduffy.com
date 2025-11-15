@@ -112,11 +112,13 @@
 					<div class="p-6">
 						<h3 class="text-xl font-bold text-gray-900 mb-2">Luxury Home in West Summerlin</h3>
 						<p class="text-gray-600 mb-2">1234 Desert View Dr, Las Vegas, NV 89138</p>
-						<div class="flex flex-wrap items-center gap-3 sm:gap-4 text-sm text-gray-600 mb-3">
-							<span class="font-semibold text-gray-900">$875,000</span>
-							<span>4 Beds</span>
-							<span>3 Baths</span>
-							<span>3,200 sqft</span>
+						<div class="flex flex-wrap items-center gap-3 sm:gap-4 text-sm mb-3">
+							<span class="font-bold text-lg text-gray-900">$875,000</span>
+							<span class="text-gray-600">4 Beds</span>
+							<span class="text-gray-600">·</span>
+							<span class="text-gray-600">3 Baths</span>
+							<span class="text-gray-600">·</span>
+							<span class="text-gray-600">3,200 sqft</span>
 						</div>
 						<p class="text-sm text-gray-500 mb-4">Listed 3 days ago</p>
 						<a href="/properties" class="text-primary-600 hover:text-primary-700 font-semibold inline-flex items-center gap-2">
@@ -131,11 +133,13 @@
 					<div class="p-6">
 						<h3 class="text-xl font-bold text-gray-900 mb-2">Modern Estate in The Ridges</h3>
 						<p class="text-gray-600 mb-2">5678 Mountain Peak Way, Las Vegas, NV 89144</p>
-						<div class="flex flex-wrap items-center gap-3 sm:gap-4 text-sm text-gray-600 mb-3">
-							<span class="font-semibold text-gray-900">$1,250,000</span>
-							<span>5 Beds</span>
-							<span>4 Baths</span>
-							<span>4,500 sqft</span>
+						<div class="flex flex-wrap items-center gap-3 sm:gap-4 text-sm mb-3">
+							<span class="font-bold text-lg text-gray-900">$1,250,000</span>
+							<span class="text-gray-600">5 Beds</span>
+							<span class="text-gray-600">·</span>
+							<span class="text-gray-600">4 Baths</span>
+							<span class="text-gray-600">·</span>
+							<span class="text-gray-600">4,500 sqft</span>
 						</div>
 						<p class="text-sm text-gray-500 mb-4">Listed 1 week ago</p>
 						<a href="/properties" class="text-primary-600 hover:text-primary-700 font-semibold inline-flex items-center gap-2">
@@ -150,11 +154,13 @@
 					<div class="p-6">
 						<h3 class="text-xl font-bold text-gray-900 mb-2">Charming Condo in Green Valley</h3>
 						<p class="text-gray-600 mb-2">9012 Valley View Blvd, Henderson, NV 89014</p>
-						<div class="flex flex-wrap items-center gap-3 sm:gap-4 text-sm text-gray-600 mb-3">
-							<span class="font-semibold text-gray-900">$425,000</span>
-							<span>2 Beds</span>
-							<span>2 Baths</span>
-							<span>1,800 sqft</span>
+						<div class="flex flex-wrap items-center gap-3 sm:gap-4 text-sm mb-3">
+							<span class="font-bold text-lg text-gray-900">$425,000</span>
+							<span class="text-gray-600">2 Beds</span>
+							<span class="text-gray-600">·</span>
+							<span class="text-gray-600">2 Baths</span>
+							<span class="text-gray-600">·</span>
+							<span class="text-gray-600">1,800 sqft</span>
 						</div>
 						<p class="text-sm text-gray-500 mb-4">Listed 5 days ago</p>
 						<a href="/properties" class="text-primary-600 hover:text-primary-700 font-semibold inline-flex items-center gap-2">
