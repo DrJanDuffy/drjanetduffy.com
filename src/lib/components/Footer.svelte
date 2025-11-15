@@ -18,12 +18,12 @@
 	];
 	
 	const neighborhoods = [
-		{ name: 'Summerlin', href: '/properties?neighborhood=summerlin' },
-		{ name: 'Henderson', href: '/properties?neighborhood=henderson' },
-		{ name: 'Green Valley', href: '/properties?neighborhood=green-valley' },
-		{ name: 'Anthem', href: '/properties?neighborhood=anthem' },
-		{ name: 'Centennial Hills', href: '/properties?neighborhood=centennial-hills' },
-		{ name: 'Spring Valley', href: '/properties?neighborhood=spring-valley' }
+		{ name: 'Summerlin', href: '/communities/summerlin' },
+		{ name: 'Skye Canyon', href: '/communities/skye-canyon' },
+		{ name: 'Centennial Hills', href: '/communities/centennial-hills' },
+		{ name: 'North Las Vegas', href: '/communities/north-las-vegas' },
+		{ name: 'Henderson', href: '/communities/henderson' },
+		{ name: 'Green Valley', href: '/communities/green-valley' }
 	];
 </script>
 
@@ -49,7 +49,7 @@
 						<span class="font-semibold">Phone:</span> (702) 555-1234
 					</p>
 					<p class="text-sm text-gray-300">
-						<span class="font-semibold">Email:</span> jan@drjanduffy.com
+						<span class="font-semibold">Email:</span> info@DrJanetDuffy.com
 					</p>
 					<p class="text-sm text-gray-300">
 						<span class="font-semibold">License:</span> #12345
@@ -144,7 +144,7 @@
 		<div class="border-t border-gray-800 mt-8 pt-8">
 			<div class="flex flex-col md:flex-row justify-between items-center">
 				<div class="text-sm text-gray-400 mb-4 md:mb-0">
-					© {currentYear} Dr. Jan Duffy Real Estate. All rights reserved.
+					© {currentYear} Homes by Dr. Duffy. All rights reserved.
 				</div>
 				<div class="flex space-x-6 text-sm">
 					<a href="/privacy" class="text-gray-400 hover:text-primary-400 transition-colors">Privacy Policy</a>

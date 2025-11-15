@@ -28,7 +28,7 @@
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How Do We Help Las Vegas Homebuyers Find Their Perfect Home?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Navigating the Las Vegas real estate market requires expertise, local knowledge, and dedicated representation. Our buyer representation services protect your interests, save you time and money, and ensure you find the perfect home in the right neighborhood through comprehensive property search, neighborhood expertise, market analysis, and transaction management.
+					Navigating the Las Vegas real estate market requires expertise, local knowledge, and dedicated representation. Our buyer representation services protect your interests, save you time and money, and ensure you find the perfect home in the right neighborhood through comprehensive property search, neighborhood expertise, market analysis, and transaction management. My concierge service includes coordinating pool inspections in Summerlin, managing HOA documents across multiple master-planned communities, and providing personalized neighborhood tours showing parks, schools, shopping, and hidden gems locals love.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -48,7 +48,7 @@
 						</div>
 						<div>
 							<h3 class="text-xl font-bold text-gray-900 mb-2">Neighborhood Expertise</h3>
-							<p class="text-gray-600">From master-planned communities like Summerlin to luxury enclaves like The Ridges, we provide insights into every Las Vegas neighborhood.</p>
+							<p class="text-gray-600">From master-planned communities like Summerlin, Skye Canyon, and Centennial Hills to luxury enclaves like The Ridges, we provide insights into every Las Vegas neighborhood. I provide detailed tours of each village, showing you insider spots like best walking trails, hidden parks, and optimal streets for views.</p>
 						</div>
 					</div>
 					

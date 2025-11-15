@@ -26,6 +26,24 @@ onMount(() => {
 	<meta property="twitter:url" content="https://www.drjanetduffy.com/rentals" />
 	<meta property="twitter:title" content="Rental Properties | Dr. Janet Duffy REALTOR®" />
 	<meta property="twitter:description" content="Find rental properties in Las Vegas with Dr. Janet Duffy. Browse available rentals, apartments, and homes for rent." />
+	
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.drjanetduffy.com/rentals" />
+	
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "CollectionPage",
+		"name": "Rental Properties",
+		"description": "Find rental properties in Las Vegas with Dr. Janet Duffy. Browse available rentals, apartments, and homes for rent in the Las Vegas area.",
+		"url": "https://www.drjanetduffy.com/rentals",
+		"about": {
+			"@type": "Thing",
+			"name": "Las Vegas Rental Properties"
+		}
+	}
+	</script>
 </svelte:head>
 
 <section class="section relative" style="background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);">

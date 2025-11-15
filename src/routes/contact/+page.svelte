@@ -5,7 +5,7 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, MessageCircle } from 'lucide-s
 
 <svelte:head>
 	<title>Contact Dr. Janet Duffy, REALTOR® | Berkshire Hathaway Nevada Properties</title>
-	<meta name="description" content="Contact Dr. Jan Duffy, REALTOR® for luxury Las Vegas real estate expertise. Direct: 702-500-1955 | info@drjanetduffy.com. West Summerlin specialist for executives and California relocations." />
+	<meta name="description" content="Contact Dr. Jan Duffy, REALTOR® for luxury Las Vegas real estate expertise. Direct: 702-500-1955 | info@DrJanetDuffy.com. West Summerlin specialist for executives and California relocations." />
 	<meta name="keywords" content="Dr. Jan Duffy REALTOR, luxury Las Vegas real estate, West Summerlin, executive relocation, 702-500-1955" />
 	
 	<!-- Open Graph / Facebook -->
@@ -29,7 +29,7 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, MessageCircle } from 'lucide-s
 			"@type": "RealEstateAgent",
 			"name": "Dr. Jan Duffy",
 			"telephone": "702-500-1955",
-			"email": "info@drjanetduffy.com",
+			"email": "info@DrJanetDuffy.com",
 			"address": {
 				"@type": "PostalAddress",
 				"streetAddress": "1980 Festival Plaza Drive, Suite 300",
@@ -80,7 +80,7 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, MessageCircle } from 'lucide-s
 				<div class="bg-gradient-to-br from-white via-primary-50/20 to-white rounded-3xl shadow-xl p-8 border border-gray-200/50 backdrop-blur-sm">
 					<h2 class="font-display text-3xl font-bold mb-4 text-gray-900" style="letter-spacing: -0.02em;">How Can You Get in Touch With Dr. Janet Duffy?</h2>
 					<p class="text-gray-700 mb-8 leading-relaxed">
-						Get in touch with Dr. Janet Duffy by phone at 702-500-1955 (available 7 days a week), email at info@drjanetduffy.com (response within 24 hours), visiting the office at 1980 Festival Plaza Drive Suite 300 in Las Vegas, or using the contact form to discuss your Las Vegas real estate needs.
+						Get in touch with Dr. Janet Duffy by phone at 702-500-1955 (available 7 days a week), email at info@DrJanetDuffy.com (response within 24 hours), visiting the office at 1980 Festival Plaza Drive Suite 300 in Las Vegas, or using the contact form to discuss your Las Vegas real estate needs.
 					</p>
 					
 					<div class="space-y-6">
@@ -95,13 +95,13 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, MessageCircle } from 'lucide-s
 							</div>
 						</a>
 						
-						<a href="mailto:info@drjanetduffy.com" class="group flex items-start gap-4 p-4 rounded-2xl hover:bg-white/80 transition-all duration-300 hover:shadow-md">
+						<a href="mailto:info@DrJanetDuffy.com" class="group flex items-start gap-4 p-4 rounded-2xl hover:bg-white/80 transition-all duration-300 hover:shadow-md">
 							<div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
 								<Mail class="w-7 h-7 text-white" />
 							</div>
 							<div class="flex-1">
 								<h3 class="font-display text-xl font-bold mb-1 text-gray-900">Email</h3>
-								<p class="text-primary-600 hover:text-primary-700 font-semibold transition-colors break-all">info@drjanetduffy.com</p>
+								<p class="text-primary-600 hover:text-primary-700 font-semibold transition-colors break-all">info@DrJanetDuffy.com</p>
 								<p class="text-sm text-gray-600 mt-1">Response within 24 hours</p>
 							</div>
 						</a>

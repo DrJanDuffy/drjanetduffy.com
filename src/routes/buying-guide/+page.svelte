@@ -237,6 +237,90 @@
 			</div>
 		</div>
 
+		<!-- Summerlin-Specific Buyer's Guide -->
+		<div class="mb-16">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Should Summerlin Buyers Know About Village Selection and HOA Documents?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
+				Buying in Summerlin requires understanding village selection, HOA structure (master association $160/year plus village fees $150-$500/month), and HOA document review. My concierge service includes personalized village tours, HOA document review before you buy, and explaining restrictions and fees clearly to help you make informed decisions.
+			</p>
+			<div class="grid md:grid-cols-2 gap-8">
+				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-lg border border-gray-100">
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Village Selection Guidance</h3>
+					<p class="text-gray-700 mb-4 leading-relaxed">
+						Choose your Summerlin village based on budget, lifestyle, and priorities: The Paseos for affordability ($425K-$575K), Willows for families with top schools, Trails for outdoor enthusiasts, Canyons for views, and Ridges or Summit for luxury living.
+					</p>
+					<ul class="space-y-2 text-gray-700">
+						<li class="flex items-start gap-2">
+							<CheckCircle class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+							<span>Consider proximity to Downtown Summerlin (10-15% premium)</span>
+						</li>
+						<li class="flex items-start gap-2">
+							<CheckCircle class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+							<span>Evaluate mountain/Strip views (20-30% premium)</span>
+						</li>
+						<li class="flex items-start gap-2">
+							<CheckCircle class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+							<span>Assess golf course lots (15-25% premium)</span>
+						</li>
+					</ul>
+				</div>
+				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-lg border border-gray-100">
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">HOA Document Review Process</h3>
+					<p class="text-gray-700 mb-4 leading-relaxed">
+						Summerlin has two HOA layers: master association ($160/year) plus village fees ($150-$500/month). I review all HOA documents before you buy, explaining restrictions (RV/boat parking, landscaping requirements, home color palettes, solar panel guidelines, pet restrictions) and fees clearly.
+					</p>
+					<ul class="space-y-2 text-gray-700">
+						<li class="flex items-start gap-2">
+							<CheckCircle class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" />
+							<span>Review master association and village HOA documents</span>
+						</li>
+						<li class="flex items-start gap-2">
+							<CheckCircle class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" />
+							<span>Understand total HOA costs ($1,800-$6,000 annually)</span>
+						</li>
+						<li class="flex items-start gap-2">
+							<CheckCircle class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" />
+							<span>Identify any restrictions that affect your lifestyle</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Desert Home Inspection Considerations -->
+		<div class="mb-16">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Desert-Specific Considerations Should Las Vegas Homebuyers Know?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
+				Las Vegas desert living requires special considerations including pool inspections, garage heat mitigation, energy efficiency, and landscaping restrictions. Understanding these desert-specific factors helps you make informed decisions and avoid costly surprises.
+			</p>
+			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-lg border border-gray-100">
+				<div class="grid md:grid-cols-2 gap-6">
+					<div>
+						<h3 class="text-xl font-bold text-gray-900 mb-3">Pool Inspections</h3>
+						<p class="text-gray-700 mb-3 leading-relaxed">
+							Pools add 5-10% to home value and provide 7-8 months of use annually. Over 65% of homes over $500K have pools. Pool maintenance costs $150-$200/month, but many buyers consider pools essential for Las Vegas living.
+						</p>
+						<ul class="space-y-2 text-gray-700 text-sm">
+							<li>• Inspect pool equipment and plumbing</li>
+							<li>• Check for leaks and structural issues</li>
+							<li>• Review pool maintenance history</li>
+						</ul>
+					</div>
+					<div>
+						<h3 class="text-xl font-bold text-gray-900 mb-3">Garage Heat Solutions</h3>
+						<p class="text-gray-700 mb-3 leading-relaxed">
+							Garages can reach 120-140°F in summer. Solutions include insulation, ventilation fans, or mini-split AC units ($2,000-$4,000 installed). Many homeowners use insulated garage doors and fans to manage heat.
+						</p>
+						<ul class="space-y-2 text-gray-700 text-sm">
+							<li>• Check garage insulation and ventilation</li>
+							<li>• Consider mini-split AC for comfort</li>
+							<li>• Evaluate energy efficiency</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- FAQ Section -->
 		<div class="mb-16">
 			<h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions About Buying a Home in Las Vegas</h2>

@@ -87,7 +87,7 @@
 		<div class="mb-16">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Are the Current Las Vegas Real Estate Market Trends?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
-				Las Vegas real estate market trends show strong price appreciation at 8.5% year-over-year, fast-moving market with 19 days on market, low inventory levels at 1.2 months supply creating a seller's market, and stable sales volume with consistent transaction activity that indicates continued market strength.
+				Las Vegas real estate market trends show strong price appreciation at 8.5% year-over-year, fast-moving market with 19 days on market, low inventory levels at 1.2 months supply creating a seller's market, and stable sales volume with consistent transaction activity that indicates continued market strength. Community-specific data shows Summerlin homes averaging $850K with strong appreciation, Skye Canyon new construction appreciating from $380K (2020) to $525K (2025), and Centennial Hills showing 7-9% annual appreciation rates.
 			</p>
 			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 				{#each trends as trend}

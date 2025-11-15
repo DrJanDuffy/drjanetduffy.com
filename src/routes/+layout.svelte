@@ -11,7 +11,12 @@
 <svelte:head>
 	<link rel="icon" href={favicon} />
 	
-	<!-- Google tag (gtag.js) -->
+	<!-- Google Search Console Verification -->
+	<!-- Replace YOUR_VERIFICATION_CODE with the code from Google Search Console -->
+	<!-- Get your code from: https://search.google.com/search-console -->
+	<meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
+	
+	<!-- Google tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPD9RR8GTX"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
@@ -133,7 +138,7 @@
 					</div>
 					<div>
 						<p class="font-semibold text-white mb-1">Email</p>
-						<a href="mailto:info@drjanetduffy.com" class="hover:text-white transition-colors">info@drjanetduffy.com</a>
+						<a href="mailto:info@DrJanetDuffy.com" class="hover:text-white transition-colors">info@DrJanetDuffy.com</a>
 					</div>
 					<div>
 						<p class="font-semibold text-white mb-1">Office Location</p>

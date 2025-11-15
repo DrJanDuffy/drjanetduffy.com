@@ -343,11 +343,11 @@
 								<span class="font-medium">Call Direct: 702-500-1955</span>
 							</a>
 							<a 
-								href="mailto:info@drjanetduffy.com" 
+								href="mailto:info@DrJanetDuffy.com" 
 								class="flex items-center space-x-3 px-3 py-2 text-sm text-gray-600 hover:text-vegas-gold-600 hover:bg-vegas-gold-50 transition-colors rounded-md"
 								on:click={closeMobileMenu}
 							>
-								<span class="font-medium">info@drjanetduffy.com</span>
+								<span class="font-medium">info@DrJanetDuffy.com</span>
 							</a>
 						</div>
 					</div>

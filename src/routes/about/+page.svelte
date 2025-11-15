@@ -71,7 +71,7 @@ const certifications = [
 			"description": "Licensed REALTOR® with 15+ years of experience in Las Vegas real estate",
 			"url": "https://www.drjanetduffy.com",
 			"telephone": "702-500-1955",
-			"email": "info@drjanetduffy.com",
+			"email": "info@DrJanetDuffy.com",
 			"address": {
 				"@type": "PostalAddress",
 				"streetAddress": "1980 Festival Plaza Drive, Suite 300",

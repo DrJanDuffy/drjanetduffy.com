@@ -34,7 +34,9 @@ const routes = [
 	{ url: 'resources/real-estate-glossary', priority: '0.6', changefreq: 'monthly' },
 	
 	// Community Pages
-	{ url: 'communities/summerlin', priority: '0.8', changefreq: 'weekly' },
+	{ url: 'communities/summerlin', priority: '0.9', changefreq: 'weekly' },
+	{ url: 'communities/skye-canyon', priority: '0.9', changefreq: 'weekly' },
+	{ url: 'communities/centennial-hills', priority: '0.9', changefreq: 'weekly' },
 	{ url: 'communities/henderson', priority: '0.8', changefreq: 'weekly' },
 	{ url: 'communities/green-valley', priority: '0.8', changefreq: 'weekly' },
 	{ url: 'communities/north-las-vegas', priority: '0.8', changefreq: 'weekly' },

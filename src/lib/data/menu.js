@@ -154,38 +154,50 @@ export const menuStructure = {
   neighborhoods: [
     {
       name: 'Summerlin',
-      href: '/properties?neighborhood=summerlin',
-      description: 'Master-planned community',
+      href: '/communities/summerlin',
+      description: 'Premier master-planned community with luxury homes and world-class amenities',
       icon: '🌴'
     },
     {
+      name: 'Skye Canyon',
+      href: '/communities/skye-canyon',
+      description: 'Las Vegas\'s newest master-planned community with modern amenities',
+      icon: '🏔️'
+    },
+    {
+      name: 'Centennial Hills',
+      href: '/communities/centennial-hills',
+      description: 'Newer master-planned communities with excellent schools and value',
+      icon: '⛰️'
+    },
+    {
+      name: 'North Las Vegas',
+      href: '/communities/north-las-vegas',
+      description: 'Affordable options with larger lots and no-HOA neighborhoods',
+      icon: '🏘️'
+    },
+    {
       name: 'Henderson',
-      href: '/properties?neighborhood=henderson',
-      description: 'Family-friendly area',
+      href: '/communities/henderson',
+      description: 'Family-friendly area with excellent schools and safe neighborhoods',
       icon: '🏞️'
     },
     {
       name: 'Green Valley',
-      href: '/properties?neighborhood=green-valley',
-      description: 'Established neighborhood',
+      href: '/communities/green-valley',
+      description: 'Established neighborhood with mature trees and strong community',
       icon: '🌳'
     },
     {
       name: 'Anthem',
-      href: '/properties?neighborhood=anthem',
-      description: 'Gated community',
+      href: '/communities/anthem',
+      description: 'Premier Henderson golf community with luxury homes',
       icon: '🏰'
-    },
-    {
-      name: 'Centennial Hills',
-      href: '/properties?neighborhood=centennial-hills',
-      description: 'Northwest Las Vegas',
-      icon: '⛰️'
     },
     {
       name: 'Spring Valley',
       href: '/properties?neighborhood=spring-valley',
-      description: 'Convenient location',
+      description: 'Convenient location with easy access to Strip and amenities',
       icon: '🌸'
     }
   ],
@@ -227,8 +239,8 @@ export const menuStructure = {
     },
     {
       name: 'Email',
-      href: 'mailto:jan@drjanduffy.com',
-      description: 'jan@drjanduffy.com',
+      href: 'mailto:info@DrJanetDuffy.com',
+      description: 'info@DrJanetDuffy.com',
       icon: '✉️'
     },
     {

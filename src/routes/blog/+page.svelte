@@ -21,7 +21,7 @@
 	let feed: RSSFeed | null = null;
 	let loading = true;
 	let error: string | null = null;
-	let feedUrl = 'https://www.lasvegashomesbyleslie.com/blog/rss/';
+	let feedUrl = 'https://www.drjanetduffy.com/blog/rss/';
 
 	onMount(async () => {
 		await loadFeed();
@@ -72,6 +72,39 @@
 <svelte:head>
 	<title>Las Vegas Real Estate Blog | Dr. Janet Duffy</title>
 	<meta name="description" content="Stay up-to-date with the latest Las Vegas real estate news, market trends, and community insights." />
+	<meta name="keywords" content="Las Vegas real estate blog, Las Vegas market trends, real estate news, Las Vegas community insights, property market updates" />
+	<meta name="robots" content="index, follow" />
+	
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.drjanetduffy.com/blog" />
+	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/blog" />
+	<meta property="og:title" content="Las Vegas Real Estate Blog | Dr. Janet Duffy" />
+	<meta property="og:description" content="Stay up-to-date with the latest Las Vegas real estate news, market trends, and community insights." />
+	<meta property="og:site_name" content="Homes by Dr. Duffy" />
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:url" content="https://www.drjanetduffy.com/blog" />
+	<meta name="twitter:title" content="Las Vegas Real Estate Blog | Dr. Janet Duffy" />
+	<meta name="twitter:description" content="Stay up-to-date with the latest Las Vegas real estate news, market trends, and community insights." />
+	
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Blog",
+		"name": "Las Vegas Real Estate Blog",
+		"description": "Stay up-to-date with the latest Las Vegas real estate news, market trends, and community insights",
+		"url": "https://www.drjanetduffy.com/blog",
+		"publisher": {
+			"@type": "RealEstateAgent",
+			"name": "Dr. Janet Duffy"
+		}
+	}
+	</script>
 </svelte:head>
 
 <div class="container mx-auto px-4 py-8 max-w-6xl">

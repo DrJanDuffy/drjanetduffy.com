@@ -25,7 +25,7 @@
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Luxury Real Estate Expertise Do We Provide in Las Vegas?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Luxury real estate in Las Vegas represents a distinct market with unique characteristics, buyer expectations, and transaction requirements. Our luxury home services are designed specifically for high-end properties, providing expertise, discretion, and attention to detail through exclusive property access, premium marketing, privacy protection, and deep market knowledge.
+					Luxury real estate in Las Vegas represents a distinct market with unique characteristics, buyer expectations, and transaction requirements. Our luxury home services are designed specifically for high-end properties, providing expertise, discretion, and attention to detail through exclusive property access, premium marketing, privacy protection, and deep market knowledge. My concierge service includes specialized representation for luxury communities like The Ridges ($2M-$8M), MacDonald Highlands ($1M-$5M), Red Rock Country Club ($950K-$3M), and The Summit ($1.5M-$5M), with deep understanding of golf course premiums (15-25%), mountain view premiums (20-30%), and luxury market dynamics.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">

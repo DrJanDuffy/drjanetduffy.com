@@ -21,10 +21,11 @@
 	];
 	
 	const luxuryAreas = [
-		{ name: 'The Ridges', avgPrice: '$1.2M+', description: 'Exclusive gated community' },
-		{ name: 'Red Rock Country Club', avgPrice: '$950K+', description: 'Luxury golf community' },
-		{ name: 'Southern Highlands', avgPrice: '$850K+', description: 'Upscale master-planned' },
-		{ name: 'Seven Hills', avgPrice: '$750K+', description: 'Custom luxury homes' }
+		{ name: 'The Ridges', avgPrice: '$2M-$8M', description: 'Exclusive guard-gated community with Jack Nicklaus golf' },
+		{ name: 'MacDonald Highlands', avgPrice: '$1M-$5M', description: 'City views and DragonRidge Country Club' },
+		{ name: 'Red Rock Country Club', avgPrice: '$950K-$3M', description: 'Luxury golf community with mountain views' },
+		{ name: 'The Summit', avgPrice: '$1.5M-$5M', description: 'Guard-gated luxury community' },
+		{ name: 'Seven Hills', avgPrice: '$750K-$2M', description: 'Custom homes with scenic views' }
 	];
 </script>
 

@@ -1,7 +1,8 @@
 <script>
-	import { MapPin, Home, Award, TrendingUp, DollarSign, Users, Camera, CheckCircle } from 'lucide-svelte';
+	import { MapPin, Home, Award, TrendingUp, DollarSign, Users, Camera, CheckCircle, Clock, Building2, GraduationCap } from 'lucide-svelte';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
+	import { lasVegasLocalData } from '$lib/data/las-vegas-local-data.js';
 	
 	let mounted = false;
 	
@@ -20,17 +21,63 @@
 		'Luxury amenities'
 	];
 	
-	const neighborhoods = [
-		{ name: 'West Summerlin', avgPrice: '$850K', description: 'Upscale homes with mountain views' },
-		{ name: 'The Ridges', avgPrice: '$1.2M', description: 'Exclusive gated community' },
-		{ name: 'Red Rock Country Club', avgPrice: '$950K', description: 'Luxury golf community' },
-		{ name: 'The Trails', avgPrice: '$650K', description: 'Family-friendly neighborhood' }
-	];
+	const villages = Object.values(lasVegasLocalData.summerlin.villages);
+	
+	function formatCurrency(amount) {
+		return new Intl.NumberFormat('en-US', {
+			style: 'currency',
+			currency: 'USD',
+			maximumFractionDigits: 0
+		}).format(amount);
+	}
 </script>
 
 <svelte:head>
 	<title>Summerlin Real Estate | Las Vegas | Dr. Janet Duffy REALTOR®</title>
 	<meta name="description" content="Explore Summerlin real estate. Master-planned community with luxury homes, golf courses, top schools, and world-class amenities in Las Vegas." />
+	<meta name="keywords" content="Summerlin real estate, Summerlin homes, Las Vegas Summerlin, Summerlin villages, Summerlin HOA, Summerlin golf courses, luxury homes Summerlin" />
+	<meta name="robots" content="index, follow" />
+	
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.drjanetduffy.com/communities/summerlin" />
+	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/communities/summerlin" />
+	<meta property="og:title" content="Summerlin Real Estate | Las Vegas | Dr. Janet Duffy REALTOR®" />
+	<meta property="og:description" content="Explore Summerlin real estate. Master-planned community with luxury homes, golf courses, top schools, and world-class amenities in Las Vegas." />
+	<meta property="og:site_name" content="Homes by Dr. Duffy" />
+	
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:url" content="https://www.drjanetduffy.com/communities/summerlin" />
+	<meta name="twitter:title" content="Summerlin Real Estate | Las Vegas | Dr. Janet Duffy REALTOR®" />
+	<meta name="twitter:description" content="Explore Summerlin real estate. Master-planned community with luxury homes, golf courses, top schools, and world-class amenities." />
+	
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Place",
+		"name": "Summerlin",
+		"description": "Las Vegas's premier master-planned community with luxury homes, golf courses, top schools, and world-class amenities",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Las Vegas",
+			"addressRegion": "NV",
+			"addressCountry": "US"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": "36.1699",
+			"longitude": "-115.1398"
+		},
+		"containsPlace": {
+			"@type": "Place",
+			"name": "Summerlin Villages"
+		}
+	}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
@@ -126,20 +173,127 @@
 			</div>
 		</div>
 
-		<!-- Summerlin Neighborhoods -->
+		<!-- Summerlin Villages -->
 		<div class="mb-16">
-			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Which Neighborhoods Are Available in Summerlin?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Which Summerlin Village Should You Choose?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
-				Summerlin features diverse neighborhoods from exclusive gated communities like The Ridges to family-friendly areas like The Trails. Each neighborhood offers unique character, amenities, and price points to match different lifestyles and budgets.
+				Choose your Summerlin village based on budget, lifestyle, and priorities: The Paseos for affordability, Willows for families, Trails for outdoor enthusiasts, Canyons for views, and Ridges or Summit for luxury living. Each village offers unique character, amenities, and price points to match different lifestyles and budgets.
 			</p>
-			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-				{#each neighborhoods as neighborhood}
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+				{#each villages as village}
 					<div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all">
-						<h3 class="text-lg font-bold text-gray-900 mb-2">{neighborhood.name}</h3>
-						<p class="text-primary-600 font-semibold mb-2">{neighborhood.avgPrice}</p>
-						<p class="text-gray-600 text-sm">{neighborhood.description}</p>
+						<h3 class="text-lg font-bold text-gray-900 mb-2">{village.name}</h3>
+						<p class="text-primary-600 font-semibold mb-2">{formatCurrency(village.priceRange.min)} - {formatCurrency(village.priceRange.max)}</p>
+						<p class="text-gray-700 text-sm mb-3 leading-relaxed">{village.description}</p>
+						<div class="space-y-2 text-xs text-gray-600">
+							<p><strong>HOA:</strong> ${village.hoaFee.min}-${village.hoaFee.max}/month</p>
+							{#if village.schools}
+								<p><strong>Schools:</strong> {village.schools.join(', ')}</p>
+							{/if}
+						</div>
 					</div>
 				{/each}
+			</div>
+		</div>
+
+		<!-- HOA Structure -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Are Summerlin HOA Fees and Rules?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Summerlin has two HOA layers: master association ($160/year) plus village fees ($150-$500/month), totaling $1,800-$6,000 annually, covering parks, trails, events, and some utilities. Understanding HOA structure, fees, and rules helps you make informed decisions about your Summerlin home purchase.
+			</p>
+			<div class="grid md:grid-cols-2 gap-8">
+				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-lg border border-gray-100">
+					<h3 class="text-2xl font-bold text-gray-900 mb-6">Master Association ($160/year)</h3>
+					<ul class="space-y-3">
+						{#each lasVegasLocalData.summerlin.masterHOA.includes as item}
+							<li class="flex items-start gap-3">
+								<CheckCircle class="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+								<span class="text-gray-700">{item}</span>
+							</li>
+						{/each}
+					</ul>
+				</div>
+				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-lg border border-gray-100">
+					<h3 class="text-2xl font-bold text-gray-900 mb-6">Village HOA Rules</h3>
+					<ul class="space-y-3">
+						{#each lasVegasLocalData.summerlin.hoaRules as rule}
+							<li class="flex items-start gap-3">
+								<CheckCircle class="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" />
+								<span class="text-gray-700">{rule}</span>
+							</li>
+						{/each}
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Distance Information -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Far Is Summerlin from the Las Vegas Strip?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Summerlin is 10-20 minutes from the Strip depending on your village, with Red Rock Casino just 5 minutes away and Downtown Summerlin providing local entertainment without Strip traffic. Most Summerlin residents rarely visit the Strip because Downtown Summerlin has 125+ shops and restaurants, Red Rock Casino offers gaming and entertainment, and Las Vegas Ballpark hosts sports and concerts.
+			</p>
+			<div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+				<div class="bg-white rounded-xl p-6 shadow-lg text-center">
+					<Clock class="w-8 h-8 text-primary-600 mx-auto mb-3" />
+					<div class="text-2xl font-bold text-gray-900 mb-1">{lasVegasLocalData.summerlin.distances.toStrip.min}-{lasVegasLocalData.summerlin.distances.toStrip.max} min</div>
+					<p class="text-gray-600 text-sm">To Strip</p>
+				</div>
+				<div class="bg-white rounded-xl p-6 shadow-lg text-center">
+					<Clock class="w-8 h-8 text-primary-600 mx-auto mb-3" />
+					<div class="text-2xl font-bold text-gray-900 mb-1">{lasVegasLocalData.summerlin.distances.toAirport.min}-{lasVegasLocalData.summerlin.distances.toAirport.max} min</div>
+					<p class="text-gray-600 text-sm">To Airport</p>
+				</div>
+				<div class="bg-white rounded-xl p-6 shadow-lg text-center">
+					<Clock class="w-8 h-8 text-primary-600 mx-auto mb-3" />
+					<div class="text-2xl font-bold text-gray-900 mb-1">{lasVegasLocalData.summerlin.distances.toRedRockCasino.min}-{lasVegasLocalData.summerlin.distances.toRedRockCasino.max} min</div>
+					<p class="text-gray-600 text-sm">To Red Rock Casino</p>
+				</div>
+				<div class="bg-white rounded-xl p-6 shadow-lg text-center">
+					<Clock class="w-8 h-8 text-primary-600 mx-auto mb-3" />
+					<div class="text-2xl font-bold text-gray-900 mb-1">{lasVegasLocalData.summerlin.distances.toDowntownSummerlin.min}-{lasVegasLocalData.summerlin.distances.toDowntownSummerlin.max} min</div>
+					<p class="text-gray-600 text-sm">To Downtown Summerlin</p>
+				</div>
+				<div class="bg-white rounded-xl p-6 shadow-lg text-center">
+					<Clock class="w-8 h-8 text-primary-600 mx-auto mb-3" />
+					<div class="text-2xl font-bold text-gray-900 mb-1">{lasVegasLocalData.summerlin.distances.toDowntownLV.min}-{lasVegasLocalData.summerlin.distances.toDowntownLV.max} min</div>
+					<p class="text-gray-600 text-sm">To Downtown LV</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Pricing by Village -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Much Do Homes Cost in Summerlin?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				Summerlin home prices range from $400,000 for condos to $5+ million for custom estates, with most single-family homes between $650,000 and $1.2 million depending on village and proximity to Red Rock Canyon. Factors affecting Summerlin prices include Downtown Summerlin proximity (10-15% premium), mountain/Strip views (20-30% premium), golf course lots (15-25% premium), and age of home (newer villages command higher prices).
+			</p>
+			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-lg border border-gray-100">
+				<h3 class="text-2xl font-bold text-gray-900 mb-6">Current Summerlin Pricing by Village (November 2025)</h3>
+				<div class="space-y-4">
+					{#each villages as village}
+						<div class="bg-white rounded-lg p-6 border border-gray-100">
+							<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+								<div>
+									<h4 class="text-xl font-bold text-gray-900 mb-2">{village.name}</h4>
+									<p class="text-gray-700">{village.description}</p>
+									{#if village.features}
+										<ul class="mt-2 space-y-1">
+											{#each village.features as feature}
+												<li class="text-sm text-gray-600">• {feature}</li>
+											{/each}
+										</ul>
+									{/if}
+								</div>
+								<div class="text-right">
+									<div class="text-2xl font-bold text-primary-600 mb-1">{formatCurrency(village.priceRange.min)} - {formatCurrency(village.priceRange.max)}</div>
+									<p class="text-sm text-gray-600">HOA: ${village.hoaFee.min}-${village.hoaFee.max}/month</p>
+								</div>
+							</div>
+						</div>
+					{/each}
+				</div>
 			</div>
 		</div>
 
@@ -179,11 +333,36 @@
 			</div>
 		</div>
 
+		<!-- Concierge Services -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Does Dr. Janet Duffy's Concierge Service Help Summerlin Buyers?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				My concierge service includes personalized neighborhood tours showing parks, schools, shopping, and hidden gems locals love. I review all HOA documents before you buy, explaining restrictions and fees clearly. My service includes HOA application assistance, architectural review coordination, and tracking every Summerlin sale to provide real-time market analysis for your specific villages of interest.
+			</p>
+			<div class="grid md:grid-cols-3 gap-6">
+				<div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+					<Building2 class="w-8 h-8 text-primary-600 mb-4" />
+					<h3 class="text-lg font-bold text-gray-900 mb-2">HOA Document Review</h3>
+					<p class="text-gray-600 text-sm">Review all HOA documents before you buy, explaining restrictions and fees clearly</p>
+				</div>
+				<div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+					<MapPin class="w-8 h-8 text-primary-600 mb-4" />
+					<h3 class="text-lg font-bold text-gray-900 mb-2">Personalized Village Tours</h3>
+					<p class="text-gray-600 text-sm">Detailed tours of each village showing insider spots like best walking trails and hidden parks</p>
+				</div>
+				<div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+					<TrendingUp class="w-8 h-8 text-primary-600 mb-4" />
+					<h3 class="text-lg font-bold text-gray-900 mb-2">Real-Time Market Analysis</h3>
+					<p class="text-gray-600 text-sm">Track every Summerlin sale and provide custom reports for your specific villages of interest</p>
+				</div>
+			</div>
+		</div>
+
 		<!-- CTA Section -->
 		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
-			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Dream Home in Summerlin?</h2>
-			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
-				Let me help you find your perfect home in Summerlin. With deep knowledge of the community, neighborhoods, and market conditions, I'll guide you through every step of your home buying journey.
+			<h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Find Your Dream Home in Summerlin?</h2>
+			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto leading-relaxed">
+				Let me help you find your perfect home in Summerlin. With deep knowledge of every HOA, every builder, and every neighborhood intimately, I'll guide you through every step of your home buying journey. I provide detailed tours of each village, showing you insider spots like best walking trails, hidden parks, and optimal streets for views.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>

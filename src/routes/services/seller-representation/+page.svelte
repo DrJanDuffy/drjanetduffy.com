@@ -25,7 +25,7 @@
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How Do We Help Las Vegas Home Sellers Maximize Their Sale Price?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Selling a home in Las Vegas requires market expertise, strategic pricing, and effective marketing. Our seller representation services maximize your home's value, minimize time on market, and ensure a smooth transaction from listing to closing through strategic pricing, marketing excellence, negotiation expertise, and complete transaction management.
+					Selling a home in Las Vegas requires market expertise, strategic pricing, and effective marketing. Our seller representation services maximize your home's value, minimize time on market, and ensure a smooth transaction from listing to closing through strategic pricing, marketing excellence, negotiation expertise, and complete transaction management. My concierge service includes coordinating HOA disclosure requirements across master-planned communities, pool value considerations for desert homes, and community-specific marketing strategies that highlight your home's unique features.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">

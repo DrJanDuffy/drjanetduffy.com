@@ -281,7 +281,7 @@
 							<div class="space-y-3">
 								<p class="text-gray-700">
 									<strong class="text-gray-900">Email:</strong> 
-									<a href="mailto:info@drjanetduffy.com" class="text-primary-600 hover:text-primary-700 font-semibold ml-2">info@drjanetduffy.com</a>
+									<a href="mailto:info@DrJanetDuffy.com" class="text-primary-600 hover:text-primary-700 font-semibold ml-2">info@DrJanetDuffy.com</a>
 								</p>
 								<p class="text-gray-700">
 									<strong class="text-gray-900">Phone:</strong> 

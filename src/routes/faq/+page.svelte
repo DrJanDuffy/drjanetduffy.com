@@ -79,6 +79,31 @@
 			]
 		},
 		{
+			category: 'Las Vegas-Specific Questions',
+			questions: [
+				{
+					q: 'Do I need a pool in Las Vegas?',
+					a: 'While not required, pools add 5-10% to home value and provide 7-8 months of use annually. Over 65% of homes over $500K have pools. Pool maintenance costs $150-$200/month, but many buyers consider pools essential for Las Vegas living.'
+				},
+				{
+					q: 'What are property taxes like in Summerlin?',
+					a: 'Clark County property tax rate is 0.74% of assessed value. For a $650K home, annual taxes are approximately $4,800, plus special districts may add $200-$500. Property taxes in Las Vegas are relatively low compared to other major markets.'
+				},
+				{
+					q: 'How do I keep my garage cool in Las Vegas summers?',
+					a: 'Garages can reach 120-140°F in summer. Solutions include insulation, ventilation fans, or mini-split AC units ($2,000-$4,000 installed). Many homeowners use insulated garage doors and fans to manage heat.'
+				},
+				{
+					q: 'Should I buy a home on a golf course in Las Vegas?',
+					a: 'Golf course homes command 15-25% premiums but consider early morning noise, restricted backyard modifications, and cart path proximity. Golf course lots offer beautiful views but may have limitations on outdoor space modifications.'
+				},
+				{
+					q: 'When is the best time to move to Las Vegas?',
+					a: 'October through April offers the best selection and motivated sellers before holidays. October and November are particularly good months for finding deals. Summer months (May-September) are hotter but may offer better pricing due to lower demand.'
+				}
+			]
+		},
+		{
 			category: 'Working With Me',
 			questions: [
 				{
