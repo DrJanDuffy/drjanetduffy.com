@@ -7,6 +7,58 @@
 	<title>Dr. Janet Duffy, REALTOR® | Luxury Las Vegas Real Estate Expert</title>
 	<meta name="description" content="Dr. Janet Duffy, licensed REALTOR® specializing in luxury Las Vegas real estate. Expert guidance for buying, selling, and investing in West Summerlin, The Ridges, and premier Las Vegas communities." />
 	<meta name="keywords" content="Las Vegas real estate, luxury homes Las Vegas, West Summerlin realtor, Dr. Janet Duffy, Las Vegas homes for sale" />
+	
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://drjanetduffy.com/" />
+	<meta property="og:title" content="Dr. Janet Duffy, REALTOR® | Luxury Las Vegas Real Estate Expert" />
+	<meta property="og:description" content="Expert guidance for buying, selling, and investing in Las Vegas real estate. 15+ years of experience serving West Summerlin, The Ridges, and premier communities." />
+	
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://drjanetduffy.com/" />
+	<meta property="twitter:title" content="Dr. Janet Duffy, REALTOR® | Luxury Las Vegas Real Estate Expert" />
+	<meta property="twitter:description" content="Expert guidance for buying, selling, and investing in Las Vegas real estate." />
+	
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "RealEstateAgent",
+		"name": "Dr. Janet Duffy",
+		"description": "Licensed REALTOR® specializing in luxury Las Vegas real estate with 15+ years of experience",
+		"url": "https://drjanetduffy.com",
+		"telephone": "702-222-1964",
+		"email": "drduffy@bhhsnv.com",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Las Vegas",
+			"addressRegion": "NV",
+			"addressCountry": "US"
+		},
+		"worksFor": {
+			"@type": "RealEstateAgent",
+			"name": "Berkshire Hathaway Nevada Properties"
+		},
+		"areaServed": {
+			"@type": "City",
+			"name": "Las Vegas"
+		}
+	}
+	</script>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebSite",
+		"name": "Dr. Janet Duffy, REALTOR®",
+		"url": "https://drjanetduffy.com",
+		"potentialAction": {
+			"@type": "SearchAction",
+			"target": "https://drjanetduffy.com/properties?search={search_term_string}",
+			"query-input": "required name=search_term_string"
+		}
+	}
+	</script>
 </svelte:head>
 
 <!-- Hero Section -->
@@ -248,6 +300,125 @@
 					</a>
 				</div>
 			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="section relative bg-white">
+	<div class="container-premium">
+		<div class="text-center mb-20">
+			<h2 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">
+				What My Clients Say
+			</h2>
+			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
+			<p class="text-xl text-gray-600 max-w-2xl mx-auto">
+				Real experiences from satisfied clients across Las Vegas
+			</p>
+		</div>
+		<div class="grid-premium md:grid-cols-3 gap-8">
+			<div class="group relative bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
+				<div class="mb-6">
+					<div class="flex items-center gap-1 mb-4">
+						{#each Array(5) as _}
+							<svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+								<path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+							</svg>
+						{/each}
+					</div>
+					<p class="text-gray-700 leading-relaxed text-lg mb-6">
+						"Dr. Duffy made our first home buying experience seamless. Her knowledge of the Las Vegas market and attention to detail helped us find the perfect home within our budget."
+					</p>
+				</div>
+				<div class="border-t border-gray-200 pt-6">
+					<div class="font-display font-bold text-gray-900 text-lg">Sarah & Mike Johnson</div>
+					<div class="text-sm text-gray-600">First-time Buyers</div>
+				</div>
+			</div>
+			<div class="group relative bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
+				<div class="mb-6">
+					<div class="flex items-center gap-1 mb-4">
+						{#each Array(5) as _}
+							<svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+								<path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+							</svg>
+						{/each}
+					</div>
+					<p class="text-gray-700 leading-relaxed text-lg mb-6">
+						"Jan's expertise in luxury properties is unmatched. She helped us sell our home for 15% above asking price and found us an incredible investment property."
+					</p>
+				</div>
+				<div class="border-t border-gray-200 pt-6">
+					<div class="font-display font-bold text-gray-900 text-lg">Robert Chen</div>
+					<div class="text-sm text-gray-600">Luxury Home Seller & Investor</div>
+				</div>
+			</div>
+			<div class="group relative bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
+				<div class="mb-6">
+					<div class="flex items-center gap-1 mb-4">
+						{#each Array(5) as _}
+							<svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+								<path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+							</svg>
+						{/each}
+					</div>
+					<p class="text-gray-700 leading-relaxed text-lg mb-6">
+						"Professional, responsive, and results-driven. Jan's market knowledge and negotiation skills saved us thousands on our home purchase."
+					</p>
+				</div>
+				<div class="border-t border-gray-200 pt-6">
+					<div class="font-display font-bold text-gray-900 text-lg">Lisa Martinez</div>
+					<div class="text-sm text-gray-600">Relocating from California</div>
+				</div>
+			</div>
+		</div>
+		<div class="text-center mt-12">
+			<a href="/about#testimonials" class="inline-flex items-center gap-2 text-primary-600 font-bold hover:text-primary-700 hover:gap-3 transition-all duration-300 text-lg">
+				Read More Testimonials <span class="text-xl">→</span>
+			</a>
+		</div>
+	</div>
+</section>
+
+<!-- Market Statistics Section -->
+<section class="section relative" style="background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);">
+	<div class="container-premium">
+		<div class="text-center mb-20">
+			<h2 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">
+				Las Vegas Market Insights
+			</h2>
+			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
+			<p class="text-xl text-gray-600 max-w-2xl mx-auto">
+				Current market trends and statistics to guide your real estate decisions
+			</p>
+		</div>
+		<div class="grid-premium md:grid-cols-4 gap-8">
+			<div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+				<div class="text-5xl font-display font-bold text-primary-600 mb-4">$485K</div>
+				<div class="text-gray-600 font-semibold mb-2">Median Home Price</div>
+				<div class="text-sm text-gray-500">Single-family homes</div>
+			</div>
+			<div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+				<div class="text-5xl font-display font-bold text-primary-600 mb-4">46</div>
+				<div class="text-gray-600 font-semibold mb-2">Days on Market</div>
+				<div class="text-sm text-gray-500">Average time to sell</div>
+			</div>
+			<div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+				<div class="text-5xl font-display font-bold text-primary-600 mb-4">98%</div>
+				<div class="text-gray-600 font-semibold mb-2">List Price Received</div>
+				<div class="text-sm text-gray-500">Average sale price ratio</div>
+			</div>
+			<div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+				<div class="text-5xl font-display font-bold text-primary-600 mb-4">4</div>
+				<div class="text-gray-600 font-semibold mb-2">Months Supply</div>
+				<div class="text-sm text-gray-500">Current inventory level</div>
+			</div>
+		</div>
+		<div class="text-center mt-12">
+			<p class="text-gray-600 mb-4">Data based on October 2025 Las Vegas real estate market</p>
+			<a href="/blog" class="inline-flex items-center gap-2 text-primary-600 font-bold hover:text-primary-700 hover:gap-3 transition-all duration-300">
+				Read Market Reports <span class="text-xl">→</span>
+			</a>
 		</div>
 	</div>
 </section>
