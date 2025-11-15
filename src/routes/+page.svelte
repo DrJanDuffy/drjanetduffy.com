@@ -62,34 +62,53 @@
 </svelte:head>
 
 <!-- Hero Section with Search -->
-<section class="relative bg-white pt-24 pb-16">
-	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<section class="relative bg-gradient-to-b from-white via-primary-50/30 to-white pt-20 pb-20 overflow-hidden">
+	<!-- Decorative background elements -->
+	<div class="absolute inset-0 overflow-hidden pointer-events-none">
+		<div class="absolute -top-40 -right-40 w-80 h-80 bg-primary-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
+		<div class="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
+	</div>
+	
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 		<div class="max-w-6xl mx-auto">
 			<!-- Hero Content -->
-			<div class="text-center mb-12">
-				<h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-4 tracking-tight">
-					Find Your Dream Home in Las Vegas
+			<div class="text-center mb-12 animate-fade-in">
+				<div class="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-semibold mb-6">
+					<span>🏆</span>
+					<span>15+ Years of Excellence</span>
+				</div>
+				<h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 tracking-tight leading-tight">
+					Find Your Dream Home in
+					<span class="bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent">Las Vegas</span>
 				</h1>
-				<p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
-					Expert real estate guidance from Dr. Janet Duffy, REALTOR®
+				<p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+					Expert real estate guidance from Dr. Janet Duffy, REALTOR®. Your trusted partner for luxury homes in West Summerlin, The Ridges, and premier Las Vegas communities.
 				</p>
 			</div>
 			
-			<!-- Search Form Card -->
-			<div class="bg-white rounded-2xl shadow-2xl border border-gray-200 p-8 md:p-10">
-				<form class="space-y-6">
+			<!-- Enhanced Search Form Card -->
+			<div class="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl border border-gray-200/50 p-8 md:p-10 mb-12 transform transition-all duration-300 hover:shadow-3xl">
+				<form class="space-y-6" on:submit|preventDefault={() => {}}>
 					<div class="grid md:grid-cols-4 gap-4">
 						<div class="md:col-span-2">
-							<label class="block text-sm font-semibold text-gray-700 mb-2">Location</label>
+							<label class="block text-sm font-semibold text-gray-700 mb-2">
+								<span class="flex items-center gap-2">
+									📍 Location
+								</span>
+							</label>
 							<input 
 								type="text" 
 								placeholder="Enter city, neighborhood, or ZIP"
-								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 placeholder-gray-400"
+								class="w-full px-4 py-3.5 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 placeholder-gray-400 transition-all duration-200 hover:border-gray-300"
 							/>
 						</div>
 						<div>
-							<label class="block text-sm font-semibold text-gray-700 mb-2">Property Type</label>
-							<select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white">
+							<label class="block text-sm font-semibold text-gray-700 mb-2">
+								<span class="flex items-center gap-2">
+									🏠 Property Type
+								</span>
+							</label>
+							<select class="w-full px-4 py-3.5 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white transition-all duration-200 hover:border-gray-300 cursor-pointer">
 								<option>All Types</option>
 								<option>Single Family</option>
 								<option>Condos</option>
@@ -98,8 +117,12 @@
 							</select>
 						</div>
 						<div>
-							<label class="block text-sm font-semibold text-gray-700 mb-2">Price Range</label>
-							<select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white">
+							<label class="block text-sm font-semibold text-gray-700 mb-2">
+								<span class="flex items-center gap-2">
+									💰 Price Range
+								</span>
+							</label>
+							<select class="w-full px-4 py-3.5 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white transition-all duration-200 hover:border-gray-300 cursor-pointer">
 								<option>Any Price</option>
 								<option>Under $300K</option>
 								<option>$300K - $500K</option>
@@ -111,8 +134,12 @@
 					</div>
 					<div class="flex flex-col sm:flex-row gap-4">
 						<div class="flex-1">
-							<label class="block text-sm font-semibold text-gray-700 mb-2">Bedrooms</label>
-							<select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white">
+							<label class="block text-sm font-semibold text-gray-700 mb-2">
+								<span class="flex items-center gap-2">
+									🛏️ Bedrooms
+								</span>
+							</label>
+							<select class="w-full px-4 py-3.5 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white transition-all duration-200 hover:border-gray-300 cursor-pointer">
 								<option>Any</option>
 								<option>1+</option>
 								<option>2+</option>
@@ -122,8 +149,12 @@
 							</select>
 						</div>
 						<div class="flex-1">
-							<label class="block text-sm font-semibold text-gray-700 mb-2">Bathrooms</label>
-							<select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white">
+							<label class="block text-sm font-semibold text-gray-700 mb-2">
+								<span class="flex items-center gap-2">
+									🚿 Bathrooms
+								</span>
+							</label>
+							<select class="w-full px-4 py-3.5 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white transition-all duration-200 hover:border-gray-300 cursor-pointer">
 								<option>Any</option>
 								<option>1+</option>
 								<option>2+</option>
@@ -134,8 +165,11 @@
 						<div class="flex items-end">
 							<button 
 								type="submit"
-								class="w-full sm:w-auto bg-primary-600 hover:bg-primary-700 text-white font-bold px-10 py-3 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
+								class="w-full sm:w-auto bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-bold px-10 py-3.5 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 flex items-center justify-center gap-2"
 							>
+								<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+								</svg>
 								Search Properties
 							</button>
 						</div>
@@ -143,148 +177,302 @@
 				</form>
 			</div>
 			
-			<!-- Quick Stats -->
-			<div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-				<div class="text-center">
-					<div class="text-3xl md:text-4xl font-bold text-primary-600 mb-1">150+</div>
-					<div class="text-sm text-gray-600">Properties Sold</div>
+			<!-- Enhanced Quick Stats -->
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+				<div class="text-center bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-gray-200/50 hover:bg-white/80 transition-all duration-300 hover:scale-105">
+					<div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent mb-2">150+</div>
+					<div class="text-sm font-semibold text-gray-700">Properties Sold</div>
 				</div>
-				<div class="text-center">
-					<div class="text-3xl md:text-4xl font-bold text-primary-600 mb-1">15+</div>
-					<div class="text-sm text-gray-600">Years Experience</div>
+				<div class="text-center bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-gray-200/50 hover:bg-white/80 transition-all duration-300 hover:scale-105">
+					<div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent mb-2">15+</div>
+					<div class="text-sm font-semibold text-gray-700">Years Experience</div>
 				</div>
-				<div class="text-center">
-					<div class="text-3xl md:text-4xl font-bold text-primary-600 mb-1">98%</div>
-					<div class="text-sm text-gray-600">Client Satisfaction</div>
+				<div class="text-center bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-gray-200/50 hover:bg-white/80 transition-all duration-300 hover:scale-105">
+					<div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent mb-2">98%</div>
+					<div class="text-sm font-semibold text-gray-700">Client Satisfaction</div>
 				</div>
-				<div class="text-center">
-					<div class="text-3xl md:text-4xl font-bold text-primary-600 mb-1">$50M+</div>
-					<div class="text-sm text-gray-600">Sales Volume</div>
+				<div class="text-center bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-gray-200/50 hover:bg-white/80 transition-all duration-300 hover:scale-105">
+					<div class="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent mb-2">$50M+</div>
+					<div class="text-sm font-semibold text-gray-700">Sales Volume</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
+<style>
+	@keyframes blob {
+		0%, 100% {
+			transform: translate(0, 0) scale(1);
+		}
+		33% {
+			transform: translate(30px, -50px) scale(1.1);
+		}
+		66% {
+			transform: translate(-20px, 20px) scale(0.9);
+		}
+	}
+	
+	.animate-blob {
+		animation: blob 7s infinite;
+	}
+	
+	.animation-delay-2000 {
+		animation-delay: 2s;
+	}
+	
+	@keyframes fade-in {
+		from {
+			opacity: 0;
+			transform: translateY(20px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+	
+	.animate-fade-in {
+		animation: fade-in 0.6s ease-out;
+	}
+</style>
+
 <!-- Featured Properties Section -->
-<section class="py-16 bg-gray-50">
+<section class="py-20 bg-gradient-to-b from-gray-50 to-white">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto">
-			<div class="flex justify-between items-center mb-10">
+			<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-12 gap-4">
 				<div>
-					<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Featured Properties</h2>
-					<p class="text-gray-600">Discover luxury homes in Las Vegas</p>
+					<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-3">Featured Properties</h2>
+					<p class="text-lg text-gray-600">Discover luxury homes in Las Vegas's most desirable neighborhoods</p>
 				</div>
-				<a href="/properties" class="text-primary-600 hover:text-primary-700 font-semibold">
-					View All →
+				<a href="/properties" class="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-semibold group transition-colors">
+					<span>View All Properties</span>
+					<svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+					</svg>
 				</a>
 			</div>
 			
-			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
 				<!-- Property Card 1 -->
-				<div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200">
-					<div class="h-64 bg-gradient-to-br from-primary-100 to-primary-200 relative">
-						<div class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-bold text-primary-600">
+				<a href="/properties" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-primary-300 transform hover:-translate-y-2">
+					<div class="h-64 bg-gradient-to-br from-primary-100 via-primary-200 to-blue-200 relative overflow-hidden">
+						<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						<div class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm font-bold text-primary-600 shadow-md">
 							For Sale
+						</div>
+						<div class="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-gray-700">
+							New Listing
 						</div>
 					</div>
 					<div class="p-6">
-						<div class="text-2xl font-bold text-gray-900 mb-2">$485,000</div>
-						<h3 class="text-lg font-semibold text-gray-900 mb-2">Luxury Home in West Summerlin</h3>
-						<p class="text-gray-600 text-sm mb-4">1234 Desert View Dr, Las Vegas, NV 89138</p>
-						<div class="flex items-center gap-4 text-sm text-gray-600 mb-4">
-							<span>4 Beds</span>
-							<span>3 Baths</span>
-							<span>2,500 sqft</span>
+						<div class="flex items-baseline justify-between mb-3">
+							<div class="text-3xl font-bold bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent">$485,000</div>
+							<button class="p-2 rounded-full hover:bg-gray-100 transition-colors group/favorite">
+								<svg class="w-5 h-5 text-gray-400 group-hover/favorite:text-red-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+								</svg>
+							</button>
 						</div>
-						<a href="/properties" class="block w-full text-center bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 rounded-lg transition-colors">
-							View Details
-						</a>
+						<h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">Luxury Home in West Summerlin</h3>
+						<p class="text-gray-600 text-sm mb-4 flex items-center gap-1">
+							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+							</svg>
+							1234 Desert View Dr, Las Vegas, NV 89138
+						</p>
+						<div class="flex items-center gap-6 text-sm text-gray-600 mb-5 pb-5 border-b border-gray-100">
+							<span class="flex items-center gap-1.5">
+								<svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+								</svg>
+								<span class="font-semibold">4</span> Beds
+							</span>
+							<span class="flex items-center gap-1.5">
+								<svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+								</svg>
+								<span class="font-semibold">3</span> Baths
+							</span>
+							<span class="flex items-center gap-1.5">
+								<svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+								</svg>
+								<span class="font-semibold">2,500</span> sqft
+							</span>
+						</div>
+						<div class="flex items-center justify-between">
+							<span class="text-xs text-gray-500">Listed 2 days ago</span>
+							<span class="inline-flex items-center gap-2 text-primary-600 font-semibold group-hover:gap-3 transition-all">
+								View Details
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+								</svg>
+							</span>
+						</div>
 					</div>
-				</div>
+				</a>
 				
 				<!-- Property Card 2 -->
-				<div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200">
-					<div class="h-64 bg-gradient-to-br from-primary-200 to-primary-300 relative">
-						<div class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-bold text-primary-600">
+				<a href="/properties" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-primary-300 transform hover:-translate-y-2">
+					<div class="h-64 bg-gradient-to-br from-primary-200 via-blue-200 to-primary-300 relative overflow-hidden">
+						<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						<div class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm font-bold text-primary-600 shadow-md">
 							For Sale
+						</div>
+						<div class="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-gray-700">
+							Featured
 						</div>
 					</div>
 					<div class="p-6">
-						<div class="text-2xl font-bold text-gray-900 mb-2">$625,000</div>
-						<h3 class="text-lg font-semibold text-gray-900 mb-2">Modern Estate in The Ridges</h3>
-						<p class="text-gray-600 text-sm mb-4">5678 Mountain Peak Way, Las Vegas, NV 89144</p>
-						<div class="flex items-center gap-4 text-sm text-gray-600 mb-4">
-							<span>5 Beds</span>
-							<span>4 Baths</span>
-							<span>3,200 sqft</span>
+						<div class="flex items-baseline justify-between mb-3">
+							<div class="text-3xl font-bold bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent">$625,000</div>
+							<button class="p-2 rounded-full hover:bg-gray-100 transition-colors group/favorite">
+								<svg class="w-5 h-5 text-gray-400 group-hover/favorite:text-red-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+								</svg>
+							</button>
 						</div>
-						<a href="/properties" class="block w-full text-center bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 rounded-lg transition-colors">
-							View Details
-						</a>
+						<h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">Modern Estate in The Ridges</h3>
+						<p class="text-gray-600 text-sm mb-4 flex items-center gap-1">
+							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+							</svg>
+							5678 Mountain Peak Way, Las Vegas, NV 89144
+						</p>
+						<div class="flex items-center gap-6 text-sm text-gray-600 mb-5 pb-5 border-b border-gray-100">
+							<span class="flex items-center gap-1.5">
+								<svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+								</svg>
+								<span class="font-semibold">5</span> Beds
+							</span>
+							<span class="flex items-center gap-1.5">
+								<svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+								</svg>
+								<span class="font-semibold">4</span> Baths
+							</span>
+							<span class="flex items-center gap-1.5">
+								<svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+								</svg>
+								<span class="font-semibold">3,200</span> sqft
+							</span>
+						</div>
+						<div class="flex items-center justify-between">
+							<span class="text-xs text-gray-500">Listed 5 days ago</span>
+							<span class="inline-flex items-center gap-2 text-primary-600 font-semibold group-hover:gap-3 transition-all">
+								View Details
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+								</svg>
+							</span>
+						</div>
 					</div>
-				</div>
+				</a>
 				
 				<!-- Property Card 3 -->
-				<div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200">
-					<div class="h-64 bg-gradient-to-br from-primary-300 to-primary-400 relative">
-						<div class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-bold text-primary-600">
+				<a href="/properties" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-primary-300 transform hover:-translate-y-2">
+					<div class="h-64 bg-gradient-to-br from-primary-300 via-blue-300 to-primary-400 relative overflow-hidden">
+						<div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+						<div class="absolute top-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm font-bold text-primary-600 shadow-md">
 							For Sale
+						</div>
+						<div class="absolute bottom-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-gray-700">
+							Price Reduced
 						</div>
 					</div>
 					<div class="p-6">
-						<div class="text-2xl font-bold text-gray-900 mb-2">$350,000</div>
-						<h3 class="text-lg font-semibold text-gray-900 mb-2">Charming Condo in Green Valley</h3>
-						<p class="text-gray-600 text-sm mb-4">9012 Valley View Ln, Las Vegas, NV 89123</p>
-						<div class="flex items-center gap-4 text-sm text-gray-600 mb-4">
-							<span>2 Beds</span>
-							<span>2 Baths</span>
-							<span>1,400 sqft</span>
+						<div class="flex items-baseline justify-between mb-3">
+							<div class="text-3xl font-bold bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent">$350,000</div>
+							<button class="p-2 rounded-full hover:bg-gray-100 transition-colors group/favorite">
+								<svg class="w-5 h-5 text-gray-400 group-hover/favorite:text-red-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+								</svg>
+							</button>
 						</div>
-						<a href="/properties" class="block w-full text-center bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 rounded-lg transition-colors">
-							View Details
-						</a>
+						<h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">Charming Condo in Green Valley</h3>
+						<p class="text-gray-600 text-sm mb-4 flex items-center gap-1">
+							<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+							</svg>
+							9012 Valley View Ln, Las Vegas, NV 89123
+						</p>
+						<div class="flex items-center gap-6 text-sm text-gray-600 mb-5 pb-5 border-b border-gray-100">
+							<span class="flex items-center gap-1.5">
+								<svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+								</svg>
+								<span class="font-semibold">2</span> Beds
+							</span>
+							<span class="flex items-center gap-1.5">
+								<svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+								</svg>
+								<span class="font-semibold">2</span> Baths
+							</span>
+							<span class="flex items-center gap-1.5">
+								<svg class="w-4 h-4 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+								</svg>
+								<span class="font-semibold">1,400</span> sqft
+							</span>
+						</div>
+						<div class="flex items-center justify-between">
+							<span class="text-xs text-gray-500">Listed 1 week ago</span>
+							<span class="inline-flex items-center gap-2 text-primary-600 font-semibold group-hover:gap-3 transition-all">
+								View Details
+								<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+								</svg>
+							</span>
+						</div>
 					</div>
-				</div>
+				</a>
 			</div>
 		</div>
 	</div>
 </section>
 
 <!-- Why Choose Section -->
-<section class="py-16 bg-white">
+<section class="py-20 bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto">
-			<div class="text-center mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Why Choose Dr. Janet Duffy?</h2>
-				<p class="text-gray-600 text-lg">Expert real estate guidance you can trust</p>
+			<div class="text-center mb-16">
+				<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Why Choose Dr. Janet Duffy?</h2>
+				<p class="text-xl text-gray-600 max-w-2xl mx-auto">Expert real estate guidance backed by 15+ years of proven success in Las Vegas</p>
 			</div>
-			<div class="grid md:grid-cols-3 gap-8">
-				<div class="text-center">
-					<div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-						<span class="text-3xl">🏆</span>
+			<div class="grid md:grid-cols-3 gap-8 lg:gap-10">
+				<div class="group text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 hover:border-primary-300 transform hover:-translate-y-1">
+					<div class="w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+						<span class="text-4xl">🏆</span>
 					</div>
-					<h3 class="text-xl font-bold text-gray-900 mb-2">15+ Years Experience</h3>
-					<p class="text-gray-600">
-						Proven track record of successful transactions in the Las Vegas market.
+					<h3 class="text-2xl font-bold text-gray-900 mb-3">15+ Years Experience</h3>
+					<p class="text-gray-600 leading-relaxed">
+						Proven track record of successful transactions in the Las Vegas market. Trusted by hundreds of satisfied clients.
 					</p>
 				</div>
-				<div class="text-center">
-					<div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-						<span class="text-3xl">🎯</span>
+				<div class="group text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 hover:border-primary-300 transform hover:-translate-y-1">
+					<div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+						<span class="text-4xl">🎯</span>
 					</div>
-					<h3 class="text-xl font-bold text-gray-900 mb-2">Expert Guidance</h3>
-					<p class="text-gray-600">
-						Personalized service tailored to your unique real estate needs.
+					<h3 class="text-2xl font-bold text-gray-900 mb-3">Expert Guidance</h3>
+					<p class="text-gray-600 leading-relaxed">
+						Personalized service tailored to your unique real estate needs. From first-time buyers to luxury investors.
 					</p>
 				</div>
-				<div class="text-center">
-					<div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-						<span class="text-3xl">📍</span>
+				<div class="group text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 hover:border-primary-300 transform hover:-translate-y-1">
+					<div class="w-20 h-20 bg-gradient-to-br from-primary-600 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+						<span class="text-4xl">📍</span>
 					</div>
-					<h3 class="text-xl font-bold text-gray-900 mb-2">Local Expertise</h3>
-					<p class="text-gray-600">
-						Deep knowledge of Las Vegas neighborhoods and market trends.
+					<h3 class="text-2xl font-bold text-gray-900 mb-3">Local Expertise</h3>
+					<p class="text-gray-600 leading-relaxed">
+						Deep knowledge of Las Vegas neighborhoods, market trends, and investment opportunities across the valley.
 					</p>
 				</div>
 			</div>
