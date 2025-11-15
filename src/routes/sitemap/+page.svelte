@@ -15,16 +15,34 @@
 		{ url: '/listings-list', title: 'Property List View', description: 'View properties in list format', category: 'Properties' },
 		{ url: '/past-sales', title: 'Past Sales', description: 'View past sales history', category: 'Properties' },
 		
-		// Communities
+		// Major Communities
 		{ url: '/communities/summerlin', title: 'Summerlin', description: 'Luxury homes in Summerlin', category: 'Communities' },
 		{ url: '/communities/henderson', title: 'Henderson', description: 'Henderson real estate', category: 'Communities' },
 		{ url: '/communities/green-valley', title: 'Green Valley', description: 'Green Valley homes', category: 'Communities' },
+		{ url: '/communities/north-las-vegas', title: 'North Las Vegas', description: 'North Las Vegas real estate', category: 'Communities' },
+		{ url: '/communities/boulder-city', title: 'Boulder City', description: 'Boulder City homes', category: 'Communities' },
+		{ url: '/communities/seven-hills', title: 'Seven Hills', description: 'Seven Hills community', category: 'Communities' },
+		{ url: '/communities/southern-highlands', title: 'Southern Highlands', description: 'Southern Highlands homes', category: 'Communities' },
+		{ url: '/communities/mountains-edge', title: 'Mountains Edge', description: 'Mountains Edge community', category: 'Communities' },
+		{ url: '/communities/anthem', title: 'Anthem', description: 'Anthem Country Club', category: 'Communities' },
 		
 		// Property Types
 		{ url: '/properties/homes', title: 'Single Family Homes', description: 'Browse single family homes', category: 'Properties' },
 		{ url: '/properties/condos', title: 'Condos', description: 'Browse condos and townhomes', category: 'Properties' },
+		{ url: '/properties/townhomes', title: 'Townhomes', description: 'Browse townhomes', category: 'Properties' },
 		{ url: '/properties/new-construction', title: 'New Construction', description: 'New home construction', category: 'Properties' },
 		{ url: '/properties/luxury', title: 'Luxury Estates', description: 'Luxury real estate', category: 'Properties' },
+		{ url: '/properties/gated-communities', title: 'Gated Communities', description: 'Gated community homes', category: 'Properties' },
+		{ url: '/properties/golf-communities', title: 'Golf Communities', description: 'Golf course communities', category: 'Properties' },
+		{ url: '/properties/55-plus', title: '55+ Communities', description: 'Retirement communities', category: 'Properties' },
+		{ url: '/properties/foreclosures', title: 'Foreclosures', description: 'Foreclosure properties', category: 'Properties' },
+		{ url: '/properties/short-sales', title: 'Short Sales', description: 'Short sale properties', category: 'Properties' },
+		
+		// Services
+		{ url: '/services/buying', title: 'Buying Guide', description: 'Home buying guide', category: 'Services' },
+		{ url: '/services/selling', title: 'Selling Guide', description: 'Home selling guide', category: 'Services' },
+		{ url: '/services/mortgage-calculator', title: 'Mortgage Calculator', description: 'Calculate your mortgage', category: 'Services' },
+		{ url: '/services/testimonials', title: 'Testimonials', description: 'Client testimonials', category: 'Services' },
 		
 		// Legal
 		{ url: '/privacy', title: 'Privacy Policy', description: 'Privacy policy and data protection', category: 'Legal' },
