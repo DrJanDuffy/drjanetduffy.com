@@ -54,18 +54,47 @@
 
 <svelte:head>
 	<title>Sitemap | Dr. Janet Duffy, REALTOR® | Luxury Las Vegas Real Estate</title>
-	<meta name="description" content="Site map for Dr. Janet Duffy, REALTOR® luxury Las Vegas real estate website. Find all pages and sections easily." />
+	<meta name="description" content="Complete site map for Dr. Janet Duffy, REALTOR® luxury Las Vegas real estate website. Browse all pages including properties, communities, services, and resources for buying and selling homes in Las Vegas, Summerlin, Henderson, and surrounding areas." />
+	<meta name="keywords" content="sitemap, Las Vegas real estate, property listings, Summerlin homes, Henderson real estate, Dr. Janet Duffy" />
 	<meta name="robots" content="index, follow" />
 	<link rel="canonical" href="https://www.drjanetduffy.com/sitemap" />
+	
+	<!-- Open Graph -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/sitemap" />
+	<meta property="og:title" content="Sitemap | Dr. Janet Duffy, REALTOR®" />
+	<meta property="og:description" content="Complete site map for Dr. Janet Duffy, REALTOR® luxury Las Vegas real estate website." />
+	
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebPage",
+		"name": "Sitemap",
+		"description": "Complete site map for Dr. Janet Duffy, REALTOR® luxury Las Vegas real estate website",
+		"url": "https://www.drjanetduffy.com/sitemap",
+		"inLanguage": "en-US",
+		"isPartOf": {
+			"@type": "WebSite",
+			"name": "Dr. Janet Duffy, REALTOR®",
+			"url": "https://www.drjanetduffy.com"
+		}
+	}
+	</script>
 </svelte:head>
 
 <section class="section">
 	<div class="container-premium">
 		<div class="text-center mb-12">
 			<h1 class="font-display text-4xl md:text-5xl font-bold mb-4 text-gray-900">Sitemap</h1>
-			<p class="text-xl text-gray-600 max-w-2xl mx-auto">
-				Find all pages and sections of our luxury real estate website.
+			<p class="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
+				Navigate through all pages and sections of our luxury Las Vegas real estate website. Find properties, communities, services, and resources to help you buy or sell your home in Las Vegas, Summerlin, Henderson, and surrounding areas.
 			</p>
+			<div class="bg-primary-50 rounded-xl p-6 max-w-2xl mx-auto">
+				<p class="text-gray-700 text-sm leading-relaxed">
+					<strong>About This Sitemap:</strong> This page provides a comprehensive overview of all pages on our website. Use it to quickly find information about Las Vegas real estate, property listings, community guides, buying and selling services, and more. For search engines, we also provide an <a href="/sitemap.xml" class="text-primary-600 hover:text-primary-700 font-semibold underline">XML sitemap</a>.
+				</p>
+			</div>
 		</div>
 		
 		{#each categories as category}
@@ -101,20 +130,90 @@
 			</div>
 		{/each}
 		
-		<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl p-8 border border-primary-100">
-			<h2 class="text-2xl font-display font-bold mb-6 text-gray-900">XML Sitemap</h2>
-			<p class="text-gray-700 mb-4">
-				For search engines, we also provide an XML sitemap:
+		<!-- Additional Information Section -->
+		<div class="mt-16 grid md:grid-cols-2 gap-8">
+			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl p-8 border border-primary-100">
+				<h2 class="text-2xl font-display font-bold mb-4 text-gray-900">Quick Navigation</h2>
+				<p class="text-gray-700 mb-6">
+					Use this sitemap to quickly find what you're looking for. Whether you're searching for properties, exploring Las Vegas communities, or learning about our real estate services, everything is organized by category for easy navigation.
+				</p>
+				<ul class="space-y-3 text-gray-700">
+					<li class="flex items-start gap-2">
+						<span class="text-primary-600 font-bold">•</span>
+						<span><strong>Main Pages:</strong> Home, Properties, About, Contact, and Blog</span>
+					</li>
+					<li class="flex items-start gap-2">
+						<span class="text-primary-600 font-bold">•</span>
+						<span><strong>Properties:</strong> Browse listings, view past sales, and explore property types</span>
+					</li>
+					<li class="flex items-start gap-2">
+						<span class="text-primary-600 font-bold">•</span>
+						<span><strong>Communities:</strong> Discover neighborhoods throughout Las Vegas Valley</span>
+					</li>
+					<li class="flex items-start gap-2">
+						<span class="text-primary-600 font-bold">•</span>
+						<span><strong>Services:</strong> Home valuations, buying guides, selling guides, and more</span>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 border border-blue-100">
+				<h2 class="text-2xl font-display font-bold mb-4 text-gray-900">XML Sitemap for Search Engines</h2>
+				<p class="text-gray-700 mb-6">
+					For search engines and developers, we provide a machine-readable XML sitemap that helps search engines discover and index all pages on our website efficiently.
+				</p>
+				<a 
+					href="/sitemap.xml" 
+					class="inline-flex items-center gap-2 bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors shadow-md hover:shadow-lg"
+				>
+					View XML Sitemap
+					<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+					</svg>
+				</a>
+			</div>
+		</div>
+		
+		<!-- SEO Content Section -->
+		<div class="mt-16 bg-white rounded-2xl p-8 border border-gray-200">
+			<h2 class="text-2xl font-display font-bold mb-6 text-gray-900">About Our Las Vegas Real Estate Website</h2>
+			<div class="prose prose-lg max-w-none text-gray-700">
+				<p class="mb-4">
+					Dr. Janet Duffy, REALTOR® specializes in luxury Las Vegas real estate, serving buyers, sellers, and investors throughout the Las Vegas Valley. Our comprehensive website provides access to property listings, community information, real estate services, and valuable resources for anyone interested in Las Vegas real estate.
+				</p>
+				<h3 class="text-xl font-bold text-gray-900 mt-6 mb-4">Property Search and Listings</h3>
+				<p class="mb-4">
+					Browse our extensive collection of Las Vegas homes for sale, including single-family homes, condos, townhomes, luxury estates, and new construction. Use our advanced search tools to filter by neighborhood, property type, price range, and more. View properties in grid or list format, and explore past sales to understand market trends.
+				</p>
+				<h3 class="text-xl font-bold text-gray-900 mt-6 mb-4">Las Vegas Communities</h3>
+				<p class="mb-4">
+					Explore premier Las Vegas communities including Summerlin, Henderson, Green Valley, North Las Vegas, Boulder City, Seven Hills, Southern Highlands, Mountains Edge, and Anthem. Each community offers unique amenities, lifestyle options, and real estate opportunities.
+				</p>
+				<h3 class="text-xl font-bold text-gray-900 mt-6 mb-4">Real Estate Services</h3>
+				<p class="mb-4">
+					Whether you're buying or selling, we offer comprehensive real estate services including home valuations, buying guides, selling guides, mortgage calculators, and expert consultation. Our team provides personalized service tailored to your unique real estate needs.
+				</p>
+				<h3 class="text-xl font-bold text-gray-900 mt-6 mb-4">Resources and Information</h3>
+				<p class="mb-4">
+					Stay informed with our real estate blog featuring market insights, community spotlights, buying and selling tips, and Las Vegas real estate news. Access testimonials from satisfied clients and learn why Dr. Janet Duffy is the trusted choice for Las Vegas real estate.
+				</p>
+			</div>
+		</div>
+		
+		<!-- Contact CTA -->
+		<div class="mt-16 bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 text-center text-white">
+			<h2 class="text-3xl font-display font-bold mb-4">Ready to Start Your Real Estate Journey?</h2>
+			<p class="text-xl mb-6 text-primary-100">
+				Contact Dr. Janet Duffy, REALTOR® for expert guidance on buying or selling your Las Vegas home.
 			</p>
-			<a 
-				href="/sitemap.xml" 
-				class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700 transition-colors"
-			>
-				View XML Sitemap
-				<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-				</svg>
-			</a>
+			<div class="flex flex-col sm:flex-row gap-4 justify-center">
+				<a href="/contact" class="bg-white text-primary-600 hover:bg-gray-100 font-bold px-8 py-3 rounded-lg transition-colors shadow-lg">
+					Contact Us
+				</a>
+				<a href="/properties" class="bg-transparent text-white border-2 border-white hover:bg-white hover:text-primary-600 font-bold px-8 py-3 rounded-lg transition-colors">
+					View Properties
+				</a>
+			</div>
 		</div>
 	</div>
 </section>
