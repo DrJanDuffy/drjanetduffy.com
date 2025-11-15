@@ -10,24 +10,6 @@ onMount(() => {
 </script>
 
 <svelte:head>
-	<title>Home Value Calculator | Dr. Jan Duffy REALTOR</title>
-	<meta name="description" content="Get an instant estimate of your home's value with Dr. Jan Duffy's advanced valuation tool. Free, accurate, and based on current Las Vegas market data." />
-	<meta name="keywords" content="home value, property valuation, home estimate, Las Vegas real estate, home worth" />
-	
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://drjanduffy.com/home-value" />
-	<meta property="og:title" content="Home Value Calculator | Dr. Jan Duffy REALTOR" />
-	<meta property="og:description" content="Get an instant estimate of your home's value with Dr. Jan Duffy's advanced valuation tool." />
-	
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://drjanduffy.com/home-value" />
-	<meta property="twitter:title" content="Home Value Calculator | Dr. Jan Duffy REALTOR" />
-	<meta property="twitter:description" content="Get an instant estimate of your home's value with Dr. Jan Duffy's advanced valuation tool." />
-</svelte:head>
-
-<svelte:head>
 	<title>Home Value Calculator | Dr. Janet Duffy REALTOR®</title>
 	<meta name="description" content="Get an instant estimate of your home's value with Dr. Janet Duffy's advanced valuation tool. Free, accurate, and based on current Las Vegas market data." />
 	<meta name="keywords" content="home value, property valuation, home estimate, Las Vegas real estate, home worth" />
