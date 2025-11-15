@@ -1,0 +1,230 @@
+<script>
+	import { Home, AlertTriangle, DollarSign, CheckCircle, FileText, TrendingUp } from 'lucide-svelte';
+</script>
+
+<svelte:head>
+	<title>Distressed Property Solutions in Las Vegas | Short Sales & Foreclosures</title>
+	<meta name="description" content="Expert guidance for short sales and foreclosure transactions in Las Vegas. Specialized services for distressed properties, helping buyers and sellers navigate complex situations." />
+	<meta name="keywords" content="short sale Las Vegas, foreclosure Las Vegas, distressed properties, bank owned homes Las Vegas, REO properties" />
+</svelte:head>
+
+<section class="section bg-gradient-to-b from-white via-gray-50 to-white">
+	<div class="container-premium">
+		<div class="text-center mb-12 sm:mb-16">
+			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+				Distressed Property Solutions in Las Vegas
+			</h1>
+			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
+			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+				Expert guidance for short sales and foreclosure transactions. Turn distressed properties into opportunities, guiding buyers and sellers through complex sales in Las Vegas and surrounding areas.
+			</p>
+		</div>
+
+		<div class="max-w-4xl mx-auto">
+			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Understanding Distressed Properties in Las Vegas</h2>
+				
+				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
+					Distressed properties, including short sales and foreclosures, present unique opportunities and challenges in the Las Vegas market. These transactions require specialized expertise, understanding of lender processes, and knowledge of complex regulations. Our services help both buyers and sellers navigate these challenging situations successfully.
+				</p>
+
+				<div class="grid md:grid-cols-2 gap-6 mb-8">
+					<div class="flex items-start gap-4">
+						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+							<FileText class="w-6 h-6 text-primary-600" />
+						</div>
+						<div>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Short Sale Expertise</h3>
+							<p class="text-gray-600">Comprehensive guidance for sellers navigating short sales, including lender negotiations and documentation.</p>
+						</div>
+					</div>
+					
+					<div class="flex items-start gap-4">
+						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+							<Home class="w-6 h-6 text-primary-600" />
+						</div>
+						<div>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Foreclosure Guidance</h3>
+							<p class="text-gray-600">Expert assistance for buyers and sellers dealing with foreclosure situations and REO properties.</p>
+						</div>
+					</div>
+					
+					<div class="flex items-start gap-4">
+						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+							<DollarSign class="w-6 h-6 text-primary-600" />
+						</div>
+						<div>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Investment Opportunities</h3>
+							<p class="text-gray-600">Identifying and evaluating distressed property investment opportunities in Las Vegas.</p>
+						</div>
+					</div>
+					
+					<div class="flex items-start gap-4">
+						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+							<AlertTriangle class="w-6 h-6 text-primary-600" />
+						</div>
+						<div>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Risk Management</h3>
+							<p class="text-gray-600">Understanding and managing risks associated with distressed property transactions.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Short Sale Services for Las Vegas Sellers</h2>
+				
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Short sales occur when a property's sale price is less than the outstanding mortgage balance. These transactions require lender approval and involve complex negotiations and documentation. Our short sale services help sellers navigate this challenging process while minimizing financial impact.
+				</p>
+
+				<div class="space-y-8">
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-4">Short Sale Eligibility Assessment</h3>
+						<p class="text-gray-700 mb-4 leading-relaxed">
+							Not all properties qualify for short sales, and understanding eligibility is the first step. We help you assess your situation, understand lender requirements, and determine whether a short sale is the right option. This includes evaluating your financial hardship, property value, and mortgage situation.
+						</p>
+						<p class="text-gray-700 leading-relaxed">
+							We'll help you understand lender requirements for short sales, which typically include demonstrating financial hardship, showing the property's value is less than the mortgage balance, and providing comprehensive financial documentation. We'll assess your specific situation and help you understand whether you qualify and what the process will involve.
+						</p>
+					</div>
+
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-4">Lender Negotiation</h3>
+						<p class="text-gray-700 mb-4 leading-relaxed">
+							Short sales require extensive negotiation with lenders, who must approve the sale price and terms. We handle all lender communications, submit required documentation, and negotiate on your behalf to secure approval. This process can be lengthy and complex, requiring persistence and expertise.
+						</p>
+						<p class="text-gray-700 leading-relaxed">
+							We'll prepare and submit all required documentation, including financial statements, hardship letters, property valuations, and purchase offers. We'll maintain communication with lenders throughout the process, respond to requests for additional information, and negotiate terms that work for all parties. Our experience with Las Vegas lenders helps streamline this process.
+						</p>
+					</div>
+
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-4">Documentation Management</h3>
+						<p class="text-gray-700 mb-4 leading-relaxed">
+							Short sales require extensive documentation, and proper preparation is essential for approval. We help you gather and organize all required documents, ensure accuracy, and submit complete packages to lenders. Missing or incorrect documentation can delay or derail short sale approvals.
+						</p>
+						<p class="text-gray-700 leading-relaxed">
+							We'll help you prepare all required documentation, including tax returns, bank statements, pay stubs, hardship letters, and property information. We'll ensure documentation is complete and accurate before submission, and we'll help you respond to any lender requests for additional information. Our goal is to make the documentation process as smooth as possible.
+						</p>
+					</div>
+
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-4">Buyer Coordination</h3>
+						<p class="text-gray-700 mb-4 leading-relaxed">
+							Short sales require finding qualified buyers willing to wait for lender approval, which can take months. We help identify and work with buyers who understand the short sale process and are committed to seeing it through. We'll manage buyer expectations and coordinate throughout the approval process.
+						</p>
+						<p class="text-gray-700 leading-relaxed">
+							We'll help you find buyers who understand short sales and are prepared for the extended timeline. We'll manage buyer communications, coordinate showings, and ensure buyers remain committed throughout the approval process. Our experience helps identify serious buyers who won't abandon the transaction during the lengthy approval process.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Foreclosure and REO Property Services</h2>
+				
+				<div class="space-y-8">
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-4">REO Property Purchases</h3>
+						<p class="text-gray-700 mb-4 leading-relaxed">
+							REO (Real Estate Owned) properties are bank-owned homes that have completed the foreclosure process. These properties can offer excellent value but require specialized knowledge to purchase successfully. We help buyers identify REO opportunities, understand the purchase process, and navigate bank requirements.
+						</p>
+						<p class="text-gray-700 leading-relaxed">
+							REO properties in Las Vegas can be found throughout the valley, from starter homes in North Las Vegas to luxury properties in various neighborhoods. We'll help you identify REO opportunities that match your criteria, understand bank requirements and processes, and successfully complete purchases. REO properties often require cash or strong financing, and we'll help you understand and meet these requirements.
+						</p>
+					</div>
+
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-4">Foreclosure Prevention</h3>
+						<p class="text-gray-700 mb-4 leading-relaxed">
+							For homeowners facing foreclosure, we provide guidance on options including loan modifications, short sales, and other alternatives. We help you understand your options, work with lenders, and take action to prevent foreclosure when possible.
+						</p>
+						<p class="text-gray-700 leading-relaxed">
+							We'll help you understand all available options, including loan modifications, repayment plans, and short sales. We'll work with you to assess your situation, communicate with lenders, and pursue the best option for your circumstances. Our goal is to help you avoid foreclosure when possible and minimize financial impact when it's not.
+						</p>
+					</div>
+
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-4">Investment Property Evaluation</h3>
+						<p class="text-gray-700 mb-4 leading-relaxed">
+							Distressed properties can offer excellent investment opportunities, but they require careful evaluation. We help investors assess distressed property opportunities, understand renovation needs, and evaluate potential returns. This includes property inspections, cost estimates, and market analysis.
+						</p>
+						<p class="text-gray-700 leading-relaxed">
+							We'll help you evaluate distressed properties as investments, including assessing condition, estimating renovation costs, and analyzing potential returns. We'll help you understand market values, rental potential, and resale opportunities. Our goal is to help you identify profitable investment opportunities while understanding and managing risks.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Distressed Property Markets in Las Vegas</h2>
+				
+				<div class="space-y-6">
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-3">North Las Vegas Opportunities</h3>
+						<p class="text-gray-700 mb-4 leading-relaxed">
+							North Las Vegas has historically had higher rates of distressed properties, creating opportunities for both buyers and investors. The area offers good value and growth potential, making it attractive for those willing to invest in properties that need work.
+						</p>
+						<p class="text-gray-700 leading-relaxed">
+							Distressed properties in North Las Vegas often include newer construction homes that may need cosmetic updates or minor repairs. The area's growth and development make these properties attractive investments, and we'll help you identify opportunities that match your goals and budget.
+						</p>
+					</div>
+
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-3">Established Neighborhood Opportunities</h3>
+						<p class="text-gray-700 mb-4 leading-relaxed">
+							Even established neighborhoods like Henderson and parts of Las Vegas can have distressed property opportunities. These properties often offer excellent locations with homes that need updates or repairs, creating value opportunities for buyers and investors.
+						</p>
+						<p class="text-gray-700 leading-relaxed">
+							Distressed properties in established neighborhoods can offer excellent value, combining good locations with properties that need work. We'll help you identify these opportunities, assess renovation needs, and evaluate potential returns. These properties can be particularly attractive for buyers looking for good locations at below-market prices.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Key Considerations for Distressed Properties</h2>
+				
+				<div class="space-y-6">
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-3">Extended Timelines</h3>
+						<p class="text-gray-700 leading-relaxed">
+							Distressed property transactions typically take longer than standard sales. Short sales can take months for lender approval, and REO purchases may have extended closing timelines. We help you understand and prepare for these extended timelines.
+						</p>
+					</div>
+
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-3">Property Condition</h3>
+						<p class="text-gray-700 leading-relaxed">
+							Distressed properties are often sold as-is, meaning buyers accept properties in their current condition. We help you understand property condition, assess repair needs, and factor these into purchase decisions and pricing.
+						</p>
+					</div>
+
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-3">Financing Considerations</h3>
+						<p class="text-gray-700 leading-relaxed">
+							Distressed properties may have financing challenges, and some lenders have specific requirements for these transactions. We help you understand financing options and requirements for distressed property purchases.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white">
+				<h2 class="text-3xl md:text-4xl font-bold mb-4">Expert Distressed Property Services in Las Vegas</h2>
+				<p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
+					Let us help you navigate distressed property transactions. Contact us today to schedule a consultation and discuss your situation.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">
+						Schedule Consultation
+					</a>
+					<a href="/properties" class="btn-primary bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600">
+						View Available Properties
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+

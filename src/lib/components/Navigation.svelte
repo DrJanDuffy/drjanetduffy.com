@@ -1,76 +1,100 @@
 <script>
 	import { page } from '$app/stores';
+	import { ShoppingCart, Search, Menu, X } from 'lucide-svelte';
+	
+	let mobileMenuOpen = false;
 	
 	const navItems = [
-		{ href: '/', label: 'Home' },
-		{ href: '/properties', label: 'Properties' },
-		{ href: '/home-value', label: 'Home Value' },
-		{ href: '/rentals', label: 'Rentals' },
-		{ href: '/blog', label: 'Blog' },
-		{ href: '/about', label: 'About' },
-		{ href: '/contact', label: 'Contact' }
+		{ href: '/', label: 'HOME' },
+		{ href: '/properties', label: 'PAGES' },
+		{ href: '/about', label: 'FEATURES' },
+		{ href: '/contact', label: 'ELEMENTS' },
+		{ href: '/blog', label: 'BLOG' },
+		{ href: '/properties', label: 'SHOP' }
 	];
+	
+	function toggleMobileMenu() {
+		mobileMenuOpen = !mobileMenuOpen;
+	}
 </script>
 
-<nav class="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 shadow-sm">
+<nav class="sticky top-0 z-50 w-full bg-white shadow-sm">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="flex h-16 items-center justify-between">
 			<!-- Logo -->
-			<a href="/" class="flex items-center space-x-2 sm:space-x-3 group flex-shrink-0">
-				<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary-600 to-primary-800 shadow-md transition-transform group-hover:scale-105">
-					<span class="text-sm font-bold text-white">JD</span>
-				</div>
-				<div class="hidden sm:block">
-					<div class="text-lg font-display font-bold text-gray-900 group-hover:text-primary-700 transition-colors">Dr. Jan Duffy</div>
-					<div class="text-xs text-gray-600">REALTOR®</div>
-				</div>
+			<a href="/" class="flex items-center flex-shrink-0 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded" aria-label="PARALLEL Home">
+				<span class="text-2xl font-bold text-gray-800">PARALLEL</span>
 			</a>
 			
-			<!-- Navigation Menu - Always Visible -->
+			<!-- Navigation Menu -->
 			<div class="hidden md:flex items-center flex-1 justify-center mx-8">
-				<nav class="flex items-center space-x-1">
+				<nav class="flex items-center space-x-6" role="navigation" aria-label="Main navigation">
 					{#each navItems as item}
 						<a
 							href={item.href}
-							class="relative px-4 py-2 text-sm font-medium text-gray-700 transition-all duration-200 rounded-lg hover:text-primary-600 hover:bg-primary-50 whitespace-nowrap {$page.url.pathname === item.href ? 'text-primary-600 bg-primary-50' : ''}"
+							class="text-sm font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded px-2 py-1 transition-colors uppercase tracking-wide {$page.url.pathname === item.href ? 'text-gray-900 font-semibold' : ''}"
+							aria-current={$page.url.pathname === item.href ? 'page' : undefined}
 						>
 							{item.label}
-							{#if $page.url.pathname === item.href}
-								<span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-8 h-0.5 bg-primary-600 rounded-full"></span>
-							{/if}
 						</a>
 					{/each}
 				</nav>
 			</div>
 			
-			<!-- Mobile Navigation - Scrollable -->
-			<div class="md:hidden flex items-center flex-1 justify-center overflow-x-auto scrollbar-hide -mx-4 px-4">
-				<nav class="flex items-center space-x-2">
-					{#each navItems as item}
-						<a
-							href={item.href}
-							class="relative px-3 py-2 text-xs font-medium text-gray-700 transition-all duration-200 rounded-lg hover:text-primary-600 hover:bg-primary-50 whitespace-nowrap flex-shrink-0 {$page.url.pathname === item.href ? 'text-primary-600 bg-primary-50' : ''}"
-						>
-							{item.label}
-							{#if $page.url.pathname === item.href}
-								<span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-6 h-0.5 bg-primary-600 rounded-full"></span>
-							{/if}
-						</a>
-					{/each}
-				</nav>
-			</div>
-			
-			<!-- Call Now Button -->
-			<div class="flex items-center flex-shrink-0 ml-4">
-				<a
-					href="tel:+17025001955"
-					class="flex items-center justify-center rounded-lg bg-gradient-to-r from-primary-600 to-primary-700 px-4 sm:px-6 py-2 text-xs sm:text-sm font-semibold text-white shadow-md transition-all duration-200 hover:from-primary-700 hover:to-primary-800 hover:shadow-lg hover:scale-105 whitespace-nowrap"
+			<!-- Right Icons -->
+			<div class="flex items-center space-x-4 flex-shrink-0">
+				<!-- Shopping Cart with Badge -->
+				<button 
+					class="relative p-2 text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded transition-colors"
+					aria-label="Shopping cart with 3 items"
+					aria-describedby="cart-count"
 				>
-					<span class="hidden sm:inline">Call Now</span>
-					<span class="sm:hidden">Call</span>
-				</a>
+					<ShoppingCart class="w-6 h-6" aria-hidden="true" />
+					<span id="cart-count" class="absolute -top-1 -right-1 bg-orange-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center" aria-label="3 items in cart">3</span>
+				</button>
+				
+				<!-- Search Icon -->
+				<button 
+					class="p-2 text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded transition-colors"
+					aria-label="Search"
+				>
+					<Search class="w-6 h-6" aria-hidden="true" />
+				</button>
+				
+				<!-- Mobile Menu Button -->
+				<button 
+					on:click={toggleMobileMenu}
+					class="md:hidden p-2 text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded transition-colors"
+					aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+					aria-expanded={mobileMenuOpen}
+					aria-controls="mobile-menu"
+				>
+					{#if mobileMenuOpen}
+						<X class="w-6 h-6" aria-hidden="true" />
+					{:else}
+						<Menu class="w-6 h-6" aria-hidden="true" />
+					{/if}
+				</button>
 			</div>
 		</div>
+		
+		<!-- Mobile Menu -->
+		{#if mobileMenuOpen}
+			<div id="mobile-menu" class="md:hidden border-t border-gray-200 py-4" role="navigation" aria-label="Mobile navigation">
+				<nav class="flex flex-col space-y-2">
+					{#each navItems as item}
+						<a
+							href={item.href}
+							class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded transition-colors uppercase tracking-wide {$page.url.pathname === item.href ? 'text-gray-900 font-semibold bg-gray-50' : ''}"
+							on:click={() => mobileMenuOpen = false}
+							aria-current={$page.url.pathname === item.href ? 'page' : undefined}
+						>
+							{item.label}
+						</a>
+					{/each}
+				</nav>
+			</div>
+		{/if}
 	</div>
 </nav>
 

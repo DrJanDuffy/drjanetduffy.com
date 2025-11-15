@@ -48,7 +48,23 @@ const routes = [
 	// { url: 'communities/the-palisades', priority: '0.5', changefreq: 'monthly' },
 	
             // Property Type Pages - Removed non-existent pages, use query parameters on /properties instead
-            // Service Pages - Removed non-existent pages, use anchor links on /about instead
+            
+	// Service Pages
+	{ url: 'services', priority: '0.8', changefreq: 'monthly' },
+	{ url: 'services/buyer-representation', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/senior-housing', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/military-relocation', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/seller-representation', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/pricing-strategy', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/distressed-properties', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/luxury-homes', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/resort-properties', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/eco-friendly-homes', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/international-property', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/residential-specialist', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/commercial-real-estate', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/real-estate-investing', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/land-investment', priority: '0.7', changefreq: 'monthly' },
 	
 	// Legal/Info Pages
 	{ url: 'privacy', priority: '0.3', changefreq: 'yearly' },

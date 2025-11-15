@@ -1,0 +1,190 @@
+<script>
+	import { MapPin, TrendingUp, DollarSign, CheckCircle, Home, BarChart3 } from 'lucide-svelte';
+</script>
+
+<svelte:head>
+	<title>Land Investment Services in Las Vegas | Land Acquisition & Development</title>
+	<meta name="description" content="Expert land acquisition and development consulting throughout Las Vegas and surrounding areas. Comprehensive services for land investment, development, and land transactions." />
+	<meta name="keywords" content="land investment Las Vegas, land for sale Las Vegas, land development, vacant land Las Vegas" />
+</svelte:head>
+
+<section class="section bg-gradient-to-b from-white via-gray-50 to-white">
+	<div class="container-premium">
+		<div class="text-center mb-12 sm:mb-16">
+			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+				Land Investment Services in Las Vegas
+			</h1>
+			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
+			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+				Become an expert in all areas of land real estate. Expert land acquisition and development consulting throughout Las Vegas and surrounding areas, helping investors and developers navigate land transactions successfully.
+			</p>
+		</div>
+
+		<div class="max-w-4xl mx-auto">
+			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Land Investment Opportunities in Las Vegas</h2>
+				
+				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
+					Las Vegas and surrounding areas offer diverse land investment opportunities, from residential development sites to commercial land to agricultural properties. Land investments require specialized expertise, understanding of development processes, and knowledge of regulatory requirements. Our land investment services help investors and developers navigate land transactions successfully.
+				</p>
+
+				<div class="grid md:grid-cols-2 gap-6 mb-8">
+					<div class="flex items-start gap-4">
+						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+							<MapPin class="w-6 h-6 text-primary-600" />
+						</div>
+						<div>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Residential Development</h3>
+							<p class="text-gray-600">Expert guidance for residential land development, from site selection to development planning.</p>
+						</div>
+					</div>
+					
+					<div class="flex items-start gap-4">
+						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+							<BarChart3 class="w-6 h-6 text-primary-600" />
+						</div>
+						<div>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Commercial Land</h3>
+							<p class="text-gray-600">Expert services for commercial land acquisition and development opportunities.</p>
+						</div>
+					</div>
+					
+					<div class="flex items-start gap-4">
+						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+							<TrendingUp class="w-6 h-6 text-primary-600" />
+						</div>
+						<div>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Investment Analysis</h3>
+							<p class="text-gray-600">Comprehensive analysis of land investment opportunities and development potential.</p>
+						</div>
+					</div>
+					
+					<div class="flex items-start gap-4">
+						<div class="flex-shrink-0 w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center">
+							<DollarSign class="w-6 h-6 text-primary-600" />
+						</div>
+						<div>
+							<h3 class="text-xl font-bold text-gray-900 mb-2">Value Assessment</h3>
+							<p class="text-gray-600">Expert evaluation of land values, considering location, development potential, and market conditions.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Land Markets Throughout Las Vegas</h2>
+				
+				<div class="space-y-6">
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-3">Residential Development Land</h3>
+						<p class="text-gray-700 mb-4 leading-relaxed">
+							Las Vegas's growth creates demand for residential development land, particularly in expanding areas like North Las Vegas, Henderson, and surrounding communities. Residential development land ranges from small lots to large parcels suitable for master-planned communities. We help developers identify development opportunities and evaluate land for residential development.
+						</p>
+						<p class="text-gray-700 leading-relaxed">
+							Residential development land requires evaluation of zoning, utilities, access, and development potential. We'll help you understand development requirements, assess development costs, and evaluate land for residential development potential. Our goal is to help you identify land that offers good development opportunities.
+						</p>
+					</div>
+
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-3">Commercial Development Land</h3>
+						<p class="text-gray-700 mb-4 leading-relaxed">
+							Commercial development land is available throughout Las Vegas, from retail sites to office developments to industrial properties. Commercial land values vary significantly based on location, zoning, and development potential. We help investors and developers identify commercial land opportunities and evaluate development potential.
+						</p>
+						<p class="text-gray-700 leading-relaxed">
+							Commercial land requires evaluation of location, zoning, access, and market demand. We'll help you understand commercial development requirements, assess development potential, and evaluate land for commercial use. Our goal is to help you identify commercial land that offers good development opportunities.
+						</p>
+					</div>
+
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-3">Rural & Agricultural Land</h3>
+						<p class="text-gray-700 mb-4 leading-relaxed">
+							Las Vegas's surrounding areas include rural and agricultural land, offering opportunities for various uses. Rural land can be used for agriculture, recreation, or future development. We help investors understand rural land opportunities and evaluate land for various uses.
+						</p>
+						<p class="text-gray-700 leading-relaxed">
+							Rural land requires evaluation of water rights, access, zoning, and potential uses. We'll help you understand rural land characteristics, assess development potential, and evaluate land for various uses. Our goal is to help you identify rural land that matches your investment goals.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Land Investment Services</h2>
+				
+				<div class="space-y-8">
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-4">Land Evaluation</h3>
+						<p class="text-gray-700 mb-4 leading-relaxed">
+							Land evaluation requires understanding location, zoning, utilities, access, and development potential. We help investors and developers evaluate land, assess development potential, and understand land values. This includes evaluating zoning, utilities, access, and market conditions.
+						</p>
+						<p class="text-gray-700 leading-relaxed">
+							Our land evaluation services include site analysis, zoning review, utility assessment, and development potential evaluation. We'll help you understand land characteristics, assess development requirements, and evaluate land values. Our goal is to help you make informed land investment decisions.
+						</p>
+					</div>
+
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-4">Development Planning</h3>
+						<p class="text-gray-700 mb-4 leading-relaxed">
+							Land development requires careful planning, from site design to regulatory approvals. We help developers understand development processes, navigate regulatory requirements, and plan successful developments. This includes understanding zoning, permits, utilities, and development costs.
+						</p>
+						<p class="text-gray-700 leading-relaxed">
+							Our development planning services include site planning guidance, regulatory navigation, and development cost estimation. We'll help you understand development requirements, assess development feasibility, and plan successful developments. Our goal is to help you navigate development processes successfully.
+						</p>
+					</div>
+
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-4">Investment Analysis</h3>
+						<p class="text-gray-700 mb-4 leading-relaxed">
+							Land investments require analysis of potential returns, development costs, and market conditions. We help investors analyze land investment opportunities, assess development potential, and evaluate returns. This includes evaluating land values, development costs, and potential appreciation.
+						</p>
+						<p class="text-gray-700 leading-relaxed">
+							Our investment analysis includes land value assessment, development cost estimation, and return analysis. We'll help you understand land investment potential, assess risks, and evaluate returns. Our goal is to help you make informed land investment decisions.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Key Considerations for Land Investments</h2>
+				
+				<div class="space-y-6">
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-3">Zoning & Development Rights</h3>
+						<p class="text-gray-700 leading-relaxed">
+							Understanding zoning and development rights is crucial for land investments. We help investors understand zoning regulations, permitted uses, and development potential. This includes evaluating zoning compliance and understanding how zoning affects land values and development potential.
+						</p>
+					</div>
+
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-3">Utilities & Infrastructure</h3>
+						<p class="text-gray-700 leading-relaxed">
+							Access to utilities and infrastructure significantly affects land values and development potential. We help investors understand utility availability, infrastructure access, and development requirements. This includes evaluating utility costs and infrastructure needs.
+						</p>
+					</div>
+
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-3">Market Conditions</h3>
+						<p class="text-gray-700 leading-relaxed">
+							Land values are affected by market conditions, development trends, and economic factors. We help investors understand land market conditions, assess market trends, and evaluate land values. This includes understanding how market conditions affect land investment potential.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white">
+				<h2 class="text-3xl md:text-4xl font-bold mb-4">Land Investment Services in Las Vegas</h2>
+				<p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
+					Let us help you with your land investment needs. Contact us today to schedule a consultation.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">
+						Schedule Consultation
+					</a>
+					<a href="/properties" class="btn-primary bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600">
+						View Available Land
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
