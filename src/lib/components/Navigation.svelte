@@ -1,16 +1,17 @@
 <script>
 	import { page } from '$app/stores';
-	import { ShoppingCart, Search, Menu, X } from 'lucide-svelte';
+	import { Menu, X } from 'lucide-svelte';
 	
 	let mobileMenuOpen = false;
 	
 	const navItems = [
-		{ href: '/', label: 'HOME' },
-		{ href: '/properties', label: 'PAGES' },
-		{ href: '/about', label: 'FEATURES' },
-		{ href: '/contact', label: 'ELEMENTS' },
-		{ href: '/blog', label: 'BLOG' },
-		{ href: '/properties', label: 'SHOP' }
+		{ href: '/', label: 'Home' },
+		{ href: '/properties', label: 'Properties' },
+		{ href: '/home-value', label: 'Home Value' },
+		{ href: '/rentals', label: 'Rentals' },
+		{ href: '/blog', label: 'Blog' },
+		{ href: '/about', label: 'About' },
+		{ href: '/contact', label: 'Contact' }
 	];
 	
 	function toggleMobileMenu() {
@@ -22,8 +23,14 @@
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="flex h-16 items-center justify-between">
 			<!-- Logo -->
-			<a href="/" class="flex items-center flex-shrink-0 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded" aria-label="PARALLEL Home">
-				<span class="text-2xl font-bold text-gray-800">PARALLEL</span>
+			<a href="/" class="flex items-center space-x-3 flex-shrink-0 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded" aria-label="Dr. Janet Duffy Home">
+				<div class="w-10 h-10 bg-primary-600 rounded-full flex items-center justify-center">
+					<span class="text-white font-bold text-lg">JD</span>
+				</div>
+				<div>
+					<h1 class="text-xl font-bold text-gray-800">Dr. Janet Duffy</h1>
+					<p class="text-sm text-gray-600">REALTOR<sup>®</sup></p>
+				</div>
 			</a>
 			
 			<!-- Navigation Menu -->
@@ -32,7 +39,7 @@
 					{#each navItems as item}
 						<a
 							href={item.href}
-							class="text-sm font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded px-2 py-1 transition-colors uppercase tracking-wide {$page.url.pathname === item.href ? 'text-gray-900 font-semibold' : ''}"
+							class="text-sm font-medium text-gray-700 hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded px-2 py-1 transition-colors {$page.url.pathname === item.href ? 'text-primary-600 font-semibold' : ''}"
 							aria-current={$page.url.pathname === item.href ? 'page' : undefined}
 						>
 							{item.label}
@@ -41,30 +48,11 @@
 				</nav>
 			</div>
 			
-			<!-- Right Icons -->
-			<div class="flex items-center space-x-4 flex-shrink-0">
-				<!-- Shopping Cart with Badge -->
-				<button 
-					class="relative p-2 text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded transition-colors"
-					aria-label="Shopping cart with 3 items"
-					aria-describedby="cart-count"
-				>
-					<ShoppingCart class="w-6 h-6" aria-hidden="true" />
-					<span id="cart-count" class="absolute -top-1 -right-1 bg-orange-500 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center" aria-label="3 items in cart">3</span>
-				</button>
-				
-				<!-- Search Icon -->
-				<button 
-					class="p-2 text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded transition-colors"
-					aria-label="Search"
-				>
-					<Search class="w-6 h-6" aria-hidden="true" />
-				</button>
-				
-				<!-- Mobile Menu Button -->
+			<!-- Mobile Menu Button -->
+			<div class="flex items-center flex-shrink-0">
 				<button 
 					on:click={toggleMobileMenu}
-					class="md:hidden p-2 text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded transition-colors"
+					class="md:hidden p-2 text-gray-700 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded transition-colors"
 					aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
 					aria-expanded={mobileMenuOpen}
 					aria-controls="mobile-menu"
@@ -85,7 +73,7 @@
 					{#each navItems as item}
 						<a
 							href={item.href}
-							class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded transition-colors uppercase tracking-wide {$page.url.pathname === item.href ? 'text-gray-900 font-semibold bg-gray-50' : ''}"
+							class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded transition-colors {$page.url.pathname === item.href ? 'text-primary-600 font-semibold bg-primary-50' : ''}"
 							on:click={() => mobileMenuOpen = false}
 							aria-current={$page.url.pathname === item.href ? 'page' : undefined}
 						>
