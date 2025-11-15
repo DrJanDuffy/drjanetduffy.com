@@ -1,0 +1,15 @@
+---
+alwaysApply: true
+---
+## Rule: Styling
+- Use Tailwind CSS for all styling
+- Follow utility-first conventions
+- Mobile-first responsive design (no prefix → md: → lg:)
+- DO NOT use inline styles
+- DO NOT modify existing working CSS
+
+## Rule: Component Patterns
+- Extract repeated utilities with @apply for:
+  - .btn-primary (CTA buttons)
+  - .property-card (listings)
+  - .hero-section (landing pages)

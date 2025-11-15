@@ -27,12 +27,12 @@
 			</a>
 			
 			<!-- Navigation Menu - Always visible horizontally -->
-			<nav class="flex items-center flex-1 justify-end sm:justify-center mx-2 sm:mx-4 lg:mx-8 overflow-x-auto" aria-label="Main navigation">
-				<div class="flex items-center space-x-2 sm:space-x-4 lg:space-x-8">
+			<nav class="flex items-center flex-1 justify-center mx-2 sm:mx-4 lg:mx-8 overflow-x-auto scrollbar-hide" aria-label="Main navigation">
+				<div class="flex items-center space-x-3 sm:space-x-4 md:space-x-6 lg:space-x-8">
 					{#each navItems as item}
 						<a
 							href={item.href}
-							class="text-xs sm:text-sm md:text-base font-medium text-gray-700 hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-md px-1 sm:px-2 md:px-3 py-2 transition-colors whitespace-nowrap {$page.url.pathname === item.href ? 'text-primary-600 font-semibold' : ''}"
+							class="text-sm sm:text-base font-medium text-gray-700 hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-md px-2 sm:px-3 py-2 transition-colors whitespace-nowrap {$page.url.pathname === item.href ? 'text-primary-600 font-semibold' : ''}"
 							aria-current={$page.url.pathname === item.href ? 'page' : undefined}
 						>
 							{item.label}
@@ -43,4 +43,14 @@
 		</div>
 	</div>
 </nav>
+
+<style>
+	.scrollbar-hide {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+	.scrollbar-hide::-webkit-scrollbar {
+		display: none;
+	}
+</style>
 

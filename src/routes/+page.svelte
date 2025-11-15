@@ -1,5 +1,5 @@
 <script>
-	import { Home, TrendingUp, Award, MapPin, Star, DollarSign, Calendar, Building2 } from 'lucide-svelte';
+	import { Home, TrendingUp, Award, MapPin, Star, DollarSign, Calendar, Building2, BarChart3 } from 'lucide-svelte';
 	import { goto } from '$app/navigation';
 
 	function handleSearch(event) {
@@ -112,6 +112,12 @@
 					<div class="p-6">
 						<h3 class="text-xl font-bold text-gray-900 mb-2">Luxury Home in West Summerlin</h3>
 						<p class="text-gray-600 mb-2">1234 Desert View Dr, Las Vegas, NV 89138</p>
+						<div class="flex flex-wrap items-center gap-3 sm:gap-4 text-sm text-gray-600 mb-3">
+							<span class="font-semibold text-gray-900">$875,000</span>
+							<span>4 Beds</span>
+							<span>3 Baths</span>
+							<span>3,200 sqft</span>
+						</div>
 						<p class="text-sm text-gray-500 mb-4">Listed 3 days ago</p>
 						<a href="/properties" class="text-primary-600 hover:text-primary-700 font-semibold inline-flex items-center gap-2">
 							View Details →
@@ -125,6 +131,12 @@
 					<div class="p-6">
 						<h3 class="text-xl font-bold text-gray-900 mb-2">Modern Estate in The Ridges</h3>
 						<p class="text-gray-600 mb-2">5678 Mountain Peak Way, Las Vegas, NV 89144</p>
+						<div class="flex flex-wrap items-center gap-3 sm:gap-4 text-sm text-gray-600 mb-3">
+							<span class="font-semibold text-gray-900">$1,250,000</span>
+							<span>5 Beds</span>
+							<span>4 Baths</span>
+							<span>4,500 sqft</span>
+						</div>
 						<p class="text-sm text-gray-500 mb-4">Listed 1 week ago</p>
 						<a href="/properties" class="text-primary-600 hover:text-primary-700 font-semibold inline-flex items-center gap-2">
 							View Details →
@@ -138,6 +150,12 @@
 					<div class="p-6">
 						<h3 class="text-xl font-bold text-gray-900 mb-2">Charming Condo in Green Valley</h3>
 						<p class="text-gray-600 mb-2">9012 Valley View Blvd, Henderson, NV 89014</p>
+						<div class="flex flex-wrap items-center gap-3 sm:gap-4 text-sm text-gray-600 mb-3">
+							<span class="font-semibold text-gray-900">$425,000</span>
+							<span>2 Beds</span>
+							<span>2 Baths</span>
+							<span>1,800 sqft</span>
+						</div>
 						<p class="text-sm text-gray-500 mb-4">Listed 5 days ago</p>
 						<a href="/properties" class="text-primary-600 hover:text-primary-700 font-semibold inline-flex items-center gap-2">
 							View Details →
@@ -323,16 +341,25 @@
 
 			<div class="grid md:grid-cols-3 gap-8">
 				<div class="text-center">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-white bg-opacity-20 rounded-full mb-4">
+						<DollarSign class="w-8 h-8 text-white" />
+					</div>
 					<div class="text-4xl md:text-5xl font-bold mb-2">$575K</div>
 					<p class="text-primary-100">Median Home Price</p>
 				</div>
 
 				<div class="text-center">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-white bg-opacity-20 rounded-full mb-4">
+						<Calendar class="w-8 h-8 text-white" />
+					</div>
 					<div class="text-4xl md:text-5xl font-bold mb-2">19</div>
 					<p class="text-primary-100">Days on Market</p>
 				</div>
 
 				<div class="text-center">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-white bg-opacity-20 rounded-full mb-4">
+						<Home class="w-8 h-8 text-white" />
+					</div>
 					<div class="text-4xl md:text-5xl font-bold mb-2">450</div>
 					<p class="text-primary-100">Homes for Sale</p>
 				</div>
@@ -349,7 +376,7 @@
 			<p class="text-lg text-gray-600 mb-8">Let's start your real estate journey today</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary">Schedule a Consultation</a>
-				<a href="/properties" class="btn-secondary">Explore Our Properties</a>
+				<a href="/home-value" class="btn-secondary">Get a Home Valuation</a>
 			</div>
 		</div>
 	</div>
