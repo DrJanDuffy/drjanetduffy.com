@@ -51,7 +51,7 @@
 					</div>
 				</div>
 
-				<div class="text-center bg-white bg-opacity-10 rounded-xl p-6 backdrop-blur-sm">
+				<div class="text-center bg-white bg-opacity-10 rounded-xl p-6 backdrop-blur-sm hover:bg-opacity-15 transition-all duration-300">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-white bg-opacity-20 rounded-full mb-4">
 						<Calendar class="w-8 h-8 text-white" />
 					</div>
@@ -63,7 +63,7 @@
 					</div>
 				</div>
 
-				<div class="text-center bg-white bg-opacity-10 rounded-xl p-6 backdrop-blur-sm">
+				<div class="text-center bg-white bg-opacity-10 rounded-xl p-6 backdrop-blur-sm hover:bg-opacity-15 transition-all duration-300">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-white bg-opacity-20 rounded-full mb-4">
 						<Home class="w-8 h-8 text-white" />
 					</div>
