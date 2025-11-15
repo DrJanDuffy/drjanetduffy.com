@@ -18,12 +18,12 @@
 
 <footer class="bg-gray-900 text-white py-16 mt-16">
 	<div class="container mx-auto px-4">
-		<div class="grid md:grid-cols-4 gap-12 mb-12">
+		<div class="grid md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
 			<!-- About Section -->
-			<div>
+			<div class="lg:col-span-2">
 				<h3 class="text-xl font-display font-bold mb-4 text-white">Dr. Janet Duffy</h3>
 				<p class="text-gray-400 mb-4">Licensed REALTOR®</p>
-				<p class="text-gray-400 mb-6">Your trusted Las Vegas real estate expert with 15+ years of experience serving buyers, sellers, and investors.</p>
+				<p class="text-gray-400 mb-6 text-sm">Your trusted Las Vegas real estate expert with 15+ years of experience serving buyers, sellers, and investors.</p>
 				<div class="flex gap-4">
 					<a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors">
 						<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -43,35 +43,69 @@
 				</div>
 			</div>
 			
-			<!-- Quick Links -->
+			<!-- Main Pages -->
 			<div>
-				<h3 class="text-xl font-display font-bold mb-4 text-white">Quick Links</h3>
-				<ul class="space-y-3">
+				<h3 class="text-lg font-display font-bold mb-4 text-white">Main</h3>
+				<ul class="space-y-2 text-sm">
+					<li><a href="/" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
 					<li><a href="/properties" class="text-gray-400 hover:text-white transition-colors">Properties</a></li>
-					<li><a href="/home-value" class="text-gray-400 hover:text-white transition-colors">Home Value</a></li>
-					<li><a href="/rentals" class="text-gray-400 hover:text-white transition-colors">Rentals</a></li>
 					<li><a href="/about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
 					<li><a href="/contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
 					<li><a href="/blog" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
 				</ul>
 			</div>
 			
+			<!-- Properties -->
+			<div>
+				<h3 class="text-lg font-display font-bold mb-4 text-white">Properties</h3>
+				<ul class="space-y-2 text-sm">
+					<li><a href="/rentals" class="text-gray-400 hover:text-white transition-colors">Rentals</a></li>
+					<li><a href="/listings-embedded" class="text-gray-400 hover:text-white transition-colors">Grid View</a></li>
+					<li><a href="/listings-list" class="text-gray-400 hover:text-white transition-colors">List View</a></li>
+					<li><a href="/past-sales" class="text-gray-400 hover:text-white transition-colors">Past Sales</a></li>
+					<li><a href="/properties/homes" class="text-gray-400 hover:text-white transition-colors">Single Family</a></li>
+					<li><a href="/properties/condos" class="text-gray-400 hover:text-white transition-colors">Condos</a></li>
+					<li><a href="/properties/townhomes" class="text-gray-400 hover:text-white transition-colors">Townhomes</a></li>
+					<li><a href="/properties/new-construction" class="text-gray-400 hover:text-white transition-colors">New Construction</a></li>
+					<li><a href="/properties/luxury" class="text-gray-400 hover:text-white transition-colors">Luxury Estates</a></li>
+					<li><a href="/properties/gated-communities" class="text-gray-400 hover:text-white transition-colors">Gated Communities</a></li>
+					<li><a href="/properties/golf-communities" class="text-gray-400 hover:text-white transition-colors">Golf Communities</a></li>
+					<li><a href="/properties/55-plus" class="text-gray-400 hover:text-white transition-colors">55+ Communities</a></li>
+					<li><a href="/properties/foreclosures" class="text-gray-400 hover:text-white transition-colors">Foreclosures</a></li>
+					<li><a href="/properties/short-sales" class="text-gray-400 hover:text-white transition-colors">Short Sales</a></li>
+				</ul>
+			</div>
+			
 			<!-- Communities -->
 			<div>
-				<h3 class="text-xl font-display font-bold mb-4 text-white">Communities</h3>
-				<ul class="space-y-3">
+				<h3 class="text-lg font-display font-bold mb-4 text-white">Communities</h3>
+				<ul class="space-y-2 text-sm">
 					<li><a href="/properties?neighborhood=summerlin" class="text-gray-400 hover:text-white transition-colors">Summerlin</a></li>
 					<li><a href="/properties?neighborhood=henderson" class="text-gray-400 hover:text-white transition-colors">Henderson</a></li>
 					<li><a href="/properties?neighborhood=green-valley" class="text-gray-400 hover:text-white transition-colors">Green Valley</a></li>
 					<li><a href="/properties?neighborhood=north-las-vegas" class="text-gray-400 hover:text-white transition-colors">North Las Vegas</a></li>
-					<li><a href="/sitemap" class="text-gray-400 hover:text-white transition-colors">View All Communities</a></li>
+					<li><a href="/properties?neighborhood=boulder-city" class="text-gray-400 hover:text-white transition-colors">Boulder City</a></li>
+					<li><a href="/properties?neighborhood=seven-hills" class="text-gray-400 hover:text-white transition-colors">Seven Hills</a></li>
+					<li><a href="/properties?neighborhood=southern-highlands" class="text-gray-400 hover:text-white transition-colors">Southern Highlands</a></li>
+					<li><a href="/properties?neighborhood=mountains-edge" class="text-gray-400 hover:text-white transition-colors">Mountains Edge</a></li>
+					<li><a href="/properties?neighborhood=anthem" class="text-gray-400 hover:text-white transition-colors">Anthem</a></li>
+					<li><a href="/sitemap" class="text-gray-400 hover:text-white transition-colors text-primary-400">View All →</a></li>
 				</ul>
 			</div>
 			
-			<!-- Contact Info -->
+			<!-- Services & Contact -->
 			<div>
-				<h3 class="text-xl font-display font-bold mb-4 text-white">Contact</h3>
-				<div class="space-y-4 text-gray-400">
+				<h3 class="text-lg font-display font-bold mb-4 text-white">Services</h3>
+				<ul class="space-y-2 text-sm mb-6">
+					<li><a href="/home-value" class="text-gray-400 hover:text-white transition-colors">Home Value</a></li>
+					<li><a href="/services/buying" class="text-gray-400 hover:text-white transition-colors">Buying Guide</a></li>
+					<li><a href="/services/selling" class="text-gray-400 hover:text-white transition-colors">Selling Guide</a></li>
+					<li><a href="/services/mortgage-calculator" class="text-gray-400 hover:text-white transition-colors">Mortgage Calculator</a></li>
+					<li><a href="/services/testimonials" class="text-gray-400 hover:text-white transition-colors">Testimonials</a></li>
+				</ul>
+				
+				<h3 class="text-lg font-display font-bold mb-4 text-white mt-6">Contact</h3>
+				<div class="space-y-3 text-sm text-gray-400">
 					<div>
 						<p class="font-semibold text-white mb-1">Phone</p>
 						<a href="tel:+17022221964" class="hover:text-white transition-colors">702-222-1964</a>
@@ -83,7 +117,7 @@
 					<div>
 						<p class="font-semibold text-white mb-1">Location</p>
 						<p>Las Vegas, Nevada</p>
-						<p class="text-sm">Serving West Summerlin & The Ridges</p>
+						<p class="text-xs mt-1">Serving West Summerlin & The Ridges</p>
 					</div>
 				</div>
 			</div>
@@ -92,7 +126,7 @@
 		<div class="border-t border-gray-800 pt-8">
 			<div class="flex flex-col md:flex-row justify-between items-center gap-4">
 				<p class="text-gray-400 text-sm">&copy; {new Date().getFullYear()} Dr. Janet Duffy, REALTOR®. All rights reserved.</p>
-				<div class="flex gap-6 text-sm">
+				<div class="flex flex-wrap gap-4 text-sm justify-center">
 					<a href="/privacy" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
 					<a href="/terms" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
 					<a href="/sitemap" class="text-gray-400 hover:text-white transition-colors">Sitemap</a>
