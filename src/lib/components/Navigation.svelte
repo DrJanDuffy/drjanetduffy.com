@@ -1,82 +1,154 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/stores';
-	
+
 	let mobileMenuOpen = false;
-	
+	let openDropdown: string | null = null;
+
 	function toggleMobileMenu() {
 		mobileMenuOpen = !mobileMenuOpen;
 	}
-	
+
 	function closeMobileMenu() {
 		mobileMenuOpen = false;
 	}
+
+	function handleDropdownEnter(menu: string) {
+		openDropdown = menu;
+	}
+
+	function handleDropdownLeave() {
+		openDropdown = null;
+	}
 </script>
 
+<!-- Top Bar -->
+<div class="bg-primary-700 text-white py-2">
+	<div class="container mx-auto px-4">
+		<div class="flex justify-between items-center text-sm">
+			<p>Welcome to DrJanetDuffy.com! Call Dr. Janet Duffy directly at (702) 555-1234</p>
+			<div class="hidden md:flex space-x-4">
+				<a href="/contact" class="hover:underline">Contact Us</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Main Navigation -->
 <nav class="bg-white shadow-lg sticky top-0 z-50">
 	<div class="container mx-auto px-4">
-		<div class="flex justify-between items-center h-16">
+		<div class="flex justify-between items-center py-4">
 			<!-- Logo -->
-			<div class="flex items-center space-x-2">
-				<div class="w-8 h-8 bg-primary-600 rounded-full flex items-center justify-center">
-					<span class="text-white font-bold text-sm">JD</span>
-				</div>
-				<div>
-					<h1 class="text-xl font-bold text-gray-800">Dr. Jan Duffy</h1>
-					<p class="text-sm text-gray-600">REALTOR</p>
-				</div>
+			<div class="flex items-center">
+				<a href="/" class="flex items-center space-x-3">
+					<div class="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center">
+						<span class="text-white font-bold text-lg">JD</span>
+					</div>
+					<div>
+						<h1 class="text-2xl font-bold text-gray-800">Dr. Janet Duffy</h1>
+						<p class="text-sm text-gray-600">REALTOR®</p>
+					</div>
+				</a>
 			</div>
-			
+
 			<!-- Desktop Navigation -->
-			<div class="hidden md:flex items-center space-x-8">
-				<a 
-					href="/" 
-					class="text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/' ? 'text-primary-600' : ''}"
-				>
-					Home
-				</a>
-				<a 
-					href="/properties" 
-					class="text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/properties' ? 'text-primary-600' : ''}"
-				>
-					Properties
-				</a>
-				<a 
-					href="/home-value" 
-					class="text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/home-value' ? 'text-primary-600' : ''}"
-				>
-					Home Value
-				</a>
-				<a 
-					href="/rentals" 
-					class="text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/rentals' ? 'text-primary-600' : ''}"
-				>
-					Rentals
-				</a>
-				<a 
-					href="/about" 
-					class="text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/about' ? 'text-primary-600' : ''}"
-				>
-					About
-				</a>
-				<a 
-					href="/contact" 
-					class="text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/contact' ? 'text-primary-600' : ''}"
-				>
-					Contact
-				</a>
-				<a 
-					href="tel:+17025551234" 
-					class="bg-primary-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-primary-700 transition-colors"
-				>
-					Call Now
-				</a>
+			<div class="hidden lg:flex items-center space-x-1">
+				<!-- Sell Dropdown -->
+				<div class="relative group" on:mouseenter={() => handleDropdownEnter('sell')} on:mouseleave={handleDropdownLeave}>
+					<a href="/selling" class="px-4 py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors flex items-center">
+						<div>
+							<strong>SELL</strong>
+							<small class="block text-xs">Sell Your Home</small>
+						</div>
+					</a>
+					{#if openDropdown === 'sell'}
+					<div class="absolute left-0 mt-0 w-56 bg-white shadow-lg rounded-b-lg py-2 z-50">
+						<a href="/home-value" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">What's My Home Worth?</a>
+						<a href="/about" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">About Dr. Janet Duffy</a>
+						<a href="/testimonials" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">Testimonials</a>
+					</div>
+					{/if}
+				</div>
+
+				<!-- Buy Dropdown -->
+				<div class="relative group" on:mouseenter={() => handleDropdownEnter('buy')} on:mouseleave={handleDropdownLeave}>
+					<a href="/properties" class="px-4 py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors flex items-center">
+						<div>
+							<strong>BUY</strong>
+							<small class="block text-xs">Search Listings</small>
+						</div>
+					</a>
+					{#if openDropdown === 'buy'}
+					<div class="absolute left-0 mt-0 w-64 bg-white shadow-lg rounded-b-lg py-2 z-50">
+						<a href="/las-vegas-homes" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">Las Vegas Homes</a>
+						<a href="/las-vegas-condos" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">Las Vegas Condos</a>
+						<a href="/summerlin" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">Summerlin</a>
+						<a href="/henderson" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">Henderson</a>
+						<a href="/las-vegas-luxury-homes" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">Luxury Estates</a>
+						<a href="/las-vegas-neighborhoods" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">Las Vegas Neighborhoods</a>
+						<a href="/las-vegas-gated-communities" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">Gated Communities</a>
+					</div>
+					{/if}
+				</div>
+
+				<!-- Homes Dropdown -->
+				<div class="relative group" on:mouseenter={() => handleDropdownEnter('homes')} on:mouseleave={handleDropdownLeave}>
+					<a href="/las-vegas-homes" class="px-4 py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors flex items-center">
+						<div>
+							<strong>HOMES</strong>
+							<small class="block text-xs">Las Vegas Homes</small>
+						</div>
+					</a>
+					{#if openDropdown === 'homes'}
+					<div class="absolute left-0 mt-0 w-64 bg-white shadow-lg rounded-b-lg py-2 z-50">
+						<a href="/summerlin" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">Summerlin</a>
+						<a href="/henderson" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">Henderson</a>
+						<a href="/las-vegas-retirement-communities" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">55+ Communities</a>
+						<a href="/las-vegas-golf-communities" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">Golf Communities</a>
+						<a href="/las-vegas-luxury-homes" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">Luxury Estates</a>
+					</div>
+					{/if}
+				</div>
+
+				<!-- Condos Dropdown -->
+				<div class="relative group" on:mouseenter={() => handleDropdownEnter('condos')} on:mouseleave={handleDropdownLeave}>
+					<a href="/las-vegas-condos" class="px-4 py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors flex items-center">
+						<div>
+							<strong>CONDOS</strong>
+							<small class="block text-xs">Las Vegas Condos</small>
+						</div>
+					</a>
+					{#if openDropdown === 'condos'}
+					<div class="absolute left-0 mt-0 w-64 bg-white shadow-lg rounded-b-lg py-2 z-50">
+						<a href="/las-vegas-high-rises" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">High Rise Condos</a>
+						<a href="/las-vegas-luxury-condos" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">Luxury Condos</a>
+						<a href="/henderson-condos" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">Henderson Condos</a>
+						<a href="/summerlin-condos" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">Summerlin Condos</a>
+					</div>
+					{/if}
+				</div>
+
+				<!-- About Dropdown -->
+				<div class="relative group" on:mouseenter={() => handleDropdownEnter('about')} on:mouseleave={handleDropdownLeave}>
+					<a href="/about" class="px-4 py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors flex items-center">
+						<div>
+							<strong>ABOUT</strong>
+							<small class="block text-xs">Dr. Janet Duffy</small>
+						</div>
+					</a>
+					{#if openDropdown === 'about'}
+					<div class="absolute left-0 mt-0 w-56 bg-white shadow-lg rounded-b-lg py-2 z-50">
+						<a href="/testimonials" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">Testimonials</a>
+						<a href="/contact" class="block px-4 py-2 text-sm text-gray-700 hover:bg-primary-50">Contact</a>
+					</div>
+					{/if}
+				</div>
 			</div>
-			
+
 			<!-- Mobile menu button -->
-			<div class="md:hidden">
-				<button 
+			<div class="lg:hidden">
+				<button
 					on:click={toggleMobileMenu}
-					class="text-gray-700 hover:text-primary-600 focus:outline-none focus:text-primary-600"
+					class="text-gray-700 hover:text-primary-600 focus:outline-none"
 					aria-label="Toggle mobile menu"
 				>
 					<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -89,60 +161,19 @@
 				</button>
 			</div>
 		</div>
-		
+
 		<!-- Mobile Navigation -->
 		{#if mobileMenuOpen}
-			<div class="md:hidden">
-				<div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-50 border-t">
-					<a 
-						href="/" 
-						class="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/' ? 'text-primary-600' : ''}"
-						on:click={closeMobileMenu}
-					>
-						Home
-					</a>
-					<a 
-						href="/properties" 
-						class="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/properties' ? 'text-primary-600' : ''}"
-						on:click={closeMobileMenu}
-					>
-						Properties
-					</a>
-					<a 
-						href="/home-value" 
-						class="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/home-value' ? 'text-primary-600' : ''}"
-						on:click={closeMobileMenu}
-					>
-						Home Value
-					</a>
-					<a 
-						href="/rentals" 
-						class="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/rentals' ? 'text-primary-600' : ''}"
-						on:click={closeMobileMenu}
-					>
-						Rentals
-					</a>
-					<a 
-						href="/about" 
-						class="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/about' ? 'text-primary-600' : ''}"
-						on:click={closeMobileMenu}
-					>
-						About
-					</a>
-					<a 
-						href="/contact" 
-						class="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/contact' ? 'text-primary-600' : ''}"
-						on:click={closeMobileMenu}
-					>
-						Contact
-					</a>
-					<a 
-						href="tel:+17025551234" 
-						class="block px-3 py-2 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 transition-colors text-center"
-						on:click={closeMobileMenu}
-					>
-						Call Now
-					</a>
+			<div class="lg:hidden border-t">
+				<div class="px-2 pt-2 pb-3 space-y-1 bg-gray-50">
+					<a href="/" class="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium" on:click={closeMobileMenu}>Home</a>
+					<a href="/selling" class="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium" on:click={closeMobileMenu}>Sell</a>
+					<a href="/properties" class="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium" on:click={closeMobileMenu}>Buy</a>
+					<a href="/las-vegas-homes" class="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium" on:click={closeMobileMenu}>Homes</a>
+					<a href="/las-vegas-condos" class="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium" on:click={closeMobileMenu}>Condos</a>
+					<a href="/about" class="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium" on:click={closeMobileMenu}>About</a>
+					<a href="/contact" class="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium" on:click={closeMobileMenu}>Contact</a>
+					<a href="tel:+17025551234" class="block px-3 py-2 bg-primary-600 text-white rounded-lg font-medium text-center" on:click={closeMobileMenu}>Call Now</a>
 				</div>
 			</div>
 		{/if}

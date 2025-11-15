@@ -1,6 +1,8 @@
 import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import { V0_API_KEY } from '$env/static/private';
+import { env } from '$env/dynamic/private';
+
+const V0_API_KEY = env.V0_API_KEY || '';
 
 // V0 API endpoint - check https://v0.dev/docs/v0-platform-api for latest endpoint
 const V0_API_BASE = 'https://api.v0.dev';
