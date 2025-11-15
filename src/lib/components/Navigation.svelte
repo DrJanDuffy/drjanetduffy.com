@@ -35,11 +35,11 @@
 			
 			<!-- Navigation Menu -->
 			<div class="hidden md:flex items-center flex-1 justify-center mx-8">
-				<nav class="flex items-center space-x-6" role="navigation" aria-label="Main navigation">
+				<nav class="flex items-center space-x-8" role="navigation" aria-label="Main navigation">
 					{#each navItems as item}
 						<a
 							href={item.href}
-							class="text-sm font-medium text-gray-700 hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded px-2 py-1 transition-colors {$page.url.pathname === item.href ? 'text-primary-600 font-semibold' : ''}"
+							class="text-base font-medium text-gray-700 hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-md px-3 py-2 transition-colors whitespace-nowrap {$page.url.pathname === item.href ? 'text-primary-600 font-semibold' : ''}"
 							aria-current={$page.url.pathname === item.href ? 'page' : undefined}
 						>
 							{item.label}
@@ -69,11 +69,11 @@
 		<!-- Mobile Menu -->
 		{#if mobileMenuOpen}
 			<div id="mobile-menu" class="md:hidden border-t border-gray-200 py-4" role="navigation" aria-label="Mobile navigation">
-				<nav class="flex flex-col space-y-2">
+				<nav class="flex flex-col space-y-1">
 					{#each navItems as item}
 						<a
 							href={item.href}
-							class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded transition-colors {$page.url.pathname === item.href ? 'text-primary-600 font-semibold bg-primary-50' : ''}"
+							class="px-4 py-3 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-md transition-colors {$page.url.pathname === item.href ? 'text-primary-600 font-semibold bg-primary-50' : ''}"
 							on:click={() => mobileMenuOpen = false}
 							aria-current={$page.url.pathname === item.href ? 'page' : undefined}
 						>
