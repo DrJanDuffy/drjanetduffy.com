@@ -112,26 +112,27 @@
 	<meta property="twitter:description" content="Inspirational real estate quotes to motivate agents, build client trust, and drive success." />
 </svelte:head>
 
-<div class="container mx-auto px-4 py-16">
-	<div class="max-w-6xl mx-auto">
+<section class="section relative" style="background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);">
+	<div class="container-premium">
 		<!-- Header Section -->
 		<div class="text-center mb-16">
-			<h1 class="text-4xl md:text-5xl font-bold mb-6 text-vegas-deep-900">
+			<h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">
 				Motivational Real Estate Quotes
 			</h1>
-			<p class="text-xl text-vegas-deep-700 max-w-4xl mx-auto mb-8">
+			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
+			<p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
 				Inspirational quotes from industry leaders, thought leaders, and successful real estate professionals to motivate, inspire, and guide your real estate journey.
 			</p>
 			
 			<!-- Category Filter -->
-			<div class="flex flex-wrap justify-center gap-2 mb-8">
+			<div class="flex flex-wrap justify-center gap-3 mb-8">
 				{#each categories as category}
 					<button
 						on:click={() => selectedCategory = category}
-						class="px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 {
+						class="px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 {
 							selectedCategory === category 
-								? 'bg-vegas-gold-600 text-vegas-deep-900 shadow-lg' 
-								: 'bg-gray-100 text-gray-700 hover:bg-vegas-gold-100 hover:text-vegas-gold-700'
+								? 'bg-primary-600 text-white shadow-lg scale-105' 
+								: 'bg-white text-gray-700 hover:bg-primary-50 hover:text-primary-700 border border-gray-200 shadow-md hover:shadow-lg'
 						}"
 					>
 						{category}
@@ -141,21 +142,22 @@
 		</div>
 
 		<!-- Quotes Grid -->
-		<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+		<div class="grid-premium md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
 			{#each filteredQuotes as quote, index}
-				<div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border-l-4 border-vegas-gold-600">
+				<div class="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 p-8 border border-gray-100 overflow-hidden">
+					<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-500 via-primary-600 to-primary-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 					<div class="mb-6">
-						<span class="inline-block bg-vegas-gold-100 text-vegas-gold-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">
+						<span class="inline-block bg-primary-50 text-primary-700 text-xs font-bold px-3 py-1.5 rounded-full mb-4">
 							{quote.category}
 						</span>
-						<blockquote class="text-lg text-vegas-deep-900 font-medium leading-relaxed mb-4">
+						<blockquote class="font-display text-lg text-gray-900 font-medium leading-relaxed mb-4">
 							"{quote.quote}"
 						</blockquote>
 					</div>
 					
 					<div class="border-t border-gray-100 pt-4">
-						<div class="font-semibold text-vegas-deep-900">{quote.author}</div>
-						<div class="text-sm text-vegas-gold-600 mb-3">{quote.title}</div>
+						<div class="font-display font-bold text-gray-900 text-lg">{quote.author}</div>
+						<div class="text-sm text-primary-600 font-semibold mb-3">{quote.title}</div>
 						<p class="text-sm text-gray-600 leading-relaxed">{quote.description}</p>
 					</div>
 				</div>
@@ -163,58 +165,63 @@
 		</div>
 
 		<!-- How to Use Section -->
-		<div class="mt-20 bg-gradient-to-r from-vegas-deep-900 to-vegas-gold-600 text-white rounded-2xl p-12">
-			<div class="max-w-4xl mx-auto text-center">
-				<h2 class="text-3xl font-bold mb-8">How to Use These Quotes</h2>
-				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
-					<div>
-						<h3 class="text-xl font-semibold mb-4 text-vegas-gold-300">Email Signatures</h3>
-						<p class="text-vegas-gold-100">Add a motivational quote to your email signature to show clients your values and stay optimistic.</p>
+		<div class="mb-16 relative overflow-hidden bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white rounded-2xl p-12 shadow-2xl">
+			<div class="absolute inset-0 overflow-hidden">
+				<div class="absolute top-1/4 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
+				<div class="absolute bottom-1/4 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 1.5s;"></div>
+			</div>
+			<div class="relative z-10 max-w-4xl mx-auto text-center">
+				<h2 class="font-display text-4xl font-bold mb-12 text-white" style="text-shadow: 0 4px 20px rgba(0,0,0,0.3); letter-spacing: -0.02em;">How to Use These Quotes</h2>
+				<div class="grid-premium md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+					<div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+						<h3 class="font-display text-xl font-bold mb-4 text-white">Email Signatures</h3>
+						<p class="text-white/90 leading-relaxed">Add a motivational quote to your email signature to show clients your values and stay optimistic.</p>
 					</div>
-					<div>
-						<h3 class="text-xl font-semibold mb-4 text-vegas-gold-300">Social Media</h3>
-						<p class="text-vegas-gold-100">Use quotes as scroll-stoppers in Instagram Stories, carousels, and captions to engage your audience.</p>
+					<div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+						<h3 class="font-display text-xl font-bold mb-4 text-white">Social Media</h3>
+						<p class="text-white/90 leading-relaxed">Use quotes as scroll-stoppers in Instagram Stories, carousels, and captions to engage your audience.</p>
 					</div>
-					<div>
-						<h3 class="text-xl font-semibold mb-4 text-vegas-gold-300">Client Communications</h3>
-						<p class="text-vegas-gold-100">Include quotes in buyer guides, listing presentations, and thank-you cards to add warmth.</p>
+					<div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+						<h3 class="font-display text-xl font-bold mb-4 text-white">Client Communications</h3>
+						<p class="text-white/90 leading-relaxed">Include quotes in buyer guides, listing presentations, and thank-you cards to add warmth.</p>
 					</div>
-					<div>
-						<h3 class="text-xl font-semibold mb-4 text-vegas-gold-300">Team Motivation</h3>
-						<p class="text-vegas-gold-100">Share quotes in team meetings, Slack messages, and training sessions to boost morale.</p>
+					<div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+						<h3 class="font-display text-xl font-bold mb-4 text-white">Team Motivation</h3>
+						<p class="text-white/90 leading-relaxed">Share quotes in team meetings, Slack messages, and training sessions to boost morale.</p>
 					</div>
-					<div>
-						<h3 class="text-xl font-semibold mb-4 text-vegas-gold-300">Listing Descriptions</h3>
-						<p class="text-vegas-gold-100">Add emotional quotes to property descriptions to set the tone for potential buyers.</p>
+					<div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+						<h3 class="font-display text-xl font-bold mb-4 text-white">Listing Descriptions</h3>
+						<p class="text-white/90 leading-relaxed">Add emotional quotes to property descriptions to set the tone for potential buyers.</p>
 					</div>
-					<div>
-						<h3 class="text-xl font-semibold mb-4 text-vegas-gold-300">Content Strategy</h3>
-						<p class="text-vegas-gold-100">Let quotes inspire your next blog post, video, or newsletter to create engaging content.</p>
+					<div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+						<h3 class="font-display text-xl font-bold mb-4 text-white">Content Strategy</h3>
+						<p class="text-white/90 leading-relaxed">Let quotes inspire your next blog post, video, or newsletter to create engaging content.</p>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		<!-- CTA Section -->
-		<div class="mt-16 text-center">
-			<h2 class="text-3xl font-bold mb-6 text-vegas-deep-900">Ready to Apply These Insights?</h2>
-			<p class="text-xl text-vegas-deep-700 mb-8 max-w-3xl mx-auto">
+		<div class="text-center">
+			<h2 class="font-display text-4xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">Ready to Apply These Insights?</h2>
+			<p class="text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
 				Let Dr. Janet Duffy, REALTOR® help you turn inspiration into action with luxury real estate expertise in West Summerlin.
 			</p>
-			<div class="flex flex-col sm:flex-row gap-4 justify-center">
+			<div class="flex flex-col sm:flex-row gap-6 justify-center">
 				<a 
 					href="/contact" 
-					class="bg-vegas-gold-600 text-vegas-deep-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-vegas-gold-500 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+					class="group relative overflow-hidden bg-primary-600 text-white px-10 py-5 rounded-xl font-bold text-lg shadow-2xl hover:shadow-primary-600/30 transition-all duration-300 hover:scale-110 hover:-translate-y-1"
 				>
-					Schedule Consultation
+					<span class="relative z-10">Schedule Consultation</span>
+					<div class="absolute inset-0 bg-gradient-to-r from-primary-500 to-primary-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 				</a>
 				<a 
 					href="tel:+17022221964" 
-					class="border-2 border-vegas-gold-600 text-vegas-gold-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-vegas-gold-600 hover:text-vegas-deep-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+					class="group relative overflow-hidden bg-transparent text-primary-600 border-2 border-primary-600 px-10 py-5 rounded-xl font-bold text-lg hover:bg-primary-600 hover:text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1"
 				>
-					Call: 702-222-1964
+					<span class="relative z-10">Call 702-222-1964</span>
 				</a>
 			</div>
 		</div>
 	</div>
-</div>
+</section>
