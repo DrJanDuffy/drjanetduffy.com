@@ -1,17 +1,18 @@
 <script>
 import ContactForm from '$lib/components/ContactForm.svelte';
+import { Phone, Mail, MapPin, Clock, CheckCircle } from 'lucide-svelte';
 </script>
 
 <svelte:head>
 	<title>Contact Dr. Janet Duffy, REALTOR® | Berkshire Hathaway Nevada Properties</title>
-	<meta name="description" content="Contact Dr. Janet Duffy, REALTOR® for luxury Las Vegas real estate expertise. Direct: 702-222-1964 | drduffy@bhhsnv.com. West Summerlin specialist for executives and California relocations." />
-	<meta name="keywords" content="Dr. Janet Duffy REALTOR, Berkshire Hathaway Nevada Properties, luxury Las Vegas real estate, West Summerlin, executive relocation, 702-222-1964" />
+	<meta name="description" content="Contact Dr. Jan Duffy, REALTOR® for luxury Las Vegas real estate expertise. Direct: 702-500-1955 | info@drjanetduffy.com. West Summerlin specialist for executives and California relocations." />
+	<meta name="keywords" content="Dr. Jan Duffy REALTOR, luxury Las Vegas real estate, West Summerlin, executive relocation, 702-500-1955" />
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://drjanetduffy.com/contact" />
 	<meta property="og:title" content="Contact Dr. Janet Duffy, REALTOR® | Berkshire Hathaway Nevada Properties" />
-	<meta property="og:description" content="Contact Dr. Janet Duffy, REALTOR® for luxury Las Vegas real estate expertise. Direct: 702-222-1964" />
+	<meta property="og:description" content="Contact Dr. Jan Duffy, REALTOR® for luxury Las Vegas real estate expertise. Direct: 702-500-1955" />
 	
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
@@ -26,13 +27,15 @@ import ContactForm from '$lib/components/ContactForm.svelte';
 		"@type": "ContactPage",
 		"mainEntity": {
 			"@type": "RealEstateAgent",
-			"name": "Dr. Janet Duffy",
-			"telephone": "702-222-1964",
-			"email": "drduffy@bhhsnv.com",
+			"name": "Dr. Jan Duffy",
+			"telephone": "702-500-1955",
+			"email": "info@drjanetduffy.com",
 			"address": {
 				"@type": "PostalAddress",
+				"streetAddress": "1980 Festival Plaza Drive, Suite 300",
 				"addressLocality": "Las Vegas",
 				"addressRegion": "NV",
+				"postalCode": "89135",
 				"addressCountry": "US"
 			}
 		}
@@ -78,51 +81,42 @@ import ContactForm from '$lib/components/ContactForm.svelte';
 					<h2 class="font-display text-3xl font-bold mb-8 text-gray-900" style="letter-spacing: -0.02em;">Get in Touch</h2>
 					
 					<div class="space-y-6">
-						<a href="tel:+17022221964" class="group flex items-start gap-4 p-4 rounded-2xl hover:bg-white/80 transition-all duration-300 hover:shadow-md">
+						<a href="tel:+17025001955" class="group flex items-start gap-4 p-4 rounded-2xl hover:bg-white/80 transition-all duration-300 hover:shadow-md">
 							<div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-								<svg class="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-								</svg>
+								<Phone class="w-7 h-7 text-white" />
 							</div>
 							<div class="flex-1">
 								<h3 class="font-display text-xl font-bold mb-1 text-gray-900">Phone</h3>
-								<p class="text-primary-600 hover:text-primary-700 font-bold text-xl transition-colors">702-222-1964</p>
+								<p class="text-primary-600 hover:text-primary-700 font-bold text-xl transition-colors">702-500-1955</p>
 								<p class="text-sm text-gray-600 mt-1">Available 7 days a week</p>
 							</div>
 						</a>
 						
-						<a href="mailto:drduffy@bhhsnv.com" class="group flex items-start gap-4 p-4 rounded-2xl hover:bg-white/80 transition-all duration-300 hover:shadow-md">
+						<a href="mailto:info@drjanetduffy.com" class="group flex items-start gap-4 p-4 rounded-2xl hover:bg-white/80 transition-all duration-300 hover:shadow-md">
 							<div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-								<svg class="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-								</svg>
+								<Mail class="w-7 h-7 text-white" />
 							</div>
 							<div class="flex-1">
 								<h3 class="font-display text-xl font-bold mb-1 text-gray-900">Email</h3>
-								<p class="text-primary-600 hover:text-primary-700 font-semibold transition-colors break-all">drduffy@bhhsnv.com</p>
+								<p class="text-primary-600 hover:text-primary-700 font-semibold transition-colors break-all">info@drjanetduffy.com</p>
 								<p class="text-sm text-gray-600 mt-1">Response within 24 hours</p>
 							</div>
 						</a>
 						
 						<div class="flex items-start gap-4 p-4 rounded-2xl">
 							<div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-primary-600 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg">
-								<svg class="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-								</svg>
+								<MapPin class="w-7 h-7 text-white" />
 							</div>
 							<div class="flex-1">
 								<h3 class="font-display text-xl font-bold mb-1 text-gray-900">Office Location</h3>
-								<p class="text-gray-700 font-semibold">Berkshire Hathaway Nevada Properties</p>
-								<p class="text-sm text-gray-600 mt-1">Serving West Summerlin (89138, 89144, 89135)</p>
+								<p class="text-gray-700 font-semibold">1980 Festival Plaza Drive, Suite 300</p>
+								<p class="text-sm text-gray-600 mt-1">Las Vegas, NV 89135</p>
 							</div>
 						</div>
 						
 						<div class="flex items-start gap-4 p-4 rounded-2xl">
 							<div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-primary-500 to-blue-500 rounded-2xl flex items-center justify-center shadow-lg">
-								<svg class="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-								</svg>
+								<Clock class="w-7 h-7 text-white" />
 							</div>
 							<div class="flex-1">
 								<h3 class="font-display text-xl font-bold mb-2 text-gray-900">Office Hours</h3>
@@ -150,33 +144,25 @@ import ContactForm from '$lib/components/ContactForm.svelte';
 					<ul class="space-y-4">
 						<li class="flex items-center gap-4 p-3 rounded-xl hover:bg-white/50 transition-colors">
 							<div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
-								<svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-									<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-								</svg>
+								<CheckCircle class="w-6 h-6 text-green-600" />
 							</div>
 							<span class="text-gray-700 font-semibold">Local market expertise</span>
 						</li>
 						<li class="flex items-center gap-4 p-3 rounded-xl hover:bg-white/50 transition-colors">
 							<div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
-								<svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-									<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-								</svg>
+								<CheckCircle class="w-6 h-6 text-green-600" />
 							</div>
 							<span class="text-gray-700 font-semibold">Proven track record</span>
 						</li>
 						<li class="flex items-center gap-4 p-3 rounded-xl hover:bg-white/50 transition-colors">
 							<div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
-								<svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-									<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-								</svg>
+								<CheckCircle class="w-6 h-6 text-green-600" />
 							</div>
 							<span class="text-gray-700 font-semibold">Personalized service</span>
 						</li>
 						<li class="flex items-center gap-4 p-3 rounded-xl hover:bg-white/50 transition-colors">
 							<div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
-								<svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-									<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-								</svg>
+								<CheckCircle class="w-6 h-6 text-green-600" />
 							</div>
 							<span class="text-gray-700 font-semibold">Free consultation</span>
 						</li>

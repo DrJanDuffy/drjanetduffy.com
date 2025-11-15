@@ -207,7 +207,7 @@
 					href="tel:+17022221964" 
 					class="ml-4 bg-vegas-gold-600 text-vegas-deep-900 px-6 py-2 rounded-lg font-semibold hover:bg-vegas-gold-700 transition-colors shadow-lg hover:shadow-xl"
 				>
-					Call: 702-222-1964
+					Call: 702-500-1955
 				</a>
 			</div>
 			
@@ -340,14 +340,14 @@
 								class="flex items-center space-x-3 px-3 py-2 text-sm bg-vegas-gold-600 text-vegas-deep-900 hover:bg-vegas-gold-700 transition-colors rounded-md font-semibold"
 								on:click={closeMobileMenu}
 							>
-								<span class="font-medium">Call Direct: 702-222-1964</span>
+								<span class="font-medium">Call Direct: 702-500-1955</span>
 							</a>
 							<a 
-								href="mailto:drduffy@bhhsnv.com" 
+								href="mailto:info@drjanetduffy.com" 
 								class="flex items-center space-x-3 px-3 py-2 text-sm text-gray-600 hover:text-vegas-gold-600 hover:bg-vegas-gold-50 transition-colors rounded-md"
 								on:click={closeMobileMenu}
 							>
-								<span class="font-medium">drduffy@bhhsnv.com</span>
+								<span class="font-medium">info@drjanetduffy.com</span>
 							</a>
 						</div>
 					</div>

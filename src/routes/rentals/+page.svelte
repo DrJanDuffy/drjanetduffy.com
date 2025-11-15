@@ -216,7 +216,7 @@ onMount(() => {
 					<div class="absolute inset-0 bg-gradient-to-r from-primary-700 to-primary-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 				</a>
 				<a href="tel:+17022221964" class="group relative overflow-hidden bg-transparent text-primary-600 border-2 border-primary-600 px-10 py-5 rounded-xl font-bold text-lg hover:bg-primary-600 hover:text-white transition-all duration-300 hover:scale-110 hover:-translate-y-1">
-					<span class="relative z-10">Call 702-222-1964</span>
+					<span class="relative z-10">Call 702-500-1955</span>
 				</a>
 			</div>
 		</div>

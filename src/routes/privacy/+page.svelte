@@ -266,14 +266,14 @@
 							<div class="space-y-3">
 								<p class="text-gray-700">
 									<strong class="text-gray-900">Email:</strong> 
-									<a href="mailto:drduffy@bhhsnv.com" class="text-primary-600 hover:text-primary-700 font-semibold ml-2">drduffy@bhhsnv.com</a>
+									<a href="mailto:info@drjanetduffy.com" class="text-primary-600 hover:text-primary-700 font-semibold ml-2">info@drjanetduffy.com</a>
 								</p>
 								<p class="text-gray-700">
 									<strong class="text-gray-900">Phone:</strong> 
-									<a href="tel:+17022221964" class="text-primary-600 hover:text-primary-700 font-semibold ml-2">702-222-1964</a>
+									<a href="tel:+17025001955" class="text-primary-600 hover:text-primary-700 font-semibold ml-2">702-500-1955</a>
 								</p>
 								<p class="text-gray-700">
-									<strong class="text-gray-900">Location:</strong> Las Vegas, Nevada
+									<strong class="text-gray-900">Address:</strong> 1980 Festival Plaza Drive, Suite 300, Las Vegas, NV 89135
 								</p>
 							</div>
 						</div>
