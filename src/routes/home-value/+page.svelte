@@ -1,6 +1,7 @@
 <script>
 import { onMount } from 'svelte';
 import { browser } from '$app/environment';
+import { CheckCircle, BarChart3, Home, TrendingUp } from 'lucide-svelte';
 
 let mounted = false;
 
@@ -76,27 +77,27 @@ onMount(() => {
 				<h2 class="font-display text-3xl font-bold mb-8 text-gray-900" style="letter-spacing: -0.02em;">How Our Valuation Works</h2>
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
-						<div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-md">
-							<span class="text-2xl">📊</span>
-						</div>
-						<div>
-							<h3 class="font-display text-xl font-bold mb-2 text-gray-900">Market Analysis</h3>
-							<p class="text-gray-700 leading-relaxed">We analyze recent sales of similar properties in your neighborhood and surrounding areas.</p>
-						</div>
+					<div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-md">
+						<BarChart3 class="w-6 h-6 text-white" />
 					</div>
-					<div class="flex items-start gap-4">
-						<div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-md">
-							<span class="text-2xl">🏠</span>
-						</div>
-						<div>
-							<h3 class="font-display text-xl font-bold mb-2 text-gray-900">Property Details</h3>
-							<p class="text-gray-700 leading-relaxed">Your home's size, age, condition, and unique features are factored into the valuation.</p>
-						</div>
+					<div>
+						<h3 class="font-display text-xl font-bold mb-2 text-gray-900">Market Analysis</h3>
+						<p class="text-gray-700 leading-relaxed">We analyze recent sales of similar properties in your neighborhood and surrounding areas.</p>
 					</div>
-					<div class="flex items-start gap-4">
-						<div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-md">
-							<span class="text-2xl">📈</span>
-						</div>
+				</div>
+				<div class="flex items-start gap-4">
+					<div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-md">
+						<Home class="w-6 h-6 text-white" />
+					</div>
+					<div>
+						<h3 class="font-display text-xl font-bold mb-2 text-gray-900">Property Details</h3>
+						<p class="text-gray-700 leading-relaxed">Your home's size, age, condition, and unique features are factored into the valuation.</p>
+					</div>
+				</div>
+				<div class="flex items-start gap-4">
+					<div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-md">
+						<TrendingUp class="w-6 h-6 text-white" />
+					</div>
 						<div>
 							<h3 class="font-display text-xl font-bold mb-2 text-gray-900">Current Market Trends</h3>
 							<p class="text-gray-700 leading-relaxed">We consider current Las Vegas market conditions, inventory levels, and buyer demand.</p>
@@ -119,9 +120,7 @@ onMount(() => {
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-							<svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-							</svg>
+							<CheckCircle class="w-6 h-6 text-green-600" />
 						</div>
 						<div>
 							<h3 class="font-display text-xl font-bold mb-2 text-gray-900">Selling Planning</h3>
@@ -130,9 +129,7 @@ onMount(() => {
 					</div>
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-							<svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-							</svg>
+							<CheckCircle class="w-6 h-6 text-green-600" />
 						</div>
 						<div>
 							<h3 class="font-display text-xl font-bold mb-2 text-gray-900">Refinancing Decisions</h3>
@@ -141,9 +138,7 @@ onMount(() => {
 					</div>
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-							<svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-							</svg>
+							<CheckCircle class="w-6 h-6 text-green-600" />
 						</div>
 						<div>
 							<h3 class="font-display text-xl font-bold mb-2 text-gray-900">Investment Tracking</h3>
@@ -152,9 +147,7 @@ onMount(() => {
 					</div>
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-							<svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-							</svg>
+							<CheckCircle class="w-6 h-6 text-green-600" />
 						</div>
 						<div>
 							<h3 class="font-display text-xl font-bold mb-2 text-gray-900">Insurance Purposes</h3>

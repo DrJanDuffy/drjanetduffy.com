@@ -1,6 +1,7 @@
 <script>
 import { onMount } from 'svelte';
 import { browser } from '$app/environment';
+import { CheckCircle } from 'lucide-svelte';
 
 let mounted = false;
 
@@ -149,27 +150,19 @@ onMount(() => {
 				<h3 class="font-display text-2xl font-bold mb-6 text-gray-900">Benefits of List View</h3>
 				<ul class="space-y-4">
 					<li class="flex items-start gap-4">
-						<svg class="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-							<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-						</svg>
+						<CheckCircle class="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
 						<span class="text-gray-700 leading-relaxed">More detailed information per property</span>
 					</li>
 					<li class="flex items-start gap-4">
-						<svg class="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-							<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-						</svg>
+						<CheckCircle class="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
 						<span class="text-gray-700 leading-relaxed">Easy to scan and compare multiple properties</span>
 					</li>
 					<li class="flex items-start gap-4">
-						<svg class="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-							<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-						</svg>
+						<CheckCircle class="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
 						<span class="text-gray-700 leading-relaxed">Compact layout shows more properties per page</span>
 					</li>
 					<li class="flex items-start gap-4">
-						<svg class="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-							<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-						</svg>
+						<CheckCircle class="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
 						<span class="text-gray-700 leading-relaxed">Perfect for mobile and tablet viewing</span>
 					</li>
 				</ul>

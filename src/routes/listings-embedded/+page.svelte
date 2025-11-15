@@ -1,6 +1,7 @@
 <script>
 import { onMount } from 'svelte';
 import { browser } from '$app/environment';
+import { CheckCircle } from 'lucide-svelte';
 
 let mounted = false;
 
@@ -101,21 +102,15 @@ onMount(() => {
 					<h3 class="font-display text-xl font-bold mb-4 text-primary-600">Web Components View</h3>
 					<ul class="space-y-3 mb-6">
 						<li class="flex items-center gap-3">
-							<svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-							</svg>
+						<CheckCircle class="w-5 h-5 text-green-600 flex-shrink-0" />
 							<span class="text-gray-700">Modern, interactive interface</span>
 						</li>
 						<li class="flex items-center gap-3">
-							<svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-							</svg>
+						<CheckCircle class="w-5 h-5 text-green-600 flex-shrink-0" />
 							<span class="text-gray-700">Advanced search capabilities</span>
 						</li>
 						<li class="flex items-center gap-3">
-							<svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-							</svg>
+						<CheckCircle class="w-5 h-5 text-green-600 flex-shrink-0" />
 							<span class="text-gray-700">Mobile-optimized design</span>
 						</li>
 					</ul>
@@ -128,21 +123,15 @@ onMount(() => {
 					<h3 class="font-display text-xl font-bold mb-4 text-primary-600">Embedded Grid View</h3>
 					<ul class="space-y-3 mb-6">
 						<li class="flex items-center gap-3">
-							<svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-							</svg>
+						<CheckCircle class="w-5 h-5 text-green-600 flex-shrink-0" />
 							<span class="text-gray-700">Classic grid layout</span>
 						</li>
 						<li class="flex items-center gap-3">
-							<svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-							</svg>
+						<CheckCircle class="w-5 h-5 text-green-600 flex-shrink-0" />
 							<span class="text-gray-700">Familiar interface</span>
 						</li>
 						<li class="flex items-center gap-3">
-							<svg class="w-5 h-5 text-green-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-								<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-							</svg>
+						<CheckCircle class="w-5 h-5 text-green-600 flex-shrink-0" />
 							<span class="text-gray-700">Comprehensive status filtering</span>
 						</li>
 					</ul>

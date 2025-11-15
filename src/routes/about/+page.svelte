@@ -1,4 +1,6 @@
 <script>
+import { Star, Award, TrendingUp, Users, CheckCircle, Phone } from 'lucide-svelte';
+
 // This could be expanded to load dynamic content from a CMS
 const achievements = [
   {
@@ -47,13 +49,48 @@ const certifications = [
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://drjanduffy.com/about" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/about" />
 	<meta property="og:title" content="About Dr. Jan Duffy | Las Vegas REALTOR" />
 	<meta property="og:description" content="Learn about Dr. Jan Duffy, a trusted Las Vegas REALTOR with 15+ years of experience and proven results." />
 	
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://drjanduffy.com/about" />
+	<meta property="twitter:url" content="https://www.drjanetduffy.com/about" />
+	
+	<!-- Canonical URL -->
+	<link rel="canonical" href="https://www.drjanetduffy.com/about" />
+	
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "ProfilePage",
+		"mainEntity": {
+			"@type": "RealEstateAgent",
+			"name": "Dr. Jan Duffy",
+			"description": "Licensed REALTOR® with 15+ years of experience in Las Vegas real estate",
+			"url": "https://www.drjanetduffy.com",
+			"telephone": "702-500-1955",
+			"email": "info@drjanetduffy.com",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "1980 Festival Plaza Drive, Suite 300",
+				"addressLocality": "Las Vegas",
+				"addressRegion": "NV",
+				"postalCode": "89135",
+				"addressCountry": "US"
+			},
+			"hasCredential": [
+				"Licensed REALTOR in Nevada",
+				"Certified Residential Specialist (CRS)",
+				"Accredited Buyer's Representative (ABR)",
+				"Graduate, REALTOR Institute (GRI)",
+				"Luxury Home Marketing Specialist",
+				"Certified Negotiation Expert (CNE)"
+			]
+		}
+	}
+	</script>
 	<meta property="twitter:title" content="About Dr. Jan Duffy | Las Vegas REALTOR" />
 	<meta property="twitter:description" content="Learn about Dr. Jan Duffy, a trusted Las Vegas REALTOR with 15+ years of experience and proven results." />
 </svelte:head>
@@ -93,26 +130,26 @@ const certifications = [
 				<div class="bg-gradient-to-br from-white to-primary-50/50 rounded-2xl p-10 shadow-xl border border-gray-100">
 					<h3 class="font-display text-2xl font-bold mb-6 text-gray-900">Quick Facts</h3>
 					<ul class="space-y-4">
-						<li class="flex items-center gap-3 text-gray-700 text-lg">
-							<span class="w-2 h-2 bg-primary-600 rounded-full"></span>
-							Las Vegas native
-						</li>
-						<li class="flex items-center gap-3 text-gray-700 text-lg">
-							<span class="w-2 h-2 bg-primary-600 rounded-full"></span>
-							15+ years in real estate
-						</li>
-						<li class="flex items-center gap-3 text-gray-700 text-lg">
-							<span class="w-2 h-2 bg-primary-600 rounded-full"></span>
-							Luxury home specialist
-						</li>
-						<li class="flex items-center gap-3 text-gray-700 text-lg">
-							<span class="w-2 h-2 bg-primary-600 rounded-full"></span>
-							Investment property expert
-						</li>
-						<li class="flex items-center gap-3 text-gray-700 text-lg">
-							<span class="w-2 h-2 bg-primary-600 rounded-full"></span>
-							Available 7 days a week
-						</li>
+					<li class="flex items-center gap-3 text-gray-700 text-lg">
+						<CheckCircle class="w-5 h-5 text-primary-600 flex-shrink-0" />
+						Las Vegas native
+					</li>
+					<li class="flex items-center gap-3 text-gray-700 text-lg">
+						<CheckCircle class="w-5 h-5 text-primary-600 flex-shrink-0" />
+						15+ years in real estate
+					</li>
+					<li class="flex items-center gap-3 text-gray-700 text-lg">
+						<CheckCircle class="w-5 h-5 text-primary-600 flex-shrink-0" />
+						Luxury home specialist
+					</li>
+					<li class="flex items-center gap-3 text-gray-700 text-lg">
+						<CheckCircle class="w-5 h-5 text-primary-600 flex-shrink-0" />
+						Investment property expert
+					</li>
+					<li class="flex items-center gap-3 text-gray-700 text-lg">
+						<CheckCircle class="w-5 h-5 text-primary-600 flex-shrink-0" />
+						Available 7 days a week
+					</li>
 					</ul>
 				</div>
 			</div>
@@ -125,12 +162,34 @@ const certifications = [
 				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
 			</div>
 			<div class="grid-premium md:grid-cols-4 gap-8">
-				{#each achievements as achievement}
-					<div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2">
-						<h3 class="font-display text-2xl font-bold mb-3 text-gray-900">{achievement.title}</h3>
-						<p class="text-gray-600 text-lg">{achievement.description}</p>
+				<div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 group">
+					<div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">
+						<TrendingUp class="w-8 h-8 text-white" />
 					</div>
-				{/each}
+					<h3 class="font-display text-2xl font-bold mb-3 text-gray-900">{achievements[0].title}</h3>
+					<p class="text-gray-600 text-lg">{achievements[0].description}</p>
+				</div>
+				<div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 group">
+					<div class="w-16 h-16 bg-gradient-to-br from-primary-600 to-primary-800 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">
+						<Award class="w-8 h-8 text-white" />
+					</div>
+					<h3 class="font-display text-2xl font-bold mb-3 text-gray-900">{achievements[1].title}</h3>
+					<p class="text-gray-600 text-lg">{achievements[1].description}</p>
+				</div>
+				<div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 group">
+					<div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">
+						<Users class="w-8 h-8 text-white" />
+					</div>
+					<h3 class="font-display text-2xl font-bold mb-3 text-gray-900">{achievements[2].title}</h3>
+					<p class="text-gray-600 text-lg">{achievements[2].description}</p>
+				</div>
+				<div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 group">
+					<div class="w-16 h-16 bg-gradient-to-br from-primary-600 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">
+						<Star class="w-8 h-8 text-white" />
+					</div>
+					<h3 class="font-display text-2xl font-bold mb-3 text-gray-900">{achievements[3].title}</h3>
+					<p class="text-gray-600 text-lg">{achievements[3].description}</p>
+				</div>
 			</div>
 		</div>
 	
@@ -247,9 +306,7 @@ const certifications = [
 				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
 					<div class="flex items-center gap-1 mb-4">
 						{#each Array(5) as _}
-							<svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
-								<path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
-							</svg>
+							<Star class="w-5 h-5 text-yellow-400 fill-yellow-400" />
 						{/each}
 					</div>
 					<p class="text-gray-700 mb-6 leading-relaxed text-lg">
@@ -264,9 +321,7 @@ const certifications = [
 				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
 					<div class="flex items-center gap-1 mb-4">
 						{#each Array(5) as _}
-							<svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
-								<path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
-							</svg>
+							<Star class="w-5 h-5 text-yellow-400 fill-yellow-400" />
 						{/each}
 					</div>
 					<p class="text-gray-700 mb-6 leading-relaxed text-lg">
@@ -281,9 +336,7 @@ const certifications = [
 				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
 					<div class="flex items-center gap-1 mb-4">
 						{#each Array(5) as _}
-							<svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
-								<path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
-							</svg>
+							<Star class="w-5 h-5 text-yellow-400 fill-yellow-400" />
 						{/each}
 					</div>
 					<p class="text-gray-700 mb-6 leading-relaxed text-lg">
@@ -313,7 +366,7 @@ const certifications = [
 						<span class="relative z-10">Get in Touch</span>
 						<div class="absolute inset-0 bg-gradient-to-r from-primary-50 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 					</a>
-					<a href="tel:+17022221964" class="group relative overflow-hidden bg-transparent text-white border-2 border-white/50 px-10 py-5 rounded-xl font-bold text-lg backdrop-blur-sm hover:bg-white hover:text-primary-700 transition-all duration-300 hover:scale-110 hover:-translate-y-1">
+					<a href="tel:+17025001955" class="group relative overflow-hidden bg-transparent text-white border-2 border-white/50 px-10 py-5 rounded-xl font-bold text-lg backdrop-blur-sm hover:bg-white hover:text-primary-700 transition-all duration-300 hover:scale-110 hover:-translate-y-1">
 						<span class="relative z-10">Call 702-500-1955</span>
 					</a>
 				</div>
