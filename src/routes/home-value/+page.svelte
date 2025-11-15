@@ -48,7 +48,7 @@ onMount(() => {
 <section class="section relative" style="background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);">
 	<div class="container-premium">
 		<div class="text-center mb-16">
-			<h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">What's Your Home Worth?</h1>
+			<h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">Discover What Your Las Vegas Home Is Worth</h1>
 			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
 			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
 				Get an instant, accurate estimate of your home's value using advanced market data and comparable sales in your area.

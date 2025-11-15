@@ -135,7 +135,7 @@
 <section class="section">
 	<div class="container-premium">
 		<div class="text-center mb-12">
-			<h1 class="font-display text-4xl md:text-5xl font-bold mb-4 text-gray-900">Sitemap</h1>
+			<h1 class="font-display text-4xl md:text-5xl font-bold mb-4 text-gray-900">Las Vegas Real Estate Website Sitemap</h1>
 			<p class="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
 				Navigate through all pages and sections of our luxury Las Vegas real estate website. Find properties, communities, services, and resources to help you buy or sell your home in Las Vegas, Summerlin, Henderson, and surrounding areas.
 			</p>

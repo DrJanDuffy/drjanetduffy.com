@@ -75,7 +75,7 @@
 		<div class="max-w-7xl mx-auto py-12 md:py-16">
 			<div class="text-center mb-8">
 				<h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4">
-					Popular <span class="text-primary-600">Neighborhoods</span>
+					Explore the Best Las Vegas Neighborhoods to Live
 				</h1>
 				<p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
 					Discover the best places to live in Las Vegas

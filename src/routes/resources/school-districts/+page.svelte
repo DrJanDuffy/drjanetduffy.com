@@ -46,7 +46,7 @@
 	<div class="container-premium">
 		<div class="text-center mb-16">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
-				School Districts & Schools
+				Find the Best Las Vegas School Districts & Schools
 			</h1>
 			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
 			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">

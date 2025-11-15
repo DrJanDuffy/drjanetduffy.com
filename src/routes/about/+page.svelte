@@ -102,7 +102,7 @@ const certifications = [
 			<div class="inline-flex items-center justify-center w-32 h-32 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full mx-auto mb-8 shadow-2xl">
 				<span class="text-white font-display font-bold text-5xl">JD</span>
 			</div>
-			<h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">Dr. Janet Duffy</h1>
+			<h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">Meet Dr. Janet Duffy, Your Las Vegas REALTOR<sup>®</sup></h1>
 			<p class="text-2xl text-primary-600 font-semibold mb-6">Licensed REALTOR®</p>
 			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
 			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">

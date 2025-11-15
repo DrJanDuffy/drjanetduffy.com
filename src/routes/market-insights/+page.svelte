@@ -24,7 +24,7 @@
 		<div class="max-w-7xl mx-auto py-12 md:py-16">
 			<div class="text-center mb-8">
 				<h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
-					Market <span class="text-yellow-300">Insights</span>
+					Las Vegas Real Estate Market Trends & Insights
 				</h1>
 				<p class="text-lg sm:text-xl text-white text-opacity-90 max-w-2xl mx-auto">
 					Current Las Vegas real estate statistics and trends

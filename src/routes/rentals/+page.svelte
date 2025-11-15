@@ -31,7 +31,7 @@ onMount(() => {
 <section class="section relative" style="background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);">
 	<div class="container-premium">
 		<div class="text-center mb-16">
-			<h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">Las Vegas Rental Properties</h1>
+			<h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">Find Your Perfect Las Vegas Rental Property</h1>
 			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
 			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
 				Discover the perfect rental property in Las Vegas. From luxury apartments to single-family homes, find your ideal rental with expert guidance.

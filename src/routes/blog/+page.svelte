@@ -76,7 +76,7 @@
 
 <div class="container mx-auto px-4 py-8 max-w-6xl">
 	<div class="mb-8">
-		<h1 class="text-4xl font-bold mb-4">Las Vegas Real Estate Blog</h1>
+		<h1 class="text-4xl font-bold mb-4">Las Vegas Real Estate News & Market Insights</h1>
 		<p class="text-gray-600 text-lg">
 			Stay informed about the latest Las Vegas real estate market trends, community insights, and expert advice.
 		</p>

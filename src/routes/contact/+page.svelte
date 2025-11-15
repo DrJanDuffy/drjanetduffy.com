@@ -57,7 +57,7 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, MessageCircle } from 'lucide-s
 				<span>Let's Connect</span>
 			</div>
 			<h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">
-				Contact Dr. Janet Duffy, REALTOR<sup>®</sup>
+				Contact Your Las Vegas Real Estate Expert Today
 			</h1>
 			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
 			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
