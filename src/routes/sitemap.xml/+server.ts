@@ -28,6 +28,10 @@ const routes = [
 	{ url: 'resources/moving-checklist', priority: '0.6', changefreq: 'monthly' },
 	{ url: 'resources/home-staging', priority: '0.7', changefreq: 'monthly' },
 	{ url: 'resources/market-reports', priority: '0.8', changefreq: 'weekly' },
+	{ url: 'resources/rent-vs-buy', priority: '0.6', changefreq: 'monthly' },
+	{ url: 'resources/closing-costs-calculator', priority: '0.6', changefreq: 'monthly' },
+	{ url: 'resources/home-inspection-guide', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'resources/real-estate-glossary', priority: '0.6', changefreq: 'monthly' },
 	
 	// Community Pages
 	{ url: 'communities/summerlin', priority: '0.8', changefreq: 'weekly' },
@@ -101,6 +105,10 @@ const routes = [
 	{ url: 'services/international-property', priority: '0.7', changefreq: 'monthly' },
 	{ url: 'services/residential-specialist', priority: '0.7', changefreq: 'monthly' },
 	{ url: 'services/commercial-real-estate', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/commercial-investment', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/commercial-consulting', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/residential-appraisal', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/property-management', priority: '0.7', changefreq: 'monthly' },
 	{ url: 'services/real-estate-investing', priority: '0.7', changefreq: 'monthly' },
 	{ url: 'services/land-investment', priority: '0.7', changefreq: 'monthly' },
 	{ url: 'services/smart-home-technology', priority: '0.7', changefreq: 'monthly' },
@@ -116,6 +124,7 @@ const routes = [
 	// Legal/Info Pages
 	{ url: 'privacy', priority: '0.3', changefreq: 'yearly' },
 	{ url: 'terms', priority: '0.3', changefreq: 'yearly' },
+	{ url: 'quotes', priority: '0.4', changefreq: 'monthly' },
 	{ url: 'sitemap', priority: '0.5', changefreq: 'monthly' }
 ];
 
