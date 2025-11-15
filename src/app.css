@@ -650,19 +650,19 @@
 /* Responsive Typography */
 @media (max-width: 640px) {
   h1 {
-    @apply text-3xl;
+    font-size: 1.875rem;
   }
   
   h2 {
-    @apply text-2xl;
+    font-size: 1.5rem;
   }
 }
 
 /* Print Styles */
 @media print {
   * {
-    @apply text-black;
-    @apply bg-white;
+    color: black;
+    background-color: white;
   }
   
   .no-print {
