@@ -150,6 +150,75 @@ const certifications = [
 				</div>
 			</div>
 		</div>
+		
+		<!-- Buying Guide -->
+		<div class="mb-20" id="buying">
+			<div class="text-center mb-16">
+				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">Buying Guide</h2>
+				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
+			</div>
+			<div class="max-w-4xl mx-auto">
+				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-xl border border-gray-100">
+					<div class="space-y-6 text-gray-700 leading-relaxed text-lg">
+						<p>
+							Buying a home is an exciting journey, and I'm here to guide you through every step. From initial consultation to closing, I'll help you navigate the Las Vegas real estate market with confidence.
+						</p>
+						<p>
+							My buying process includes comprehensive market analysis, property search tailored to your needs, expert negotiation, and seamless transaction management. Whether you're a first-time buyer or experienced investor, I'll ensure you make informed decisions.
+						</p>
+						<p>
+							I'll help you understand financing options, conduct thorough property inspections, and negotiate the best terms. My goal is to find you the perfect property at the right price, with a smooth and stress-free experience.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Selling Guide -->
+		<div class="mb-20" id="selling">
+			<div class="text-center mb-16">
+				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">Selling Guide</h2>
+				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
+			</div>
+			<div class="max-w-4xl mx-auto">
+				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-xl border border-gray-100">
+					<div class="space-y-6 text-gray-700 leading-relaxed text-lg">
+						<p>
+							Selling your home requires strategic planning and expert execution. I'll help you maximize your property's value and achieve a successful sale in the Las Vegas market.
+						</p>
+						<p>
+							My selling services include professional home staging recommendations, comprehensive market analysis to determine optimal pricing, professional photography and marketing, and expert negotiation to get you the best possible terms.
+						</p>
+						<p>
+							I'll guide you through preparing your home for sale, marketing it effectively to reach qualified buyers, and managing all aspects of the transaction. My track record of successful sales demonstrates my ability to help sellers achieve their goals.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Mortgage Calculator Info -->
+		<div class="mb-20" id="mortgage">
+			<div class="text-center mb-16">
+				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">Mortgage & Financing</h2>
+				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
+			</div>
+			<div class="max-w-4xl mx-auto">
+				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-xl border border-gray-100">
+					<div class="space-y-6 text-gray-700 leading-relaxed text-lg">
+						<p>
+							Understanding your financing options is crucial when buying a home. I work with trusted mortgage professionals to help you find the best loan programs and rates available.
+						</p>
+						<p>
+							I can help you understand different mortgage types, calculate your monthly payments, determine how much home you can afford, and connect you with reputable lenders who offer competitive rates and excellent service.
+						</p>
+						<p>
+							For a quick estimate, use our <a href="/home-value" class="text-primary-600 font-semibold hover:text-primary-700 underline">Home Value Calculator</a> to get started. For personalized mortgage advice and pre-approval assistance, contact me directly.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	
 		<!-- Certifications -->
 		<div class="mb-20">
