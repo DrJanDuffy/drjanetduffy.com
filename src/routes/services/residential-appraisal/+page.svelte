@@ -22,10 +22,10 @@
 
 		<div class="max-w-4xl mx-auto">
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Professional Residential Appraisal Services</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Professional Residential Appraisal Services Do We Provide?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Residential appraisals are essential for real estate transactions, providing objective property valuations based on comprehensive analysis. Las Vegas residential properties require appraisers who understand local markets, neighborhood characteristics, and property values. Our residential appraisal services provide expert valuations for Las Vegas homes.
+					Residential appraisals are essential for real estate transactions, providing objective property valuations based on comprehensive analysis. Las Vegas residential properties require appraisers who understand local markets, neighborhood characteristics, and property values. Our residential appraisal services provide expert valuations through property valuation, market analysis, comprehensive reports, and deep market knowledge.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -72,7 +72,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Residential Appraisal Process</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Is Our Residential Appraisal Process?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Our residential appraisal process includes property inspection, comprehensive market analysis, valuation development, and detailed appraisal reporting. This systematic approach ensures accurate valuations based on thorough property evaluation, comparable sales analysis, and current market conditions in Las Vegas.
+				</p>
 				
 				<div class="space-y-8">
 					<div>
@@ -118,7 +121,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Residential Appraisal Markets in Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Residential Appraisal Markets Do We Serve in Las Vegas?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					We provide residential appraisals for single-family homes, condominiums, townhomes, and luxury homes throughout Las Vegas. Each property type requires specialized appraisal expertise, and we understand the unique characteristics and valuation factors for each market segment in the Las Vegas area.
+				</p>
 				
 				<div class="space-y-6">
 					<div>
@@ -154,7 +160,10 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Benefits of Professional Residential Appraisals</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are the Benefits of Professional Residential Appraisals?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Professional residential appraisals provide accurate valuations based on current market conditions, lender acceptance to facilitate financing approvals, transaction support to help resolve value disputes, and deep market knowledge ensuring valuations reflect true Las Vegas market values.
+				</p>
 				
 				<div class="grid md:grid-cols-2 gap-6">
 					<div class="flex items-start gap-4">

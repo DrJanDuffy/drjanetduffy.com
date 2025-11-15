@@ -22,10 +22,10 @@
 
 		<div class="max-w-4xl mx-auto">
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Commercial Property Consulting Expertise</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Commercial Property Consulting Expertise Do We Provide?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Commercial real estate transactions require specialized expertise and objective advice. Commercial properties involve complex considerations, from zoning to income potential to development rights. Our commercial consulting services provide objective, expert advice to help buyers, sellers, and investors make informed decisions.
+					Commercial real estate transactions require specialized expertise and objective advice. Commercial properties involve complex considerations, from zoning to income potential to development rights. Our commercial consulting services provide objective, expert advice through market analysis, property evaluation, investment strategy, and unbiased advice focused on client interests.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -72,7 +72,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Commercial Consulting Services</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Commercial Consulting Services Do We Provide?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Our commercial consulting services include property analysis and valuation evaluating all factors affecting value, investment consulting with strategic planning and analysis, development consulting for planning and regulatory navigation, and transaction consulting for complex commercial transactions. These services provide objective, expert advice for all commercial real estate needs.
+				</p>
 				
 				<div class="space-y-8">
 					<div>
@@ -118,7 +121,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Commercial Property Types in Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Commercial Property Types Do We Consult On in Las Vegas?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					We provide consulting services for all commercial property types in Las Vegas including office buildings from single-tenant to large complexes, industrial properties including warehouses and distribution centers, and retail properties from storefronts to shopping centers. Each property type requires specialized consulting expertise that we provide.
+				</p>
 				
 				<div class="space-y-6">
 					<div>
@@ -154,7 +160,10 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Benefits of Commercial Consulting</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are the Benefits of Commercial Consulting?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Commercial consulting benefits include expert analysis of properties, markets, and investment opportunities, objective advice focused on client interests, comprehensive risk assessment to understand and manage investment risks, and strategic planning to achieve commercial real estate goals. These benefits help clients make informed decisions and optimize outcomes.
+				</p>
 				
 				<div class="grid md:grid-cols-2 gap-6">
 					<div class="flex items-start gap-4">

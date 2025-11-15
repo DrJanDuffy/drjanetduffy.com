@@ -19,15 +19,20 @@
 			</p>
 		</div>
 
-		<div class="grid md:grid-cols-2 gap-12 mb-16">
-			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
-					<Phone class="w-8 h-8 text-primary-600" />
-				</div>
-				<h2 class="text-3xl font-bold text-gray-900 mb-4">Phone Support</h2>
-				<p class="text-gray-700 leading-relaxed mb-6">
-					Professional phone-based sales and support services:
-				</p>
+		<div class="mb-16">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Inside Sales Services Are Available for Las Vegas Real Estate?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
+				Inside sales services for Las Vegas real estate include phone support for lead qualification and appointment scheduling, plus email and online support for digital communication and CRM management. These services provide 24/7 availability, quick response times, and professional communication to support your real estate transactions.
+			</p>
+			<div class="grid md:grid-cols-2 gap-12">
+				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
+						<Phone class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Phone Support</h3>
+					<p class="text-gray-700 leading-relaxed mb-6">
+						Professional phone-based sales and support services:
+					</p>
 				<ul class="space-y-3 text-gray-700">
 					<li class="flex items-start gap-3">
 						<span class="text-primary-600 mt-1">✓</span>
@@ -48,14 +53,14 @@
 				</ul>
 			</div>
 
-			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
-					<Mail class="w-8 h-8 text-primary-600" />
-				</div>
-				<h2 class="text-3xl font-bold text-gray-900 mb-4">Email & Online Support</h2>
-				<p class="text-gray-700 leading-relaxed mb-6">
-					Comprehensive digital communication and sales support:
-				</p>
+				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
+						<Mail class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Email & Online Support</h3>
+					<p class="text-gray-700 leading-relaxed mb-6">
+						Comprehensive digital communication and sales support:
+					</p>
 				<ul class="space-y-3 text-gray-700">
 					<li class="flex items-start gap-3">
 						<span class="text-primary-600 mt-1">✓</span>
@@ -77,8 +82,12 @@
 			</div>
 		</div>
 
-		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-white mb-16">
-			<h2 class="text-3xl font-bold mb-6 text-center">Inside Sales Benefits</h2>
+		<div class="mb-16">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Are the Benefits of Inside Sales Services?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
+				Inside sales services provide 24/7 availability to always be available for your clients, quick response times for immediate follow-up on inquiries, and professional service for consistent, high-quality communication. These benefits ensure you never miss an opportunity and maintain excellent client relationships throughout the transaction process.
+			</p>
+			<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-white">
 			<div class="grid md:grid-cols-3 gap-8">
 				<div class="text-center">
 					<Clock class="w-12 h-12 mx-auto mb-4 text-white opacity-90" />

@@ -22,10 +22,10 @@
 
 		<div class="max-w-4xl mx-auto">
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Las Vegas Real Estate Investment Opportunities</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Las Vegas Real Estate Investment Opportunities Are Available?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Las Vegas offers excellent real estate investment opportunities, from rental properties to fix-and-flip projects to commercial investments. The area's growing population, strong rental demand, and diverse property markets create numerous investment possibilities. Our investment services help investors identify opportunities, evaluate properties, and build successful portfolios.
+					Las Vegas offers excellent real estate investment opportunities, from rental properties to fix-and-flip projects to commercial investments. The area's growing population, strong rental demand, and diverse property markets create numerous investment possibilities. Our investment services help investors identify opportunities, evaluate properties, and build successful portfolios through rental property guidance, fix-and-flip strategies, portfolio development, and investment analysis.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -72,7 +72,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Investment Property Markets in Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Investment Property Markets in Las Vegas Offer the Best Returns?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Las Vegas investment property markets include strong rental markets in Summerlin and Henderson, fix-and-flip opportunities in North Las Vegas, and commercial investment options throughout the valley. Each market offers unique opportunities and return potential based on property type, location, and investment strategy.
+				</p>
 				
 				<div class="space-y-6">
 					<div>

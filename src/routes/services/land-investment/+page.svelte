@@ -22,10 +22,10 @@
 
 		<div class="max-w-4xl mx-auto">
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Land Investment Opportunities in Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Land Investment Opportunities Are Available in Las Vegas?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Las Vegas and surrounding areas offer diverse land investment opportunities, from residential development sites to commercial land to agricultural properties. Land investments require specialized expertise, understanding of development processes, and knowledge of regulatory requirements. Our land investment services help investors and developers navigate land transactions successfully.
+					Las Vegas and surrounding areas offer diverse land investment opportunities, from residential development sites to commercial land to agricultural properties. Land investments require specialized expertise, understanding of development processes, and knowledge of regulatory requirements. Our land investment services help investors and developers navigate land transactions successfully through residential development guidance, commercial land services, investment analysis, and expert value assessment.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -72,7 +72,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Land Markets Throughout Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Land Markets Exist Throughout Las Vegas?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Land markets throughout Las Vegas include residential development land in expanding areas like North Las Vegas and Henderson, commercial development land for retail, office, and industrial uses, and rural and agricultural land in surrounding areas. Each market offers unique investment opportunities and requires specialized evaluation expertise.
+				</p>
 				
 				<div class="space-y-6">
 					<div>
@@ -108,7 +111,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Land Investment Services</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Land Investment Services Do We Provide?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Our land investment services include land evaluation assessing location, zoning, utilities, and development potential, development planning guidance for site design and regulatory approvals, and investment analysis evaluating potential returns and development costs. These comprehensive services help investors and developers make informed land investment decisions in Las Vegas.
+				</p>
 				
 				<div class="space-y-8">
 					<div>
@@ -144,7 +150,10 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Key Considerations for Land Investments</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are Key Considerations for Land Investments?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Key considerations for land investments include zoning and development rights determining permitted uses and development potential, utilities and infrastructure access significantly affecting land values, and market conditions understanding how trends and economic factors affect land investment potential. Understanding these factors helps investors evaluate land opportunities effectively.
+				</p>
 				
 				<div class="space-y-6">
 					<div>

@@ -22,10 +22,10 @@
 
 		<div class="max-w-4xl mx-auto">
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">The Importance of Accurate Pricing in Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Is Accurate Pricing Critical in Las Vegas Real Estate?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Pricing is the single most important factor in successful real estate transactions. In Las Vegas's dynamic market, accurate pricing requires deep market knowledge, comprehensive analysis, and understanding of local trends. Our pricing strategy services help you price properties correctly, whether you're buying, selling, or investing.
+					Pricing is the single most important factor in successful real estate transactions. In Las Vegas's dynamic market, accurate pricing requires deep market knowledge, comprehensive analysis, and understanding of local trends. Our pricing strategy services help you price properties correctly through market analysis, neighborhood expertise, trend analysis, and value optimization.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -72,7 +72,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Comprehensive Pricing Analysis Process</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Is Our Comprehensive Pricing Analysis Process?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Our comprehensive pricing analysis process includes comparable sales analysis, active listing evaluation, market trend assessment, and property condition analysis. This multi-faceted approach ensures accurate pricing that reflects current market conditions and maximizes your property's value potential.
+				</p>
 				
 				<div class="space-y-8">
 					<div>

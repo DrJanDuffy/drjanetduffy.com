@@ -22,10 +22,10 @@
 
 		<div class="max-w-4xl mx-auto">
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Commercial Investment Expertise in Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Commercial Investment Expertise Do We Provide in Las Vegas?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Commercial real estate investments offer opportunities for income generation, appreciation, and portfolio diversification. Las Vegas's commercial markets provide diverse investment opportunities, from office buildings to retail properties to industrial facilities. Our commercial investment services help investors identify opportunities, evaluate properties, and build successful commercial portfolios.
+					Commercial real estate investments offer opportunities for income generation, appreciation, and portfolio diversification. Las Vegas's commercial markets provide diverse investment opportunities, from office buildings to retail properties to industrial facilities. Our commercial investment services help investors identify opportunities, evaluate properties, and build successful commercial portfolios through investment analysis, income analysis, portfolio strategy, and market expertise.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -72,7 +72,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Commercial Investment Opportunities in Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Commercial Investment Opportunities Are Available in Las Vegas?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Commercial investment opportunities in Las Vegas include office building investments with stable income through long-term leases, industrial property investments with good income and appreciation potential, and retail property investments with income through tenant leases. Each opportunity offers unique benefits and requires specialized investment analysis.
+				</p>
 				
 				<div class="space-y-6">
 					<div>
@@ -108,7 +111,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Commercial Investment Services</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Commercial Investment Services Do We Provide?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Our commercial investment services include investment property analysis evaluating income potential and returns, portfolio development with strategic planning and diversification, and market analysis evaluating market conditions and trends. These services help investors make informed decisions and build successful commercial investment portfolios in Las Vegas.
+				</p>
 				
 				<div class="space-y-8">
 					<div>
@@ -144,7 +150,10 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Key Considerations for Commercial Investments</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are Key Considerations for Commercial Investments?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Key considerations for commercial investments include income stability through tenant quality and lease terms, location factors affecting property values and income potential, and market conditions understanding supply, demand, and market dynamics. These considerations help investors evaluate commercial investment opportunities and assess risks effectively.
+				</p>
 				
 				<div class="space-y-6">
 					<div>

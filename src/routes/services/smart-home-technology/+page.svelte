@@ -19,15 +19,20 @@
 			</p>
 		</div>
 
-		<div class="grid md:grid-cols-2 gap-12 mb-16">
-			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
-					<Smartphone class="w-8 h-8 text-primary-600" />
-				</div>
-				<h2 class="text-3xl font-bold text-gray-900 mb-4">Smart Home Features</h2>
-				<p class="text-gray-700 leading-relaxed mb-6">
-					Today's homebuyers increasingly value smart home technology. I help you understand and evaluate smart home features including:
-				</p>
+		<div class="mb-16">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Smart Home Features Should Las Vegas Homebuyers Look For?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
+				Today's homebuyers increasingly value smart home technology. Las Vegas properties with smart home features often sell faster and for higher prices. I help you understand and evaluate smart home features including smart thermostats, automated lighting, security systems, voice-activated controls, and energy monitoring systems.
+			</p>
+			<div class="grid md:grid-cols-2 gap-12">
+				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
+						<Smartphone class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Smart Home Features</h3>
+					<p class="text-gray-700 leading-relaxed mb-6">
+						Today's homebuyers increasingly value smart home technology. I help you understand and evaluate smart home features including:
+					</p>
 				<ul class="space-y-3 text-gray-700">
 					<li class="flex items-start gap-3">
 						<span class="text-primary-600 mt-1">✓</span>
@@ -48,14 +53,14 @@
 				</ul>
 			</div>
 
-			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
-					<Shield class="w-8 h-8 text-primary-600" />
-				</div>
-				<h2 class="text-3xl font-bold text-gray-900 mb-4">Privacy & Security</h2>
-				<p class="text-gray-700 leading-relaxed mb-6">
-					Understanding privacy implications and security considerations is crucial when evaluating smart home technology:
-				</p>
+				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
+						<Shield class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Privacy & Security</h3>
+					<p class="text-gray-700 leading-relaxed mb-6">
+						Understanding privacy implications and security considerations is crucial when evaluating smart home technology:
+					</p>
 				<ul class="space-y-3 text-gray-700">
 					<li class="flex items-start gap-3">
 						<span class="text-primary-600 mt-1">✓</span>
@@ -77,8 +82,12 @@
 			</div>
 		</div>
 
-		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-white mb-16">
-			<h2 class="text-3xl font-bold mb-6 text-center">How I Can Help</h2>
+		<div class="mb-16">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">How Can I Help You with Smart Home Technology?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
+				I provide buyer guidance to evaluate smart home features when viewing properties, technology assessment to understand existing systems, and privacy consultation to navigate security considerations. My expertise helps you make informed decisions about smart home technology in Las Vegas properties.
+			</p>
+			<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-white">
 			<div class="grid md:grid-cols-3 gap-8">
 				<div class="text-center">
 					<Home class="w-12 h-12 mx-auto mb-4 text-white opacity-90" />

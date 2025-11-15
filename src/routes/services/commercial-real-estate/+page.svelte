@@ -22,10 +22,10 @@
 
 		<div class="max-w-4xl mx-auto">
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Commercial Real Estate Expertise in Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Commercial Real Estate Expertise Do We Provide in Las Vegas?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Las Vegas's commercial real estate market includes diverse property types, from industrial warehouses to office buildings to retail spaces. Commercial transactions require specialized expertise, understanding of commercial markets, and knowledge of business needs. Our commercial services help buyers, sellers, and investors navigate Las Vegas commercial markets successfully.
+					Las Vegas's commercial real estate market includes diverse property types, from industrial warehouses to office buildings to retail spaces. Commercial transactions require specialized expertise, understanding of commercial markets, and knowledge of business needs. Our commercial services help buyers, sellers, and investors navigate Las Vegas commercial markets successfully through industrial property expertise, office building services, investment analysis, and deep market knowledge.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -72,7 +72,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Las Vegas Commercial Markets</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Las Vegas Commercial Markets Do We Serve?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					We serve all Las Vegas commercial markets including the industrial market with warehouses and distribution centers, the office market with buildings and business parks, and the retail market with shopping centers and storefronts. Each market has unique characteristics, property values, and investment potential that we understand and leverage for our clients.
+				</p>
 				
 				<div class="space-y-6">
 					<div>
@@ -108,7 +111,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Commercial Real Estate Services</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Commercial Real Estate Services Do We Provide?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Our commercial real estate services include commercial property sales with property evaluation and transaction management, commercial leasing with lease negotiations and property management, and investment analysis evaluating income potential and returns. These comprehensive services cover all aspects of commercial real estate transactions in Las Vegas.
+				</p>
 				
 				<div class="space-y-8">
 					<div>
@@ -144,7 +150,10 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Key Considerations for Commercial Properties</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are Key Considerations for Commercial Properties?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Key considerations for commercial properties include location and accessibility affecting value and usability, zoning and regulations determining permitted uses, and income potential through rental income and operating expenses. Understanding these factors helps buyers, sellers, and investors make informed decisions about commercial properties in Las Vegas.
+				</p>
 				
 				<div class="space-y-6">
 					<div>

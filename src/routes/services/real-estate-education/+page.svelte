@@ -19,15 +19,20 @@
 			</p>
 		</div>
 
-		<div class="grid md:grid-cols-2 gap-12 mb-16">
-			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
-					<BookOpen class="w-8 h-8 text-primary-600" />
-				</div>
-				<h2 class="text-3xl font-bold text-gray-900 mb-4">Legal & Regulatory</h2>
-				<p class="text-gray-700 leading-relaxed mb-6">
-					Comprehensive understanding of real estate law and regulations:
-				</p>
+		<div class="mb-16">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Real Estate Education Services Do We Provide?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
+				Real estate education services include legal and regulatory training covering Nevada real estate laws, fair housing compliance, contract law, and disclosure requirements. We also provide technology and process education covering MLS systems, digital transaction management, virtual tours, and CRM systems to stay current with industry best practices.
+			</p>
+			<div class="grid md:grid-cols-2 gap-12">
+				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
+						<BookOpen class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Legal & Regulatory</h3>
+					<p class="text-gray-700 leading-relaxed mb-6">
+						Comprehensive understanding of real estate law and regulations:
+					</p>
 				<ul class="space-y-3 text-gray-700">
 					<li class="flex items-start gap-3">
 						<span class="text-primary-600 mt-1">✓</span>
@@ -48,14 +53,14 @@
 				</ul>
 			</div>
 
-			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
-					<Lightbulb class="w-8 h-8 text-primary-600" />
-				</div>
-				<h2 class="text-3xl font-bold text-gray-900 mb-4">Technology & Process</h2>
-				<p class="text-gray-700 leading-relaxed mb-6">
-					Expertise in modern real estate technology and processes:
-				</p>
+				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
+						<Lightbulb class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Technology & Process</h3>
+					<p class="text-gray-700 leading-relaxed mb-6">
+						Expertise in modern real estate technology and processes:
+					</p>
 				<ul class="space-y-3 text-gray-700">
 					<li class="flex items-start gap-3">
 						<span class="text-primary-600 mt-1">✓</span>
@@ -77,8 +82,12 @@
 			</div>
 		</div>
 
-		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-white mb-16">
-			<h2 class="text-3xl font-bold mb-6 text-center">Education Benefits</h2>
+		<div class="mb-16">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Are the Benefits of Real Estate Education?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
+				Real estate education benefits include expert knowledge to stay current with industry best practices, client education to empower clients with knowledge, and continuous learning for ongoing professional development. These benefits ensure you provide the highest quality service and stay ahead of industry changes.
+			</p>
+			<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-white">
 			<div class="grid md:grid-cols-3 gap-8">
 				<div class="text-center">
 					<GraduationCap class="w-12 h-12 mx-auto mb-4 text-white opacity-90" />

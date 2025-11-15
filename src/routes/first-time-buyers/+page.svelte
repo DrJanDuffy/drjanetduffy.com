@@ -21,7 +21,10 @@
 
 		<!-- Steps Section -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">The Home Buying Process</h2>
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">How Does the First-Time Home Buying Process Work in Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
+				First-time homebuyers in Las Vegas follow four key steps: getting pre-approved, finding your home, making an offer, and closing. Each step requires careful planning, and first-time buyers benefit from special programs and expert guidance throughout the process.
+			</p>
 			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 				<div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 text-center">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
@@ -62,9 +65,13 @@
 		</div>
 
 		<!-- First-Time Buyer Benefits -->
-		<div class="grid md:grid-cols-2 gap-12 mb-16">
-			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">First-Time Buyer Programs</h2>
+		<div class="mb-16">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Programs Are Available for First-Time Homebuyers in Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
+				Las Vegas first-time homebuyers have access to special programs including FHA loans with low down payments, Nevada down payment assistance programs, and tax benefits. These programs make homeownership more accessible and affordable for first-time buyers.
+			</p>
+			<div class="grid md:grid-cols-2 gap-12">
+				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
 				<ul class="space-y-4">
 					<li class="flex items-start gap-3">
 						<CheckCircle class="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
@@ -88,33 +95,65 @@
 						</div>
 					</li>
 				</ul>
+				</div>
 			</div>
+		</div>
 
-			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">What to Expect</h2>
+		<!-- What to Expect -->
+		<div class="mb-16">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Should First-Time Homebuyers Expect?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
+				First-time homebuyers should expect a 30-45 day timeline from accepted offer to closing, costs including down payment and closing costs, and comprehensive support throughout the process. Understanding these expectations helps first-time buyers prepare and avoid surprises during their home buying journey.
+			</p>
+			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100 max-w-3xl">
 				<ul class="space-y-4">
 					<li class="flex items-start gap-3">
 						<TrendingUp class="w-6 h-6 text-primary-600 mt-0.5 flex-shrink-0" />
 						<div>
 							<h3 class="font-bold text-gray-900 mb-1">Timeline</h3>
-							<p class="text-gray-700">30-45 days from accepted offer to closing</p>
+							<p class="text-gray-700">30-45 days from accepted offer to closing. This includes inspection periods (10-14 days), appraisal (7-10 days), loan processing (21-30 days), and final walkthrough.</p>
 						</div>
 					</li>
 					<li class="flex items-start gap-3">
 						<DollarSign class="w-6 h-6 text-primary-600 mt-0.5 flex-shrink-0" />
 						<div>
 							<h3 class="font-bold text-gray-900 mb-1">Costs</h3>
-							<p class="text-gray-700">Down payment, closing costs, inspections, and moving expenses</p>
+							<p class="text-gray-700">Down payment (3.5-5% for first-time buyers), closing costs (2-5% of purchase price), inspections ($300-500), and moving expenses. Total upfront costs typically range from $15,000-$30,000 for a $300,000 home.</p>
 						</div>
 					</li>
 					<li class="flex items-start gap-3">
 						<Users class="w-6 h-6 text-primary-600 mt-0.5 flex-shrink-0" />
 						<div>
 							<h3 class="font-bold text-gray-900 mb-1">Support</h3>
-							<p class="text-gray-700">I'll guide you through every step of the process</p>
+							<p class="text-gray-700">I'll guide you through every step of the process, from pre-approval to closing. First-time buyers benefit from extra explanation, education, and support to ensure a smooth and successful home purchase.</p>
 						</div>
 					</li>
 				</ul>
+			</div>
+		</div>
+
+		<!-- FAQ Section -->
+		<div class="mb-16">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions for First-Time Homebuyers in Las Vegas</h2>
+			<div class="space-y-6">
+				<div class="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+					<h3 class="text-2xl font-bold text-gray-900 mb-3">How Much Down Payment Do I Need as a First-Time Buyer?</h3>
+					<p class="text-gray-700 leading-relaxed">
+						First-time buyers can qualify for FHA loans with just 3.5% down payment (with credit score 580+), or conventional loans with 3-5% down. Nevada also offers down payment assistance programs that can reduce or eliminate your down payment. For a $300,000 home, this means $10,500-$15,000 down instead of the traditional 20% ($60,000).
+					</p>
+				</div>
+				<div class="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+					<h3 class="text-2xl font-bold text-gray-900 mb-3">What Credit Score Do I Need to Buy My First Home?</h3>
+					<p class="text-gray-700 leading-relaxed">
+						FHA loans accept credit scores as low as 580 (or 500 with 10% down), making them ideal for first-time buyers. Conventional loans typically require 620+, while VA loans have no minimum but lenders prefer 620+. First-time buyers with lower scores should focus on improving credit before applying, as higher scores qualify for better rates and lower down payments.
+					</p>
+				</div>
+				<div class="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+					<h3 class="text-2xl font-bold text-gray-900 mb-3">Are There Grants or Assistance Programs for First-Time Buyers?</h3>
+					<p class="text-gray-700 leading-relaxed">
+						Yes, Nevada offers several down payment assistance programs for first-time buyers including the Home Is Possible program, which provides up to 5% of the loan amount in assistance. These programs often combine with FHA loans to make homeownership more accessible. I can help you identify and apply for programs you qualify for.
+					</p>
+				</div>
 			</div>
 		</div>
 

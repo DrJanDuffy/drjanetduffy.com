@@ -22,10 +22,10 @@
 
 		<div class="max-w-4xl mx-auto">
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Comprehensive Residential Real Estate Services</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Comprehensive Residential Real Estate Services Do We Provide?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Residential real estate transactions require expertise across multiple areas, from market analysis to negotiation to transaction management. Our residential specialist services provide comprehensive expertise covering all aspects of home buying and selling in Las Vegas.
+					Residential real estate transactions require expertise across multiple areas, from market analysis to negotiation to transaction management. Our residential specialist services provide comprehensive expertise covering all aspects of home buying and selling through market expertise, transaction management, negotiation excellence, and dedicated client service tailored to each client's unique needs.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -72,10 +72,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Residential Markets Throughout Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Residential Markets Do We Serve Throughout Las Vegas?</h2>
 				
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
-					Las Vegas offers diverse residential markets, from starter homes to luxury estates, each with unique characteristics and buyer demographics. Our residential specialist services cover all market segments throughout the Las Vegas Valley.
+					Las Vegas offers diverse residential markets including starter home markets in North Las Vegas and Centennial Hills, family home markets in Summerlin and Henderson, and luxury residential markets in The Ridges and Red Rock Country Club. Our residential specialist services cover all market segments throughout the Las Vegas Valley, each with unique characteristics and buyer demographics.
 				</p>
 
 				<div class="space-y-6">
@@ -112,7 +112,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Residential Specialist Services</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Residential Specialist Services Are Included?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Our residential specialist services include comprehensive market analysis evaluating comparable sales and trends, expert negotiation achieving optimal outcomes, complete transaction management coordinating all aspects from contract to closing, and client education empowering clients with knowledge throughout the process. These services ensure successful residential transactions in Las Vegas.
+				</p>
 				
 				<div class="space-y-8">
 					<div>
@@ -158,7 +161,10 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Benefits of Residential Specialist Services</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are the Benefits of Residential Specialist Services?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Benefits of residential specialist services include comprehensive market knowledge of Las Vegas residential markets and property values, transaction expertise managing all aspects ensuring smooth processes, expert negotiation skills achieving optimal outcomes and protecting client interests, and dedicated client focus tailoring service to each client's unique needs and goals.
+				</p>
 				
 				<div class="grid md:grid-cols-2 gap-6">
 					<div class="flex items-start gap-4">

@@ -19,15 +19,20 @@
 			</p>
 		</div>
 
-		<div class="grid md:grid-cols-2 gap-12 mb-16">
-			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
-					<Users class="w-8 h-8 text-primary-600" />
-				</div>
-				<h2 class="text-3xl font-bold text-gray-900 mb-4">Equal Service for All</h2>
-				<p class="text-gray-700 leading-relaxed mb-6">
-					Committed to providing exceptional real estate services to everyone:
-				</p>
+		<div class="mb-16">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Inclusive Real Estate Services Do We Provide in Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
+				Inclusive real estate services in Las Vegas include equal service for all clients with fair and equitable representation, cultural sensitivity, accessible services, and multilingual support when needed. We also provide community commitment through first-time homebuyer assistance, affordable housing resources, support for underserved communities, and fair housing advocacy.
+			</p>
+			<div class="grid md:grid-cols-2 gap-12">
+				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
+						<Users class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Equal Service for All</h3>
+					<p class="text-gray-700 leading-relaxed mb-6">
+						Committed to providing exceptional real estate services to everyone:
+					</p>
 				<ul class="space-y-3 text-gray-700">
 					<li class="flex items-start gap-3">
 						<span class="text-primary-600 mt-1">✓</span>
@@ -48,14 +53,14 @@
 				</ul>
 			</div>
 
-			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
-					<Heart class="w-8 h-8 text-primary-600" />
-				</div>
-				<h2 class="text-3xl font-bold text-gray-900 mb-4">Community Commitment</h2>
-				<p class="text-gray-700 leading-relaxed mb-6">
-					Dedicated to serving diverse communities throughout Las Vegas:
-				</p>
+				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
+						<Heart class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Community Commitment</h3>
+					<p class="text-gray-700 leading-relaxed mb-6">
+						Dedicated to serving diverse communities throughout Las Vegas:
+					</p>
 				<ul class="space-y-3 text-gray-700">
 					<li class="flex items-start gap-3">
 						<span class="text-primary-600 mt-1">✓</span>
@@ -77,8 +82,12 @@
 			</div>
 		</div>
 
-		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-white mb-16">
-			<h2 class="text-3xl font-bold mb-6 text-center">Our Commitment</h2>
+		<div class="mb-16">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Is Our Commitment to Inclusive Real Estate?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
+				Our commitment to inclusive real estate includes fair housing principles, equal treatment ensuring every client receives exceptional service, and community focus serving all Las Vegas communities. This commitment ensures everyone has access to professional real estate services regardless of background, income, or circumstances.
+			</p>
+			<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-white">
 			<div class="grid md:grid-cols-3 gap-8">
 				<div class="text-center">
 					<Shield class="w-12 h-12 mx-auto mb-4 text-white opacity-90" />

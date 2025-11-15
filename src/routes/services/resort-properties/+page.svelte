@@ -22,10 +22,10 @@
 
 		<div class="max-w-4xl mx-auto">
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Resort & Second Home Markets in Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Resort & Second Home Markets Are Available in Las Vegas?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Las Vegas offers exceptional opportunities for second home buyers and investors seeking resort-style living and vacation properties. From Lake Las Vegas to golf course communities, the area provides diverse options for those seeking vacation homes or investment properties.
+					Las Vegas offers exceptional opportunities for second home buyers and investors seeking resort-style living and vacation properties. From Lake Las Vegas to golf course communities, the area provides diverse options through vacation property guidance, investment opportunity analysis, resort community expertise, and rental potential understanding.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -72,7 +72,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Premier Resort Communities in Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Premier Resort Communities Are Available in Las Vegas?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Premier resort communities in Las Vegas include Lake Las Vegas with a man-made lake and championship golf, golf course communities like Red Rock Country Club and Anthem Country Club, and mountain and view properties in The Ridges and MacDonald Highlands. Each community offers unique resort-style amenities and second home opportunities.
+				</p>
 				
 				<div class="space-y-6">
 					<div>
@@ -108,7 +111,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Resort Property Services</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Resort Property Services Do We Provide?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Our resort property services include vacation home purchasing guidance for vacation use and financing, investment property analysis evaluating rental income potential, and resort community expertise understanding rules and rental restrictions. These services help buyers find perfect resort or second home properties in Las Vegas.
+				</p>
 				
 				<div class="space-y-8">
 					<div>
@@ -144,7 +150,10 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Key Considerations for Resort Properties</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are Key Considerations for Resort Properties?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Key considerations for resort properties include rental restrictions affecting investment potential, property management requirements for vacation properties, and seasonal considerations understanding demand patterns throughout the year. Understanding these factors helps buyers make informed decisions about resort and second home properties in Las Vegas.
+				</p>
 				
 				<div class="space-y-6">
 					<div>

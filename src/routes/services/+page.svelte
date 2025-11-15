@@ -232,6 +232,10 @@
 
 		<!-- Our Services Overview -->
 		<div class="mb-16">
+			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">What Comprehensive Real Estate Services Do We Offer?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				We offer comprehensive real estate services including buying services with expert guidance to find your perfect home, selling services to maximize your home's value, rental services to find perfect rental properties, and investment services with strategic real estate investment advice. Our services cover all aspects of Las Vegas real estate transactions.
+			</p>
 			<div class="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto">
 				<div class="card text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">

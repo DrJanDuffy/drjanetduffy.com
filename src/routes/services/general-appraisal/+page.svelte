@@ -19,15 +19,20 @@
 			</p>
 		</div>
 
-		<div class="grid md:grid-cols-2 gap-12 mb-16">
-			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
-					<FileText class="w-8 h-8 text-primary-600" />
-				</div>
-				<h2 class="text-3xl font-bold text-gray-900 mb-4">Appraisal Types</h2>
-				<p class="text-gray-700 leading-relaxed mb-6">
-					Comprehensive appraisal services for various property types:
-				</p>
+		<div class="mb-16">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">What General Appraisal Services Are Available for Las Vegas Properties?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
+				General appraisal services for Las Vegas properties include residential property appraisals, commercial property valuations, land and development appraisals, and specialized property assessments. These comprehensive appraisals exceed state certification requirements and provide accurate valuations for various property types throughout the Las Vegas area.
+			</p>
+			<div class="grid md:grid-cols-2 gap-12">
+				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
+						<FileText class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Appraisal Types</h3>
+					<p class="text-gray-700 leading-relaxed mb-6">
+						Comprehensive appraisal services for various property types:
+					</p>
 				<ul class="space-y-3 text-gray-700">
 					<li class="flex items-start gap-3">
 						<span class="text-primary-600 mt-1">✓</span>
@@ -48,14 +53,14 @@
 				</ul>
 			</div>
 
-			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
-					<Award class="w-8 h-8 text-primary-600" />
-				</div>
-				<h2 class="text-3xl font-bold text-gray-900 mb-4">Certification & Standards</h2>
-				<p class="text-gray-700 leading-relaxed mb-6">
-					Appraisals that meet and exceed professional standards:
-				</p>
+				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
+						<Award class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Certification & Standards</h3>
+					<p class="text-gray-700 leading-relaxed mb-6">
+						Appraisals that meet and exceed professional standards:
+					</p>
 				<ul class="space-y-3 text-gray-700">
 					<li class="flex items-start gap-3">
 						<span class="text-primary-600 mt-1">✓</span>
@@ -77,8 +82,12 @@
 			</div>
 		</div>
 
-		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-white mb-16">
-			<h2 class="text-3xl font-bold mb-6 text-center">Appraisal Benefits</h2>
+		<div class="mb-16">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Are the Benefits of Professional General Appraisals?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
+				Professional general appraisals provide accurate valuations through professional, unbiased property assessment, lender acceptance with appraisals accepted by all major lenders, and detailed reports with comprehensive documentation for your records. These benefits ensure you receive reliable property valuations that meet all professional standards.
+			</p>
+			<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-white">
 			<div class="grid md:grid-cols-3 gap-8">
 				<div class="text-center">
 					<DollarSign class="w-12 h-12 mx-auto mb-4 text-white opacity-90" />

@@ -22,10 +22,10 @@
 
 		<div class="max-w-4xl mx-auto">
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Understanding Distressed Properties in Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Should You Know About Distressed Properties in Las Vegas?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Distressed properties, including short sales and foreclosures, present unique opportunities and challenges in the Las Vegas market. These transactions require specialized expertise, understanding of lender processes, and knowledge of complex regulations. Our services help both buyers and sellers navigate these challenging situations successfully.
+					Distressed properties, including short sales and foreclosures, present unique opportunities and challenges in the Las Vegas market. These transactions require specialized expertise, understanding of lender processes, and knowledge of complex regulations. Our services help both buyers and sellers navigate these challenging situations through short sale expertise, foreclosure guidance, investment opportunity identification, and comprehensive risk management.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -72,10 +72,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Short Sale Services for Las Vegas Sellers</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Short Sale Services Do We Provide for Las Vegas Sellers?</h2>
 				
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
-					Short sales occur when a property's sale price is less than the outstanding mortgage balance. These transactions require lender approval and involve complex negotiations and documentation. Our short sale services help sellers navigate this challenging process while minimizing financial impact.
+					Short sales occur when a property's sale price is less than the outstanding mortgage balance. These transactions require lender approval and involve complex negotiations and documentation. Our short sale services help sellers navigate this challenging process through eligibility assessment, lender negotiation, documentation management, and buyer coordination to minimize financial impact.
 				</p>
 
 				<div class="space-y-8">
@@ -122,7 +122,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Foreclosure and REO Property Services</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Foreclosure and REO Property Services Do We Provide?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Our foreclosure and REO property services include REO property purchases helping buyers identify and purchase bank-owned homes, foreclosure prevention guidance for homeowners facing foreclosure, and investment property evaluation for distressed property opportunities. These services help both buyers and sellers navigate foreclosure situations successfully.
+				</p>
 				
 				<div class="space-y-8">
 					<div>
@@ -158,7 +161,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Distressed Property Markets in Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Distressed Property Markets Exist in Las Vegas?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Distressed property markets in Las Vegas include North Las Vegas opportunities with higher rates of distressed properties, and established neighborhood opportunities in Henderson and parts of Las Vegas. Each market offers unique opportunities for buyers and investors willing to invest in properties that need work.
+				</p>
 				
 				<div class="space-y-6">
 					<div>
@@ -184,7 +190,10 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Key Considerations for Distressed Properties</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are Key Considerations for Distressed Properties?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Key considerations for distressed properties include extended timelines with short sales taking months for lender approval, property condition as properties are often sold as-is, and financing considerations with specific lender requirements. Understanding these factors helps buyers and sellers navigate distressed property transactions successfully.
+				</p>
 				
 				<div class="space-y-6">
 					<div>

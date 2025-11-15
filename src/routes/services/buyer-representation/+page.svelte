@@ -25,10 +25,10 @@
 		<div class="max-w-4xl mx-auto">
 			<!-- How We Help Section -->
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How We Help Las Vegas Homebuyers</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How Do We Help Las Vegas Homebuyers Find Their Perfect Home?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Navigating the Las Vegas real estate market requires expertise, local knowledge, and dedicated representation. Our buyer representation services are designed to protect your interests, save you time and money, and ensure you find the perfect home in the right neighborhood.
+					Navigating the Las Vegas real estate market requires expertise, local knowledge, and dedicated representation. Our buyer representation services protect your interests, save you time and money, and ensure you find the perfect home in the right neighborhood through comprehensive property search, neighborhood expertise, market analysis, and transaction management.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -76,10 +76,10 @@
 
 			<!-- Neighborhoods We Serve -->
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Neighborhoods We Serve Throughout Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Las Vegas Neighborhoods Do We Serve?</h2>
 				
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
-					Las Vegas offers diverse neighborhoods, each with unique character and appeal. Our buyer representation services extend across the entire Las Vegas Valley, from master-planned communities to established neighborhoods and luxury enclaves.
+					Las Vegas offers diverse neighborhoods, each with unique character and appeal. Our buyer representation services extend across the entire Las Vegas Valley, from master-planned communities like Summerlin to established neighborhoods like Green Valley and luxury enclaves like The Ridges.
 				</p>
 
 				<div class="space-y-6">
@@ -147,10 +147,10 @@
 
 			<!-- Our Process -->
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Comprehensive Buyer Representation Process</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Is Our Comprehensive Buyer Representation Process?</h2>
 				
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
-					Our buyer representation process is designed to protect your interests and ensure a successful home purchase. We work with you from initial consultation through closing and beyond, providing expert guidance at every stage.
+					Our buyer representation process protects your interests and ensures a successful home purchase. We work with you from initial consultation through closing and beyond, providing expert guidance at every stage including needs assessment, property search, market analysis, offer preparation, due diligence, and closing coordination.
 				</p>
 
 				<div class="space-y-8">
@@ -218,7 +218,10 @@
 
 			<!-- Benefits Section -->
 			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Benefits of Professional Buyer Representation</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are the Benefits of Professional Buyer Representation?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Professional buyer representation provides expert market knowledge, time savings, cost savings, protection of your interests, access to off-market properties, and stress reduction. These benefits ensure you make informed decisions and get the best deal on your Las Vegas home purchase.
+				</p>
 				
 				<div class="grid md:grid-cols-2 gap-6">
 					<div class="flex items-start gap-4">
@@ -267,6 +270,31 @@
 							<h3 class="text-xl font-bold text-gray-900 mb-2">Stress Reduction</h3>
 							<p class="text-gray-700">We handle the complexities of real estate transactions, allowing you to focus on finding your perfect home.</p>
 						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- FAQ Section -->
+			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Frequently Asked Questions About Buyer Representation</h2>
+				<div class="space-y-6">
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-3">Do I Pay for Buyer Representation Services?</h3>
+						<p class="text-gray-700 leading-relaxed">
+							No, buyer representation services are typically free to buyers. The seller pays the commission, which is split between the buyer's agent and seller's agent. This means you receive expert representation at no cost while the seller covers the fees.
+						</p>
+					</div>
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-3">What's the Difference Between a Buyer's Agent and a Seller's Agent?</h3>
+						<p class="text-gray-700 leading-relaxed">
+							A buyer's agent represents your interests exclusively, providing market analysis, negotiation expertise, and guidance throughout the purchase. A seller's agent represents the seller's interests. Working with a buyer's agent ensures you have someone advocating for your best interests throughout the transaction.
+						</p>
+					</div>
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-3">When Should I Start Working with a Buyer's Agent?</h3>
+						<p class="text-gray-700 leading-relaxed">
+							Start working with a buyer's agent as soon as you're considering buying a home. Early engagement allows us to help you get pre-approved, understand the market, and identify properties before they're widely advertised. The earlier you engage, the better we can serve your needs.
+						</p>
 					</div>
 				</div>
 			</div>

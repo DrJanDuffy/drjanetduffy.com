@@ -22,10 +22,10 @@
 
 		<div class="max-w-4xl mx-auto">
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How We Help Las Vegas Home Sellers</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How Do We Help Las Vegas Home Sellers Maximize Their Sale Price?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Selling a home in Las Vegas requires market expertise, strategic pricing, and effective marketing. Our seller representation services are designed to maximize your home's value, minimize time on market, and ensure a smooth transaction from listing to closing.
+					Selling a home in Las Vegas requires market expertise, strategic pricing, and effective marketing. Our seller representation services maximize your home's value, minimize time on market, and ensure a smooth transaction from listing to closing through strategic pricing, marketing excellence, negotiation expertise, and complete transaction management.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -72,10 +72,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Las Vegas Market Expertise</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Las Vegas Market Expertise Do We Provide?</h2>
 				
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
-					Understanding the Las Vegas real estate market is crucial for successful home sales. Each neighborhood has unique characteristics, buyer demographics, and market dynamics that affect pricing and marketing strategies.
+					Understanding the Las Vegas real estate market is crucial for successful home sales. Each neighborhood has unique characteristics, buyer demographics, and market dynamics that affect pricing and marketing strategies. We provide deep market knowledge across all Las Vegas neighborhoods to position your home effectively.
 				</p>
 
 				<div class="space-y-6">

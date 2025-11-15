@@ -22,10 +22,10 @@
 
 		<div class="max-w-4xl mx-auto">
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Understanding Senior Housing Options in Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Senior Housing Options Are Available in Las Vegas?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Las Vegas offers exceptional options for buyers 50 and older, from active adult communities to age-restricted neighborhoods and lifestyle-focused developments. Our specialized services help you navigate these unique markets, understand community amenities, and find the perfect home for your retirement years.
+					Las Vegas offers exceptional options for buyers 50 and older, from active adult communities to age-restricted neighborhoods and lifestyle-focused developments. Our specialized services help you navigate these unique markets through age-restricted community exploration, active adult living options, downsizing solutions, and strategic investment property advice.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -72,10 +72,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Premier Senior Communities in Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Premier Senior Communities Are Available in Las Vegas?</h2>
 				
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
-					Las Vegas and surrounding areas feature numerous communities specifically designed for active adults and retirees. These communities offer low-maintenance living, resort-style amenities, and vibrant social environments perfect for enjoying your retirement years.
+					Las Vegas and surrounding areas feature numerous communities specifically designed for active adults and retirees including Sun City communities in Summerlin and Anthem, Del Webb communities with resort-style amenities, Henderson active adult communities, and luxury retirement options in The Ridges and Red Rock Country Club. These communities offer low-maintenance living, resort-style amenities, and vibrant social environments.
 				</p>
 
 				<div class="space-y-6">
@@ -122,7 +122,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Specialized Senior Housing Services</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Specialized Senior Housing Services Do We Provide?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Our specialized senior housing services include downsizing consultation to help you transition to smaller homes, community evaluation to understand rules and amenities, financial planning integration to fit home purchases into retirement plans, and relocation services for retirees moving to Las Vegas. These comprehensive services address the unique needs of buyers 50 and older.
+				</p>
 				
 				<div class="space-y-8">
 					<div>
@@ -168,7 +171,10 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Key Considerations for Senior Homebuyers</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are Key Considerations for Senior Homebuyers?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Key considerations for senior homebuyers include single-level living for accessibility and convenience, low-maintenance features to reduce upkeep responsibilities, healthcare access proximity to quality medical facilities, and social opportunities through active adult communities. Understanding these factors helps senior buyers find homes that enhance their retirement lifestyle.
+				</p>
 				
 				<div class="space-y-6">
 					<div>

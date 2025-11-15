@@ -22,10 +22,10 @@
 
 		<div class="max-w-4xl mx-auto">
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Serving International Clients in Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How Do We Serve International Clients in Las Vegas?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Las Vegas attracts international buyers and investors from around the world, seeking everything from vacation homes to investment properties. International transactions require specialized expertise, understanding of cross-border regulations, and knowledge of international buyer needs. Our services help international clients navigate Las Vegas real estate successfully.
+					Las Vegas attracts international buyers and investors from around the world, seeking everything from vacation homes to investment properties. International transactions require specialized expertise, understanding of cross-border regulations, and knowledge of international buyer needs. Our services help international clients navigate Las Vegas real estate successfully through cross-border expertise, international financing guidance, cultural understanding, and comprehensive remote services.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -72,7 +72,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">International Buyer Services</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What International Buyer Services Do We Provide?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Our international buyer services include understanding international buyer needs and preferences, financing guidance for foreign buyers, remote property search capabilities for clients who cannot visit frequently, and transaction management coordinating across time zones. These comprehensive services address the unique needs of international buyers in Las Vegas.
+				</p>
 				
 				<div class="space-y-8">
 					<div>
@@ -118,7 +121,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Las Vegas Attractions for International Buyers</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Las Vegas Attractions Appeal to International Buyers?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Las Vegas attractions for international buyers include investment opportunities with strong rental markets and growth potential, lifestyle appeal with world-class entertainment and amenities, and accessibility through international airport and direct flights. These attractions make Las Vegas highly attractive to international buyers seeking vacation homes or investment properties.
+				</p>
 				
 				<div class="space-y-6">
 					<div>
@@ -154,7 +160,10 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Key Considerations for International Buyers</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are Key Considerations for International Buyers?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Key considerations for international buyers include tax implications in both the United States and home countries, property management requirements for international owners, and legal considerations requiring specialized expertise. Understanding these factors helps international buyers navigate Las Vegas real estate successfully and ensure compliance with all regulations.
+				</p>
 				
 				<div class="space-y-6">
 					<div>

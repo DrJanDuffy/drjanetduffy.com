@@ -22,10 +22,10 @@
 
 		<div class="max-w-4xl mx-auto">
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Sustainable Housing in Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Sustainable Housing Options Are Available in Las Vegas?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Las Vegas's desert climate creates unique opportunities and challenges for sustainable housing. From solar energy systems to water-efficient landscaping, eco-friendly features can significantly reduce utility costs while appealing to environmentally conscious buyers. Our services help buyers and sellers understand and maximize the value of sustainable features.
+					Las Vegas's desert climate creates unique opportunities and challenges for sustainable housing. From solar energy systems to water-efficient landscaping, eco-friendly features can significantly reduce utility costs while appealing to environmentally conscious buyers. Our services help buyers and sellers understand and maximize the value of sustainable features through solar energy expertise, water efficiency understanding, energy efficiency knowledge, and value enhancement strategies.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -72,10 +72,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Solar Energy in Las Vegas Homes</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How Does Solar Energy Work in Las Vegas Homes?</h2>
 				
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
-					Las Vegas's abundant sunshine makes solar energy particularly valuable. Solar-powered homes can significantly reduce or eliminate electricity costs, making them highly attractive to buyers. Understanding solar systems, their value, and how they affect property values is essential for both buyers and sellers.
+					Las Vegas's abundant sunshine makes solar energy particularly valuable. Solar-powered homes can significantly reduce or eliminate electricity costs, making them highly attractive to buyers. Understanding solar systems, their value, and how they affect property values is essential for both buyers and sellers. We provide solar system evaluation and help you understand solar property value in the Las Vegas market.
 				</p>
 
 				<div class="space-y-6">
@@ -102,7 +102,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Water Efficiency in Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How Important Is Water Efficiency in Las Vegas Homes?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Water efficiency is crucial in Las Vegas's desert climate. Desert landscaping and water-efficient systems significantly reduce water use and maintenance costs while creating beautiful outdoor spaces. Understanding water efficiency features helps buyers reduce utility costs and sellers highlight valuable property features.
+				</p>
 				
 				<div class="space-y-6">
 					<div>
@@ -128,7 +131,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Energy Efficiency Features</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Energy Efficiency Features Should Las Vegas Homebuyers Look For?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Energy efficiency features for Las Vegas homes include efficient HVAC systems crucial for hot climates, proper insulation and energy-efficient windows to reduce cooling costs, and energy-efficient appliances to reduce utility costs. These features significantly reduce utility expenses while appealing to environmentally conscious buyers.
+				</p>
 				
 				<div class="space-y-6">
 					<div>
@@ -155,7 +161,10 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Benefits of Eco-Friendly Homes</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are the Benefits of Eco-Friendly Homes?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Benefits of eco-friendly homes include reduced utility costs through energy-efficient and solar-powered systems, environmental benefits reducing impact while providing sustainable living, increased property value appealing to environmentally conscious buyers, and market appeal as eco-friendly features attract growing numbers of buyers in Las Vegas.
+				</p>
 				
 				<div class="grid md:grid-cols-2 gap-6">
 					<div class="flex items-start gap-4">

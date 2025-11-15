@@ -21,7 +21,10 @@
 
 		<!-- Why Las Vegas -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Why Relocate to Las Vegas?</h2>
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">Why Should You Relocate to Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
+				Las Vegas offers compelling reasons to relocate including no state income tax, affordable housing, a growing economy, and year-round sunshine. The city provides more home for your money compared to other major cities, diverse job opportunities, and an exceptional quality of life.
+			</p>
 			<div class="grid md:grid-cols-3 gap-6">
 				<div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
 					<div class="inline-flex items-center justify-center w-12 h-12 bg-primary-100 rounded-lg mb-4">
@@ -50,12 +53,17 @@
 		</div>
 
 		<!-- Relocation Services -->
-		<div class="grid md:grid-cols-2 gap-12 mb-16">
-			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
-					<Plane class="w-8 h-8 text-primary-600" />
-				</div>
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Relocation Support</h2>
+		<div class="mb-16">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Relocation Services Are Available for Moving to Las Vegas?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
+				Comprehensive relocation services for Las Vegas moves include pre-move neighborhood research, school district information, area orientation, and coordination with moving companies. These services help ensure a smooth transition and help you find the perfect neighborhood for your lifestyle.
+			</p>
+			<div class="grid md:grid-cols-2 gap-12">
+				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
+						<Plane class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Comprehensive Relocation Support</h3>
 				<ul class="space-y-4">
 					<li class="flex items-start gap-3">
 						<CheckCircle class="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
@@ -76,11 +84,11 @@
 				</ul>
 			</div>
 
-			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
-				<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
-					<MapPin class="w-8 h-8 text-primary-600" />
-				</div>
-				<h2 class="text-3xl font-bold text-gray-900 mb-6">Neighborhood Matching</h2>
+				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
+						<MapPin class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Expert Neighborhood Matching</h3>
 				<ul class="space-y-4">
 					<li class="flex items-start gap-3">
 						<CheckCircle class="w-6 h-6 text-green-600 mt-0.5 flex-shrink-0" />
@@ -104,7 +112,10 @@
 
 		<!-- Specialized Relocation -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Specialized Relocation Services</h2>
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Specialized Relocation Services Are Available?</h2>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
+				Specialized relocation services cater to specific needs including executive relocation with tight timelines, military relocation with dedicated support, and family relocation with comprehensive assistance. Each service is tailored to unique circumstances and requirements.
+			</p>
 			<div class="grid md:grid-cols-3 gap-6">
 				<div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
 					<h3 class="text-xl font-bold text-gray-900 mb-3">Executive Relocation</h3>
@@ -122,6 +133,31 @@
 					<h3 class="text-xl font-bold text-gray-900 mb-3">Family Relocation</h3>
 					<p class="text-gray-600 mb-4">Comprehensive support for families moving to Las Vegas</p>
 					<a href="/contact" class="text-primary-600 font-semibold">Get Started →</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- FAQ Section -->
+		<div class="mb-16">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions About Relocating to Las Vegas</h2>
+			<div class="space-y-6">
+				<div class="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+					<h3 class="text-2xl font-bold text-gray-900 mb-3">How Long Does It Take to Relocate to Las Vegas?</h3>
+					<p class="text-gray-700 leading-relaxed">
+						Relocation timelines vary based on your situation. Executive relocations may happen in 2-4 weeks, while family relocations typically take 30-60 days. The process includes finding a home, closing, and coordinating your move. I can help expedite the process with virtual tours, pre-move research, and streamlined home buying.
+					</p>
+				</div>
+				<div class="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+					<h3 class="text-2xl font-bold text-gray-900 mb-3">What Should I Know About Las Vegas Schools Before Relocating?</h3>
+					<p class="text-gray-700 leading-relaxed">
+						Las Vegas offers diverse school options including top-rated public schools in Summerlin and Henderson, charter schools, and private schools. The Clark County School District serves most of the area, with some neighborhoods zoned to higher-performing schools. I provide detailed school district information and can help you find neighborhoods that match your educational priorities.
+					</p>
+				</div>
+				<div class="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+					<h3 class="text-2xl font-bold text-gray-900 mb-3">Can I Buy a Home in Las Vegas Before Moving?</h3>
+					<p class="text-gray-700 leading-relaxed">
+						Yes, many relocating buyers purchase homes before moving using virtual tours, video walkthroughs, and trusted local representation. I provide comprehensive virtual home tours, detailed neighborhood information, and can coordinate inspections and closing remotely. This allows you to secure your new home before your move date.
+					</p>
 				</div>
 			</div>
 		</div>

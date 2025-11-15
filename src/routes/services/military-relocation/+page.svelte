@@ -22,10 +22,10 @@
 
 		<div class="max-w-4xl mx-auto">
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Supporting Military Families in Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How Do We Support Military Families Relocating to Las Vegas?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Military relocations present unique challenges, from tight timelines to understanding local markets and military-specific benefits. Our specialized services are designed to support military families throughout their relocation process, whether you're moving to Las Vegas or being reassigned elsewhere.
+					Military relocations present unique challenges, from tight timelines to understanding local markets and military-specific benefits. Our specialized services support military families throughout their relocation process through PCS move support, base proximity expertise, VA loan assistance, and family-focused service considering schools and community features.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -72,10 +72,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Las Vegas Military Installations & Surrounding Areas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Las Vegas Military Installations Do We Serve?</h2>
 				
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
-					Las Vegas is home to several major military installations, each with unique characteristics and surrounding communities. Understanding these areas and their proximity to quality housing is essential for military families relocating to the area.
+					Las Vegas is home to several major military installations including Nellis Air Force Base in North Las Vegas, Creech Air Force Base in Indian Springs, and Naval Air Station Fallon (with some personnel choosing Las Vegas). Understanding these areas and their proximity to quality housing is essential for military families relocating to the area.
 				</p>
 
 				<div class="space-y-6">
@@ -112,7 +112,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Military Relocation Services</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Military Relocation Services Do We Provide?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Our military relocation services include pre-move consultation, VA loan assistance, remote home search capabilities, temporary housing coordination, family-focused neighborhood selection, and specialized selling services for departing military. These comprehensive services address the unique needs and timelines of military relocations.
+				</p>
 				
 				<div class="space-y-8">
 					<div>
@@ -178,7 +181,10 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Understanding Military Benefits in Las Vegas Real Estate</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Military Benefits Are Available for Las Vegas Real Estate?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Military benefits for Las Vegas real estate include VA loan benefits with no down payment and no PMI, property tax exemptions for disabled veterans, and military relocation tax benefits for moving expenses and home sales. Understanding and maximizing these benefits helps military families achieve successful homeownership in Las Vegas.
+				</p>
 				
 				<div class="space-y-6">
 					<div>

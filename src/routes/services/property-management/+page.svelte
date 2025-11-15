@@ -22,10 +22,10 @@
 
 		<div class="max-w-4xl mx-auto">
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Comprehensive Property Management in Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Comprehensive Property Management Services Do We Provide in Las Vegas?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Property management is essential for successful rental property ownership, especially for out-of-town owners or those with multiple properties. Las Vegas's strong rental markets require professional management to maximize returns, maintain properties, and ensure compliance. Our property management services provide comprehensive management for Las Vegas rental properties.
+					Property management is essential for successful rental property ownership, especially for out-of-town owners or those with multiple properties. Las Vegas's strong rental markets require professional management to maximize returns, maintain properties, and ensure compliance. Our property management services provide comprehensive management through tenant management, maintenance coordination, financial management, and complete owner services.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -72,7 +72,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Property Management Services</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Property Management Services Are Included?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Our property management services include tenant screening and leasing, rent collection and financial management, maintenance and repairs coordination, property inspections, and legal compliance. These comprehensive services ensure your Las Vegas rental properties are well-maintained, legally compliant, and generating maximum returns.
+				</p>
 				
 				<div class="space-y-8">
 					<div>
@@ -128,7 +131,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Las Vegas Rental Markets</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Las Vegas Rental Markets Do We Manage?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					We manage rental properties across all Las Vegas rental markets including single-family rental markets in North Las Vegas and Henderson, multi-unit properties from duplexes to apartment buildings, and luxury rental properties in communities like The Ridges and Red Rock Country Club. Each market requires specialized management expertise.
+				</p>
 				
 				<div class="space-y-6">
 					<div>
@@ -164,7 +170,10 @@
 			</div>
 
 			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Benefits of Professional Property Management</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are the Benefits of Professional Property Management?</h2>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+					Professional property management provides maximized rental income through effective marketing and tenant screening, property protection through regular maintenance and inspections, time savings by handling all day-to-day management tasks, and legal protection ensuring compliance with all applicable laws and regulations.
+				</p>
 				
 				<div class="grid md:grid-cols-2 gap-6">
 					<div class="flex items-start gap-4">

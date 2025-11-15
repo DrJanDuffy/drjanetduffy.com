@@ -22,10 +22,10 @@
 
 		<div class="max-w-4xl mx-auto">
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Luxury Real Estate Expertise in Las Vegas</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Luxury Real Estate Expertise Do We Provide in Las Vegas?</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
-					Luxury real estate in Las Vegas represents a distinct market with unique characteristics, buyer expectations, and transaction requirements. Our luxury home services are designed specifically for high-end properties, providing the expertise, discretion, and attention to detail that luxury transactions demand.
+					Luxury real estate in Las Vegas represents a distinct market with unique characteristics, buyer expectations, and transaction requirements. Our luxury home services are designed specifically for high-end properties, providing expertise, discretion, and attention to detail through exclusive property access, premium marketing, privacy protection, and deep market knowledge.
 				</p>
 
 				<div class="grid md:grid-cols-2 gap-6 mb-8">
@@ -72,10 +72,10 @@
 			</div>
 
 			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Las Vegas Luxury Communities</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Las Vegas Luxury Communities Do We Serve?</h2>
 				
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
-					Las Vegas offers several world-class luxury communities, each with unique characteristics, amenities, and appeal. Understanding these communities is essential for luxury homebuyers and sellers.
+					Las Vegas offers several world-class luxury communities, each with unique characteristics, amenities, and appeal. Understanding these communities is essential for luxury homebuyers and sellers. We provide expert representation in The Ridges, Red Rock Country Club, Anthem, Seven Hills, and other premier luxury neighborhoods.
 				</p>
 
 				<div class="space-y-6">
