@@ -1,16 +1,6 @@
 <script>
 	import { page } from '$app/stores';
 	
-	let mobileMenuOpen = false;
-	
-	function toggleMobileMenu() {
-		mobileMenuOpen = !mobileMenuOpen;
-	}
-	
-	function closeMobileMenu() {
-		mobileMenuOpen = false;
-	}
-	
 	const navItems = [
 		{ href: '/', label: 'Home' },
 		{ href: '/properties', label: 'Properties' },
@@ -23,10 +13,10 @@
 </script>
 
 <nav class="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 shadow-sm">
-	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="flex h-16 items-center justify-between">
+	<div class="container mx-auto px-2 sm:px-4 lg:px-8">
+		<div class="flex h-16 items-center justify-between gap-2">
 			<!-- Logo -->
-			<a href="/" class="flex items-center space-x-3 group flex-shrink-0">
+			<a href="/" class="flex items-center space-x-2 sm:space-x-3 group flex-shrink-0">
 				<div class="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary-600 to-primary-800 shadow-md transition-transform group-hover:scale-105">
 					<span class="text-sm font-bold text-white">JD</span>
 				</div>
@@ -36,12 +26,12 @@
 				</div>
 			</a>
 			
-			<!-- Desktop Navigation -->
-			<div class="hidden md:flex md:items-center md:space-x-1 md:flex-1 md:justify-center md:max-w-2xl md:mx-auto">
+			<!-- Navigation Menu - Always Visible -->
+			<div class="flex items-center flex-1 justify-center gap-0.5 sm:gap-1 min-w-0 overflow-x-auto">
 				{#each navItems as item}
 					<a
 						href={item.href}
-						class="relative px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:text-primary-600 rounded-md hover:bg-primary-50 {$page.url.pathname === item.href ? 'text-primary-600 bg-primary-50' : ''}"
+						class="relative px-2 sm:px-3 md:px-4 py-2 text-xs sm:text-sm font-medium text-gray-700 transition-colors hover:text-primary-600 rounded-md hover:bg-primary-50 whitespace-nowrap {$page.url.pathname === item.href ? 'text-primary-600 bg-primary-50' : ''}"
 					>
 						{item.label}
 						{#if $page.url.pathname === item.href}
@@ -51,54 +41,16 @@
 				{/each}
 			</div>
 			
-			<!-- Call Now Button & Mobile Menu Toggle -->
-			<div class="flex items-center gap-4">
+			<!-- Call Now Button -->
+			<div class="flex items-center flex-shrink-0">
 				<a
-					href="tel:+17025551234"
-					class="hidden md:flex items-center justify-center rounded-lg bg-gradient-to-r from-primary-600 to-primary-700 px-5 py-2 text-sm font-semibold text-white shadow-md transition-all hover:from-primary-700 hover:to-primary-800 hover:shadow-lg hover:scale-105 whitespace-nowrap"
+					href="tel:+17022221964"
+					class="flex items-center justify-center rounded-lg bg-gradient-to-r from-primary-600 to-primary-700 px-3 sm:px-5 py-2 text-xs sm:text-sm font-semibold text-white shadow-md transition-all hover:from-primary-700 hover:to-primary-800 hover:shadow-lg hover:scale-105 whitespace-nowrap"
 				>
-					Call Now
+					<span class="hidden sm:inline">Call Now</span>
+					<span class="sm:hidden">Call</span>
 				</a>
-				
-				<!-- Mobile menu button -->
-				<button
-					on:click={toggleMobileMenu}
-					class="md:hidden inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500 transition-colors"
-					aria-label="Toggle menu"
-				>
-					<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-						{#if mobileMenuOpen}
-							<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-						{:else}
-							<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-						{/if}
-					</svg>
-				</button>
 			</div>
 		</div>
-		
-		<!-- Mobile Navigation -->
-		{#if mobileMenuOpen}
-			<div class="md:hidden border-t border-gray-200">
-				<div class="space-y-1 px-2 pt-2 pb-3">
-					{#each navItems as item}
-						<a
-							href={item.href}
-							on:click={closeMobileMenu}
-							class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 transition-colors hover:bg-primary-50 hover:text-primary-600 {$page.url.pathname === item.href ? 'bg-primary-50 text-primary-600' : ''}"
-						>
-							{item.label}
-						</a>
-					{/each}
-					<a
-						href="tel:+17025551234"
-						on:click={closeMobileMenu}
-						class="block rounded-md bg-gradient-to-r from-primary-600 to-primary-700 px-3 py-2 text-center text-base font-semibold text-white shadow-md transition-all hover:from-primary-700 hover:to-primary-800 mt-2"
-					>
-						Call Now
-					</a>
-				</div>
-			</div>
-		{/if}
 	</div>
 </nav>
