@@ -1,6 +1,6 @@
 import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import { V0_API_KEY } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 
 // V0 API endpoint - check https://v0.dev/docs/v0-platform-api for latest endpoint
 const V0_API_BASE = 'https://api.v0.dev';
@@ -14,9 +14,9 @@ export const POST: RequestHandler = async ({ request }) => {
 			return json({ error: 'Prompt is required' }, { status: 400 });
 		}
 
-		if (!V0_API_KEY) {
-			return json({ 
-				error: 'V0_API_KEY not configured. Please set it in your environment variables.' 
+		if (!env.V0_API_KEY) {
+			return json({
+				error: 'V0_API_KEY not configured. Please set it in your environment variables.'
 			}, { status: 500 });
 		}
 
@@ -37,7 +37,7 @@ export const POST: RequestHandler = async ({ request }) => {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json',
-						'Authorization': `Bearer ${V0_API_KEY}`,
+						'Authorization': `Bearer ${env.V0_API_KEY}`,
 					},
 					body: JSON.stringify({
 						prompt,
@@ -85,9 +85,9 @@ export const POST: RequestHandler = async ({ request }) => {
 export const GET: RequestHandler = async () => {
 	return json({
 		status: 'ok',
-		configured: !!V0_API_KEY,
-		message: V0_API_KEY 
-			? 'V0 API is configured and ready' 
+		configured: !!env.V0_API_KEY,
+		message: env.V0_API_KEY
+			? 'V0 API is configured and ready'
 			: 'V0_API_KEY not set. Please configure it in your environment variables.'
 	});
 };
