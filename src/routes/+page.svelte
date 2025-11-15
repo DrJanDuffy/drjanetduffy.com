@@ -269,7 +269,7 @@
 					<p class="text-gray-700 mb-6 leading-relaxed text-lg">
 						Luxury homes in one of Las Vegas's most prestigious master-planned communities.
 					</p>
-					<a href="/properties?neighborhood=west-summerlin" class="inline-flex items-center gap-2 text-primary-600 font-bold hover:text-primary-700 hover:gap-3 transition-all duration-300">
+					<a href="/properties" class="inline-flex items-center gap-2 text-primary-600 font-bold hover:text-primary-700 hover:gap-3 transition-all duration-300">
 						View Properties <span class="text-xl">→</span>
 					</a>
 				</div>
@@ -282,7 +282,7 @@
 					<p class="text-gray-700 mb-6 leading-relaxed text-lg">
 						Exclusive gated community with stunning mountain views and luxury amenities.
 					</p>
-					<a href="/properties?neighborhood=the-ridges" class="inline-flex items-center gap-2 text-primary-600 font-bold hover:text-primary-700 hover:gap-3 transition-all duration-300">
+					<a href="/properties" class="inline-flex items-center gap-2 text-primary-600 font-bold hover:text-primary-700 hover:gap-3 transition-all duration-300">
 						View Properties <span class="text-xl">→</span>
 					</a>
 				</div>
@@ -295,7 +295,7 @@
 					<p class="text-gray-700 mb-6 leading-relaxed text-lg">
 						Premier golf course community with luxury estates and world-class amenities.
 					</p>
-					<a href="/properties?neighborhood=red-rock" class="inline-flex items-center gap-2 text-primary-600 font-bold hover:text-primary-700 hover:gap-3 transition-all duration-300">
+					<a href="/properties" class="inline-flex items-center gap-2 text-primary-600 font-bold hover:text-primary-700 hover:gap-3 transition-all duration-300">
 						View Properties <span class="text-xl">→</span>
 					</a>
 				</div>

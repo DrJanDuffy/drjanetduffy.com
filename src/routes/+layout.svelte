@@ -60,10 +60,10 @@
 			<div>
 				<h3 class="text-xl font-display font-bold mb-4 text-white">Communities</h3>
 				<ul class="space-y-3">
-					<li><a href="/communities/summerlin" class="text-gray-400 hover:text-white transition-colors">Summerlin</a></li>
-					<li><a href="/communities/henderson" class="text-gray-400 hover:text-white transition-colors">Henderson</a></li>
-					<li><a href="/communities/green-valley" class="text-gray-400 hover:text-white transition-colors">Green Valley</a></li>
-					<li><a href="/communities/north-las-vegas" class="text-gray-400 hover:text-white transition-colors">North Las Vegas</a></li>
+					<li><a href="/properties?neighborhood=summerlin" class="text-gray-400 hover:text-white transition-colors">Summerlin</a></li>
+					<li><a href="/properties?neighborhood=henderson" class="text-gray-400 hover:text-white transition-colors">Henderson</a></li>
+					<li><a href="/properties?neighborhood=green-valley" class="text-gray-400 hover:text-white transition-colors">Green Valley</a></li>
+					<li><a href="/properties?neighborhood=north-las-vegas" class="text-gray-400 hover:text-white transition-colors">North Las Vegas</a></li>
 					<li><a href="/sitemap" class="text-gray-400 hover:text-white transition-colors">View All Communities</a></li>
 				</ul>
 			</div>
