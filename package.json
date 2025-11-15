@@ -43,6 +43,8 @@
 	"dependencies": {
 		"cookie": "^0.4.1",
 		"date-fns": "^4.1.0",
-		"lucide-svelte": "^0.542.0"
+		"fast-xml-parser": "^5.3.2",
+		"lucide-svelte": "^0.542.0",
+		"v0-sdk": "^0.15.1"
 	}
 }

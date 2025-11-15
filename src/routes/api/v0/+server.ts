@@ -20,58 +20,57 @@ export const POST: RequestHandler = async ({ request }) => {
 			}, { status: 500 });
 		}
 
-		// Try different V0 API endpoint patterns
-		const endpoints = [
-			`${V0_API_BASE}/v1/generate`,
-			`${V0_API_BASE}/v1/prompt`,
-			`${V0_API_BASE}/api/v1/generate`,
-			`${V0_API_BASE}/generate`
-		];
+		// V0 API endpoint - Based on V0 Platform API documentation
+		// The endpoint may vary - check https://v0.dev/docs/v0-platform-api for latest
+		// Common patterns: /v1/generate, /v1/prompt, /api/v1/generate
+		const endpoint = `${V0_API_BASE}/v1/generate`;
+		
+		try {
+			const response = await fetch(endpoint, {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+					'Authorization': `Bearer ${V0_API_KEY}`,
+					'User-Agent': 'SvelteKit-V0-Integration/1.0',
+				},
+				body: JSON.stringify({
+					prompt,
+					model,
+					shadcn,
+				}),
+			});
 
-		let lastError = null;
-		let data = null;
-
-		for (const endpoint of endpoints) {
-			try {
-				const response = await fetch(endpoint, {
-					method: 'POST',
-					headers: {
-						'Content-Type': 'application/json',
-						'Authorization': `Bearer ${V0_API_KEY}`,
-					},
-					body: JSON.stringify({
-						prompt,
-						model,
-						shadcn,
-					}),
-				});
-
-				if (response.ok) {
-					data = await response.json();
-					break;
-				} else {
-					const errorText = await response.text();
-					lastError = { endpoint, status: response.status, error: errorText };
-					// Continue to next endpoint
-					continue;
+			if (!response.ok) {
+				const errorText = await response.text();
+				let errorData;
+				try {
+					errorData = JSON.parse(errorText);
+				} catch {
+					errorData = { message: errorText };
 				}
-			} catch (err) {
-				lastError = { endpoint, error: err instanceof Error ? err.message : String(err) };
-				continue;
+				
+				// Provide helpful error message
+				return json({ 
+					error: `V0 API error (${response.status}): ${errorData.message || errorData.error?.message || errorText}. Endpoint tried: ${endpoint}. Please verify the endpoint at https://v0.dev/docs/v0-platform-api` 
+				}, { status: response.status });
 			}
-		}
 
-		if (!data) {
+			const data = await response.json();
+
 			return json({ 
-				error: `V0 API error: Could not reach V0 API. Last attempt: ${lastError?.endpoint || 'unknown'} - ${lastError?.error || lastError?.status || 'Unknown error'}. Please check https://v0.dev/docs/v0-platform-api for the correct endpoint.` 
+				success: true, 
+				component: data.component || data.code || data.html || data.result || JSON.stringify(data, null, 2),
+				metadata: data.metadata || { 
+					rawResponse: data,
+					endpoint: endpoint
+				}
+			});
+		} catch (error) {
+			console.error('V0 API fetch error:', error);
+			return json({ 
+				error: `Network error calling V0 API: ${error instanceof Error ? error.message : String(error)}. Endpoint: ${endpoint}` 
 			}, { status: 500 });
 		}
-
-		return json({ 
-			success: true, 
-			component: data.component || data.code || data.html || JSON.stringify(data, null, 2),
-			metadata: data.metadata || { rawResponse: data }
-		});
 
 	} catch (error) {
 		console.error('V0 API error:', error);

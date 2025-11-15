@@ -1,0 +1,6 @@
+{
+  "prompt": "Create a simple button component",
+  "model": "claude-3-5-sonnet",
+  "shadcn": true
+}
+
