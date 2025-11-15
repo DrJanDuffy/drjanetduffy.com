@@ -96,7 +96,10 @@ onMount(() => {
 		
 		<!-- Comparison Section -->
 		<div class="mt-16 bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-xl border border-gray-100">
-			<h2 class="font-display text-3xl font-bold mb-8 text-center text-gray-900" style="letter-spacing: -0.02em;">Choose Your Preferred View</h2>
+			<h2 class="font-display text-3xl font-bold mb-6 text-center text-gray-900" style="letter-spacing: -0.02em;">How Can You Choose Your Preferred Property View?</h2>
+			<p class="text-gray-700 mb-8 text-center leading-relaxed max-w-3xl mx-auto">
+				Choose your preferred property view including web components view for modern interactive interface with advanced search, or embedded grid view for classic grid layout with comprehensive status filtering. Each view provides unique benefits to help you browse and discover Las Vegas properties effectively.
+			</p>
 			<div class="grid-premium md:grid-cols-2 gap-8">
 				<div class="bg-white rounded-xl p-8 shadow-md">
 					<h3 class="font-display text-xl font-bold mb-4 text-primary-600">Web Components View</h3>

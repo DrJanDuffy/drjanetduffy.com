@@ -45,7 +45,10 @@ onMount(() => {
 	
 		<!-- Search Options -->
 		<div class="mb-16 bg-white rounded-2xl shadow-xl p-10 border border-gray-100">
-			<h2 class="font-display text-3xl font-bold mb-8 text-center text-gray-900" style="letter-spacing: -0.02em;">Search Options</h2>
+			<h2 class="font-display text-3xl font-bold mb-6 text-center text-gray-900" style="letter-spacing: -0.02em;">How Can You Search for Las Vegas Properties in List View?</h2>
+			<p class="text-gray-700 mb-8 text-center leading-relaxed max-w-3xl mx-auto">
+				Search for Las Vegas properties in list view using advanced search with detailed filters for location, price, bedrooms, and amenities, or simple search for quick results. Both search options help you find properties that match your needs and display results in a detailed list format for easy comparison.
+			</p>
 			<div class="grid-premium md:grid-cols-2 gap-8">
 				<div class="bg-gradient-to-br from-primary-50/50 to-white rounded-xl p-6">
 					<h3 class="font-display text-xl font-bold mb-4 text-gray-900">Advanced Search</h3>
@@ -71,8 +74,11 @@ onMount(() => {
 		<!-- Listings -->
 		<div class="mb-16">
 			<div class="text-center mb-12">
-				<h2 class="font-display text-4xl font-bold mb-4 text-gray-900" style="letter-spacing: -0.02em;">All Properties (List View)</h2>
-				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto"></div>
+				<h2 class="font-display text-4xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">What Properties Are Available in List View?</h2>
+				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
+					Properties available in list view include active listings, pending properties, and sold properties across Las Vegas. The list view format provides detailed information per property including price, location, bedrooms, bathrooms, square footage, and status, making it easy to compare multiple properties side by side.
+				</p>
 			</div>
 			{#if mounted && browser}
 				<div class="realscout-listings agent" 
@@ -106,7 +112,10 @@ onMount(() => {
 		
 		<!-- View Comparison -->
 		<div class="mb-16 bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-xl border border-gray-100">
-			<h2 class="font-display text-3xl font-bold mb-8 text-center text-gray-900" style="letter-spacing: -0.02em;">Choose Your Preferred View</h2>
+			<h2 class="font-display text-3xl font-bold mb-6 text-center text-gray-900" style="letter-spacing: -0.02em;">How Can You Choose Your Preferred Property View?</h2>
+			<p class="text-gray-700 mb-8 text-center leading-relaxed max-w-3xl mx-auto">
+				Choose your preferred property view including grid view for visual browsing with property cards, list view for detailed comparison with comprehensive information, or web components view for modern interactive interface. Each view provides unique benefits to help you find and compare Las Vegas properties effectively.
+			</p>
 			<div class="grid-premium md:grid-cols-3 gap-8">
 				<div class="text-center bg-white rounded-xl p-8 shadow-md">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl mb-4 shadow-md">
