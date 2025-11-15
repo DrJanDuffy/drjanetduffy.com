@@ -61,93 +61,230 @@
 	</script>
 </svelte:head>
 
-<!-- Hero Section -->
-<section class="relative overflow-hidden bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white" style="min-height: 90vh; display: flex; align-items: center;">
-	<!-- Animated Background Elements -->
-	<div class="absolute inset-0 overflow-hidden">
-		<div class="absolute top-0 left-1/4 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse"></div>
-		<div class="absolute bottom-0 right-1/4 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
-		<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-white/10 to-transparent rounded-full blur-3xl"></div>
-	</div>
-	
-	<div class="container-premium relative z-10">
-		<div class="max-w-5xl mx-auto text-center animate-fade-in-up">
-			<div class="mb-6">
-				<span class="inline-block px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-sm font-semibold mb-6 border border-white/30">
-					🏆 Award-Winning Real Estate Expert
-				</span>
+<!-- Hero Section with Search -->
+<section class="relative bg-white pt-24 pb-16">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-6xl mx-auto">
+			<!-- Hero Content -->
+			<div class="text-center mb-12">
+				<h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-4 tracking-tight">
+					Find Your Dream Home in Las Vegas
+				</h1>
+				<p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
+					Expert real estate guidance from Dr. Janet Duffy, REALTOR®
+				</p>
 			</div>
-			<h1 class="font-display text-6xl md:text-7xl lg:text-8xl font-bold mb-6 text-white drop-shadow-2xl leading-tight" style="text-shadow: 0 4px 20px rgba(0,0,0,0.3);">
-				Dr. Janet Duffy
-			</h1>
-			<p class="text-3xl md:text-4xl font-semibold mb-4 text-white/95" style="text-shadow: 0 2px 10px rgba(0,0,0,0.2);">
-				Licensed REALTOR®
-			</p>
-			<p class="text-xl md:text-2xl mb-12 text-white/90 max-w-3xl mx-auto leading-relaxed" style="text-shadow: 0 1px 5px rgba(0,0,0,0.1);">
-				Your Trusted Las Vegas Real Estate Expert
-			</p>
-			<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-				<a href="/properties" class="group relative overflow-hidden bg-white text-primary-700 px-10 py-5 rounded-xl font-bold text-lg shadow-2xl hover:shadow-white/20 transition-all duration-300 hover:scale-110 hover:-translate-y-1">
-					<span class="relative z-10">View Properties</span>
-					<div class="absolute inset-0 bg-gradient-to-r from-primary-50 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+			
+			<!-- Search Form Card -->
+			<div class="bg-white rounded-2xl shadow-2xl border border-gray-200 p-8 md:p-10">
+				<form class="space-y-6">
+					<div class="grid md:grid-cols-4 gap-4">
+						<div class="md:col-span-2">
+							<label class="block text-sm font-semibold text-gray-700 mb-2">Location</label>
+							<input 
+								type="text" 
+								placeholder="Enter city, neighborhood, or ZIP"
+								class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 placeholder-gray-400"
+							/>
+						</div>
+						<div>
+							<label class="block text-sm font-semibold text-gray-700 mb-2">Property Type</label>
+							<select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white">
+								<option>All Types</option>
+								<option>Single Family</option>
+								<option>Condos</option>
+								<option>Townhomes</option>
+								<option>Luxury Estates</option>
+							</select>
+						</div>
+						<div>
+							<label class="block text-sm font-semibold text-gray-700 mb-2">Price Range</label>
+							<select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white">
+								<option>Any Price</option>
+								<option>Under $300K</option>
+								<option>$300K - $500K</option>
+								<option>$500K - $750K</option>
+								<option>$750K - $1M</option>
+								<option>Over $1M</option>
+							</select>
+						</div>
+					</div>
+					<div class="flex flex-col sm:flex-row gap-4">
+						<div class="flex-1">
+							<label class="block text-sm font-semibold text-gray-700 mb-2">Bedrooms</label>
+							<select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white">
+								<option>Any</option>
+								<option>1+</option>
+								<option>2+</option>
+								<option>3+</option>
+								<option>4+</option>
+								<option>5+</option>
+							</select>
+						</div>
+						<div class="flex-1">
+							<label class="block text-sm font-semibold text-gray-700 mb-2">Bathrooms</label>
+							<select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 text-gray-900 bg-white">
+								<option>Any</option>
+								<option>1+</option>
+								<option>2+</option>
+								<option>3+</option>
+								<option>4+</option>
+							</select>
+						</div>
+						<div class="flex items-end">
+							<button 
+								type="submit"
+								class="w-full sm:w-auto bg-primary-600 hover:bg-primary-700 text-white font-bold px-10 py-3 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
+							>
+								Search Properties
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			
+			<!-- Quick Stats -->
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-primary-600 mb-1">150+</div>
+					<div class="text-sm text-gray-600">Properties Sold</div>
+				</div>
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-primary-600 mb-1">15+</div>
+					<div class="text-sm text-gray-600">Years Experience</div>
+				</div>
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-primary-600 mb-1">98%</div>
+					<div class="text-sm text-gray-600">Client Satisfaction</div>
+				</div>
+				<div class="text-center">
+					<div class="text-3xl md:text-4xl font-bold text-primary-600 mb-1">$50M+</div>
+					<div class="text-sm text-gray-600">Sales Volume</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Featured Properties Section -->
+<section class="py-16 bg-gray-50">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-7xl mx-auto">
+			<div class="flex justify-between items-center mb-10">
+				<div>
+					<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Featured Properties</h2>
+					<p class="text-gray-600">Discover luxury homes in Las Vegas</p>
+				</div>
+				<a href="/properties" class="text-primary-600 hover:text-primary-700 font-semibold">
+					View All →
 				</a>
-				<a href="/home-value" class="group relative overflow-hidden bg-primary-500/90 backdrop-blur-sm text-white border-2 border-white/30 px-10 py-5 rounded-xl font-bold text-lg shadow-xl hover:bg-white hover:text-primary-700 transition-all duration-300 hover:scale-110 hover:-translate-y-1">
-					<span class="relative z-10">Get Home Value</span>
-				</a>
-				<a href="/contact" class="group relative overflow-hidden bg-transparent text-white border-2 border-white px-10 py-5 rounded-xl font-bold text-lg backdrop-blur-sm hover:bg-white hover:text-primary-700 transition-all duration-300 hover:scale-110 hover:-translate-y-1">
-					<span class="relative z-10">Contact Me</span>
-				</a>
+			</div>
+			
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+				<!-- Property Card 1 -->
+				<div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200">
+					<div class="h-64 bg-gradient-to-br from-primary-100 to-primary-200 relative">
+						<div class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-bold text-primary-600">
+							For Sale
+						</div>
+					</div>
+					<div class="p-6">
+						<div class="text-2xl font-bold text-gray-900 mb-2">$485,000</div>
+						<h3 class="text-lg font-semibold text-gray-900 mb-2">Luxury Home in West Summerlin</h3>
+						<p class="text-gray-600 text-sm mb-4">1234 Desert View Dr, Las Vegas, NV 89138</p>
+						<div class="flex items-center gap-4 text-sm text-gray-600 mb-4">
+							<span>4 Beds</span>
+							<span>3 Baths</span>
+							<span>2,500 sqft</span>
+						</div>
+						<a href="/properties" class="block w-full text-center bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 rounded-lg transition-colors">
+							View Details
+						</a>
+					</div>
+				</div>
+				
+				<!-- Property Card 2 -->
+				<div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200">
+					<div class="h-64 bg-gradient-to-br from-primary-200 to-primary-300 relative">
+						<div class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-bold text-primary-600">
+							For Sale
+						</div>
+					</div>
+					<div class="p-6">
+						<div class="text-2xl font-bold text-gray-900 mb-2">$625,000</div>
+						<h3 class="text-lg font-semibold text-gray-900 mb-2">Modern Estate in The Ridges</h3>
+						<p class="text-gray-600 text-sm mb-4">5678 Mountain Peak Way, Las Vegas, NV 89144</p>
+						<div class="flex items-center gap-4 text-sm text-gray-600 mb-4">
+							<span>5 Beds</span>
+							<span>4 Baths</span>
+							<span>3,200 sqft</span>
+						</div>
+						<a href="/properties" class="block w-full text-center bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 rounded-lg transition-colors">
+							View Details
+						</a>
+					</div>
+				</div>
+				
+				<!-- Property Card 3 -->
+				<div class="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-200">
+					<div class="h-64 bg-gradient-to-br from-primary-300 to-primary-400 relative">
+						<div class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-bold text-primary-600">
+							For Sale
+						</div>
+					</div>
+					<div class="p-6">
+						<div class="text-2xl font-bold text-gray-900 mb-2">$350,000</div>
+						<h3 class="text-lg font-semibold text-gray-900 mb-2">Charming Condo in Green Valley</h3>
+						<p class="text-gray-600 text-sm mb-4">9012 Valley View Ln, Las Vegas, NV 89123</p>
+						<div class="flex items-center gap-4 text-sm text-gray-600 mb-4">
+							<span>2 Beds</span>
+							<span>2 Baths</span>
+							<span>1,400 sqft</span>
+						</div>
+						<a href="/properties" class="block w-full text-center bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 rounded-lg transition-colors">
+							View Details
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
 <!-- Why Choose Section -->
-<section class="section relative" style="background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);">
-	<div class="container-premium">
-		<div class="text-center mb-20">
-			<h2 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">
-				Why Choose Dr. Janet Duffy?
-			</h2>
-			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
-			<p class="text-xl text-gray-600 max-w-2xl mx-auto">
-				Experience the difference that expertise, dedication, and personalized service make
-			</p>
-		</div>
-		<div class="grid-premium md:grid-cols-3">
-			<div class="group relative bg-white rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-gray-100 overflow-hidden">
-				<div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary-100 to-transparent rounded-bl-full opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
-				<div class="relative z-10 text-center">
-					<div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform duration-500">
-						<span class="text-4xl">🏆</span>
+<section class="py-16 bg-white">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-7xl mx-auto">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Why Choose Dr. Janet Duffy?</h2>
+				<p class="text-gray-600 text-lg">Expert real estate guidance you can trust</p>
+			</div>
+			<div class="grid md:grid-cols-3 gap-8">
+				<div class="text-center">
+					<div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-3xl">🏆</span>
 					</div>
-					<h3 class="font-display text-2xl font-bold mb-4 text-gray-900">15+ Years Experience</h3>
-					<p class="text-gray-700 leading-relaxed text-lg">
-						Extensive knowledge of the Las Vegas real estate market with a proven track record of successful transactions.
+					<h3 class="text-xl font-bold text-gray-900 mb-2">15+ Years Experience</h3>
+					<p class="text-gray-600">
+						Proven track record of successful transactions in the Las Vegas market.
 					</p>
 				</div>
-			</div>
-			<div class="group relative bg-white rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-gray-100 overflow-hidden animate-fade-in-up" style="animation-delay: 0.1s">
-				<div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary-100 to-transparent rounded-bl-full opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
-				<div class="relative z-10 text-center">
-					<div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform duration-500">
-						<span class="text-4xl">🎯</span>
+				<div class="text-center">
+					<div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-3xl">🎯</span>
 					</div>
-					<h3 class="font-display text-2xl font-bold mb-4 text-gray-900">Expert Guidance</h3>
-					<p class="text-gray-700 leading-relaxed text-lg">
-						Personalized service tailored to your unique needs, whether buying, selling, or investing in Las Vegas real estate.
+					<h3 class="text-xl font-bold text-gray-900 mb-2">Expert Guidance</h3>
+					<p class="text-gray-600">
+						Personalized service tailored to your unique real estate needs.
 					</p>
 				</div>
-			</div>
-			<div class="group relative bg-white rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-gray-100 overflow-hidden animate-fade-in-up" style="animation-delay: 0.2s">
-				<div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-primary-100 to-transparent rounded-bl-full opacity-50 group-hover:opacity-100 transition-opacity duration-500"></div>
-				<div class="relative z-10 text-center">
-					<div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform duration-500">
-						<span class="text-4xl">📍</span>
+				<div class="text-center">
+					<div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+						<span class="text-3xl">📍</span>
 					</div>
-					<h3 class="font-display text-2xl font-bold mb-4 text-gray-900">Local Expertise</h3>
-					<p class="text-gray-700 leading-relaxed text-lg">
-						Deep understanding of Las Vegas neighborhoods, market trends, and the unique characteristics of each community.
+					<h3 class="text-xl font-bold text-gray-900 mb-2">Local Expertise</h3>
+					<p class="text-gray-600">
+						Deep knowledge of Las Vegas neighborhoods and market trends.
 					</p>
 				</div>
 			</div>
@@ -156,187 +293,95 @@
 </section>
 
 <!-- Services Section -->
-<section class="section relative bg-white">
-	<div class="container-premium">
-		<div class="text-center mb-20">
-			<h2 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">
-				Comprehensive Real Estate Services
-			</h2>
-			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
-			<p class="text-xl text-gray-600 max-w-2xl mx-auto">
-				Everything you need for your real estate journey in Las Vegas
-			</p>
-		</div>
-		<div class="grid-premium md:grid-cols-2">
-			<div class="group relative bg-gradient-to-br from-white to-primary-50/50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 overflow-hidden">
-				<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-500 via-primary-600 to-primary-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-				<div class="flex items-start gap-6">
-					<div class="flex-shrink-0">
-						<div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500">
-							<span class="text-3xl">🏠</span>
-						</div>
-					</div>
-					<div class="flex-1">
-						<h3 class="font-display text-2xl font-bold mb-3 text-gray-900">Buying a Home</h3>
-						<p class="text-gray-700 mb-6 leading-relaxed text-lg">
-							Find your perfect Las Vegas home with expert guidance through every step of the buying process. From property search to closing, I'll help you navigate the market with confidence.
-						</p>
-						<a href="/properties" class="inline-flex items-center gap-2 text-primary-600 font-bold hover:text-primary-700 hover:gap-3 transition-all duration-300">
-							Browse Properties <span class="text-xl">→</span>
-						</a>
-					</div>
-				</div>
+<section class="py-16 bg-gray-50">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-7xl mx-auto">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Our Services</h2>
+				<p class="text-gray-600 text-lg">Comprehensive real estate solutions for all your needs</p>
 			</div>
-			<div class="group relative bg-gradient-to-br from-white to-primary-50/50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 overflow-hidden">
-				<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-500 via-primary-600 to-primary-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-				<div class="flex items-start gap-6">
-					<div class="flex-shrink-0">
-						<div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500">
-							<span class="text-3xl">💰</span>
-						</div>
+			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+				<a href="/properties" class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-200 group">
+					<div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-600 transition-colors">
+						<span class="text-2xl">🏠</span>
 					</div>
-					<div class="flex-1">
-						<h3 class="font-display text-2xl font-bold mb-3 text-gray-900">Selling Your Home</h3>
-						<p class="text-gray-700 mb-6 leading-relaxed text-lg">
-							Maximize your home's value with strategic marketing, professional staging advice, and expert negotiation. Get a free home valuation to start.
-						</p>
-						<a href="/home-value" class="inline-flex items-center gap-2 text-primary-600 font-bold hover:text-primary-700 hover:gap-3 transition-all duration-300">
-							Get Free Valuation <span class="text-xl">→</span>
-						</a>
+					<h3 class="text-lg font-bold text-gray-900 mb-2">Buying</h3>
+					<p class="text-gray-600 text-sm">Find your perfect home with expert guidance</p>
+				</a>
+				<a href="/home-value" class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-200 group">
+					<div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-600 transition-colors">
+						<span class="text-2xl">💰</span>
 					</div>
-				</div>
-			</div>
-			<div class="group relative bg-gradient-to-br from-white to-primary-50/50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 overflow-hidden">
-				<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-500 via-primary-600 to-primary-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-				<div class="flex items-start gap-6">
-					<div class="flex-shrink-0">
-						<div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500">
-							<span class="text-3xl">🔑</span>
-						</div>
+					<h3 class="text-lg font-bold text-gray-900 mb-2">Selling</h3>
+					<p class="text-gray-600 text-sm">Maximize your home's value</p>
+				</a>
+				<a href="/rentals" class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-200 group">
+					<div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-600 transition-colors">
+						<span class="text-2xl">🔑</span>
 					</div>
-					<div class="flex-1">
-						<h3 class="font-display text-2xl font-bold mb-3 text-gray-900">Rental Properties</h3>
-						<p class="text-gray-700 mb-6 leading-relaxed text-lg">
-							Explore luxury rental opportunities throughout Las Vegas. Find the perfect rental property or list your property for rent.
-						</p>
-						<a href="/rentals" class="inline-flex items-center gap-2 text-primary-600 font-bold hover:text-primary-700 hover:gap-3 transition-all duration-300">
-							View Rentals <span class="text-xl">→</span>
-						</a>
+					<h3 class="text-lg font-bold text-gray-900 mb-2">Rentals</h3>
+					<p class="text-gray-600 text-sm">Luxury rental properties</p>
+				</a>
+				<a href="/properties" class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow border border-gray-200 group">
+					<div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary-600 transition-colors">
+						<span class="text-2xl">📊</span>
 					</div>
-				</div>
-			</div>
-			<div class="group relative bg-gradient-to-br from-white to-primary-50/50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100 overflow-hidden">
-				<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-500 via-primary-600 to-primary-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-				<div class="flex items-start gap-6">
-					<div class="flex-shrink-0">
-						<div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500">
-							<span class="text-3xl">📊</span>
-						</div>
-					</div>
-					<div class="flex-1">
-						<h3 class="font-display text-2xl font-bold mb-3 text-gray-900">Investment Properties</h3>
-						<p class="text-gray-700 mb-6 leading-relaxed text-lg">
-							Build your real estate portfolio with strategic investment opportunities in Las Vegas. Expert analysis and market insights to help you make informed decisions.
-						</p>
-						<a href="/properties" class="inline-flex items-center gap-2 text-primary-600 font-bold hover:text-primary-700 hover:gap-3 transition-all duration-300">
-							Explore Investments <span class="text-xl">→</span>
-						</a>
-					</div>
-				</div>
+					<h3 class="text-lg font-bold text-gray-900 mb-2">Investments</h3>
+					<p class="text-gray-600 text-sm">Build your portfolio</p>
+				</a>
 			</div>
 		</div>
 	</div>
 </section>
 
 <!-- Featured Communities -->
-<section class="section relative" style="background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);">
-	<div class="container-premium">
-		<div class="text-center mb-20">
-			<h2 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">
-				Featured Las Vegas Communities
-			</h2>
-			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
-			<p class="text-xl text-gray-600 max-w-2xl mx-auto">
-				Discover the finest neighborhoods Las Vegas has to offer
-			</p>
-		</div>
-		<div class="grid-premium md:grid-cols-3">
-			<div class="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-gray-100 overflow-hidden">
-				<div class="absolute inset-0 bg-gradient-to-br from-primary-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-				<div class="relative z-10">
-					<div class="w-12 h-1 bg-gradient-to-r from-primary-500 to-primary-700 rounded-full mb-6"></div>
-					<h3 class="font-display text-2xl font-bold mb-4 text-gray-900">West Summerlin</h3>
-					<p class="text-gray-700 mb-6 leading-relaxed text-lg">
-						Luxury homes in one of Las Vegas's most prestigious master-planned communities.
-					</p>
-					<a href="/properties" class="inline-flex items-center gap-2 text-primary-600 font-bold hover:text-primary-700 hover:gap-3 transition-all duration-300">
-						View Properties <span class="text-xl">→</span>
-					</a>
-				</div>
+<section class="py-16 bg-white">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-7xl mx-auto">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Popular Neighborhoods</h2>
+				<p class="text-gray-600 text-lg">Explore Las Vegas's most sought-after communities</p>
 			</div>
-			<div class="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-gray-100 overflow-hidden">
-				<div class="absolute inset-0 bg-gradient-to-br from-primary-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-				<div class="relative z-10">
-					<div class="w-12 h-1 bg-gradient-to-r from-primary-500 to-primary-700 rounded-full mb-6"></div>
-					<h3 class="font-display text-2xl font-bold mb-4 text-gray-900">The Ridges</h3>
-					<p class="text-gray-700 mb-6 leading-relaxed text-lg">
-						Exclusive gated community with stunning mountain views and luxury amenities.
-					</p>
-					<a href="/properties" class="inline-flex items-center gap-2 text-primary-600 font-bold hover:text-primary-700 hover:gap-3 transition-all duration-300">
-						View Properties <span class="text-xl">→</span>
-					</a>
-				</div>
-			</div>
-			<div class="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 border border-gray-100 overflow-hidden">
-				<div class="absolute inset-0 bg-gradient-to-br from-primary-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-				<div class="relative z-10">
-					<div class="w-12 h-1 bg-gradient-to-r from-primary-500 to-primary-700 rounded-full mb-6"></div>
-					<h3 class="font-display text-2xl font-bold mb-4 text-gray-900">Red Rock Country Club</h3>
-					<p class="text-gray-700 mb-6 leading-relaxed text-lg">
-						Premier golf course community with luxury estates and world-class amenities.
-					</p>
-					<a href="/properties" class="inline-flex items-center gap-2 text-primary-600 font-bold hover:text-primary-700 hover:gap-3 transition-all duration-300">
-						View Properties <span class="text-xl">→</span>
-					</a>
-				</div>
+			<div class="grid md:grid-cols-3 gap-6">
+				<a href="/properties?neighborhood=west-summerlin" class="group bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow border border-gray-200 overflow-hidden">
+					<div class="h-48 bg-gradient-to-br from-primary-100 to-primary-200"></div>
+					<div class="p-6">
+						<h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">West Summerlin</h3>
+						<p class="text-gray-600 text-sm mb-4">Luxury master-planned community</p>
+						<span class="text-primary-600 font-semibold text-sm">View Properties →</span>
+					</div>
+				</a>
+				<a href="/properties?neighborhood=the-ridges" class="group bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow border border-gray-200 overflow-hidden">
+					<div class="h-48 bg-gradient-to-br from-primary-200 to-primary-300"></div>
+					<div class="p-6">
+						<h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">The Ridges</h3>
+						<p class="text-gray-600 text-sm mb-4">Exclusive gated community</p>
+						<span class="text-primary-600 font-semibold text-sm">View Properties →</span>
+					</div>
+				</a>
+				<a href="/properties?neighborhood=red-rock" class="group bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow border border-gray-200 overflow-hidden">
+					<div class="h-48 bg-gradient-to-br from-primary-300 to-primary-400"></div>
+					<div class="p-6">
+						<h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">Red Rock Country Club</h3>
+						<p class="text-gray-600 text-sm mb-4">Premier golf course community</p>
+						<span class="text-primary-600 font-semibold text-sm">View Properties →</span>
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>
 </section>
 
 <!-- Testimonials Section -->
-<section class="section relative bg-white">
-	<div class="container-premium">
-		<div class="text-center mb-20">
-			<h2 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">
-				What My Clients Say
-			</h2>
-			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
-			<p class="text-xl text-gray-600 max-w-2xl mx-auto">
-				Real experiences from satisfied clients across Las Vegas
-			</p>
-		</div>
-		<div class="grid-premium md:grid-cols-3 gap-8">
-			<div class="group relative bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-				<div class="mb-6">
-					<div class="flex items-center gap-1 mb-4">
-						{#each Array(5) as _}
-							<svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
-								<path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
-							</svg>
-						{/each}
-					</div>
-					<p class="text-gray-700 leading-relaxed text-lg mb-6">
-						"Dr. Duffy made our first home buying experience seamless. Her knowledge of the Las Vegas market and attention to detail helped us find the perfect home within our budget."
-					</p>
-				</div>
-				<div class="border-t border-gray-200 pt-6">
-					<div class="font-display font-bold text-gray-900 text-lg">Sarah & Mike Johnson</div>
-					<div class="text-sm text-gray-600">First-time Buyers</div>
-				</div>
+<section class="py-16 bg-gray-50">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-7xl mx-auto">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Client Testimonials</h2>
+				<p class="text-gray-600 text-lg">What our clients say about working with us</p>
 			</div>
-			<div class="group relative bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-				<div class="mb-6">
+			<div class="grid md:grid-cols-3 gap-6">
+				<div class="bg-white rounded-xl p-6 shadow-md border border-gray-200">
 					<div class="flex items-center gap-1 mb-4">
 						{#each Array(5) as _}
 							<svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
@@ -344,17 +389,31 @@
 							</svg>
 						{/each}
 					</div>
-					<p class="text-gray-700 leading-relaxed text-lg mb-6">
+					<p class="text-gray-700 mb-4">
+						"Dr. Duffy made our first home buying experience seamless. Her knowledge of the Las Vegas market and attention to detail helped us find the perfect home."
+					</p>
+					<div class="border-t border-gray-100 pt-4">
+						<div class="font-bold text-gray-900">Sarah & Mike Johnson</div>
+						<div class="text-sm text-gray-600">First-time Buyers</div>
+					</div>
+				</div>
+				<div class="bg-white rounded-xl p-6 shadow-md border border-gray-200">
+					<div class="flex items-center gap-1 mb-4">
+						{#each Array(5) as _}
+							<svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+								<path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+							</svg>
+						{/each}
+					</div>
+					<p class="text-gray-700 mb-4">
 						"Jan's expertise in luxury properties is unmatched. She helped us sell our home for 15% above asking price and found us an incredible investment property."
 					</p>
+					<div class="border-t border-gray-100 pt-4">
+						<div class="font-bold text-gray-900">Robert Chen</div>
+						<div class="text-sm text-gray-600">Luxury Home Seller & Investor</div>
+					</div>
 				</div>
-				<div class="border-t border-gray-200 pt-6">
-					<div class="font-display font-bold text-gray-900 text-lg">Robert Chen</div>
-					<div class="text-sm text-gray-600">Luxury Home Seller & Investor</div>
-				</div>
-			</div>
-			<div class="group relative bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-				<div class="mb-6">
+				<div class="bg-white rounded-xl p-6 shadow-md border border-gray-200">
 					<div class="flex items-center gap-1 mb-4">
 						{#each Array(5) as _}
 							<svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
@@ -362,90 +421,63 @@
 							</svg>
 						{/each}
 					</div>
-					<p class="text-gray-700 leading-relaxed text-lg mb-6">
+					<p class="text-gray-700 mb-4">
 						"Professional, responsive, and results-driven. Jan's market knowledge and negotiation skills saved us thousands on our home purchase."
 					</p>
-				</div>
-				<div class="border-t border-gray-200 pt-6">
-					<div class="font-display font-bold text-gray-900 text-lg">Lisa Martinez</div>
-					<div class="text-sm text-gray-600">Relocating from California</div>
+					<div class="border-t border-gray-100 pt-4">
+						<div class="font-bold text-gray-900">Lisa Martinez</div>
+						<div class="text-sm text-gray-600">Relocating from California</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="text-center mt-12">
-			<a href="/about#testimonials" class="inline-flex items-center gap-2 text-primary-600 font-bold hover:text-primary-700 hover:gap-3 transition-all duration-300 text-lg">
-				Read More Testimonials <span class="text-xl">→</span>
-			</a>
 		</div>
 	</div>
 </section>
 
 <!-- Market Statistics Section -->
-<section class="section relative" style="background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);">
-	<div class="container-premium">
-		<div class="text-center mb-20">
-			<h2 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">
-				Las Vegas Market Insights
-			</h2>
-			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
-			<p class="text-xl text-gray-600 max-w-2xl mx-auto">
-				Current market trends and statistics to guide your real estate decisions
-			</p>
-		</div>
-		<div class="grid-premium md:grid-cols-4 gap-8">
-			<div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-				<div class="text-5xl font-display font-bold text-primary-600 mb-4">$485K</div>
-				<div class="text-gray-600 font-semibold mb-2">Median Home Price</div>
-				<div class="text-sm text-gray-500">Single-family homes</div>
+<section class="py-16 bg-white">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-7xl mx-auto">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Market Insights</h2>
+				<p class="text-gray-600 text-lg">Current Las Vegas real estate statistics</p>
 			</div>
-			<div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-				<div class="text-5xl font-display font-bold text-primary-600 mb-4">46</div>
-				<div class="text-gray-600 font-semibold mb-2">Days on Market</div>
-				<div class="text-sm text-gray-500">Average time to sell</div>
+			<div class="grid md:grid-cols-4 gap-6">
+				<div class="bg-gray-50 rounded-xl p-6 text-center border border-gray-200">
+					<div class="text-3xl md:text-4xl font-bold text-primary-600 mb-2">$485K</div>
+					<div class="text-gray-700 font-semibold">Median Home Price</div>
+				</div>
+				<div class="bg-gray-50 rounded-xl p-6 text-center border border-gray-200">
+					<div class="text-3xl md:text-4xl font-bold text-primary-600 mb-2">46</div>
+					<div class="text-gray-700 font-semibold">Days on Market</div>
+				</div>
+				<div class="bg-gray-50 rounded-xl p-6 text-center border border-gray-200">
+					<div class="text-3xl md:text-4xl font-bold text-primary-600 mb-2">98%</div>
+					<div class="text-gray-700 font-semibold">List Price Received</div>
+				</div>
+				<div class="bg-gray-50 rounded-xl p-6 text-center border border-gray-200">
+					<div class="text-3xl md:text-4xl font-bold text-primary-600 mb-2">4</div>
+					<div class="text-gray-700 font-semibold">Months Supply</div>
+				</div>
 			</div>
-			<div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-				<div class="text-5xl font-display font-bold text-primary-600 mb-4">98%</div>
-				<div class="text-gray-600 font-semibold mb-2">List Price Received</div>
-				<div class="text-sm text-gray-500">Average sale price ratio</div>
-			</div>
-			<div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
-				<div class="text-5xl font-display font-bold text-primary-600 mb-4">4</div>
-				<div class="text-gray-600 font-semibold mb-2">Months Supply</div>
-				<div class="text-sm text-gray-500">Current inventory level</div>
-			</div>
-		</div>
-		<div class="text-center mt-12">
-			<p class="text-gray-600 mb-4">Data based on October 2025 Las Vegas real estate market</p>
-			<a href="/blog" class="inline-flex items-center gap-2 text-primary-600 font-bold hover:text-primary-700 hover:gap-3 transition-all duration-300">
-				Read Market Reports <span class="text-xl">→</span>
-			</a>
 		</div>
 	</div>
 </section>
 
 <!-- CTA Section -->
-<section class="relative overflow-hidden bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white py-24" style="position: relative;">
-	<!-- Animated Background -->
-	<div class="absolute inset-0 overflow-hidden">
-		<div class="absolute top-1/4 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
-		<div class="absolute bottom-1/4 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 1.5s;"></div>
-	</div>
-	
-	<div class="container-premium relative z-10">
-		<div class="max-w-4xl mx-auto text-center animate-fade-in-up">
-			<h2 class="font-display text-5xl md:text-6xl font-bold mb-6 text-white" style="text-shadow: 0 4px 20px rgba(0,0,0,0.3); letter-spacing: -0.02em;">
-				Ready to Start Your Real Estate Journey?
-			</h2>
-			<p class="text-xl md:text-2xl mb-12 text-white/95 max-w-2xl mx-auto leading-relaxed" style="text-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+<section class="py-16 bg-primary-600">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-4xl mx-auto text-center">
+			<h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Find Your Dream Home?</h2>
+			<p class="text-xl text-white/90 mb-8">
 				Let's discuss your real estate goals and how I can help you achieve them.
 			</p>
-			<div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-				<a href="/contact" class="group relative overflow-hidden bg-white text-primary-700 px-10 py-5 rounded-xl font-bold text-lg shadow-2xl hover:shadow-white/30 transition-all duration-300 hover:scale-110 hover:-translate-y-1">
-					<span class="relative z-10">Schedule Consultation</span>
-					<div class="absolute inset-0 bg-gradient-to-r from-primary-50 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+			<div class="flex flex-col sm:flex-row gap-4 justify-center">
+				<a href="/contact" class="bg-white text-primary-600 hover:bg-gray-100 font-bold px-8 py-3 rounded-lg transition-colors shadow-lg">
+					Schedule Consultation
 				</a>
-				<a href="/home-value" class="group relative overflow-hidden bg-transparent text-white border-2 border-white/50 px-10 py-5 rounded-xl font-bold text-lg backdrop-blur-sm hover:bg-white hover:text-primary-700 transition-all duration-300 hover:scale-110 hover:-translate-y-1">
-					<span class="relative z-10">Get Free Home Valuation</span>
+				<a href="/home-value" class="bg-transparent text-white border-2 border-white hover:bg-white hover:text-primary-600 font-bold px-8 py-3 rounded-lg transition-colors">
+					Get Free Home Valuation
 				</a>
 			</div>
 		</div>
