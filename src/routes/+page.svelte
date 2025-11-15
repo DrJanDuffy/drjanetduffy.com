@@ -152,7 +152,7 @@
 					Las Vegas Concierge Real Estate Services - Summerlin to Skye Canyon
 				</h1>
 				<p class="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-					Your dedicated Las Vegas real estate professional providing comprehensive, personalized service across the valley's most desirable communities. Serving Summerlin, Skye Canyon, Centennial Hills, and North Las Vegas, Dr. Janet Duffy Real Estate provides concierge-level service that handles every detail of your transaction. From coordinating pool inspections to managing HOA documents across multiple master-planned communities, I ensure your Vegas home buying or selling experience is seamless. Let me help you navigate our unique desert market.
+					Your dedicated Las Vegas real estate professional providing comprehensive, personalized service across the valley's most desirable communities. Serving Summerlin, Skye Canyon, Centennial Hills, Henderson, and North Las Vegas, Dr. Janet Duffy Real Estate functions like a personal concierge desk: I book private showings, coordinate vendor access, analyze multiple offers, and keep you informed with real-time market intelligence so you never wonder what comes next. From managing pool inspections and solar transfers to translating HOA bylaws and master-plan design guidelines, every logistical detail is handled with calm precision. Let me introduce you to neighborhoods locals love, unlock builder incentives that rarely appear online, and negotiate with the confidence that only 15+ years of desert market experience can provide.
 				</p>
 			</div>
 
@@ -214,6 +214,152 @@
 	</div>
 </section>
 
+<!-- FAQ Section -->
+<section class="section bg-gray-50">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-5xl mx-auto">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Questions Do Las Vegas Buyers and Sellers Ask Most Often?</h2>
+			<p class="text-lg text-gray-700 leading-relaxed mb-8 text-center">
+				Every conversation introduces new variables, yet these core questions appear in almost every strategy call. Use the answers below as a starting point, then reach out so we can tailor guidance to your timeline, budget, and lifestyle.
+			</p>
+			<div class="space-y-6">
+				<div class="bg-white rounded-2xl shadow-lg p-6">
+					<h3 class="text-2xl font-bold text-gray-900 mb-3">How long does it really take to buy a home in Las Vegas?</h3>
+					<p class="text-gray-700 leading-relaxed">
+						Most financed purchases close in 30-35 days once we are under contract. Cash deals can wrap in 10-15 days if title is clear. The variable is pre-offer preparation—clients who complete underwriting in advance, review HOA budgets, and tour multiple communities up front often secure their home within 45 days of contacting me. I provide weekly timelines so you always know what is expected next.
+					</p>
+				</div>
+				<div class="bg-white rounded-2xl shadow-lg p-6">
+					<h3 class="text-2xl font-bold text-gray-900 mb-3">What incentives are builders offering right now?</h3>
+					<p class="text-gray-700 leading-relaxed">
+						Builder incentives change monthly, but current trends include rate buydowns, $10K-$30K design-center credits, and free backyard packages on spec homes that have been standing for 60+ days. I maintain relationships with sales managers across Toll Brothers, Pulte, Richmond American, Lennar, and Tri Pointe, allowing my clients to access unpublished incentives or cancellations before they are marketed publicly.
+					</p>
+				</div>
+				<div class="bg-white rounded-2xl shadow-lg p-6">
+					<h3 class="text-2xl font-bold text-gray-900 mb-3">Do sellers still need to stage in a low-inventory market?</h3>
+					<p class="text-gray-700 leading-relaxed">
+						Yes—professionally staged homes capture more traffic within the first 72 hours and typically sell with at least one backup offer. Staging highlights architectural features, disguises furniture wear, and makes photos scroll-stopping for remote buyers. I cover the consultation, manage the install, and coordinate removal so the process feels effortless.
+					</p>
+				</div>
+				<div class="bg-white rounded-2xl shadow-lg p-6">
+					<h3 class="text-2xl font-bold text-gray-900 mb-3">How do we compete if we need to sell before we buy?</h3>
+					<p class="text-gray-700 leading-relaxed">
+						We can deploy bridge-loan products, rent-back agreements, or contingent offers supported by proof of funds and aggressive listing timelines. I map both transactions on a single calendar, coordinate simultaneous closings, and negotiate temporary occupancy so you never feel rushed out of one property while searching for the next.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Trust Section -->
+<section class="section bg-white">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-5xl mx-auto">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Do Executives, Military Families, and Investors Trust Dr. Janet Duffy?</h2>
+			<p class="text-lg text-gray-700 leading-relaxed mb-6">
+				My business is built on referrals from people whose livelihoods depend on accuracy—healthcare executives relocating to Summerlin Hospital, Nellis Air Force families needing fast closing timelines, and entrepreneurs seeking 1031 exchange opportunities. They value transparent communication, clear metrics, and the ability to adapt quickly when corporate timelines shift. I am known for responding within hours, not days, and for presenting solutions rather than problems whenever an appraisal, inspection, or lending issue surfaces.
+			</p>
+			<p class="text-lg text-gray-700 leading-relaxed mb-6">
+				Testimonials highlight the same themes: proactive planning, calm negotiation style, and an uncanny ability to connect clients with vetted service providers—from estate planners and tax strategists to pool resurfacing crews and desert landscapers. I track every vendor’s performance and rotate as needed so you only work with professionals who deliver excellence. After closing, I check in quarterly to ensure warranties are registered, tax records are accurate, and investment assumptions still hold.
+			</p>
+			<p class="text-lg text-gray-700 leading-relaxed">
+				Trust is also reinforced by credentials: CRS, ABR, GRI, Luxury Home Marketing Specialist, and Certified Negotiation Expert. Education matters because it keeps me sharp on contract law, risk mitigation, and marketing innovation. Pair that with deep local roots and you have an advisor who treats your goals with the same care I apply to my own portfolio.
+			</p>
+		</div>
+	</div>
+</section>
+
+<!-- Resource Support -->
+<section class="section bg-gray-50">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-5xl mx-auto">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Which Digital Resources Keep You Confident Between Showings and Closings?</h2>
+			<p class="text-lg text-gray-700 leading-relaxed mb-6">
+				Clients stay calm when information is easy to access. I provide a personalized dashboard that houses lender quotes, inspection summaries, title commitments, and contingency deadlines. You can message me directly in the portal, upload receipts, or download HOA docs without digging through email threads. Weekly market snapshots summarize interest-rate trends, new inventory, and comparable closings so you always know whether to accelerate or pause.
+			</p>
+			<p class="text-lg text-gray-700 leading-relaxed mb-6">
+				Prefer a more conversational approach? I record Loom videos after every major milestone to explain what happened, what is next, and which documents need signatures. Relocating clients share those videos with spouses, financial advisors, or relocation reps to keep everyone aligned. Investors receive quarterly rent projections and maintenance schedules, while luxury buyers get curated lifestyle guides covering private clubs, social memberships, and concierge services.
+			</p>
+			<p class="text-lg text-gray-700 leading-relaxed">
+				This digital backbone supplements, not replaces, human connection. You can still call, text, or meet in person, but you will never wonder where a contract lives or whether an earnest-money extension was filed. Empowered clients make faster decisions, negotiate with confidence, and ultimately enjoy the process more.
+			</p>
+		</div>
+	</div>
+</section>
+
+<!-- Seller Strategy -->
+<section class="section bg-white">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-5xl mx-auto">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Do We Position Your Las Vegas Home for Multiple Offers and Record Equity?</h2>
+			<p class="text-lg text-gray-700 leading-relaxed mb-6">
+				Selling in 2025 requires precise storytelling. I start with a pre-list appraisal-style analysis that measures your home against the top five closed comps plus active competitors so we can price within 1.5% of the sweet spot that triggers showings. Then we deploy my “seven-day shine” program: day one repairs and paint touch-ups, day two landscaping refresh, day three deep clean, day four designer staging or merchandising, day five cinematic photography, day six social teasers, and day seven MLS launch with reverse prospecting to buyer agents who already have clients in your price band.
+			</p>
+			<p class="text-lg text-gray-700 leading-relaxed mb-6">
+				Marketing collaterals include 4K video tours, interactive floor plans, lifestyle reels for Instagram and LinkedIn, and geo-targeted email blasts to relocation partners across California and the Pacific Northwest. Because many buyers shop remotely, I create “live-in guides” that explain utility costs, SMART home integrations, community fee schedules, and local hotspots within a ten-minute drive. These micro-guides reduce buyer hesitation and inspire sight-unseen offers with higher earnest money.
+			</p>
+			<p class="text-lg text-gray-700 leading-relaxed">
+				During negotiations, I focus on net proceeds rather than brag-worthy list-to-sale ratios. We evaluate every offer for appraisal risk, repair caps, backup buyer strength, and timeline certainty. If it benefits you, I craft rent-back agreements so you can shop for your next home without feeling rushed. My sellers regularly close with fewer contingencies and stronger terms because the process is engineered for clarity, not chaos.
+			</p>
+		</div>
+	</div>
+</section>
+
+<!-- Buyer Roadmap -->
+<section class="section bg-gray-50">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-5xl mx-auto">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Does Our Buyer Roadmap Turn a Desert Dream Into Keys in Hand?</h2>
+			<p class="text-lg text-gray-700 leading-relaxed mb-6">
+				My buyer roadmap unfolds in five phases: discovery, touring, offer crafting, due diligence, and smooth closing. During discovery we build a decision matrix that ranks must-haves (lot size, school zoning, commute) against nice-to-haves (three-car garage, casita, backyard kitchen). Touring days are optimized to show a blend of MLS listings, private office exclusives, and builder VIP releases so you understand the full spectrum of options before writing an offer. I summarize each home in a shared dashboard with pros, cons, and estimated maintenance costs, making recap conversations fast and factual.
+			</p>
+			<p class="text-lg text-gray-700 leading-relaxed mb-6">
+				When it is time to submit an offer, I analyze absorption metrics and seller motivation to calibrate price, earnest money, appraisal gaps, and post-occupancy terms. Need to compete with multiple offers? We lean on escalation clauses, inspection waivers with pre-inspection data, or direct conversations with listing agents who already know my track record. Prefer a value play? I identify homes that have crossed the 21-day mark and craft concession-based strategies that trim your cash-to-close.
+			</p>
+			<p class="text-lg text-gray-700 leading-relaxed">
+				Once under contract, weekly check-ins keep you informed about appraisal scheduling, title reports, and loan milestones. I coordinate contractors for specialized inspections—think irrigation audits, solar transfers, or commercial-grade appliance checks—while you review digital records from anywhere. By the time we reach the signing table, you understand every line item and feel confident that nothing slipped through the cracks.
+			</p>
+		</div>
+	</div>
+</section>
+
+<!-- Community Fit Section -->
+<section class="section bg-white">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-6xl mx-auto">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Which Las Vegas Neighborhood Fits Your Lifestyle and Long-Term Goals?</h2>
+			<p class="text-lg text-gray-700 leading-relaxed mb-6">
+				Matching you with the right master plan is part science, part storytelling. We begin by evaluating commute expectations, school preferences, climate preferences (yes, Summerlin is three to five degrees cooler than Inspirada), and HOA appetite. Next, I layer in micro-level factors: trail access for morning runners, dedicated pickleball courts, dog parks, guard-gated security, or proximity to the future Brightline station. The result is a short list of villages—from The Canyons and The Vistas to Skye Hills and Tule Springs—that align with your lifestyle instead of forcing you to compromise.
+			</p>
+			<p class="text-lg text-gray-700 leading-relaxed mb-6">
+				To make the comparison intuitive, I prepare neighborhood scorecards that outline price ranges, appreciation history, HOA structures, and typical lot sizes. For example, The Ridges commands a 20-30% premium for Jack Nicklaus golf frontage, while Skye Canyon’s Innovation series attracts outdoor enthusiasts who crave quick escapes to Mount Charleston. I also show you “insider” nuances: which Summerlin streets enjoy unobstructed Red Rock sunsets, where the newest charter campuses are opening, and how traffic patterns shift once Formula 1 events or major conventions arrive. With this level of detail, you can confidently choose the village that will feel like home for years to come.
+			</p>
+			<p class="text-lg text-gray-700 leading-relaxed">
+				Already own in Las Vegas? I deliver the same neighborhood intelligence to sellers. Understanding who is most likely to buy your home—move-up locals, California tax refugees, or remote workers—allows us to tailor marketing narratives that resonate. We emphasize the backyard orientation that captures afternoon shade, the dual offices that support hybrid work, or the upgraded insulation that keeps garages cooler than 100°F. Neighborhood storytelling is the difference between listing data and an emotional connection that inspires premium offers.
+			</p>
+		</div>
+	</div>
+</section>
+
+<!-- Concierge Service Overview -->
+<section class="section bg-white">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-5xl mx-auto">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Does Dr. Janet Duffy Deliver Concierge-Level Real Estate Service Across Las Vegas?</h2>
+			<p class="text-lg text-gray-700 leading-relaxed mb-6">
+				Concierge real estate means every stage of your move is orchestrated for you. I begin with a two-part strategy session: first we define your lifestyle, commute, school, and recreation goals; then we map those goals to precisely researched neighborhoods stretching from Downtown Summerlin to Lake Las Vegas. You receive curated property dossiers that summarize HOA costs, recent comparables, solar ownership status, and walkability scores so you can compare homes at a glance. When you are ready to tour, I stage efficient routes that minimize backtracking and highlight hidden amenities such as community gardens, private trailheads, or residents-only fitness clubs.
+			</p>
+			<p class="text-lg text-gray-700 leading-relaxed mb-6">
+				Once you fall in love with a property, concierge service shifts into logistical overdrive. I coordinate same-day lender introductions, schedule inspectors familiar with desert-specific systems, and pre-negotiate repairs with trusted vendors before surprises derail timelines. Sellers benefit from white-glove listing preparation that covers landscapers, pool techs, staging pros, and cinematographers. Every update is summarized in shared dashboards and voice notes so relocating executives, military families, and investors can make decisions from any time zone. Concierge is not a buzzword—it is a promise that I will anticipate the next three tasks before you even think to ask.
+			</p>
+			<p class="text-lg text-gray-700 leading-relaxed">
+				The final piece is advocacy. I maintain ongoing relationships with builders, HOA boards, and escrow officers, which means your file never stalls on someone’s desk. Whether you are pursuing a $350K townhome or a $3M custom estate, you receive the same proactive communication, luxury-level marketing, and negotiation rigor. My role is to remove friction so you can focus on picturing your life in the desert—not on paperwork pileups or unanswered calls.
+			</p>
+		</div>
+	</div>
+</section>
+
 <!-- Featured Properties -->
 <section class="section bg-white">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -221,7 +367,10 @@
 			<div class="text-center mb-12">
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Featured Las Vegas Properties Are Available?</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
-					Featured Las Vegas properties include hand-picked premium homes, luxury estates, single-family homes, condos, and townhomes across Summerlin, Skye Canyon, Centennial Hills, Henderson, and other premier communities. These properties feature exceptional value, prime locations, and quality amenities that make them stand out in the Las Vegas real estate market. Browse Las Vegas's most sought-after luxury homes, luxury estates, single-family homes, condos, and townhomes across Summerlin, Skye Canyon, Centennial Hills, and other planned communities.
+					Featured Las Vegas properties include hand-picked premium homes, luxury estates, single-family homes, condos, and townhomes across Summerlin, Skye Canyon, Centennial Hills, Henderson, and other premier communities. These properties feature exceptional value, prime locations, and quality amenities that make them stand out in the Las Vegas real estate market. Browse Las Vegas's most sought-after luxury homes, single-family residences, modern townhomes, and lock-and-leave condos across Summerlin, Skye Canyon, Centennial Hills, and other planned communities.
+				</p>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
+					Every showcase lineup refreshes weekly to highlight price improvements, designer remodels, and new-construction releases before they flood the open market. Expect to see golf-front estates in The Ridges, Sky-View lots in Skye Canyon, half-acre ranches in North Las Vegas, and smartly renovated bungalows near the Las Vegas Medical District. Each featured property includes context that algorithms miss—sunset orientation, pet restrictions, door-to-strip commute times, and anticipated HOA capital projects—so you can evaluate livability as well as aesthetics. Use the gallery below to bookmark favorites, then reach out for private video tours or in-person experiences tailored to your schedule.
 				</p>
 			</div>
 
@@ -260,6 +409,24 @@
 	</div>
 </section>
 
+<!-- Market Trends -->
+<section class="section bg-gray-50">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-6xl mx-auto">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Market Trends Should Las Vegas Buyers and Sellers Watch in 2025?</h2>
+			<p class="text-lg text-gray-700 leading-relaxed mb-6">
+				Las Vegas continues to balance migration-fueled demand with limited inventory. As of Q1 2025, we are tracking 7,200 active listings valley-wide—down 14% from last spring—while average days on market sits at 28 for properties under $900K and 42 for luxury inventory. Mortgage rates hovering between 5.9% and 6.4% have nudged some buyers to wait, yet well-prepared clients still secure homes with modest seller credits and rate buydowns. I keep you updated with weekly MLS absorption reports segmented by price band, so you can decide when to act versus when to negotiate aggressively.
+			</p>
+			<p class="text-lg text-gray-700 leading-relaxed mb-6">
+				Summerlin, Skye Canyon, and Henderson master plans remain appreciation leaders because of school rankings, amenity packages, and access to the 215 Beltway. Meanwhile, North Las Vegas and Centennial Hills attract cash-flow investors thanks to larger lot sizes, VA-friendly builders, and rental yields exceeding 6.2%. Sellers should note that properly staged homes with modernized desert landscaping still command 3-5% premiums even when overall appreciation cools. That is why my listing prep checklist includes water-smart plant palettes, garage insulation updates, and pre-list pool inspections that eliminate buyer objections before they shrink your proceeds.
+			</p>
+			<p class="text-lg text-gray-700 leading-relaxed">
+				Finally, remote-work relocations from California, Arizona, and the Mountain West continue to reshape our market. These buyers often tour virtually before their first flight, so digital storytelling matters. I produce narrated walkthroughs, neighborhood drive videos, and data-backed comparisons that answer the questions they would ask in person. Whether you are upsizing locally or investing from afar, you gain a clear playbook that aligns with the realities of inventory, incentives, and seasonal demand cycles.
+			</p>
+		</div>
+	</div>
+</section>
+
 <!-- Quick Links to Other Sections -->
 <section class="section bg-gray-50">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -268,6 +435,9 @@
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Services and Resources Are Available for Your Las Vegas Real Estate Journey?</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
 					Services and resources available for your Las Vegas real estate journey include expert buyer and seller representation, comprehensive guides for buying and selling, neighborhood exploration tools, client testimonials, buying and selling guides, helpful resources, and frequently asked questions that provide everything you need to successfully navigate Las Vegas real estate transactions. My concierge service includes HOA document coordination across master-planned communities, pool inspection coordination, desert-specific home considerations, and personalized neighborhood tours showing parks, schools, shopping, and hidden gems locals love.
+				</p>
+				<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
+					Think of this page as your control center. Each tile below unlocks deeper content—step-by-step guides, relocation checklists, closing-cost calculators, and neighborhood cheat sheets that explain why a $900K home appreciates faster in The Paseos than in Mountains Edge. I refreshed every resource in 2025 to reflect the newest water authority regulations, energy incentives, and resort-corridor developments so you are reading current intel, not outdated blog posts. Bookmark the sections you need now, then return whenever new questions pop up during inspections, appraisal gaps, or lease-back negotiations.
 				</p>
 			</div>
 			
@@ -349,6 +519,9 @@
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Explore Summerlin, Skye Canyon, Centennial Hills, or North Las Vegas?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 				I'll provide personalized neighborhood tours and handle every detail of your transaction. From coordinating pool inspections to managing HOA documents across multiple master-planned communities, Dr. Janet Duffy ensures your Vegas home buying or selling experience is seamless. With 15+ years of Las Vegas real estate experience, deep knowledge of every HOA, every builder, and every neighborhood intimately, I'll help you find your perfect home in Summerlin, Skye Canyon, Centennial Hills, or North Las Vegas.
+			</p>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed">
+				Whether you are moving across town, across the country, or upgrading an investment portfolio, you deserve a trusted ally who understands both the emotional and financial stakes. I am ready to listen, strategize, and execute with the professionalism you expect from a concierge advisor. Let’s schedule a consultation, align on goals, and build the exact roadmap that leads you home.
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary">Schedule a Consultation</a>
