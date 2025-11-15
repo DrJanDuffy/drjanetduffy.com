@@ -14,20 +14,20 @@
 
 <nav class="bg-white/98 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-gray-200/50" style="backdrop-filter: blur(20px) saturate(180%); -webkit-backdrop-filter: blur(20px) saturate(180%);">
 	<div class="container-premium">
-		<div class="flex justify-between items-center h-20">
+		<div class="flex justify-between items-center h-20 w-full">
 			<!-- Logo -->
-			<a href="/" class="flex items-center space-x-3 group">
+			<a href="/" class="flex items-center space-x-3 group flex-shrink-0">
 				<div class="w-12 h-12 bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-105 transition-all duration-300">
 					<span class="text-white font-bold text-sm">JD</span>
 				</div>
-				<div>
+				<div class="hidden sm:block">
 					<h1 class="text-xl font-display font-bold text-gray-900 group-hover:text-primary-700 transition-colors duration-300">Dr. Jan Duffy</h1>
 					<p class="text-xs text-gray-600 font-medium">REALTOR®</p>
 				</div>
 			</a>
 			
 			<!-- Desktop Navigation -->
-			<div class="hidden md:flex items-center space-x-8">
+			<div class="hidden md:flex items-center space-x-6 lg:space-x-8 flex-1 justify-center max-w-4xl mx-auto">
 				<a 
 					href="/" 
 					class="nav-link {$page.url.pathname === '/' ? 'active text-primary-600' : ''}"
@@ -72,7 +72,7 @@
 				</a>
 				<a 
 					href="tel:+17025551234" 
-					class="group relative overflow-hidden bg-gradient-to-r from-primary-600 to-primary-700 text-white px-6 py-2.5 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-0.5"
+					class="group relative overflow-hidden bg-gradient-to-r from-primary-600 to-primary-700 text-white px-5 py-2.5 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 whitespace-nowrap ml-4"
 				>
 					<span class="relative z-10">Call Now</span>
 					<div class="absolute inset-0 bg-gradient-to-r from-primary-700 to-primary-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
