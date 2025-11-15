@@ -196,30 +196,30 @@ const certifications = [
 				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">My Achievements</h2>
 				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
 			</div>
-			<div class="grid-premium md:grid-cols-4 gap-8">
-				<div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 group">
+                <div class="grid-premium md:grid-cols-4 gap-8">
+                    <div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 hover:scale-105 group">
 					<div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">
 						<TrendingUp class="w-8 h-8 text-white" />
 					</div>
 					<h3 class="font-display text-2xl font-bold mb-3 text-gray-900">{achievements[0].title}</h3>
 					<p class="text-gray-600 text-lg">{achievements[0].description}</p>
 				</div>
-				<div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 group">
-					<div class="w-16 h-16 bg-gradient-to-br from-primary-600 to-primary-800 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">
+                    <div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 hover:scale-105 group">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary-600 to-primary-800 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">
 						<Award class="w-8 h-8 text-white" />
 					</div>
 					<h3 class="font-display text-2xl font-bold mb-3 text-gray-900">{achievements[1].title}</h3>
 					<p class="text-gray-600 text-lg">{achievements[1].description}</p>
 				</div>
-				<div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 group">
-					<div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">
+                    <div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 hover:scale-105 group">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">
 						<Users class="w-8 h-8 text-white" />
 					</div>
 					<h3 class="font-display text-2xl font-bold mb-3 text-gray-900">{achievements[2].title}</h3>
 					<p class="text-gray-600 text-lg">{achievements[2].description}</p>
 				</div>
-				<div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 group">
-					<div class="w-16 h-16 bg-gradient-to-br from-primary-600 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">
+                    <div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 hover:scale-105 group">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary-600 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">
 						<Star class="w-8 h-8 text-white" />
 					</div>
 					<h3 class="font-display text-2xl font-bold mb-3 text-gray-900">{achievements[3].title}</h3>
@@ -338,45 +338,45 @@ const certifications = [
 				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
 			</div>
 			<div class="grid-premium md:grid-cols-3 gap-8">
-				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-					<div class="flex items-center gap-1 mb-4">
-						{#each Array(5) as _}
-							<Star class="w-5 h-5 text-yellow-400 fill-yellow-400" />
-						{/each}
-					</div>
-					<p class="text-gray-700 mb-6 leading-relaxed text-lg">
-						"Dr. Duffy made our first home buying experience seamless. Her knowledge of the Las Vegas market and attention to detail helped us find the perfect home within our budget."
-					</p>
+                    <div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:scale-105 border border-gray-100">
+                        <div class="flex items-center gap-1 mb-4">
+                            {#each Array(5) as _}
+                                <Star class="w-5 h-5 text-yellow-400 fill-yellow-400" />
+                            {/each}
+                        </div>
+                        <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                            "Dr. Duffy made our first home buying experience seamless. Her knowledge of the Las Vegas market and attention to detail helped us find the perfect home within our budget."
+                        </p>
 					<div class="border-t border-gray-200 pt-6">
 						<div class="font-display font-bold text-gray-900 text-lg">Sarah & Mike Johnson</div>
 						<div class="text-sm text-gray-600">First-time Buyers</div>
 					</div>
 				</div>
 				
-				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-					<div class="flex items-center gap-1 mb-4">
-						{#each Array(5) as _}
-							<Star class="w-5 h-5 text-yellow-400 fill-yellow-400" />
-						{/each}
-					</div>
-					<p class="text-gray-700 mb-6 leading-relaxed text-lg">
-						"Jan's expertise in luxury properties is unmatched. She helped us sell our home for 15% above asking price and found us an incredible investment property."
-					</p>
+                    <div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:scale-105 border border-gray-100">
+                        <div class="flex items-center gap-1 mb-4">
+                            {#each Array(5) as _}
+                                <Star class="w-5 h-5 text-yellow-400 fill-yellow-400" />
+                            {/each}
+                        </div>
+                        <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                            "Jan's expertise in luxury properties is unmatched. She helped us sell our home for 15% above asking price and found us an incredible investment property."
+                        </p>
 					<div class="border-t border-gray-200 pt-6">
 						<div class="font-display font-bold text-gray-900 text-lg">Robert Chen</div>
 						<div class="text-sm text-gray-600">Luxury Home Seller & Investor</div>
 					</div>
 				</div>
 				
-				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-					<div class="flex items-center gap-1 mb-4">
-						{#each Array(5) as _}
-							<Star class="w-5 h-5 text-yellow-400 fill-yellow-400" />
-						{/each}
-					</div>
-					<p class="text-gray-700 mb-6 leading-relaxed text-lg">
-						"Professional, responsive, and results-driven. Jan's market knowledge and negotiation skills saved us thousands on our home purchase."
-					</p>
+                    <div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:scale-105 border border-gray-100">
+                        <div class="flex items-center gap-1 mb-4">
+                            {#each Array(5) as _}
+                                <Star class="w-5 h-5 text-yellow-400 fill-yellow-400" />
+                            {/each}
+                        </div>
+                        <p class="text-gray-700 mb-6 leading-relaxed text-lg">
+                            "Professional, responsive, and results-driven. Jan's market knowledge and negotiation skills saved us thousands on our home purchase."
+                        </p>
 					<div class="border-t border-gray-200 pt-6">
 						<div class="font-display font-bold text-gray-900 text-lg">Lisa Martinez</div>
 						<div class="text-sm text-gray-600">Relocating from California</div>
