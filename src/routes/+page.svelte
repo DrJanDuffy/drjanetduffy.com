@@ -40,7 +40,7 @@
 					Find Your Dream Home in <span class="text-primary-600">Las Vegas</span>
 				</h1>
 				<p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
-					Expert real estate guidance from Dr. Janet Duffy, your trusted Las Vegas REALTOR®
+					Your trusted REALTOR® for buying, selling, and investing in Las Vegas real estate
 				</p>
 			</div>
 
@@ -102,7 +102,7 @@
 		<div class="max-w-7xl mx-auto">
 			<div class="text-center mb-12">
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Properties</h2>
-				<p class="text-lg text-gray-600">Discover exceptional Las Vegas homes</p>
+				<p class="text-lg text-gray-600">Explore our hand-picked selection of premium homes</p>
 			</div>
 
 			<div class="grid md:grid-cols-3 gap-6">
@@ -173,7 +173,7 @@
 		<div class="max-w-7xl mx-auto">
 			<div class="text-center mb-12">
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Dr. Janet Duffy?</h2>
-				<p class="text-lg text-gray-600">Your trusted Las Vegas real estate expert</p>
+				<p class="text-lg text-gray-600">Experience the difference of working with a dedicated expert</p>
 			</div>
 
 			<div class="grid md:grid-cols-3 gap-8">
@@ -211,37 +211,37 @@
 		<div class="max-w-7xl mx-auto">
 			<div class="text-center mb-12">
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
-				<p class="text-lg text-gray-600">Comprehensive real estate solutions</p>
+				<p class="text-lg text-gray-600">Comprehensive real estate solutions tailored to your needs</p>
 			</div>
 
 			<div class="grid md:grid-cols-4 gap-6">
 				<div class="card text-center">
-					<div class="inline-flex items-center justify-center w-12 h-12 bg-primary-100 rounded-lg mb-4">
-						<Home class="w-6 h-6 text-primary-600" />
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+						<Home class="w-8 h-8 text-primary-600" />
 					</div>
 					<h3 class="text-lg font-bold text-gray-900 mb-2">Buying</h3>
 					<p class="text-gray-600 text-sm">Expert guidance to find your perfect home</p>
 				</div>
 
 				<div class="card text-center">
-					<div class="inline-flex items-center justify-center w-12 h-12 bg-primary-100 rounded-lg mb-4">
-						<DollarSign class="w-6 h-6 text-primary-600" />
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+						<DollarSign class="w-8 h-8 text-primary-600" />
 					</div>
 					<h3 class="text-lg font-bold text-gray-900 mb-2">Selling</h3>
 					<p class="text-gray-600 text-sm">Maximize your home's value and sell faster</p>
 				</div>
 
 				<div class="card text-center">
-					<div class="inline-flex items-center justify-center w-12 h-12 bg-primary-100 rounded-lg mb-4">
-						<Building2 class="w-6 h-6 text-primary-600" />
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+						<Building2 class="w-8 h-8 text-primary-600" />
 					</div>
 					<h3 class="text-lg font-bold text-gray-900 mb-2">Rentals</h3>
 					<p class="text-gray-600 text-sm">Find the perfect rental property</p>
 				</div>
 
 				<div class="card text-center">
-					<div class="inline-flex items-center justify-center w-12 h-12 bg-primary-100 rounded-lg mb-4">
-						<TrendingUp class="w-6 h-6 text-primary-600" />
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+						<TrendingUp class="w-8 h-8 text-primary-600" />
 					</div>
 					<h3 class="text-lg font-bold text-gray-900 mb-2">Investments</h3>
 					<p class="text-gray-600 text-sm">Strategic real estate investment advice</p>
@@ -257,7 +257,7 @@
 		<div class="max-w-7xl mx-auto">
 			<div class="text-center mb-12">
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Popular Neighborhoods</h2>
-				<p class="text-lg text-gray-600">Explore Las Vegas's most desirable communities</p>
+				<p class="text-lg text-gray-600">Discover the best places to live in Las Vegas</p>
 			</div>
 
 			<div class="grid md:grid-cols-3 gap-6">
@@ -289,41 +289,41 @@
 		<div class="max-w-7xl mx-auto">
 			<div class="text-center mb-12">
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Client Testimonials</h2>
-				<p class="text-lg text-gray-600">What our clients say about working with us</p>
+				<p class="text-lg text-gray-600">Hear what our satisfied clients have to say</p>
 			</div>
 
 			<div class="grid md:grid-cols-3 gap-6">
 				<div class="card">
-					<div class="flex gap-1 mb-4">
+					<div class="flex gap-1 mb-4 justify-center">
 						{#each Array(5) as _}
-							<Star class="w-5 h-5 text-yellow-400 fill-current" />
+							<Star class="w-5 h-5 text-yellow-500 fill-yellow-500" />
 						{/each}
 					</div>
-					<p class="text-gray-700 mb-4 italic">"Dr. Duffy helped us find our dream home in West Summerlin. Her expertise and attention to detail made the entire process smooth and stress-free."</p>
-					<p class="font-semibold text-gray-900">Sarah Johnson</p>
-					<p class="text-sm text-gray-600">Las Vegas, NV</p>
+					<p class="text-gray-700 mb-4 italic text-center">"Dr. Duffy helped us find our dream home in West Summerlin. Her expertise and attention to detail made the entire process smooth and stress-free."</p>
+					<p class="font-semibold text-gray-900 text-center">Sarah Johnson</p>
+					<p class="text-sm text-gray-600 text-center">Las Vegas, NV</p>
 				</div>
 
 				<div class="card">
-					<div class="flex gap-1 mb-4">
+					<div class="flex gap-1 mb-4 justify-center">
 						{#each Array(5) as _}
-							<Star class="w-5 h-5 text-yellow-400 fill-current" />
+							<Star class="w-5 h-5 text-yellow-500 fill-yellow-500" />
 						{/each}
 					</div>
-					<p class="text-gray-700 mb-4 italic">"We sold our home above asking price thanks to Dr. Duffy's strategic marketing and negotiation skills. Highly recommend!"</p>
-					<p class="font-semibold text-gray-900">Michael Chen</p>
-					<p class="text-sm text-gray-600">Henderson, NV</p>
+					<p class="text-gray-700 mb-4 italic text-center">"We sold our home above asking price thanks to Dr. Duffy's strategic marketing and negotiation skills. Highly recommend!"</p>
+					<p class="font-semibold text-gray-900 text-center">Michael Chen</p>
+					<p class="text-sm text-gray-600 text-center">Henderson, NV</p>
 				</div>
 
 				<div class="card">
-					<div class="flex gap-1 mb-4">
+					<div class="flex gap-1 mb-4 justify-center">
 						{#each Array(5) as _}
-							<Star class="w-5 h-5 text-yellow-400 fill-current" />
+							<Star class="w-5 h-5 text-yellow-500 fill-yellow-500" />
 						{/each}
 					</div>
-					<p class="text-gray-700 mb-4 italic">"Professional, knowledgeable, and always available. Dr. Duffy is the best real estate agent in Las Vegas!"</p>
-					<p class="font-semibold text-gray-900">Jennifer Martinez</p>
-					<p class="text-sm text-gray-600">Las Vegas, NV</p>
+					<p class="text-gray-700 mb-4 italic text-center">"Professional, knowledgeable, and always available. Dr. Duffy is the best real estate agent in Las Vegas!"</p>
+					<p class="font-semibold text-gray-900 text-center">Jennifer Martinez</p>
+					<p class="text-sm text-gray-600 text-center">Las Vegas, NV</p>
 				</div>
 			</div>
 		</div>
@@ -336,7 +336,7 @@
 		<div class="max-w-7xl mx-auto">
 			<div class="text-center mb-12">
 				<h2 class="text-3xl md:text-4xl font-bold mb-4">Market Insights</h2>
-				<p class="text-lg text-primary-100">Current Las Vegas real estate statistics</p>
+				<p class="text-lg text-white text-opacity-90">Current Las Vegas real estate statistics</p>
 			</div>
 
 			<div class="grid md:grid-cols-3 gap-8">
@@ -345,7 +345,7 @@
 						<DollarSign class="w-8 h-8 text-white" />
 					</div>
 					<div class="text-4xl md:text-5xl font-bold mb-2">$575K</div>
-					<p class="text-primary-100">Median Home Price</p>
+					<p class="text-white text-opacity-90">Median Home Price</p>
 				</div>
 
 				<div class="text-center">
@@ -353,7 +353,7 @@
 						<Calendar class="w-8 h-8 text-white" />
 					</div>
 					<div class="text-4xl md:text-5xl font-bold mb-2">19</div>
-					<p class="text-primary-100">Days on Market</p>
+					<p class="text-white text-opacity-90">Days on Market</p>
 				</div>
 
 				<div class="text-center">
@@ -361,7 +361,7 @@
 						<Home class="w-8 h-8 text-white" />
 					</div>
 					<div class="text-4xl md:text-5xl font-bold mb-2">450</div>
-					<p class="text-primary-100">Homes for Sale</p>
+					<p class="text-white text-opacity-90">Homes for Sale</p>
 				</div>
 			</div>
 		</div>
@@ -373,7 +373,7 @@
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-4xl mx-auto text-center">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Ready to Find Your Dream Home?</h2>
-			<p class="text-lg text-gray-600 mb-8">Let's start your real estate journey today</p>
+			<p class="text-lg text-gray-600 mb-8">Contact Dr. Janet Duffy today for personalized assistance</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary">Schedule a Consultation</a>
 				<a href="/home-value" class="btn-secondary">Get a Home Valuation</a>
