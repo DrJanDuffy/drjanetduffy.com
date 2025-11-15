@@ -1,87 +1,123 @@
 <script>
-	import { Settings, Briefcase, User } from 'lucide-svelte';
+	import { Home, TrendingUp, Award, MapPin, Star, DollarSign, Calendar, Building2 } from 'lucide-svelte';
 </script>
 
 <svelte:head>
-	<title>PARALLEL | Creative Specialists</title>
-	<meta name="description" content="Specialists in SEO, PPC, Websites, Displays, Content & Mobile" />
+	<title>Dr. Janet Duffy | Las Vegas Real Estate Expert | REALTOR®</title>
+	<meta name="description" content="Find your dream home in Las Vegas with Dr. Janet Duffy, a trusted REALTOR® with 15+ years of experience. Browse properties, get home valuations, and expert real estate guidance." />
 </svelte:head>
 
-<!-- Hero Section -->
-<section class="hero-section" aria-label="Hero section">
+<!-- Hero Section with Search -->
+<section class="hero-section bg-gradient-to-b from-gray-50 to-white">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-7xl mx-auto py-12 md:py-16">
+			<div class="text-center mb-8">
+				<h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4">
+					Find Your Dream Home in <span class="text-primary-600">Las Vegas</span>
+				</h1>
+				<p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
+					Expert real estate guidance from Dr. Janet Duffy, your trusted Las Vegas REALTOR®
+				</p>
+			</div>
+
+			<!-- Property Search Form -->
+			<div class="max-w-4xl mx-auto">
+				<div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+					<form class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+						<div>
+							<label for="location" class="form-label">Location</label>
+							<input type="text" id="location" name="location" placeholder="City, Zip, or Area" class="form-input" />
+						</div>
+						<div>
+							<label for="property-type" class="form-label">Property Type</label>
+							<select id="property-type" name="property-type" class="form-select">
+								<option value="">All Types</option>
+								<option value="single-family">Single Family</option>
+								<option value="condo">Condo</option>
+								<option value="townhome">Townhome</option>
+								<option value="luxury">Luxury</option>
+							</select>
+						</div>
+						<div>
+							<label for="price-range" class="form-label">Price Range</label>
+							<select id="price-range" name="price-range" class="form-select">
+								<option value="">Any Price</option>
+								<option value="0-300000">Under $300K</option>
+								<option value="300000-500000">$300K - $500K</option>
+								<option value="500000-750000">$500K - $750K</option>
+								<option value="750000-1000000">$750K - $1M</option>
+								<option value="1000000+">$1M+</option>
+							</select>
+						</div>
+						<div>
+							<label for="bedrooms" class="form-label">Bedrooms</label>
+							<select id="bedrooms" name="bedrooms" class="form-select">
+								<option value="">Any</option>
+								<option value="1">1+</option>
+								<option value="2">2+</option>
+								<option value="3">3+</option>
+								<option value="4">4+</option>
+								<option value="5">5+</option>
+							</select>
+						</div>
+						<div class="flex items-end">
+							<button type="submit" class="btn-primary w-full">
+								Search Properties
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Featured Properties -->
+<section class="section bg-white">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto">
-			<!-- Hero Content with Orange Frame -->
-			<div class="relative p-4 sm:p-6 md:p-8 lg:p-12">
-				<!-- Orange Frame - Open rectangle -->
-				<div class="hero-frame" aria-hidden="true"></div>
-				<div class="relative bg-white rounded-lg p-4 sm:p-6 md:p-8 lg:p-12">
-					<div class="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
-					<!-- Left Side - Person Image -->
-					<div class="relative order-2 md:order-1">
-						<!-- Person Image Placeholder -->
-						<div class="relative w-full h-64 sm:h-80 md:h-96 lg:h-[500px] rounded-lg overflow-hidden" role="img" aria-label="Creative professional standing">
-							<!-- Background with gradient -->
-							<div class="absolute inset-0 bg-gradient-to-br from-yellow-100 via-blue-100 to-yellow-200"></div>
-							
-							<!-- Person representation - standing figure -->
-							<div class="absolute inset-0 flex items-end justify-center pb-8">
-								<div class="relative w-56 h-80">
-									<!-- Head -->
-									<div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-20 h-20 bg-gray-700 rounded-full border-4 border-gray-800 shadow-lg z-10">
-										<!-- Glasses -->
-										<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-8 border-2 border-gray-900 rounded-full"></div>
-									</div>
-									
-									<!-- Body/Torso - Mustard yellow sweater -->
-									<div class="absolute top-16 left-1/2 transform -translate-x-1/2 w-40 h-48 bg-yellow-500 rounded-t-3xl shadow-xl">
-										<!-- Scarf - multi-colored striped -->
-										<div class="absolute -top-2 left-1/2 transform -translate-x-1/2 w-36 h-8 rounded-full">
-											<div class="h-full w-full rounded-full hero-scarf"></div>
-										</div>
-									</div>
-									
-									<!-- Legs - Dark jeans -->
-									<div class="absolute top-60 left-1/2 transform -translate-x-1/2 w-32 h-32 bg-gray-800 rounded-b-2xl shadow-xl">
-										<!-- Left leg -->
-										<div class="absolute bottom-0 left-1/4 w-12 h-20 bg-gray-900 rounded-b-lg"></div>
-										<!-- Right leg -->
-										<div class="absolute bottom-0 right-1/4 w-12 h-20 bg-gray-900 rounded-b-lg"></div>
-									</div>
-									
-									<!-- Shoes -->
-									<div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-28 h-6 bg-black rounded-full"></div>
-								</div>
-							</div>
-							
-							<!-- Abstract shapes overlay -->
-							<div class="absolute top-10 right-10 w-32 h-32 bg-blue-300 rounded-full opacity-50 blur-2xl"></div>
-							<div class="absolute bottom-20 left-10 w-24 h-24 bg-yellow-300 rounded-full opacity-50 blur-2xl"></div>
-							<div class="absolute top-1/2 right-1/4 w-20 h-20 bg-blue-200 rounded-full opacity-40 blur-xl"></div>
-						</div>
+			<div class="text-center mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Properties</h2>
+				<p class="text-lg text-gray-600">Discover exceptional Las Vegas homes</p>
+			</div>
+
+			<div class="grid md:grid-cols-3 gap-6">
+				<!-- Property 1 -->
+				<div class="property-card">
+					<div class="h-48 bg-gradient-to-br from-primary-100 to-primary-200 rounded-t-xl"></div>
+					<div class="p-6">
+						<h3 class="text-xl font-bold text-gray-900 mb-2">Luxury Home in West Summerlin</h3>
+						<p class="text-gray-600 mb-2">1234 Desert View Dr, Las Vegas, NV 89138</p>
+						<p class="text-sm text-gray-500 mb-4">Listed 3 days ago</p>
+						<a href="/properties" class="text-primary-600 hover:text-primary-700 font-semibold inline-flex items-center gap-2">
+							View Details →
+						</a>
 					</div>
-					
-					<!-- Right Side - Text Content -->
-					<div class="relative z-10 order-1 md:order-2">
-						<!-- Abstract shapes in background -->
-						<div class="absolute -top-10 -right-10 w-40 h-40 bg-blue-200 rounded-full opacity-30 blur-2xl" aria-hidden="true"></div>
-						<div class="absolute -bottom-10 -left-10 w-32 h-32 bg-yellow-200 rounded-full opacity-30 blur-2xl" aria-hidden="true"></div>
-						
-						<div class="relative">
-							<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-purple-600 mb-4 sm:mb-6 leading-tight">
-								THE CREATIVE
-							</h1>
-							<p class="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 leading-relaxed">
-								SPECIALISTS IN SEO, PPC, WEBSITES, DISPLAYS, CONTENT & MOBILE
-							</p>
-							<a 
-								href="/properties" 
-								class="btn-primary"
-								aria-label="View all features"
-							>
-								VIEW ALL FEATURES
-							</a>
-						</div>
+				</div>
+
+				<!-- Property 2 -->
+				<div class="property-card">
+					<div class="h-48 bg-gradient-to-br from-gray-100 to-gray-200 rounded-t-xl"></div>
+					<div class="p-6">
+						<h3 class="text-xl font-bold text-gray-900 mb-2">Modern Estate in The Ridges</h3>
+						<p class="text-gray-600 mb-2">5678 Mountain Peak Way, Las Vegas, NV 89144</p>
+						<p class="text-sm text-gray-500 mb-4">Listed 1 week ago</p>
+						<a href="/properties" class="text-primary-600 hover:text-primary-700 font-semibold inline-flex items-center gap-2">
+							View Details →
+						</a>
+					</div>
+				</div>
+
+				<!-- Property 3 -->
+				<div class="property-card">
+					<div class="h-48 bg-gradient-to-br from-primary-50 to-primary-100 rounded-t-xl"></div>
+					<div class="p-6">
+						<h3 class="text-xl font-bold text-gray-900 mb-2">Charming Condo in Green Valley</h3>
+						<p class="text-gray-600 mb-2">9012 Valley View Blvd, Henderson, NV 89014</p>
+						<p class="text-sm text-gray-500 mb-4">Listed 5 days ago</p>
+						<a href="/properties" class="text-primary-600 hover:text-primary-700 font-semibold inline-flex items-center gap-2">
+							View Details →
+						</a>
 					</div>
 				</div>
 			</div>
@@ -89,81 +125,207 @@
 	</div>
 </section>
 
-<!-- Team Count Section -->
-<section class="py-8 sm:py-10 md:py-12 bg-white" aria-label="Team information">
+<!-- Why Choose Dr. Janet Duffy -->
+<section class="section bg-gray-50">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="max-w-4xl mx-auto text-center">
-			<h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800">
-				A TEAM OF <span class="text-orange-500" aria-label="150">150</span> SPECIALISTS
-			</h2>
+		<div class="max-w-7xl mx-auto">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Dr. Janet Duffy?</h2>
+				<p class="text-lg text-gray-600">Your trusted Las Vegas real estate expert</p>
+			</div>
+
+			<div class="grid md:grid-cols-3 gap-8">
+				<div class="text-center">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+						<Award class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-xl font-bold text-gray-900 mb-2">15+ Years Experience</h3>
+					<p class="text-gray-600">Extensive knowledge of the Las Vegas real estate market</p>
+				</div>
+
+				<div class="text-center">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+						<TrendingUp class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-xl font-bold text-gray-900 mb-2">Expert Guidance</h3>
+					<p class="text-gray-600">Personalized service tailored to your unique needs</p>
+				</div>
+
+				<div class="text-center">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+						<MapPin class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-xl font-bold text-gray-900 mb-2">Local Expertise</h3>
+					<p class="text-gray-600">Deep understanding of Las Vegas neighborhoods and communities</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
 
-<!-- Services Section -->
-<section class="py-12 sm:py-14 md:py-16 bg-white" aria-label="Our services">
+<!-- Our Services -->
+<section class="section bg-white">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto">
-			<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-				<!-- Service 1: Brand Identity -->
-				<article class="bg-white p-6 sm:p-8 focus-within:ring-2 focus-within:ring-orange-500 focus-within:ring-offset-2 rounded-lg">
-					<div class="mb-6" aria-hidden="true">
-						<Settings class="w-12 h-12 sm:w-16 sm:h-16 text-gray-400" />
+			<div class="text-center mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+				<p class="text-lg text-gray-600">Comprehensive real estate solutions</p>
+			</div>
+
+			<div class="grid md:grid-cols-4 gap-6">
+				<div class="card text-center">
+					<div class="inline-flex items-center justify-center w-12 h-12 bg-primary-100 rounded-lg mb-4">
+						<Home class="w-6 h-6 text-primary-600" />
 					</div>
-					<h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-4 uppercase tracking-wide">
-						BRAND IDENTITY
-					</h3>
-					<p class="text-sm sm:text-base text-gray-500 mb-6 leading-relaxed">
-						As a market leader in global air freight forwarding, OIA Global excels in providing tailored transportation solutions for client-specific needs.
-					</p>
-					<a 
-						href="/about" 
-						class="text-orange-500 font-semibold hover:text-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded transition-colors inline-flex items-center gap-2"
-						aria-label="Read more about Brand Identity"
-					>
-						READ MORE →
-					</a>
-				</article>
-				
-				<!-- Service 2: Web Design & UI -->
-				<article class="bg-white p-6 sm:p-8 focus-within:ring-2 focus-within:ring-orange-500 focus-within:ring-offset-2 rounded-lg">
-					<div class="mb-6" aria-hidden="true">
-						<Briefcase class="w-12 h-12 sm:w-16 sm:h-16 text-gray-400" />
+					<h3 class="text-lg font-bold text-gray-900 mb-2">Buying</h3>
+					<p class="text-gray-600 text-sm">Expert guidance to find your perfect home</p>
+				</div>
+
+				<div class="card text-center">
+					<div class="inline-flex items-center justify-center w-12 h-12 bg-primary-100 rounded-lg mb-4">
+						<DollarSign class="w-6 h-6 text-primary-600" />
 					</div>
-					<h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-4 uppercase tracking-wide">
-						WEB DESIGN & UI
-					</h3>
-					<p class="text-sm sm:text-base text-gray-500 mb-6 leading-relaxed">
-						As a market leader in global air freight forwarding, OIA Global excels in providing tailored transportation solutions for client-specific needs.
-					</p>
-					<a 
-						href="/about" 
-						class="text-orange-500 font-semibold hover:text-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded transition-colors inline-flex items-center gap-2"
-						aria-label="Read more about Web Design & UI"
-					>
-						READ MORE →
-					</a>
-				</article>
-				
-				<!-- Service 3: Development & CMS -->
-				<article class="bg-white p-6 sm:p-8 focus-within:ring-2 focus-within:ring-orange-500 focus-within:ring-offset-2 rounded-lg sm:col-span-2 lg:col-span-1">
-					<div class="mb-6" aria-hidden="true">
-						<User class="w-12 h-12 sm:w-16 sm:h-16 text-gray-400" />
+					<h3 class="text-lg font-bold text-gray-900 mb-2">Selling</h3>
+					<p class="text-gray-600 text-sm">Maximize your home's value and sell faster</p>
+				</div>
+
+				<div class="card text-center">
+					<div class="inline-flex items-center justify-center w-12 h-12 bg-primary-100 rounded-lg mb-4">
+						<Building2 class="w-6 h-6 text-primary-600" />
 					</div>
-					<h3 class="text-lg sm:text-xl font-bold text-gray-800 mb-4 uppercase tracking-wide">
-						DEVELOPMENT & CMS
-					</h3>
-					<p class="text-sm sm:text-base text-gray-500 mb-6 leading-relaxed">
-						As a market leader in global air freight forwarding, OIA Global excels in providing tailored transportation solutions for client-specific needs.
-					</p>
-					<a 
-						href="/about" 
-						class="text-orange-500 font-semibold hover:text-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded transition-colors inline-flex items-center gap-2"
-						aria-label="Read more about Development & CMS"
-					>
-						READ MORE →
-					</a>
-				</article>
+					<h3 class="text-lg font-bold text-gray-900 mb-2">Rentals</h3>
+					<p class="text-gray-600 text-sm">Find the perfect rental property</p>
+				</div>
+
+				<div class="card text-center">
+					<div class="inline-flex items-center justify-center w-12 h-12 bg-primary-100 rounded-lg mb-4">
+						<TrendingUp class="w-6 h-6 text-primary-600" />
+					</div>
+					<h3 class="text-lg font-bold text-gray-900 mb-2">Investments</h3>
+					<p class="text-gray-600 text-sm">Strategic real estate investment advice</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Popular Neighborhoods -->
+<section class="section bg-gray-50">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-7xl mx-auto">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Popular Neighborhoods</h2>
+				<p class="text-lg text-gray-600">Explore Las Vegas's most desirable communities</p>
+			</div>
+
+			<div class="grid md:grid-cols-3 gap-6">
+				<div class="card">
+					<h3 class="text-xl font-bold text-gray-900 mb-2">West Summerlin</h3>
+					<p class="text-gray-600 mb-4">Master-planned community with luxury homes and world-class amenities</p>
+					<a href="/properties?neighborhood=west-summerlin" class="link-primary">View Properties →</a>
+				</div>
+
+				<div class="card">
+					<h3 class="text-xl font-bold text-gray-900 mb-2">The Ridges</h3>
+					<p class="text-gray-600 mb-4">Exclusive gated community with stunning mountain views</p>
+					<a href="/properties?neighborhood=the-ridges" class="link-primary">View Properties →</a>
+				</div>
+
+				<div class="card">
+					<h3 class="text-xl font-bold text-gray-900 mb-2">Red Rock Country Club</h3>
+					<p class="text-gray-600 mb-4">Luxury golf community with resort-style living</p>
+					<a href="/properties?neighborhood=red-rock" class="link-primary">View Properties →</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Client Testimonials -->
+<section class="section bg-white">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-7xl mx-auto">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Client Testimonials</h2>
+				<p class="text-lg text-gray-600">What our clients say about working with us</p>
+			</div>
+
+			<div class="grid md:grid-cols-3 gap-6">
+				<div class="card">
+					<div class="flex gap-1 mb-4">
+						{#each Array(5) as _}
+							<Star class="w-5 h-5 text-yellow-400 fill-current" />
+						{/each}
+					</div>
+					<p class="text-gray-700 mb-4 italic">"Dr. Duffy helped us find our dream home in West Summerlin. Her expertise and attention to detail made the entire process smooth and stress-free."</p>
+					<p class="font-semibold text-gray-900">Sarah Johnson</p>
+					<p class="text-sm text-gray-600">Las Vegas, NV</p>
+				</div>
+
+				<div class="card">
+					<div class="flex gap-1 mb-4">
+						{#each Array(5) as _}
+							<Star class="w-5 h-5 text-yellow-400 fill-current" />
+						{/each}
+					</div>
+					<p class="text-gray-700 mb-4 italic">"We sold our home above asking price thanks to Dr. Duffy's strategic marketing and negotiation skills. Highly recommend!"</p>
+					<p class="font-semibold text-gray-900">Michael Chen</p>
+					<p class="text-sm text-gray-600">Henderson, NV</p>
+				</div>
+
+				<div class="card">
+					<div class="flex gap-1 mb-4">
+						{#each Array(5) as _}
+							<Star class="w-5 h-5 text-yellow-400 fill-current" />
+						{/each}
+					</div>
+					<p class="text-gray-700 mb-4 italic">"Professional, knowledgeable, and always available. Dr. Duffy is the best real estate agent in Las Vegas!"</p>
+					<p class="font-semibold text-gray-900">Jennifer Martinez</p>
+					<p class="text-sm text-gray-600">Las Vegas, NV</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Market Insights -->
+<section class="section bg-primary-600 text-white">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-7xl mx-auto">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold mb-4">Market Insights</h2>
+				<p class="text-lg text-primary-100">Current Las Vegas real estate statistics</p>
+			</div>
+
+			<div class="grid md:grid-cols-3 gap-8">
+				<div class="text-center">
+					<div class="text-4xl md:text-5xl font-bold mb-2">$575K</div>
+					<p class="text-primary-100">Median Home Price</p>
+				</div>
+
+				<div class="text-center">
+					<div class="text-4xl md:text-5xl font-bold mb-2">19</div>
+					<p class="text-primary-100">Days on Market</p>
+				</div>
+
+				<div class="text-center">
+					<div class="text-4xl md:text-5xl font-bold mb-2">450</div>
+					<p class="text-primary-100">Homes for Sale</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- CTA Section -->
+<section class="section bg-white">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-4xl mx-auto text-center">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Ready to Find Your Dream Home?</h2>
+			<p class="text-lg text-gray-600 mb-8">Let's start your real estate journey today</p>
+			<div class="flex flex-col sm:flex-row gap-4 justify-center">
+				<a href="/contact" class="btn-primary">Schedule a Consultation</a>
+				<a href="/properties" class="btn-secondary">Explore Our Properties</a>
 			</div>
 		</div>
 	</div>
