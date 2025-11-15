@@ -6,7 +6,7 @@
 	let prompt = '';
 	let loading = false;
 	let result: V0Response | null = null;
-	let status = { configured: false, message: '' };
+	let status: { configured: boolean; message: string } = { configured: false, message: '' };
 	let selectedModel = 'claude-3-5-sonnet';
 	let useShadcn = true;
 
@@ -124,14 +124,14 @@
 				<div class="mb-4 flex justify-between items-center">
 					<h2 class="text-2xl font-bold">Generated Component</h2>
 					<button
-						on:click={() => copyToClipboard(result.component || '')}
+						on:click={() => result && copyToClipboard(result.component || '')}
 						class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-sm font-medium"
 					>
 						Copy Code
 					</button>
 				</div>
 				
-				<pre class="bg-gray-50 p-4 rounded-lg overflow-x-auto text-sm"><code>{result.component}</code></pre>
+				<pre class="bg-gray-50 p-4 rounded-lg overflow-x-auto text-sm"><code>{result?.component || ''}</code></pre>
 
 				{#if result.metadata && Object.keys(result.metadata).length > 0}
 					<div class="mt-4 pt-4 border-t">
