@@ -1,7 +1,7 @@
 import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 
-const siteUrl = 'https://drjanetduffy.com'; // Update with your actual domain
+const siteUrl = 'https://www.drjanetduffy.com'; // Update with your actual domain
 
 const routes = [
 	// Main Pages

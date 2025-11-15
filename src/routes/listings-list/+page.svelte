@@ -16,13 +16,13 @@ onMount(() => {
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://drjanetduffy.com/listings-list" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/listings-list" />
 	<meta property="og:title" content="Property Listings - List View | Dr. Janet Duffy REALTOR®" />
 	<meta property="og:description" content="Browse Las Vegas property listings in a detailed list format." />
 	
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://drjanetduffy.com/listings-list" />
+	<meta property="twitter:url" content="https://www.drjanetduffy.com/listings-list" />
 	<meta property="twitter:title" content="Property Listings - List View" />
 	<meta property="twitter:description" content="Browse Las Vegas property listings in a detailed list format." />
 </svelte:head>

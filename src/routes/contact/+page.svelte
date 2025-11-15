@@ -10,13 +10,13 @@ import { Phone, Mail, MapPin, Clock, CheckCircle } from 'lucide-svelte';
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://drjanetduffy.com/contact" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/contact" />
 	<meta property="og:title" content="Contact Dr. Janet Duffy, REALTOR® | Berkshire Hathaway Nevada Properties" />
 	<meta property="og:description" content="Contact Dr. Jan Duffy, REALTOR® for luxury Las Vegas real estate expertise. Direct: 702-500-1955" />
 	
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://drjanetduffy.com/contact" />
+	<meta property="twitter:url" content="https://www.drjanetduffy.com/contact" />
 	<meta property="twitter:title" content="Contact Dr. Janet Duffy, REALTOR®" />
 	<meta property="twitter:description" content="Contact Dr. Janet Duffy, REALTOR® for luxury Las Vegas real estate expertise." />
 	

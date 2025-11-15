@@ -11,13 +11,13 @@
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://drjanetduffy.com/" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/" />
 	<meta property="og:title" content="Dr. Janet Duffy, REALTOR® | Luxury Las Vegas Real Estate Expert" />
 	<meta property="og:description" content="Expert guidance for buying, selling, and investing in Las Vegas real estate. 15+ years of experience serving West Summerlin, The Ridges, and premier communities." />
 	
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://drjanetduffy.com/" />
+	<meta property="twitter:url" content="https://www.drjanetduffy.com/" />
 	<meta property="twitter:title" content="Dr. Janet Duffy, REALTOR® | Luxury Las Vegas Real Estate Expert" />
 	<meta property="twitter:description" content="Expert guidance for buying, selling, and investing in Las Vegas real estate." />
 	
@@ -27,7 +27,7 @@
 		"@context": "https://schema.org",
 		"@type": "RealEstateAgent",
 		"name": "Dr. Jan Duffy",
-		"url": "https://drjanetduffy.com",
+		"url": "https://www.drjanetduffy.com",
 		"email": "info@drjanetduffy.com",
 		"telephone": "702-500-1955",
 		"address": {
@@ -45,10 +45,10 @@
 		"@context": "https://schema.org",
 		"@type": "WebSite",
 		"name": "Dr. Janet Duffy, REALTOR®",
-		"url": "https://drjanetduffy.com",
+		"url": "https://www.drjanetduffy.com",
 		"potentialAction": {
 			"@type": "SearchAction",
-			"target": "https://drjanetduffy.com/properties?search={search_term_string}",
+			"target": "https://www.drjanetduffy.com/properties?search={search_term_string}",
 			"query-input": "required name=search_term_string"
 		}
 	}

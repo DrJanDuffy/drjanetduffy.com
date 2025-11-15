@@ -5,13 +5,13 @@
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://drjanetduffy.com/privacy" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/privacy" />
 	<meta property="og:title" content="Privacy Policy | Dr. Janet Duffy REALTOR®" />
 	<meta property="og:description" content="Privacy Policy for Dr. Janet Duffy REALTOR® website. Learn how we protect your personal information." />
 	
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary" />
-	<meta property="twitter:url" content="https://drjanetduffy.com/privacy" />
+	<meta property="twitter:url" content="https://www.drjanetduffy.com/privacy" />
 	<meta property="twitter:title" content="Privacy Policy | Dr. Janet Duffy REALTOR®" />
 	<meta property="twitter:description" content="Privacy Policy for Dr. Janet Duffy REALTOR® website." />
 	
@@ -22,12 +22,12 @@
 		"@type": "WebPage",
 		"name": "Privacy Policy",
 		"description": "Privacy Policy for Dr. Janet Duffy REALTOR® website",
-		"url": "https://drjanetduffy.com/privacy",
+		"url": "https://www.drjanetduffy.com/privacy",
 		"inLanguage": "en-US",
 		"isPartOf": {
 			"@type": "WebSite",
 			"name": "Dr. Janet Duffy REALTOR®",
-			"url": "https://drjanetduffy.com"
+			"url": "https://www.drjanetduffy.com"
 		}
 	}
 	</script>

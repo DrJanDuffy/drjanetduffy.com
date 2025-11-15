@@ -56,7 +56,7 @@
 	<title>Sitemap | Dr. Janet Duffy, REALTOR® | Luxury Las Vegas Real Estate</title>
 	<meta name="description" content="Site map for Dr. Janet Duffy, REALTOR® luxury Las Vegas real estate website. Find all pages and sections easily." />
 	<meta name="robots" content="index, follow" />
-	<link rel="canonical" href="https://drjanetduffy.com/sitemap" />
+	<link rel="canonical" href="https://www.drjanetduffy.com/sitemap" />
 </svelte:head>
 
 <section class="section">

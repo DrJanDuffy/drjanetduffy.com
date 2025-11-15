@@ -7,6 +7,10 @@ let mounted = false;
 onMount(() => {
   mounted = true;
 });
+
+// Canonical URL always points to base /properties page (without query parameters)
+// This tells search engines that all query parameter variations are the same page
+const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 </script>
 
 <svelte:head>
@@ -14,15 +18,18 @@ onMount(() => {
 	<meta name="description" content="Browse all available Las Vegas homes for sale. Updated listings from the MLS. Contact Dr. Janet Duffy for showings." />
 	<meta name="keywords" content="Las Vegas homes for sale, property listings, MLS, real estate, Dr. Janet Duffy" />
 	
+	<!-- Canonical URL - always points to base /properties page -->
+	<link rel="canonical" href={canonicalUrl} />
+	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://drjanetduffy.com/properties" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/properties" />
 	<meta property="og:title" content="Las Vegas Homes for Sale | Dr. Janet Duffy REALTOR®" />
 	<meta property="og:description" content="Browse all available Las Vegas homes for sale. Updated listings from the MLS." />
 	
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://drjanetduffy.com/properties" />
+	<meta property="twitter:url" content="https://www.drjanetduffy.com/properties" />
 	<meta property="twitter:title" content="Las Vegas Homes for Sale | Dr. Janet Duffy REALTOR®" />
 	<meta property="twitter:description" content="Browse all available Las Vegas homes for sale. Updated listings from the MLS." />
 	
@@ -33,7 +40,7 @@ onMount(() => {
 		"@type": "CollectionPage",
 		"name": "Las Vegas Properties for Sale",
 		"description": "Browse all available Las Vegas homes for sale",
-		"url": "https://drjanetduffy.com/properties",
+		"url": "https://www.drjanetduffy.com/properties",
 		"mainEntity": {
 			"@type": "ItemList",
 			"itemListElement": {

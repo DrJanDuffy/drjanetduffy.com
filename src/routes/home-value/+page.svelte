@@ -16,13 +16,13 @@ onMount(() => {
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://drjanetduffy.com/home-value" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/home-value" />
 	<meta property="og:title" content="Home Value Calculator | Dr. Janet Duffy REALTOR®" />
 	<meta property="og:description" content="Get an instant estimate of your home's value with Dr. Janet Duffy's advanced valuation tool." />
 	
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://drjanetduffy.com/home-value" />
+	<meta property="twitter:url" content="https://www.drjanetduffy.com/home-value" />
 	<meta property="twitter:title" content="Home Value Calculator | Dr. Janet Duffy REALTOR®" />
 	<meta property="twitter:description" content="Get an instant estimate of your home's value with Dr. Janet Duffy's advanced valuation tool." />
 	
@@ -33,7 +33,7 @@ onMount(() => {
 		"@type": "WebApplication",
 		"name": "Home Value Calculator",
 		"description": "Get an instant estimate of your home's value",
-		"url": "https://drjanetduffy.com/home-value",
+		"url": "https://www.drjanetduffy.com/home-value",
 		"applicationCategory": "RealEstateApplication",
 		"offers": {
 			"@type": "Offer",

@@ -1,0 +1,17 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "header",
+          "key": "host",
+          "value": "drjanetduffy.com"
+        }
+      ],
+      "destination": "https://www.drjanetduffy.com/:1",
+      "permanent": true
+    }
+  ]
+}
+

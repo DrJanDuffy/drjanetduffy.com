@@ -5,13 +5,13 @@
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://drjanetduffy.com/terms" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/terms" />
 	<meta property="og:title" content="Terms of Service | Dr. Janet Duffy REALTOR®" />
 	<meta property="og:description" content="Terms of Service for Dr. Janet Duffy REALTOR® website. Read our terms and conditions." />
 	
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary" />
-	<meta property="twitter:url" content="https://drjanetduffy.com/terms" />
+	<meta property="twitter:url" content="https://www.drjanetduffy.com/terms" />
 	<meta property="twitter:title" content="Terms of Service | Dr. Janet Duffy REALTOR®" />
 	<meta property="twitter:description" content="Terms of Service for Dr. Janet Duffy REALTOR® website." />
 	
@@ -22,12 +22,12 @@
 		"@type": "WebPage",
 		"name": "Terms of Service",
 		"description": "Terms of Service for Dr. Janet Duffy REALTOR® website",
-		"url": "https://drjanetduffy.com/terms",
+		"url": "https://www.drjanetduffy.com/terms",
 		"inLanguage": "en-US",
 		"isPartOf": {
 			"@type": "WebSite",
 			"name": "Dr. Janet Duffy REALTOR®",
-			"url": "https://drjanetduffy.com"
+			"url": "https://www.drjanetduffy.com"
 		}
 	}
 	</script>

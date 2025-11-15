@@ -101,13 +101,13 @@
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://drjanetduffy.com/quotes" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/quotes" />
 	<meta property="og:title" content="Motivational Real Estate Quotes | Dr. Janet Duffy, REALTOR®" />
 	<meta property="og:description" content="Inspirational real estate quotes to motivate agents, build client trust, and drive success." />
 	
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://drjanetduffy.com/quotes" />
+	<meta property="twitter:url" content="https://www.drjanetduffy.com/quotes" />
 	<meta property="twitter:title" content="Motivational Real Estate Quotes | Dr. Janet Duffy, REALTOR®" />
 	<meta property="twitter:description" content="Inspirational real estate quotes to motivate agents, build client trust, and drive success." />
 </svelte:head>
