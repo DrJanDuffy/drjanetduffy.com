@@ -10,102 +10,115 @@ onMount(() => {
 </script>
 
 <svelte:head>
-	<title>Past Sales & All Listings | Dr. Jan Duffy REALTOR</title>
-	<meta name="description" content="View Dr. Jan Duffy's past sales and all property listings including sold, rented, and current listings in Las Vegas." />
-	<meta name="keywords" content="past sales, sold properties, Las Vegas real estate history, Dr. Jan Duffy listings" />
+	<title>Past Sales & All Listings | Dr. Janet Duffy REALTOR®</title>
+	<meta name="description" content="View Dr. Janet Duffy's past sales and all property listings including sold, rented, and current listings in Las Vegas." />
+	<meta name="keywords" content="past sales, sold properties, Las Vegas real estate history, Dr. Janet Duffy listings" />
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://drjanduffy.com/past-sales" />
-	<meta property="og:title" content="Past Sales & All Listings | Dr. Jan Duffy REALTOR" />
-	<meta property="og:description" content="View Dr. Jan Duffy's past sales and all property listings including sold, rented, and current listings in Las Vegas." />
+	<meta property="og:url" content="https://drjanetduffy.com/past-sales" />
+	<meta property="og:title" content="Past Sales & All Listings | Dr. Janet Duffy REALTOR®" />
+	<meta property="og:description" content="View Dr. Janet Duffy's past sales and all property listings including sold, rented, and current listings in Las Vegas." />
 	
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="https://drjanduffy.com/past-sales" />
-	<meta property="twitter:title" content="Past Sales & All Listings | Dr. Jan Duffy REALTOR" />
-	<meta property="twitter:description" content="View Dr. Jan Duffy's past sales and all property listings including sold, rented, and current listings in Las Vegas." />
+	<meta property="twitter:url" content="https://drjanetduffy.com/past-sales" />
+	<meta property="twitter:title" content="Past Sales & All Listings | Dr. Janet Duffy REALTOR®" />
+	<meta property="twitter:description" content="View Dr. Janet Duffy's past sales and all property listings in Las Vegas." />
 </svelte:head>
 
-<div class="container mx-auto px-4 py-8">
-	<div class="mb-8">
-		<h1 class="text-4xl font-bold mb-4 text-gray-800">Past Sales & All Listings</h1>
-		<p class="text-lg text-gray-600 mb-4">
-			Explore Dr. Jan Duffy's complete portfolio of properties including current listings, recent sales, and rental properties.
-		</p>
-		<div class="bg-blue-50 border-l-4 border-blue-400 p-4 rounded">
-			<p class="text-blue-800">
-				<strong>Proven Track Record:</strong> This comprehensive view showcases all properties I've worked with, demonstrating my experience and success across different property types and market conditions in Las Vegas.
+<section class="section relative" style="background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);">
+	<div class="container-premium">
+		<div class="text-center mb-16">
+			<h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">Past Sales & All Listings</h1>
+			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
+			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
+				Explore Dr. Janet Duffy's complete portfolio of properties including current listings, recent sales, and rental properties.
 			</p>
+			<div class="bg-gradient-to-r from-primary-50 to-blue-50 border-l-4 border-primary-600 rounded-xl p-6 max-w-3xl mx-auto">
+				<p class="text-gray-800 text-lg">
+					<strong class="text-primary-700">Proven Track Record:</strong> This comprehensive view showcases all properties I've worked with, demonstrating my experience and success across different property types and market conditions in Las Vegas.
+				</p>
+			</div>
 		</div>
-	</div>
 	
-	{#if mounted && browser}
-		<div class="realscout-wrapper">
-			<realscout-your-listings 
-				agent-encoded-id="QWdlbnQtMjI1MDUw"
-				sort-order="STATUS_AND_SIGNIFICANT_CHANGE"
-				listing-status="For Sale,For Rent,In Contract,Sold,Rented"
-				property-types="SFR,MF,TC,LAL,MOBILE,OTHER">
-			</realscout-your-listings>
-		</div>
-	{:else}
-		<div class="loading-skeleton">
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-				{#each Array(12) as _}
-					<div class="animate-pulse">
-						<div class="bg-gray-200 h-48 rounded-t-lg"></div>
-						<div class="bg-gray-100 p-4 rounded-b-lg">
-							<div class="h-4 bg-gray-200 rounded w-3/4 mb-2"></div>
-							<div class="h-4 bg-gray-200 rounded w-1/2 mb-2"></div>
-							<div class="h-4 bg-gray-200 rounded w-2/3"></div>
+		{#if mounted && browser}
+			<div class="realscout-wrapper">
+				<realscout-your-listings 
+					agent-encoded-id="QWdlbnQtMjI1MDUw"
+					sort-order="STATUS_AND_SIGNIFICANT_CHANGE"
+					listing-status="For Sale,For Rent,In Contract,Sold,Rented"
+					property-types="SFR,MF,TC,LAL,MOBILE,OTHER">
+				</realscout-your-listings>
+			</div>
+		{:else}
+			<div class="loading-skeleton">
+				<div class="grid-premium md:grid-cols-2 lg:grid-cols-3 gap-8">
+					{#each Array(12) as _}
+						<div class="animate-pulse bg-white rounded-2xl shadow-lg overflow-hidden">
+							<div class="bg-gray-200 h-64"></div>
+							<div class="p-6 space-y-4">
+								<div class="h-6 bg-gray-200 rounded w-3/4"></div>
+								<div class="h-5 bg-gray-200 rounded w-1/2"></div>
+								<div class="h-4 bg-gray-200 rounded w-2/3"></div>
+							</div>
 						</div>
-					</div>
-				{/each}
+					{/each}
+				</div>
+				<p class="text-center text-gray-600 mt-12 text-lg">Loading all listings and past sales...</p>
 			</div>
-			<p class="text-center text-gray-600 mt-8">Loading all listings and past sales...</p>
+		{/if}
+		
+		<!-- Success Stats Section -->
+		<div class="mt-16 bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-xl border border-gray-100">
+			<div class="text-center mb-12">
+				<h2 class="font-display text-4xl font-bold mb-4 text-gray-900" style="letter-spacing: -0.02em;">My Success by the Numbers</h2>
+				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto"></div>
+			</div>
+			<div class="grid-premium md:grid-cols-4 gap-8">
+				<div class="text-center bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
+					<div class="text-5xl font-display font-bold text-primary-600 mb-4">150+</div>
+					<div class="text-gray-700 font-semibold text-lg">Properties Sold</div>
+				</div>
+				<div class="text-center bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
+					<div class="text-5xl font-display font-bold text-primary-600 mb-4">$50M+</div>
+					<div class="text-gray-700 font-semibold text-lg">Total Sales Volume</div>
+				</div>
+				<div class="text-center bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
+					<div class="text-5xl font-display font-bold text-primary-600 mb-4">98%</div>
+					<div class="text-gray-700 font-semibold text-lg">Client Satisfaction</div>
+				</div>
+				<div class="text-center bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
+					<div class="text-5xl font-display font-bold text-primary-600 mb-4">15</div>
+					<div class="text-gray-700 font-semibold text-lg">Years Experience</div>
+				</div>
+			</div>
 		</div>
-	{/if}
-	
-	<!-- Success Stats Section -->
-	<div class="mt-16 bg-gray-50 rounded-lg p-8">
-		<h2 class="text-2xl font-bold text-center mb-8 text-gray-800">My Success by the Numbers</h2>
-		<div class="grid md:grid-cols-4 gap-8 text-center">
-			<div>
-				<div class="text-3xl font-bold text-primary-600 mb-2">150+</div>
-				<div class="text-gray-600">Properties Sold</div>
+		
+		<!-- CTA Section -->
+		<div class="mt-16 relative overflow-hidden bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white rounded-2xl p-12 shadow-2xl">
+			<div class="absolute inset-0 overflow-hidden">
+				<div class="absolute top-1/4 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse"></div>
+				<div class="absolute bottom-1/4 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 1.5s;"></div>
 			</div>
-			<div>
-				<div class="text-3xl font-bold text-primary-600 mb-2">$50M+</div>
-				<div class="text-gray-600">Total Sales Volume</div>
-			</div>
-			<div>
-				<div class="text-3xl font-bold text-primary-600 mb-2">98%</div>
-				<div class="text-gray-600">Client Satisfaction</div>
-			</div>
-			<div>
-				<div class="text-3xl font-bold text-primary-600 mb-2">15</div>
-				<div class="text-gray-600">Years Experience</div>
+			<div class="relative z-10 text-center">
+				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-white" style="text-shadow: 0 4px 20px rgba(0,0,0,0.3); letter-spacing: -0.02em;">Ready to Be My Next Success Story?</h2>
+				<p class="text-xl mb-10 text-white/95 max-w-2xl mx-auto leading-relaxed" style="text-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+					Let me help you buy or sell your property with the same dedication and expertise that has made me successful.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-6 justify-center">
+					<a href="/contact" class="group relative overflow-hidden bg-white text-primary-700 px-10 py-5 rounded-xl font-bold text-lg shadow-2xl hover:shadow-white/30 transition-all duration-300 hover:scale-110 hover:-translate-y-1">
+						<span class="relative z-10">Get Started Today</span>
+						<div class="absolute inset-0 bg-gradient-to-r from-primary-50 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+					</a>
+					<a href="tel:+17022221964" class="group relative overflow-hidden bg-transparent text-white border-2 border-white/50 px-10 py-5 rounded-xl font-bold text-lg backdrop-blur-sm hover:bg-white hover:text-primary-700 transition-all duration-300 hover:scale-110 hover:-translate-y-1">
+						<span class="relative z-10">Call 702-222-1964</span>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
-	
-	<!-- CTA Section -->
-	<div class="mt-12 bg-primary-600 text-white rounded-lg p-8 text-center">
-		<h2 class="text-2xl font-bold mb-4">Ready to Be My Next Success Story?</h2>
-		<p class="text-lg mb-6">
-			Let me help you buy or sell your property with the same dedication and expertise that has made me successful.
-		</p>
-		<div class="flex flex-col sm:flex-row gap-4 justify-center">
-			<a href="/contact" class="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-				Get Started Today
-			</a>
-			<a href="tel:+17025551234" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-600 transition-colors">
-				Call (702) 555-1234
-			</a>
-		</div>
-	</div>
-</div>
+</section>
 
 <style>
 	.realscout-wrapper {
