@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 	import { generateComponent, checkV0Status } from '$lib/v0';
 	import type { V0Response } from '$lib/v0';
