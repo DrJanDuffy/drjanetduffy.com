@@ -1,5 +1,5 @@
 <script>
-	import { Home, Award, MapPin, Star } from 'lucide-svelte';
+	import { Home, Award, MapPin, Star, DollarSign, BookOpen, HelpCircle } from 'lucide-svelte';
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
@@ -155,12 +155,12 @@
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto">
 			<div class="text-center mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Explore Our Services</h2>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Explore Our Services & Resources</h2>
 				<p class="text-lg text-gray-600">Everything you need for your Las Vegas real estate journey</p>
 			</div>
 			
-			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-				<a href="/about" class="card text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+				<a href="/about" class="card text-center hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 group">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
 						<Award class="w-8 h-8 text-primary-600" />
 					</div>
@@ -168,7 +168,7 @@
 					<p class="text-gray-600 text-sm">Experience the difference</p>
 				</a>
 
-				<a href="/services" class="card text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+				<a href="/services" class="card text-center hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 group">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
 						<Home class="w-8 h-8 text-primary-600" />
 					</div>
@@ -176,7 +176,7 @@
 					<p class="text-gray-600 text-sm">Comprehensive solutions</p>
 				</a>
 
-				<a href="/neighborhoods" class="card text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+				<a href="/neighborhoods" class="card text-center hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 group">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
 						<MapPin class="w-8 h-8 text-primary-600" />
 					</div>
@@ -184,12 +184,46 @@
 					<p class="text-gray-600 text-sm">Explore Las Vegas</p>
 				</a>
 
-				<a href="/testimonials" class="card text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+				<a href="/testimonials" class="card text-center hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 group">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
 						<Star class="w-8 h-8 text-primary-600" />
 					</div>
 					<h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">Testimonials</h3>
 					<p class="text-gray-600 text-sm">Client success stories</p>
+				</a>
+			</div>
+			
+			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+				<a href="/buying-guide" class="card text-center hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 group">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
+						<Home class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">Buying Guide</h3>
+					<p class="text-gray-600 text-sm">Step-by-step home buying</p>
+				</a>
+
+				<a href="/selling-guide" class="card text-center hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 group">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
+						<DollarSign class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">Selling Guide</h3>
+					<p class="text-gray-600 text-sm">Maximize your sale price</p>
+				</a>
+
+				<a href="/resources" class="card text-center hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 group">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
+						<BookOpen class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">Resources</h3>
+					<p class="text-gray-600 text-sm">Guides and tools</p>
+				</a>
+
+				<a href="/faq" class="card text-center hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 group">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
+						<HelpCircle class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">FAQ</h3>
+					<p class="text-gray-600 text-sm">Common questions</p>
 				</a>
 			</div>
 		</div>

@@ -113,9 +113,13 @@
 						<ul class="space-y-2 text-sm mb-6">
 							<li><a href="/services" class="text-gray-400 hover:text-white transition-colors">All Services</a></li>
 							<li><a href="/home-value" class="text-gray-400 hover:text-white transition-colors">Home Value</a></li>
-							<li><a href="/about#buying" class="text-gray-400 hover:text-white transition-colors">Buying Guide</a></li>
-							<li><a href="/about#selling" class="text-gray-400 hover:text-white transition-colors">Selling Guide</a></li>
-							<li><a href="/about#mortgage" class="text-gray-400 hover:text-white transition-colors">Mortgage Calculator</a></li>
+							<li><a href="/buying-guide" class="text-gray-400 hover:text-white transition-colors">Buying Guide</a></li>
+							<li><a href="/selling-guide" class="text-gray-400 hover:text-white transition-colors">Selling Guide</a></li>
+							<li><a href="/first-time-buyers" class="text-gray-400 hover:text-white transition-colors">First-Time Buyers</a></li>
+							<li><a href="/investment-guide" class="text-gray-400 hover:text-white transition-colors">Investment Guide</a></li>
+							<li><a href="/relocation" class="text-gray-400 hover:text-white transition-colors">Relocation</a></li>
+							<li><a href="/resources" class="text-gray-400 hover:text-white transition-colors">Resources</a></li>
+							<li><a href="/faq" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
 							<li><a href="/testimonials" class="text-gray-400 hover:text-white transition-colors">Testimonials</a></li>
 							<li><a href="/market-insights" class="text-gray-400 hover:text-white transition-colors">Market Insights</a></li>
 						</ul>

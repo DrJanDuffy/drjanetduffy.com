@@ -13,6 +13,13 @@
 		{ url: '/testimonials', title: 'Testimonials', description: 'Client testimonials and reviews', category: 'Main' },
 		{ url: '/market-insights', title: 'Market Insights', description: 'Las Vegas real estate market statistics', category: 'Resources' },
 		{ url: '/contact', title: 'Contact', description: 'Get in touch with us', category: 'Main' },
+		{ url: '/faq', title: 'FAQ', description: 'Frequently asked questions', category: 'Resources' },
+		{ url: '/resources', title: 'Resources', description: 'Real estate guides and resources', category: 'Resources' },
+		{ url: '/first-time-buyers', title: 'First-Time Buyers', description: 'Guide for first-time homebuyers', category: 'Resources' },
+		{ url: '/relocation', title: 'Relocation', description: 'Moving to Las Vegas guide', category: 'Resources' },
+		{ url: '/investment-guide', title: 'Investment Guide', description: 'Real estate investment guide', category: 'Resources' },
+		{ url: '/buying-guide', title: 'Buying Guide', description: 'Complete home buying guide', category: 'Resources' },
+		{ url: '/selling-guide', title: 'Selling Guide', description: 'Complete home selling guide', category: 'Resources' },
 		
 		// Property Search
 		{ url: '/listings-embedded', title: 'Property Grid View', description: 'View properties in grid format', category: 'Properties' },

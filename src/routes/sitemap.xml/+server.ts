@@ -16,6 +16,13 @@ const routes = [
 	{ url: 'testimonials', priority: '0.7', changefreq: 'monthly' },
 	{ url: 'market-insights', priority: '0.7', changefreq: 'weekly' },
 	{ url: 'contact', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'faq', priority: '0.6', changefreq: 'monthly' },
+	{ url: 'resources', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'first-time-buyers', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'relocation', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'investment-guide', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'buying-guide', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'selling-guide', priority: '0.7', changefreq: 'monthly' },
 	
 	// Property Search Pages
 	{ url: 'listings-embedded', priority: '0.8', changefreq: 'daily' },
