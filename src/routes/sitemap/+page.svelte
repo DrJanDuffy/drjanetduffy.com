@@ -42,6 +42,17 @@
 				{ url: '/properties?type=foreclosures', title: 'Foreclosures', description: 'Foreclosure properties', category: 'Properties' },
 				{ url: '/properties?type=short-sales', title: 'Short Sales', description: 'Short sale properties', category: 'Properties' },
 				
+				// Service Detail Pages
+				{ url: '/services/buyer-representation', title: 'Buyer Representation', description: 'Expert buyer representation services', category: 'Services' },
+				{ url: '/services/seller-representation', title: 'Seller Representation', description: 'Professional seller representation', category: 'Services' },
+				{ url: '/services/luxury-homes', title: 'Luxury Homes', description: 'Luxury property services', category: 'Services' },
+				{ url: '/services/commercial-real-estate', title: 'Commercial Real Estate', description: 'Commercial property services', category: 'Services' },
+				{ url: '/services/real-estate-investing', title: 'Real Estate Investing', description: 'Investment property consulting', category: 'Services' },
+				{ url: '/services/smart-home-technology', title: 'Smart Home Technology', description: 'Smart home technology expertise', category: 'Services' },
+				{ url: '/services/digital-marketing', title: 'Digital Marketing', description: 'Digital marketing services', category: 'Services' },
+				{ url: '/services/social-media-marketing', title: 'Social Media Marketing', description: 'Social media marketing services', category: 'Services' },
+				{ url: '/services/negotiation-expertise', title: 'Negotiation Expertise', description: 'Advanced negotiation strategies', category: 'Services' },
+				{ url: '/services/mortgage-guidance', title: 'Mortgage Guidance', description: 'Home financing guidance', category: 'Services' },
 				// Services (using anchor links to about page)
 				{ url: '/about#buying', title: 'Buying Guide', description: 'Home buying guide', category: 'Services' },
 				{ url: '/about#selling', title: 'Selling Guide', description: 'Home selling guide', category: 'Services' },

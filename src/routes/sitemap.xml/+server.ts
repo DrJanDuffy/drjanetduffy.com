@@ -68,6 +68,15 @@ const routes = [
 	{ url: 'services/commercial-real-estate', priority: '0.7', changefreq: 'monthly' },
 	{ url: 'services/real-estate-investing', priority: '0.7', changefreq: 'monthly' },
 	{ url: 'services/land-investment', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/smart-home-technology', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/digital-marketing', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/social-media-marketing', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/inside-sales', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/general-appraisal', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/inclusive-real-estate', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/negotiation-expertise', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/mortgage-guidance', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'services/real-estate-education', priority: '0.7', changefreq: 'monthly' },
 	
 	// Legal/Info Pages
 	{ url: 'privacy', priority: '0.3', changefreq: 'yearly' },
