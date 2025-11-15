@@ -30,7 +30,13 @@ npm run dev -- --open
 To create a production version of your app:
 
 ```sh
-npm run build
+vercel build
+```
+
+Or for local build output:
+
+```sh
+vercel build --output public
 ```
 
 You can preview the production build with `npm run preview`.

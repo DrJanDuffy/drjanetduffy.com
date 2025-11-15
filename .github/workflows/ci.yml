@@ -51,9 +51,13 @@ jobs:
     - name: Run type checking
       run: pnpm run check
 
+    - name: Install Vercel CLI
+      run: npm install -g vercel@latest
 
     - name: Build project
-      run: pnpm run build
+      run: vercel build --output public
+      env:
+        VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
 
   build-and-deploy:
     needs: test
@@ -91,8 +95,13 @@ jobs:
     - name: Install dependencies
       run: pnpm install --frozen-lockfile
 
+    - name: Install Vercel CLI
+      run: npm install -g vercel@latest
+
     - name: Build project
-      run: pnpm run build
+      run: vercel build --output public
+      env:
+        VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
 
     - name: Deploy to Vercel
       uses: amondnet/vercel-action@v25
