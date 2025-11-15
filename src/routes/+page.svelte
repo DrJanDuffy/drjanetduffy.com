@@ -146,6 +146,10 @@
 					<p class="text-center text-gray-600 mt-8 text-lg">Loading featured properties...</p>
 				</div>
 			{/if}
+			
+			<div class="text-center mt-8">
+				<a href="/properties" class="btn-primary">View All Properties</a>
+			</div>
 		</div>
 	</div>
 </section>
