@@ -4,6 +4,7 @@ import type { RequestHandler } from './$types';
 const siteUrl = 'https://drjanetduffy.com'; // Update with your actual domain
 
 const routes = [
+	// Main Pages
 	{ url: '', priority: '1.0', changefreq: 'weekly' },
 	{ url: 'properties', priority: '0.9', changefreq: 'daily' },
 	{ url: 'home-value', priority: '0.8', changefreq: 'monthly' },
@@ -11,9 +12,41 @@ const routes = [
 	{ url: 'blog', priority: '0.7', changefreq: 'weekly' },
 	{ url: 'about', priority: '0.6', changefreq: 'monthly' },
 	{ url: 'contact', priority: '0.7', changefreq: 'monthly' },
+	
+	// Property Search Pages
 	{ url: 'listings-embedded', priority: '0.8', changefreq: 'daily' },
 	{ url: 'listings-list', priority: '0.8', changefreq: 'daily' },
-	{ url: 'past-sales', priority: '0.7', changefreq: 'weekly' }
+	{ url: 'past-sales', priority: '0.7', changefreq: 'weekly' },
+	
+	// Community Pages (based on reference site structure)
+	{ url: 'communities/summerlin', priority: '0.8', changefreq: 'monthly' },
+	{ url: 'communities/henderson', priority: '0.8', changefreq: 'monthly' },
+	{ url: 'communities/green-valley', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'communities/north-las-vegas', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'communities/boulder-city', priority: '0.6', changefreq: 'monthly' },
+	{ url: 'communities/seven-hills', priority: '0.6', changefreq: 'monthly' },
+	{ url: 'communities/southern-highlands', priority: '0.6', changefreq: 'monthly' },
+	{ url: 'communities/mountains-edge', priority: '0.6', changefreq: 'monthly' },
+	{ url: 'communities/anthem', priority: '0.6', changefreq: 'monthly' },
+	
+	// Property Type Pages
+	{ url: 'properties/homes', priority: '0.9', changefreq: 'daily' },
+	{ url: 'properties/condos', priority: '0.9', changefreq: 'daily' },
+	{ url: 'properties/new-construction', priority: '0.8', changefreq: 'weekly' },
+	{ url: 'properties/luxury', priority: '0.8', changefreq: 'weekly' },
+	{ url: 'properties/gated-communities', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'properties/golf-communities', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'properties/55-plus', priority: '0.6', changefreq: 'monthly' },
+	
+	// Service Pages
+	{ url: 'services/buying', priority: '0.8', changefreq: 'monthly' },
+	{ url: 'services/selling', priority: '0.8', changefreq: 'monthly' },
+	{ url: 'services/investment', priority: '0.7', changefreq: 'monthly' },
+	
+	// Legal/Info Pages
+	{ url: 'privacy', priority: '0.3', changefreq: 'yearly' },
+	{ url: 'terms', priority: '0.3', changefreq: 'yearly' },
+	{ url: 'sitemap', priority: '0.5', changefreq: 'monthly' }
 ];
 
 export const GET: RequestHandler = async () => {
