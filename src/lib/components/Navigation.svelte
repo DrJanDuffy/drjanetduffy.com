@@ -53,6 +53,12 @@
 					Rentals
 				</a>
 				<a 
+					href="/blog" 
+					class="text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/blog' ? 'text-primary-600' : ''}"
+				>
+					Blog
+				</a>
+				<a 
 					href="/about" 
 					class="text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/about' ? 'text-primary-600' : ''}"
 				>
@@ -122,20 +128,27 @@
 					>
 						Rentals
 					</a>
-					<a 
-						href="/about" 
-						class="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/about' ? 'text-primary-600' : ''}"
-						on:click={closeMobileMenu}
-					>
-						About
-					</a>
-					<a 
-						href="/contact" 
-						class="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/contact' ? 'text-primary-600' : ''}"
-						on:click={closeMobileMenu}
-					>
-						Contact
-					</a>
+							<a 
+								href="/blog" 
+								class="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/blog' ? 'text-primary-600' : ''}"
+								on:click={closeMobileMenu}
+							>
+								Blog
+							</a>
+							<a 
+								href="/about" 
+								class="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/about' ? 'text-primary-600' : ''}"
+								on:click={closeMobileMenu}
+							>
+								About
+							</a>
+							<a 
+								href="/contact" 
+								class="block px-3 py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors {$page.url.pathname === '/contact' ? 'text-primary-600' : ''}"
+								on:click={closeMobileMenu}
+							>
+								Contact
+							</a>
 					<a 
 						href="tel:+17025551234" 
 						class="block px-3 py-2 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 transition-colors text-center"
