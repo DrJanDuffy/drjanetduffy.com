@@ -1,5 +1,5 @@
 <script>
-	import { BookOpen, FileText, Calculator, TrendingUp, Home, DollarSign, MapPin, Users, Key, BarChart3 } from 'lucide-svelte';
+	import { BookOpen, FileText, Calculator, TrendingUp, Home, DollarSign, MapPin, Users, Key, BarChart3, GraduationCap } from 'lucide-svelte';
 	
 	const resources = [
 		{
@@ -61,6 +61,12 @@
 					icon: BarChart3
 				},
 				{
+					title: 'Market Reports',
+					description: 'Detailed quarterly market reports',
+					url: '/resources/market-reports',
+					icon: BarChart3
+				},
+				{
 					title: 'Neighborhoods',
 					description: 'Explore Las Vegas neighborhoods',
 					url: '/neighborhoods',
@@ -71,6 +77,54 @@
 					description: 'View recent sales and market trends',
 					url: '/past-sales',
 					icon: FileText
+				}
+			]
+		},
+		{
+			category: 'Selling Resources',
+			icon: DollarSign,
+			items: [
+				{
+					title: 'Home Staging Guide',
+					description: 'Maximize appeal with staging tips',
+					url: '/resources/home-staging',
+					icon: Home
+				},
+				{
+					title: 'Selling Guide',
+					description: 'Complete home selling guide',
+					url: '/selling-guide',
+					icon: FileText
+				}
+			]
+		},
+		{
+			category: 'Moving & Relocation',
+			icon: Users,
+			items: [
+				{
+					title: 'Moving Checklist',
+					description: 'Complete moving timeline and tasks',
+					url: '/resources/moving-checklist',
+					icon: FileText
+				},
+				{
+					title: 'Relocation Guide',
+					description: 'Moving to Las Vegas guide',
+					url: '/relocation',
+					icon: MapPin
+				}
+			]
+		},
+		{
+			category: 'Education',
+			icon: GraduationCap,
+			items: [
+				{
+					title: 'School Districts',
+					description: 'Las Vegas area schools and districts',
+					url: '/resources/school-districts',
+					icon: GraduationCap
 				}
 			]
 		},

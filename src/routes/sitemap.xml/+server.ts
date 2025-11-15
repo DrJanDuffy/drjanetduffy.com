@@ -24,6 +24,10 @@ const routes = [
 	{ url: 'buying-guide', priority: '0.7', changefreq: 'monthly' },
 	{ url: 'selling-guide', priority: '0.7', changefreq: 'monthly' },
 	{ url: 'mortgage-calculator', priority: '0.6', changefreq: 'monthly' },
+	{ url: 'resources/school-districts', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'resources/moving-checklist', priority: '0.6', changefreq: 'monthly' },
+	{ url: 'resources/home-staging', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'resources/market-reports', priority: '0.8', changefreq: 'weekly' },
 	
 	// Community Pages
 	{ url: 'communities/summerlin', priority: '0.8', changefreq: 'weekly' },

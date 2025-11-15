@@ -21,6 +21,10 @@
 		{ url: '/buying-guide', title: 'Buying Guide', description: 'Complete home buying guide', category: 'Resources' },
 		{ url: '/selling-guide', title: 'Selling Guide', description: 'Complete home selling guide', category: 'Resources' },
 		{ url: '/mortgage-calculator', title: 'Mortgage Calculator', description: 'Calculate your monthly mortgage payment', category: 'Resources' },
+		{ url: '/resources/school-districts', title: 'School Districts', description: 'Las Vegas area schools and districts', category: 'Resources' },
+		{ url: '/resources/moving-checklist', title: 'Moving Checklist', description: 'Complete moving timeline and tasks', category: 'Resources' },
+		{ url: '/resources/home-staging', title: 'Home Staging Guide', description: 'Maximize appeal with staging tips', category: 'Resources' },
+		{ url: '/resources/market-reports', title: 'Market Reports', description: 'Detailed quarterly market reports', category: 'Resources' },
 		
 		// Communities
 		{ url: '/communities/summerlin', title: 'Summerlin Real Estate', description: 'Luxury master-planned community', category: 'Communities' },
