@@ -1,3 +1,21 @@
-# allow crawling everything by default
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap
+Sitemap: https://drjanetduffy.com/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /api/
+Disallow: /v0/
+
+# Allow important pages
+Allow: /
+Allow: /properties
+Allow: /home-value
+Allow: /rentals
+Allow: /blog
+Allow: /about
+Allow: /contact
+
+# Crawl delay (optional, adjust as needed)
+Crawl-delay: 1
