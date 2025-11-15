@@ -1,5 +1,5 @@
 <script>
-import { Star, Award, TrendingUp, Users, CheckCircle, Phone } from 'lucide-svelte';
+import { Star, Award, TrendingUp, Users, CheckCircle, Phone, MapPin } from 'lucide-svelte';
 
 // This could be expanded to load dynamic content from a CMS
 const achievements = [
@@ -110,6 +110,41 @@ const certifications = [
 			</p>
 		</div>
 	
+		<!-- Why Choose Dr. Janet Duffy -->
+		<div class="mb-20">
+			<div class="text-center mb-16">
+				<h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">Why Choose Dr. Janet Duffy?</h2>
+				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
+				<p class="text-lg text-gray-600">Experience the difference of working with a dedicated expert</p>
+			</div>
+
+			<div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+				<div class="text-center">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+						<Award class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-xl font-bold text-gray-900 mb-2">15+ Years Experience</h3>
+					<p class="text-gray-600">Extensive knowledge of the Las Vegas real estate market</p>
+				</div>
+
+				<div class="text-center">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+						<TrendingUp class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-xl font-bold text-gray-900 mb-2">Expert Guidance</h3>
+					<p class="text-gray-600">Personalized service tailored to your unique needs</p>
+				</div>
+
+				<div class="text-center">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+						<MapPin class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-xl font-bold text-gray-900 mb-2">Local Expertise</h3>
+					<p class="text-gray-600">Deep understanding of Las Vegas neighborhoods and communities</p>
+				</div>
+			</div>
+		</div>
+
 		<!-- About Story -->
 		<div class="max-w-6xl mx-auto mb-20">
 			<div class="grid md:grid-cols-2 gap-16 items-center">

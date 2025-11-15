@@ -1,5 +1,5 @@
 <script>
-	import { Home, TrendingUp, Award, MapPin, Star, DollarSign, Calendar, Building2 } from 'lucide-svelte';
+	import { Home, Award, MapPin, Star } from 'lucide-svelte';
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
@@ -150,202 +150,42 @@
 	</div>
 </section>
 
-<!-- Why Choose Dr. Janet Duffy -->
+<!-- Quick Links to Other Sections -->
 <section class="section bg-gray-50">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto">
-			<div class="text-center mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose Dr. Janet Duffy?</h2>
-				<p class="text-lg text-gray-600">Experience the difference of working with a dedicated expert</p>
-			</div>
-
-			<div class="grid md:grid-cols-3 gap-8">
-				<div class="text-center">
+			<div class="grid md:grid-cols-4 gap-6">
+				<a href="/about" class="card text-center hover:shadow-lg transition-all">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
 						<Award class="w-8 h-8 text-primary-600" />
 					</div>
-					<h3 class="text-xl font-bold text-gray-900 mb-2">15+ Years Experience</h3>
-					<p class="text-gray-600">Extensive knowledge of the Las Vegas real estate market</p>
-				</div>
+					<h3 class="text-lg font-bold text-gray-900 mb-2">Why Choose Us</h3>
+					<p class="text-gray-600 text-sm">Experience the difference</p>
+				</a>
 
-				<div class="text-center">
-					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-						<TrendingUp class="w-8 h-8 text-primary-600" />
-					</div>
-					<h3 class="text-xl font-bold text-gray-900 mb-2">Expert Guidance</h3>
-					<p class="text-gray-600">Personalized service tailored to your unique needs</p>
-				</div>
-
-				<div class="text-center">
-					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-						<MapPin class="w-8 h-8 text-primary-600" />
-					</div>
-					<h3 class="text-xl font-bold text-gray-900 mb-2">Local Expertise</h3>
-					<p class="text-gray-600">Deep understanding of Las Vegas neighborhoods and communities</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- Our Services -->
-<section class="section bg-white">
-	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="max-w-7xl mx-auto">
-			<div class="text-center mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
-				<p class="text-lg text-gray-600">Comprehensive real estate solutions tailored to your needs</p>
-			</div>
-
-			<div class="grid md:grid-cols-4 gap-6">
-				<div class="card text-center">
+				<a href="/services" class="card text-center hover:shadow-lg transition-all">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
 						<Home class="w-8 h-8 text-primary-600" />
 					</div>
-					<h3 class="text-lg font-bold text-gray-900 mb-2">Buying</h3>
-					<p class="text-gray-600 text-sm">Expert guidance to find your perfect home</p>
-				</div>
+					<h3 class="text-lg font-bold text-gray-900 mb-2">Our Services</h3>
+					<p class="text-gray-600 text-sm">Comprehensive solutions</p>
+				</a>
 
-				<div class="card text-center">
+				<a href="/neighborhoods" class="card text-center hover:shadow-lg transition-all">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-						<DollarSign class="w-8 h-8 text-primary-600" />
+						<MapPin class="w-8 h-8 text-primary-600" />
 					</div>
-					<h3 class="text-lg font-bold text-gray-900 mb-2">Selling</h3>
-					<p class="text-gray-600 text-sm">Maximize your home's value and sell faster</p>
-				</div>
+					<h3 class="text-lg font-bold text-gray-900 mb-2">Neighborhoods</h3>
+					<p class="text-gray-600 text-sm">Explore Las Vegas</p>
+				</a>
 
-				<div class="card text-center">
+				<a href="/testimonials" class="card text-center hover:shadow-lg transition-all">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-						<Building2 class="w-8 h-8 text-primary-600" />
+						<Star class="w-8 h-8 text-primary-600" />
 					</div>
-					<h3 class="text-lg font-bold text-gray-900 mb-2">Rentals</h3>
-					<p class="text-gray-600 text-sm">Find the perfect rental property</p>
-				</div>
-
-				<div class="card text-center">
-					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-						<TrendingUp class="w-8 h-8 text-primary-600" />
-					</div>
-					<h3 class="text-lg font-bold text-gray-900 mb-2">Investments</h3>
-					<p class="text-gray-600 text-sm">Strategic real estate investment advice</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- Popular Neighborhoods -->
-<section class="section bg-gray-50">
-	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="max-w-7xl mx-auto">
-			<div class="text-center mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Popular Neighborhoods</h2>
-				<p class="text-lg text-gray-600">Discover the best places to live in Las Vegas</p>
-			</div>
-
-			<div class="grid md:grid-cols-3 gap-6">
-				<div class="card">
-					<h3 class="text-xl font-bold text-gray-900 mb-2">West Summerlin</h3>
-					<p class="text-gray-600 mb-4">Master-planned community with luxury homes and world-class amenities</p>
-					<a href="/properties?neighborhood=west-summerlin" class="link-primary">View Properties →</a>
-				</div>
-
-				<div class="card">
-					<h3 class="text-xl font-bold text-gray-900 mb-2">The Ridges</h3>
-					<p class="text-gray-600 mb-4">Exclusive gated community with stunning mountain views</p>
-					<a href="/properties?neighborhood=the-ridges" class="link-primary">View Properties →</a>
-				</div>
-
-				<div class="card">
-					<h3 class="text-xl font-bold text-gray-900 mb-2">Red Rock Country Club</h3>
-					<p class="text-gray-600 mb-4">Luxury golf community with resort-style living</p>
-					<a href="/properties?neighborhood=red-rock" class="link-primary">View Properties →</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- Client Testimonials -->
-<section class="section bg-white">
-	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="max-w-7xl mx-auto">
-			<div class="text-center mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Client Testimonials</h2>
-				<p class="text-lg text-gray-600">Hear what our satisfied clients have to say</p>
-			</div>
-
-			<div class="grid md:grid-cols-3 gap-6">
-				<div class="card">
-					<div class="flex gap-1 mb-4 justify-center">
-						{#each Array(5) as _}
-							<Star class="w-5 h-5 text-yellow-500 fill-yellow-500" />
-						{/each}
-					</div>
-					<p class="text-gray-700 mb-4 italic text-center">"Dr. Duffy helped us find our dream home in West Summerlin. Her expertise and attention to detail made the entire process smooth and stress-free."</p>
-					<p class="font-semibold text-gray-900 text-center">Sarah Johnson</p>
-					<p class="text-sm text-gray-600 text-center">Las Vegas, NV</p>
-				</div>
-
-				<div class="card">
-					<div class="flex gap-1 mb-4 justify-center">
-						{#each Array(5) as _}
-							<Star class="w-5 h-5 text-yellow-500 fill-yellow-500" />
-						{/each}
-					</div>
-					<p class="text-gray-700 mb-4 italic text-center">"We sold our home above asking price thanks to Dr. Duffy's strategic marketing and negotiation skills. Highly recommend!"</p>
-					<p class="font-semibold text-gray-900 text-center">Michael Chen</p>
-					<p class="text-sm text-gray-600 text-center">Henderson, NV</p>
-				</div>
-
-				<div class="card">
-					<div class="flex gap-1 mb-4 justify-center">
-						{#each Array(5) as _}
-							<Star class="w-5 h-5 text-yellow-500 fill-yellow-500" />
-						{/each}
-					</div>
-					<p class="text-gray-700 mb-4 italic text-center">"Professional, knowledgeable, and always available. Dr. Duffy is the best real estate agent in Las Vegas!"</p>
-					<p class="font-semibold text-gray-900 text-center">Jennifer Martinez</p>
-					<p class="text-sm text-gray-600 text-center">Las Vegas, NV</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- Market Insights -->
-<section class="section bg-primary-600 text-white">
-	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="max-w-7xl mx-auto">
-			<div class="text-center mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold mb-4">Market Insights</h2>
-				<p class="text-lg text-white text-opacity-90">Current Las Vegas real estate statistics</p>
-			</div>
-
-			<div class="grid md:grid-cols-3 gap-8">
-				<div class="text-center">
-					<div class="inline-flex items-center justify-center w-16 h-16 bg-white bg-opacity-20 rounded-full mb-4">
-						<DollarSign class="w-8 h-8 text-white" />
-					</div>
-					<div class="text-4xl md:text-5xl font-bold mb-2">$575K</div>
-					<p class="text-white text-opacity-90">Median Home Price</p>
-				</div>
-
-				<div class="text-center">
-					<div class="inline-flex items-center justify-center w-16 h-16 bg-white bg-opacity-20 rounded-full mb-4">
-						<Calendar class="w-8 h-8 text-white" />
-					</div>
-					<div class="text-4xl md:text-5xl font-bold mb-2">19</div>
-					<p class="text-white text-opacity-90">Days on Market</p>
-				</div>
-
-				<div class="text-center">
-					<div class="inline-flex items-center justify-center w-16 h-16 bg-white bg-opacity-20 rounded-full mb-4">
-						<Home class="w-8 h-8 text-white" />
-					</div>
-					<div class="text-4xl md:text-5xl font-bold mb-2">450</div>
-					<p class="text-white text-opacity-90">Homes for Sale</p>
-				</div>
+					<h3 class="text-lg font-bold text-gray-900 mb-2">Testimonials</h3>
+					<p class="text-gray-600 text-sm">Client success stories</p>
+				</a>
 			</div>
 		</div>
 	</div>

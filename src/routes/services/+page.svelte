@@ -222,12 +222,49 @@
 		<!-- Header -->
 		<div class="text-center mb-12 sm:mb-16">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
-				Comprehensive Real Estate Services in Las Vegas
+				Our Services
 			</h1>
 			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
 			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-				Expert real estate services tailored to the Las Vegas market. From first-time homebuyers to luxury property investors, we provide specialized expertise for every real estate need.
+				Comprehensive real estate solutions tailored to your needs
 			</p>
+		</div>
+
+		<!-- Our Services Overview -->
+		<div class="mb-16">
+			<div class="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto">
+				<div class="card text-center">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+						<Home class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-lg font-bold text-gray-900 mb-2">Buying</h3>
+					<p class="text-gray-600 text-sm">Expert guidance to find your perfect home</p>
+				</div>
+
+				<div class="card text-center">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+						<DollarSign class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-lg font-bold text-gray-900 mb-2">Selling</h3>
+					<p class="text-gray-600 text-sm">Maximize your home's value and sell faster</p>
+				</div>
+
+				<div class="card text-center">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+						<Building2 class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-lg font-bold text-gray-900 mb-2">Rentals</h3>
+					<p class="text-gray-600 text-sm">Find the perfect rental property</p>
+				</div>
+
+				<div class="card text-center">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+						<TrendingUp class="w-8 h-8 text-primary-600" />
+					</div>
+					<h3 class="text-lg font-bold text-gray-900 mb-2">Investments</h3>
+					<p class="text-gray-600 text-sm">Strategic real estate investment advice</p>
+				</div>
+			</div>
 		</div>
 		
 		<!-- Search Bar -->
