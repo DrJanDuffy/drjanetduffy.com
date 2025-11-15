@@ -57,6 +57,10 @@
 					<li><a href="/" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
 					<li><a href="/properties" class="text-gray-400 hover:text-white transition-colors">Properties</a></li>
 					<li><a href="/about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+					<li><a href="/services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+					<li><a href="/neighborhoods" class="text-gray-400 hover:text-white transition-colors">Neighborhoods</a></li>
+					<li><a href="/testimonials" class="text-gray-400 hover:text-white transition-colors">Testimonials</a></li>
+					<li><a href="/market-insights" class="text-gray-400 hover:text-white transition-colors">Market Insights</a></li>
 					<li><a href="/contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
 					<li><a href="/blog" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
 				</ul>
@@ -87,6 +91,7 @@
 			<div>
 				<h3 class="text-lg font-display font-bold mb-4 text-white">Communities</h3>
 				<ul class="space-y-2 text-sm">
+					<li><a href="/neighborhoods" class="text-gray-400 hover:text-white transition-colors">Popular Neighborhoods</a></li>
 					<li><a href="/properties?neighborhood=summerlin" class="text-gray-400 hover:text-white transition-colors">Summerlin</a></li>
 					<li><a href="/properties?neighborhood=henderson" class="text-gray-400 hover:text-white transition-colors">Henderson</a></li>
 					<li><a href="/properties?neighborhood=green-valley" class="text-gray-400 hover:text-white transition-colors">Green Valley</a></li>
@@ -104,11 +109,13 @@
 			<div>
 						<h3 class="text-lg font-display font-bold mb-4 text-white">Services</h3>
 						<ul class="space-y-2 text-sm mb-6">
+							<li><a href="/services" class="text-gray-400 hover:text-white transition-colors">All Services</a></li>
 							<li><a href="/home-value" class="text-gray-400 hover:text-white transition-colors">Home Value</a></li>
 							<li><a href="/about#buying" class="text-gray-400 hover:text-white transition-colors">Buying Guide</a></li>
 							<li><a href="/about#selling" class="text-gray-400 hover:text-white transition-colors">Selling Guide</a></li>
 							<li><a href="/about#mortgage" class="text-gray-400 hover:text-white transition-colors">Mortgage Calculator</a></li>
-							<li><a href="/about#testimonials" class="text-gray-400 hover:text-white transition-colors">Testimonials</a></li>
+							<li><a href="/testimonials" class="text-gray-400 hover:text-white transition-colors">Testimonials</a></li>
+							<li><a href="/market-insights" class="text-gray-400 hover:text-white transition-colors">Market Insights</a></li>
 						</ul>
 				
 				<h3 class="text-lg font-display font-bold mb-4 text-white mt-6">Contact</h3>

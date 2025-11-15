@@ -11,6 +11,10 @@ const routes = [
 	{ url: 'rentals', priority: '0.8', changefreq: 'weekly' },
 	{ url: 'blog', priority: '0.7', changefreq: 'weekly' },
 	{ url: 'about', priority: '0.6', changefreq: 'monthly' },
+	{ url: 'services', priority: '0.8', changefreq: 'monthly' },
+	{ url: 'neighborhoods', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'testimonials', priority: '0.7', changefreq: 'monthly' },
+	{ url: 'market-insights', priority: '0.7', changefreq: 'weekly' },
 	{ url: 'contact', priority: '0.7', changefreq: 'monthly' },
 	
 	// Property Search Pages
@@ -49,8 +53,7 @@ const routes = [
 	
             // Property Type Pages - Removed non-existent pages, use query parameters on /properties instead
             
-	// Service Pages
-	{ url: 'services', priority: '0.8', changefreq: 'monthly' },
+	// Service Pages (main services page already listed above)
 	{ url: 'services/buyer-representation', priority: '0.7', changefreq: 'monthly' },
 	{ url: 'services/senior-housing', priority: '0.7', changefreq: 'monthly' },
 	{ url: 'services/military-relocation', priority: '0.7', changefreq: 'monthly' },

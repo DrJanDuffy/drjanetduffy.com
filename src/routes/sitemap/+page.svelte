@@ -8,6 +8,10 @@
 		{ url: '/rentals', title: 'Rentals', description: 'Luxury rental properties', category: 'Properties' },
 		{ url: '/blog', title: 'Blog', description: 'Real estate news and insights', category: 'Resources' },
 		{ url: '/about', title: 'About', description: 'Learn about Dr. Janet Duffy', category: 'Main' },
+		{ url: '/services', title: 'Services', description: 'Comprehensive real estate solutions', category: 'Services' },
+		{ url: '/neighborhoods', title: 'Neighborhoods', description: 'Popular Las Vegas neighborhoods', category: 'Communities' },
+		{ url: '/testimonials', title: 'Testimonials', description: 'Client testimonials and reviews', category: 'Main' },
+		{ url: '/market-insights', title: 'Market Insights', description: 'Las Vegas real estate market statistics', category: 'Resources' },
 		{ url: '/contact', title: 'Contact', description: 'Get in touch with us', category: 'Main' },
 		
 		// Property Search
@@ -42,7 +46,6 @@
 				{ url: '/about#buying', title: 'Buying Guide', description: 'Home buying guide', category: 'Services' },
 				{ url: '/about#selling', title: 'Selling Guide', description: 'Home selling guide', category: 'Services' },
 				{ url: '/about#mortgage', title: 'Mortgage Calculator', description: 'Calculate your mortgage', category: 'Services' },
-				{ url: '/about#testimonials', title: 'Testimonials', description: 'Client testimonials', category: 'Services' },
 		
 		// Legal
 		{ url: '/privacy', title: 'Privacy Policy', description: 'Privacy policy and data protection', category: 'Legal' },
