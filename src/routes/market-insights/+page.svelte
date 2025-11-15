@@ -5,6 +5,17 @@
 <svelte:head>
 	<title>Las Vegas Market Insights | Dr. Janet Duffy REALTOR®</title>
 	<meta name="description" content="Stay informed with the latest Las Vegas real estate trends. Current market statistics including median home prices, days on market, and inventory levels." />
+	
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebPage",
+		"name": "Las Vegas Market Insights",
+		"description": "Current Las Vegas real estate market statistics and trends",
+		"url": "https://www.drjanetduffy.com/market-insights"
+	}
+	</script>
 </svelte:head>
 
 <!-- Hero Section -->

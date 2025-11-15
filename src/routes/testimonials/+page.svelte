@@ -50,6 +50,22 @@
 <svelte:head>
 	<title>Client Testimonials | Dr. Janet Duffy REALTOR®</title>
 	<meta name="description" content="Hear what our satisfied clients have to say about working with Dr. Janet Duffy. Read real testimonials from Las Vegas homebuyers and sellers." />
+	
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "CollectionPage",
+		"name": "Client Testimonials",
+		"description": "Client testimonials and reviews for Dr. Janet Duffy",
+		"url": "https://www.drjanetduffy.com/testimonials",
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": "4.9",
+			"reviewCount": "150"
+		}
+	}
+	</script>
 </svelte:head>
 
 <!-- Hero Section -->

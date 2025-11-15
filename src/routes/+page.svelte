@@ -154,36 +154,41 @@
 <section class="section bg-gray-50">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto">
-			<div class="grid md:grid-cols-4 gap-6">
-				<a href="/about" class="card text-center hover:shadow-lg transition-all">
-					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Explore Our Services</h2>
+				<p class="text-lg text-gray-600">Everything you need for your Las Vegas real estate journey</p>
+			</div>
+			
+			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+				<a href="/about" class="card text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
 						<Award class="w-8 h-8 text-primary-600" />
 					</div>
-					<h3 class="text-lg font-bold text-gray-900 mb-2">Why Choose Us</h3>
+					<h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">Why Choose Us</h3>
 					<p class="text-gray-600 text-sm">Experience the difference</p>
 				</a>
 
-				<a href="/services" class="card text-center hover:shadow-lg transition-all">
-					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+				<a href="/services" class="card text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
 						<Home class="w-8 h-8 text-primary-600" />
 					</div>
-					<h3 class="text-lg font-bold text-gray-900 mb-2">Our Services</h3>
+					<h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">Our Services</h3>
 					<p class="text-gray-600 text-sm">Comprehensive solutions</p>
 				</a>
 
-				<a href="/neighborhoods" class="card text-center hover:shadow-lg transition-all">
-					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+				<a href="/neighborhoods" class="card text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
 						<MapPin class="w-8 h-8 text-primary-600" />
 					</div>
-					<h3 class="text-lg font-bold text-gray-900 mb-2">Neighborhoods</h3>
+					<h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">Neighborhoods</h3>
 					<p class="text-gray-600 text-sm">Explore Las Vegas</p>
 				</a>
 
-				<a href="/testimonials" class="card text-center hover:shadow-lg transition-all">
-					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+				<a href="/testimonials" class="card text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
 						<Star class="w-8 h-8 text-primary-600" />
 					</div>
-					<h3 class="text-lg font-bold text-gray-900 mb-2">Testimonials</h3>
+					<h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">Testimonials</h3>
 					<p class="text-gray-600 text-sm">Client success stories</p>
 				</a>
 			</div>

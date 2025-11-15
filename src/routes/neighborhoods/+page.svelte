@@ -56,6 +56,17 @@
 <svelte:head>
 	<title>Popular Neighborhoods in Las Vegas | Dr. Janet Duffy REALTOR®</title>
 	<meta name="description" content="Discover the best places to live in Las Vegas. Explore popular neighborhoods including West Summerlin, The Ridges, Red Rock Country Club, Henderson, Green Valley, and Seven Hills." />
+	
+	<!-- Structured Data -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "CollectionPage",
+		"name": "Popular Neighborhoods in Las Vegas",
+		"description": "Discover the best places to live in Las Vegas",
+		"url": "https://www.drjanetduffy.com/neighborhoods"
+	}
+	</script>
 </svelte:head>
 
 <!-- Hero Section -->
