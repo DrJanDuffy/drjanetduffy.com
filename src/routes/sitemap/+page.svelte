@@ -34,6 +34,8 @@
 		{ url: '/property-types/townhomes', title: 'Townhomes', description: 'Low-maintenance townhomes', category: 'Properties' },
 		{ url: '/property-types/new-construction', title: 'New Construction', description: 'Brand new homes', category: 'Properties' },
 		{ url: '/property-types/gated-communities', title: 'Gated Communities', description: 'Secure gated communities', category: 'Properties' },
+		{ url: '/property-types/golf-communities', title: 'Golf Communities', description: 'Golf course communities', category: 'Properties' },
+		{ url: '/property-types/55-plus-communities', title: '55+ Communities', description: 'Active adult communities', category: 'Properties' },
 		
 		// Property Search
 		{ url: '/listings-embedded', title: 'Property Grid View', description: 'View properties in grid format', category: 'Properties' },

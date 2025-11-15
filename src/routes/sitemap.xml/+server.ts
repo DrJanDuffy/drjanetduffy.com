@@ -37,6 +37,8 @@ const routes = [
 	{ url: 'property-types/townhomes', priority: '0.8', changefreq: 'weekly' },
 	{ url: 'property-types/new-construction', priority: '0.8', changefreq: 'weekly' },
 	{ url: 'property-types/gated-communities', priority: '0.8', changefreq: 'weekly' },
+	{ url: 'property-types/golf-communities', priority: '0.8', changefreq: 'weekly' },
+	{ url: 'property-types/55-plus-communities', priority: '0.8', changefreq: 'weekly' },
 	
 	// Property Search Pages
 	{ url: 'listings-embedded', priority: '0.8', changefreq: 'daily' },
