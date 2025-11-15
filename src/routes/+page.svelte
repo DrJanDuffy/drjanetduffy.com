@@ -1,5 +1,29 @@
 <script>
 	import { Home, TrendingUp, Award, MapPin, Star, DollarSign, Calendar, Building2 } from 'lucide-svelte';
+	import { goto } from '$app/navigation';
+
+	function handleSearch(event) {
+		event.preventDefault();
+		const formData = new FormData(event.target);
+		const params = new URLSearchParams();
+		
+		const location = formData.get('location');
+		const propertyType = formData.get('property-type');
+		const priceRange = formData.get('price-range');
+		const bedrooms = formData.get('bedrooms');
+		
+		if (location) params.set('location', location);
+		if (propertyType) params.set('type', propertyType);
+		if (priceRange) {
+			const [min, max] = priceRange.split('-');
+			if (min) params.set('minPrice', min);
+			if (max) params.set('maxPrice', max);
+		}
+		if (bedrooms) params.set('bedrooms', bedrooms);
+		
+		const queryString = params.toString();
+		goto(`/properties${queryString ? '?' + queryString : ''}`);
+	}
 </script>
 
 <svelte:head>
@@ -23,7 +47,7 @@
 			<!-- Property Search Form -->
 			<div class="max-w-4xl mx-auto">
 				<div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
-					<form class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+					<form on:submit={handleSearch} class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
 						<div>
 							<label for="location" class="form-label">Location</label>
 							<input type="text" id="location" name="location" placeholder="City, Zip, or Area" class="form-input" />
