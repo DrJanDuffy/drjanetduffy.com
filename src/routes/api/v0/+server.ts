@@ -2,6 +2,7 @@ import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 import { V0_API_KEY } from '$env/static/private';
 
+// V0 API endpoint - check https://v0.dev/docs/v0-platform-api for latest endpoint
 const V0_API_BASE = 'https://api.v0.dev';
 
 export const POST: RequestHandler = async ({ request }) => {
@@ -19,32 +20,57 @@ export const POST: RequestHandler = async ({ request }) => {
 			}, { status: 500 });
 		}
 
-		// Call V0 API to generate component
-		const response = await fetch(`${V0_API_BASE}/v1/prompt`, {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-				'Authorization': `Bearer ${V0_API_KEY}`,
-			},
-			body: JSON.stringify({
-				prompt,
-				model,
-				shadcn,
-			}),
-		});
+		// Try different V0 API endpoint patterns
+		const endpoints = [
+			`${V0_API_BASE}/v1/generate`,
+			`${V0_API_BASE}/v1/prompt`,
+			`${V0_API_BASE}/api/v1/generate`,
+			`${V0_API_BASE}/generate`
+		];
 
-		if (!response.ok) {
-			const error = await response.text();
-			return json({ 
-				error: `V0 API error: ${error}` 
-			}, { status: response.status });
+		let lastError = null;
+		let data = null;
+
+		for (const endpoint of endpoints) {
+			try {
+				const response = await fetch(endpoint, {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json',
+						'Authorization': `Bearer ${V0_API_KEY}`,
+					},
+					body: JSON.stringify({
+						prompt,
+						model,
+						shadcn,
+					}),
+				});
+
+				if (response.ok) {
+					data = await response.json();
+					break;
+				} else {
+					const errorText = await response.text();
+					lastError = { endpoint, status: response.status, error: errorText };
+					// Continue to next endpoint
+					continue;
+				}
+			} catch (err) {
+				lastError = { endpoint, error: err instanceof Error ? err.message : String(err) };
+				continue;
+			}
 		}
 
-		const data = await response.json();
+		if (!data) {
+			return json({ 
+				error: `V0 API error: Could not reach V0 API. Last attempt: ${lastError?.endpoint || 'unknown'} - ${lastError?.error || lastError?.status || 'Unknown error'}. Please check https://v0.dev/docs/v0-platform-api for the correct endpoint.` 
+			}, { status: 500 });
+		}
+
 		return json({ 
 			success: true, 
-			component: data.component || data.code,
-			metadata: data.metadata || {}
+			component: data.component || data.code || data.html || JSON.stringify(data, null, 2),
+			metadata: data.metadata || { rawResponse: data }
 		});
 
 	} catch (error) {
