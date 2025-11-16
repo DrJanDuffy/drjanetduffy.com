@@ -1,7 +1,17 @@
-<script>
+<script lang="ts">
 	import { HelpCircle, ChevronDown } from 'lucide-svelte';
+
+	interface FAQQuestion {
+		q: string;
+		a: string;
+	}
+
+	interface FAQCategory {
+		category: string;
+		questions: FAQQuestion[];
+	}
 	
-	const faqs = [
+	const faqs: FAQCategory[] = [
 		{
 			category: 'Buying a Home',
 			questions: [
@@ -126,14 +136,14 @@
 		}
 	];
 	
-	let openCategory = null;
-	let openQuestion = null;
+	let openCategory: number | null = null;
+	let openQuestion: string | null = null;
 	
-	function toggleCategory(category) {
-		openCategory = openCategory === category ? null : category;
+	function toggleCategory(categoryIndex: number) {
+		openCategory = openCategory === categoryIndex ? null : categoryIndex;
 	}
 	
-	function toggleQuestion(categoryIndex, questionIndex) {
+	function toggleQuestion(categoryIndex: number, questionIndex: number) {
 		const key = `${categoryIndex}-${questionIndex}`;
 		openQuestion = openQuestion === key ? null : key;
 	}
@@ -141,7 +151,62 @@
 
 <svelte:head>
 	<title>Las Vegas Luxury &amp; Relocation FAQ | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Las Vegas Luxury & Relocation FAQ answering common questions about buying, selling, investing, and relocating with a concierge-level REALTOR®." />
+	<meta
+		name="description"
+		content="Las Vegas Luxury & Relocation FAQ answering common questions about buying, selling, investing, and relocating with a concierge-level REALTOR®."
+	/>
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/faq" />
+	<meta property="og:title" content="Las Vegas Luxury &amp; Relocation FAQ | Dr. Janet Duffy REALTOR®" />
+	<meta
+		property="og:description"
+		content="Get expert answers to common Las Vegas Luxury & Relocation questions about buying, selling, investing, and moving to Las Vegas."
+	/>
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://www.drjanetduffy.com/faq" />
+	<meta property="twitter:title" content="Las Vegas Luxury &amp; Relocation FAQ | Dr. Janet Duffy REALTOR®" />
+	<meta
+		property="twitter:description"
+		content="Las Vegas Luxury & Relocation REALTOR® answering your key questions about the Las Vegas market, neighborhoods, and the buying and selling process."
+	/>
+
+	<!-- Structured Data - FAQPage -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "FAQPage",
+		"mainEntity": [
+			{
+				"@type": "Question",
+				"name": "How do I get started with buying a home in Las Vegas?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "The best first step is a conversation about your goals, timeline, and budget, followed by a strong pre-approval from a local lender who understands Las Vegas underwriting. From there, we translate your wish list into a short list of communities based on commute, schools, and lifestyle, and set up curated searches and showings or video tours."
+				}
+			},
+			{
+				"@type": "Question",
+				"name": "How long does it take to buy a home in Las Vegas?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Most financed purchases in Las Vegas close within 30–35 days once under contract; cash deals can wrap in as little as 10–15 days if title is clear. Readiness and how quickly inspections and appraisal are completed are the biggest variables."
+				}
+			},
+			{
+				"@type": "Question",
+				"name": "Is Las Vegas a good place to invest in real estate?",
+				"acceptedAnswer": {
+					"@type": "Answer",
+					"text": "Las Vegas continues to attract investors because of strong rental demand, a diverse employment base, and competitive prices versus coastal markets. Submarkets near major hospitals, employment centers, and freeways often offer attractive rent-to-price ratios and long-term appreciation potential."
+				}
+			}
+		]
+	}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
