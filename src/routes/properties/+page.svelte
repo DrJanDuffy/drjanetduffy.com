@@ -1,7 +1,12 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
 	import { Grid3x3, List, TrendingUp } from 'lucide-svelte';
+
+	interface TocItem {
+		href: string;
+		label: string;
+	}
 
 	let mounted = false;
 
@@ -13,7 +18,7 @@
 	// This tells search engines that all query parameter variations are the same page
 	const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 
-	const tocItems = [
+	const tocItems: TocItem[] = [
 		{ href: '#available-properties', label: 'Available Properties' },
 		{ href: '#views', label: 'Grid, List & Past Sales' },
 		{ href: '#search-strategy', label: 'Search Strategy' },
@@ -28,8 +33,8 @@
 </script>
 
 <svelte:head>
-	<title>Las Vegas Homes for Sale | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Browse all available Las Vegas homes for sale. Updated listings from the MLS. Contact Dr. Janet Duffy for showings." />
+	<title>Las Vegas Homes for Sale | Las Vegas Luxury &amp; Relocation REALTOR | Dr. Janet Duffy</title>
+	<meta name="description" content="Browse all available Las Vegas homes for sale with Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy. View updated MLS listings, compare neighborhoods, and schedule private tours." />
 	<meta name="keywords" content="Las Vegas homes for sale, property listings, MLS, real estate, Dr. Janet Duffy" />
 	
 	<!-- Canonical URL - always points to base /properties page -->
@@ -52,29 +57,29 @@
 	{
 		"@context": "https://schema.org",
 		"@type": "CollectionPage",
-		"name": "Las Vegas Properties for Sale",
-		"description": "Browse all available Las Vegas homes for sale",
+		"name": "Las Vegas Homes for Sale",
+		"description": "Las Vegas Luxury & Relocation REALTOR curated collection of Las Vegas homes and properties for sale.",
 		"url": "https://www.drjanetduffy.com/properties",
+		"isPartOf": {
+			"@type": "WebSite",
+			"name": "Las Vegas Luxury & Relocation REALTOR | Dr. Janet Duffy",
+			"url": "https://www.drjanetduffy.com"
+		},
 		"mainEntity": {
 			"@type": "ItemList",
-			"itemListElement": {
-				"@type": "ListItem",
-				"position": 1,
-				"name": "Las Vegas Real Estate Listings"
-			}
+			"name": "Las Vegas Real Estate Listings",
+			"itemListOrder": "https://schema.org/ItemListOrderDescending",
+			"numberOfItems": 0
 		}
 	}
 	</script>
 </svelte:head>
 
-<section class="section relative" style="background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);">
+<section class="section relative bg-gradient-to-b from-white to-slate-50">
 	<div class="container-premium">
 		<div class="grid lg:grid-cols-5 gap-10 items-center mb-10">
 			<div class="lg:col-span-3 text-center lg:text-left">
-				<h1
-					class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900"
-					style="letter-spacing: -0.03em;"
-				>
+				<h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900 tracking-tight">
 					Las Vegas Homes &amp; Properties for Sale
 				</h1>
 				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent lg:mx-0 mx-auto mb-6"></div>

@@ -1,7 +1,22 @@
-<script>
+<script lang="ts">
 	import { Star, Quote } from 'lucide-svelte';
-	
-	const testimonials = [
+
+	type ClientType = 'Buyer' | 'Seller' | 'First-Time Buyer' | 'Investor' | string;
+
+	interface Testimonial {
+		quote: string;
+		author: string;
+		location: string;
+		rating: number;
+		type: ClientType;
+	}
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const testimonials: Testimonial[] = [
 		{
 			quote: "Dr. Duffy helped us find our dream home in West Summerlin. Her expertise and attention to detail made the entire process smooth and stress-free.",
 			author: "Sarah Johnson",
@@ -45,10 +60,22 @@
 			type: "Buyer"
 		}
 	];
+
+	const tocItems: TocItem[] = [
+		{ id: 'stories', label: 'Client Stories' },
+		{ id: 'rating', label: 'Overall Rating' },
+		{ id: 'why-reviews', label: 'Why Reviews Matter' },
+		{ id: 'buyers', label: 'Buyer Experience' },
+		{ id: 'sellers', label: 'Seller Experience' },
+		{ id: 'investors-relocation', label: 'Investors & Relocation' },
+		{ id: 'client-types', label: 'Types of Clients' },
+		{ id: 'themes', label: 'Common Themes' },
+		{ id: 'faq', label: 'Testimonials FAQ' }
+	];
 </script>
 
 <svelte:head>
-	<title>Client Testimonials | Las Vegas Luxury &amp; Relocation REALTOR</title>
+	<title>Client Testimonials | Las Vegas Luxury &amp; Relocation REALTOR | Dr. Janet Duffy</title>
 	<meta name="description" content="Hear what clients say about working with Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy. Real stories from Las Vegas buyers, sellers, investors, and relocation clients." />
 	
 	<!-- Structured Data -->
@@ -94,10 +121,31 @@
 			</div>
 		</div>
 	</div>
+
+			<!-- On-page navigation -->
+			<nav
+				aria-label="Testimonials page sections"
+				class="mt-10 rounded-full border border-primary-100 bg-white px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+			>
+				<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+					{#each tocItems as item}
+						<li>
+							<a
+								href={`#${item.id}`}
+								class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-700 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+							>
+								{item.label}
+							</a>
+						</li>
+					{/each}
+				</ul>
+			</nav>
+		</div>
+	</div>
 </section>
 
 <!-- Client Testimonials -->
-<section class="section bg-white">
+<section class="section bg-white" id="stories">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto">
 			<div class="mb-12 text-center">
@@ -131,7 +179,7 @@
 			</div>
 
 			<!-- Overall Rating -->
-			<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 text-center text-white mb-12">
+			<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 text-center text-white mb-12" id="rating">
 				<div class="flex justify-center gap-1 mb-4">
 					{#each Array(5) as _}
 						<Star class="w-8 h-8 text-yellow-300 fill-yellow-300" />
@@ -145,7 +193,7 @@
 			</div>
 
 			<!-- Why Reviews Matter -->
-			<div class="mb-12">
+			<div class="mb-12" id="why-reviews">
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Do Client Reviews Matter When Choosing a Las Vegas REALTOR®?</h2>
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto">
 					In a market as busy as Las Vegas, almost every agent can show you a highlight reel of just-sold properties. What really separates service levels is what happens in the quiet moments: the late-night phone call when inspection results arrive, the careful explanation of appraisal language, or the honest advice to walk away from a beautiful home that hides expensive problems. Client testimonials give you an unfiltered look at how those moments are handled when there is no camera rolling—whether clients felt rushed, ignored, or genuinely cared for.
@@ -156,7 +204,7 @@
 			</div>
 
 			<!-- Buyer Experience Section -->
-			<div class="mb-12">
+			<div class="mb-12" id="buyers">
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Do Las Vegas Homebuyers Describe Their Experience?</h2>
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto">
 					Buyers frequently mention feeling “heard and protected” throughout the process. West Summerlin families talk about how showings were organized around school and work schedules, with drive times and school options explained clearly for each neighborhood. First-time buyers in North Las Vegas remember in-depth walkthroughs where every contract line and inspection report was translated into plain language before they signed anything. Out-of-state clients describe video tours that did not hide flaws; instead, they were given complete views of traffic noise, sun exposure, and layout quirks so they could decide with confidence from afar.
@@ -167,7 +215,7 @@
 			</div>
 
 			<!-- Seller Experience Section -->
-			<div class="mb-12">
+			<div class="mb-12" id="sellers">
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Do Sellers Say About Working With Dr. Janet Duffy?</h2>
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto">
 					Seller testimonials often focus on preparation and communication. Clients describe detailed pre-list walkthroughs where they received prioritized lists of updates, staging suggestions tailored to desert living, and realistic timelines to hit the market at the right moment. They talk about professional photography and video that made their homes stand out online, as well as showing schedules that respected families, pets, and remote-work realities.
@@ -178,7 +226,7 @@
 			</div>
 
 			<!-- Investor & Relocation Experience Section -->
-			<div class="mb-12">
+			<div class="mb-12" id="investors-relocation">
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Do Investors and Relocation Clients Rate the Experience?</h2>
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto">
 					Investors writing testimonials frequently mention conservative underwriting and detailed rent projections. They appreciate that I do not simply chase the highest advertised cap rate; instead, we review HOA rules, maintenance expectations, and neighborhood trajectories to build portfolios that can ride out market cycles. Many out-of-state investors have never seen some of their properties in person, yet feel comfortable because they receive thorough inspection reports, contractor estimates, and periodic check-ins long after closing.
@@ -189,7 +237,7 @@
 			</div>
 
 			<!-- Types of Clients Served -->
-			<div class="mb-12">
+			<div class="mb-12" id="client-types">
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Types of Clients Leave These Reviews?</h2>
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto">
 					The voices on this page represent a cross-section of the Las Vegas Valley. You will find first-time buyers purchasing townhomes in North Las Vegas, move-up families trading into larger Summerlin homes, retirees downsizing from two-story properties in Henderson, and professionals relocating for work at major hospitals, gaming companies, and technology firms. There are also investors building rental portfolios, military families navigating PCS timelines, and long-time locals repositioning their equity after life changes such as divorce or inheritance.
@@ -200,7 +248,7 @@
 			</div>
 
 			<!-- Themes in Testimonials -->
-			<div class="mb-12">
+			<div class="mb-12" id="themes">
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Common Themes Show Up Across Client Testimonials?</h2>
 				<div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
 					<div>
@@ -231,7 +279,7 @@
 			</div>
 
 			<!-- Testimonials FAQ -->
-			<div class="mb-12">
+			<div class="mb-12" id="faq">
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Frequently Asked Questions About Client Reviews</h2>
 				<div class="max-w-5xl mx-auto space-y-6 text-gray-700 text-lg leading-relaxed">
 					<div>
