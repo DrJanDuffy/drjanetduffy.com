@@ -41,8 +41,6 @@
 					Current Las Vegas real estate statistics and trends
 				</p>
 			</div>
-		</div>
-	</div>
 
 			<!-- On-page navigation -->
 			<nav
