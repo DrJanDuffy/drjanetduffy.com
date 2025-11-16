@@ -365,7 +365,7 @@
 						View Available Properties
 					</a>
 				</div>
-			</div>
+			</section>
 		</div>
 	</div>
 </section>
