@@ -1,16 +1,75 @@
-<script>
+<script lang="ts">
 	import { Home, TrendingUp, CheckCircle, MapPin, Users, Award } from 'lucide-svelte';
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'services', label: 'Residential Services' },
+		{ id: 'markets', label: 'Markets Served' },
+		{ id: 'details', label: 'Service Details' },
+		{ id: 'benefits', label: 'Benefits' },
+		{ id: 'cta', label: 'Work With Dr. Duffy' }
+	];
 </script>
 
 <svelte:head>
-	<title>Residential Specialist Services in Las Vegas | Expert Home Services</title>
-	<meta name="description" content="Comprehensive residential real estate expertise for Las Vegas homebuyers and sellers. Expert services covering all aspects of residential real estate transactions." />
-	<meta name="keywords" content="residential real estate Las Vegas, home specialist, residential agent Las Vegas, home buying selling Las Vegas" />
+	<title>
+		Las Vegas Luxury &amp; Relocation Residential Specialist | Dr. Janet Duffy REALTOR®
+	</title>
+	<meta
+		name="description"
+		content="Residential specialist services from Las Vegas Luxury &amp; Relocation REALTOR® Dr. Janet Duffy, guiding homebuyers and sellers through every step of the Las Vegas residential market."
+	/>
+	<meta
+		name="keywords"
+		content="Las Vegas Luxury &amp; Relocation REALTOR, residential real estate Las Vegas, home specialist, residential agent Las Vegas"
+	/>
+
+	<meta
+		property="og:title"
+		content="Las Vegas Luxury &amp; Relocation Residential Specialist | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		property="og:description"
+		content="End-to-end residential expertise for Las Vegas buyers and sellers, from pricing and marketing to negotiation and closing."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/services/residential-specialist" />
+	<meta property="og:site_name" content="Las Vegas Luxury &amp; Relocation REALTOR" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:title"
+		content="Las Vegas Luxury &amp; Relocation Residential Specialist | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		name="twitter:description"
+		content="Comprehensive residential real estate support across starter, family, and luxury markets in the Las Vegas Valley."
+	/>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Las Vegas Luxury & Relocation Residential Specialist Services",
+			"description": "Residential specialist services for Las Vegas buyers and sellers, covering market analysis, negotiation, transaction management, and client education.",
+			"url": "https://www.drjanetduffy.com/services/residential-specialist",
+			"about": {
+				"@type": "RealEstateAgent",
+				"name": "Dr. Janet Duffy",
+				"areaServed": "Las Vegas, Nevada"
+			}
+		}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-12 sm:mb-16">
+		<div class="text-center mb-8 sm:mb-10" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Residential Specialist Services in Las Vegas
 			</h1>
@@ -20,9 +79,37 @@
 			</p>
 		</div>
 
+		<!-- On-page navigation -->
+		<nav
+			aria-label="On this page"
+			class="mb-10 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-700 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
 		<div class="max-w-4xl mx-auto">
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Comprehensive Residential Real Estate Services Do We Provide?</h2>
+			<section
+				id="services"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="services-heading"
+			>
+				<h2
+					id="services-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Comprehensive Residential Real Estate Services Do We Provide?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
 					Residential real estate transactions require expertise across multiple areas, from market analysis to negotiation to transaction management. Our residential specialist services provide comprehensive expertise covering all aspects of home buying and selling through market expertise, transaction management, negotiation excellence, and dedicated client service tailored to each client's unique needs.
@@ -69,10 +156,19 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Residential Markets Do We Serve Throughout Las Vegas?</h2>
+			<section
+				id="markets"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="markets-heading"
+			>
+				<h2
+					id="markets-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					Which Residential Markets Do We Serve Throughout Las Vegas?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Las Vegas offers diverse residential markets including starter home markets in North Las Vegas and Centennial Hills, family home markets in Summerlin and Henderson, and luxury residential markets in The Ridges and Red Rock Country Club. Our residential specialist services cover all market segments throughout the Las Vegas Valley, each with unique characteristics and buyer demographics.
@@ -109,10 +205,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Residential Specialist Services Are Included?</h2>
+			<section
+				id="details"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="details-heading"
+			>
+				<h2
+					id="details-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Residential Specialist Services Are Included?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Our residential specialist services include comprehensive market analysis evaluating comparable sales and trends, expert negotiation achieving optimal outcomes, complete transaction management coordinating all aspects from contract to closing, and client education empowering clients with knowledge throughout the process. These services ensure successful residential transactions in Las Vegas.
 				</p>
@@ -158,10 +263,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are the Benefits of Residential Specialist Services?</h2>
+			<section
+				id="benefits"
+				class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="benefits-heading"
+			>
+				<h2
+					id="benefits-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Are the Benefits of Residential Specialist Services?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Benefits of residential specialist services include comprehensive market knowledge of Las Vegas residential markets and property values, transaction expertise managing all aspects ensuring smooth processes, expert negotiation skills achieving optimal outcomes and protecting client interests, and dedicated client focus tailoring service to each client's unique needs and goals.
 				</p>
@@ -199,10 +313,19 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white">
-				<h2 class="text-3xl md:text-4xl font-bold mb-4">Residential Specialist Services in Las Vegas</h2>
+			<section
+				id="cta"
+				class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white scroll-mt-24"
+				aria-labelledby="cta-heading"
+			>
+				<h2
+					id="cta-heading"
+					class="text-3xl md:text-4xl font-bold mb-4"
+				>
+					Residential Specialist Services in Las Vegas
+				</h2>
 				<p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
 					Let us help you with your residential real estate needs. Contact us today to schedule a consultation.
 				</p>
@@ -210,11 +333,14 @@
 					<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">
 						Schedule Consultation
 					</a>
-					<a href="/properties" class="btn-primary bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600">
+					<a
+						href="/properties"
+						class="btn-primary bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600"
+					>
 						View Available Properties
 					</a>
 				</div>
-			</div>
+			</section>
 		</div>
 	</div>
 </section>

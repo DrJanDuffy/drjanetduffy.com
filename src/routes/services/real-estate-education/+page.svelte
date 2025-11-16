@@ -1,15 +1,72 @@
-<script>
+<script lang="ts">
 	import { BookOpen, GraduationCap, Users, Lightbulb } from 'lucide-svelte';
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'services', label: 'Education Services' },
+		{ id: 'benefits', label: 'Benefits' },
+		{ id: 'cta', label: 'Learn With Dr. Duffy' }
+	];
 </script>
 
 <svelte:head>
-	<title>Real Estate Education Services | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="In-depth knowledge in legal, regulatory, technology, and sales process matters. Professional real estate education and training services." />
+	<title>
+		Las Vegas Luxury &amp; Relocation Real Estate Education | Dr. Janet Duffy REALTOR®
+	</title>
+	<meta
+		name="description"
+		content="Real estate education and training from Las Vegas Luxury &amp; Relocation REALTOR® Dr. Janet Duffy, covering legal, regulatory, technology, and sales process best practices."
+	/>
+
+	<meta
+		property="og:title"
+		content="Las Vegas Luxury &amp; Relocation Real Estate Education | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		property="og:description"
+		content="Professional real estate education on Nevada law, fair housing, contracts, and modern real estate technology."
+	/>
+	<meta property="og:type" content="website" />
+	<meta
+		property="og:url"
+		content="https://www.drjanetduffy.com/services/real-estate-education"
+	/>
+	<meta property="og:site_name" content="Las Vegas Luxury &amp; Relocation REALTOR" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:title"
+		content="Las Vegas Luxury &amp; Relocation Real Estate Education | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		name="twitter:description"
+		content="In-depth training for agents and clients on legal, regulatory, and technology topics in Las Vegas real estate."
+	/>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Las Vegas Luxury & Relocation Real Estate Education",
+			"description": "Education and training services from Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy on legal, regulatory, technology, and sales processes.",
+			"url": "https://www.drjanetduffy.com/services/real-estate-education",
+			"about": {
+				"@type": "RealEstateAgent",
+				"name": "Dr. Janet Duffy",
+				"areaServed": "Las Vegas, Nevada"
+			}
+		}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-16">
+		<div class="text-center mb-10" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Expert Real Estate Education & Training Services
 			</h1>
@@ -19,8 +76,29 @@
 			</p>
 		</div>
 
-		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Real Estate Education Services Do We Provide?</h2>
+		<!-- On-page navigation -->
+		<nav
+			aria-label="On this page"
+			class="mb-10 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-700 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
+		<div class="mb-16" id="services">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">
+				What Real Estate Education Services Do We Provide?
+			</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
 				Real estate education services include legal and regulatory training covering Nevada real estate laws, fair housing compliance, contract law, and disclosure requirements. We also provide technology and process education covering MLS systems, digital transaction management, virtual tours, and CRM systems to stay current with industry best practices.
 			</p>
@@ -82,8 +160,10 @@
 			</div>
 		</div>
 
-		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Are the Benefits of Real Estate Education?</h2>
+		<div class="mb-16" id="benefits">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">
+				What Are the Benefits of Real Estate Education?
+			</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
 				Real estate education benefits include expert knowledge to stay current with industry best practices, client education to empower clients with knowledge, and continuous learning for ongoing professional development. These benefits ensure you provide the highest quality service and stay ahead of industry changes.
 			</p>
@@ -107,7 +187,7 @@
 			</div>
 		</div>
 
-		<div class="text-center">
+		<div class="text-center" id="cta">
 			<a href="/contact" class="btn-primary">Learn More</a>
 		</div>
 	</div>

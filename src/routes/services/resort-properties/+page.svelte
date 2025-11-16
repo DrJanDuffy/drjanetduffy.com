@@ -1,16 +1,75 @@
-<script>
+<script lang="ts">
 	import { Home, MapPin, TrendingUp, Key, Umbrella, DollarSign } from 'lucide-svelte';
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'markets', label: 'Resort Markets' },
+		{ id: 'communities', label: 'Premier Communities' },
+		{ id: 'services', label: 'Resort Services' },
+		{ id: 'considerations', label: 'Key Considerations' },
+		{ id: 'cta', label: 'Plan Your Resort Strategy' }
+	];
 </script>
 
 <svelte:head>
-	<title>Resort & Second Home Properties in Las Vegas | Vacation Homes</title>
-	<meta name="description" content="Specialized services for resort and second home properties in Las Vegas. Expert guidance for vacation homes, investment properties, and resort communities in Las Vegas and surrounding areas." />
-	<meta name="keywords" content="resort properties Las Vegas, second homes Las Vegas, vacation homes Las Vegas, investment properties, Lake Las Vegas" />
+	<title>
+		Las Vegas Luxury &amp; Relocation Resort &amp; Second Home Services | Dr. Janet Duffy REALTOR®
+	</title>
+	<meta
+		name="description"
+		content="Resort and second home services from Las Vegas Luxury &amp; Relocation REALTOR® Dr. Janet Duffy, focused on Lake Las Vegas, golf communities, and view properties for vacation and investment use."
+	/>
+	<meta
+		name="keywords"
+		content="Las Vegas Luxury &amp; Relocation REALTOR, resort properties Las Vegas, second homes Las Vegas, Lake Las Vegas, golf community second homes"
+	/>
+
+	<meta
+		property="og:title"
+		content="Las Vegas Luxury &amp; Relocation Resort &amp; Second Home Services | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		property="og:description"
+		content="Strategic guidance on buying, renting, and managing resort and second homes in Las Vegas’s premier communities."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/services/resort-properties" />
+	<meta property="og:site_name" content="Las Vegas Luxury &amp; Relocation REALTOR" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:title"
+		content="Las Vegas Luxury &amp; Relocation Resort &amp; Second Home Services | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		name="twitter:description"
+		content="Vacation, second home, and resort investment strategies tailored to Lake Las Vegas, golf communities, and view properties."
+	/>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Las Vegas Luxury & Relocation Resort & Second Home Services",
+			"description": "Resort and second home real estate services for Lake Las Vegas, golf course communities, and view properties in the Las Vegas area.",
+			"url": "https://www.drjanetduffy.com/services/resort-properties",
+			"about": {
+				"@type": "RealEstateAgent",
+				"name": "Dr. Janet Duffy",
+				"areaServed": "Las Vegas, Nevada"
+			}
+		}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-12 sm:mb-16">
+		<div class="text-center mb-8 sm:mb-10" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Resort & Second Home Properties in Las Vegas
 			</h1>
@@ -20,9 +79,37 @@
 			</p>
 		</div>
 
+		<!-- On-page navigation -->
+		<nav
+			aria-label="On this page"
+			class="mb-10 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-700 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
 		<div class="max-w-4xl mx-auto">
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Resort & Second Home Markets Are Available in Las Vegas?</h2>
+			<section
+				id="markets"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="markets-heading"
+			>
+				<h2
+					id="markets-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Resort &amp; Second Home Markets Are Available in Las Vegas?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
 					Las Vegas offers exceptional opportunities for second home buyers and investors seeking resort-style living and vacation properties. From Lake Las Vegas to golf course communities, the area provides diverse options through vacation property guidance, investment opportunity analysis, resort community expertise, and rental potential understanding.
@@ -69,10 +156,19 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Premier Resort Communities Are Available in Las Vegas?</h2>
+			<section
+				id="communities"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="communities-heading"
+			>
+				<h2
+					id="communities-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					Which Premier Resort Communities Are Available in Las Vegas?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Premier resort communities in Las Vegas include Lake Las Vegas with a man-made lake and championship golf, golf course communities like Red Rock Country Club and Anthem Country Club, and mountain and view properties in The Ridges and MacDonald Highlands. Each community offers unique resort-style amenities and second home opportunities.
 				</p>
@@ -108,10 +204,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Resort Property Services Do We Provide?</h2>
+			<section
+				id="services"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="services-heading"
+			>
+				<h2
+					id="services-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Resort Property Services Do We Provide?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Our resort property services include vacation home purchasing guidance for vacation use and financing, investment property analysis evaluating rental income potential, and resort community expertise understanding rules and rental restrictions. These services help buyers find perfect resort or second home properties in Las Vegas.
 				</p>
@@ -147,10 +252,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are Key Considerations for Resort Properties?</h2>
+			<section
+				id="considerations"
+				class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="considerations-heading"
+			>
+				<h2
+					id="considerations-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Are Key Considerations for Resort Properties?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Key considerations for resort properties include rental restrictions affecting investment potential, property management requirements for vacation properties, and seasonal considerations understanding demand patterns throughout the year. Understanding these factors helps buyers make informed decisions about resort and second home properties in Las Vegas.
 				</p>
@@ -177,10 +291,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white">
-				<h2 class="text-3xl md:text-4xl font-bold mb-4">Resort & Second Home Services in Las Vegas</h2>
+			<section
+				id="cta"
+				class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white scroll-mt-24"
+				aria-labelledby="cta-heading"
+			>
+				<h2
+					id="cta-heading"
+					class="text-3xl md:text-4xl font-bold mb-4"
+				>
+					Resort &amp; Second Home Services in Las Vegas
+				</h2>
 				<p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
 					Let us help you find the perfect resort or second home property. Contact us today to schedule a consultation.
 				</p>
@@ -188,11 +311,14 @@
 					<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">
 						Schedule Consultation
 					</a>
-					<a href="/properties" class="btn-primary bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600">
+					<a
+						href="/properties"
+						class="btn-primary bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600"
+					>
 						View Available Properties
 					</a>
 				</div>
-			</div>
+			</section>
 		</div>
 	</div>
 </section>

@@ -1,16 +1,75 @@
-<script>
+<script lang="ts">
 	import { Home, DollarSign, CheckCircle, BarChart3, FileText, TrendingUp } from 'lucide-svelte';
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'services', label: 'Appraisal Services' },
+		{ id: 'process', label: 'Appraisal Process' },
+		{ id: 'markets', label: 'Markets Served' },
+		{ id: 'benefits', label: 'Benefits' },
+		{ id: 'cta', label: 'Schedule Appraisal' }
+	];
 </script>
 
 <svelte:head>
-	<title>Residential Appraisal Services in Las Vegas | Property Valuations</title>
-	<meta name="description" content="Professional residential property valuations for Las Vegas homes. Expert appraisal services for state residential and general appraisers, exceeding qualification requirements." />
-	<meta name="keywords" content="residential appraisal Las Vegas, home appraisal, property valuation Las Vegas, real estate appraisal" />
+	<title>
+		Las Vegas Luxury &amp; Relocation Residential Appraisal Services | Property Valuations
+	</title>
+	<meta
+		name="description"
+		content="Residential appraisal services for Las Vegas homes from Las Vegas Luxury &amp; Relocation REALTOR® Dr. Janet Duffy, delivering lender-ready, market-accurate valuations."
+	/>
+	<meta
+		name="keywords"
+		content="Las Vegas Luxury &amp; Relocation REALTOR, residential appraisal Las Vegas, home appraisal, property valuation Las Vegas"
+	/>
+
+	<meta
+		property="og:title"
+		content="Las Vegas Luxury &amp; Relocation Residential Appraisal Services | Property Valuations"
+	/>
+	<meta
+		property="og:description"
+		content="Professional residential appraisals with deep Las Vegas market knowledge for single-family, condo, townhome, and luxury properties."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/services/residential-appraisal" />
+	<meta property="og:site_name" content="Las Vegas Luxury &amp; Relocation REALTOR" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:title"
+		content="Las Vegas Luxury &amp; Relocation Residential Appraisal Services | Property Valuations"
+	/>
+	<meta
+		name="twitter:description"
+		content="Objective, data-backed residential valuations tailored to Las Vegas buyers, sellers, and lenders."
+	/>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Las Vegas Luxury & Relocation Residential Appraisal Services",
+			"description": "Residential appraisal services for Las Vegas homes, providing comprehensive, lender-compliant valuations for buyers, sellers, and investors.",
+			"url": "https://www.drjanetduffy.com/services/residential-appraisal",
+			"about": {
+				"@type": "RealEstateAgent",
+				"name": "Dr. Janet Duffy",
+				"areaServed": "Las Vegas, Nevada"
+			}
+		}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-12 sm:mb-16">
+		<div class="text-center mb-8 sm:mb-10" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Residential Appraisal Services in Las Vegas
 			</h1>
@@ -20,9 +79,37 @@
 			</p>
 		</div>
 
+		<!-- On-page navigation -->
+		<nav
+			aria-label="On this page"
+			class="mb-10 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-700 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
 		<div class="max-w-4xl mx-auto">
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Professional Residential Appraisal Services Do We Provide?</h2>
+			<section
+				id="services"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="services-heading"
+			>
+				<h2
+					id="services-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Professional Residential Appraisal Services Do We Provide?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
 					Residential appraisals are essential for real estate transactions, providing objective property valuations based on comprehensive analysis. Las Vegas residential properties require appraisers who understand local markets, neighborhood characteristics, and property values. Our residential appraisal services provide expert valuations through property valuation, market analysis, comprehensive reports, and deep market knowledge.
@@ -69,10 +156,19 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Is Our Residential Appraisal Process?</h2>
+			<section
+				id="process"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="process-heading"
+			>
+				<h2
+					id="process-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Is Our Residential Appraisal Process?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Our residential appraisal process includes property inspection, comprehensive market analysis, valuation development, and detailed appraisal reporting. This systematic approach ensures accurate valuations based on thorough property evaluation, comparable sales analysis, and current market conditions in Las Vegas.
 				</p>
@@ -118,10 +214,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Residential Appraisal Markets Do We Serve in Las Vegas?</h2>
+			<section
+				id="markets"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="markets-heading"
+			>
+				<h2
+					id="markets-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					Which Residential Appraisal Markets Do We Serve in Las Vegas?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					We provide residential appraisals for single-family homes, condominiums, townhomes, and luxury homes throughout Las Vegas. Each property type requires specialized appraisal expertise, and we understand the unique characteristics and valuation factors for each market segment in the Las Vegas area.
 				</p>
@@ -157,10 +262,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are the Benefits of Professional Residential Appraisals?</h2>
+			<section
+				id="benefits"
+				class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="benefits-heading"
+			>
+				<h2
+					id="benefits-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Are the Benefits of Professional Residential Appraisals?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Professional residential appraisals provide accurate valuations based on current market conditions, lender acceptance to facilitate financing approvals, transaction support to help resolve value disputes, and deep market knowledge ensuring valuations reflect true Las Vegas market values.
 				</p>
@@ -198,10 +312,19 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white">
-				<h2 class="text-3xl md:text-4xl font-bold mb-4">Residential Appraisal Services in Las Vegas</h2>
+			<section
+				id="cta"
+				class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white scroll-mt-24"
+				aria-labelledby="cta-heading"
+			>
+				<h2
+					id="cta-heading"
+					class="text-3xl md:text-4xl font-bold mb-4"
+				>
+					Residential Appraisal Services in Las Vegas
+				</h2>
 				<p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
 					Let us provide professional residential appraisals for your Las Vegas property. Contact us today to schedule an appraisal.
 				</p>
@@ -209,11 +332,14 @@
 					<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">
 						Schedule Appraisal
 					</a>
-					<a href="/home-value" class="btn-primary bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600">
+					<a
+						href="/home-value"
+						class="btn-primary bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600"
+					>
 						Get Home Value Estimate
 					</a>
 				</div>
-			</div>
+			</section>
 		</div>
 	</div>
 </section>

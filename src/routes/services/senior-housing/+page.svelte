@@ -1,16 +1,75 @@
-<script>
+<script lang="ts">
 	import { Home, Users, CheckCircle, MapPin, Heart, TrendingUp } from 'lucide-svelte';
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'options', label: 'Housing Options' },
+		{ id: 'communities', label: 'Premier Communities' },
+		{ id: 'services', label: 'Specialized Services' },
+		{ id: 'considerations', label: 'Key Considerations' },
+		{ id: 'cta', label: 'Find Your Retirement Home' }
+	];
 </script>
 
 <svelte:head>
-	<title>Senior Housing Solutions in Las Vegas | 50+ Real Estate Services</title>
-	<meta name="description" content="Specialized real estate services for buyers 50+ in Las Vegas. Expert guidance for downsizing, retirement communities, and age-restricted housing in Summerlin, Henderson, and surrounding areas." />
-	<meta name="keywords" content="senior housing Las Vegas, 55+ communities Las Vegas, retirement homes Las Vegas, downsizing Las Vegas, age-restricted housing" />
+	<title>
+		Las Vegas Luxury &amp; Relocation Senior Housing Solutions | Dr. Janet Duffy REALTOR®
+	</title>
+	<meta
+		name="description"
+		content="Senior housing and 55+ real estate services from Las Vegas Luxury &amp; Relocation REALTOR® Dr. Janet Duffy, specializing in downsizing, active adult communities, and retirement moves."
+	/>
+	<meta
+		name="keywords"
+		content="Las Vegas Luxury &amp; Relocation REALTOR, senior housing Las Vegas, 55+ communities, retirement homes Las Vegas, downsizing"
+	/>
+
+	<meta
+		property="og:title"
+		content="Las Vegas Luxury &amp; Relocation Senior Housing Solutions | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		property="og:description"
+		content="Guidance for buyers 50+ navigating Sun City, Del Webb, Henderson, and luxury retirement communities in Las Vegas."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/services/senior-housing" />
+	<meta property="og:site_name" content="Las Vegas Luxury &amp; Relocation REALTOR" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:title"
+		content="Las Vegas Luxury &amp; Relocation Senior Housing Solutions | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		name="twitter:description"
+		content="Downsizing, community selection, and relocation support tailored to active adults and retirees moving to Las Vegas."
+	/>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Las Vegas Luxury & Relocation Senior Housing Solutions",
+			"description": "Senior housing services for buyers 50+ in Las Vegas, including 55+ communities, downsizing, and relocation guidance.",
+			"url": "https://www.drjanetduffy.com/services/senior-housing",
+			"about": {
+				"@type": "RealEstateAgent",
+				"name": "Dr. Janet Duffy",
+				"areaServed": "Las Vegas, Nevada"
+			}
+		}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-12 sm:mb-16">
+		<div class="text-center mb-8 sm:mb-10" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Senior Housing Solutions in Las Vegas
 			</h1>
@@ -20,9 +79,37 @@
 			</p>
 		</div>
 
+		<!-- On-page navigation -->
+		<nav
+			aria-label="On this page"
+			class="mb-10 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-700 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
 		<div class="max-w-4xl mx-auto">
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Senior Housing Options Are Available in Las Vegas?</h2>
+			<section
+				id="options"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="options-heading"
+			>
+				<h2
+					id="options-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Senior Housing Options Are Available in Las Vegas?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
 					Las Vegas offers exceptional options for buyers 50 and older, from active adult communities to age-restricted neighborhoods and lifestyle-focused developments. Our specialized services help you navigate these unique markets through age-restricted community exploration, active adult living options, downsizing solutions, and strategic investment property advice.
@@ -69,10 +156,19 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Premier Senior Communities Are Available in Las Vegas?</h2>
+			<section
+				id="communities"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="communities-heading"
+			>
+				<h2
+					id="communities-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					Which Premier Senior Communities Are Available in Las Vegas?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Las Vegas and surrounding areas feature numerous communities specifically designed for active adults and retirees including Sun City communities in Summerlin and Anthem, Del Webb communities with resort-style amenities, Henderson active adult communities, and luxury retirement options in The Ridges and Red Rock Country Club. These communities offer low-maintenance living, resort-style amenities, and vibrant social environments.
@@ -119,10 +215,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Specialized Senior Housing Services Do We Provide?</h2>
+			<section
+				id="services"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="services-heading"
+			>
+				<h2
+					id="services-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Specialized Senior Housing Services Do We Provide?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Our specialized senior housing services include downsizing consultation to help you transition to smaller homes, community evaluation to understand rules and amenities, financial planning integration to fit home purchases into retirement plans, and relocation services for retirees moving to Las Vegas. These comprehensive services address the unique needs of buyers 50 and older.
 				</p>
@@ -168,10 +273,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are Key Considerations for Senior Homebuyers?</h2>
+			<section
+				id="considerations"
+				class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="considerations-heading"
+			>
+				<h2
+					id="considerations-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Are Key Considerations for Senior Homebuyers?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Key considerations for senior homebuyers include single-level living for accessibility and convenience, low-maintenance features to reduce upkeep responsibilities, healthcare access proximity to quality medical facilities, and social opportunities through active adult communities. Understanding these factors helps senior buyers find homes that enhance their retirement lifestyle.
 				</p>
@@ -205,9 +319,12 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white">
+			<div
+				id="cta"
+				class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white scroll-mt-24"
+			>
 				<h2 class="text-3xl md:text-4xl font-bold mb-4">Find Your Perfect Retirement Home in Las Vegas</h2>
 				<p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
 					Let us help you navigate Las Vegas's senior housing market and find the perfect home for your retirement years. Contact us today to schedule a consultation.
