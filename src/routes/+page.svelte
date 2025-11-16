@@ -302,6 +302,12 @@
 					</p>
 				</div>
 			</div>
+
+			<div class="mt-10 text-center">
+				<a href="/faq" class="btn-secondary">
+					View Full Las Vegas Luxury &amp; Relocation FAQ
+				</a>
+			</div>
 		</div>
 	</div>
 </section>
@@ -356,6 +362,11 @@
 			<p class="text-lg text-gray-700 leading-relaxed">
 				During negotiations, I focus on net proceeds rather than brag-worthy list-to-sale ratios. We evaluate every offer for appraisal risk, repair caps, backup buyer strength, and timeline certainty. If it benefits you, I craft rent-back agreements so you can shop for your next home without feeling rushed. My sellers regularly close with fewer contingencies and stronger terms because the process is engineered for clarity, not chaos.
 			</p>
+			<div class="mt-6 text-center">
+				<a href="/selling-guide" class="btn-secondary">
+					View the Full Selling Guide
+				</a>
+			</div>
 		</div>
 	</div>
 </section>
@@ -374,6 +385,11 @@
 			<p class="text-lg text-gray-700 leading-relaxed">
 				Once under contract, weekly check-ins keep you informed about appraisal scheduling, title reports, and loan milestones. I coordinate contractors for specialized inspections—think irrigation audits, solar transfers, or commercial-grade appliance checks—while you review digital records from anywhere. By the time we reach the signing table, you understand every line item and feel confident that nothing slipped through the cracks.
 			</p>
+			<div class="mt-6 text-center">
+				<a href="/buying-guide" class="btn-secondary">
+					View the Full Buying Guide
+				</a>
+			</div>
 		</div>
 	</div>
 </section>
@@ -392,6 +408,11 @@
 			<p class="text-lg text-gray-700 leading-relaxed">
 				Already own in Las Vegas? I deliver the same neighborhood intelligence to sellers. Understanding who is most likely to buy your home—move-up locals, California tax refugees, or remote workers—allows us to tailor marketing narratives that resonate. We emphasize the backyard orientation that captures afternoon shade, the dual offices that support hybrid work, or the upgraded insulation that keeps garages cooler than 100°F. Neighborhood storytelling is the difference between listing data and an emotional connection that inspires premium offers.
 			</p>
+			<div class="mt-6 text-center">
+				<a href="/neighborhoods" class="btn-secondary">
+					Explore All Neighborhood Guides
+				</a>
+			</div>
 		</div>
 	</div>
 </section>
@@ -410,6 +431,11 @@
 			<p class="text-lg text-gray-700 leading-relaxed">
 				The final piece is advocacy. I maintain ongoing relationships with builders, HOA boards, and escrow officers, which means your file never stalls on someone’s desk. Whether you are pursuing a $350K townhome or a $3M custom estate, you receive the same proactive communication, luxury-level marketing, and negotiation rigor. My role is to remove friction so you can focus on picturing your life in the desert—not on paperwork pileups or unanswered calls.
 			</p>
+			<div class="mt-6 text-center">
+				<a href="/services" class="btn-secondary">
+					View All Luxury &amp; Relocation Services
+				</a>
+			</div>
 		</div>
 	</div>
 </section>
@@ -477,6 +503,11 @@
 			<p class="text-lg text-gray-700 leading-relaxed">
 				Finally, remote-work relocations from California, Arizona, and the Mountain West continue to reshape our market. These buyers often tour virtually before their first flight, so digital storytelling matters. I produce narrated walkthroughs, neighborhood drive videos, and data-backed comparisons that answer the questions they would ask in person. Whether you are upsizing locally or investing from afar, you gain a clear playbook that aligns with the realities of inventory, incentives, and seasonal demand cycles.
 			</p>
+			<div class="mt-6 text-center">
+				<a href="/market-insights" class="btn-secondary">
+					View Detailed Market Insights
+				</a>
+			</div>
 		</div>
 	</div>
 </section>
