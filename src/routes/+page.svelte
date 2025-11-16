@@ -177,6 +177,9 @@
 							Browse Las Vegas Homes
 						</a>
 					</div>
+					<p class="mt-4 text-sm sm:text-base text-gray-600">
+						Planning a move to Las Vegas? Explore dedicated <a href="/relocation" class="text-primary-600 font-semibold hover:underline">luxury &amp; relocation services</a> tailored for executives, medical professionals, military families, and remote workers.
+					</p>
 				</div>
 				<div class="relative">
 					<div class="rounded-2xl shadow-xl overflow-hidden bg-white border border-gray-100 h-64 md:h-80">

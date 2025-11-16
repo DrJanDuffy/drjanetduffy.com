@@ -148,6 +148,19 @@
 			</div>
 		{/if}
 
+		<div class="mt-10 bg-primary-50 border border-primary-100 rounded-2xl p-6 md:p-8 text-center md:text-left flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-8">
+			<div class="flex-1">
+				<h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Need Help Narrowing the Options?</h2>
+				<p class="text-gray-700 text-base md:text-lg">
+					If you are relocating, comparing luxury communities, or trying to decode MLS data, connect with your Las Vegas Luxury &amp; Relocation REALTOR® for a quick strategy call. We can turn this listings feed into a focused short list tailored to your timeline, budget, and lifestyle.
+				</p>
+			</div>
+			<div class="flex flex-col sm:flex-row gap-3">
+				<a href="/contact" class="btn-primary">Schedule a Call</a>
+				<a href="/relocation" class="btn-secondary">Plan a Relocation</a>
+			</div>
+		</div>
+
 	</div>
 </section>
 

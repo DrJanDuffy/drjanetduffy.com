@@ -15,7 +15,7 @@
 			</h1>
 			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
 			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-				Expert relocation services for moving to Las Vegas
+				As your Las Vegas Luxury &amp; Relocation REALTOR®, I coordinate every detail of your move—from virtual tours and “power weekend” visits to school research, vendor scheduling, and closing logistics—so you can relocate with clarity instead of chaos.
 			</p>
 		</div>
 
