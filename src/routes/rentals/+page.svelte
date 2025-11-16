@@ -1,13 +1,27 @@
-<script>
-import { onMount } from 'svelte';
-import { browser } from '$app/environment';
-import { CheckCircle } from 'lucide-svelte';
+<script lang="ts">
+	import { onMount } from 'svelte';
+	import { browser } from '$app/environment';
+	import { CheckCircle } from 'lucide-svelte';
 
-let mounted = false;
+	interface TocItem {
+		id: string;
+		label: string;
+	}
 
-onMount(() => {
-  mounted = true;
-});
+	const tocItems: TocItem[] = [
+		{ id: 'search', label: 'Search Rentals' },
+		{ id: 'listings', label: 'Available Rentals' },
+		{ id: 'process', label: 'Rental Process' },
+		{ id: 'requirements', label: 'Rental Requirements' },
+		{ id: 'market', label: 'Rental Market Stats' },
+		{ id: 'cta', label: 'Work With Dr. Duffy' }
+	];
+
+	let mounted = false;
+
+	onMount(() => {
+		mounted = true;
+	});
 </script>
 
 <svelte:head>
@@ -46,8 +60,27 @@ onMount(() => {
 	</script>
 </svelte:head>
 
-<section class="section relative" style="background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);">
+<section class="section relative bg-gradient-to-b from-white to-slate-50">
 	<div class="container-premium">
+		<!-- On-page navigation -->
+		<nav
+			aria-label="Rentals page sections"
+			class="mb-10 rounded-full border border-gray-200 bg-white/80 backdrop-blur px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
 		<div class="text-center mb-16">
 			<h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">Find Your Perfect Las Vegas Rental Property</h1>
 			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
@@ -62,7 +95,7 @@ onMount(() => {
 		</div>
 	
 		<!-- Rental Search -->
-		<div class="mb-16 bg-white rounded-2xl shadow-xl p-10 border border-gray-100">
+		<div class="mb-16 bg-white rounded-2xl shadow-xl p-10 border border-gray-100" id="search">
 			<h2 class="font-display text-3xl font-bold mb-6 text-center text-gray-900" style="letter-spacing: -0.02em;">How Can You Search for Las Vegas Rental Properties?</h2>
 			<p class="text-gray-700 mb-8 text-center leading-relaxed max-w-3xl mx-auto">
 				Search for Las Vegas rental properties using advanced rental search with detailed filters for location, price, bedrooms, and amenities, or quick search for fast results. Both search options help you find short-term rentals, long-term leases, and investment properties that match your needs and budget throughout the Las Vegas area.
@@ -90,7 +123,7 @@ onMount(() => {
 		</div>
 	
 		<!-- Rental Listings -->
-		<div class="mb-16">
+		<div class="mb-16" id="listings">
 			<div class="text-center mb-12">
 				<h2 class="font-display text-4xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">What Rental Properties Are Available in Las Vegas?</h2>
 				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
@@ -129,8 +162,8 @@ onMount(() => {
 	</div>
 	
 		<!-- Rental Information -->
-		<div class="grid-premium md:grid-cols-2 gap-8 mb-16">
-			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
+		<div class="grid-premium md:grid-cols-2 gap-8 mb-16" id="process">
+			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100" id="requirements">
 				<h3 class="font-display text-2xl font-bold mb-6 text-gray-900">How Does the Las Vegas Rental Process Work?</h3>
 				<p class="text-gray-700 mb-6 leading-relaxed">
 					The Las Vegas rental process includes property search and viewing scheduling, application completion with documentation, credit and background screening, lease term review, and move-in process completion that ensures a smooth rental experience for tenants and landlords.
@@ -197,7 +230,7 @@ onMount(() => {
 		</div>
 		
 		<!-- Rental Market Stats -->
-		<div class="relative overflow-hidden bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white rounded-3xl p-12 mb-16 shadow-2xl">
+		<div class="relative overflow-hidden bg-gradient-to-br from-primary-700 via-primary-600 to-primary-800 text-white rounded-3xl p-12 mb-16 shadow-2xl" id="market">
 			<div class="absolute inset-0 overflow-hidden">
 				<div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
 				<div class="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
@@ -229,7 +262,7 @@ onMount(() => {
 		</div>
 		
 		<!-- CTA Section -->
-		<div class="relative overflow-hidden bg-gradient-to-br from-white to-primary-50/30 rounded-3xl p-12 text-center shadow-xl border border-gray-100">
+		<div class="relative overflow-hidden bg-gradient-to-br from-white to-primary-50/30 rounded-3xl p-12 text-center shadow-xl border border-gray-100" id="cta">
 			<h2 class="font-display text-4xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">Ready to Find Your Perfect Las Vegas Rental Property?</h2>
 			<p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
 				Let me help you navigate the Las Vegas rental market and find the perfect property for your needs and budget. With deep knowledge of Las Vegas rental properties, market conditions, neighborhoods, and rental processes, I'll guide you through every step to secure your ideal rental home.

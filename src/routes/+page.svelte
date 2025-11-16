@@ -1,12 +1,14 @@
-<script>
+<script lang="ts">
 	import { Home, Award, MapPin, Star, DollarSign, BookOpen, HelpCircle } from 'lucide-svelte';
-	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
-	
-	let mounted = false;
 
-	const tocItems = [
+	interface NavLink {
+		href: string;
+		label: string;
+	}
+
+	const tocItems: NavLink[] = [
 		{ href: '#faq', label: 'Buyer & Seller FAQs' },
 		{ href: '#trust', label: 'Why Clients Trust Dr. Duffy' },
 		{ href: '#resources', label: 'Digital Resources' },
@@ -19,7 +21,7 @@
 		{ href: '#services-resources', label: 'Services & Resources' }
 	];
 
-	const searchLinks = [
+	const searchLinks: NavLink[] = [
 		// Views
 		{ href: '/listings-embedded', label: 'Grid View' },
 		{ href: '/listings-list', label: 'List View' },
@@ -36,33 +38,27 @@
 		{ href: '/property-types/foreclosures', label: 'Foreclosures' },
 		{ href: '/property-types/short-sales', label: 'Short Sales' }
 	];
-	
+
+	const servicesLinks: NavLink[] = [
+		{ href: '/services', label: 'All Services' },
+		{ href: '/home-value', label: 'Home Value' },
+		{ href: '/buying-guide', label: 'Buying Guide' },
+		{ href: '/selling-guide', label: 'Selling Guide' },
+		{ href: '/first-time-buyers', label: 'First-Time Buyers' },
+		{ href: '/investment-guide', label: 'Investment Guide' },
+		{ href: '/relocation', label: 'Relocation' },
+		{ href: '/resources', label: 'Resources' },
+		{ href: '/faq', label: 'FAQ' },
+		{ href: '/mortgage-calculator', label: 'Mortgage Calculator' },
+		{ href: '/testimonials', label: 'Testimonials' },
+		{ href: '/market-insights', label: 'Market Insights' }
+	];
+
+	let mounted = false;
+
 	onMount(() => {
 		mounted = true;
 	});
-
-	function handleSearch(event) {
-		event.preventDefault();
-		const formData = new FormData(event.target);
-		const params = new URLSearchParams();
-		
-		const location = formData.get('location');
-		const propertyType = formData.get('property-type');
-		const priceRange = formData.get('price-range');
-		const bedrooms = formData.get('bedrooms');
-		
-		if (location) params.set('location', location);
-		if (propertyType) params.set('type', propertyType);
-		if (priceRange) {
-			const [min, max] = priceRange.split('-');
-			if (min) params.set('minPrice', min);
-			if (max) params.set('maxPrice', max);
-		}
-		if (bedrooms) params.set('bedrooms', bedrooms);
-		
-		const queryString = params.toString();
-		goto(`/properties${queryString ? '?' + queryString : ''}`);
-	}
 </script>
 
 <svelte:head>
@@ -212,56 +208,16 @@
 			</div>
 
 			<!-- Property Search Form -->
-			<div class="max-w-5xl mx-auto">
+		<div class="max-w-5xl mx-auto">
 				<div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100">
 					{#if mounted && browser}
 						<realscout-advanced-search 
 							agent-encoded-id="QWdlbnQtMjI1MDUw">
 						</realscout-advanced-search>
 					{:else}
-						<form on:submit={handleSearch} class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
-							<div>
-								<label for="location" class="form-label">Location</label>
-								<input type="text" id="location" name="location" placeholder="City, Zip, or Area" class="form-input" />
-							</div>
-							<div>
-								<label for="property-type" class="form-label">Property Type</label>
-								<select id="property-type" name="property-type" class="form-select">
-									<option value="">All Types</option>
-									<option value="single-family">Single Family</option>
-									<option value="condo">Condo</option>
-									<option value="townhome">Townhome</option>
-									<option value="luxury">Luxury</option>
-								</select>
-							</div>
-							<div>
-								<label for="price-range" class="form-label">Price Range</label>
-								<select id="price-range" name="price-range" class="form-select">
-									<option value="">Any Price</option>
-									<option value="0-300000">Under $300K</option>
-									<option value="300000-500000">$300K - $500K</option>
-									<option value="500000-750000">$500K - $750K</option>
-									<option value="750000-1000000">$750K - $1M</option>
-									<option value="1000000+">$1M+</option>
-								</select>
-							</div>
-							<div>
-								<label for="bedrooms" class="form-label">Bedrooms</label>
-								<select id="bedrooms" name="bedrooms" class="form-select">
-									<option value="">Any</option>
-									<option value="1">1+</option>
-									<option value="2">2+</option>
-									<option value="3">3+</option>
-									<option value="4">4+</option>
-									<option value="5">5+</option>
-								</select>
-							</div>
-							<div class="flex items-end">
-								<button type="submit" class="btn-primary w-full">
-									Search Properties
-								</button>
-							</div>
-						</form>
+						<p class="text-sm text-gray-600 text-center">
+							Loading advanced property search...
+						</p>
 					{/if}
 				</div>
 
@@ -559,6 +515,22 @@
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
 					Think of this page as your control center. Each tile below unlocks deeper content—step-by-step guides, relocation checklists, closing-cost calculators, and neighborhood cheat sheets that explain why a $900K home appreciates faster in The Paseos than in Mountains Edge. I refreshed every resource in 2025 to reflect the newest water authority regulations, energy incentives, and resort-corridor developments so you are reading current intel, not outdated blog posts. Bookmark the sections you need now, then return whenever new questions pop up during inspections, appraisal gaps, or lease-back negotiations.
 				</p>
+
+				<div class="mt-6 bg-white border border-gray-100 rounded-2xl p-4 md:p-5">
+					<p class="text-xs sm:text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">
+						Quick access to key services & guides
+					</p>
+					<div class="flex flex-wrap gap-2 justify-center">
+						{#each servicesLinks as link}
+							<a
+								href={link.href}
+								class="px-3 py-1.5 rounded-full border border-gray-200 bg-white text-xs sm:text-sm text-gray-700 hover:text-primary-600 hover:border-primary-300 hover:bg-primary-50 transition-colors whitespace-nowrap"
+							>
+								{link.label}
+							</a>
+						{/each}
+					</div>
+				</div>
 			</div>
 			
 			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
