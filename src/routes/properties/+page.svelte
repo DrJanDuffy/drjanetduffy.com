@@ -1,7 +1,4 @@
 <script>
-let mounted = false;
-onMount(() => {
-// Canonical URL always points to base /properties page (without query parameters)
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
 	import { Grid3x3, List, TrendingUp } from 'lucide-svelte';
