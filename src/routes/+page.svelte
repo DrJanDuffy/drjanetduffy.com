@@ -5,6 +5,19 @@
 	import { browser } from '$app/environment';
 	
 	let mounted = false;
+
+	const tocItems = [
+		{ href: '#faq', label: 'Buyer & Seller FAQs' },
+		{ href: '#trust', label: 'Why Clients Trust Dr. Duffy' },
+		{ href: '#resources', label: 'Digital Resources' },
+		{ href: '#seller-strategy', label: 'Seller Strategy' },
+		{ href: '#buyer-roadmap', label: 'Buyer Roadmap' },
+		{ href: '#community-fit', label: 'Neighborhood Fit' },
+		{ href: '#concierge-service', label: 'Concierge Service' },
+		{ href: '#featured-properties', label: 'Featured Properties' },
+		{ href: '#market-trends', label: 'Market Trends 2025' },
+		{ href: '#services-resources', label: 'Services & Resources' }
+	];
 	
 	onMount(() => {
 		mounted = true;
@@ -146,19 +159,40 @@
 <!-- Hero Section with Search -->
 <section class="hero-section bg-gradient-to-b from-gray-50 to-white">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="max-w-7xl mx-auto py-12 md:py-16">
-			<div class="text-center mb-8">
-				<h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4">
-					Las Vegas Concierge Real Estate Services - Summerlin to Skye Canyon
-				</h1>
-				<p class="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-					Your dedicated Las Vegas real estate professional providing comprehensive, personalized service across the valley's most desirable communities. Serving Summerlin, Skye Canyon, Centennial Hills, Henderson, and North Las Vegas, Dr. Janet Duffy Real Estate functions like a personal concierge desk: I book private showings, coordinate vendor access, analyze multiple offers, and keep you informed with real-time market intelligence so you never wonder what comes next. From managing pool inspections and solar transfers to translating HOA bylaws and master-plan design guidelines, every logistical detail is handled with calm precision. Let me introduce you to neighborhoods locals love, unlock builder incentives that rarely appear online, and negotiate with the confidence that only 15+ years of desert market experience can provide.
-				</p>
+		<div class="max-w-7xl mx-auto py-10 md:py-16">
+			<div class="grid gap-10 lg:gap-14 md:grid-cols-2 items-center mb-10">
+				<div class="text-center md:text-left">
+					<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4 md:mb-5">
+						Las Vegas Concierge Real Estate Services - Summerlin to Skye Canyon
+					</h1>
+					<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto md:mx-0 mb-5"></div>
+					<p class="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto md:mx-0 leading-relaxed mb-6">
+						Your dedicated Las Vegas real estate professional providing comprehensive, personalized service across the valley's most desirable communities. Serving Summerlin, Skye Canyon, Centennial Hills, Henderson, and North Las Vegas, Dr. Janet Duffy Real Estate functions like a personal concierge desk: I book private showings, coordinate vendor access, analyze multiple offers, and keep you informed with real-time market intelligence so you never wonder what comes next. From managing pool inspections and solar transfers to translating HOA bylaws and master-plan design guidelines, every logistical detail is handled with calm precision. Let me introduce you to neighborhoods locals love, unlock builder incentives that rarely appear online, and negotiate with the confidence that only 15+ years of desert market experience can provide.
+					</p>
+					<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+						<a href="/contact" class="btn-primary">
+							Schedule a Consultation
+						</a>
+						<a href="/properties" class="btn-secondary">
+							Browse Las Vegas Homes
+						</a>
+					</div>
+				</div>
+				<div class="relative">
+					<div class="rounded-2xl shadow-xl overflow-hidden bg-white border border-gray-100 h-64 md:h-80">
+						<!-- Placeholder hero imagery container -->
+						<div class="w-full h-full bg-gradient-to-tr from-primary-100 via-vegas-gold-100 to-white flex items-center justify-center">
+							<p class="text-center text-gray-600 px-6 text-sm sm:text-base">
+								Visual hero area showcasing Las Vegas neighborhoods, luxury homes, and concierge-level service.
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<!-- Property Search Form -->
-			<div class="max-w-4xl mx-auto">
-				<div class="bg-white rounded-xl shadow-lg p-6 md:p-8">
+			<div class="max-w-5xl mx-auto">
+				<div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100">
 					{#if mounted && browser}
 						<realscout-advanced-search 
 							agent-encoded-id="QWdlbnQtMjI1MDUw">
@@ -210,12 +244,29 @@
 					{/if}
 				</div>
 			</div>
+
+			<!-- On-page navigation summary -->
+			<nav class="mt-10 border-t border-gray-200 pt-6">
+				<div class="flex items-center justify-between mb-3">
+					<p class="text-sm font-semibold text-gray-700 uppercase tracking-wide">On this page</p>
+				</div>
+				<div class="flex gap-3 overflow-x-auto scrollbar-hide py-1">
+					{#each tocItems as item}
+						<a
+							href={item.href}
+							class="flex-shrink-0 px-4 py-2 rounded-full border border-gray-200 bg-white text-xs sm:text-sm font-medium text-gray-700 hover:text-primary-600 hover:border-primary-300 hover:bg-primary-50 transition-colors whitespace-nowrap"
+						>
+							{item.label}
+						</a>
+					{/each}
+				</div>
+			</nav>
 		</div>
 	</div>
 </section>
 
 <!-- FAQ Section -->
-<section class="section bg-gray-50">
+<section id="faq" class="section bg-gray-50">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-5xl mx-auto">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Questions Do Las Vegas Buyers and Sellers Ask Most Often?</h2>
@@ -253,7 +304,7 @@
 </section>
 
 <!-- Trust Section -->
-<section class="section bg-white">
+<section id="trust" class="section bg-white">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-5xl mx-auto">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Do Executives, Military Families, and Investors Trust Dr. Janet Duffy?</h2>
@@ -271,7 +322,7 @@
 </section>
 
 <!-- Resource Support -->
-<section class="section bg-gray-50">
+<section id="resources" class="section bg-gray-50">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-5xl mx-auto">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Which Digital Resources Keep You Confident Between Showings and Closings?</h2>
@@ -289,7 +340,7 @@
 </section>
 
 <!-- Seller Strategy -->
-<section class="section bg-white">
+<section id="seller-strategy" class="section bg-white">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-5xl mx-auto">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Do We Position Your Las Vegas Home for Multiple Offers and Record Equity?</h2>
@@ -307,7 +358,7 @@
 </section>
 
 <!-- Buyer Roadmap -->
-<section class="section bg-gray-50">
+<section id="buyer-roadmap" class="section bg-gray-50">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-5xl mx-auto">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Does Our Buyer Roadmap Turn a Desert Dream Into Keys in Hand?</h2>
@@ -325,7 +376,7 @@
 </section>
 
 <!-- Community Fit Section -->
-<section class="section bg-white">
+<section id="community-fit" class="section bg-white">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-6xl mx-auto">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Which Las Vegas Neighborhood Fits Your Lifestyle and Long-Term Goals?</h2>
@@ -343,7 +394,7 @@
 </section>
 
 <!-- Concierge Service Overview -->
-<section class="section bg-white">
+<section id="concierge-service" class="section bg-white">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-5xl mx-auto">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Does Dr. Janet Duffy Deliver Concierge-Level Real Estate Service Across Las Vegas?</h2>
@@ -361,7 +412,7 @@
 </section>
 
 <!-- Featured Properties -->
-<section class="section bg-white">
+<section id="featured-properties" class="section bg-white">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto">
 			<div class="text-center mb-12">
@@ -410,7 +461,7 @@
 </section>
 
 <!-- Market Trends -->
-<section class="section bg-gray-50">
+<section id="market-trends" class="section bg-gray-50">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-6xl mx-auto">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Market Trends Should Las Vegas Buyers and Sellers Watch in 2025?</h2>
@@ -428,7 +479,7 @@
 </section>
 
 <!-- Quick Links to Other Sections -->
-<section class="section bg-gray-50">
+<section id="services-resources" class="section bg-gray-50">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto">
 			<div class="text-center mb-12">

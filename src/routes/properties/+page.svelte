@@ -1,17 +1,33 @@
 <script>
-import { onMount } from 'svelte';
-import { browser } from '$app/environment';
-import { Grid3x3, List, TrendingUp } from 'lucide-svelte';
-
 let mounted = false;
-
 onMount(() => {
-  mounted = true;
-});
-
 // Canonical URL always points to base /properties page (without query parameters)
-// This tells search engines that all query parameter variations are the same page
-const canonicalUrl = 'https://www.drjanetduffy.com/properties';
+	import { onMount } from 'svelte';
+	import { browser } from '$app/environment';
+	import { Grid3x3, List, TrendingUp } from 'lucide-svelte';
+
+	let mounted = false;
+
+	onMount(() => {
+		mounted = true;
+	});
+
+	// Canonical URL always points to base /properties page (without query parameters)
+	// This tells search engines that all query parameter variations are the same page
+	const canonicalUrl = 'https://www.drjanetduffy.com/properties';
+
+	const tocItems = [
+		{ href: '#available-properties', label: 'Available Properties' },
+		{ href: '#views', label: 'Grid, List & Past Sales' },
+		{ href: '#search-strategy', label: 'Search Strategy' },
+		{ href: '#neighborhoods', label: 'Neighborhood Fit' },
+		{ href: '#financing', label: 'Financing & Offers' },
+		{ href: '#data-confidence', label: 'Data Confidence' },
+		{ href: '#relocation', label: 'Relocation Support' },
+		{ href: '#investors', label: 'Investors & Second Homes' },
+		{ href: '#sellers', label: 'Listing Experiences' },
+		{ href: '#faq', label: 'Buyer FAQs' }
+	];
 </script>
 
 <svelte:head>
@@ -56,7 +72,7 @@ const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 
 <section class="section relative" style="background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);">
 	<div class="container-premium">
-		<div class="grid lg:grid-cols-5 gap-10 items-center mb-12">
+		<div class="grid lg:grid-cols-5 gap-10 items-center mb-10">
 			<div class="lg:col-span-3 text-center lg:text-left">
 				<h1
 					class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900"
@@ -81,7 +97,7 @@ const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 			</div>
 		</div>
 
-		<div class="mb-12 text-center">
+		<div class="mb-10 text-center">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Las Vegas Homes and Properties Are Available for Sale?</h2>
 			<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto">
 				Our Marketplace includes everything from $350K lock-and-leave condos in Downtown Las Vegas to $5M custom estates in The Summit. You will see single-story ranches in North Las Vegas, multi-gen floor plans in Skye Hills, brand-new townhomes near the medical district, and golf-front masterpieces overlooking Bear’s Best. Each listing feeds directly from the MLS, so price adjustments, pending statuses, and back-on-market surprises appear here the moment agents update them. Save your favorites, request alerts, or ask me for off-market opportunities that fit your criteria before they ever debut publicly.
@@ -90,6 +106,23 @@ const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 				Not sure where to start? Scroll through the featured grid below, then explore the question-based sections that follow. They outline my methodology for aligning budget, lifestyle, and long-term equity goals with the right neighborhoods, builders, and financing tools. When you are ready to tour, I will organize efficient routes, secure access to guard-gated communities, and provide detailed comparison sheets so each property review feels clear—not chaotic.
 			</p>
 		</div>
+
+		<!-- On-page navigation summary -->
+		<nav class="mb-10 border-t border-gray-200 pt-6">
+			<div class="flex items-center justify-between mb-3">
+				<p class="text-sm font-semibold text-gray-700 uppercase tracking-wide">On this page</p>
+			</div>
+			<div class="flex gap-3 overflow-x-auto scrollbar-hide py-1">
+				{#each tocItems as item}
+					<a
+						href={item.href}
+						class="flex-shrink-0 px-4 py-2 rounded-full border border-gray-200 bg-white text-xs sm:text-sm font-medium text-gray-700 hover:text-primary-600 hover:border-primary-300 hover:bg-primary-50 transition-colors whitespace-nowrap"
+					>
+						{item.label}
+					</a>
+				{/each}
+			</div>
+		</nav>
 	
 		{#if mounted && browser}
 			<div class="realscout-wrapper">
@@ -117,12 +150,12 @@ const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 				<p class="text-center text-gray-600 mt-12 text-lg">Loading property listings...</p>
 			</div>
 		{/if}
-		
+
 	</div>
 </section>
 
 <!-- Property Views -->
-<section class="section bg-white">
+<section id="views" class="section bg-white">
 	<div class="container-premium">
 		<div class="text-center mb-10">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How Can You Explore Las Vegas Properties in Different Views?</h2>
@@ -163,7 +196,7 @@ const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 </section>
 
 <!-- Search Strategy -->
-<section class="section bg-gray-50">
+<section id="search-strategy" class="section bg-gray-50">
 	<div class="container-premium">
 		<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Do We Personalize Your Las Vegas Property Search Strategy?</h2>
 		<p class="text-lg text-gray-700 leading-relaxed mb-6 max-w-5xl mx-auto">
@@ -179,7 +212,7 @@ const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 </section>
 
 <!-- Neighborhoods -->
-<section class="section bg-white">
+<section id="neighborhoods" class="section bg-white">
 	<div class="container-premium">
 		<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Which Las Vegas Neighborhoods Align With Different Lifestyles?</h2>
 		<p class="text-lg text-gray-700 leading-relaxed mb-6 max-w-5xl mx-auto">
@@ -195,7 +228,7 @@ const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 </section>
 
 <!-- Financing -->
-<section class="section bg-gray-50">
+<section id="financing" class="section bg-gray-50">
 	<div class="container-premium">
 		<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Financing and Offer Structures Win in 2025?</h2>
 		<p class="text-lg text-gray-700 leading-relaxed mb-6 max-w-5xl mx-auto">
@@ -211,7 +244,7 @@ const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 </section>
 
 <!-- Data Confidence -->
-<section class="section bg-white">
+<section id="data-confidence" class="section bg-white">
 	<div class="container-premium">
 		<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Do We Use Data to Keep You Confident From Offer to Close?</h2>
 		<p class="text-lg text-gray-700 leading-relaxed mb-6 max-w-5xl mx-auto">
@@ -227,7 +260,7 @@ const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 </section>
 
 <!-- Relocation -->
-<section class="section bg-gray-50">
+<section id="relocation" class="section bg-gray-50">
 	<div class="container-premium">
 		<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Support Do Remote and Relocating Buyers Receive?</h2>
 		<p class="text-lg text-gray-700 leading-relaxed mb-6 max-w-5xl mx-auto">
@@ -243,7 +276,7 @@ const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 </section>
 
 <!-- Investors -->
-<section class="section bg-white">
+<section id="investors" class="section bg-white">
 	<div class="container-premium">
 		<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Can Investors and Second-Home Buyers Maximize Returns?</h2>
 		<p class="text-lg text-gray-700 leading-relaxed mb-6 max-w-5xl mx-auto">
@@ -259,7 +292,7 @@ const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 </section>
 
 <!-- Sellers -->
-<section class="section bg-gray-50">
+<section id="sellers" class="section bg-gray-50">
 	<div class="container-premium">
 		<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Listing Experiences Are Available for Sellers Ready to Move Up or Downsize?</h2>
 		<p class="text-lg text-gray-700 leading-relaxed mb-6 max-w-5xl mx-auto">
@@ -275,7 +308,7 @@ const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 </section>
 
 <!-- FAQ -->
-<section class="section bg-white">
+<section id="faq" class="section bg-white">
 	<div class="container-premium">
 		<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Questions Do Buyers Ask Before Scheduling Showings?</h2>
 		<p class="text-lg text-gray-700 leading-relaxed mb-8 text-center max-w-4xl mx-auto">
