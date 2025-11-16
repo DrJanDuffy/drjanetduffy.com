@@ -1,5 +1,7 @@
 <script>
 import { Star, Award, TrendingUp, Users, CheckCircle, Phone, MapPin } from 'lucide-svelte';
+import { PhotoGallery } from '$lib';
+import { drDuffyHeadshots } from '$lib/data/photo-galleries';
 
 // This could be expanded to load dynamic content from a CMS
 const achievements = [
@@ -98,16 +100,30 @@ const certifications = [
 <section class="section relative" style="background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);">
 	<div class="container-premium">
 		<!-- Hero Section -->
-		<div class="text-center mb-20">
-			<div class="inline-flex items-center justify-center w-32 h-32 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full mx-auto mb-8 shadow-2xl">
-				<span class="text-white font-display font-bold text-5xl">JD</span>
+		<div class="mb-20">
+			<div class="grid md:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] gap-10 items-center">
+				<div class="text-center md:text-left">
+					<h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">Meet Your Las Vegas Luxury &amp; Relocation REALTOR<sup>®</sup></h1>
+					<p class="text-2xl text-primary-600 font-semibold mb-6">Serving Luxury Moves, Relocation Clients &amp; Local Sellers</p>
+					<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mb-6 mx-auto md:mx-0"></div>
+					<p class="text-xl text-gray-600 max-w-3xl mx-auto md:mx-0 leading-relaxed">
+						Your trusted Las Vegas real estate expert with over 15 years of experience helping clients buy, sell, and invest in properties throughout the greater Las Vegas area.
+					</p>
+					<div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+						<a href="/contact" class="inline-flex items-center justify-center rounded-xl bg-primary-600 px-6 py-3 text-base font-semibold text-white shadow-lg hover:bg-primary-700 transition-colors">
+							<Phone class="w-4 h-4 mr-2" />
+							Schedule a call with Dr. Duffy
+						</a>
+					</div>
+				</div>
+				<div class="max-w-sm mx-auto md:mx-0">
+					<PhotoGallery
+						title={undefined}
+						subtitle={undefined}
+						photos={drDuffyHeadshots}
+					/>
+				</div>
 			</div>
-			<h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">Meet Your Las Vegas Luxury &amp; Relocation REALTOR<sup>®</sup></h1>
-			<p class="text-2xl text-primary-600 font-semibold mb-6">Serving Luxury Moves, Relocation Clients &amp; Local Sellers</p>
-			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
-			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-				Your trusted Las Vegas real estate expert with over 15 years of experience helping clients buy, sell, and invest in properties throughout the greater Las Vegas area.
-			</p>
 		</div>
 	
 		<!-- Why Choose Dr. Janet Duffy -->

@@ -40,13 +40,71 @@ export const relocationScenes: PhotoItem[] = [
 ];
 
 export const seniorLivingJoy: PhotoItem[] = [
+	// Hero image already wired on the Senior Housing page
 	{
 		src: '/images/senior/senior-friends-laughing.jpg',
 		alt: 'Group of joyful senior women laughing together in a garden courtyard',
 		caption: 'Active, social 55+ living in Las Vegas',
 		tagline: 'The goal is not just a house that fits — it is a community that feels like home.'
+	},
+	{
+		src: '/images/senior/senior-coffee-courtyard.jpg',
+		alt: 'Group of seniors enjoying coffee together outdoors in a sunny courtyard',
+		caption: 'Morning coffee with neighbors who feel like family'
+	},
+	{
+		src: '/images/senior/senior-garden-club.jpg',
+		alt: 'Senior woman gardening in a raised bed while a friend works in the background',
+		caption: 'Community gardens and outdoor spaces that make wellness feel natural'
+	},
+	{
+		src: '/images/senior/senior-park-walks.jpg',
+		alt: 'Group of seniors smiling together in a shaded park',
+		caption: 'Tree-lined paths and parks that make daily walks part of the routine'
+	},
+	{
+		src: '/images/senior/senior-waterfront-day-trip.jpg',
+		alt: 'Three senior women smiling for a photo by the waterfront on a day trip',
+		caption: 'Day trips, outings, and adventures built into your social calendar'
+	},
+	{
+		src: '/images/senior/senior-backyard-gathering.jpg',
+		alt: 'Seniors gathered in a backyard with string lights and party decorations',
+		caption: 'Backyard gatherings that keep friendships and family close'
+	},
+	{
+		src: '/images/senior/senior-fitness-tennis.jpg',
+		alt: 'Senior man smiling while holding a tennis racket on a court',
+		caption: 'Pickleball, tennis, and fitness amenities designed for every pace'
+	},
+	{
+		src: '/images/senior/senior-community-dining.jpg',
+		alt: 'Group of seniors sharing a meal together around a dining table',
+		caption: 'Thoughtful community dining that makes meals social again'
+	},
+	{
+		src: '/images/senior/senior-book-club.jpg',
+		alt: 'Group of seniors sitting around a table with books and coffee',
+		caption: 'Book clubs, interest groups, and activities that keep your mind engaged'
+	},
+	{
+		src: '/images/senior/senior-pool-fitness.jpg',
+		alt: 'Senior man smiling while resting at the edge of an indoor swimming pool',
+		caption: 'Low-impact pool time that supports joint health and staying active'
+	},
+	{
+		src: '/images/senior/senior-game-night.jpg',
+		alt: 'Group of seniors laughing together around a game table',
+		caption: 'Game nights that turn neighbors into long-term friends'
 	}
 ];
 
-
+export const drDuffyHeadshots: PhotoItem[] = [
+	{
+		src: '/images/dr-duffy/dr-janet-duffy-phone-hero.jpg',
+		alt: 'Dr. Janet Duffy smiling and holding a phone, ready to speak with a client',
+		caption: 'Dr. Janet Duffy, Las Vegas Luxury & Relocation REALTOR®',
+		tagline: 'Direct, concierge-level guidance for your next Las Vegas move.'
+	}
+];
 
