@@ -200,21 +200,21 @@
 </script>
 
 <svelte:head>
-	<title>Real Estate Services in Las Vegas | Dr. Janet Duffy</title>
-	<meta name="description" content="Comprehensive real estate services in Las Vegas including buyer representation, seller services, luxury homes, commercial real estate, and specialized market expertise." />
+	<title>Las Vegas Luxury &amp; Relocation Real Estate Services | Dr. Janet Duffy</title>
+	<meta name="description" content="Las Vegas Luxury & Relocation REALTOR services including buyer and seller representation, luxury homes, relocation support, commercial real estate, and investment guidance." />
 	<meta name="keywords" content="Las Vegas real estate services, buyer representation, seller services, luxury homes Las Vegas, commercial real estate, property management" />
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://www.drjanetduffy.com/services" />
-	<meta property="og:title" content="Real Estate Services in Las Vegas | Dr. Janet Duffy" />
-	<meta property="og:description" content="Comprehensive real estate services for Las Vegas homebuyers, sellers, and investors." />
+	<meta property="og:title" content="Las Vegas Luxury &amp; Relocation Real Estate Services | Dr. Janet Duffy" />
+	<meta property="og:description" content="Concierge-level real estate services for Las Vegas luxury buyers, sellers, relocation clients, and investors." />
 	
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:url" content="https://www.drjanetduffy.com/services" />
-	<meta property="twitter:title" content="Real Estate Services in Las Vegas | Dr. Janet Duffy" />
-	<meta property="twitter:description" content="Comprehensive real estate services for Las Vegas homebuyers, sellers, and investors." />
+	<meta property="twitter:title" content="Las Vegas Luxury &amp; Relocation Real Estate Services | Dr. Janet Duffy" />
+	<meta property="twitter:description" content="Las Vegas Luxury & Relocation REALTOR services for buyers, sellers, relocation clients, and investors." />
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">

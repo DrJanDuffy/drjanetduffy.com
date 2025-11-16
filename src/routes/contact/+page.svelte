@@ -4,21 +4,21 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, MessageCircle } from 'lucide-s
 </script>
 
 <svelte:head>
-	<title>Contact Dr. Janet Duffy, REALTOR® | Berkshire Hathaway Nevada Properties</title>
-	<meta name="description" content="Contact Dr. Jan Duffy, REALTOR® for luxury Las Vegas real estate expertise. Direct: 702-500-1955 | info@DrJanetDuffy.com. West Summerlin specialist for executives and California relocations." />
+	<title>Contact Las Vegas Luxury &amp; Relocation REALTOR | Dr. Janet Duffy</title>
+	<meta name="description" content="Contact Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy for concierge-level guidance on buying, selling, or relocating to Las Vegas. Call 702-500-1955 or email info@DrJanetDuffy.com." />
 	<meta name="keywords" content="Dr. Jan Duffy REALTOR, luxury Las Vegas real estate, West Summerlin, executive relocation, 702-500-1955" />
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://www.drjanetduffy.com/contact" />
-	<meta property="og:title" content="Contact Dr. Janet Duffy, REALTOR® | Berkshire Hathaway Nevada Properties" />
-	<meta property="og:description" content="Contact Dr. Jan Duffy, REALTOR® for luxury Las Vegas real estate expertise. Direct: 702-500-1955" />
+	<meta property="og:title" content="Contact Las Vegas Luxury &amp; Relocation REALTOR | Dr. Janet Duffy" />
+	<meta property="og:description" content="Direct line to Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy for luxury moves, executive relocation, and local home sales." />
 	
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
 	<meta property="twitter:url" content="https://www.drjanetduffy.com/contact" />
-	<meta property="twitter:title" content="Contact Dr. Janet Duffy, REALTOR®" />
-	<meta property="twitter:description" content="Contact Dr. Janet Duffy, REALTOR® for luxury Las Vegas real estate expertise." />
+	<meta property="twitter:title" content="Contact Las Vegas Luxury &amp; Relocation REALTOR | Dr. Janet Duffy" />
+	<meta property="twitter:description" content="Contact Las Vegas Luxury & Relocation REALTOR for expert guidance on your Las Vegas move." />
 	
 	<!-- Schema.org structured data -->
 	<script type="application/ld+json">

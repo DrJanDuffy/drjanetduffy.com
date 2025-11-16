@@ -34,7 +34,7 @@
 </script>
 
 <svelte:head>
-	<title>North Las Vegas Real Estate | Dr. Janet Duffy REALTOR®</title>
+	<title>North Las Vegas Luxury &amp; Relocation Real Estate | Dr. Janet Duffy REALTOR®</title>
 	<meta name="description" content="Explore North Las Vegas real estate. Affordable housing, growing economy, and new developments in this family-friendly Las Vegas area community." />
 	<meta name="keywords" content="North Las Vegas real estate, North Las Vegas homes, affordable Las Vegas homes, no HOA Las Vegas, larger lots Las Vegas" />
 	<meta name="robots" content="index, follow" />
@@ -45,14 +45,14 @@
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://www.drjanetduffy.com/communities/north-las-vegas" />
-	<meta property="og:title" content="North Las Vegas Real Estate | Dr. Janet Duffy REALTOR®" />
+	<meta property="og:title" content="North Las Vegas Luxury &amp; Relocation Real Estate | Dr. Janet Duffy REALTOR®" />
 	<meta property="og:description" content="Explore North Las Vegas real estate. Affordable housing, growing economy, and new developments in this family-friendly Las Vegas area community." />
-	<meta property="og:site_name" content="Homes by Dr. Duffy" />
+	<meta property="og:site_name" content="Las Vegas Luxury & Relocation REALTOR" />
 	
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:url" content="https://www.drjanetduffy.com/communities/north-las-vegas" />
-	<meta name="twitter:title" content="North Las Vegas Real Estate | Dr. Janet Duffy REALTOR®" />
+	<meta name="twitter:title" content="North Las Vegas Luxury &amp; Relocation Real Estate | Dr. Janet Duffy REALTOR®" />
 	<meta name="twitter:description" content="Explore North Las Vegas real estate. Affordable housing, growing economy, and new developments." />
 	
 	<!-- Structured Data -->

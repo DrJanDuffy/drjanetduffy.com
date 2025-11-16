@@ -43,15 +43,15 @@ const certifications = [
 </script>
 
 <svelte:head>
-	<title>About Dr. Jan Duffy | Las Vegas REALTOR</title>
-	<meta name="description" content="Learn about Dr. Jan Duffy, a trusted Las Vegas REALTOR with 15+ years of experience, 150+ properties sold, and $50M+ in sales volume." />
+	<title>About Las Vegas Luxury &amp; Relocation REALTOR | Dr. Jan Duffy</title>
+	<meta name="description" content="Learn about Dr. Jan Duffy, Las Vegas Luxury & Relocation REALTOR with 15+ years of experience, 150+ properties sold, and $50M+ in sales volume." />
 	<meta name="keywords" content="Dr. Jan Duffy, Las Vegas REALTOR, real estate agent, about, experience, credentials" />
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://www.drjanetduffy.com/about" />
-	<meta property="og:title" content="About Dr. Jan Duffy | Las Vegas REALTOR" />
-	<meta property="og:description" content="Learn about Dr. Jan Duffy, a trusted Las Vegas REALTOR with 15+ years of experience and proven results." />
+	<meta property="og:title" content="About Las Vegas Luxury &amp; Relocation REALTOR | Dr. Jan Duffy" />
+	<meta property="og:description" content="Meet Dr. Jan Duffy, Las Vegas Luxury & Relocation REALTOR with 15+ years of experience and proven results." />
 	
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image" />
@@ -91,8 +91,8 @@ const certifications = [
 		}
 	}
 	</script>
-	<meta property="twitter:title" content="About Dr. Jan Duffy | Las Vegas REALTOR" />
-	<meta property="twitter:description" content="Learn about Dr. Jan Duffy, a trusted Las Vegas REALTOR with 15+ years of experience and proven results." />
+	<meta property="twitter:title" content="About Las Vegas Luxury &amp; Relocation REALTOR | Dr. Jan Duffy" />
+	<meta property="twitter:description" content="Learn about Dr. Jan Duffy, Las Vegas Luxury & Relocation REALTOR with 15+ years of experience and proven results." />
 </svelte:head>
 
 <section class="section relative" style="background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);">

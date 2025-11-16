@@ -1,5 +1,5 @@
 <script lang="ts">
-	const pageTitle = 'Las Vegas Real Estate Blog | Dr. Janet Duffy';
+	const pageTitle = 'Las Vegas Luxury & Relocation Real Estate Blog | Dr. Janet Duffy';
 	const pageDescription =
 		'Stay up-to-date with the latest Las Vegas real estate news, market trends, and community insights.';
 </script>
@@ -19,7 +19,7 @@
 	<meta property="og:url" content="https://www.drjanetduffy.com/blog" />
 	<meta property="og:title" content={pageTitle} />
 	<meta property="og:description" content={pageDescription} />
-	<meta property="og:site_name" content="Homes by Dr. Duffy" />
+	<meta property="og:site_name" content="Las Vegas Luxury & Relocation REALTOR" />
 
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:url" content="https://www.drjanetduffy.com/blog" />
@@ -31,8 +31,8 @@
 		{
 			"@context": "https://schema.org",
 			"@type": "Blog",
-			"name": "Las Vegas Real Estate Blog",
-			"description": "Stay up-to-date with the latest Las Vegas real estate news, market trends, and community insights",
+			"name": "Las Vegas Luxury & Relocation Real Estate Blog",
+			"description": "Stay up-to-date with Las Vegas luxury and relocation real estate news, market trends, and community insights",
 			"url": "https://www.drjanetduffy.com/blog",
 			"publisher": {
 				"@type": "RealEstateAgent",

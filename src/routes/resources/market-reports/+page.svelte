@@ -67,8 +67,8 @@
 </script>
 
 <svelte:head>
-	<title>Las Vegas Market Reports | Real Estate Trends | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Latest Las Vegas real estate market reports and trends. Current statistics on home prices, inventory, days on market, and sales volume." />
+	<title>Las Vegas Luxury &amp; Relocation Market Reports | Dr. Janet Duffy REALTOR®</title>
+	<meta name="description" content="Las Vegas Luxury & Relocation market reports and trends with current statistics on home prices, inventory, days on market, and sales volume across key communities." />
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
