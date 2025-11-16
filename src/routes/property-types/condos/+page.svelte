@@ -1,15 +1,14 @@
-<script>
+<script lang="ts">
 	import { Home, Building2, CheckCircle, DollarSign, Users, Key } from 'lucide-svelte';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
-	
-	let mounted = false;
-	
-	onMount(() => {
-		mounted = true;
-	});
-	
-	const benefits = [
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const benefits: string[] = [
 		'Low maintenance lifestyle',
 		'Affordable entry point',
 		'Community amenities',
@@ -19,16 +18,59 @@
 		'Security features',
 		'Resort-style living'
 	];
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'benefits', label: 'Key Benefits' },
+		{ id: 'ideal-buyers', label: 'Ideal Buyers' },
+		{ id: 'properties', label: 'Available Condos' },
+		{ id: 'cta', label: 'Work With Dr. Duffy' }
+	];
+
+	let mounted = false;
+
+	onMount(() => {
+		mounted = true;
+	});
 </script>
 
 <svelte:head>
-	<title>Condos for Sale | Las Vegas | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Browse condos and townhomes for sale in Las Vegas. Affordable, low-maintenance living with great amenities and prime locations." />
+	<title>Condos &amp; Townhomes for Sale | Las Vegas Luxury &amp; Relocation REALTOR | Dr. Janet Duffy</title>
+	<meta name="description" content="Browse Las Vegas condos and townhomes with Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy. Discover low-maintenance homes with great amenities and prime locations for first-time buyers, downsizers, and investors." />
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "CollectionPage",
+		"name": "Las Vegas Condos and Townhomes for Sale",
+		"description": "Condos and townhomes in Las Vegas offering low-maintenance living, amenities, and prime locations.",
+		"url": "https://www.drjanetduffy.com/property-types/condos"
+	}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-16">
+		<!-- On-page navigation -->
+		<nav
+			aria-label="Condos and townhomes page sections"
+			class="mb-10 rounded-full border border-gray-200 bg-white/80 backdrop-blur px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
+		<div class="text-center mb-16" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Find Condos & Townhomes for Sale in Las Vegas
 			</h1>
@@ -59,14 +101,14 @@
 		</div>
 
 		<!-- Benefits -->
-		<div class="mb-16">
+		<div class="mb-16" id="benefits">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Should You Choose a Condo in Las Vegas?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Las Vegas condos offer low-maintenance lifestyle, affordable entry point into homeownership, community amenities, great value for first-time buyers, investment opportunities, prime locations, security features, and resort-style living that make them ideal for buyers seeking convenience, affordability, and lifestyle benefits.
 			</p>
 		</div>
 
-		<div class="grid md:grid-cols-2 gap-12 mb-16">
+		<div class="grid md:grid-cols-2 gap-12 mb-16" id="ideal-buyers">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
 				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
 				<ul class="space-y-4">
@@ -114,7 +156,7 @@
 		</div>
 
 		<!-- Properties -->
-		<div class="mb-16">
+		<div class="mb-16" id="properties">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Condos and Townhomes Are Available in Las Vegas?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Las Vegas condos and townhomes include affordable units, upscale residences, and luxury properties featuring low-maintenance living, community amenities, prime locations, and excellent value. Properties range from starter condos to luxury townhomes in premier communities throughout the Las Vegas Valley.
@@ -150,7 +192,7 @@
 		</div>
 
 		<!-- CTA Section -->
-		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
+		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white" id="cta">
 			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Perfect Condo or Townhome in Las Vegas?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
 				Let me help you find the perfect condo or townhome in Las Vegas. With deep knowledge of Las Vegas condo markets, communities, and investment opportunities, I'll guide you through every step of your home buying journey.

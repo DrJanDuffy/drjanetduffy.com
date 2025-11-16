@@ -1,15 +1,22 @@
-<script>
+<script lang="ts">
 	import { Home, Award, TrendingUp, Key, CheckCircle, Camera, Shield } from 'lucide-svelte';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
-	
+
+	interface LuxuryArea {
+		name: string;
+		avgPrice: string;
+		description: string;
+	}
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
 	let mounted = false;
-	
-	onMount(() => {
-		mounted = true;
-	});
-	
-	const luxuryFeatures = [
+
+	const luxuryFeatures: string[] = [
 		'High-end finishes and materials',
 		'Premium locations and views',
 		'Custom architecture and design',
@@ -19,24 +26,66 @@
 		'Smart home technology',
 		'Professional landscaping'
 	];
-	
-	const luxuryAreas = [
+
+	const luxuryAreas: LuxuryArea[] = [
 		{ name: 'The Ridges', avgPrice: '$2M-$8M', description: 'Exclusive guard-gated community with Jack Nicklaus golf' },
 		{ name: 'MacDonald Highlands', avgPrice: '$1M-$5M', description: 'City views and DragonRidge Country Club' },
 		{ name: 'Red Rock Country Club', avgPrice: '$950K-$3M', description: 'Luxury golf community with mountain views' },
 		{ name: 'The Summit', avgPrice: '$1.5M-$5M', description: 'Guard-gated luxury community' },
 		{ name: 'Seven Hills', avgPrice: '$750K-$2M', description: 'Custom homes with scenic views' }
 	];
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'features', label: 'Premium Features' },
+		{ id: 'why-invest', label: 'Why Invest' },
+		{ id: 'areas', label: 'Luxury Communities' },
+		{ id: 'properties', label: 'Available Properties' },
+		{ id: 'cta', label: 'Work With Dr. Duffy' }
+	];
+
+	onMount(() => {
+		mounted = true;
+	});
 </script>
 
 <svelte:head>
-	<title>Luxury Homes for Sale | Las Vegas | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Browse luxury homes for sale in Las Vegas. Exclusive properties in The Ridges, Red Rock Country Club, Southern Highlands, and other premier communities." />
+	<title>Luxury Homes for Sale | Las Vegas Luxury &amp; Relocation REALTOR | Dr. Janet Duffy</title>
+	<meta name="description" content="Browse Las Vegas luxury homes with Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy. Explore exclusive properties in The Ridges, MacDonald Highlands, Southern Highlands, Seven Hills, and other premier communities." />
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "CollectionPage",
+		"name": "Las Vegas Luxury Homes for Sale",
+		"description": "Exclusive luxury homes and estates in Las Vegas's most prestigious communities.",
+		"url": "https://www.drjanetduffy.com/property-types/luxury-homes"
+	}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-16">
+		<!-- On-page navigation -->
+		<nav
+			aria-label="Luxury homes page sections"
+			class="mb-10 rounded-full border border-gray-200 bg-white/80 backdrop-blur px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
+		<div class="text-center mb-16" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Discover Luxury Homes for Sale in Las Vegas
 			</h1>
@@ -67,7 +116,7 @@
 		</div>
 
 		<!-- Luxury Features -->
-		<div class="mb-16">
+		<div class="mb-16" id="features">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Features Define Las Vegas Luxury Homes?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Las Vegas luxury homes feature high-end finishes and materials, premium locations with stunning views, custom architecture and design, resort-style amenities, gated communities, privacy and security features, smart home technology, and professional landscaping that create an exceptional living experience.
@@ -122,7 +171,7 @@
 		</div>
 
 		<!-- Why Invest in Luxury -->
-		<div class="mb-16">
+		<div class="mb-16" id="why-invest">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Should You Invest in Las Vegas Luxury Real Estate?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Las Vegas luxury real estate offers strong property appreciation, enhanced privacy and security, and a premium resort-style lifestyle. These benefits combine with exclusive locations, gated communities, and world-class amenities to create exceptional long-term investment value and unparalleled living experiences.
@@ -130,7 +179,7 @@
 		</div>
 
 		<!-- Luxury Areas -->
-		<div class="mb-16">
+		<div class="mb-16" id="areas">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Which Las Vegas Communities Offer Premier Luxury Homes?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Las Vegas premier luxury communities include The Ridges, Red Rock Country Club, Southern Highlands, and Seven Hills. Each community offers exclusive gated neighborhoods, custom luxury homes, resort-style amenities, and prestigious lifestyles that attract discerning buyers seeking privacy, luxury, and exclusivity.
@@ -147,7 +196,7 @@
 		</div>
 
 		<!-- Luxury Properties -->
-		<div class="mb-16">
+		<div class="mb-16" id="properties">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Luxury Properties Are Available in Las Vegas?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Las Vegas luxury properties include custom estates, upscale homes, and premium residences featuring high-end finishes, premium locations, custom architecture, resort-style amenities, and gated community access. Properties range from $750K to multi-million dollar estates in premier communities.
@@ -183,7 +232,7 @@
 		</div>
 
 		<!-- CTA Section -->
-		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
+		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white" id="cta">
 			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Dream Luxury Home in Las Vegas?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
 				Let me help you find your perfect luxury home in Las Vegas. With deep knowledge of luxury markets, premier communities, and exclusive properties, I'll guide you through every step of your luxury home buying journey.
