@@ -223,7 +223,7 @@
 		<div class="grid md:grid-cols-2 gap-10 lg:gap-16 items-center mb-12 sm:mb-16">
 			<div class="text-center md:text-left">
 				<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
-					Comprehensive Las Vegas Real Estate Services
+					Las Vegas Luxury &amp; Relocation Real Estate Services
 				</h1>
 				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto md:mx-0 mb-6"></div>
 				<p class="text-xl text-gray-600 max-w-3xl mx-auto md:mx-0 leading-relaxed">

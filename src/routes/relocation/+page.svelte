@@ -3,15 +3,15 @@
 </script>
 
 <svelte:head>
-	<title>Relocation Services | Moving to Las Vegas | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Expert relocation services for moving to Las Vegas. Comprehensive support for families, executives, and military relocating to Las Vegas." />
+	<title>Las Vegas Luxury &amp; Relocation Services | Moving to Las Vegas | Dr. Janet Duffy REALTOR®</title>
+	<meta name="description" content="Las Vegas Luxury & Relocation services for executives, medical professionals, military families, and remote workers planning a move to Las Vegas." />
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
 		<div class="text-center mb-16">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
-				Expert Relocation Services for Las Vegas Moves
+				Luxury &amp; Relocation Services for Your Move to Las Vegas
 			</h1>
 			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
 			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">

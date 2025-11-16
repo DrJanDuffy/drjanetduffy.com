@@ -3,8 +3,8 @@
 </script>
 
 <svelte:head>
-	<title>Las Vegas Market Insights | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Stay informed with the latest Las Vegas real estate trends. Current market statistics including median home prices, days on market, and inventory levels." />
+	<title>Las Vegas Luxury &amp; Relocation Market Insights | Dr. Janet Duffy REALTOR®</title>
+	<meta name="description" content="Las Vegas Luxury & Relocation market insights including current median prices, days on market, inventory levels, and trends across key Las Vegas communities." />
 	
 	<!-- Structured Data -->
 	<script type="application/ld+json">
@@ -24,7 +24,7 @@
 		<div class="max-w-7xl mx-auto py-12 md:py-16">
 			<div class="text-center mb-8">
 				<h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
-					Las Vegas Real Estate Market Trends & Insights
+					Las Vegas Luxury &amp; Relocation Market Trends &amp; Insights
 				</h1>
 				<p class="text-lg sm:text-xl text-white text-opacity-90 max-w-2xl mx-auto">
 					Current Las Vegas real estate statistics and trends

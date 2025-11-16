@@ -163,7 +163,7 @@
 			<div class="grid gap-10 lg:gap-14 md:grid-cols-2 items-center mb-10">
 				<div class="text-center md:text-left">
 					<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4 md:mb-5">
-						Las Vegas Concierge Real Estate Services - Summerlin to Skye Canyon
+						Las Vegas Luxury &amp; Relocation REALTOR® for Summerlin, Skye Canyon &amp; Beyond
 					</h1>
 					<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto md:mx-0 mb-5"></div>
 					<p class="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto md:mx-0 leading-relaxed mb-6">

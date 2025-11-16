@@ -3,15 +3,15 @@
 </script>
 
 <svelte:head>
-	<title>Real Estate Investment Guide | Las Vegas | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Complete guide to real estate investing in Las Vegas. Learn about investment strategies, ROI, cap rates, and building your property portfolio." />
+	<title>Las Vegas Luxury &amp; Investment Real Estate Guide | Dr. Janet Duffy REALTOR®</title>
+	<meta name="description" content="Las Vegas Luxury & Investment real estate guide covering strategies, ROI, cap rates, and building a profitable property portfolio with a local expert." />
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
 		<div class="text-center mb-16">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
-				Complete Guide to Las Vegas Real Estate Investing
+				Las Vegas Luxury &amp; Investment Real Estate Guide
 			</h1>
 			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
 			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
