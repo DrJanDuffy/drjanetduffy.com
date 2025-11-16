@@ -1,15 +1,20 @@
-<script>
+<script lang="ts">
 	import { Home, Award, CheckCircle, DollarSign, Users, Flag } from 'lucide-svelte';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
-	
-	let mounted = false;
-	
-	onMount(() => {
-		mounted = true;
-	});
-	
-	const benefits = [
+
+	interface GolfCommunity {
+		name: string;
+		avgPrice: string;
+		description: string;
+	}
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const benefits: string[] = [
 		'Championship golf courses',
 		'Resort-style amenities',
 		'Prestigious lifestyle',
@@ -19,23 +24,66 @@
 		'Country club access',
 		'Exclusive neighborhoods'
 	];
-	
-	const communities = [
+
+	const communities: GolfCommunity[] = [
 		{ name: 'Red Rock Country Club', avgPrice: '$950K+', description: 'Championship golf course community' },
 		{ name: 'Anthem Country Club', avgPrice: '$800K+', description: 'Premier golf community' },
 		{ name: 'Southern Highlands', avgPrice: '$850K+', description: 'Golf and country club living' },
 		{ name: 'The Ridges', avgPrice: '$1.2M+', description: 'Luxury golf community' }
 	];
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'benefits', label: 'Key Benefits' },
+		{ id: 'communities', label: 'Featured Communities' },
+		{ id: 'properties', label: 'Available Homes' },
+		{ id: 'cta', label: 'Work With Dr. Duffy' }
+	];
+
+	let mounted = false;
+
+	onMount(() => {
+		mounted = true;
+	});
 </script>
 
 <svelte:head>
-	<title>Golf Communities | Las Vegas | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Browse homes in golf communities in Las Vegas. Championship courses, resort amenities, and prestigious lifestyle in premier golf communities." />
+	<title>Golf Course Communities | Las Vegas Luxury &amp; Relocation REALTOR | Dr. Janet Duffy</title>
+	<meta name="description" content="Browse Las Vegas golf course communities with Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy. Explore homes along championship courses with resort amenities, country club access, and prestigious lifestyles." />
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "CollectionPage",
+		"name": "Las Vegas Golf Course Communities",
+		"description": "Homes in Las Vegas golf communities with championship courses, resort amenities, and country club access.",
+		"url": "https://www.drjanetduffy.com/property-types/golf-communities"
+	}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-16">
+		<!-- On-page navigation -->
+		<nav
+			aria-label="Golf communities page sections"
+			class="mb-10 rounded-full border border-gray-200 bg-white/80 backdrop-blur px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
+		<div class="text-center mb-16" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Discover Golf Communities in Las Vegas
 			</h1>
@@ -66,7 +114,7 @@
 		</div>
 
 		<!-- Benefits -->
-		<div class="mb-16">
+		<div class="mb-16" id="benefits">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Should You Choose a Golf Community in Las Vegas?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Las Vegas golf communities offer championship golf courses, resort-style amenities, prestigious lifestyle, strong property values, social community, beautiful landscaping, country club access, and exclusive neighborhoods that make them ideal for golf enthusiasts, luxury buyers, and those seeking an active, resort-style lifestyle.
@@ -121,7 +169,7 @@
 		</div>
 
 		<!-- Featured Communities -->
-		<div class="mb-16">
+		<div class="mb-16" id="communities">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Which Las Vegas Golf Communities Offer Premier Golf Living?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Las Vegas premier golf communities include Red Rock Country Club, Anthem Country Club, Southern Highlands, and The Ridges. Each community offers championship golf courses, exclusive country club access, resort-style amenities, and prestigious lifestyles that attract golf enthusiasts and luxury buyers.
@@ -138,7 +186,7 @@
 		</div>
 
 		<!-- Properties -->
-		<div class="mb-16">
+		<div class="mb-16" id="properties">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Homes Are Available in Las Vegas Golf Communities?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Las Vegas golf communities offer luxury homes, custom estates, and upscale properties featuring golf course views, championship golf access, resort-style amenities, and country club living. Properties range from upscale homes to multi-million dollar estates in premier golf communities throughout the Las Vegas Valley.
@@ -174,7 +222,7 @@
 		</div>
 
 		<!-- CTA Section -->
-		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
+		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white" id="cta">
 			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Dream Home in a Las Vegas Golf Community?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
 				Let me help you find your perfect home in a premier golf community. With deep knowledge of Las Vegas golf communities, championship courses, and luxury properties, I'll guide you through every step of your home buying journey.

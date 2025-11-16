@@ -1,15 +1,14 @@
-<script>
+<script lang="ts">
 	import { Home, Award, CheckCircle, DollarSign, Users, Heart } from 'lucide-svelte';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
-	
-	let mounted = false;
-	
-	onMount(() => {
-		mounted = true;
-	});
-	
-	const benefits = [
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const benefits: string[] = [
 		'Age-restricted community',
 		'Active adult lifestyle',
 		'Low maintenance living',
@@ -19,16 +18,59 @@
 		'Quiet neighborhoods',
 		'Affordable pricing'
 	];
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'benefits', label: 'Key Benefits' },
+		{ id: 'community-features', label: 'Community Features' },
+		{ id: 'properties', label: 'Available Homes' },
+		{ id: 'cta', label: 'Work With Dr. Duffy' }
+	];
+
+	let mounted = false;
+
+	onMount(() => {
+		mounted = true;
+	});
 </script>
 
 <svelte:head>
-	<title>55+ Communities | Las Vegas | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Browse homes in 55+ active adult communities in Las Vegas. Age-restricted communities with low maintenance living and active lifestyle amenities." />
+	<title>55+ Active Adult Communities | Las Vegas Luxury &amp; Relocation REALTOR | Dr. Janet Duffy</title>
+	<meta name="description" content="Browse Las Vegas 55+ active adult communities with Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy. Discover low-maintenance homes, recreation centers, and vibrant social lifestyles for active adults and retirees." />
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "CollectionPage",
+		"name": "Las Vegas 55+ Active Adult Communities",
+		"description": "Homes in Las Vegas 55+ age-restricted communities offering active adult lifestyles and low-maintenance living.",
+		"url": "https://www.drjanetduffy.com/property-types/55-plus-communities"
+	}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-16">
+		<!-- On-page navigation -->
+		<nav
+			aria-label="55+ communities page sections"
+			class="mb-10 rounded-full border border-gray-200 bg-white/80 backdrop-blur px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
+		<div class="text-center mb-16" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Find 55+ Active Adult Communities in Las Vegas
 			</h1>
@@ -59,14 +101,14 @@
 		</div>
 
 		<!-- Benefits -->
-		<div class="mb-16">
+		<div class="mb-16" id="benefits">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Should You Choose a 55+ Community in Las Vegas?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Las Vegas 55+ active adult communities offer age-restricted living, active adult lifestyle, low-maintenance living, social activities and clubs, recreation centers, age-appropriate amenities, quiet neighborhoods, and affordable pricing that make them ideal for retirees, empty nesters, and active adults seeking community, convenience, and lifestyle benefits.
 			</p>
 		</div>
 
-		<div class="grid md:grid-cols-2 gap-12 mb-16">
+		<div class="grid md:grid-cols-2 gap-12 mb-16" id="community-features">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
 				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
 				<ul class="space-y-4">
@@ -114,7 +156,7 @@
 		</div>
 
 		<!-- Properties -->
-		<div class="mb-16">
+		<div class="mb-16" id="properties">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Homes Are Available in Las Vegas 55+ Communities?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Las Vegas 55+ communities offer single-family homes, condos, and townhomes featuring low-maintenance living, age-appropriate amenities, active adult lifestyle, and affordable pricing. Properties range from affordable starter homes to upscale residences in premier active adult communities throughout the Las Vegas Valley.
@@ -150,7 +192,7 @@
 		</div>
 
 		<!-- CTA Section -->
-		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
+		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white" id="cta">
 			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Perfect 55+ Active Adult Community Home in Las Vegas?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
 				Let me help you find your perfect active adult community home. With deep knowledge of Las Vegas 55+ communities, active adult lifestyle, and senior housing options, I'll guide you through every step of your home buying journey.

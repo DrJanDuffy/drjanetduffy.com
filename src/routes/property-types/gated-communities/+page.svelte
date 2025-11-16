@@ -1,15 +1,20 @@
-<script>
+<script lang="ts">
 	import { Home, Shield, Award, CheckCircle, DollarSign, Users, Lock } from 'lucide-svelte';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
-	
-	let mounted = false;
-	
-	onMount(() => {
-		mounted = true;
-	});
-	
-	const benefits = [
+
+	interface GatedCommunity {
+		name: string;
+		avgPrice: string;
+		description: string;
+	}
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const benefits: string[] = [
 		'24/7 security',
 		'Privacy and exclusivity',
 		'Controlled access',
@@ -19,23 +24,66 @@
 		'Prestigious locations',
 		'Well-maintained common areas'
 	];
-	
-	const communities = [
+
+	const communities: GatedCommunity[] = [
 		{ name: 'The Ridges', avgPrice: '$1.2M+', description: 'Exclusive luxury gated community' },
 		{ name: 'Red Rock Country Club', avgPrice: '$950K+', description: 'Gated golf community' },
 		{ name: 'Southern Highlands', avgPrice: '$850K+', description: 'Master-planned gated community' },
 		{ name: 'Seven Hills', avgPrice: '$750K+', description: 'Upscale gated neighborhood' }
 	];
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'benefits', label: 'Key Benefits' },
+		{ id: 'communities', label: 'Featured Communities' },
+		{ id: 'properties', label: 'Available Homes' },
+		{ id: 'cta', label: 'Work With Dr. Duffy' }
+	];
+
+	let mounted = false;
+
+	onMount(() => {
+		mounted = true;
+	});
 </script>
 
 <svelte:head>
-	<title>Gated Communities | Las Vegas | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Browse homes in gated communities in Las Vegas. Secure, exclusive neighborhoods with enhanced privacy and property values." />
+	<title>Gated Communities | Las Vegas Luxury &amp; Relocation REALTOR | Dr. Janet Duffy</title>
+	<meta name="description" content="Browse secure gated communities in Las Vegas with Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy. Explore homes in exclusive neighborhoods with 24/7 security, privacy, and strong property values." />
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "CollectionPage",
+		"name": "Las Vegas Gated Communities",
+		"description": "Homes in Las Vegas gated communities offering enhanced security, privacy, and premium lifestyles.",
+		"url": "https://www.drjanetduffy.com/property-types/gated-communities"
+	}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-16">
+		<!-- On-page navigation -->
+		<nav
+			aria-label="Gated communities page sections"
+			class="mb-10 rounded-full border border-gray-200 bg-white/80 backdrop-blur px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
+		<div class="text-center mb-16" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Explore Gated Communities in Las Vegas
 			</h1>
@@ -66,7 +114,7 @@
 		</div>
 
 		<!-- Benefits -->
-		<div class="mb-16">
+		<div class="mb-16" id="benefits">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Should You Choose a Gated Community in Las Vegas?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Las Vegas gated communities offer 24/7 security, privacy and exclusivity, controlled access, enhanced property values, community amenities, peace of mind, prestigious locations, and well-maintained common areas that make them ideal for buyers seeking security, privacy, and premium lifestyle benefits.
@@ -121,7 +169,7 @@
 		</div>
 
 		<!-- Featured Communities -->
-		<div class="mb-16">
+		<div class="mb-16" id="communities">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Which Las Vegas Gated Communities Offer Premier Living?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Las Vegas premier gated communities include The Ridges, Red Rock Country Club, Southern Highlands, and Seven Hills. Each community offers exclusive luxury living, 24/7 security, enhanced privacy, prestigious locations, and strong property values that attract discerning buyers seeking security and exclusivity.
@@ -138,7 +186,7 @@
 		</div>
 
 		<!-- Properties -->
-		<div class="mb-16">
+		<div class="mb-16" id="properties">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Homes Are Available in Las Vegas Gated Communities?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Las Vegas gated communities offer luxury homes, custom estates, and upscale properties featuring 24/7 security, enhanced privacy, controlled access, and strong property values. Properties range from upscale homes to multi-million dollar estates in premier gated communities throughout the Las Vegas Valley.
@@ -174,7 +222,7 @@
 		</div>
 
 		<!-- CTA Section -->
-		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
+		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white" id="cta">
 			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Dream Home in a Las Vegas Gated Community?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
 				Let me help you find your perfect home in a secure gated community. With deep knowledge of Las Vegas gated communities, security features, and luxury properties, I'll guide you through every step of your home buying journey.
