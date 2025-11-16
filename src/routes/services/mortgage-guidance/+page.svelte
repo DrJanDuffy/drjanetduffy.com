@@ -1,15 +1,71 @@
-<script>
+<script lang="ts">
 	import { DollarSign, FileText, TrendingDown, CheckCircle } from 'lucide-svelte';
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'options', label: 'Loan Types & Options' },
+		{ id: 'process', label: 'Pre-Approval & Process' },
+		{ id: 'benefits', label: 'Benefits' },
+		{ id: 'cta', label: 'Get Mortgage Guidance' }
+	];
 </script>
 
 <svelte:head>
-	<title>Mortgage Guidance Services | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Expert guidance through home financing options to improve outcomes and build relationships. Professional mortgage guidance for Las Vegas homebuyers." />
+	<title>
+		Las Vegas Luxury &amp; Relocation Mortgage Guidance | Dr. Janet Duffy REALTOR®
+	</title>
+	<meta
+		name="description"
+		content="Mortgage guidance from Las Vegas Luxury &amp; Relocation REALTOR® Dr. Janet Duffy, helping buyers compare loan types, improve approval odds, and secure better terms."
+	/>
+
+	<meta
+		property="og:title"
+		content="Las Vegas Luxury &amp; Relocation Mortgage Guidance | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		property="og:description"
+		content="Clear, concierge-style guidance on Las Vegas mortgage options, pre-approval, and financing strategy."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/services/mortgage-guidance" />
+	<meta property="og:site_name" content="Las Vegas Luxury &amp; Relocation REALTOR" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+  
+	<meta
+		name="twitter:title"
+		content="Las Vegas Luxury &amp; Relocation Mortgage Guidance | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		name="twitter:description"
+		content="Support for first-time, move-up, luxury, and relocating buyers as they navigate Las Vegas home financing."
+	/>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Las Vegas Luxury & Relocation Mortgage Guidance",
+			"description": "Mortgage guidance services for Las Vegas homebuyers, including loan comparisons, pre-approval support, and credit improvement strategies.",
+			"url": "https://www.drjanetduffy.com/services/mortgage-guidance",
+			"about": {
+				"@type": "RealEstateAgent",
+				"name": "Dr. Janet Duffy",
+				"areaServed": "Las Vegas, Nevada"
+			}
+		}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-16">
+		<div class="text-center mb-10" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Expert Mortgage Guidance for Las Vegas Homebuyers
 			</h1>
@@ -19,8 +75,29 @@
 			</p>
 		</div>
 
-		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Mortgage Loan Types and Options Are Available for Las Vegas Homebuyers?</h2>
+		<!-- On-page navigation -->
+		<nav
+			aria-label="On this page"
+			class="mb-10 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-700 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
+		<div class="mb-16" id="options">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">
+				What Mortgage Loan Types and Options Are Available for Las Vegas Homebuyers?
+			</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
 				Las Vegas homebuyers have access to multiple mortgage loan types including conventional loans, FHA programs, VA loans for military families, USDA rural development loans, and jumbo loans for luxury properties. Understanding these options helps you choose the best financing solution for your situation.
 			</p>
@@ -82,8 +159,10 @@
 			</div>
 		</div>
 
-		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Are the Benefits of Professional Mortgage Guidance?</h2>
+		<div class="mb-16" id="benefits">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">
+				What Are the Benefits of Professional Mortgage Guidance?
+			</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
 				Professional mortgage guidance provides better rates, smoother processes, and expert advice throughout your home financing journey. Working with a mortgage expert helps you understand your options, improve your credit if needed, and secure the best possible terms for your Las Vegas home purchase.
 			</p>
@@ -107,7 +186,7 @@
 			</div>
 		</div>
 
-		<div class="text-center">
+		<div class="text-center" id="cta">
 			<a href="/contact" class="btn-primary">Get Started</a>
 		</div>
 	</div>

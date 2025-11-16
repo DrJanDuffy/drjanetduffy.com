@@ -1,15 +1,69 @@
-<script>
+<script lang="ts">
 	import { FileText, Award, CheckCircle, DollarSign } from 'lucide-svelte';
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'services', label: 'Appraisal Services' },
+		{ id: 'benefits', label: 'Benefits' },
+		{ id: 'cta', label: 'Request Appraisal' }
+	];
 </script>
 
 <svelte:head>
-	<title>General Appraisal Services | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Comprehensive property appraisals exceeding state certification requirements. Professional general appraisal services for Las Vegas properties." />
+	<title>
+		Las Vegas Luxury &amp; Relocation General Appraisal Services | Dr. Janet Duffy REALTOR®
+	</title>
+	<meta
+		name="description"
+		content="General appraisal services for Las Vegas residential, commercial, and land properties from Las Vegas Luxury &amp; Relocation REALTOR® Dr. Janet Duffy."
+	/>
+
+	<meta
+		property="og:title"
+		content="Las Vegas Luxury &amp; Relocation General Appraisal Services | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		property="og:description"
+		content="Comprehensive property appraisals that exceed state certification standards for Las Vegas homes, land, and commercial assets."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/services/general-appraisal" />
+	<meta property="og:site_name" content="Las Vegas Luxury &amp; Relocation REALTOR" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:title"
+		content="Las Vegas Luxury &amp; Relocation General Appraisal Services | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		name="twitter:description"
+		content="Professional, lender-friendly appraisal reports for Las Vegas residential, commercial, and land properties."
+	/>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Las Vegas Luxury & Relocation General Appraisal Services",
+			"description": "General appraisal services for Las Vegas properties, delivering USPAP-compliant valuations for residential, commercial, and land assets.",
+			"url": "https://www.drjanetduffy.com/services/general-appraisal",
+			"about": {
+				"@type": "RealEstateAgent",
+				"name": "Dr. Janet Duffy",
+				"areaServed": "Las Vegas, Nevada"
+			}
+		}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-16">
+		<div class="text-center mb-10" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Professional General Appraisal Services in Las Vegas
 			</h1>
@@ -19,8 +73,29 @@
 			</p>
 		</div>
 
-		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-6">What General Appraisal Services Are Available for Las Vegas Properties?</h2>
+		<!-- On-page navigation -->
+		<nav
+			aria-label="On this page"
+			class="mb-10 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-700 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
+		<div class="mb-16" id="services">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">
+				What General Appraisal Services Are Available for Las Vegas Properties?
+			</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
 				General appraisal services for Las Vegas properties include residential property appraisals, commercial property valuations, land and development appraisals, and specialized property assessments. These comprehensive appraisals exceed state certification requirements and provide accurate valuations for various property types throughout the Las Vegas area.
 			</p>
@@ -82,8 +157,10 @@
 			</div>
 		</div>
 
-		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Are the Benefits of Professional General Appraisals?</h2>
+		<div class="mb-16" id="benefits">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">
+				What Are the Benefits of Professional General Appraisals?
+			</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
 				Professional general appraisals provide accurate valuations through professional, unbiased property assessment, lender acceptance with appraisals accepted by all major lenders, and detailed reports with comprehensive documentation for your records. These benefits ensure you receive reliable property valuations that meet all professional standards.
 			</p>
@@ -107,7 +184,7 @@
 			</div>
 		</div>
 
-		<div class="text-center">
+		<div class="text-center" id="cta">
 			<a href="/contact" class="btn-primary">Request Appraisal</a>
 		</div>
 	</div>
