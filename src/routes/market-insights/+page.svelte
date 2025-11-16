@@ -1,5 +1,16 @@
-<script>
+<script lang="ts">
 	import { DollarSign, Calendar, Home, TrendingUp, TrendingDown, BarChart3 } from 'lucide-svelte';
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const tocItems: TocItem[] = [
+		{ id: 'key-stats', label: 'Key Stats' },
+		{ id: 'trends', label: 'Market Trends' },
+		{ id: 'cta', label: 'Request Analysis' }
+	];
 </script>
 
 <svelte:head>
@@ -32,10 +43,31 @@
 			</div>
 		</div>
 	</div>
+
+			<!-- On-page navigation -->
+			<nav
+				aria-label="Market insights page sections"
+				class="mt-10 rounded-full border border-white/20 bg-white/10 px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+			>
+				<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+					{#each tocItems as item}
+						<li>
+							<a
+								href={`#${item.id}`}
+								class="inline-flex items-center rounded-full px-3 py-1.5 text-white/80 hover:text-white hover:bg-white/20 transition-colors no-underline"
+							>
+								{item.label}
+							</a>
+						</li>
+					{/each}
+				</ul>
+			</nav>
+		</div>
+	</div>
 </section>
 
 <!-- Key Statistics -->
-<section class="section bg-primary-600 text-white">
+<section class="section bg-primary-600 text-white" id="key-stats">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto">
 			<div class="grid md:grid-cols-3 gap-8 mb-12">
@@ -80,7 +112,7 @@
 </section>
 
 <!-- Additional Market Data -->
-<section class="section bg-white">
+<section class="section bg-white" id="trends">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto">
 			<div class="text-center mb-12">
@@ -113,7 +145,7 @@
 </section>
 
 <!-- CTA Section -->
-<section class="section bg-gray-50">
+<section class="section bg-gray-50" id="cta">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-4xl mx-auto text-center">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Ready to Get Your Personalized Las Vegas Market Analysis?</h2>

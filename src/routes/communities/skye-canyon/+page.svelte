@@ -1,25 +1,72 @@
-<script>
+<script lang="ts">
 	import { MapPin, TrendingUp, DollarSign, CheckCircle, Clock, Building2, Mountain, Sparkles } from 'lucide-svelte';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
 	import { lasVegasLocalData } from '$lib/data/las-vegas-local-data.js';
-	
+
+	type Currency = number;
+
+	interface DistanceInfo {
+		label: string;
+		value: number;
+		route?: string;
+	}
+
+	interface Builder {
+		name: string;
+		priceRange: {
+			min: Currency;
+			max: Currency;
+		};
+		features: string[];
+	}
+
+	interface SkyeCanyonData {
+		priceRange: {
+			min: Currency;
+			max: Currency;
+		};
+		amenities: string[];
+		builders: Record<string, Builder>;
+		distances: {
+			toStrip: DistanceInfo;
+			toMountCharleston: DistanceInfo;
+			toLeeCanyon: DistanceInfo;
+		};
+		appreciationTrends: Record<string, Currency>;
+	}
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
 	let mounted = false;
-	
+
+	const skyeCanyon = lasVegasLocalData.skyeCanyon as SkyeCanyonData;
+	const builders: Builder[] = Object.values(skyeCanyon.builders);
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'investment', label: 'Investment Potential' },
+		{ id: 'builders', label: 'Builders' },
+		{ id: 'hoa-compare', label: 'HOA Comparison' },
+		{ id: 'distances', label: 'Distances' },
+		{ id: 'appreciation', label: 'Appreciation Timeline' },
+		{ id: 'properties', label: 'Available Properties' },
+		{ id: 'concierge', label: 'Concierge Services' }
+	];
+
 	onMount(() => {
 		mounted = true;
 	});
-	
-	const skyeCanyon = lasVegasLocalData.skyeCanyon;
-	const builders = Object.values(skyeCanyon.builders);
-	
-	function formatCurrency(amount) {
-		return new Intl.NumberFormat('en-US', {
+
+	const formatCurrency = (amount: Currency): string =>
+		new Intl.NumberFormat('en-US', {
 			style: 'currency',
 			currency: 'USD',
 			maximumFractionDigits: 0
 		}).format(amount);
-	}
 </script>
 
 <svelte:head>
@@ -68,7 +115,26 @@
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-16">
+		<!-- On-page navigation -->
+		<nav
+			aria-label="Skye Canyon page sections"
+			class="mb-10 rounded-full border border-gray-200 bg-white/80 backdrop-blur px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
+		<div class="text-center mb-16" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Find Your Dream Home in Skye Canyon, Las Vegas
 			</h1>
@@ -116,7 +182,7 @@
 			</p>
 		</div>
 
-		<div class="grid md:grid-cols-2 gap-12 mb-16">
+		<div class="grid md:grid-cols-2 gap-12 mb-16" id="investment">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
 				<h3 class="text-2xl font-bold text-gray-900 mb-6">Community Overview</h3>
 				<p class="text-gray-700 leading-relaxed mb-4">
@@ -167,7 +233,7 @@
 		</div>
 
 		<!-- Builder Comparison -->
-		<div class="mb-16">
+		<div class="mb-16" id="builders">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Which Builder Should You Choose in Skye Canyon?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Skye Canyon features five premium builders: Richmond American (best value), Century Communities (most affordable), Lennar (Everything's Included®), Toll Brothers (luxury finishes), and Christopher Homes (semi-custom). Each builder offers unique features, pricing, and customization options to match different budgets and preferences.
@@ -195,7 +261,7 @@
 		</div>
 
 		<!-- HOA Comparison -->
-		<div class="mb-16">
+		<div class="mb-16" id="hoa-compare">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Do Skye Canyon HOA Fees Compare to Summerlin?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Skye Canyon HOA fees range from $90-$150/month, which is 40% lower than comparable Summerlin homes ($150-$500/month). This represents annual savings of $1,200-$2,400, making Skye Canyon an excellent value proposition for Las Vegas homebuyers seeking master-planned community amenities at lower costs.
@@ -243,7 +309,7 @@
 		</div>
 
 		<!-- Distance Information -->
-		<div class="mb-16">
+		<div class="mb-16" id="distances">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Far Is Skye Canyon from Key Las Vegas Locations?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Skye Canyon is 20 minutes from the Las Vegas Strip via US-95, 30 minutes to Mount Charleston for outdoor recreation, and 35 minutes to Lee Canyon for skiing and hiking. The community offers easy access to both city amenities and mountain recreation, making it ideal for active lifestyles.
@@ -268,7 +334,7 @@
 		</div>
 
 		<!-- Appreciation Trends -->
-		<div class="mb-16">
+		<div class="mb-16" id="appreciation">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Is Skye Canyon's Investment Potential?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Skye Canyon homes have shown strong appreciation, increasing from $380K (2020) to $525K (2025), with projected values reaching $600K by 2027. Phase 2 development launching in 2026 will add 5,000 more homes, driving continued appreciation and community growth.
@@ -297,7 +363,7 @@
 		</div>
 
 		<!-- Properties in Skye Canyon -->
-		<div class="mb-16">
+		<div class="mb-16" id="properties">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Properties Are Available in Skye Canyon?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Skye Canyon offers new construction homes from five premium builders, ranging from $425,000 to $1.5 million. Properties feature modern designs, energy-efficient construction, smart home technology, and access to Skye Center amenities and new schools.
@@ -333,7 +399,7 @@
 		</div>
 
 		<!-- Concierge Services -->
-		<div class="mb-16">
+		<div class="mb-16" id="concierge">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Does Dr. Janet Duffy's Concierge Service Help Skye Canyon Buyers?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				My concierge service includes builder relationship benefits, helping you navigate new construction contracts, design center selections, and builder warranties. I provide personalized tours of Skye Canyon, showing you Skye Center amenities, new schools, and Phase 2 development plans. My service includes tracking every Skye Canyon sale to provide real-time market analysis and investment insights.
