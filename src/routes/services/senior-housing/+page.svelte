@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { Home, Users, CheckCircle, MapPin, Heart, TrendingUp } from 'lucide-svelte';
+	import { PhotoGallery } from '$lib';
+	import { seniorLivingJoy } from '$lib/data/photo-galleries';
 
 	interface TocItem {
 		id: string;
@@ -77,6 +79,14 @@
 			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
 				Specialized real estate services for buyers 50+ looking to downsize, invest smartly, or relocate to Las Vegas. Expert guidance through retirement communities, age-restricted housing, and lifestyle-focused neighborhoods.
 			</p>
+		</div>
+
+		<div class="mb-12">
+			<PhotoGallery
+				title="Life in Las Vegas 55+ Communities"
+				subtitle="Beyond floor plans and HOA fees, the right senior housing choice comes down to everyday joy, friendships, and feeling at home."
+				photos={seniorLivingJoy}
+			/>
 		</div>
 
 		<!-- On-page navigation -->
