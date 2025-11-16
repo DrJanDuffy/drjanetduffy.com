@@ -243,6 +243,25 @@
 			</p>
 		</div>
 
+		<!-- On-page navigation for FAQ categories -->
+		<div class="max-w-4xl mx-auto mb-10">
+			<nav class="border-t border-gray-200 pt-5">
+				<p class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3 text-center">
+					On this page
+				</p>
+				<div class="flex flex-wrap justify-center gap-3">
+					{#each faqs as category, index}
+						<a
+							href={"#category-" + index}
+							class="px-4 py-2 rounded-full border border-gray-200 bg-white text-xs sm:text-sm font-medium text-gray-700 hover:text-primary-600 hover:border-primary-300 hover:bg-primary-50 transition-colors whitespace-nowrap"
+						>
+							{category.category}
+						</a>
+					{/each}
+				</div>
+			</nav>
+		</div>
+
 		<!-- Biggest Mistakes Section -->
 		<div class="max-w-4xl mx-auto mb-12 space-y-4">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">What Are the Biggest Mistakes Buyers and Sellers Make in Las Vegas?</h2>
@@ -278,7 +297,10 @@
 
 		<div class="max-w-4xl mx-auto space-y-6">
 			{#each faqs as category, categoryIndex}
-				<div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
+				<div
+					id={"category-" + categoryIndex}
+					class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden"
+				>
 					<button
 						on:click={() => toggleCategory(categoryIndex)}
 						class="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 transition-colors"
