@@ -1,17 +1,76 @@
-<script>
+<script lang="ts">
 	import { Home, MapPin, CheckCircle, Users, TrendingUp, Phone } from 'lucide-svelte';
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'neighborhoods', label: 'Neighborhoods We Serve' },
+		{ id: 'process', label: 'Buying Process' },
+		{ id: 'benefits', label: 'Benefits of Representation' },
+		{ id: 'faq', label: 'Buyer FAQ' },
+		{ id: 'cta', label: 'Work With Dr. Duffy' }
+	];
 </script>
 
 <svelte:head>
-	<title>Expert Buyer Representation Services in Las Vegas | Dr. Janet Duffy</title>
-	<meta name="description" content="Comprehensive buyer representation services for Las Vegas homebuyers. Expert guidance through every stage of the home buying process in Summerlin, Henderson, and surrounding areas." />
-	<meta name="keywords" content="buyer representation Las Vegas, home buying services, Las Vegas real estate agent, buyer's agent, first time homebuyer Las Vegas" />
+	<title>
+		Las Vegas Luxury &amp; Relocation Buyer Representation Services | Dr. Janet Duffy REALTOR®
+	</title>
+	<meta
+		name="description"
+		content="Work with Las Vegas Luxury &amp; Relocation REALTOR® Dr. Janet Duffy for concierge-level buyer representation across Summerlin, Henderson, Skye Canyon, Centennial Hills, and the greater Las Vegas Valley."
+	/>
+	<meta
+		name="keywords"
+		content="Las Vegas Luxury &amp; Relocation REALTOR, buyer representation Las Vegas, home buying services, Las Vegas real estate agent, buyer's agent, first time homebuyer Las Vegas"
+	/>
+
+	<meta
+		property="og:title"
+		content="Las Vegas Luxury &amp; Relocation Buyer Representation Services | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		property="og:description"
+		content="Concierge-level buyer representation for Las Vegas luxury, relocation, and first-time home purchases with Dr. Janet Duffy."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/services/buyer-representation" />
+	<meta property="og:site_name" content="Las Vegas Luxury &amp; Relocation REALTOR" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:title"
+		content="Las Vegas Luxury &amp; Relocation Buyer Representation Services | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		name="twitter:description"
+		content="Guided, data-driven buyer representation for luxury, relocation, and first-time buyers across the Las Vegas Valley."
+	/>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Las Vegas Luxury & Relocation Buyer Representation Services",
+			"description": "Concierge-level buyer representation services from Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy, serving Summerlin, Henderson, Skye Canyon, Centennial Hills, and the greater Las Vegas Valley.",
+			"url": "https://www.drjanetduffy.com/services/buyer-representation",
+			"about": {
+				"@type": "RealEstateAgent",
+				"name": "Dr. Janet Duffy",
+				"areaServed": "Las Vegas, Nevada"
+			}
+		}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
 		<!-- Hero Section -->
-		<div class="text-center mb-12 sm:mb-16">
+		<div class="text-center mb-8 sm:mb-10" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Expert Buyer Representation Services in Las Vegas
 			</h1>
@@ -21,11 +80,39 @@
 			</p>
 		</div>
 
+		<!-- On-page navigation -->
+		<nav
+			aria-label="On this page"
+			class="mb-10 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-700 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
 		<!-- Main Content -->
 		<div class="max-w-4xl mx-auto">
 			<!-- How We Help Section -->
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How Do We Help Las Vegas Homebuyers Find Their Perfect Home?</h2>
+			<section
+				id="how-we-help"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="how-we-help-heading"
+			>
+				<h2
+					id="how-we-help-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					How Do We Help Las Vegas Homebuyers Find Their Perfect Home?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
 					Navigating the Las Vegas real estate market requires expertise, local knowledge, and dedicated representation. Our buyer representation services protect your interests, save you time and money, and ensure you find the perfect home in the right neighborhood through comprehensive property search, neighborhood expertise, market analysis, and transaction management. My concierge service includes coordinating pool inspections in Summerlin, managing HOA documents across multiple master-planned communities, and providing personalized neighborhood tours showing parks, schools, shopping, and hidden gems locals love.
@@ -72,11 +159,20 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
 			<!-- Neighborhoods We Serve -->
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Las Vegas Neighborhoods Do We Serve?</h2>
+			<section
+				id="neighborhoods"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="neighborhoods-heading"
+			>
+				<h2
+					id="neighborhoods-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					Which Las Vegas Neighborhoods Do We Serve?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Las Vegas offers diverse neighborhoods, each with unique character and appeal. Our buyer representation services extend across the entire Las Vegas Valley, from master-planned communities like Summerlin to established neighborhoods like Green Valley and luxury enclaves like The Ridges.
@@ -143,11 +239,20 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
 			<!-- Our Process -->
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Is Our Comprehensive Buyer Representation Process?</h2>
+			<section
+				id="process"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="process-heading"
+			>
+				<h2
+					id="process-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Is Our Comprehensive Buyer Representation Process?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Our buyer representation process protects your interests and ensures a successful home purchase. We work with you from initial consultation through closing and beyond, providing expert guidance at every stage including needs assessment, property search, market analysis, offer preparation, due diligence, and closing coordination.
@@ -214,11 +319,20 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
 			<!-- Benefits Section -->
-			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are the Benefits of Professional Buyer Representation?</h2>
+			<section
+				id="benefits"
+				class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="benefits-heading"
+			>
+				<h2
+					id="benefits-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Are the Benefits of Professional Buyer Representation?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Professional buyer representation provides expert market knowledge, time savings, cost savings, protection of your interests, access to off-market properties, and stress reduction. These benefits ensure you make informed decisions and get the best deal on your Las Vegas home purchase.
 				</p>
@@ -272,11 +386,20 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
 			<!-- FAQ Section -->
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Frequently Asked Questions About Buyer Representation</h2>
+			<section
+				id="faq"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="faq-heading"
+			>
+				<h2
+					id="faq-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					Frequently Asked Questions About Buyer Representation
+				</h2>
 				<div class="space-y-6">
 					<div>
 						<h3 class="text-2xl font-bold text-gray-900 mb-3">Do I Pay for Buyer Representation Services?</h3>
@@ -297,11 +420,20 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
 			<!-- CTA Section -->
-			<div class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white">
-				<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Las Vegas Home?</h2>
+			<section
+				id="cta"
+				class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white scroll-mt-24"
+				aria-labelledby="cta-heading"
+			>
+				<h2
+					id="cta-heading"
+					class="text-3xl md:text-4xl font-bold mb-4"
+				>
+					Ready to Find Your Las Vegas Home?
+				</h2>
 				<p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
 					Let us represent you in your home search. Contact us today to schedule a consultation and discover how we can help you find the perfect property in Las Vegas.
 				</p>
@@ -309,11 +441,14 @@
 					<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">
 						Schedule Consultation
 					</a>
-					<a href="/properties" class="btn-primary bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600">
+					<a
+						href="/properties"
+						class="btn-primary bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600"
+					>
 						View Available Properties
 					</a>
 				</div>
-			</div>
+			</section>
 		</div>
 	</div>
 </section>
