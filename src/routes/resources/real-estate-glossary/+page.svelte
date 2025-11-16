@@ -106,8 +106,8 @@
 </script>
 
 <svelte:head>
-	<title>Real Estate Glossary | Las Vegas | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Comprehensive real estate glossary with definitions of common terms used in buying, selling, and investing in Las Vegas real estate." />
+	<title>Las Vegas Luxury &amp; Relocation Real Estate Glossary | Dr. Janet Duffy REALTOR®</title>
+	<meta name="description" content="Las Vegas Luxury & Relocation real estate glossary with clear definitions of terms used in buying, selling, investing, and relocating to Las Vegas." />
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">

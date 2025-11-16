@@ -140,8 +140,8 @@
 </script>
 
 <svelte:head>
-	<title>Frequently Asked Questions | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Get answers to common questions about buying, selling, and investing in Las Vegas real estate. Expert guidance from Dr. Janet Duffy." />
+	<title>Las Vegas Luxury &amp; Relocation FAQ | Dr. Janet Duffy REALTOR®</title>
+	<meta name="description" content="Las Vegas Luxury & Relocation FAQ answering common questions about buying, selling, investing, and relocating with a concierge-level REALTOR®." />
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">

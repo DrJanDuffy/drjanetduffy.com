@@ -48,8 +48,8 @@
 </script>
 
 <svelte:head>
-	<title>Client Testimonials | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Hear what our satisfied clients have to say about working with Dr. Janet Duffy. Read real testimonials from Las Vegas homebuyers and sellers." />
+	<title>Client Testimonials | Las Vegas Luxury &amp; Relocation REALTOR</title>
+	<meta name="description" content="Hear what clients say about working with Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy. Real stories from Las Vegas buyers, sellers, investors, and relocation clients." />
 	
 	<!-- Structured Data -->
 	<script type="application/ld+json">

@@ -156,8 +156,8 @@
 </script>
 
 <svelte:head>
-	<title>Real Estate Resources | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Comprehensive real estate resources including buying guides, selling guides, market insights, and investment information for Las Vegas." />
+	<title>Las Vegas Luxury &amp; Relocation Resources | Dr. Janet Duffy REALTOR®</title>
+	<meta name="description" content="Las Vegas Luxury & Relocation resources including buying and selling guides, market insights, relocation checklists, and investment information." />
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
