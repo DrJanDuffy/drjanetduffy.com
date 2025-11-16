@@ -1,16 +1,76 @@
-<script>
+<script lang="ts">
 	import { Home, Award, TrendingUp, MapPin, Key, Star } from 'lucide-svelte';
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'expertise', label: 'Luxury Expertise' },
+		{ id: 'communities', label: 'Luxury Communities' },
+		{ id: 'buying', label: 'Buying Services' },
+		{ id: 'selling', label: 'Selling Services' },
+		{ id: 'features', label: 'Key Luxury Features' },
+		{ id: 'cta', label: 'Work With Dr. Duffy' }
+	];
 </script>
 
 <svelte:head>
-	<title>Luxury Homes Services in Las Vegas | Premium Real Estate</title>
-	<meta name="description" content="Exclusive luxury home services in Las Vegas. Expert representation for luxury properties in The Ridges, Red Rock Country Club, Anthem, and other prestigious communities." />
-	<meta name="keywords" content="luxury homes Las Vegas, luxury real estate agent, The Ridges Las Vegas, Red Rock Country Club, luxury properties Las Vegas" />
+	<title>
+		Las Vegas Luxury &amp; Relocation Luxury Home Services | Dr. Janet Duffy REALTOR®
+	</title>
+	<meta
+		name="description"
+		content="Luxury home services from Las Vegas Luxury &amp; Relocation REALTOR® Dr. Janet Duffy, specializing in The Ridges, MacDonald Highlands, Red Rock Country Club, Anthem, Seven Hills, and other premier communities."
+	/>
+	<meta
+		name="keywords"
+		content="Las Vegas Luxury &amp; Relocation REALTOR, luxury homes Las Vegas, luxury real estate agent, The Ridges Las Vegas, MacDonald Highlands, Red Rock Country Club, Anthem Country Club, Seven Hills"
+	/>
+
+	<meta
+		property="og:title"
+		content="Las Vegas Luxury &amp; Relocation Luxury Home Services | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		property="og:description"
+		content="Concierge-level luxury real estate services for high-end buyers and sellers across Las Vegas’s most prestigious communities."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/services/luxury-homes" />
+	<meta property="og:site_name" content="Las Vegas Luxury &amp; Relocation REALTOR" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:title"
+		content="Las Vegas Luxury &amp; Relocation Luxury Home Services | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		name="twitter:description"
+		content="Discreet, data-driven luxury home buying and selling services tailored to Las Vegas’s top-tier communities."
+	/>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Las Vegas Luxury & Relocation Luxury Home Services",
+			"description": "Luxury home buying and selling services from Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy in The Ridges, MacDonald Highlands, Red Rock Country Club, Anthem, Seven Hills, and other premier communities.",
+			"url": "https://www.drjanetduffy.com/services/luxury-homes",
+			"about": {
+				"@type": "RealEstateAgent",
+				"name": "Dr. Janet Duffy",
+				"areaServed": "Las Vegas, Nevada"
+			}
+		}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-12 sm:mb-16">
+		<div class="text-center mb-8 sm:mb-10" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Luxury Real Estate Services for Las Vegas Properties
 			</h1>
@@ -20,9 +80,37 @@
 			</p>
 		</div>
 
+		<!-- On-page navigation -->
+		<nav
+			aria-label="On this page"
+			class="mb-10 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-700 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
 		<div class="max-w-4xl mx-auto">
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Luxury Real Estate Expertise Do We Provide in Las Vegas?</h2>
+			<section
+				id="expertise"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="expertise-heading"
+			>
+				<h2
+					id="expertise-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Luxury Real Estate Expertise Do We Provide in Las Vegas?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
 					Luxury real estate in Las Vegas represents a distinct market with unique characteristics, buyer expectations, and transaction requirements. Our luxury home services are designed specifically for high-end properties, providing expertise, discretion, and attention to detail through exclusive property access, premium marketing, privacy protection, and deep market knowledge. My concierge service includes specialized representation for luxury communities like The Ridges ($2M-$8M), MacDonald Highlands ($1M-$5M), Red Rock Country Club ($950K-$3M), and The Summit ($1.5M-$5M), with deep understanding of golf course premiums (15-25%), mountain view premiums (20-30%), and luxury market dynamics.
@@ -69,10 +157,19 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Las Vegas Luxury Communities Do We Serve?</h2>
+			<section
+				id="communities"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="communities-heading"
+			>
+				<h2
+					id="communities-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					Which Las Vegas Luxury Communities Do We Serve?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Las Vegas offers several world-class luxury communities, each with unique characteristics, amenities, and appeal. Understanding these communities is essential for luxury homebuyers and sellers. We provide expert representation in The Ridges, Red Rock Country Club, Anthem, Seven Hills, and other premier luxury neighborhoods.
@@ -129,10 +226,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Luxury Home Buying Services</h2>
+			<section
+				id="buying"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="buying-heading"
+			>
+				<h2
+					id="buying-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					Luxury Home Buying Services
+				</h2>
 				
 				<div class="space-y-8">
 					<div>
@@ -165,10 +271,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Luxury Home Selling Services</h2>
+			<section
+				id="selling"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="selling-heading"
+			>
+				<h2
+					id="selling-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					Luxury Home Selling Services
+				</h2>
 				
 				<div class="space-y-8">
 					<div>
@@ -201,10 +316,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Luxury Property Features & Considerations</h2>
+			<section
+				id="features"
+				class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="features-heading"
+			>
+				<h2
+					id="features-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					Luxury Property Features &amp; Considerations
+				</h2>
 				
 				<div class="space-y-6">
 					<div>
@@ -228,10 +352,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white">
-				<h2 class="text-3xl md:text-4xl font-bold mb-4">Luxury Real Estate Services in Las Vegas</h2>
+			<section
+				id="cta"
+				class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white scroll-mt-24"
+				aria-labelledby="cta-heading"
+			>
+				<h2
+					id="cta-heading"
+					class="text-3xl md:text-4xl font-bold mb-4"
+				>
+					Luxury Real Estate Services in Las Vegas
+				</h2>
 				<p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
 					Let us help you with your luxury real estate needs. Contact us today to schedule a confidential consultation.
 				</p>
@@ -239,11 +372,14 @@
 					<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">
 						Schedule Consultation
 					</a>
-					<a href="/properties" class="btn-primary bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600">
+					<a
+						href="/properties"
+						class="btn-primary bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600"
+					>
 						View Luxury Properties
 					</a>
 				</div>
-			</div>
+			</section>
 		</div>
 	</div>
 </section>
