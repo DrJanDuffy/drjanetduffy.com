@@ -1,16 +1,74 @@
-<script>
+<script lang="ts">
 	import { Home, Key, Users, DollarSign, CheckCircle, Wrench } from 'lucide-svelte';
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'services', label: 'Management Services' },
+		{ id: 'markets', label: 'Rental Markets' },
+		{ id: 'benefits', label: 'Benefits' },
+		{ id: 'cta', label: 'Work With Dr. Duffy' }
+	];
 </script>
 
 <svelte:head>
-	<title>Property Management Services in Las Vegas | Rental Property Management</title>
-	<meta name="description" content="Professional property management services for Las Vegas rental properties. Expert management recognized for expertise and integrity in real estate management." />
-	<meta name="keywords" content="property management Las Vegas, rental property management, Las Vegas property manager, rental management services" />
+	<title>
+		Las Vegas Luxury &amp; Relocation Property Management Services | Dr. Janet Duffy REALTOR®
+	</title>
+	<meta
+		name="description"
+		content="Las Vegas Luxury &amp; Relocation REALTOR® Dr. Janet Duffy provides professional property management services for single-family, multi-unit, and luxury rentals across the Las Vegas Valley."
+	/>
+	<meta
+		name="keywords"
+		content="Las Vegas Luxury &amp; Relocation REALTOR, property management Las Vegas, rental property management, Las Vegas property manager, investor services"
+	/>
+
+	<meta
+		property="og:title"
+		content="Las Vegas Luxury &amp; Relocation Property Management Services | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		property="og:description"
+		content="Full-service property management for Las Vegas rental investors, from tenant screening to maintenance and financial reporting."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/services/property-management" />
+	<meta property="og:site_name" content="Las Vegas Luxury &amp; Relocation REALTOR" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:title"
+		content="Las Vegas Luxury &amp; Relocation Property Management Services | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		name="twitter:description"
+		content="Hands-on, investor-focused property management to protect your assets and stabilize cash flow in Las Vegas."
+	/>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Las Vegas Luxury & Relocation Property Management Services",
+			"description": "Property management services from Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy, serving local and out-of-state investors with full-service management.",
+			"url": "https://www.drjanetduffy.com/services/property-management",
+			"about": {
+				"@type": "RealEstateAgent",
+				"name": "Dr. Janet Duffy",
+				"areaServed": "Las Vegas, Nevada"
+			}
+		}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-12 sm:mb-16">
+		<div class="text-center mb-8 sm:mb-10" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Property Management Services in Las Vegas
 			</h1>
@@ -20,9 +78,37 @@
 			</p>
 		</div>
 
+		<!-- On-page navigation -->
+		<nav
+			aria-label="On this page"
+			class="mb-10 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-700 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
 		<div class="max-w-4xl mx-auto">
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Comprehensive Property Management Services Do We Provide in Las Vegas?</h2>
+			<section
+				id="services"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="services-heading"
+			>
+				<h2
+					id="services-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Comprehensive Property Management Services Do We Provide in Las Vegas?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
 					Property management is essential for successful rental property ownership, especially for out-of-town owners or those with multiple properties. Las Vegas's strong rental markets require professional management to maximize returns, maintain properties, and ensure compliance. Our property management services provide comprehensive management through tenant management, maintenance coordination, financial management, and complete owner services.
@@ -69,10 +155,19 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Property Management Services Are Included?</h2>
+			<section
+				id="services-detail"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="services-detail-heading"
+			>
+				<h2
+					id="services-detail-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Property Management Services Are Included?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Our property management services include tenant screening and leasing, rent collection and financial management, maintenance and repairs coordination, property inspections, and legal compliance. These comprehensive services ensure your Las Vegas rental properties are well-maintained, legally compliant, and generating maximum returns.
 				</p>
@@ -128,10 +223,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Las Vegas Rental Markets Do We Manage?</h2>
+			<section
+				id="markets"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="markets-heading"
+			>
+				<h2
+					id="markets-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					Which Las Vegas Rental Markets Do We Manage?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					We manage rental properties across all Las Vegas rental markets including single-family rental markets in North Las Vegas and Henderson, multi-unit properties from duplexes to apartment buildings, and luxury rental properties in communities like The Ridges and Red Rock Country Club. Each market requires specialized management expertise.
 				</p>
@@ -167,10 +271,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are the Benefits of Professional Property Management?</h2>
+			<section
+				id="benefits"
+				class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="benefits-heading"
+			>
+				<h2
+					id="benefits-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Are the Benefits of Professional Property Management?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Professional property management provides maximized rental income through effective marketing and tenant screening, property protection through regular maintenance and inspections, time savings by handling all day-to-day management tasks, and legal protection ensuring compliance with all applicable laws and regulations.
 				</p>
@@ -208,10 +321,19 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white">
-				<h2 class="text-3xl md:text-4xl font-bold mb-4">Property Management Services in Las Vegas</h2>
+			<section
+				id="cta"
+				class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white scroll-mt-24"
+				aria-labelledby="cta-heading"
+			>
+				<h2
+					id="cta-heading"
+					class="text-3xl md:text-4xl font-bold mb-4"
+				>
+					Property Management Services in Las Vegas
+				</h2>
 				<p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
 					Let us help you manage your Las Vegas rental properties. Contact us today to schedule a consultation.
 				</p>
@@ -219,11 +341,14 @@
 					<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">
 						Schedule Consultation
 					</a>
-					<a href="/properties" class="btn-primary bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600">
+					<a
+						href="/properties"
+						class="btn-primary bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600"
+					>
 						View Rental Properties
 					</a>
 				</div>
-			</div>
+			</section>
 		</div>
 	</div>
 </section>
