@@ -1,13 +1,26 @@
-<script>
-import { onMount } from 'svelte';
-import { browser } from '$app/environment';
-import { CheckCircle } from 'lucide-svelte';
+<script lang="ts">
+	import { onMount } from 'svelte';
+	import { browser } from '$app/environment';
+	import { CheckCircle } from 'lucide-svelte';
 
-let mounted = false;
+	interface TocItem {
+		id: string;
+		label: string;
+	}
 
-onMount(() => {
-  mounted = true;
-});
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'search', label: 'Search Options' },
+		{ id: 'listings', label: 'List Listings' },
+		{ id: 'comparison', label: 'View Comparison' },
+		{ id: 'features', label: 'List View Benefits' }
+	];
+
+	let mounted = false;
+
+	onMount(() => {
+		mounted = true;
+	});
 </script>
 
 <svelte:head>
@@ -26,11 +39,40 @@ onMount(() => {
 	<meta property="twitter:url" content="https://www.drjanetduffy.com/listings-list" />
 	<meta property="twitter:title" content="Property Listings - List View" />
 	<meta property="twitter:description" content="Browse Las Vegas property listings in a detailed list format." />
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "CollectionPage",
+		"name": "Las Vegas Property Listings - List View",
+		"description": "List view of Las Vegas property listings including active, pending, and sold properties with detailed information.",
+		"url": "https://www.drjanetduffy.com/listings-list"
+	}
+	</script>
 </svelte:head>
 
-<section class="section relative" style="background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);">
+<section class="section relative bg-gradient-to-b from-white to-slate-50">
 	<div class="container-premium">
-		<div class="text-center mb-16">
+		<!-- On-page navigation -->
+		<nav
+			aria-label="List listings page sections"
+			class="mb-10 rounded-full border border-gray-200 bg-white/80 backdrop-blur px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
+		<div class="text-center mb-16" id="overview">
 			<h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">Las Vegas Property Listings in List View</h1>
 			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
 			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
@@ -44,7 +86,7 @@ onMount(() => {
 		</div>
 	
 		<!-- Search Options -->
-		<div class="mb-16 bg-white rounded-2xl shadow-xl p-10 border border-gray-100">
+		<div class="mb-16 bg-white rounded-2xl shadow-xl p-10 border border-gray-100" id="search">
 			<h2 class="font-display text-3xl font-bold mb-6 text-center text-gray-900" style="letter-spacing: -0.02em;">How Can You Search for Las Vegas Properties in List View?</h2>
 			<p class="text-gray-700 mb-8 text-center leading-relaxed max-w-3xl mx-auto">
 				Search for Las Vegas properties in list view using advanced search with detailed filters for location, price, bedrooms, and amenities, or simple search for quick results. Both search options help you find properties that match your needs and display results in a detailed list format for easy comparison.
@@ -72,7 +114,7 @@ onMount(() => {
 		</div>
 		
 		<!-- Listings -->
-		<div class="mb-16">
+		<div class="mb-16" id="listings">
 			<div class="text-center mb-12">
 				<h2 class="font-display text-4xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.02em;">What Properties Are Available in List View?</h2>
 				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
@@ -111,7 +153,7 @@ onMount(() => {
 		</div>
 		
 		<!-- View Comparison -->
-		<div class="mb-16 bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-xl border border-gray-100">
+		<div class="mb-16 bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-xl border border-gray-100" id="comparison">
 			<h2 class="font-display text-3xl font-bold mb-6 text-center text-gray-900" style="letter-spacing: -0.02em;">How Can You Choose Your Preferred Property View?</h2>
 			<p class="text-gray-700 mb-8 text-center leading-relaxed max-w-3xl mx-auto">
 				Choose your preferred property view including grid view for visual browsing with property cards, list view for detailed comparison with comprehensive information, or web components view for modern interactive interface. Each view provides unique benefits to help you find and compare Las Vegas properties effectively.
@@ -154,7 +196,7 @@ onMount(() => {
 		</div>
 		
 		<!-- Features of List View -->
-		<div class="grid-premium md:grid-cols-2 gap-12">
+		<div class="grid-premium md:grid-cols-2 gap-12" id="features">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
 				<h3 class="font-display text-2xl font-bold mb-6 text-gray-900">Benefits of List View</h3>
 				<ul class="space-y-4">
