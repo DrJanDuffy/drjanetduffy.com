@@ -1,16 +1,75 @@
-<script>
+<script lang="ts">
 	import { Building2, TrendingUp, MapPin, DollarSign, BarChart3, CheckCircle } from 'lucide-svelte';
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'expertise', label: 'Commercial Expertise' },
+		{ id: 'markets', label: 'Markets Served' },
+		{ id: 'services', label: 'Service Offerings' },
+		{ id: 'considerations', label: 'Key Considerations' },
+		{ id: 'cta', label: 'Start Your Commercial Search' }
+	];
 </script>
 
 <svelte:head>
-	<title>Commercial Real Estate Services in Las Vegas | Industrial & Office</title>
-	<meta name="description" content="Commercial real estate expertise for industrial and office markets in Las Vegas. Expert services for commercial property transactions, investments, and leasing." />
-	<meta name="keywords" content="commercial real estate Las Vegas, industrial property Las Vegas, office space Las Vegas, commercial investment" />
+	<title>
+		Las Vegas Luxury &amp; Relocation Commercial Real Estate Services | Dr. Janet Duffy REALTOR®
+	</title>
+	<meta
+		name="description"
+		content="Commercial real estate services from Las Vegas Luxury &amp; Relocation REALTOR® Dr. Janet Duffy, specializing in industrial, office, and retail properties across the Las Vegas Valley."
+	/>
+	<meta
+		name="keywords"
+		content="Las Vegas Luxury &amp; Relocation REALTOR, commercial real estate Las Vegas, industrial property, office space Las Vegas, commercial investments"
+	/>
+
+	<meta
+		property="og:title"
+		content="Las Vegas Luxury &amp; Relocation Commercial Real Estate Services | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		property="og:description"
+		content="Industrial, office, and retail acquisition, leasing, and investment support for businesses and investors in Las Vegas."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/services/commercial-real-estate" />
+	<meta property="og:site_name" content="Las Vegas Luxury &amp; Relocation REALTOR" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:title"
+		content="Las Vegas Luxury &amp; Relocation Commercial Real Estate Services | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		name="twitter:description"
+		content="Full-service commercial brokerage support across Las Vegas industrial, office, and retail submarkets."
+	/>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Las Vegas Luxury & Relocation Commercial Real Estate Services",
+			"description": "Commercial real estate services in Las Vegas, including industrial, office, and retail transactions, leasing, and investments.",
+			"url": "https://www.drjanetduffy.com/services/commercial-real-estate",
+			"about": {
+				"@type": "RealEstateAgent",
+				"name": "Dr. Janet Duffy",
+				"areaServed": "Las Vegas, Nevada"
+			}
+		}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-12 sm:mb-16">
+		<div class="text-center mb-8 sm:mb-10" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Commercial Real Estate Services in Las Vegas
 			</h1>
@@ -20,9 +79,37 @@
 			</p>
 		</div>
 
+		<!-- On-page navigation -->
+		<nav
+			aria-label="On this page"
+			class="mb-10 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-700 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
 		<div class="max-w-4xl mx-auto">
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Commercial Real Estate Expertise Do We Provide in Las Vegas?</h2>
+			<section
+				id="expertise"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="expertise-heading"
+			>
+				<h2
+					id="expertise-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Commercial Real Estate Expertise Do We Provide in Las Vegas?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
 					Las Vegas's commercial real estate market includes diverse property types, from industrial warehouses to office buildings to retail spaces. Commercial transactions require specialized expertise, understanding of commercial markets, and knowledge of business needs. Our commercial services help buyers, sellers, and investors navigate Las Vegas commercial markets successfully through industrial property expertise, office building services, investment analysis, and deep market knowledge.
@@ -69,10 +156,19 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Las Vegas Commercial Markets Do We Serve?</h2>
+			<section
+				id="markets"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="markets-heading"
+			>
+				<h2
+					id="markets-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					Which Las Vegas Commercial Markets Do We Serve?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					We serve all Las Vegas commercial markets including the industrial market with warehouses and distribution centers, the office market with buildings and business parks, and the retail market with shopping centers and storefronts. Each market has unique characteristics, property values, and investment potential that we understand and leverage for our clients.
 				</p>
@@ -108,10 +204,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Commercial Real Estate Services Do We Provide?</h2>
+			<section
+				id="services"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="services-heading"
+			>
+				<h2
+					id="services-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Commercial Real Estate Services Do We Provide?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Our commercial real estate services include commercial property sales with property evaluation and transaction management, commercial leasing with lease negotiations and property management, and investment analysis evaluating income potential and returns. These comprehensive services cover all aspects of commercial real estate transactions in Las Vegas.
 				</p>
@@ -147,10 +252,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are Key Considerations for Commercial Properties?</h2>
+			<section
+				id="considerations"
+				class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="considerations-heading"
+			>
+				<h2
+					id="considerations-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Are Key Considerations for Commercial Properties?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Key considerations for commercial properties include location and accessibility affecting value and usability, zoning and regulations determining permitted uses, and income potential through rental income and operating expenses. Understanding these factors helps buyers, sellers, and investors make informed decisions about commercial properties in Las Vegas.
 				</p>
@@ -177,10 +291,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white">
-				<h2 class="text-3xl md:text-4xl font-bold mb-4">Commercial Real Estate Services in Las Vegas</h2>
+			<section
+				id="cta"
+				class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white scroll-mt-24"
+				aria-labelledby="cta-heading"
+			>
+				<h2
+					id="cta-heading"
+					class="text-3xl md:text-4xl font-bold mb-4"
+				>
+					Commercial Real Estate Services in Las Vegas
+				</h2>
 				<p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
 					Let us help you with your commercial real estate needs. Contact us today to schedule a consultation.
 				</p>
@@ -188,11 +311,14 @@
 					<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">
 						Schedule Consultation
 					</a>
-					<a href="/properties" class="btn-primary bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600">
+					<a
+						href="/properties"
+						class="btn-primary bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600"
+					>
 						View Available Properties
 					</a>
 				</div>
-			</div>
+			</section>
 		</div>
 	</div>
 </section>

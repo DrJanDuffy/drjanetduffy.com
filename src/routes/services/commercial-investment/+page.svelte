@@ -1,16 +1,75 @@
-<script>
+<script lang="ts">
 	import { Building2, TrendingUp, DollarSign, BarChart3, Target, CheckCircle } from 'lucide-svelte';
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'expertise', label: 'Investment Expertise' },
+		{ id: 'opportunities', label: 'Investment Opportunities' },
+		{ id: 'services', label: 'Investment Services' },
+		{ id: 'considerations', label: 'Key Considerations' },
+		{ id: 'cta', label: 'Plan Your Investment Strategy' }
+	];
 </script>
 
 <svelte:head>
-	<title>Commercial Investment Services in Las Vegas | CCIM Expertise</title>
-	<meta name="description" content="Strategic commercial real estate investment guidance for Las Vegas market. Expert services for commercial property investments, portfolio development, and investment analysis." />
-	<meta name="keywords" content="commercial investment Las Vegas, commercial real estate investment, CCIM Las Vegas, commercial property investment" />
+	<title>
+		Las Vegas Luxury &amp; Relocation Commercial Investment Services | Dr. Janet Duffy REALTOR®
+	</title>
+	<meta
+		name="description"
+		content="Commercial investment services from Las Vegas Luxury &amp; Relocation REALTOR® Dr. Janet Duffy, helping investors analyze, acquire, and optimize commercial properties across the Las Vegas market."
+	/>
+	<meta
+		name="keywords"
+		content="Las Vegas Luxury &amp; Relocation REALTOR, commercial investment Las Vegas, commercial real estate investment, CCIM-level analysis"
+	/>
+
+	<meta
+		property="og:title"
+		content="Las Vegas Luxury &amp; Relocation Commercial Investment Services | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		property="og:description"
+		content="Cap rate, cash flow, and portfolio strategy guidance for Las Vegas commercial investors in office, industrial, and retail."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/services/commercial-investment" />
+	<meta property="og:site_name" content="Las Vegas Luxury &amp; Relocation REALTOR" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:title"
+		content="Las Vegas Luxury &amp; Relocation Commercial Investment Services | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		name="twitter:description"
+		content="Institutional-style investment analysis and portfolio planning for Las Vegas commercial real estate."
+	/>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Las Vegas Luxury & Relocation Commercial Investment Services",
+			"description": "Commercial investment guidance for Las Vegas, including income analysis, portfolio strategy, and market evaluation for office, industrial, and retail properties.",
+			"url": "https://www.drjanetduffy.com/services/commercial-investment",
+			"about": {
+				"@type": "RealEstateAgent",
+				"name": "Dr. Janet Duffy",
+				"areaServed": "Las Vegas, Nevada"
+			}
+		}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-12 sm:mb-16">
+		<div class="text-center mb-8 sm:mb-10" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Commercial Investment Services in Las Vegas
 			</h1>
@@ -20,9 +79,37 @@
 			</p>
 		</div>
 
+		<!-- On-page navigation -->
+		<nav
+			aria-label="On this page"
+			class="mb-10 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-700 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
 		<div class="max-w-4xl mx-auto">
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Commercial Investment Expertise Do We Provide in Las Vegas?</h2>
+			<section
+				id="expertise"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="expertise-heading"
+			>
+				<h2
+					id="expertise-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Commercial Investment Expertise Do We Provide in Las Vegas?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
 					Commercial real estate investments offer opportunities for income generation, appreciation, and portfolio diversification. Las Vegas's commercial markets provide diverse investment opportunities, from office buildings to retail properties to industrial facilities. Our commercial investment services help investors identify opportunities, evaluate properties, and build successful commercial portfolios through investment analysis, income analysis, portfolio strategy, and market expertise.
@@ -69,10 +156,19 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Commercial Investment Opportunities Are Available in Las Vegas?</h2>
+			<section
+				id="opportunities"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="opportunities-heading"
+			>
+				<h2
+					id="opportunities-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Commercial Investment Opportunities Are Available in Las Vegas?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Commercial investment opportunities in Las Vegas include office building investments with stable income through long-term leases, industrial property investments with good income and appreciation potential, and retail property investments with income through tenant leases. Each opportunity offers unique benefits and requires specialized investment analysis.
 				</p>
@@ -108,10 +204,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Commercial Investment Services Do We Provide?</h2>
+			<section
+				id="services"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="services-heading"
+			>
+				<h2
+					id="services-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Commercial Investment Services Do We Provide?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Our commercial investment services include investment property analysis evaluating income potential and returns, portfolio development with strategic planning and diversification, and market analysis evaluating market conditions and trends. These services help investors make informed decisions and build successful commercial investment portfolios in Las Vegas.
 				</p>
@@ -147,10 +252,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are Key Considerations for Commercial Investments?</h2>
+			<section
+				id="considerations"
+				class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="considerations-heading"
+			>
+				<h2
+					id="considerations-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Are Key Considerations for Commercial Investments?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Key considerations for commercial investments include income stability through tenant quality and lease terms, location factors affecting property values and income potential, and market conditions understanding supply, demand, and market dynamics. These considerations help investors evaluate commercial investment opportunities and assess risks effectively.
 				</p>
@@ -177,10 +291,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white">
-				<h2 class="text-3xl md:text-4xl font-bold mb-4">Commercial Investment Services in Las Vegas</h2>
+			<section
+				id="cta"
+				class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white scroll-mt-24"
+				aria-labelledby="cta-heading"
+			>
+				<h2
+					id="cta-heading"
+					class="text-3xl md:text-4xl font-bold mb-4"
+				>
+					Commercial Investment Services in Las Vegas
+				</h2>
 				<p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
 					Let us help you with your commercial investment needs. Contact us today to schedule a consultation.
 				</p>
@@ -188,11 +311,14 @@
 					<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">
 						Schedule Consultation
 					</a>
-					<a href="/properties" class="btn-primary bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600">
+					<a
+						href="/properties"
+						class="btn-primary bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600"
+					>
 						View Commercial Properties
 					</a>
 				</div>
-			</div>
+			</section>
 		</div>
 	</div>
 </section>

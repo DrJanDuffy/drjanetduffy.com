@@ -1,16 +1,76 @@
-<script>
+<script lang="ts">
 	import { Home, Leaf, TrendingUp, CheckCircle, Sun, Droplet } from 'lucide-svelte';
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'options', label: 'Sustainable Options' },
+		{ id: 'solar', label: 'Solar Energy' },
+		{ id: 'water', label: 'Water Efficiency' },
+		{ id: 'energy', label: 'Energy Efficiency' },
+		{ id: 'benefits', label: 'Benefits' },
+		{ id: 'cta', label: 'Explore Eco-Friendly Homes' }
+	];
 </script>
 
 <svelte:head>
-	<title>Eco-Friendly Homes in Las Vegas | Sustainable Real Estate</title>
-	<meta name="description" content="Sustainable housing solutions and energy-efficient properties in Las Vegas. Expert services for eco-friendly homes, solar properties, and green building features." />
-	<meta name="keywords" content="eco-friendly homes Las Vegas, sustainable real estate, energy efficient homes, solar homes Las Vegas, green homes" />
+	<title>
+		Eco-Friendly Homes in Las Vegas | Las Vegas Luxury &amp; Relocation REALTOR®
+	</title>
+	<meta
+		name="description"
+		content="Eco-friendly and energy-efficient home services from Las Vegas Luxury &amp; Relocation REALTOR® Dr. Janet Duffy, specializing in solar, water-wise, and sustainable properties."
+	/>
+	<meta
+		name="keywords"
+		content="Las Vegas Luxury &amp; Relocation REALTOR, eco-friendly homes Las Vegas, sustainable real estate, solar homes Las Vegas, green homes"
+	/>
+
+	<meta
+		property="og:title"
+		content="Eco-Friendly Homes in Las Vegas | Las Vegas Luxury &amp; Relocation REALTOR®"
+	/>
+	<meta
+		property="og:description"
+		content="Guidance on buying and selling solar, water-efficient, and energy-smart homes tailored to Las Vegas’s desert climate."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/services/eco-friendly-homes" />
+	<meta property="og:site_name" content="Las Vegas Luxury &amp; Relocation REALTOR" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:title"
+		content="Eco-Friendly Homes in Las Vegas | Las Vegas Luxury &amp; Relocation REALTOR®"
+	/>
+	<meta
+		name="twitter:description"
+		content="Sustainable housing strategies that lower utility bills and increase appeal for eco-minded Las Vegas buyers."
+	/>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Eco-Friendly Homes in Las Vegas",
+			"description": "Eco-friendly and sustainable housing services focused on solar, water-efficient, and energy-efficient homes in Las Vegas.",
+			"url": "https://www.drjanetduffy.com/services/eco-friendly-homes",
+			"about": {
+				"@type": "RealEstateAgent",
+				"name": "Dr. Janet Duffy",
+				"areaServed": "Las Vegas, Nevada"
+			}
+		}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-12 sm:mb-16">
+		<div class="text-center mb-8 sm:mb-10" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Eco-Friendly Homes in Las Vegas
 			</h1>
@@ -20,9 +80,37 @@
 			</p>
 		</div>
 
+		<!-- On-page navigation -->
+		<nav
+			aria-label="On this page"
+			class="mb-10 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-700 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
 		<div class="max-w-4xl mx-auto">
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Sustainable Housing Options Are Available in Las Vegas?</h2>
+			<section
+				id="options"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="options-heading"
+			>
+				<h2
+					id="options-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Sustainable Housing Options Are Available in Las Vegas?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
 					Las Vegas's desert climate creates unique opportunities and challenges for sustainable housing. From solar energy systems to water-efficient landscaping, eco-friendly features can significantly reduce utility costs while appealing to environmentally conscious buyers. Our services help buyers and sellers understand and maximize the value of sustainable features through solar energy expertise, water efficiency understanding, energy efficiency knowledge, and value enhancement strategies.
@@ -69,10 +157,19 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How Does Solar Energy Work in Las Vegas Homes?</h2>
+			<section
+				id="solar"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="solar-heading"
+			>
+				<h2
+					id="solar-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					How Does Solar Energy Work in Las Vegas Homes?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Las Vegas's abundant sunshine makes solar energy particularly valuable. Solar-powered homes can significantly reduce or eliminate electricity costs, making them highly attractive to buyers. Understanding solar systems, their value, and how they affect property values is essential for both buyers and sellers. We provide solar system evaluation and help you understand solar property value in the Las Vegas market.
@@ -99,10 +196,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How Important Is Water Efficiency in Las Vegas Homes?</h2>
+			<section
+				id="water"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="water-heading"
+			>
+				<h2
+					id="water-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					How Important Is Water Efficiency in Las Vegas Homes?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Water efficiency is crucial in Las Vegas's desert climate. Desert landscaping and water-efficient systems significantly reduce water use and maintenance costs while creating beautiful outdoor spaces. Understanding water efficiency features helps buyers reduce utility costs and sellers highlight valuable property features.
 				</p>
@@ -128,10 +234,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Energy Efficiency Features Should Las Vegas Homebuyers Look For?</h2>
+			<section
+				id="energy"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="energy-heading"
+			>
+				<h2
+					id="energy-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Energy Efficiency Features Should Las Vegas Homebuyers Look For?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Energy efficiency features for Las Vegas homes include efficient HVAC systems crucial for hot climates, proper insulation and energy-efficient windows to reduce cooling costs, and energy-efficient appliances to reduce utility costs. These features significantly reduce utility expenses while appealing to environmentally conscious buyers.
 				</p>
@@ -158,10 +273,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are the Benefits of Eco-Friendly Homes?</h2>
+			<section
+				id="benefits"
+				class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="benefits-heading"
+			>
+				<h2
+					id="benefits-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Are the Benefits of Eco-Friendly Homes?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Benefits of eco-friendly homes include reduced utility costs through energy-efficient and solar-powered systems, environmental benefits reducing impact while providing sustainable living, increased property value appealing to environmentally conscious buyers, and market appeal as eco-friendly features attract growing numbers of buyers in Las Vegas.
 				</p>
@@ -199,10 +323,19 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white">
-				<h2 class="text-3xl md:text-4xl font-bold mb-4">Eco-Friendly Home Services in Las Vegas</h2>
+			<section
+				id="cta"
+				class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white scroll-mt-24"
+				aria-labelledby="cta-heading"
+			>
+				<h2
+					id="cta-heading"
+					class="text-3xl md:text-4xl font-bold mb-4"
+				>
+					Eco-Friendly Home Services in Las Vegas
+				</h2>
 				<p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
 					Let us help you with eco-friendly and sustainable properties. Contact us today to schedule a consultation.
 				</p>

@@ -1,16 +1,76 @@
-<script>
+<script lang="ts">
 	import { Home, AlertTriangle, DollarSign, CheckCircle, FileText, TrendingUp } from 'lucide-svelte';
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'about', label: 'About Distressed Properties' },
+		{ id: 'short-sales', label: 'Short Sale Services' },
+		{ id: 'foreclosures', label: 'Foreclosure & REO' },
+		{ id: 'markets', label: 'Markets & Opportunities' },
+		{ id: 'considerations', label: 'Key Considerations' },
+		{ id: 'cta', label: 'Discuss Your Situation' }
+	];
 </script>
 
 <svelte:head>
-	<title>Distressed Property Solutions in Las Vegas | Short Sales & Foreclosures</title>
-	<meta name="description" content="Expert guidance for short sales and foreclosure transactions in Las Vegas. Specialized services for distressed properties, helping buyers and sellers navigate complex situations." />
-	<meta name="keywords" content="short sale Las Vegas, foreclosure Las Vegas, distressed properties, bank owned homes Las Vegas, REO properties" />
+	<title>
+		Las Vegas Luxury &amp; Relocation Distressed Property Solutions | Dr. Janet Duffy REALTOR®
+	</title>
+	<meta
+		name="description"
+		content="Distressed property guidance from Las Vegas Luxury &amp; Relocation REALTOR® Dr. Janet Duffy, specializing in short sales, foreclosures, and REO opportunities for buyers, sellers, and investors."
+	/>
+	<meta
+		name="keywords"
+		content="Las Vegas Luxury &amp; Relocation REALTOR, short sale Las Vegas, foreclosure Las Vegas, distressed properties, REO homes"
+	/>
+
+	<meta
+		property="og:title"
+		content="Las Vegas Luxury &amp; Relocation Distressed Property Solutions | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		property="og:description"
+		content="Navigate short sales and foreclosures in Las Vegas with expert strategy, lender negotiation, and risk management."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/services/distressed-properties" />
+	<meta property="og:site_name" content="Las Vegas Luxury &amp; Relocation REALTOR" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:title"
+		content="Las Vegas Luxury &amp; Relocation Distressed Property Solutions | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		name="twitter:description"
+		content="Specialized support for short sales, foreclosures, and distressed investment opportunities in the Las Vegas Valley."
+	/>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Las Vegas Luxury & Relocation Distressed Property Solutions",
+			"description": "Distressed property services for short sales, foreclosures, and REO purchases in Las Vegas, helping owners and investors manage risk and opportunity.",
+			"url": "https://www.drjanetduffy.com/services/distressed-properties",
+			"about": {
+				"@type": "RealEstateAgent",
+				"name": "Dr. Janet Duffy",
+				"areaServed": "Las Vegas, Nevada"
+			}
+		}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-12 sm:mb-16">
+		<div class="text-center mb-8 sm:mb-10" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Distressed Property Solutions in Las Vegas
 			</h1>
@@ -20,9 +80,37 @@
 			</p>
 		</div>
 
+		<!-- On-page navigation -->
+		<nav
+			aria-label="On this page"
+			class="mb-10 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-700 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
 		<div class="max-w-4xl mx-auto">
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Should You Know About Distressed Properties in Las Vegas?</h2>
+			<section
+				id="about"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="about-heading"
+			>
+				<h2
+					id="about-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Should You Know About Distressed Properties in Las Vegas?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
 					Distressed properties, including short sales and foreclosures, present unique opportunities and challenges in the Las Vegas market. These transactions require specialized expertise, understanding of lender processes, and knowledge of complex regulations. Our services help both buyers and sellers navigate these challenging situations through short sale expertise, foreclosure guidance, investment opportunity identification, and comprehensive risk management.
@@ -69,10 +157,19 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Short Sale Services Do We Provide for Las Vegas Sellers?</h2>
+			<section
+				id="short-sales"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="short-sales-heading"
+			>
+				<h2
+					id="short-sales-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Short Sale Services Do We Provide for Las Vegas Sellers?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Short sales occur when a property's sale price is less than the outstanding mortgage balance. These transactions require lender approval and involve complex negotiations and documentation. Our short sale services help sellers navigate this challenging process through eligibility assessment, lender negotiation, documentation management, and buyer coordination to minimize financial impact.
@@ -119,10 +216,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Foreclosure and REO Property Services Do We Provide?</h2>
+			<section
+				id="foreclosures"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="foreclosures-heading"
+			>
+				<h2
+					id="foreclosures-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Foreclosure and REO Property Services Do We Provide?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Our foreclosure and REO property services include REO property purchases helping buyers identify and purchase bank-owned homes, foreclosure prevention guidance for homeowners facing foreclosure, and investment property evaluation for distressed property opportunities. These services help both buyers and sellers navigate foreclosure situations successfully.
 				</p>
@@ -158,10 +264,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Distressed Property Markets Exist in Las Vegas?</h2>
+			<section
+				id="markets"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="markets-heading"
+			>
+				<h2
+					id="markets-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					Which Distressed Property Markets Exist in Las Vegas?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Distressed property markets in Las Vegas include North Las Vegas opportunities with higher rates of distressed properties, and established neighborhood opportunities in Henderson and parts of Las Vegas. Each market offers unique opportunities for buyers and investors willing to invest in properties that need work.
 				</p>
@@ -187,10 +302,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are Key Considerations for Distressed Properties?</h2>
+			<section
+				id="considerations"
+				class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="considerations-heading"
+			>
+				<h2
+					id="considerations-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Are Key Considerations for Distressed Properties?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Key considerations for distressed properties include extended timelines with short sales taking months for lender approval, property condition as properties are often sold as-is, and financing considerations with specific lender requirements. Understanding these factors helps buyers and sellers navigate distressed property transactions successfully.
 				</p>
@@ -217,10 +341,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white">
-				<h2 class="text-3xl md:text-4xl font-bold mb-4">Expert Distressed Property Services in Las Vegas</h2>
+			<section
+				id="cta"
+				class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white scroll-mt-24"
+				aria-labelledby="cta-heading"
+			>
+				<h2
+					id="cta-heading"
+					class="text-3xl md:text-4xl font-bold mb-4"
+				>
+					Expert Distressed Property Services in Las Vegas
+				</h2>
 				<p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
 					Let us help you navigate distressed property transactions. Contact us today to schedule a consultation and discuss your situation.
 				</p>
