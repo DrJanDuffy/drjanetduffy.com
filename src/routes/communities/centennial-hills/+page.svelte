@@ -1,30 +1,81 @@
-<script>
+<script lang="ts">
 	import { MapPin, Home, Award, TrendingUp, DollarSign, Users, CheckCircle, Clock, Building2, GraduationCap, School } from 'lucide-svelte';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
 	import { lasVegasLocalData } from '$lib/data/las-vegas-local-data.js';
-	
+
+	interface PriceRange {
+		min: number;
+		max: number;
+	}
+
+	interface AppreciationRate {
+		min: number;
+		max: number;
+	}
+
+	interface SchoolInfo {
+		name: string;
+		rating: string;
+	}
+
+	interface CentennialHillsData {
+		priceRange: PriceRange;
+		appreciationRate: AppreciationRate;
+		features: string[];
+		schools: SchoolInfo[];
+		comparison: {
+			vsNorthLasVegas: {
+				centennialHills: string;
+			};
+		};
+	}
+
+	interface NorthLasVegasData {
+		priceRange: PriceRange;
+		comparison: {
+			vsCentennialHills: {
+				northLasVegas: string;
+			};
+		};
+	}
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
 	let mounted = false;
-	
+
+	const centennialHills = lasVegasLocalData.centennialHills as CentennialHillsData;
+	const northLasVegas = lasVegasLocalData.northLasVegas as NorthLasVegasData;
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'investment', label: 'Investment Potential' },
+		{ id: 'schools', label: 'Schools' },
+		{ id: 'comparison', label: 'Vs. North Las Vegas' },
+		{ id: 'pricing', label: 'Pricing' },
+		{ id: 'properties', label: 'Available Properties' },
+		{ id: 'concierge', label: 'Concierge Services' },
+		{ id: 'cta', label: 'Work With Dr. Duffy' }
+	];
+
 	onMount(() => {
 		mounted = true;
 	});
-	
-	const centennialHills = lasVegasLocalData.centennialHills;
-	const northLasVegas = lasVegasLocalData.northLasVegas;
-	
-	function formatCurrency(amount) {
-		return new Intl.NumberFormat('en-US', {
+
+	const formatCurrency = (amount: number): string =>
+		new Intl.NumberFormat('en-US', {
 			style: 'currency',
 			currency: 'USD',
 			maximumFractionDigits: 0
 		}).format(amount);
-	}
 </script>
 
 <svelte:head>
-	<title>Centennial Hills Real Estate | Las Vegas | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Explore Centennial Hills real estate. Newer master-planned communities with excellent schools, strong appreciation, and great value in northwest Las Vegas." />
+	<title>Centennial Hills Luxury &amp; Relocation Real Estate | Las Vegas | Dr. Janet Duffy REALTOR®</title>
+	<meta name="description" content="Explore Centennial Hills luxury and relocation real estate with Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy. Newer master-planned communities with excellent schools, strong appreciation, and great value in northwest Las Vegas." />
 	<meta name="keywords" content="Centennial Hills real estate, Centennial Hills homes, Las Vegas Centennial Hills, northwest Las Vegas, A-rated schools Centennial Hills" />
 	<meta name="robots" content="index, follow" />
 	
@@ -68,7 +119,26 @@
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-16">
+		<!-- On-page navigation -->
+		<nav
+			aria-label="Centennial Hills page sections"
+			class="mb-10 rounded-full border border-gray-200 bg-white/80 backdrop-blur px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
+		<div class="text-center mb-16" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Find Your Dream Home in Centennial Hills, Las Vegas
 			</h1>
@@ -106,7 +176,7 @@
 			</p>
 		</div>
 
-		<div class="grid md:grid-cols-2 gap-12 mb-16">
+		<div class="grid md:grid-cols-2 gap-12 mb-16" id="investment">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
 				<h3 class="text-2xl font-bold text-gray-900 mb-6">Community Overview</h3>
 				<p class="text-gray-700 leading-relaxed mb-4">
@@ -157,7 +227,7 @@
 		</div>
 
 		<!-- Schools -->
-		<div class="mb-16">
+		<div class="mb-16" id="schools">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Schools Serve Centennial Hills?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Centennial Hills is served by top-rated schools including Decker Elementary (A-rated) and Escobedo Middle School (A-rated), providing excellent educational opportunities for families. These schools offer comprehensive programs, modern facilities, and strong academic performance.
@@ -184,7 +254,7 @@
 		</div>
 
 		<!-- Comparison with North Las Vegas -->
-		<div class="mb-16">
+		<div class="mb-16" id="comparison">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Centennial Hills vs. North Las Vegas: Which Is Right for You?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Centennial Hills offers master-planned communities with amenities and HOAs, while North Las Vegas provides more affordable options with larger lots and no-HOA neighborhoods. Understanding the differences helps you choose the right community for your lifestyle and budget.
@@ -242,7 +312,7 @@
 		</div>
 
 		<!-- Pricing -->
-		<div class="mb-16">
+		<div class="mb-16" id="pricing">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Much Do Homes Cost in Centennial Hills?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Centennial Hills home prices range from $475,000 to $650,000, offering excellent value for newer construction homes with master-planned amenities. Factors affecting prices include proximity to schools, lot size, home age, and specific community amenities.
@@ -267,7 +337,7 @@
 		</div>
 
 		<!-- Properties in Centennial Hills -->
-		<div class="mb-16">
+		<div class="mb-16" id="properties">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Properties Are Available in Centennial Hills?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Centennial Hills offers newer single-family homes, townhomes, and condos in master-planned communities. Properties feature modern designs, energy-efficient construction, master-planned amenities, and access to top-rated schools.
@@ -303,7 +373,7 @@
 		</div>
 
 		<!-- Concierge Services -->
-		<div class="mb-16">
+		<div class="mb-16" id="concierge">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Does Dr. Janet Duffy's Concierge Service Help Centennial Hills Buyers?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				My concierge service includes personalized neighborhood tours showing parks, schools, shopping, and hidden gems locals love. I review all HOA documents before you buy, explaining restrictions and fees clearly. My service includes tracking every Centennial Hills sale to provide real-time market analysis and investment insights.
@@ -328,7 +398,7 @@
 		</div>
 
 		<!-- CTA Section -->
-		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
+		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white" id="cta">
 			<h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Find Your Dream Home in Centennial Hills?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto leading-relaxed">
 				Let me help you find your perfect home in Centennial Hills. With deep knowledge of every community, every school, and every neighborhood intimately, I'll guide you through every step of your home buying journey. I provide detailed tours showing parks, schools, shopping, and hidden gems locals love.
