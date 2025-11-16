@@ -1,15 +1,14 @@
-<script>
+<script lang="ts">
 	import { MapPin, Home, Award, CheckCircle, DollarSign, Users, TrendingUp } from 'lucide-svelte';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
-	
-	let mounted = false;
-	
-	onMount(() => {
-		mounted = true;
-	});
-	
-	const features = [
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const features: string[] = [
 		'Upscale community',
 		'Custom luxury homes',
 		'Scenic mountain views',
@@ -19,16 +18,64 @@
 		'Strong property values',
 		'Prestigious lifestyle'
 	];
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'benefits', label: 'Key Benefits' },
+		{ id: 'properties', label: 'Available Properties' },
+		{ id: 'cta', label: 'Work With Dr. Duffy' }
+	];
+
+	let mounted = false;
+
+	onMount(() => {
+		mounted = true;
+	});
 </script>
 
 <svelte:head>
-	<title>Seven Hills Real Estate | Las Vegas | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Explore Seven Hills real estate. Upscale community with custom luxury homes, scenic mountain views, and prestigious lifestyle in Las Vegas." />
+	<title>Seven Hills Luxury &amp; Relocation Real Estate | Henderson | Dr. Janet Duffy REALTOR®</title>
+	<meta name="description" content="Explore Seven Hills luxury and relocation real estate with Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy. Discover custom luxury homes, mountain views, and gated communities in Henderson." />
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Place",
+		"name": "Seven Hills, Henderson, Nevada",
+		"description": "Exclusive luxury community in Henderson with custom homes, mountain views, and gated neighborhoods.",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Henderson",
+			"addressRegion": "NV",
+			"postalCode": "89052",
+			"addressCountry": "US"
+		}
+	}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-16">
+		<!-- On-page navigation -->
+		<nav
+			aria-label="Seven Hills page sections"
+			class="mb-10 rounded-full border border-gray-200 bg-white/80 backdrop-blur px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
+		<div class="text-center mb-16" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Discover Luxury Homes in Seven Hills, Las Vegas
 			</h1>
@@ -66,7 +113,7 @@
 			</p>
 		</div>
 
-		<div class="grid md:grid-cols-2 gap-12 mb-16">
+		<div class="grid md:grid-cols-2 gap-12 mb-16" id="benefits">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
 				<h3 class="text-2xl font-bold text-gray-900 mb-6">Community Overview</h3>
 				<p class="text-gray-700 leading-relaxed mb-4">
@@ -120,7 +167,7 @@
 		</div>
 
 		<!-- Properties -->
-		<div class="mb-16">
+		<div class="mb-16" id="properties">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Properties Are Available in Seven Hills?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Seven Hills offers exclusive luxury properties including custom-built homes, estate properties, and upscale residences. Properties feature custom architecture, high-end finishes, spacious lots, and panoramic mountain views within gated neighborhoods.
@@ -156,7 +203,7 @@
 		</div>
 
 		<!-- CTA Section -->
-		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
+		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white" id="cta">
 			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Dream Luxury Home in Seven Hills?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
 				Let me help you find your perfect luxury home in Seven Hills. With deep knowledge of this exclusive Henderson community, custom properties, and luxury market, I'll guide you through every step of your home buying journey.
