@@ -35,7 +35,7 @@
 				class="flex-1 flex items-center justify-center order-3 lg:order-none w-full lg:w-auto"
 				aria-label="Main navigation"
 			>
-				<div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 md:gap-6 lg:gap-8">
+				<div class="flex flex-wrap items-center justify-center gap-x-4 sm:gap-x-6 md:gap-x-8 lg:gap-x-10 gap-y-2">
 					{#each navItems as item}
 						<a
 							href={item.href}
