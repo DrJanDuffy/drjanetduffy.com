@@ -7,19 +7,19 @@
 			questions: [
 				{
 					q: 'How do I get started with buying a home in Las Vegas?',
-					a: 'Start by getting pre-approved for a mortgage, then work with me to identify your needs, budget, and preferred neighborhoods. I\'ll help you search properties, schedule viewings, and guide you through the entire process.'
+					a: `The best first step is a conversation about your goals, timeline, and budget, followed by a strong pre-approval from a local lender who understands Las Vegas underwriting. From there, we translate your wish list into a short list of communities—such as Summerlin, Skye Canyon, Henderson, or North Las Vegas—based on commute, schools, and lifestyle. I will set up custom searches, send you curated property dossiers, and coordinate showings or detailed video tours so you can move forward confidently.`
 				},
 				{
 					q: 'What should I look for when viewing properties?',
-					a: 'Focus on location, condition, size, and potential. I\'ll help you evaluate each property, check for issues, and compare properties to find the best fit for your needs and budget.'
+					a: `In Las Vegas it is important to evaluate not just the interior of the home but also elevation, sun exposure, HOA requirements, and proximity to major roads. We will look closely at roof, HVAC, pool equipment, and windows because desert conditions can accelerate wear on systems. I will help you compare each property’s true cost of ownership—including utilities, HOA fees, and likely maintenance—so you can choose the home that fits your lifestyle and long-term budget.`
 				},
 				{
 					q: 'How long does it take to buy a home?',
-					a: 'Typically 30-45 days from accepted offer to closing, but this can vary based on financing, inspections, and other factors. I\'ll keep you informed throughout the process.'
+					a: `Most financed purchases in Las Vegas close within 30–35 days once we are under contract; cash deals can wrap in as little as 10–15 days if title is clear. The largest variables are your readiness (pre-approval, down payment funds, decision makers aligned) and how quickly we can complete inspections and appraisal. I map the entire process on a timeline so you know exactly what is happening each week and where we have flexibility or deadlines.`
 				},
 				{
 					q: 'Do I need a real estate agent to buy a home?',
-					a: 'While not legally required, working with a professional agent provides valuable expertise, negotiation skills, and protection throughout the transaction. I represent your interests and help you avoid costly mistakes.'
+					a: `You are not legally required to use an agent, but in a fast-moving market like Las Vegas it is highly advisable. A dedicated buyer’s agent protects your interests, explains local customs (such as how HOAs, transfer fees, and short contingency periods work), and spots red flags that online photos never show. I negotiate on your behalf, coordinate inspections and repairs, and help you avoid costly mistakes that can appear months or years after closing.`
 				}
 			]
 		},
@@ -28,19 +28,19 @@
 			questions: [
 				{
 					q: 'How do you determine my home\'s value?',
-					a: 'I conduct a comprehensive market analysis comparing your home to recent sales of similar properties in your area, considering factors like location, size, condition, and current market trends.'
+					a: `I prepare a comprehensive market analysis that compares your property to recent sales, active listings, and expired listings in your micro-neighborhood. In Las Vegas we also factor in elevation, views, pool presence, updates, and where your home sits within its master-planned community or HOA. You will see a pricing range backed by data plus a strategy recommendation for hitting the market at the sweet spot that attracts strong offers without leaving money on the table.`
 				},
 				{
 					q: 'What should I do to prepare my home for sale?',
-					a: 'Declutter, deep clean, make minor repairs, and consider staging. I\'ll provide specific recommendations based on your property and market conditions to maximize your sale price.'
+					a: `Preparation is powerful. We usually start with decluttering, deep cleaning, neutralizing paint where needed, refreshing desert landscaping, and addressing obvious repairs so buyers focus on value—not to-do lists. I will walk your home with a staging and photography lens, prioritize which improvements actually move the needle in your price range, and connect you with vendors who can help if you prefer a turnkey approach.`
 				},
 				{
 					q: 'How long will it take to sell my home?',
-					a: 'In Las Vegas, well-priced homes typically sell within 19-30 days. Pricing strategy, property condition, and market conditions all affect time on market.'
+					a: `In today’s Las Vegas market, well-prepared and correctly priced homes often secure strong activity within the first 7–10 days and go under contract within 19–30 days. Luxury properties or unique homes may take longer depending on buyer pool, price point, and seasonality. I will give you realistic expectations up front based on current absorption rates in your specific neighborhood and price band.`
 				},
 				{
 					q: 'What are the costs of selling a home?',
-					a: 'Typical costs include agent commissions (usually 5-6%), closing costs, repairs, staging, and marketing. I\'ll provide a detailed breakdown of all expected costs upfront.'
+					a: `Typical seller costs include brokerage fees, title and escrow fees, transfer taxes, HOA resale packages, and any repairs or concessions negotiated with the buyer. If we choose to invest in staging, pre-inspections, or targeted marketing campaigns, those will be discussed and approved in advance. Before we list, I provide a detailed net sheet so you can see your projected proceeds at several price and offer-scenario points.`
 				}
 			]
 		},
@@ -49,15 +49,15 @@
 			questions: [
 				{
 					q: 'How much do I need for a down payment?',
-					a: 'Down payments vary by loan type: conventional loans typically require 20%, FHA loans require 3.5%, and VA loans may require 0% for qualified veterans. I can connect you with lenders to explore options.'
+					a: `Down payments vary by loan type: many conventional buyers aim for 20% to avoid mortgage insurance, but there are solid options at 3–10% down depending on your credit and debt profile. FHA loans may allow as little as 3.5% down, and VA loans can offer 0% down for qualified veterans and active-duty service members. I can introduce you to trusted local lenders who will explain how each option impacts your payment, closing costs, and competitiveness in the Las Vegas market.`
 				},
 				{
 					q: 'What credit score do I need to buy a home?',
-					a: 'Minimum scores vary: FHA loans require 580+, conventional loans typically require 620+, and better rates are available with scores of 740+. I can help you understand your options.'
+					a: `Minimum scores depend on loan type: many FHA programs start at 580+, while conventional lenders often look for 620+ with stronger pricing and terms available at 700–740 and above. Even if your score is lower today, a good lender can map out a 3–12 month plan to improve it through targeted actions—not guesswork. When we talk, I will help you understand which score tiers matter most for your price range and how to position yourself for the best possible rate.`
 				},
 				{
 					q: 'Should I get pre-approved before house hunting?',
-					a: 'Yes! Pre-approval shows sellers you\'re serious, helps you understand your budget, and speeds up the process once you find a home. I can recommend trusted lenders.'
+					a: `Yes—pre-approval is essential in our market. It tells sellers that you are financially vetted, helps us focus on homes that truly fit your budget, and allows us to move quickly when the right property appears. In competitive neighborhoods, strong local pre-approvals can be the deciding factor between your offer and another buyer’s, so I only recommend lenders who communicate clearly, meet deadlines, and have earned listing agents’ trust.`
 				}
 			]
 		},
@@ -66,15 +66,15 @@
 			questions: [
 				{
 					q: 'What are the best neighborhoods in Las Vegas?',
-					a: 'Popular areas include Summerlin, Henderson, Green Valley, The Ridges, and Red Rock Country Club. Each offers unique amenities and lifestyle options. I can help you find the perfect fit.'
+					a: `“Best” depends on your lifestyle, budget, and commute. Many buyers gravitate toward Summerlin for its villages, schools, trails, and proximity to Red Rock; others choose Henderson or Green Valley for views, established neighborhoods, and access to the 215 Beltway. Luxury clients may focus on The Ridges, MacDonald Highlands, or Seven Hills, while value-seeking buyers often explore North Las Vegas or Centennial Hills for larger lots and newer construction. I will help you compare neighborhoods using data and on-the-ground experience so we can find the right fit for you.`
 				},
 				{
 					q: 'Is Las Vegas a good place to invest in real estate?',
-					a: 'Las Vegas offers strong rental demand, growing population, and relatively affordable prices compared to other major markets. I provide investment analysis and portfolio guidance.'
+					a: `Las Vegas continues to attract investors because of strong rental demand, a diverse employment base, and prices that remain competitive compared to coastal markets. Certain submarkets—near major hospitals, employment centers, and freeways—offer particularly attractive rent-to-price ratios and long-term appreciation potential. I provide neighborhood-level data, rent estimates, and hold-period analysis so you can decide whether a specific property truly supports your investment goals instead of relying on headlines alone.`
 				},
 				{
 					q: 'What\'s the current Las Vegas real estate market like?',
-					a: 'The market is dynamic with median home prices around $575K, average days on market of 19 days, and strong buyer demand. Check our Market Insights page for current statistics.'
+					a: `The Las Vegas market is dynamic and varies by price bracket and community. In many areas, well-priced homes still sell quickly with multiple offers, while over-priced or poorly presented listings sit longer and require price adjustments. Median prices, days on market, and inventory levels shift month to month, so I maintain a Market Insights page and provide customized updates for your specific neighborhood and budget. During our consultation, we will review fresh numbers rather than relying on outdated averages.`
 				}
 			]
 		},
@@ -83,23 +83,23 @@
 			questions: [
 				{
 					q: 'Do I need a pool in Las Vegas?',
-					a: 'While not required, pools add 5-10% to home value and provide 7-8 months of use annually. Over 65% of homes over $500K have pools. Pool maintenance costs $150-$200/month, but many buyers consider pools essential for Las Vegas living.'
+					a: `You do not need a pool to enjoy Las Vegas, but many buyers consider it a quality-of-life upgrade—especially in homes over $500K where roughly two-thirds include pools. A well-maintained pool can add 5–10% to resale value and offers 7–8 months of comfortable use each year. Ongoing costs such as service ($150–$200 per month), utilities, and occasional repairs should be part of your budget conversation, and I can connect you with trusted pool inspectors so you know exactly what you are buying.`
 				},
 				{
 					q: 'What are property taxes like in Summerlin?',
-					a: 'Clark County property tax rate is 0.74% of assessed value. For a $650K home, annual taxes are approximately $4,800, plus special districts may add $200-$500. Property taxes in Las Vegas are relatively low compared to other major markets.'
+					a: `Clark County’s base property tax rate is roughly 0.74% of assessed value, which is significantly lower than many coastal states. For a $650K Summerlin home, you might expect around $4,800 per year in taxes, with some neighborhoods adding modest special improvement district fees of $200–$500 annually. When we evaluate homes, we will review actual tax records and HOA fees together so you can compare total carrying costs by community rather than just looking at list price.`
 				},
 				{
 					q: 'How do I keep my garage cool in Las Vegas summers?',
-					a: 'Garages can reach 120-140°F in summer. Solutions include insulation, ventilation fans, or mini-split AC units ($2,000-$4,000 installed). Many homeowners use insulated garage doors and fans to manage heat.'
+					a: `In peak summer months, uninsulated garages can easily reach 120–140°F. Many homeowners combat this with a combination of insulated garage doors, attic or wall insulation, radiant barriers, and powered ventilation fans. For people who use the garage as a workshop or gym, a ductless mini-split unit ($2,000–$4,000 installed in many cases) can make the space usable year-round. During inspections, we pay attention to how the garage is built so you know what upgrades might be helpful after closing.`
 				},
 				{
 					q: 'Should I buy a home on a golf course in Las Vegas?',
-					a: 'Golf course homes command 15-25% premiums but consider early morning noise, restricted backyard modifications, and cart path proximity. Golf course lots offer beautiful views but may have limitations on outdoor space modifications.'
+					a: `Golf-course homes can command 15–25% premiums because of views, privacy, and prestige, but they are not the right fit for everyone. You will enjoy open fairway vistas and fewer direct neighbors, yet you should also consider early-morning maintenance noise, potential errant golf balls, and HOA or course rules that may limit backyard modifications or fencing. When we tour golf communities, I will point out cart-path locations, tee-box proximity, and sun orientation so you can weigh the lifestyle benefits against the tradeoffs.`
 				},
 				{
 					q: 'When is the best time to move to Las Vegas?',
-					a: 'October through April offers the best selection and motivated sellers before holidays. October and November are particularly good months for finding deals. Summer months (May-September) are hotter but may offer better pricing due to lower demand.'
+					a: `There is no single “perfect” month, but patterns do exist. October through April typically offer comfortable moving weather and a good balance of inventory and motivated sellers, with October and November often bringing strong opportunities before the holiday slowdown. Summer months (May–September) can be hotter and less comfortable for touring, yet they sometimes deliver better pricing as casual buyers pause. Ultimately, the best time is when your personal and financial timelines align—and I can help you adjust strategy to the season we are in.`
 				}
 			]
 		},
@@ -108,19 +108,19 @@
 			questions: [
 				{
 					q: 'What makes you different from other real estate agents?',
-					a: 'With 15+ years of experience, 150+ properties sold, and $50M+ in sales volume, I bring deep Las Vegas market knowledge, proven negotiation skills, and personalized service to every transaction.'
+					a: `With 15+ years of experience, 150+ properties sold, and over $50M in closed volume, I bring both deep local knowledge and a calm, process-driven approach to every transaction. Clients often highlight my ability to anticipate issues before they become problems, explain complex topics in plain English, and negotiate firmly without creating unnecessary conflict. I also operate as a concierge, coordinating lenders, inspectors, contractors, and escrow so you can focus on big decisions rather than logistics.`
 				},
 				{
 					q: 'How do you communicate with clients?',
-					a: 'I\'m available via phone, email, text, and in-person meetings. I provide regular updates throughout the process and respond promptly to all inquiries.'
+					a: `I adapt my communication style to your preferences—phone, text, email, Zoom, or a combination of all four. You can expect proactive updates at key milestones (showings, offers, inspections, appraisal, loan approval, and closing) rather than having to chase information. Many clients appreciate my habit of sending short recap emails or video messages summarizing what happened, what is next, and any decisions we need to make together.`
 				},
 				{
 					q: 'Do you work with first-time buyers?',
-					a: 'Absolutely! I specialize in helping first-time buyers navigate the process, understand financing options, and find homes that fit their budget and lifestyle.'
+					a: `Absolutely—I love working with first-time buyers. We will spend extra time on education: breaking down financing options, reviewing contracts line by line, and discussing what to expect from inspections, appraisals, and HOAs. My goal is for you to feel empowered rather than overwhelmed, so you will always know why we are taking a particular step and how it protects you.`
 				},
 				{
 					q: 'What areas do you serve?',
-					a: 'I serve the entire Las Vegas Valley including Las Vegas, Henderson, North Las Vegas, Summerlin, and surrounding communities throughout Clark County.'
+					a: `I serve the entire Las Vegas Valley, including Summerlin, Skye Canyon, Centennial Hills, Henderson, Green Valley, North Las Vegas, and surrounding communities throughout Clark County. Because I study each micro-market closely, I can tell you how pricing, HOA structures, school options, and commute patterns differ from one area to another. If you are considering a community I do not believe in, I will explain why and suggest alternatives that better fit your goals.`
 				}
 			]
 		}
@@ -152,7 +152,29 @@
 			</h1>
 			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
 			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-				Get answers to common questions about buying, selling, and investing in Las Vegas real estate
+				This FAQ is a living playbook built from real conversations with buyers, sellers, investors, and relocation clients across the Las Vegas Valley. Instead of generic national advice, you will find answers grounded in our desert market—Summerlin master plans, Skye Canyon new construction, Henderson view homes, North Las Vegas investment zones, and everything in between. Use these questions to get oriented, then reach out when you are ready for advice tailored to your exact timeline, price range, and neighborhood short list.
+			</p>
+		</div>
+
+		<!-- How to Use This FAQ -->
+		<div class="max-w-4xl mx-auto mb-10 space-y-4">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">How Should You Use This Las Vegas Real Estate FAQ?</h2>
+			<p class="text-lg text-gray-700 leading-relaxed">
+				The fastest way to use this page is to start with the section that matches where you are today. If you are thinking about buying, begin with the “Buying a Home” and “Financing & Mortgages” categories. If you are preparing to sell, focus on the “Selling a Home” and “Las Vegas Market” sections. Relocation clients and investors often jump straight to “Las Vegas-Specific Questions” and then circle back to financing once they have a feel for neighborhoods and price points.
+			</p>
+			<p class="text-lg text-gray-700 leading-relaxed">
+				Remember that every answer here is a starting point, not the final word. Market conditions, your income profile, and your risk tolerance can make the “right” strategy look different from one person to the next. As you read, jot down anything that surprises you or feels unclear—those are perfect topics for our first call or video consultation. Together we can translate these general guidelines into a detailed plan for your specific move or investment.
+			</p>
+		</div>
+
+		<!-- What Topics Are Covered -->
+		<div class="max-w-4xl mx-auto mb-12 space-y-4">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">What Types of Questions Are Answered on This Page?</h2>
+			<p class="text-lg text-gray-700 leading-relaxed">
+				This FAQ covers the full lifecycle of a Las Vegas real estate transaction. You will find questions about how to get started, how long things really take, and what to expect from inspections, appraisals, and HOA reviews. There are also sections dedicated to local nuances: whether you truly need a pool, how to think about Summerlin property taxes and HOA fees, how to keep garages cooler in 110°F summers, and when it makes sense to pay premiums for golf-course or mountain-view lots.
+			</p>
+			<p class="text-lg text-gray-700 leading-relaxed">
+				Finally, the “Working With Me” category explains what it is like to have a concierge-level agent managing your move. You will learn how I communicate, which areas I serve, and how I support first-time buyers, move-up sellers, and seasoned investors differently. If you do not see your exact question listed, use the contact links at the bottom—I am happy to answer it directly and may even add it to a future update of this page.
 			</p>
 		</div>
 

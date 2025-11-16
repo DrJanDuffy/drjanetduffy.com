@@ -76,8 +76,8 @@
 				<h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4">
 					What Our Las Vegas Real Estate Clients Say
 				</h1>
-				<p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
-					Hear what our satisfied clients have to say
+				<p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+					Testimonials matter because they reveal what it actually feels like to buy or sell a home—not just the numbers on a closing statement. The stories below come from West Summerlin families, Henderson sellers, first-time buyers in North Las Vegas, and investors who trust me to protect both their time and their equity. As you read their experiences, imagine how you want your own real estate story to sound 90 days from now.
 				</p>
 			</div>
 		</div>
@@ -90,8 +90,11 @@
 		<div class="max-w-7xl mx-auto">
 			<div class="mb-12 text-center">
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Do Las Vegas Real Estate Clients Say About Dr. Janet Duffy?</h2>
+				<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-4xl mx-auto">
+					Clients consistently describe their experience with Dr. Janet Duffy as calm, prepared, and relentlessly proactive. West Summerlin buyers talk about seamless multiple-offer wins, Henderson sellers emphasize above-asking results and organized timelines, and first-time buyers from across the valley highlight how every step was explained in plain language. Investors point to detailed market research and conservative, data-based guidance that protects long-term returns.
+				</p>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto">
-					Las Vegas real estate clients consistently praise Dr. Janet Duffy for helping find dream homes in West Summerlin, selling homes above asking price through strategic marketing and negotiation, professional and knowledgeable service, guiding first-time buyers through every step, unmatched market knowledge for investment properties, and going above and beyond to ensure client success.
+					Each testimonial represents a real family, career move, or investment decision. Behind the five-star ratings are stories of late-night contract calls, early-morning showings, and careful coordination with lenders, inspectors, escrow officers, and relocation teams. When you read these reviews, you are seeing how a concierge-level process feels from the client side: steady communication, clear expectations, and results that match or exceed the original goals.
 				</p>
 			</div>
 			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -114,7 +117,7 @@
 					</div>
 				{/each}
 			</div>
-			
+
 			<!-- Overall Rating -->
 			<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 text-center text-white mb-12">
 				<div class="flex justify-center gap-1 mb-4">
@@ -123,7 +126,43 @@
 					{/each}
 				</div>
 				<p class="text-3xl font-bold mb-2">4.9/5.0</p>
-				<p class="text-lg text-white text-opacity-90">Average Rating from 150+ Clients</p>
+				<p class="text-lg text-white text-opacity-90 mb-2">Average Rating from 150+ Clients</p>
+				<p class="text-sm text-white text-opacity-80 max-w-3xl mx-auto">
+					This rating reflects a mix of Google reviews, brokerage surveys, and handwritten notes collected at closing. Behind the number are stories of remote relocations completed on time, delicate negotiations handled with care, and post-closing support that continues long after the keys are handed over.
+				</p>
+			</div>
+
+			<!-- Buyer Experience Section -->
+			<div class="mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Do Las Vegas Homebuyers Describe Their Experience?</h2>
+				<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto">
+					Buyers frequently mention feeling “heard and protected” throughout the process. West Summerlin families talk about how showings were organized around school and work schedules, with drive times and school options explained clearly for each neighborhood. First-time buyers in North Las Vegas remember in-depth walkthroughs where every contract line and inspection report was translated into plain language before they signed anything. Out-of-state clients describe video tours that did not hide flaws; instead, they were given complete views of traffic noise, sun exposure, and layout quirks so they could decide with confidence from afar.
+				</p>
+				<p class="text-lg text-gray-700 leading-relaxed max-w-5xl mx-auto">
+					What stands out most in buyer testimonials is consistency. Clients talk about quick responses, thoughtful pros-and-cons lists after each showing day, and honest advice when a property looked great on the surface but raised concerns in the data or inspection. Many say they never felt rushed to “hurry up and offer” and instead were coached to wait for the right fit, even if that meant more work for me. When the right home appeared, offers were crafted with a clear strategy tailored to that specific seller and micro-market, which is why so many clients now send friends and colleagues my way.
+				</p>
+			</div>
+
+			<!-- Seller Experience Section -->
+			<div class="mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Do Sellers Say About Working With Dr. Janet Duffy?</h2>
+				<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto">
+					Seller testimonials often focus on preparation and communication. Clients describe detailed pre-list walkthroughs where they received prioritized lists of updates, staging suggestions tailored to desert living, and realistic timelines to hit the market at the right moment. They talk about professional photography and video that made their homes stand out online, as well as showing schedules that respected families, pets, and remote-work realities.
+				</p>
+				<p class="text-lg text-gray-700 leading-relaxed max-w-5xl mx-auto">
+					During negotiations, sellers highlight how they were given clear breakdowns of each offer—not just price, but financing strength, appraisal risk, repair caps, and rent-back terms. Many mention that they felt calm even when multiple offers arrived at once because they received side-by-side comparison summaries and specific recommendations instead of vague reassurance. Several reviews from retirees and downsizers mention smooth coordination between selling and purchasing, with rent-backs or extended closings that allowed them to move at a comfortable pace.
+				</p>
+			</div>
+
+			<!-- Investor & Relocation Experience Section -->
+			<div class="mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Do Investors and Relocation Clients Rate the Experience?</h2>
+				<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto">
+					Investors writing testimonials frequently mention conservative underwriting and detailed rent projections. They appreciate that I do not simply chase the highest advertised cap rate; instead, we review HOA rules, maintenance expectations, and neighborhood trajectories to build portfolios that can ride out market cycles. Many out-of-state investors have never seen some of their properties in person, yet feel comfortable because they receive thorough inspection reports, contractor estimates, and periodic check-ins long after closing.
+				</p>
+				<p class="text-lg text-gray-700 leading-relaxed max-w-5xl mx-auto">
+					Relocation clients—from healthcare executives to military families—describe an experience anchored in logistics and empathy. They remember airport pickups, carefully planned “power weekends” with neighborhood tours and school visits, and clear explanations of how Las Vegas weather, commute patterns, and HOA structures differ from their previous markets. Reviews often note that stress levels dropped once there was a clear, written timeline covering everything from pre-approval to utility transfers.
+				</p>
 			</div>
 		</div>
 	</div>
@@ -134,7 +173,9 @@
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-4xl mx-auto text-center">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Ready to Join Our Satisfied Clients?</h2>
-			<p class="text-lg text-gray-600 mb-8">Experience the same exceptional service that earned us 5-star reviews</p>
+			<p class="text-lg text-gray-600 mb-8 leading-relaxed">
+				If these stories resonate with the kind of experience you want—clear communication, thoughtful strategy, and calm guidance—we should talk. Whether you are buying your first home, selling a long-time residence, or making a strategic investment, we can create a plan that reflects the same level of care and expertise highlighted in these reviews.
+			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary">Get Started Today</a>
 				<a href="/about" class="btn-secondary">Learn More About Us</a>
