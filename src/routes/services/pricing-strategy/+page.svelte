@@ -1,16 +1,75 @@
-<script>
+<script lang="ts">
 	import { DollarSign, TrendingUp, BarChart3, Target, CheckCircle, Home } from 'lucide-svelte';
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'why-pricing', label: 'Why Pricing Matters' },
+		{ id: 'analysis-process', label: 'Analysis Process' },
+		{ id: 'market-strategies', label: 'Market Strategies' },
+		{ id: 'benefits', label: 'Benefits' },
+		{ id: 'cta', label: 'Get Pricing Help' }
+	];
 </script>
 
 <svelte:head>
-	<title>Pricing Strategy Services in Las Vegas | Accurate Home Pricing</title>
-	<meta name="description" content="Expert property pricing strategy services in Las Vegas. Accurate home valuations based on comprehensive market analysis for Summerlin, Henderson, and surrounding areas." />
-	<meta name="keywords" content="home pricing Las Vegas, property valuation, home pricing strategy, Las Vegas real estate pricing, accurate home pricing" />
+	<title>
+		Las Vegas Luxury &amp; Relocation Pricing Strategy Services | Dr. Janet Duffy REALTOR®
+	</title>
+	<meta
+		name="description"
+		content="Las Vegas Luxury &amp; Relocation REALTOR® Dr. Janet Duffy provides data-driven pricing strategy for homes in Summerlin, Henderson, Green Valley, North Las Vegas, and the greater Las Vegas Valley."
+	/>
+	<meta
+		name="keywords"
+		content="Las Vegas Luxury &amp; Relocation REALTOR, home pricing Las Vegas, property valuation, pricing strategy, accurate home pricing, listing strategy"
+	/>
+
+	<meta
+		property="og:title"
+		content="Las Vegas Luxury &amp; Relocation Pricing Strategy Services | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		property="og:description"
+		content="Accurate, market-backed pricing strategies to help Las Vegas sellers list with confidence and maximize value."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/services/pricing-strategy" />
+	<meta property="og:site_name" content="Las Vegas Luxury &amp; Relocation REALTOR" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:title"
+		content="Las Vegas Luxury &amp; Relocation Pricing Strategy Services | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		name="twitter:description"
+		content="Comprehensive pricing analysis for Las Vegas homes, aligning list price with current market conditions."
+	/>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Las Vegas Luxury & Relocation Pricing Strategy Services",
+			"description": "Pricing strategy services from Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy, focused on accurate, data-driven home valuations across the Las Vegas Valley.",
+			"url": "https://www.drjanetduffy.com/services/pricing-strategy",
+			"about": {
+				"@type": "RealEstateAgent",
+				"name": "Dr. Janet Duffy",
+				"areaServed": "Las Vegas, Nevada"
+			}
+		}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-12 sm:mb-16">
+		<div class="text-center mb-8 sm:mb-10" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Pricing Strategy Services in Las Vegas
 			</h1>
@@ -20,9 +79,37 @@
 			</p>
 		</div>
 
+		<!-- On-page navigation -->
+		<nav
+			aria-label="On this page"
+			class="mb-10 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-700 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
 		<div class="max-w-4xl mx-auto">
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Is Accurate Pricing Critical in Las Vegas Real Estate?</h2>
+			<section
+				id="why-pricing"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="why-pricing-heading"
+			>
+				<h2
+					id="why-pricing-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					Why Is Accurate Pricing Critical in Las Vegas Real Estate?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
 					Pricing is the single most important factor in successful real estate transactions. In Las Vegas's dynamic market, accurate pricing requires deep market knowledge, comprehensive analysis, and understanding of local trends. Our pricing strategy services help you price properties correctly through market analysis, neighborhood expertise, trend analysis, and value optimization.
@@ -69,10 +156,19 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Is Our Comprehensive Pricing Analysis Process?</h2>
+			<section
+				id="analysis-process"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="analysis-process-heading"
+			>
+				<h2
+					id="analysis-process-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Is Our Comprehensive Pricing Analysis Process?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Our comprehensive pricing analysis process includes comparable sales analysis, active listing evaluation, market trend assessment, and property condition analysis. This multi-faceted approach ensures accurate pricing that reflects current market conditions and maximizes your property's value potential.
 				</p>
@@ -128,10 +224,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Pricing Strategies for Different Las Vegas Markets</h2>
+			<section
+				id="market-strategies"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="market-strategies-heading"
+			>
+				<h2
+					id="market-strategies-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					Pricing Strategies for Different Las Vegas Markets
+				</h2>
 				
 				<div class="space-y-6">
 					<div>
@@ -164,10 +269,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Benefits of Professional Pricing Strategy</h2>
+			<section
+				id="benefits"
+				class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="benefits-heading"
+			>
+				<h2
+					id="benefits-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					Benefits of Professional Pricing Strategy
+				</h2>
 				
 				<div class="grid md:grid-cols-2 gap-6">
 					<div class="flex items-start gap-4">
@@ -202,10 +316,19 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white">
-				<h2 class="text-3xl md:text-4xl font-bold mb-4">Get Accurate Property Pricing in Las Vegas</h2>
+			<section
+				id="cta"
+				class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white scroll-mt-24"
+				aria-labelledby="cta-heading"
+			>
+				<h2
+					id="cta-heading"
+					class="text-3xl md:text-4xl font-bold mb-4"
+				>
+					Get Accurate Property Pricing in Las Vegas
+				</h2>
 				<p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
 					Let us help you price your property accurately and competitively. Contact us today to schedule a comprehensive pricing analysis.
 				</p>
@@ -213,11 +336,14 @@
 					<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">
 						Schedule Consultation
 					</a>
-					<a href="/home-value" class="btn-primary bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600">
+					<a
+						href="/home-value"
+						class="btn-primary bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary-600"
+					>
 						Get Home Value Estimate
 					</a>
 				</div>
-			</div>
+			</section>
 		</div>
 	</div>
 </section>
