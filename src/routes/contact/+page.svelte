@@ -202,26 +202,26 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, MessageCircle } from 'lucide-s
 				<!-- FAQs -->
 				<div class="bg-gradient-to-br from-white via-primary-50/15 to-white rounded-3xl shadow-xl p-8 border border-gray-200/60 backdrop-blur-sm">
 					<h3 class="font-display text-2xl font-bold mb-4 text-gray-900">Contact FAQs</h3>
-					<div class="space-y-4 text-sm md:text-base text-gray-700 leading-relaxed">
-						<div>
+					<ul class="space-y-4 text-sm md:text-base text-gray-700 leading-relaxed">
+						<li>
 							<h4 class="font-semibold text-gray-900 mb-1">Do I need to be ready to buy or sell right away to contact you?</h4>
 							<p>
 								No. Many of my best client relationships begin 6–18 months before a move. Early conversations give us time to organize financing, decluttering, repairs, or neighborhood research at a relaxed pace.
 							</p>
-						</div>
-						<div>
+						</li>
+						<li>
 							<h4 class="font-semibold text-gray-900 mb-1">Is there a fee for an initial consultation?</h4>
 							<p>
 								Initial consultations are complimentary. My goal is to provide clarity and value up front so you can decide if we are a good fit to work together.
 							</p>
-						</div>
-						<div>
+						</li>
+						<li>
 							<h4 class="font-semibold text-gray-900 mb-1">Can we meet via Zoom if I am out of state?</h4>
 							<p>
 								Yes. I frequently meet with clients via Zoom, FaceTime, or phone before they ever visit Las Vegas in person. We can review maps, listings, and market data together on screen.
 							</p>
-						</div>
-						<div>
+						</li>
+						<li>
 							<h4 class="font-semibold text-gray-900 mb-1">What information should I include in the contact form?</h4>
 							<p>
 								If possible, share your ideal timeframe, price range, preferred communities, and whether you need to sell before you buy. The more context you provide, the more tailored and useful my initial recommendations will be.

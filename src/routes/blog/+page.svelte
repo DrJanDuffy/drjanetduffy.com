@@ -116,8 +116,9 @@
 		<p class="text-gray-600 text-lg mb-10 leading-relaxed max-w-4xl">
 			Every post follows a simple promise: clear explanations, real numbers, and actionable takeaways specific to Las Vegas—not generic national headlines. Use the sections below to understand which topics we cover, how often new posts are added, and how to turn this blog into a personal research assistant for your move or investment strategy.
 		</p>
+	</div>
 
-		<div class="mb-10">
+	<div class="mb-10">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Las Vegas Real Estate News and Market Insights Are Available?</h2>
 			<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-4xl">
 				Las Vegas real estate news and market insights on this blog include monthly market snapshots, neighborhood spotlights, builder and HOA updates, interest-rate commentary, and strategy guides for buyers, sellers, and investors. You will see articles that explain why Summerlin villages appreciate differently, how Skye Canyon’s new phases are priced, what rental yields look like in North Las Vegas, and which Henderson communities are trending with remote workers and medical professionals.
