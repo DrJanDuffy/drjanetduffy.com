@@ -1,16 +1,78 @@
-<script>
+<script lang="ts">
 	import { Globe, Home, TrendingUp, Users, MapPin, DollarSign } from 'lucide-svelte';
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'serve-clients', label: 'Serving International Clients' },
+		{ id: 'buyer-services', label: 'Buyer Services' },
+		{ id: 'attractions', label: 'Las Vegas Attractions' },
+		{ id: 'considerations', label: 'Key Considerations' },
+		{ id: 'cta', label: 'Plan Your Cross-Border Move' }
+	];
 </script>
 
 <svelte:head>
-	<title>International Property Services in Las Vegas | Global Real Estate</title>
-	<meta name="description" content="Global real estate expertise for international buyers and sellers in Las Vegas. Expert services for foreign investors, expatriates, and international property transactions." />
-	<meta name="keywords" content="international real estate Las Vegas, foreign buyers Las Vegas, global property services, international investors Las Vegas" />
+	<title>
+		International Property Services in Las Vegas | Las Vegas Luxury &amp; Relocation REALTOR®
+	</title>
+	<meta
+		name="description"
+		content="International property services from Las Vegas Luxury &amp; Relocation REALTOR® Dr. Janet Duffy, guiding global buyers and investors through cross-border Las Vegas transactions."
+	/>
+	<meta
+		name="keywords"
+		content="Las Vegas Luxury &amp; Relocation REALTOR, international real estate Las Vegas, foreign buyers, global property services"
+	/>
+
+	<meta
+		property="og:title"
+		content="International Property Services in Las Vegas | Las Vegas Luxury &amp; Relocation REALTOR®"
+	/>
+	<meta
+		property="og:description"
+		content="Cross-border real estate support for international buyers, investors, and second-home owners in Las Vegas."
+	/>
+	<meta property="og:type" content="website" />
+	<meta
+		property="og:url"
+		content="https://www.drjanetduffy.com/services/international-property"
+	/>
+	<meta property="og:site_name" content="Las Vegas Luxury &amp; Relocation REALTOR" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:title"
+		content="International Property Services in Las Vegas | Las Vegas Luxury &amp; Relocation REALTOR®"
+	/>
+	<meta
+		name="twitter:description"
+		content="End-to-end support for international buyers, including financing, remote tours, and cross-border transaction management."
+	/>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "International Property Services in Las Vegas",
+			"description": "International property services for foreign buyers and investors in Las Vegas, including financing guidance, remote search, and transaction coordination.",
+			"url": "https://www.drjanetduffy.com/services/international-property",
+			"about": {
+				"@type": "RealEstateAgent",
+				"name": "Dr. Janet Duffy",
+				"areaServed": "Las Vegas, Nevada"
+			}
+		}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-12 sm:mb-16">
+		<div class="text-center mb-8 sm:mb-10" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				International Property Services in Las Vegas
 			</h1>
@@ -20,9 +82,37 @@
 			</p>
 		</div>
 
+		<!-- On-page navigation -->
+		<nav
+			aria-label="On this page"
+			class="mb-10 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-700 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
 		<div class="max-w-4xl mx-auto">
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How Do We Serve International Clients in Las Vegas?</h2>
+			<section
+				id="serve-clients"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="serve-clients-heading"
+			>
+				<h2
+					id="serve-clients-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					How Do We Serve International Clients in Las Vegas?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
 					Las Vegas attracts international buyers and investors from around the world, seeking everything from vacation homes to investment properties. International transactions require specialized expertise, understanding of cross-border regulations, and knowledge of international buyer needs. Our services help international clients navigate Las Vegas real estate successfully through cross-border expertise, international financing guidance, cultural understanding, and comprehensive remote services.
@@ -69,10 +159,19 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What International Buyer Services Do We Provide?</h2>
+			<section
+				id="buyer-services"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="buyer-services-heading"
+			>
+				<h2
+					id="buyer-services-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What International Buyer Services Do We Provide?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Our international buyer services include understanding international buyer needs and preferences, financing guidance for foreign buyers, remote property search capabilities for clients who cannot visit frequently, and transaction management coordinating across time zones. These comprehensive services address the unique needs of international buyers in Las Vegas.
 				</p>
@@ -118,10 +217,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Las Vegas Attractions Appeal to International Buyers?</h2>
+			<section
+				id="attractions"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="attractions-heading"
+			>
+				<h2
+					id="attractions-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Las Vegas Attractions Appeal to International Buyers?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Las Vegas attractions for international buyers include investment opportunities with strong rental markets and growth potential, lifestyle appeal with world-class entertainment and amenities, and accessibility through international airport and direct flights. These attractions make Las Vegas highly attractive to international buyers seeking vacation homes or investment properties.
 				</p>
@@ -157,10 +265,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are Key Considerations for International Buyers?</h2>
+			<section
+				id="considerations"
+				class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="considerations-heading"
+			>
+				<h2
+					id="considerations-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Are Key Considerations for International Buyers?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Key considerations for international buyers include tax implications in both the United States and home countries, property management requirements for international owners, and legal considerations requiring specialized expertise. Understanding these factors helps international buyers navigate Las Vegas real estate successfully and ensure compliance with all regulations.
 				</p>
@@ -187,10 +304,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white">
-				<h2 class="text-3xl md:text-4xl font-bold mb-4">International Property Services in Las Vegas</h2>
+			<section
+				id="cta"
+				class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white scroll-mt-24"
+				aria-labelledby="cta-heading"
+			>
+				<h2
+					id="cta-heading"
+					class="text-3xl md:text-4xl font-bold mb-4"
+				>
+					International Property Services in Las Vegas
+				</h2>
 				<p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
 					Let us help you with your international real estate needs in Las Vegas. Contact us today to schedule a consultation.
 				</p>

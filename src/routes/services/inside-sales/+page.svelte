@@ -1,15 +1,69 @@
-<script>
+<script lang="ts">
 	import { Phone, Mail, MessageSquare, Clock } from 'lucide-svelte';
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'services', label: 'Inside Sales Services' },
+		{ id: 'benefits', label: 'Benefits' },
+		{ id: 'cta', label: 'Leverage Inside Sales' }
+	];
 </script>
 
 <svelte:head>
-	<title>Inside Sales Services | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Professional phone, email, and online sales support for real estate transactions. Inside sales services for Las Vegas real estate." />
+	<title>
+		Inside Sales Services | Las Vegas Luxury &amp; Relocation REALTOR®
+	</title>
+	<meta
+		name="description"
+		content="Inside sales support from Las Vegas Luxury &amp; Relocation REALTOR® Dr. Janet Duffy, covering calls, email, chat, and CRM follow-up for real estate clients."
+	/>
+
+	<meta
+		property="og:title"
+		content="Inside Sales Services | Las Vegas Luxury &amp; Relocation REALTOR®"
+	/>
+	<meta
+		property="og:description"
+		content="Professional follow-up, appointment setting, and digital communication to keep Las Vegas buyers and sellers engaged."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/services/inside-sales" />
+	<meta property="og:site_name" content="Las Vegas Luxury &amp; Relocation REALTOR" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:title"
+		content="Inside Sales Services | Las Vegas Luxury &amp; Relocation REALTOR®"
+	/>
+	<meta
+		name="twitter:description"
+		content="Systematic, friendly inside sales support that ensures no Las Vegas lead falls through the cracks."
+	/>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Inside Sales Services",
+			"description": "Inside sales services for Las Vegas real estate, providing phone, email, and online support for lead nurturing and client communication.",
+			"url": "https://www.drjanetduffy.com/services/inside-sales",
+			"about": {
+				"@type": "RealEstateAgent",
+				"name": "Dr. Janet Duffy",
+				"areaServed": "Las Vegas, Nevada"
+			}
+		}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-16">
+		<div class="text-center mb-10" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Professional Inside Sales Services for Real Estate
 			</h1>
@@ -19,8 +73,29 @@
 			</p>
 		</div>
 
-		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Inside Sales Services Are Available for Las Vegas Real Estate?</h2>
+		<!-- On-page navigation -->
+		<nav
+			aria-label="On this page"
+			class="mb-10 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-700 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
+		<div class="mb-16" id="services">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">
+				What Inside Sales Services Are Available for Las Vegas Real Estate?
+			</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
 				Inside sales services for Las Vegas real estate include phone support for lead qualification and appointment scheduling, plus email and online support for digital communication and CRM management. These services provide 24/7 availability, quick response times, and professional communication to support your real estate transactions.
 			</p>
@@ -82,8 +157,10 @@
 			</div>
 		</div>
 
-		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Are the Benefits of Inside Sales Services?</h2>
+		<div class="mb-16" id="benefits">
+			<h2 class="text-3xl font-bold text-gray-900 mb-6">
+				What Are the Benefits of Inside Sales Services?
+			</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
 				Inside sales services provide 24/7 availability to always be available for your clients, quick response times for immediate follow-up on inquiries, and professional service for consistent, high-quality communication. These benefits ensure you never miss an opportunity and maintain excellent client relationships throughout the transaction process.
 			</p>
@@ -107,7 +184,7 @@
 			</div>
 		</div>
 
-		<div class="text-center">
+		<div class="text-center" id="cta">
 			<a href="/contact" class="btn-primary">Learn More</a>
 		</div>
 	</div>

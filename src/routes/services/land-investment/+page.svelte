@@ -1,16 +1,75 @@
-<script>
+<script lang="ts">
 	import { MapPin, TrendingUp, DollarSign, CheckCircle, Home, BarChart3 } from 'lucide-svelte';
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'opportunities', label: 'Investment Opportunities' },
+		{ id: 'markets', label: 'Land Markets' },
+		{ id: 'services', label: 'Land Services' },
+		{ id: 'considerations', label: 'Key Considerations' },
+		{ id: 'cta', label: 'Discuss Land Strategy' }
+	];
 </script>
 
 <svelte:head>
-	<title>Land Investment Services in Las Vegas | Land Acquisition & Development</title>
-	<meta name="description" content="Expert land acquisition and development consulting throughout Las Vegas and surrounding areas. Comprehensive services for land investment, development, and land transactions." />
-	<meta name="keywords" content="land investment Las Vegas, land for sale Las Vegas, land development, vacant land Las Vegas" />
+	<title>
+		Land Investment Services in Las Vegas | Las Vegas Luxury &amp; Relocation REALTOR®
+	</title>
+	<meta
+		name="description"
+		content="Land investment and development services from Las Vegas Luxury &amp; Relocation REALTOR® Dr. Janet Duffy, supporting residential, commercial, and rural land strategies."
+	/>
+	<meta
+		name="keywords"
+		content="Las Vegas Luxury &amp; Relocation REALTOR, land investment Las Vegas, land for sale Las Vegas, land development"
+	/>
+
+	<meta
+		property="og:title"
+		content="Land Investment Services in Las Vegas | Las Vegas Luxury &amp; Relocation REALTOR®"
+	/>
+	<meta
+		property="og:description"
+		content="Strategic guidance for acquiring, entitling, and developing land across the Las Vegas Valley."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/services/land-investment" />
+	<meta property="og:site_name" content="Las Vegas Luxury &amp; Relocation REALTOR" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:title"
+		content="Land Investment Services in Las Vegas | Las Vegas Luxury &amp; Relocation REALTOR®"
+	/>
+	<meta
+		name="twitter:description"
+		content="Land value, zoning, and infrastructure analysis tailored to Las Vegas builders and investors."
+	/>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Land Investment Services in Las Vegas",
+			"description": "Land investment services for Las Vegas, including evaluation, development planning, and investment analysis for residential, commercial, and rural parcels.",
+			"url": "https://www.drjanetduffy.com/services/land-investment",
+			"about": {
+				"@type": "RealEstateAgent",
+				"name": "Dr. Janet Duffy",
+				"areaServed": "Las Vegas, Nevada"
+			}
+		}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-12 sm:mb-16">
+		<div class="text-center mb-8 sm:mb-10" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Land Investment Services in Las Vegas
 			</h1>
@@ -20,9 +79,37 @@
 			</p>
 		</div>
 
+		<!-- On-page navigation -->
+		<nav
+			aria-label="On this page"
+			class="mb-10 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-700 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
 		<div class="max-w-4xl mx-auto">
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Land Investment Opportunities Are Available in Las Vegas?</h2>
+			<section
+				id="opportunities"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="opportunities-heading"
+			>
+				<h2
+					id="opportunities-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Land Investment Opportunities Are Available in Las Vegas?
+				</h2>
 				
 				<p class="text-lg text-gray-700 mb-6 leading-relaxed">
 					Las Vegas and surrounding areas offer diverse land investment opportunities, from residential development sites to commercial land to agricultural properties. Land investments require specialized expertise, understanding of development processes, and knowledge of regulatory requirements. Our land investment services help investors and developers navigate land transactions successfully through residential development guidance, commercial land services, investment analysis, and expert value assessment.
@@ -69,10 +156,19 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Which Land Markets Exist Throughout Las Vegas?</h2>
+			<section
+				id="markets"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="markets-heading"
+			>
+				<h2
+					id="markets-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					Which Land Markets Exist Throughout Las Vegas?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Land markets throughout Las Vegas include residential development land in expanding areas like North Las Vegas and Henderson, commercial development land for retail, office, and industrial uses, and rural and agricultural land in surrounding areas. Each market offers unique investment opportunities and requires specialized evaluation expertise.
 				</p>
@@ -108,10 +204,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Land Investment Services Do We Provide?</h2>
+			<section
+				id="services"
+				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="services-heading"
+			>
+				<h2
+					id="services-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Land Investment Services Do We Provide?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Our land investment services include land evaluation assessing location, zoning, utilities, and development potential, development planning guidance for site design and regulatory approvals, and investment analysis evaluating potential returns and development costs. These comprehensive services help investors and developers make informed land investment decisions in Las Vegas.
 				</p>
@@ -147,10 +252,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12">
-				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">What Are Key Considerations for Land Investments?</h2>
+			<section
+				id="considerations"
+				class="bg-gradient-to-br from-primary-50 to-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
+				aria-labelledby="considerations-heading"
+			>
+				<h2
+					id="considerations-heading"
+					class="text-3xl md:text-4xl font-bold text-gray-900 mb-6"
+				>
+					What Are Key Considerations for Land Investments?
+				</h2>
 				<p class="text-lg text-gray-700 mb-8 leading-relaxed">
 					Key considerations for land investments include zoning and development rights determining permitted uses and development potential, utilities and infrastructure access significantly affecting land values, and market conditions understanding how trends and economic factors affect land investment potential. Understanding these factors helps investors evaluate land opportunities effectively.
 				</p>
@@ -177,10 +291,19 @@
 						</p>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<div class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white">
-				<h2 class="text-3xl md:text-4xl font-bold mb-4">Land Investment Services in Las Vegas</h2>
+			<section
+				id="cta"
+				class="bg-primary-600 rounded-2xl p-8 md:p-12 text-center text-white scroll-mt-24"
+				aria-labelledby="cta-heading"
+			>
+				<h2
+					id="cta-heading"
+					class="text-3xl md:text-4xl font-bold mb-4"
+				>
+					Land Investment Services in Las Vegas
+				</h2>
 				<p class="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
 					Let us help you with your land investment needs. Contact us today to schedule a consultation.
 				</p>
