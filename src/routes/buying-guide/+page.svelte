@@ -1,15 +1,72 @@
-<script>
+<script lang="ts">
 	import { Home, CheckCircle, FileText, Key, Shield, TrendingUp, DollarSign } from 'lucide-svelte';
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const tocItems: TocItem[] = [
+		{ id: 'process', label: 'Buying Steps' },
+		{ id: 'financing', label: 'Financing Options' },
+		{ id: 'costs', label: 'Buyer Costs' },
+		{ id: 'summerlin', label: 'Summerlin & HOAs' },
+		{ id: 'desert', label: 'Desert Considerations' },
+		{ id: 'faq', label: 'Buyer FAQ' },
+		{ id: 'cta', label: 'Work With Dr. Duffy' }
+	];
 </script>
 
 <svelte:head>
-	<title>Home Buying Guide | Las Vegas | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Complete guide to buying a home in Las Vegas. Step-by-step process, financing options, and expert tips for homebuyers." />
+	<title>
+		Las Vegas Luxury &amp; Relocation Home Buying Guide | Dr. Janet Duffy REALTOR®
+	</title>
+	<meta
+		name="description"
+		content="Step-by-step Las Vegas home buying guide from Las Vegas Luxury &amp; Relocation REALTOR® Dr. Janet Duffy, covering financing, neighborhoods, HOAs, inspections, and closing."
+	/>
+
+	<meta
+		property="og:title"
+		content="Las Vegas Luxury &amp; Relocation Home Buying Guide | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		property="og:description"
+		content="Learn how to buy a home in Las Vegas with clear steps, local insights, and expert guidance from Dr. Janet Duffy."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.drjanetduffy.com/buying-guide" />
+	<meta property="og:site_name" content="Las Vegas Luxury &amp; Relocation REALTOR" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta
+		name="twitter:title"
+		content="Las Vegas Luxury &amp; Relocation Home Buying Guide | Dr. Janet Duffy REALTOR®"
+	/>
+	<meta
+		name="twitter:description"
+		content="A practical Las Vegas home buying roadmap with financing, HOA, and desert-living tips."
+	/>
+
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "WebPage",
+			"name": "Las Vegas Luxury & Relocation Home Buying Guide",
+			"description": "A comprehensive home buying guide for Las Vegas, including financing options, HOA insights, and desert-specific considerations.",
+			"url": "https://www.drjanetduffy.com/buying-guide",
+			"about": {
+				"@type": "RealEstateAgent",
+				"name": "Dr. Janet Duffy",
+				"areaServed": "Las Vegas, Nevada"
+			}
+		}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-16">
+		<div class="text-center mb-10" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Complete Guide to Buying a Home in Las Vegas
 			</h1>
@@ -19,8 +76,27 @@
 			</p>
 		</div>
 
+		<!-- On-page navigation -->
+		<nav
+			aria-label="On this page"
+			class="mb-10 rounded-full border border-gray-200 bg-white px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-700 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
 		<!-- Buying Process Steps -->
-		<div class="mb-16">
+		<div class="mb-16" id="process">
 			<h2 class="text-3xl font-bold text-gray-900 mb-6">How Does the Home Buying Process Work in Las Vegas?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
 				Buying a home in Las Vegas involves five key steps: getting pre-approved, finding your home, making an offer, completing inspections, and closing. Each step requires careful planning and expert guidance to ensure a successful purchase in our competitive market.
@@ -169,7 +245,7 @@
 		</div>
 
 		<!-- Financing Options -->
-		<div class="mb-16">
+		<div class="mb-16" id="financing">
 			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Financing Options Are Available for Las Vegas Homebuyers?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
 				Las Vegas homebuyers have access to multiple financing options including conventional loans, FHA loans, VA loans, and USDA loans. Each option has different down payment requirements, credit score thresholds, and benefits tailored to different buyer situations.
@@ -198,7 +274,7 @@
 		</div>
 
 		<!-- Costs Section -->
-		<div class="mb-16">
+		<div class="mb-16" id="costs">
 			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Costs Should Las Vegas Homebuyers Budget For?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
 				Beyond the purchase price, Las Vegas homebuyers should budget for down payments, closing costs, inspections, and moving expenses. These costs typically range from 3-25% of the home's purchase price depending on your loan type and property value.
@@ -238,7 +314,7 @@
 		</div>
 
 		<!-- Summerlin-Specific Buyer's Guide -->
-		<div class="mb-16">
+		<div class="mb-16" id="summerlin">
 			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Should Summerlin Buyers Know About Village Selection and HOA Documents?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
 				Buying in Summerlin requires understanding village selection, HOA structure (master association $160/year plus village fees $150-$500/month), and HOA document review. My concierge service includes personalized village tours, HOA document review before you buy, and explaining restrictions and fees clearly to help you make informed decisions.
@@ -288,7 +364,7 @@
 		</div>
 
 		<!-- Desert Home Inspection Considerations -->
-		<div class="mb-16">
+		<div class="mb-16" id="desert">
 			<h2 class="text-3xl font-bold text-gray-900 mb-6">What Desert-Specific Considerations Should Las Vegas Homebuyers Know?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl">
 				Las Vegas desert living requires special considerations including pool inspections, garage heat mitigation, energy efficiency, and landscaping restrictions. Understanding these desert-specific factors helps you make informed decisions and avoid costly surprises.
@@ -322,7 +398,7 @@
 		</div>
 
 		<!-- FAQ Section -->
-		<div class="mb-16">
+		<div class="mb-16" id="faq">
 			<h2 class="text-3xl font-bold text-gray-900 mb-6">Frequently Asked Questions About Buying a Home in Las Vegas</h2>
 			<div class="space-y-6">
 				<div class="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
@@ -347,7 +423,10 @@
 		</div>
 
 		<!-- CTA Section -->
-		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
+		<div
+			id="cta"
+			class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white"
+		>
 			<h2 class="text-3xl font-bold mb-4">Ready to Start Your Home Buying Journey?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
 				Let me guide you through every step of buying your Las Vegas home
