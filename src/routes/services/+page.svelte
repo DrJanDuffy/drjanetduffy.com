@@ -1,7 +1,19 @@
-<script>
+<script lang="ts">
 	import { Search, Home, Briefcase, TrendingUp, Users, DollarSign, MapPin, Building2, Key, BarChart3 } from 'lucide-svelte';
 	
-	const services = [
+	interface ServiceItem {
+		title: string;
+		url: string;
+		description: string;
+	}
+
+	interface ServiceCategory {
+		category: string;
+		icon: typeof Home;
+		items: ServiceItem[];
+	}
+
+	const services: ServiceCategory[] = [
 		// Buyer Services
 		{
 			category: 'Buyer Services',
@@ -190,9 +202,9 @@
 	
 	let searchQuery = '';
 	
-	$: filteredServices = services.map(category => ({
+	$: filteredServices = services.map((category) => ({
 		...category,
-		items: category.items.filter(item => 
+		items: category.items.filter((item) => 
 			item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
 			item.description.toLowerCase().includes(searchQuery.toLowerCase())
 		)
@@ -215,12 +227,23 @@
 	<meta property="twitter:url" content="https://www.drjanetduffy.com/services" />
 	<meta property="twitter:title" content="Las Vegas Luxury &amp; Relocation Real Estate Services | Dr. Janet Duffy" />
 	<meta property="twitter:description" content="Las Vegas Luxury & Relocation REALTOR services for buyers, sellers, relocation clients, and investors." />
+
+	<!-- Structured Data - Service overview -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebPage",
+		"name": "Las Vegas Luxury & Relocation Real Estate Services",
+		"description": "Concierge-level real estate services for Las Vegas luxury buyers, sellers, relocation clients, and investors.",
+		"url": "https://www.drjanetduffy.com/services"
+	}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
 		<!-- Hero / Header -->
-		<div class="grid md:grid-cols-2 gap-10 lg:gap-16 items-center mb-12 sm:mb-16">
+		<div class="grid md:grid-cols-2 gap-10 lg:gap-16 items-center mb-10 sm:mb-12">
 			<div class="text-center md:text-left">
 				<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 					Las Vegas Luxury &amp; Relocation Real Estate Services
@@ -245,7 +268,7 @@
 		</div>
 
 		<!-- Our Services Overview -->
-		<div class="mb-16">
+		<div id="overview" class="mb-12 sm:mb-16">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
 				What Types of Real Estate Services Do You Offer in Las Vegas?
 			</h2>
@@ -287,8 +310,43 @@
 			</div>
 		</div>
 
+		<!-- On-page navigation for service sections -->
+		<div class="max-w-4xl mx-auto mb-10">
+			<nav class="border-t border-gray-200 pt-5">
+				<p class="text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3 text-center">
+					On this page
+				</p>
+				<div class="flex flex-wrap justify-center gap-3">
+					<a href="#overview" class="px-4 py-2 rounded-full border border-gray-200 bg-white text-xs sm:text-sm font-medium text-gray-700 hover:text-primary-600 hover:border-primary-300 hover:bg-primary-50 transition-colors">
+						Overview
+					</a>
+					<a href="#concierge-service" class="px-4 py-2 rounded-full border border-gray-200 bg-white text-xs sm:text-sm font-medium text-gray-700 hover:text-primary-600 hover:border-primary-300 hover:bg-primary-50 transition-colors">
+						Concierge Service
+					</a>
+					<a href="#buyer-relocation" class="px-4 py-2 rounded-full border border-gray-200 bg-white text-xs sm:text-sm font-medium text-gray-700 hover:text-primary-600 hover:border-primary-300 hover:bg-primary-50 transition-colors">
+						Buyers &amp; Relocation
+					</a>
+					<a href="#seller-services" class="px-4 py-2 rounded-full border border-gray-200 bg-white text-xs sm:text-sm font-medium text-gray-700 hover:text-primary-600 hover:border-primary-300 hover:bg-primary-50 transition-colors">
+						Seller Services
+					</a>
+					<a href="#investment-services" class="px-4 py-2 rounded-full border border-gray-200 bg-white text-xs sm:text-sm font-medium text-gray-700 hover:text-primary-600 hover:border-primary-300 hover:bg-primary-50 transition-colors">
+						Investors &amp; Commercial
+					</a>
+					<a href="#specialized-services" class="px-4 py-2 rounded-full border border-gray-200 bg-white text-xs sm:text-sm font-medium text-gray-700 hover:text-primary-600 hover:border-primary-300 hover:bg-primary-50 transition-colors">
+						Senior &amp; Military
+					</a>
+					<a href="#edge" class="px-4 py-2 rounded-full border border-gray-200 bg-white text-xs sm:text-sm font-medium text-gray-700 hover:text-primary-600 hover:border-primary-300 hover:bg-primary-50 transition-colors">
+						Your Edge
+					</a>
+					<a href="#search-services" class="px-4 py-2 rounded-full border border-gray-200 bg-white text-xs sm:text-sm font-medium text-gray-700 hover:text-primary-600 hover:border-primary-300 hover:bg-primary-50 transition-colors">
+						Search Services
+					</a>
+				</div>
+			</nav>
+		</div>
+
 		<!-- How Does My Concierge Real Estate Service Work? -->
-		<div class="mb-16">
+		<div id="concierge-service" class="mb-16">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
 				How Does My Concierge Las Vegas Real Estate Service Actually Work?
 			</h2>
@@ -301,7 +359,7 @@
 		</div>
 
 		<!-- Buyer & Relocation Services -->
-		<div class="mb-16">
+		<div id="buyer-relocation" class="mb-16">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
 				What Services Do You Offer Las Vegas Home Buyers and Relocation Clients?
 			</h2>
@@ -314,7 +372,7 @@
 		</div>
 
 		<!-- Seller, Pricing & Marketing Services -->
-		<div class="mb-16">
+		<div id="seller-services" class="mb-16">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
 				How Do You Help Las Vegas Home Sellers Maximize Their Results?
 			</h2>
@@ -327,7 +385,7 @@
 		</div>
 
 		<!-- Investment, Commercial & Property Management -->
-		<div class="mb-16">
+		<div id="investment-services" class="mb-16">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
 				What Specialized Services Do You Provide for Investors and Commercial Clients?
 			</h2>
@@ -340,7 +398,7 @@
 		</div>
 
 		<!-- Senior, Military & Inclusive Services -->
-		<div class="mb-16">
+		<div id="specialized-services" class="mb-16">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
 				How Do You Support Seniors, Military Families, and Inclusive Real Estate Needs?
 			</h2>
@@ -353,7 +411,7 @@
 		</div>
 
 		<!-- Technology, Education & Negotiation -->
-		<div class="mb-16">
+		<div id="edge" class="mb-16">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
 				How Do Technology, Education, and Negotiation Give You an Edge?
 			</h2>
@@ -366,7 +424,7 @@
 		</div>
 		
 		<!-- Search Bar -->
-		<div class="max-w-2xl mx-auto mb-12">
+		<div id="search-services" class="max-w-2xl mx-auto mb-12">
 			<div class="relative">
 				<Search class="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
 				<input
