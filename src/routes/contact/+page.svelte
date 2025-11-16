@@ -61,7 +61,7 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, MessageCircle } from 'lucide-s
 			</h1>
 			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
 			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-				Ready to discover your next Summerlin address? Let's discuss your luxury real estate needs and make your dream home a reality.
+				Your questions, timelines, and goals deserve more than a portal contact form. This page is your direct line to a seasoned Las Vegas REALTOR® who will listen carefully, translate concerns into clear next steps, and protect your interests at every stage of the process. Whether you are exploring a possible move in the next year, preparing to list a luxury estate, relocating from another state, or simply wondering how today’s market affects your equity, reach out and we will build a plan together—no pressure, no scripts, just honest guidance tailored to you.
 			</p>
 		</div>
 		
@@ -70,13 +70,13 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, MessageCircle } from 'lucide-s
 			<div class="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-8 md:p-10 border border-gray-200/50 transform transition-all duration-300 hover:shadow-3xl">
 				<ContactForm 
 					title="Send a Message" 
-					subtitle="Ready to start your real estate journey? Contact me today!"
+					subtitle="Tell me a bit about your goals, timing, and preferred neighborhoods so I can prepare thoughtful answers before we talk."
 					showPhone={true}
 				/>
 			</div>
 			
 			<!-- Enhanced Contact Information -->
-			<div class="space-y-6">
+			<div class="space-y-10">
 				<div class="bg-gradient-to-br from-white via-primary-50/20 to-white rounded-3xl shadow-xl p-8 border border-gray-200/50 backdrop-blur-sm">
 					<h2 class="font-display text-3xl font-bold mb-4 text-gray-900" style="letter-spacing: -0.02em;">How Can You Get in Touch With Dr. Janet Duffy?</h2>
 					<p class="text-gray-700 mb-8 leading-relaxed">
@@ -142,39 +142,146 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, MessageCircle } from 'lucide-s
 					</div>
 				</div>
 				
+				<!-- Why Work With Dr. Duffy -->
 				<div class="bg-gradient-to-br from-white via-primary-50/20 to-white rounded-3xl shadow-xl p-8 border border-gray-200/50 backdrop-blur-sm">
 					<h3 class="font-display text-2xl font-bold mb-4 text-gray-900">Why Should You Choose Dr. Janet Duffy?</h3>
-					<p class="text-gray-700 mb-6 leading-relaxed text-sm">
-						Choose Dr. Janet Duffy for local market expertise, proven track record, personalized service, and free consultation that helps Las Vegas buyers, sellers, and investors achieve their real estate goals with exceptional results and dedicated support.
+					<p class="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+						Choose Dr. Janet Duffy for local market expertise, a proven negotiation track record, and a concierge-style approach that treats your move like a project with clear milestones and proactive communication. I have helped executives, medical professionals, military families, first-time buyers, and seasoned investors navigate complex transactions in every corner of the valley—from Summerlin and Skye Canyon to Henderson and North Las Vegas. When you reach out, you are not dropped into a generic team queue; you work directly with a trusted advisor who will keep you informed and advocated for at every step.
 					</p>
 					<ul class="space-y-4">
 						<li class="flex items-center gap-4 p-3 rounded-xl hover:bg-white/50 transition-colors">
 							<div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
 								<CheckCircle class="w-6 h-6 text-green-600" />
 							</div>
-							<span class="text-gray-700 font-semibold">Local market expertise</span>
+							<span class="text-gray-700 font-semibold">Local market expertise across Summerlin, Skye Canyon, Henderson, and North Las Vegas</span>
 						</li>
 						<li class="flex items-center gap-4 p-3 rounded-xl hover:bg-white/50 transition-colors">
 							<div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
 								<CheckCircle class="w-6 h-6 text-green-600" />
 							</div>
-							<span class="text-gray-700 font-semibold">Proven track record</span>
+							<span class="text-gray-700 font-semibold">Proven track record of multiple-offer wins and top-dollar sales</span>
 						</li>
 						<li class="flex items-center gap-4 p-3 rounded-xl hover:bg-white/50 transition-colors">
 							<div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
 								<CheckCircle class="w-6 h-6 text-green-600" />
 							</div>
-							<span class="text-gray-700 font-semibold">Personalized service</span>
+							<span class="text-gray-700 font-semibold">Personalized service for buyers, sellers, investors, and relocation clients</span>
 						</li>
 						<li class="flex items-center gap-4 p-3 rounded-xl hover:bg-white/50 transition-colors">
 							<div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-xl flex items-center justify-center">
 								<CheckCircle class="w-6 h-6 text-green-600" />
 							</div>
-							<span class="text-gray-700 font-semibold">Free consultation</span>
+							<span class="text-gray-700 font-semibold">Complimentary, no-pressure consultation to explore your options</span>
+						</li>
+					</ul>
+				</div>
+
+				<!-- What to Expect When You Reach Out -->
+				<div class="bg-gradient-to-br from-white via-primary-50/10 to-white rounded-3xl shadow-xl p-8 border border-gray-200/60 backdrop-blur-sm">
+					<h3 class="font-display text-2xl font-bold mb-4 text-gray-900">What Happens After You Reach Out?</h3>
+					<p class="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+						When you contact me, you can expect a calm, structured process—not a sales pitch. I typically reply within a few business hours (often sooner), and our first conversation focuses on listening. We will talk through your timeline, budget range, communities of interest, and any non-negotiables such as school districts, commute times, or accessibility needs. From there, I outline next steps customized to your situation: a preliminary home search, a home-value estimate, a staging walkthrough, or a relocation planning call.
+					</p>
+					<p class="text-gray-700 leading-relaxed text-sm md:text-base">
+						You will leave that initial conversation with a clear sense of whether now is the right time to move, what preparation work (if any) is needed, and what to expect from me in terms of follow up. Many clients simply want a professional second opinion before making a big decision; you are always welcome to reach out even if you are still in the early “what if?” stage.
+					</p>
+				</div>
+
+				<!-- FAQs -->
+				<div class="bg-gradient-to-br from-white via-primary-50/15 to-white rounded-3xl shadow-xl p-8 border border-gray-200/60 backdrop-blur-sm">
+					<h3 class="font-display text-2xl font-bold mb-4 text-gray-900">Contact FAQs</h3>
+					<div class="space-y-4 text-sm md:text-base text-gray-700 leading-relaxed">
+						<div>
+							<h4 class="font-semibold text-gray-900 mb-1">Do I need to be ready to buy or sell right away to contact you?</h4>
+							<p>
+								No. Many of my best client relationships begin 6–18 months before a move. Early conversations give us time to organize financing, decluttering, repairs, or neighborhood research at a relaxed pace.
+							</p>
+						</div>
+						<div>
+							<h4 class="font-semibold text-gray-900 mb-1">Is there a fee for an initial consultation?</h4>
+							<p>
+								Initial consultations are complimentary. My goal is to provide clarity and value up front so you can decide if we are a good fit to work together.
+							</p>
+						</div>
+						<div>
+							<h4 class="font-semibold text-gray-900 mb-1">Can we meet via Zoom if I am out of state?</h4>
+							<p>
+								Yes. I frequently meet with clients via Zoom, FaceTime, or phone before they ever visit Las Vegas in person. We can review maps, listings, and market data together on screen.
+							</p>
+						</div>
+						<div>
+							<h4 class="font-semibold text-gray-900 mb-1">What information should I include in the contact form?</h4>
+							<p>
+								If possible, share your ideal timeframe, price range, preferred communities, and whether you need to sell before you buy. The more context you provide, the more tailored and useful my initial recommendations will be.
+							</p>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</div>
+	</div>
+</section>
+
+<!-- Who I Serve -->
+<section class="section bg-white">
+	<div class="container-premium max-w-5xl mx-auto">
+		<h2 class="font-display text-3xl md:text-4xl font-bold mb-6 text-gray-900 text-center">Who Typically Reaches Out to Dr. Janet Duffy?</h2>
+		<p class="text-lg text-gray-700 leading-relaxed mb-6">
+			People contact me at many different stages of life and business. Some are first-time buyers who have been renting in Las Vegas for years and want to understand what homeownership really looks like. Others are West Coast executives exploring a tax-friendly move, medical professionals interviewing with local hospitals, or families associated with Nellis and Creech who need reliable timelines and clear expectations. I also hear from long-time local homeowners who simply want an honest opinion about downsizing, investing in a second home, or helping adult children purchase their first property.
+		</p>
+		<p class="text-lg text-gray-700 leading-relaxed mb-6">
+			Investors and second-home buyers reach out with a different set of questions: cap rates, rent ceilings, HOA rental policies, and long-term appreciation prospects for specific communities. I welcome those conversations and can loop in trusted lenders or tax professionals when the discussion touches financing structures or 1031 exchanges. No matter which category you fall into, the throughline is the same—you want a calm, prepared professional who will handle the details and tell you the truth, even when that means recommending that you wait, adjust your plan, or explore a different neighborhood.
+		</p>
+		<p class="text-lg text-gray-700 leading-relaxed">
+			If you do not see your situation reflected on this list, that is okay. Use the form or call directly to describe what you are considering, and I will let you know how I can help—or introduce you to another specialist if that would serve you better.
+		</p>
+	</div>
+</section>
+
+<!-- Virtual & Out-of-State Support -->
+<section class="section bg-gray-50">
+	<div class="container-premium max-w-5xl mx-auto">
+		<h2 class="font-display text-3xl md:text-4xl font-bold mb-6 text-gray-900 text-center">How Do Virtual and Out-of-State Consultations Work?</h2>
+		<p class="text-lg text-gray-700 leading-relaxed mb-6">
+			Many of my clients begin their Las Vegas real estate journey from another city or state. If you are not local, we will schedule a Zoom or video call where I can share my screen, walk you through maps, show you driving distances, and pull up live listings or market stats in real time. You can invite spouses, parents, relocation reps, or financial advisors to join the call so everyone hears the same information and can ask questions on the spot.
+		</p>
+		<p class="text-lg text-gray-700 leading-relaxed mb-6">
+			After our initial virtual consultation, I typically create a personalized “Las Vegas orientation kit” for you. This may include neighborhood guides, video drives through communities that match your criteria, sample properties with notes about why they work or do not work, and a timeline laying out what needs to happen before your first in-person trip. When you are ready to visit, we can compress neighborhood tours, property showings, and lender meetings into a focused one- or two-day schedule so you use your travel time efficiently.
+		</p>
+		<p class="text-lg text-gray-700 leading-relaxed">
+			If you need to buy remotely, I provide detailed video tours, measure spaces on camera, listen for ambient noise, and point out both the highlights and the flaws of each property so you can make a fully informed decision from a distance.
+		</p>
+	</div>
+</section>
+
+<!-- Preparing for Our Conversation -->
+<section class="section bg-white">
+	<div class="container-premium max-w-5xl mx-auto">
+		<h2 class="font-display text-3xl md:text-4xl font-bold mb-6 text-gray-900 text-center">What Should You Prepare Before Our First Conversation?</h2>
+		<p class="text-lg text-gray-700 leading-relaxed mb-6">
+			You do not need a perfectly polished plan before you reach out, but a few details will help us move quickly. If you are buying, think about your comfortable monthly payment range, ideal move-in date, preferred areas or school zones, and any absolute must-haves such as single-story living, a pool, or multi-gen space. If you are selling, having a rough idea of your remaining loan balance, recent upgrades, and any known repairs can help us estimate net proceeds and timeline more accurately.
+		</p>
+		<p class="text-lg text-gray-700 leading-relaxed mb-6">
+			It can also be helpful to list your top three worries in advance—perhaps timing, affordability, or navigating an interstate move. When I know what is keeping you up at night, I can address those concerns directly and prioritize solutions that bring immediate relief. You are welcome to attach notes in the contact form or email them ahead of our call so I can review before we speak.
+		</p>
+		<p class="text-lg text-gray-700 leading-relaxed">
+			If you prefer to simply start with a conversation and figure things out together, that is perfectly fine as well. My role is to meet you where you are and move at a pace that feels comfortable and respectful.
+		</p>
+	</div>
+</section>
+
+<!-- Urgent Timelines -->
+<section class="section bg-gray-50">
+	<div class="container-premium max-w-5xl mx-auto">
+		<h2 class="font-display text-3xl md:text-4xl font-bold mb-6 text-gray-900 text-center">What If You Have an Urgent Timeline or Complex Situation?</h2>
+		<p class="text-lg text-gray-700 leading-relaxed mb-6">
+			Life does not always operate on a relaxed schedule. Sometimes you receive a job offer that requires a fast relocation, a deployment order with specific reporting dates, or a life event that makes your current home no longer practical. If you are on a tight timeline, please mention that in the subject line or opening line of your message so I know to prioritize your response. I will quickly outline what is realistic, which steps must happen immediately, and where we can build in flexibility.
+		</p>
+		<p class="text-lg text-gray-700 leading-relaxed mb-6">
+			For complex situations—such as selling an inherited property, coordinating with multiple decision makers, or balancing a 1031 exchange window—I work closely with attorneys, CPAs, and other professionals as needed. Clear communication and careful calendar planning become even more important in these scenarios, and I will make sure everyone involved understands their role and deadlines.
+		</p>
+		<p class="text-lg text-gray-700 leading-relaxed mb-2">
+			However straightforward or complicated your situation feels today, there is almost always a structured way forward. Reaching out is the first step toward clarity.
+		</p>
 	</div>
 </section>
