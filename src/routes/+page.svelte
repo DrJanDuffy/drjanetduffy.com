@@ -18,6 +18,24 @@
 		{ href: '#market-trends', label: 'Market Trends 2025' },
 		{ href: '#services-resources', label: 'Services & Resources' }
 	];
+
+	const searchLinks = [
+		// Views
+		{ href: '/listings-embedded', label: 'Grid View' },
+		{ href: '/listings-list', label: 'List View' },
+		{ href: '/past-sales', label: 'Past Sales' },
+		// Property types
+		{ href: '/property-types/single-family', label: 'Single Family' },
+		{ href: '/property-types/condos', label: 'Condos' },
+		{ href: '/property-types/townhomes', label: 'Townhomes' },
+		{ href: '/property-types/new-construction', label: 'New Construction' },
+		{ href: '/property-types/luxury-homes', label: 'Luxury Estates' },
+		{ href: '/property-types/gated-communities', label: 'Gated Communities' },
+		{ href: '/property-types/golf-communities', label: 'Golf Communities' },
+		{ href: '/property-types/55-plus-communities', label: '55+ Communities' },
+		{ href: '/property-types/foreclosures', label: 'Foreclosures' },
+		{ href: '/property-types/short-sales', label: 'Short Sales' }
+	];
 	
 	onMount(() => {
 		mounted = true;
@@ -245,6 +263,23 @@
 							</div>
 						</form>
 					{/if}
+				</div>
+
+				<!-- Quick links to views & property types -->
+				<div class="mt-6 bg-gray-50 border border-gray-100 rounded-2xl p-4 md:p-5">
+					<p class="text-xs sm:text-sm font-semibold text-gray-700 uppercase tracking-wide mb-3">
+						Browse by view or property type
+					</p>
+					<div class="flex flex-wrap gap-2">
+						{#each searchLinks as link}
+							<a
+								href={link.href}
+								class="px-3 py-1.5 rounded-full border border-gray-200 bg-white text-xs sm:text-sm text-gray-700 hover:text-primary-600 hover:border-primary-300 hover:bg-primary-50 transition-colors whitespace-nowrap"
+							>
+								{link.label}
+							</a>
+						{/each}
+					</div>
 				</div>
 			</div>
 
