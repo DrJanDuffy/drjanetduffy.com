@@ -315,7 +315,7 @@
 						View Available Land
 					</a>
 				</div>
-			</div>
+			</section>
 		</div>
 	</div>
 </section>

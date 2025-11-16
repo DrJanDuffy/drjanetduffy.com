@@ -101,8 +101,8 @@ export const seniorLivingJoy: PhotoItem[] = [
 
 export const drDuffyHeadshots: PhotoItem[] = [
 	{
-		src: '/images/dr-duffy/dr-janet-duffy-phone-hero.jpg',
-		alt: 'Dr. Janet Duffy smiling and holding a phone, ready to speak with a client',
+		src: '/svelte-welcome.png',
+		alt: 'Dr. Janet Duffy smiling and ready to speak with a client',
 		caption: 'Dr. Janet Duffy, Las Vegas Luxury & Relocation REALTOR®',
 		tagline: 'Direct, concierge-level guidance for your next Las Vegas move.'
 	}
