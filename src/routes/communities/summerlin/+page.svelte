@@ -176,9 +176,13 @@
 		<!-- Summerlin Villages -->
 		<div class="mb-16">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Which Summerlin Village Should You Choose?</h2>
-			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
-				Choose your Summerlin village based on budget, lifestyle, and priorities: The Paseos for affordability, Willows for families, Trails for outdoor enthusiasts, Canyons for views, and Ridges or Summit for luxury living. Each village offers unique character, amenities, and price points to match different lifestyles and budgets.
+			<p class="text-lg text-gray-700 mb-4 leading-relaxed max-w-4xl mx-auto text-center">
+				Choose your Summerlin village based on budget, lifestyle, and priorities: The Paseos for affordability, The Willows for families, The Trails for outdoor enthusiasts, The Canyons for views and golf, and The Ridges or The Summit for ultra-luxury living. Each village offers its own mix of price points, amenities, and HOA structures, so matching your daily routine to the right village is crucial.
 			</p>
+			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
+				I provide detailed tours of each village, showing you insider spots like the best walking trails, hidden pocket parks, and optimal streets for Red Rock and Strip views. During our tour days we discuss commute patterns, school options, and how each village feels at different times of day so you can confidently choose where to plant roots.
+			</p>
+
 			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
 				{#each villages as village}
 					<div class="bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-all">
@@ -200,7 +204,7 @@
 		<div class="mb-16">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Are Summerlin HOA Fees and Rules?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
-				Summerlin has two HOA layers: master association ($160/year) plus village fees ($150-$500/month), totaling $1,800-$6,000 annually, covering parks, trails, events, and some utilities. Understanding HOA structure, fees, and rules helps you make informed decisions about your Summerlin home purchase.
+				Summerlin has two HOA layers: a master association (currently $160/year) plus village-level HOA fees that typically range from $150–$500/month. Combined, that means most Summerlin homeowners invest roughly $1,800–$6,000 per year into the community, which covers trails, parks, events, and in some villages select utilities or landscaping. Understanding this structure—and the rules that come with it—is essential before you write an offer.
 			</p>
 			<div class="grid md:grid-cols-2 gap-8">
 				<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-8 shadow-lg border border-gray-100">

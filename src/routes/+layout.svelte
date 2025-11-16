@@ -3,6 +3,7 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import Navigation from '$lib/components/Navigation.svelte';
 	import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
+	import GlobalCTA from '$lib/components/GlobalCTA.svelte';
 	import { Facebook, Linkedin, Twitter } from 'lucide-svelte';
 
 	let { children } = $props();
@@ -35,6 +36,8 @@
 <main>
 	{@render children?.()}
 </main>
+
+<GlobalCTA />
 
 <footer class="bg-gray-900 text-white py-16 mt-16">
 	<div class="container mx-auto px-4">
