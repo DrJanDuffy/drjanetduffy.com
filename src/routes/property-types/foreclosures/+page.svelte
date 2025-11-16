@@ -1,15 +1,14 @@
-<script>
+<script lang="ts">
 	import { Home, AlertCircle, CheckCircle, DollarSign, TrendingUp, Key } from 'lucide-svelte';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
-	
-	let mounted = false;
-	
-	onMount(() => {
-		mounted = true;
-	});
-	
-	const benefits = [
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const benefits: string[] = [
 		'Below market prices',
 		'Investment opportunities',
 		'Potential for equity',
@@ -19,16 +18,59 @@
 		'Fixer-upper potential',
 		'Portfolio diversification'
 	];
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'benefits', label: 'Key Benefits' },
+		{ id: 'considerations', label: 'Important Considerations' },
+		{ id: 'properties', label: 'Available Foreclosures' },
+		{ id: 'cta', label: 'Work With Dr. Duffy' }
+	];
+
+	let mounted = false;
+
+	onMount(() => {
+		mounted = true;
+	});
 </script>
 
 <svelte:head>
-	<title>Foreclosure Properties | Las Vegas | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Browse foreclosure properties in Las Vegas. Below market prices and investment opportunities for qualified buyers." />
+	<title>Foreclosure Properties | Las Vegas Luxury &amp; Relocation REALTOR | Dr. Janet Duffy</title>
+	<meta name="description" content="Browse Las Vegas foreclosure properties with Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy. Find below-market homes and investment opportunities with expert guidance through complex transactions." />
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "CollectionPage",
+		"name": "Las Vegas Foreclosure Properties",
+		"description": "Foreclosure properties in Las Vegas offering below-market prices and investment potential.",
+		"url": "https://www.drjanetduffy.com/property-types/foreclosures"
+	}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-16">
+		<!-- On-page navigation -->
+		<nav
+			aria-label="Foreclosure properties page sections"
+			class="mb-10 rounded-full border border-gray-200 bg-white/80 backdrop-blur px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
+		<div class="text-center mb-16" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Find Foreclosure Properties for Sale in Las Vegas
 			</h1>
@@ -75,14 +117,14 @@
 		</div>
 
 		<!-- Benefits -->
-		<div class="mb-16">
+		<div class="mb-16" id="benefits">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Should You Consider Foreclosure Properties in Las Vegas?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Las Vegas foreclosure properties offer below-market prices, investment opportunities, potential for equity, quick purchase process, as-is condition, cash buyer preference, fixer-upper potential, and portfolio diversification that make them attractive to investors, cash buyers, and buyers seeking value opportunities with specialized expertise.
 			</p>
 		</div>
 
-		<div class="grid md:grid-cols-2 gap-12 mb-16">
+		<div class="grid md:grid-cols-2 gap-12 mb-16" id="considerations">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
 				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
 				<ul class="space-y-4">
@@ -130,7 +172,7 @@
 		</div>
 
 		<!-- Properties -->
-		<div class="mb-16">
+		<div class="mb-16" id="properties">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Foreclosure Properties Are Available in Las Vegas?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Las Vegas foreclosure properties include single-family homes, condos, and townhomes sold as-is at below-market prices. Properties require cash purchases or specialized financing and offer investment opportunities for qualified buyers seeking value and potential equity gains.
@@ -166,7 +208,7 @@
 		</div>
 
 		<!-- CTA Section -->
-		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
+		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white" id="cta">
 			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Explore Foreclosure Investment Opportunities in Las Vegas?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
 				I can help you navigate the foreclosure process and identify investment opportunities. With deep knowledge of Las Vegas foreclosure markets, distressed properties, and specialized transaction expertise, I'll guide you through every step of your foreclosure purchase journey.

@@ -1,15 +1,14 @@
-<script>
+<script lang="ts">
 	import { Home, AlertCircle, CheckCircle, DollarSign, TrendingUp, FileText } from 'lucide-svelte';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
-	
-	let mounted = false;
-	
-	onMount(() => {
-		mounted = true;
-	});
-	
-	const benefits = [
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const benefits: string[] = [
 		'Below market prices',
 		'Negotiated with lender',
 		'Potential savings',
@@ -19,16 +18,59 @@
 		'Lender approval required',
 		'Professional guidance needed'
 	];
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'benefits', label: 'Key Benefits' },
+		{ id: 'process', label: 'Short Sale Process' },
+		{ id: 'properties', label: 'Available Short Sales' },
+		{ id: 'cta', label: 'Work With Dr. Duffy' }
+	];
+
+	let mounted = false;
+
+	onMount(() => {
+		mounted = true;
+	});
 </script>
 
 <svelte:head>
-	<title>Short Sale Properties | Las Vegas | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Browse short sale properties in Las Vegas. Below market prices with lender approval, requiring specialized expertise to navigate." />
+	<title>Short Sale Properties | Las Vegas Luxury &amp; Relocation REALTOR | Dr. Janet Duffy</title>
+	<meta name="description" content="Browse Las Vegas short sale properties with Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy. Access below-market homes that require lender approval with expert guidance through complex negotiations." />
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "CollectionPage",
+		"name": "Las Vegas Short Sale Properties",
+		"description": "Short sale properties in Las Vegas sold below mortgage balance with lender approval.",
+		"url": "https://www.drjanetduffy.com/property-types/short-sales"
+	}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-16">
+		<!-- On-page navigation -->
+		<nav
+			aria-label="Short sale properties page sections"
+			class="mb-10 rounded-full border border-gray-200 bg-white/80 backdrop-blur px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
+		<div class="text-center mb-16" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Explore Short Sale Properties in Las Vegas
 			</h1>
@@ -75,14 +117,14 @@
 		</div>
 
 		<!-- Benefits -->
-		<div class="mb-16">
+		<div class="mb-16" id="benefits">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Should You Consider Short Sale Properties in Las Vegas?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Las Vegas short sale properties offer below-market prices, negotiated deals with lenders, potential savings, investment opportunities, less competition, longer timeline, lender approval requirements, and professional guidance needs that make them attractive to patient buyers and investors seeking value with specialized expertise.
 			</p>
 		</div>
 
-		<div class="grid md:grid-cols-2 gap-12 mb-16">
+		<div class="grid md:grid-cols-2 gap-12 mb-16" id="process">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
 				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
 				<ul class="space-y-4">
@@ -130,7 +172,7 @@
 		</div>
 
 		<!-- Properties -->
-		<div class="mb-16">
+		<div class="mb-16" id="properties">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Short Sale Properties Are Available in Las Vegas?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Las Vegas short sale properties include single-family homes, condos, and townhomes sold below mortgage balance with lender approval. Properties offer below-market prices but require longer timelines, lender approval, and specialized expertise to navigate the complex transaction process.
@@ -166,7 +208,7 @@
 		</div>
 
 		<!-- CTA Section -->
-		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
+		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white" id="cta">
 			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Explore Short Sale Opportunities in Las Vegas?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
 				I have extensive experience navigating short sales and can help you through the process. With deep knowledge of Las Vegas short sale markets, lender negotiations, and distressed property transactions, I'll guide you through every step of your short sale purchase journey.

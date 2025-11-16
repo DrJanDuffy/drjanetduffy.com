@@ -1,15 +1,14 @@
-<script>
+<script lang="ts">
 	import { Home, CheckCircle, DollarSign, Users, Key, Building2 } from 'lucide-svelte';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
-	
-	let mounted = false;
-	
-	onMount(() => {
-		mounted = true;
-	});
-	
-	const benefits = [
+
+	interface TocItem {
+		id: string;
+		label: string;
+	}
+
+	const benefits: string[] = [
 		'Low maintenance lifestyle',
 		'More space than condos',
 		'Private entrances',
@@ -19,16 +18,59 @@
 		'Investment potential',
 		'Prime locations'
 	];
+
+	const tocItems: TocItem[] = [
+		{ id: 'overview', label: 'Overview' },
+		{ id: 'benefits', label: 'Key Benefits' },
+		{ id: 'ideal-buyers', label: 'Ideal Buyers' },
+		{ id: 'properties', label: 'Available Townhomes' },
+		{ id: 'cta', label: 'Work With Dr. Duffy' }
+	];
+
+	let mounted = false;
+
+	onMount(() => {
+		mounted = true;
+	});
 </script>
 
 <svelte:head>
-	<title>Townhomes for Sale | Las Vegas | Dr. Janet Duffy REALTOR®</title>
-	<meta name="description" content="Browse townhomes for sale in Las Vegas. Low-maintenance living with more space than condos, perfect for families and first-time buyers." />
+	<title>Townhomes for Sale | Las Vegas Luxury &amp; Relocation REALTOR | Dr. Janet Duffy</title>
+	<meta name="description" content="Browse Las Vegas townhomes with Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy. Low-maintenance homes with more space than condos, ideal for families, first-time buyers, and investors." />
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "CollectionPage",
+		"name": "Las Vegas Townhomes for Sale",
+		"description": "Townhomes in Las Vegas offering low-maintenance living with more space than condos.",
+		"url": "https://www.drjanetduffy.com/property-types/townhomes"
+	}
+	</script>
 </svelte:head>
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<div class="text-center mb-16">
+		<!-- On-page navigation -->
+		<nav
+			aria-label="Townhomes page sections"
+			class="mb-10 rounded-full border border-gray-200 bg-white/80 backdrop-blur px-3 py-2 shadow-sm overflow-x-auto scrollbar-hide"
+		>
+			<ul class="flex items-center gap-2 text-sm whitespace-nowrap">
+				{#each tocItems as item}
+					<li>
+						<a
+							href={`#${item.id}`}
+							class="inline-flex items-center rounded-full px-3 py-1.5 text-gray-600 hover:text-primary-700 hover:bg-primary-50 transition-colors no-underline"
+						>
+							{item.label}
+						</a>
+					</li>
+				{/each}
+			</ul>
+		</nav>
+
+		<div class="text-center mb-16" id="overview">
 			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
 				Explore Townhomes for Sale in Las Vegas
 			</h1>
@@ -59,14 +101,14 @@
 		</div>
 
 		<!-- Benefits -->
-		<div class="mb-16">
+		<div class="mb-16" id="benefits">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Should You Choose a Townhome in Las Vegas?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Las Vegas townhomes offer low-maintenance lifestyle, more space than condos, private entrances, community amenities, affordable pricing, family-friendly features, investment potential, and prime locations that make them ideal for growing families, first-time buyers, and investors seeking the perfect balance between space and convenience.
 			</p>
 		</div>
 
-		<div class="grid md:grid-cols-2 gap-12 mb-16">
+		<div class="grid md:grid-cols-2 gap-12 mb-16" id="ideal-buyers">
 			<div class="bg-gradient-to-br from-white to-primary-50/30 rounded-2xl p-10 shadow-lg border border-gray-100">
 				<h3 class="text-2xl font-bold text-gray-900 mb-6">Key Benefits</h3>
 				<ul class="space-y-4">
@@ -114,7 +156,7 @@
 		</div>
 
 		<!-- Properties -->
-		<div class="mb-16">
+		<div class="mb-16" id="properties">
 			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Townhomes Are Available in Las Vegas?</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
 				Las Vegas townhomes include affordable starter homes, family-friendly residences, and upscale properties featuring low-maintenance living, private entrances, community amenities, and excellent value. Properties range from affordable townhomes to luxury residences in premier communities throughout the Las Vegas Valley.
@@ -150,7 +192,7 @@
 		</div>
 
 		<!-- CTA Section -->
-		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white">
+		<div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-12 text-center text-white" id="cta">
 			<h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Find Your Perfect Townhome in Las Vegas?</h2>
 			<p class="text-lg text-white text-opacity-90 mb-8 max-w-2xl mx-auto">
 				Let me help you find the perfect townhome in Las Vegas. With deep knowledge of Las Vegas townhome markets, communities, and investment opportunities, I'll guide you through every step of your home buying journey.

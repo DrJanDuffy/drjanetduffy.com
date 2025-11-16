@@ -119,8 +119,6 @@
 					</figure>
 				</div>
 			</div>
-		</div>
-	</div>
 
 			<!-- On-page navigation -->
 			<nav
