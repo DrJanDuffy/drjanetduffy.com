@@ -51,18 +51,30 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, MessageCircle } from 'lucide-s
 	</div>
 	
 	<div class="container-premium relative z-10">
-		<div class="text-center mb-16">
-			<div class="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-semibold mb-6">
-				<MessageCircle class="w-4 h-4" />
-				<span>Let's Connect</span>
+		<div class="grid lg:grid-cols-5 gap-10 items-center mb-16">
+			<div class="lg:col-span-3 text-center lg:text-left">
+				<div class="inline-flex items-center gap-2 px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-semibold mb-6">
+					<MessageCircle class="w-4 h-4" />
+					<span>Let's Connect</span>
+				</div>
+				<h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">
+					Contact Your Las Vegas Real Estate Expert Today
+				</h1>
+				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent lg:mx-0 mx-auto mb-6"></div>
+				<p class="text-xl text-gray-600 max-w-3xl mx-auto lg:mx-0 leading-relaxed">
+					Your questions, timelines, and goals deserve more than a portal contact form. This page is your direct line to a seasoned Las Vegas REALTOR® who will listen carefully, translate concerns into clear next steps, and protect your interests at every stage of the process. Whether you are exploring a possible move in the next year, preparing to list a luxury estate, relocating from another state, or simply wondering how today’s market affects your equity, reach out and we will build a plan together—no pressure, no scripts, just honest guidance tailored to you.
+				</p>
 			</div>
-			<h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">
-				Contact Your Las Vegas Real Estate Expert Today
-			</h1>
-			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
-			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-				Your questions, timelines, and goals deserve more than a portal contact form. This page is your direct line to a seasoned Las Vegas REALTOR® who will listen carefully, translate concerns into clear next steps, and protect your interests at every stage of the process. Whether you are exploring a possible move in the next year, preparing to list a luxury estate, relocating from another state, or simply wondering how today’s market affects your equity, reach out and we will build a plan together—no pressure, no scripts, just honest guidance tailored to you.
-			</p>
+			<div class="lg:col-span-2">
+				<figure class="overflow-hidden rounded-2xl shadow-xl border border-gray-100">
+					<img
+						src="/images/contact/dr-duffy-consultation.jpg"
+						alt="Dr. Janet Duffy meeting with clients in a modern Las Vegas office"
+						class="h-64 w-full object-cover md:h-80"
+						loading="lazy"
+					/>
+				</figure>
+			</div>
 		</div>
 		
 		<div class="grid-premium md:grid-cols-2 gap-8 lg:gap-12">

@@ -78,8 +78,18 @@
 			</p>
 		</div>
 
-		<!-- Hero Stats -->
-		<div class="grid md:grid-cols-4 gap-6 mb-16">
+		<!-- Hero Image + Stats -->
+		<div class="grid md:grid-cols-4 gap-6 mb-16 items-center">
+			<div class="md:col-span-2">
+				<figure class="overflow-hidden rounded-2xl shadow-xl border border-gray-100">
+					<img
+						src="/images/communities/skye-canyon-hero.jpg"
+						alt="Skye Canyon homes with mountain backdrop and community park"
+						class="h-64 w-full object-cover md:h-80"
+						loading="lazy"
+					/>
+				</figure>
+			</div>
 			<div class="bg-white rounded-xl p-6 shadow-lg text-center">
 				<div class="text-3xl font-bold text-primary-600 mb-2">{formatCurrency(skyeCanyon.priceRange.min)}</div>
 				<p class="text-gray-600 text-sm">Starting Price</p>

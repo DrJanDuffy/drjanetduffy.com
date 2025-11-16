@@ -44,7 +44,17 @@
 				developing community that still has room to grow.
 			</p>
 
-			<div class="grid md:grid-cols-2 gap-8 mb-10">
+			<div class="grid md:grid-cols-2 gap-8 mb-10 items-start">
+				<div class="hidden md:block">
+					<figure class="overflow-hidden rounded-2xl shadow-xl border border-gray-100">
+						<img
+							src="/images/communities/skye-canyon-investment.jpg"
+							alt="Aerial view of Skye Canyon homes, parks, and surrounding mountains"
+							class="h-64 w-full object-cover md:h-80"
+							loading="lazy"
+						/>
+					</figure>
+				</div>
 				<div
 					class="bg-white rounded-2xl shadow-lg border border-gray-100 p-8 flex flex-col justify-between"
 				>

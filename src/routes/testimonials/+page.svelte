@@ -72,13 +72,25 @@
 <section class="hero-section bg-gradient-to-b from-primary-50 to-white">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto py-12 md:py-16">
-			<div class="text-center mb-8">
-				<h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4">
-					What Our Las Vegas Real Estate Clients Say
-				</h1>
-				<p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-					Testimonials matter because they reveal what it actually feels like to buy or sell a home—not just the numbers on a closing statement. The stories below come from West Summerlin families, Henderson sellers, first-time buyers in North Las Vegas, and investors who trust me to protect both their time and their equity. As you read their experiences, imagine how you want your own real estate story to sound 90 days from now.
-				</p>
+			<div class="grid lg:grid-cols-5 gap-10 items-center mb-4">
+				<div class="lg:col-span-3 text-center lg:text-left">
+					<h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4">
+						What Our Las Vegas Real Estate Clients Say
+					</h1>
+					<p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto lg:mx-0 leading-relaxed">
+						Testimonials matter because they reveal what it actually feels like to buy or sell a home—not just the numbers on a closing statement. The stories below come from West Summerlin families, Henderson sellers, first-time buyers in North Las Vegas, and investors who trust me to protect both their time and their equity. As you read their experiences, imagine how you want your own real estate story to sound 90 days from now.
+					</p>
+				</div>
+				<div class="lg:col-span-2">
+					<figure class="overflow-hidden rounded-2xl shadow-xl border border-gray-100">
+						<img
+							src="/images/testimonials/happy-las-vegas-clients.jpg"
+							alt="Happy Las Vegas homebuyers standing in front of their new home"
+							class="h-64 w-full object-cover md:h-80"
+							loading="lazy"
+						/>
+					</figure>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -132,6 +144,17 @@
 				</p>
 			</div>
 
+			<!-- Why Reviews Matter -->
+			<div class="mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Why Do Client Reviews Matter When Choosing a Las Vegas REALTOR®?</h2>
+				<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto">
+					In a market as busy as Las Vegas, almost every agent can show you a highlight reel of just-sold properties. What really separates service levels is what happens in the quiet moments: the late-night phone call when inspection results arrive, the careful explanation of appraisal language, or the honest advice to walk away from a beautiful home that hides expensive problems. Client testimonials give you an unfiltered look at how those moments are handled when there is no camera rolling—whether clients felt rushed, ignored, or genuinely cared for.
+				</p>
+				<p class="text-lg text-gray-700 leading-relaxed max-w-5xl mx-auto">
+					When you read my reviews, you will see recurring themes: calm guidance in stressful situations, detailed communication, and a focus on protecting long-term equity rather than chasing quick closings. You will also notice that clients mention specific communities—Summerlin, Skye Canyon, Henderson, North Las Vegas—which shows how often we are talking about real, hyper-local tradeoffs instead of generic slogans. These stories can help you decide if my approach matches the level of advocacy and clarity you want for your own move.
+				</p>
+			</div>
+
 			<!-- Buyer Experience Section -->
 			<div class="mb-12">
 				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">How Do Las Vegas Homebuyers Describe Their Experience?</h2>
@@ -163,6 +186,73 @@
 				<p class="text-lg text-gray-700 leading-relaxed max-w-5xl mx-auto">
 					Relocation clients—from healthcare executives to military families—describe an experience anchored in logistics and empathy. They remember airport pickups, carefully planned “power weekends” with neighborhood tours and school visits, and clear explanations of how Las Vegas weather, commute patterns, and HOA structures differ from their previous markets. Reviews often note that stress levels dropped once there was a clear, written timeline covering everything from pre-approval to utility transfers.
 				</p>
+			</div>
+
+			<!-- Types of Clients Served -->
+			<div class="mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Types of Clients Leave These Reviews?</h2>
+				<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto">
+					The voices on this page represent a cross-section of the Las Vegas Valley. You will find first-time buyers purchasing townhomes in North Las Vegas, move-up families trading into larger Summerlin homes, retirees downsizing from two-story properties in Henderson, and professionals relocating for work at major hospitals, gaming companies, and technology firms. There are also investors building rental portfolios, military families navigating PCS timelines, and long-time locals repositioning their equity after life changes such as divorce or inheritance.
+				</p>
+				<p class="text-lg text-gray-700 leading-relaxed max-w-5xl mx-auto">
+					What they have in common is not a specific price range or property type, but a desire for thoughtful guidance rather than high-pressure sales tactics. Many clients say in their reviews that they felt comfortable asking “basic” questions, that potential risks were explained clearly, and that their unique constraints—childcare schedules, eldercare responsibilities, complex financing—were built into the plan from day one. If you recognize your own situation in any of these descriptions, there is a good chance my approach will fit you as well.
+				</p>
+			</div>
+
+			<!-- Themes in Testimonials -->
+			<div class="mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">What Common Themes Show Up Across Client Testimonials?</h2>
+				<div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-3 text-center md:text-left">Communication & Education</h3>
+						<p class="text-lg text-gray-700 leading-relaxed">
+							Many reviews mention frequent updates, quick responses, and clear explanations. Instead of hearing “don’t worry about it,” clients are walked through inspection results, appraisal language, and HOA documents in everyday terms. This emphasis on education helps reduce surprises and ensures that when you sign, you understand exactly what you are agreeing to—and why. Clients often say they felt more confident and less anxious because nothing was brushed aside or hidden.
+						</p>
+					</div>
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-3 text-center md:text-left">Strategy & Negotiation</h3>
+						<p class="text-lg text-gray-700 leading-relaxed">
+							Another recurring theme is strategic thinking. Buyers talk about carefully crafted offers that reflect each seller’s priorities; sellers describe pricing and marketing plans tuned to their specific neighborhood and price band. Both sides mention firm yet respectful negotiations that kept conversations productive instead of adversarial. Clients consistently report feeling that their interests were protected without burning bridges or jeopardizing the deal.
+						</p>
+					</div>
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-3 text-center md:text-left">Organization & Follow-Through</h3>
+						<p class="text-lg text-gray-700 leading-relaxed">
+							Testimonials also highlight organization: timelines mapped out in advance, reminders about key deadlines, and proactive coordination with lenders, inspectors, title companies, and HOAs. Several reviews describe situations where potential problems were spotted and resolved early because someone was paying close attention to details. Clients appreciate that they did not have to chase updates or wonder what was happening behind the scenes.
+						</p>
+					</div>
+					<div>
+						<h3 class="text-2xl font-bold text-gray-900 mb-3 text-center md:text-left">Care After Closing</h3>
+						<p class="text-lg text-gray-700 leading-relaxed">
+							Finally, many clients mention support that continues after closing day: introductions to contractors and landscapers, help understanding tax documents, or quick answers months later when HOA letters or refinance questions arrive. These details matter because real estate decisions do not end at the closing table. The ongoing relationship is part of why so much of my business now comes from repeat clients and personal referrals.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Testimonials FAQ -->
+			<div class="mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">Frequently Asked Questions About Client Reviews</h2>
+				<div class="max-w-5xl mx-auto space-y-6 text-gray-700 text-lg leading-relaxed">
+					<div>
+						<h3 class="text-xl font-semibold text-gray-900 mb-1">Are these testimonials from real Las Vegas clients?</h3>
+						<p>
+							Yes. The reviews on this page reflect real clients I have helped buy, sell, and invest across the Las Vegas Valley. Some began as Google or brokerage reviews; others were emails, thank-you notes, or survey responses shared with permission. Details such as names or identifying information may be slightly adjusted for privacy, but the experiences and outcomes are authentic.
+						</p>
+					</div>
+					<div>
+						<h3 class="text-xl font-semibold text-gray-900 mb-1">Can I speak with past clients before deciding to work with you?</h3>
+						<p>
+							In many cases, yes. Some clients are happy to serve as references for serious buyers and sellers who are considering working together. With their permission, I can connect you with people who have completed transactions similar to the one you are planning—such as relocating from out of state, selling and buying at the same time, or purchasing new construction in a master-planned community.
+						</p>
+					</div>
+					<div>
+						<h3 class="text-xl font-semibold text-gray-900 mb-1">What if my situation is more complicated than the stories I see here?</h3>
+						<p>
+							Many of the most complex transactions do not make it into public review platforms because clients value privacy. I frequently handle moves involving sensitive timing, health concerns, business ownership, or family dynamics that are best kept confidential. If your situation requires discretion, we can talk through the specifics in a private consultation and design a plan that respects both your goals and your need for privacy.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

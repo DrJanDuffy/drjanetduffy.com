@@ -178,6 +178,39 @@
 			</p>
 		</div>
 
+		<!-- Biggest Mistakes Section -->
+		<div class="max-w-4xl mx-auto mb-12 space-y-4">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">What Are the Biggest Mistakes Buyers and Sellers Make in Las Vegas?</h2>
+			<p class="text-lg text-gray-700 leading-relaxed">
+				Many first-time Las Vegas buyers make the mistake of focusing only on list price while overlooking HOA layers, property taxes, and long-term utility costs in our desert climate. Others rush into new construction without an advocate, assuming the builder’s sales office represents them, and later discover limitations on backyard use, rental rules, or view protections they did not fully understand. On the selling side, a common error is either over-pricing based on outdated headlines or under-pricing out of fear, instead of using fresh data for their specific micro-neighborhood.
+			</p>
+			<p class="text-lg text-gray-700 leading-relaxed">
+				Another frequent mistake is trying to time the market perfectly instead of aligning decisions with real-life milestones such as job changes, family needs, or health considerations. Buyers may sit on the sidelines waiting for a “perfect” interest rate while rents rise and suitable inventory passes by; sellers may delay listing until they feel completely ready, only to find that their preferred window for schools or relocation is compressed. Throughout this FAQ, I call out these decision points so you can move strategically rather than reactively—and so we can design a plan that respects both the numbers and your quality of life.
+			</p>
+		</div>
+
+		<!-- HOAs, Master Plans & Fees -->
+		<div class="max-w-4xl mx-auto mb-12 space-y-4">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">How Do HOAs, Master Plans, and Fees Work Together in Las Vegas?</h2>
+			<p class="text-lg text-gray-700 leading-relaxed">
+				Las Vegas is known for its master-planned communities—Summerlin, Skye Canyon, Green Valley, and others—where you may encounter more than one HOA layer. For example, a Summerlin property can be subject to a master association, a village association, and sometimes a sub-association if the neighborhood is gated or attached. Each layer can carry separate fees, rules, and architectural guidelines, which is why it is critical to review the full HOA stack rather than just the number on the listing.
+			</p>
+			<p class="text-lg text-gray-700 leading-relaxed">
+				As we evaluate homes, we look beyond monthly dues to understand what those fees actually cover: landscaping, pools, security, event programming, reserves, and special improvement districts. I walk you through CC&Rs, rules and regulations, and recent meeting minutes when available so we can spot red flags such as pending assessments or chronic maintenance issues. This page includes several HOA-related questions in the “Las Vegas-Specific Questions” and “Working With Me” sections, and during a consultation we can dig into documents for specific properties you are considering.
+			</p>
+		</div>
+
+		<!-- Out-of-State Buyers & Relocation -->
+		<div class="max-w-4xl mx-auto mb-12 space-y-4">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">What Should Out-of-State Buyers Know Before Moving to Las Vegas?</h2>
+			<p class="text-lg text-gray-700 leading-relaxed">
+				Out-of-state buyers often underestimate how different Las Vegas can feel from their current market. Our climate influences everything from roofing materials and landscaping choices to how you use outdoor spaces nine months of the year. Commute patterns revolve around major freeways like the 215, 95, and 15, with micro-differences in traffic depending on whether you work on or off the Strip. School districts, charter options, and private-school commutes can also shape which side of the valley makes the most sense for your family.
+			</p>
+			<p class="text-lg text-gray-700 leading-relaxed">
+				Before you commit to a specific neighborhood, I recommend a structured discovery process: map reviews, drive-time checks at your typical commute hours, and honest conversations about lifestyle priorities such as walkability, views, and access to hiking or golf. Many relocation clients use this FAQ as a starting point, then schedule a virtual consultation where we layer in current market data and community-specific pros and cons. The goal is not to sell you on Las Vegas, but to help you decide which version of Las Vegas fits you best—and whether buying now or renting first is the smarter move.
+			</p>
+		</div>
+
 		<div class="max-w-4xl mx-auto space-y-6">
 			{#each faqs as category, categoryIndex}
 				<div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">

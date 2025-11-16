@@ -219,22 +219,38 @@
 
 <section class="section bg-gradient-to-b from-white via-gray-50 to-white">
 	<div class="container-premium">
-		<!-- Header -->
-		<div class="text-center mb-12 sm:mb-16">
-			<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
-				Comprehensive Las Vegas Real Estate Services
-			</h1>
-			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
-			<p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-				Comprehensive real estate solutions tailored to your needs
-			</p>
+		<!-- Hero / Header -->
+		<div class="grid md:grid-cols-2 gap-10 lg:gap-16 items-center mb-12 sm:mb-16">
+			<div class="text-center md:text-left">
+				<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+					Comprehensive Las Vegas Real Estate Services
+				</h1>
+				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto md:mx-0 mb-6"></div>
+				<p class="text-xl text-gray-600 max-w-3xl mx-auto md:mx-0 leading-relaxed">
+					This page is your concierge-style menu of every way I can support your Las Vegas real estate goals. Instead of generic checklists, you will find clear explanations of how I represent buyers, protect sellers, advise investors, and guide relocation clients across Summerlin, Skye Canyon, Henderson, North Las Vegas, and beyond. Use the sections below to decide where to begin, then reach out so we can design a service plan around your timeline, comfort level, and next best step.
+				</p>
+			</div>
+			<div class="relative">
+				<img
+					src="/images/services/las-vegas-real-estate-services.jpg"
+					alt="Las Vegas real estate services consultation with city skyline in the background"
+					class="w-full h-64 md:h-80 object-cover rounded-2xl shadow-xl"
+					loading="lazy"
+				/>
+				<div class="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent rounded-2xl"></div>
+				<p class="absolute bottom-4 left-4 text-white text-sm font-medium">
+					Concierge-level real estate services across the Las Vegas Valley
+				</p>
+			</div>
 		</div>
 
 		<!-- Our Services Overview -->
 		<div class="mb-16">
-			<h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">What Comprehensive Real Estate Services Do We Offer?</h2>
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+				What Types of Real Estate Services Do You Offer in Las Vegas?
+			</h2>
 			<p class="text-lg text-gray-700 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
-				We offer comprehensive real estate services including buying services with expert guidance to find your perfect home, selling services to maximize your home's value, rental services to find perfect rental properties, and investment services with strategic real estate investment advice. Our services cover all aspects of Las Vegas real estate transactions.
+				I offer a full suite of services for Las Vegas homebuyers, sellers, investors, and relocation clients—from your first online search to closing and beyond. Below you will see how I support purchases, listings, luxury moves, rentals, commercial deals, and specialty situations such as divorce, military orders, and senior transitions. Each service can stand alone or be combined into a custom plan that fits your life, budget, and preferred pace.
 			</p>
 			<div class="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto">
 				<div class="card text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
@@ -269,6 +285,84 @@
 					<p class="text-gray-600 text-sm">Strategic real estate investment advice</p>
 				</div>
 			</div>
+		</div>
+
+		<!-- How Does My Concierge Real Estate Service Work? -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+				How Does My Concierge Las Vegas Real Estate Service Actually Work?
+			</h2>
+			<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-4xl mx-auto text-center">
+				Concierge service means you are never left to figure out the next step alone. From our first conversation, I map out the entire process for you—search, showings, offers, inspections, appraisals, repairs, and closing—so you always know what is happening and why. Instead of juggling multiple contacts, you work with one point person who coordinates lenders, inspectors, title, HOA, and contractors on your behalf.
+			</p>
+			<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-4xl mx-auto text-center">
+				Every client receives a customized communication plan based on their preference: weekly check-ins, same-day text updates on key milestones, or detailed email recaps that you can share with family or advisors. Behind the scenes, I am tracking deadlines, spotting potential issues early, and advocating for you in every conversation so that surprises are minimized and your stress level stays manageable from offer to closing.
+			</p>
+		</div>
+
+		<!-- Buyer & Relocation Services -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+				What Services Do You Offer Las Vegas Home Buyers and Relocation Clients?
+			</h2>
+			<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto text-center">
+				For buyers and relocation clients, I go far beyond opening doors and sending listings. We start with a strategy session to define your timeline, budget, must-haves, and non-negotiables such as schools, commute, or proximity to hospitals, bases, and corporate campuses. From there, I build a curated search that focuses on specific Las Vegas communities—Summerlin, Skye Canyon, Henderson, Green Valley, North Las Vegas, and more—along with neighborhood-level pros, cons, and appreciation trends.
+			</p>
+			<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto text-center">
+				When you are ready to tour, I plan efficient routes, provide printed or digital packets with community data, and point out details you might otherwise miss: HOA rules, builder quality differences, sun exposure, noise considerations, and future development plans. If you are buying from out of state, we can complete much of this process via video tours, screen-share map reviews, and secure e-signatures. Explore dedicated pages such as <a href="/services/buyer-representation" class="text-primary-600 font-semibold hover:underline">Buyer Representation</a>, <a href="/services/relocation" class="text-primary-600 font-semibold hover:underline">Relocation Services</a>, and <a href="/services/military-relocation" class="text-primary-600 font-semibold hover:underline">Military Relocation</a> to see exactly how I support your move.
+			</p>
+		</div>
+
+		<!-- Seller, Pricing & Marketing Services -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+				How Do You Help Las Vegas Home Sellers Maximize Their Results?
+			</h2>
+			<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto text-center">
+				For sellers, my focus is on protecting your equity while minimizing disruption to your daily life. We begin with a deep pricing consultation that includes recent comparable sales, absorption rates, buyer demand by price band, and any seasonal or event-driven trends that may affect timing. I then provide a prioritized prep plan—decluttering, staging, minor repairs, curb appeal—and connect you with trusted vendors if needed so you are not managing the process alone.
+			</p>
+			<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto text-center">
+				Once your home is ready, I deploy a tailored marketing strategy that can include professional photography, video, floor plans, social media campaigns, paid digital ads, and targeted outreach to buyers and agents most likely to be a match. During showings and negotiations, you receive honest feedback, clear explanations of each offer, and data-backed guidance on which terms will likely lead to a smooth closing. Visit <a href="/services/seller-representation" class="text-primary-600 font-semibold hover:underline">Seller Representation</a>, <a href="/services/pricing-strategy" class="text-primary-600 font-semibold hover:underline">Pricing Strategy</a>, and <a href="/services/digital-marketing" class="text-primary-600 font-semibold hover:underline">Digital Marketing</a> to dive deeper into these services.
+			</p>
+		</div>
+
+		<!-- Investment, Commercial & Property Management -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+				What Specialized Services Do You Provide for Investors and Commercial Clients?
+			</h2>
+			<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto text-center">
+				Investors and commercial clients need more than neighborhood descriptions—they need numbers and strategy. I help you evaluate cap rates, projected cash flow, tenant demand, vacancy risks, and exit options across residential rentals, small multifamily, and select commercial properties in the Las Vegas Valley. We review not only current performance but also future factors such as infrastructure projects, employer growth, and zoning considerations that could influence long-term value.
+			</p>
+			<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto text-center">
+				When it is time to purchase, sell, or reposition an asset, I coordinate with your CPA, attorney, and property manager so that your real estate decisions support your broader financial plan. For owners who prefer a more hands-off approach, I can connect you with vetted property management solutions and help set up reporting structures that keep you informed without burying you in day-to-day details. Learn more on <a href="/services/real-estate-investing" class="text-primary-600 font-semibold hover:underline">Real Estate Investing</a>, <a href="/services/commercial-real-estate" class="text-primary-600 font-semibold hover:underline">Commercial Real Estate</a>, and <a href="/services/property-management" class="text-primary-600 font-semibold hover:underline">Property Management</a>.
+			</p>
+		</div>
+
+		<!-- Senior, Military & Inclusive Services -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+				How Do You Support Seniors, Military Families, and Inclusive Real Estate Needs?
+			</h2>
+			<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto text-center">
+				Certain life stages and circumstances require extra care, patience, and discretion. For seniors and their families, I help evaluate downsizing options, accessibility needs, proximity to healthcare, and whether it makes more sense to sell, rent, or hold a long-time residence. For military families, I plan around PCS orders, tight timelines, and the realities of buying or selling from a distance, often coordinating everything from virtual tours to on-the-ground logistics while you are still out of state.
+			</p>
+			<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto text-center">
+				Above all, my practice is intentionally inclusive. I am committed to fair housing principles and to creating a welcoming, judgment-free environment for clients of every background, identity, and family structure. Whether you are navigating a divorce, co-buying with friends, purchasing as an investor couple, or exploring multi-generational living, you will receive the same level of respect, clarity, and advocacy. Explore <a href="/services/senior-housing" class="text-primary-600 font-semibold hover:underline">Senior Housing</a>, <a href="/services/military-relocation" class="text-primary-600 font-semibold hover:underline">Military Relocation</a>, and <a href="/services/inclusive-real-estate" class="text-primary-600 font-semibold hover:underline">Inclusive Real Estate</a> for more details.
+			</p>
+		</div>
+
+		<!-- Technology, Education & Negotiation -->
+		<div class="mb-16">
+			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-center">
+				How Do Technology, Education, and Negotiation Give You an Edge?
+			</h2>
+			<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto text-center">
+				Three pillars support every service I offer: smart technology, ongoing education, and strong negotiation. I use modern tools for search, digital signatures, document management, and market analysis so you spend less time chasing paperwork and more time making informed decisions. At the same time, I invest heavily in continuing education around contracts, lending changes, technology, and local regulations so that my guidance reflects the latest rules and opportunities in the Las Vegas market.
+			</p>
+			<p class="text-lg text-gray-700 mb-6 leading-relaxed max-w-5xl mx-auto text-center">
+				When it is time to negotiate, I combine data, experience, and emotional intelligence to advocate effectively while keeping the tone professional and solutions-focused. That might mean knowing when to push for repairs versus credits, how to position your offer in a multiple-offer situation, or how to keep a deal together when an appraisal, inspection, or timeline surprise appears. Pages such as <a href="/services/negotiation-expertise" class="text-primary-600 font-semibold hover:underline">Negotiation Expertise</a>, <a href="/services/real-estate-education" class="text-primary-600 font-semibold hover:underline">Real Estate Education</a>, and <a href="/services/smart-home-technology" class="text-primary-600 font-semibold hover:underline">Smart Home Technology</a> explain how these tools and skills show up in real transactions.
+			</p>
 		</div>
 		
 		<!-- Search Bar -->

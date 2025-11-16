@@ -56,12 +56,29 @@ const canonicalUrl = 'https://www.drjanetduffy.com/properties';
 
 <section class="section relative" style="background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);">
 	<div class="container-premium">
-		<div class="text-center mb-12">
-			<h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">Las Vegas Homes & Properties for Sale</h1>
-			<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-6"></div>
-			<p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-				Welcome to your command center for every actively marketed home, condo, townhome, and luxury estate across the Las Vegas Valley. Think of this page as both an MLS window and a concierge briefing: listings refresh in real time, while the guidance below translates raw data into actionable advice. Whether you are relocating from the coast, upsizing within Summerlin, investing in Skye Canyon, or shopping for a view property in MacDonald Highlands, you will find curated strategies, neighborhood breakdowns, financing updates, investor insights, and answers to the questions I hear most often in 2025. Bookmark it, return frequently, and share it with anyone partnering on your move.
-			</p>
+		<div class="grid lg:grid-cols-5 gap-10 items-center mb-12">
+			<div class="lg:col-span-3 text-center lg:text-left">
+				<h1
+					class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900"
+					style="letter-spacing: -0.03em;"
+				>
+					Las Vegas Homes &amp; Properties for Sale
+				</h1>
+				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent lg:mx-0 mx-auto mb-6"></div>
+				<p class="text-xl text-gray-600 max-w-4xl mx-auto lg:mx-0 leading-relaxed">
+					Welcome to your command center for every actively marketed home, condo, townhome, and luxury estate across the Las Vegas Valley. Think of this page as both an MLS window and a concierge briefing: listings refresh in real time, while the guidance below translates raw data into actionable advice. Whether you are relocating from the coast, upsizing within Summerlin, investing in Skye Canyon, or shopping for a view property in MacDonald Highlands, you will find curated strategies, neighborhood breakdowns, financing updates, investor insights, and answers to the questions I hear most often in 2025. Bookmark it, return frequently, and share it with anyone partnering on your move.
+				</p>
+			</div>
+			<div class="lg:col-span-2">
+				<figure class="overflow-hidden rounded-2xl shadow-xl border border-gray-100">
+					<img
+						src="/images/properties/las-vegas-homes-grid.jpg"
+						alt="A grid of Las Vegas homes with pools and desert landscaping"
+						class="h-64 w-full object-cover md:h-80"
+						loading="lazy"
+					/>
+				</figure>
+			</div>
 		</div>
 
 		<div class="mb-12 text-center">
