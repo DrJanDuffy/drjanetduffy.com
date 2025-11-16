@@ -48,8 +48,8 @@
 </script>
 
 <svelte:head>
-	<title>Dr. Janet Duffy | Las Vegas Real Estate Expert | REALTOR®</title>
-	<meta name="description" content="Find your dream home in Las Vegas with Dr. Janet Duffy, a trusted REALTOR® with 15+ years of experience. Browse properties, get home valuations, and expert real estate guidance." />
+	<title>Las Vegas Luxury &amp; Relocation REALTOR | Dr. Janet Duffy</title>
+	<meta name="description" content="Las Vegas Luxury & Relocation REALTOR helping executives, medical professionals, military families, and investors buy and sell homes with concierge-level service across Summerlin, Skye Canyon, Henderson, and the greater Las Vegas Valley." />
 	<meta name="keywords" content="Las Vegas real estate, Summerlin homes, Skye Canyon real estate, Centennial Hills, North Las Vegas, Henderson, real estate agent, REALTOR, home buying, home selling, property search" />
 	<meta name="author" content="Dr. Janet Duffy" />
 	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -61,16 +61,16 @@
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://www.drjanetduffy.com/" />
-	<meta property="og:title" content="Dr. Janet Duffy | Las Vegas Real Estate Expert | REALTOR®" />
-	<meta property="og:description" content="Find your dream home in Las Vegas with Dr. Janet Duffy, a trusted REALTOR® with 15+ years of experience. Browse properties, get home valuations, and expert real estate guidance." />
-	<meta property="og:site_name" content="Homes by Dr. Duffy" />
+	<meta property="og:title" content="Las Vegas Luxury &amp; Relocation REALTOR | Dr. Janet Duffy" />
+	<meta property="og:description" content="Las Vegas Luxury & Relocation REALTOR providing concierge-level real estate services for buyers, sellers, and relocating families across the Las Vegas Valley." />
+	<meta property="og:site_name" content="Las Vegas Luxury & Relocation REALTOR" />
 	<meta property="og:locale" content="en_US" />
 	
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:url" content="https://www.drjanetduffy.com/" />
-	<meta name="twitter:title" content="Dr. Janet Duffy | Las Vegas Real Estate Expert | REALTOR®" />
-	<meta name="twitter:description" content="Find your dream home in Las Vegas with Dr. Janet Duffy, a trusted REALTOR® with 15+ years of experience." />
+	<meta name="twitter:title" content="Las Vegas Luxury &amp; Relocation REALTOR | Dr. Janet Duffy" />
+	<meta name="twitter:description" content="Las Vegas Luxury & Relocation REALTOR offering calm, strategic guidance for Las Vegas buyers, sellers, and relocation clients." />
 	
 	<!-- Structured Data - Organization -->
 	<script type="application/ld+json">
@@ -136,8 +136,8 @@
 	{
 		"@context": "https://schema.org",
 		"@type": "WebSite",
-		"name": "Homes by Dr. Duffy",
-		"alternateName": "Dr. Janet Duffy Real Estate",
+		"name": "Las Vegas Luxury & Relocation REALTOR",
+		"alternateName": "Las Vegas Luxury & Relocation | Dr. Janet Duffy REALTOR®",
 		"url": "https://www.drjanetduffy.com",
 		"description": "Las Vegas real estate expert specializing in Summerlin, Skye Canyon, Centennial Hills, and North Las Vegas",
 		"publisher": {
