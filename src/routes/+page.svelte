@@ -319,69 +319,61 @@
 	}
 </style>
 
-<!-- Hero Section with Search -->
-<section class="hero-section bg-gradient-to-b from-gray-50 to-white">
-	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="max-w-7xl mx-auto py-10 md:py-16">
-			<!-- Trust Indicators Bar -->
-			<div class="mb-8 bg-white rounded-xl shadow-md p-4 md:p-6 border border-gray-200">
-				<div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-					<div>
-						<div class="text-2xl md:text-3xl font-bold text-primary-600 mb-1">15+</div>
-						<div class="text-xs md:text-sm text-gray-600">Years Experience</div>
-					</div>
-					<div>
-						<div class="text-2xl md:text-3xl font-bold text-primary-600 mb-1">CRS</div>
-						<div class="text-xs md:text-sm text-gray-600">Certified Specialist</div>
-					</div>
-					<div>
-						<div class="text-2xl md:text-3xl font-bold text-primary-600 mb-1">ABR</div>
-						<div class="text-xs md:text-sm text-gray-600">Buyer Representative</div>
-					</div>
-					<div>
-						<div class="text-2xl md:text-3xl font-bold text-primary-600 mb-1">GRI</div>
-						<div class="text-xs md:text-sm text-gray-600">Graduate REALTOR</div>
-					</div>
-				</div>
+<!-- Hero Section - Full Width with Image Overlay -->
+<section class="relative min-h-[600px] md:min-h-[700px] flex items-center justify-center overflow-hidden">
+	<!-- Background Image with Overlay -->
+	<div class="absolute inset-0 bg-gradient-to-tr from-primary-700 via-primary-800 to-primary-900">
+		<div class="absolute inset-0 bg-black/40"></div>
+		<!-- Placeholder for hero image - can be replaced with actual image -->
+		<div class="absolute inset-0 bg-gradient-to-br from-primary-600/20 via-primary-700/30 to-primary-900/40"></div>
+	</div>
+	
+	<!-- Content -->
+	<div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+		<div class="max-w-4xl mx-auto">
+			<h1 class="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-white mb-6">
+				The Las Vegas Real Estate <span class="text-gold-400" style="font-family: 'Playfair Display', serif; font-style: italic;">Experts</span>
+			</h1>
+			<p class="text-xl sm:text-2xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+				Your dedicated Las Vegas real estate professional providing comprehensive, personalized service across the valley's most desirable communities.
+			</p>
+			<div class="flex flex-col sm:flex-row gap-4 justify-center">
+				<a href="/get-started" class="inline-flex items-center justify-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-white font-bold text-lg rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+					Get Started
+				</a>
+				<a href="/contact" class="inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white text-white font-bold text-lg rounded-lg hover:bg-white/20 transition-all duration-300">
+					Schedule a Consultation
+				</a>
 			</div>
+		</div>
+	</div>
+</section>
 
-			<div class="grid gap-10 lg:gap-14 md:grid-cols-2 items-center mb-10">
-				<div class="text-center md:text-left">
-					<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4 md:mb-5">
-						Las Vegas Luxury &amp; Relocation REALTOR® for Summerlin, Skye Canyon &amp; Beyond
-					</h1>
-					<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto md:mx-0 mb-5"></div>
-					<p class="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto md:mx-0 leading-relaxed mb-6">
-						Your dedicated Las Vegas real estate professional providing comprehensive, personalized service across the valley's most desirable communities. Serving Summerlin, Skye Canyon, Centennial Hills, Henderson, and North Las Vegas, Dr. Janet Duffy Real Estate functions like a personal concierge desk: I book private showings, coordinate vendor access, analyze multiple offers, and keep you informed with real-time market intelligence so you never wonder what comes next. From managing pool inspections and solar transfers to translating HOA bylaws and master-plan design guidelines, every logistical detail is handled with calm precision. Let me introduce you to neighborhoods locals love, unlock builder incentives that rarely appear online, and negotiate with the confidence that only 15+ years of desert market experience can provide.
-					</p>
-					<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-4">
-						<a href="/contact" class="btn-primary">
-							Schedule a Consultation
-						</a>
-						<a href="/properties" class="btn-secondary">
-							Browse Las Vegas Homes
-						</a>
-					</div>
-					<div class="flex items-center justify-center md:justify-start gap-2 text-sm text-gray-600 mb-4">
-						<a href="tel:+17027667668" class="font-semibold text-primary-600 hover:underline">(702) 766-7668</a>
-						<span class="text-gray-400">•</span>
-						<span>Available 7 Days a Week</span>
-					</div>
-					<p class="mt-3 text-sm sm:text-base text-gray-600">
-						Not sure where to begin? Visit the <a href="/get-started" class="text-primary-600 font-semibold hover:underline">Get Started hub</a> to see buyer, seller, investor, and relocation tools in one place.
-					</p>
+<!-- Trust Indicators Bar -->
+<section class="bg-white border-b border-gray-200">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-7xl mx-auto py-6">
+			<div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+				<div>
+					<div class="text-3xl md:text-4xl font-bold text-primary-700 mb-1">15+</div>
+					<div class="text-sm text-gray-600">Years Experience</div>
 				</div>
-				<div class="relative">
-					<div class="rounded-2xl shadow-xl overflow-hidden bg-white border border-gray-100 h-64 md:h-80">
-						<!-- Placeholder hero imagery container -->
-						<div class="w-full h-full bg-gradient-to-tr from-primary-100 via-vegas-gold-100 to-white flex items-center justify-center">
-							<p class="text-center text-gray-600 px-6 text-sm sm:text-base">
-								Visual hero area showcasing Las Vegas neighborhoods, luxury homes, and concierge-level service.
-							</p>
-						</div>
-					</div>
+				<div>
+					<div class="text-3xl md:text-4xl font-bold text-primary-700 mb-1">CRS</div>
+					<div class="text-sm text-gray-600">Certified Specialist</div>
+				</div>
+				<div>
+					<div class="text-3xl md:text-4xl font-bold text-primary-700 mb-1">ABR</div>
+					<div class="text-sm text-gray-600">Buyer Representative</div>
+				</div>
+				<div>
+					<div class="text-3xl md:text-4xl font-bold text-primary-700 mb-1">GRI</div>
+					<div class="text-sm text-gray-600">Graduate REALTOR</div>
 				</div>
 			</div>
+		</div>
+	</div>
+</section>
 
 			<!-- Property Search Form -->
 		<div class="max-w-5xl mx-auto">
@@ -436,6 +428,310 @@
 					{/each}
 				</div>
 			</nav>
+		</div>
+	</div>
+</section>
+
+<!-- Family-Owned & Operated Section -->
+<section class="bg-white py-16 md:py-24">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-7xl mx-auto">
+			<div class="grid md:grid-cols-2 gap-12 items-center">
+				<div>
+					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-6">
+						<Home class="w-8 h-8 text-primary-700" />
+					</div>
+					<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Family-Owned &amp; Operated</h2>
+					<p class="text-lg text-gray-700 leading-relaxed mb-6">
+						Since 2010, Dr. Janet Duffy has been dedicated to ensuring that integrity and excellence are at the forefront of every real estate transaction. With over 15 years of experience in the Las Vegas market, we bring unparalleled expertise to help you achieve your real estate goals.
+					</p>
+					<p class="text-lg text-gray-700 leading-relaxed">
+						Our mission is to use our expertise to make every client's real estate investment an excellent and profitable endeavor, whether you're buying your first home, selling a luxury estate, or building an investment portfolio.
+					</p>
+				</div>
+				<div class="relative">
+					<div class="rounded-2xl overflow-hidden shadow-2xl">
+						<img
+							src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&h=600&fit=crop"
+							alt="Dr. Janet Duffy and team members in professional setting"
+							class="w-full h-auto object-cover"
+							loading="lazy"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Build Wealth Section -->
+<section class="relative bg-gradient-to-r from-primary-800 via-primary-700 to-primary-900 py-16 md:py-24 overflow-hidden">
+	<div class="absolute inset-0 opacity-10">
+		<div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=600&fit=crop'); background-size: cover; background-position: center;"></div>
+	</div>
+	<div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-7xl mx-auto">
+			<div class="grid md:grid-cols-2 gap-12 items-center">
+				<div>
+					<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+						Build Wealth with <span class="text-gold-400" style="font-family: 'Playfair Display', serif; font-style: italic;">Dr. Janet Duffy</span>
+					</h2>
+					<p class="text-xl text-white/90 leading-relaxed">
+						Our Las Vegas real estate philosophy prioritizes a comprehensive approach, ensuring our clients benefit from the highest possible returns. Whether you're buying your first home, selling a luxury estate, or building an investment portfolio, we provide expert guidance to maximize your investment potential.
+					</p>
+				</div>
+				<div class="relative">
+					<div class="rounded-2xl overflow-hidden shadow-2xl">
+						<img
+							src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop"
+							alt="Modern Las Vegas homes and neighborhoods"
+							class="w-full h-auto object-cover"
+							loading="lazy"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Why Choose Section -->
+<section class="bg-white py-16 md:py-24 relative">
+	<div class="absolute inset-0 opacity-5">
+		<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+			<Award class="w-96 h-96 text-primary-600" />
+		</div>
+	</div>
+	<div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-7xl mx-auto text-center">
+			<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Why Choose Dr. Janet Duffy?</h2>
+			<p class="text-lg text-gray-700 max-w-3xl mx-auto mb-12 leading-relaxed">
+				Your real estate investment deserves the best care, guidance, and expertise. As a leading Las Vegas REALTOR®, let Dr. Janet Duffy be your guide to protect your investment and empower you to achieve your goals.
+			</p>
+			<div class="grid md:grid-cols-3 gap-8 mb-12">
+				<div class="text-center">
+					<div class="inline-flex items-center justify-center w-20 h-20 bg-primary-100 rounded-full mb-6">
+						<DollarSign class="w-10 h-10 text-primary-700" />
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Time Savings</h3>
+					<p class="text-gray-700 leading-relaxed">
+						We handle property searches, market analysis, negotiations, and all transaction details so you can focus on what matters most to you.
+					</p>
+				</div>
+				<div class="text-center">
+					<div class="inline-flex items-center justify-center w-20 h-20 bg-primary-100 rounded-full mb-6">
+						<Award class="w-10 h-10 text-primary-700" />
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Risk Reduction</h3>
+					<p class="text-gray-700 leading-relaxed">
+						Real estate transactions can be complex. With our expertise, you'll never have to worry about keeping up with regulations—we handle it for you.
+					</p>
+				</div>
+				<div class="text-center">
+					<div class="inline-flex items-center justify-center w-20 h-20 bg-primary-100 rounded-full mb-6">
+						<Star class="w-10 h-10 text-primary-700" />
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-4">Performance Driven</h3>
+					<p class="text-gray-700 leading-relaxed">
+						Our success is tied directly to yours. We're committed to acting in your best interest and achieving exceptional results.
+					</p>
+				</div>
+			</div>
+			<a href="/about" class="inline-flex items-center justify-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-white font-bold text-lg rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+				Learn More
+			</a>
+		</div>
+	</div>
+</section>
+
+<!-- Services Section - Split Layout -->
+<section class="bg-white py-16 md:py-24">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-7xl mx-auto">
+			<!-- Acquisitions & Sales -->
+			<div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+				<div class="relative order-2 md:order-1">
+					<div class="rounded-2xl overflow-hidden shadow-2xl">
+						<img
+							src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop"
+							alt="Happy family with house keys in front of Las Vegas home"
+							class="w-full h-auto object-cover"
+							loading="lazy"
+						/>
+					</div>
+				</div>
+				<div class="order-1 md:order-2 relative">
+					<div class="absolute -right-8 -top-8 opacity-10">
+						<Home class="w-48 h-48 text-primary-600" />
+					</div>
+					<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Acquisitions &amp; Sales</h2>
+					<p class="text-lg text-gray-700 leading-relaxed mb-6">
+						Buying or selling a home in Las Vegas can be complicated. We're here to help you navigate the entire process, from finding the perfect property to closing the deal. Our team will assist in building your specific criteria and guide you through every step of the acquisition or sale process.
+					</p>
+					<a href="/properties" class="inline-flex items-center justify-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg transition-colors">
+						Learn More
+					</a>
+				</div>
+			</div>
+			
+			<!-- Full-Service Real Estate -->
+			<div class="relative bg-gradient-to-r from-primary-800 via-primary-700 to-primary-900 rounded-3xl p-12 md:p-16 overflow-hidden">
+				<div class="absolute inset-0 opacity-10">
+					<div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=600&fit=crop'); background-size: cover; background-position: center;"></div>
+				</div>
+				<div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+					<div>
+						<h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Full-Service Real Estate</h2>
+						<p class="text-xl text-white/90 leading-relaxed mb-6">
+							From property search to closing and beyond, we take the burden of real estate transactions off your hands so you can spend more time focusing on your goals. Our comprehensive service includes market analysis, negotiation, transaction management, and ongoing support.
+						</p>
+						<a href="/services" class="inline-flex items-center justify-center px-6 py-3 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-lg transition-colors">
+							Learn More
+						</a>
+					</div>
+					<div class="relative">
+						<div class="rounded-2xl overflow-hidden shadow-2xl">
+							<img
+								src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop"
+								alt="Modern Las Vegas suburban homes with green lawns"
+								class="w-full h-auto object-cover"
+								loading="lazy"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Where We Serve Section -->
+<section class="bg-white py-16 md:py-24 relative">
+	<div class="absolute inset-0 opacity-5">
+		<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+			<MapPin class="w-96 h-96 text-primary-600" />
+		</div>
+	</div>
+	<div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-7xl mx-auto text-center">
+			<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+				Where We <span class="text-gold-500" style="font-family: 'Playfair Display', serif; font-style: italic;">Serve</span>
+			</h2>
+			<p class="text-lg text-gray-700 max-w-3xl mx-auto mb-12 leading-relaxed">
+				Dr. Janet Duffy proudly serves clients across all of Las Vegas, providing expert real estate solutions tailored to each community's unique needs. With over 15 years of experience, we help property owners and buyers maximize their investments while ensuring a seamless experience.
+			</p>
+			<div class="grid md:grid-cols-2 gap-8 mb-12">
+				<div class="bg-gray-50 rounded-2xl p-8">
+					<div class="aspect-video bg-primary-100 rounded-lg mb-4 flex items-center justify-center">
+						<MapPin class="w-24 h-24 text-primary-600" />
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-2">Las Vegas Valley</h3>
+					<p class="text-gray-700">Serving all communities across the greater Las Vegas metropolitan area</p>
+				</div>
+				<div class="bg-gray-50 rounded-2xl p-8">
+					<div class="aspect-video bg-primary-100 rounded-lg mb-4 flex items-center justify-center">
+						<MapPin class="w-24 h-24 text-primary-600" />
+					</div>
+					<h3 class="text-2xl font-bold text-gray-900 mb-2">Premium Communities</h3>
+					<p class="text-gray-700">Specializing in Summerlin, Skye Canyon, Henderson, and North Las Vegas</p>
+				</div>
+			</div>
+			<a href="/neighborhoods" class="inline-flex items-center justify-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-semibold rounded-lg transition-colors">
+				Learn More
+			</a>
+		</div>
+	</div>
+</section>
+
+<!-- Experience Excellence Section -->
+<section class="bg-white py-16 md:py-24">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-7xl mx-auto">
+			<div class="grid md:grid-cols-2 gap-12 items-start mb-16">
+				<div class="flex items-center justify-center">
+					<div class="w-48 h-48 bg-gradient-to-br from-primary-600 to-primary-800 rounded-full flex items-center justify-center shadow-2xl">
+						<div class="text-center text-white">
+							<div class="text-3xl font-bold mb-2">BEST OF</div>
+							<div class="text-2xl font-bold mb-2">LAS VEGAS</div>
+							<div class="text-xl">2024</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+						Experience Excellence. <span class="text-gold-500" style="font-family: 'Playfair Display', serif; font-style: italic;">Since 2010</span>
+					</h2>
+					<p class="text-lg text-gray-700 leading-relaxed mb-6">
+						With a legacy of personal investment in Las Vegas real estate dating back to 2010, Dr. Janet Duffy brings unparalleled expertise to help you achieve real estate success. Our commitment to excellence has earned recognition as one of Las Vegas's top real estate professionals.
+					</p>
+				</div>
+			</div>
+			
+			<!-- Testimonials Grid -->
+			<div class="grid md:grid-cols-3 gap-8 mb-12">
+				<div class="bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
+					<div class="flex items-center gap-1 mb-4">
+						{#each Array(5) as _}
+							<Star class="w-5 h-5 fill-gold-400 text-gold-400" />
+						{/each}
+					</div>
+					<p class="text-gray-700 mb-4 leading-relaxed">
+						"Dr. Janet Duffy made our relocation to Las Vegas seamless. Her knowledge of the Summerlin area and attention to detail throughout the entire process was exceptional."
+					</p>
+					<div class="flex items-center gap-2">
+						<div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
+							<span class="text-primary-700 font-bold">SM</span>
+						</div>
+						<div>
+							<div class="font-semibold text-gray-900">Sarah M.</div>
+							<div class="text-sm text-gray-600">Google Review</div>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
+					<div class="flex items-center gap-1 mb-4">
+						{#each Array(5) as _}
+							<Star class="w-5 h-5 fill-gold-400 text-gold-400" />
+						{/each}
+					</div>
+					<p class="text-gray-700 mb-4 leading-relaxed">
+						"Working with Dr. Duffy was an amazing experience. Her knowledge and guidance throughout the process were invaluable, helping me confidently navigate each step."
+					</p>
+					<div class="flex items-center gap-2">
+						<div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
+							<span class="text-primary-700 font-bold">NB</span>
+						</div>
+						<div>
+							<div class="font-semibold text-gray-900">Nathaniel B.</div>
+							<div class="text-sm text-gray-600">Google Review</div>
+						</div>
+					</div>
+				</div>
+				<div class="bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
+					<div class="flex items-center gap-1 mb-4">
+						{#each Array(5) as _}
+							<Star class="w-5 h-5 fill-gold-400 text-gold-400" />
+						{/each}
+					</div>
+					<p class="text-gray-700 mb-4 leading-relaxed">
+						"I've worked with Dr. Duffy for many years. She is trustworthy and gets the job done. She does it all and does it well. Highly recommend!"
+					</p>
+					<div class="flex items-center gap-2">
+						<div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center">
+							<span class="text-primary-700 font-bold">LL</span>
+						</div>
+						<div>
+							<div class="font-semibold text-gray-900">Liam L.</div>
+							<div class="text-sm text-gray-600">Google Review</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-center">
+				<a href="/testimonials" class="inline-flex items-center justify-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-white font-bold text-lg rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
+					Read More
+				</a>
+			</div>
 		</div>
 	</div>
 </section>
@@ -863,21 +1159,25 @@
 	</div>
 </section>
 
-<!-- CTA Section -->
-<section class="section bg-white">
-	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="max-w-4xl mx-auto text-center">
-			<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Explore Summerlin, Skye Canyon, Centennial Hills, or North Las Vegas?</h2>
-			<p class="text-lg text-gray-700 mb-8 leading-relaxed">
-				I'll provide personalized neighborhood tours and handle every detail of your transaction. From coordinating pool inspections to managing HOA documents across multiple master-planned communities, Dr. Janet Duffy ensures your Vegas home buying or selling experience is seamless. With 15+ years of Las Vegas real estate experience, deep knowledge of every HOA, every builder, and every neighborhood intimately, I'll help you find your perfect home in Summerlin, Skye Canyon, Centennial Hills, or North Las Vegas.
-			</p>
-			<p class="text-lg text-gray-700 mb-8 leading-relaxed">
-				Whether you are moving across town, across the country, or upgrading an investment portfolio, you deserve a trusted ally who understands both the emotional and financial stakes. I am ready to listen, strategize, and execute with the professionalism you expect from a concierge advisor. Let’s schedule a consultation, align on goals, and build the exact roadmap that leads you home.
-			</p>
-			<div class="flex flex-col sm:flex-row gap-4 justify-center">
-				<a href="/contact" class="btn-primary">Schedule a Consultation</a>
-				<a href="/home-value" class="btn-secondary">Get a Home Valuation</a>
+<!-- Start Investing CTA Section -->
+<section class="relative bg-gradient-to-r from-primary-800 via-primary-700 to-primary-900 py-20 md:py-28 overflow-hidden">
+	<div class="absolute inset-0 opacity-10">
+		<div class="absolute inset-0" style="background-image: url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1200&h=600&fit=crop'); background-size: cover; background-position: center;"></div>
+	</div>
+	<div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+		<div class="max-w-4xl mx-auto">
+			<div class="inline-flex items-center justify-center w-16 h-16 bg-gold-500 rounded-full mb-6">
+				<Home class="w-8 h-8 text-white" />
 			</div>
+			<h2 class="text-4xl md:text-6xl font-bold text-white mb-6">
+				Start <span class="text-gold-400" style="font-family: 'Playfair Display', serif; font-style: italic;">Investing</span> with Dr. Janet Duffy
+			</h2>
+			<p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+				Ready to take the next step? Contact us today to secure the future of your real estate investment and maximize its potential.
+			</p>
+			<a href="/contact" class="inline-flex items-center justify-center px-10 py-5 bg-gold-500 hover:bg-gold-600 text-white font-bold text-xl rounded-lg shadow-2xl hover:shadow-gold-500/50 transition-all duration-300 hover:scale-105">
+				Contact Us Today
+			</a>
 		</div>
 	</div>
 </section>

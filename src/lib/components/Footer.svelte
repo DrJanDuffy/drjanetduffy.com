@@ -3,6 +3,28 @@
 	
 	const currentYear = new Date().getFullYear();
 	
+	let newsletterEmail = '';
+	let newsletterSubmitted = false;
+	let newsletterError = false;
+	
+	function handleNewsletterSubmit() {
+		if (!newsletterEmail || !newsletterEmail.includes('@')) {
+			newsletterError = true;
+			return;
+		}
+		
+		// In a real implementation, this would send to your email service
+		// For now, we'll just show a success message
+		newsletterSubmitted = true;
+		newsletterError = false;
+		newsletterEmail = '';
+		
+		// Reset success message after 5 seconds
+		setTimeout(() => {
+			newsletterSubmitted = false;
+		}, 5000);
+	}
+	
 	const mainLinks = [
 		{ name: 'Home', href: '/' },
 		{ name: 'Properties', href: '/properties' },
@@ -189,6 +211,36 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+			
+			<!-- Newsletter Signup Section -->
+			<div class="border-t border-gray-800 pt-12 pb-8">
+				<div class="max-w-2xl mx-auto text-center">
+					<h3 class="text-2xl font-bold text-white mb-2">Stay in the Know</h3>
+					<p class="text-gray-400 mb-6">Get the latest Las Vegas real estate insights and market updates delivered to your inbox.</p>
+					<form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" on:submit|preventDefault={handleNewsletterSubmit}>
+						<input
+							type="email"
+							placeholder="Email:"
+							bind:value={newsletterEmail}
+							required
+							class="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent {newsletterError ? 'border-red-500' : ''}"
+						/>
+						<button
+							type="submit"
+							class="px-6 py-3 bg-gold-500 hover:bg-gold-600 text-white font-semibold rounded-lg transition-colors whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
+							disabled={newsletterSubmitted}
+						>
+							{newsletterSubmitted ? 'Subscribed!' : 'Subscribe'}
+						</button>
+					</form>
+					{#if newsletterSubmitted}
+						<p class="text-green-400 text-sm mt-3">Thank you for subscribing!</p>
+					{/if}
+					{#if newsletterError}
+						<p class="text-red-400 text-sm mt-3">Please enter a valid email address.</p>
+					{/if}
 				</div>
 			</div>
 		</div>
