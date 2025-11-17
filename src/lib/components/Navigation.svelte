@@ -14,7 +14,7 @@
 
 <header class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur border-b border-gray-100">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-		<div class="flex flex-wrap items-center justify-between gap-3 py-3">
+		<div class="flex items-center justify-between gap-4 py-3">
 			<!-- Phone Number (replacing logo) -->
 			<a
 				href="tel:+17027667668"
@@ -29,14 +29,14 @@
 
 			<!-- Navigation Menu -->
 			<nav
-				class="flex-1 flex items-center justify-center order-3 lg:order-none w-full lg:w-auto"
+				class="flex-1 flex items-center justify-center"
 				aria-label="Main navigation"
 			>
-				<div class="flex flex-wrap items-center justify-center gap-x-4 sm:gap-x-6 md:gap-x-8 lg:gap-x-10 gap-y-2">
+				<div class="flex items-center justify-center gap-x-3 sm:gap-x-4 md:gap-x-6 lg:gap-x-8 flex-wrap">
 					{#each navItems as item}
 						<a
 							href={item.href}
-							class="text-sm sm:text-base font-medium text-gray-700 hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-md px-3 py-2 transition-colors whitespace-nowrap no-underline {$page.url.pathname === item.href ? 'text-primary-600 font-semibold bg-primary-50' : ''}"
+							class="text-sm sm:text-base font-medium text-gray-700 hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded-md px-2 sm:px-3 py-2 transition-colors whitespace-nowrap no-underline {$page.url.pathname === item.href ? 'text-primary-600 font-semibold bg-primary-50' : ''}"
 							aria-current={$page.url.pathname === item.href ? 'page' : undefined}
 						>
 							{item.label}
@@ -46,13 +46,13 @@
 			</nav>
 
 			<!-- Contact shortcut -->
-			<div class="flex items-center gap-3">
+			<div class="flex items-center gap-3 flex-shrink-0">
 				<a href="mailto:info@DrJanetDuffy.com" class="hidden sm:flex text-sm font-medium text-gray-600 hover:text-primary-600 transition-colors no-underline">
 					info@DrJanetDuffy.com
 				</a>
 				<a
 					href="tel:+17027667668"
-					class="inline-flex items-center gap-2 rounded-full border border-primary-500 px-4 py-2 text-sm font-semibold text-primary-600 hover:bg-primary-50 transition-colors no-underline"
+					class="inline-flex items-center gap-2 rounded-full border border-primary-500 px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold text-primary-600 hover:bg-primary-50 transition-colors no-underline"
 				>
 					<span>Call</span>
 					<span class="hidden sm:inline">(702) 766-7668</span>
