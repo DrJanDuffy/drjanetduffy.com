@@ -18,10 +18,6 @@
 				class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 text-sm md:text-base text-white/95 text-left"
 			>
 				<div class="flex items-start gap-3 justify-center sm:justify-start">
-					<div
-						class="mt-1 flex h-9 w-9 items-center justify-center rounded-full bg-white/10 border border-white/20"
-					>
-					</div>
 					<div>
 						<p class="font-semibold">Call / Text</p>
 						<p class="font-medium">(702) 766-7668</p>
