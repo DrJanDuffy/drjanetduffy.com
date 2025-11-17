@@ -1,3 +1,7 @@
+<script>
+	import { FileText, CheckCircle, BookOpen, Globe, AlertTriangle, Ban, Home, Link, Edit, Filter, Mail } from 'lucide-svelte';
+</script>
+
 <svelte:head>
 	<title>Terms of Service | Dr. Janet Duffy REALTOR®</title>
 	<meta name="description" content="Terms of Service for Dr. Janet Duffy REALTOR® website. Read our terms and conditions for using our real estate services." />
@@ -38,9 +42,7 @@
 	<div class="max-w-4xl mx-auto">
 			<div class="text-center mb-16">
 				<div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full mx-auto mb-6 shadow-lg">
-					<svg class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-					</svg>
+					<FileText class="w-10 h-10 text-white" />
 				</div>
 				<h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900" style="letter-spacing: -0.03em;">Terms of Service</h1>
 				<div class="w-24 h-1 bg-gradient-to-r from-transparent via-primary-600 to-transparent mx-auto mb-4"></div>
@@ -60,9 +62,7 @@
 				<div>
 					<div class="flex items-center gap-3 mb-4">
 						<div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
-							<svg class="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-							</svg>
+							<CheckCircle class="w-5 h-5 text-primary-600" />
 						</div>
 						<h2 class="font-display text-3xl font-bold text-gray-900">Acceptance of Terms</h2>
 					</div>
@@ -80,9 +80,7 @@
 				<div>
 					<div class="flex items-center gap-3 mb-4">
 						<div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
-							<svg class="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-							</svg>
+							<BookOpen class="w-5 h-5 text-primary-600" />
 						</div>
 						<h2 class="font-display text-3xl font-bold text-gray-900">Use License</h2>
 					</div>
@@ -107,9 +105,7 @@
 				<div>
 					<div class="flex items-center gap-3 mb-4">
 						<div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
-							<svg class="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-							</svg>
+							<Globe class="w-5 h-5 text-primary-600" />
 						</div>
 						<h2 class="font-display text-3xl font-bold text-gray-900">Website Use and Restrictions</h2>
 					</div>
@@ -132,9 +128,7 @@
 				<div>
 					<div class="flex items-center gap-3 mb-4">
 						<div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
-							<svg class="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-							</svg>
+							<AlertTriangle class="w-5 h-5 text-primary-600" />
 						</div>
 						<h2 class="font-display text-3xl font-bold text-gray-900">Disclaimer</h2>
 					</div>
@@ -155,9 +149,7 @@
 				<div>
 					<div class="flex items-center gap-3 mb-4">
 						<div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
-							<svg class="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
-							</svg>
+							<Ban class="w-5 h-5 text-primary-600" />
 						</div>
 						<h2 class="font-display text-3xl font-bold text-gray-900">Limitations of Liability</h2>
 					</div>
@@ -175,9 +167,7 @@
 				<div>
 					<div class="flex items-center gap-3 mb-4">
 						<div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
-							<svg class="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-							</svg>
+							<Home class="w-5 h-5 text-primary-600" />
 						</div>
 						<h2 class="font-display text-3xl font-bold text-gray-900">Real Estate Services</h2>
 					</div>
@@ -198,9 +188,7 @@
 				<div>
 					<div class="flex items-center gap-3 mb-4">
 						<div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
-							<svg class="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-							</svg>
+							<FileText class="w-5 h-5 text-primary-600" />
 						</div>
 						<h2 class="font-display text-3xl font-bold text-gray-900">Intellectual Property Rights</h2>
 					</div>
@@ -215,9 +203,7 @@
 				<div>
 					<div class="flex items-center gap-3 mb-4">
 						<div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
-							<svg class="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-							</svg>
+							<Link class="w-5 h-5 text-primary-600" />
 						</div>
 						<h2 class="font-display text-3xl font-bold text-gray-900">Links to Other Websites</h2>
 					</div>
@@ -232,9 +218,7 @@
 				<div>
 					<div class="flex items-center gap-3 mb-4">
 						<div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
-							<svg class="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-							</svg>
+							<Edit class="w-5 h-5 text-primary-600" />
 						</div>
 						<h2 class="font-display text-3xl font-bold text-gray-900">Changes to Terms</h2>
 					</div>
@@ -249,9 +233,7 @@
 				<div>
 					<div class="flex items-center gap-3 mb-4">
 						<div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
-							<svg class="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
-							</svg>
+							<Filter class="w-5 h-5 text-primary-600" />
 						</div>
 						<h2 class="font-display text-3xl font-bold text-gray-900">Governing Law</h2>
 					</div>
@@ -266,9 +248,7 @@
 				<div>
 					<div class="flex items-center gap-3 mb-4">
 						<div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
-							<svg class="w-6 h-6 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-							</svg>
+							<Mail class="w-5 h-5 text-primary-600" />
 						</div>
 						<h2 class="font-display text-3xl font-bold text-gray-900">Contact Information</h2>
 					</div>

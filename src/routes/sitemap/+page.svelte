@@ -1,4 +1,6 @@
 <script>
+	import { ChevronRight, ExternalLink } from 'lucide-svelte';
+	
 	// Updated sitemap page with all current routes
 	const pages = [
 		// Main Pages
@@ -169,9 +171,7 @@
 								{page.url}
 							</p>
 							<div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-								<svg class="w-5 h-5 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-								</svg>
+								<ChevronRight class="w-4 h-4 text-primary-600" />
 							</div>
 						</a>
 					{/each}
@@ -216,9 +216,7 @@
 					class="inline-flex items-center gap-2 bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors shadow-md hover:shadow-lg"
 				>
 					View XML Sitemap
-					<svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-					</svg>
+					<ExternalLink class="w-4 h-4" />
 				</a>
 			</div>
 		</div>
