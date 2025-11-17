@@ -292,6 +292,31 @@
 		height: 0 !important;
 		width: 0 !important;
 	}
+	
+	/* RealScout wrapper styles */
+	.realscout-wrapper {
+		min-height: 400px;
+		width: 100%;
+		contain: layout style paint;
+		position: relative;
+	}
+	
+	/* Ensure loading skeleton matches RealScout dimensions */
+	.loading-skeleton {
+		min-height: 400px;
+		width: 100%;
+	}
+	
+	/* Override RealScout styles for homepage */
+	.realscout-wrapper :global(realscout-office-listings) {
+		--rs-grid-columns: 3;
+		--rs-card-hover-shadow: 0 10px 20px rgba(0,0,0,0.15);
+	}
+	
+	/* Style RealScout search widget */
+	:global(realscout-advanced-search) {
+		width: 100%;
+	}
 </style>
 
 <!-- Hero Section with Search -->
@@ -856,29 +881,3 @@
 		</div>
 	</div>
 </section>
-
-<style>
-	.realscout-wrapper {
-		min-height: 400px;
-		width: 100%;
-		contain: layout style paint;
-		position: relative;
-	}
-	
-	/* Ensure loading skeleton matches RealScout dimensions */
-	.loading-skeleton {
-		min-height: 400px;
-		width: 100%;
-	}
-	
-	/* Override RealScout styles for homepage */
-	.realscout-wrapper :global(realscout-office-listings) {
-		--rs-grid-columns: 3;
-		--rs-card-hover-shadow: 0 10px 20px rgba(0,0,0,0.15);
-	}
-	
-	/* Style RealScout search widget */
-	:global(realscout-advanced-search) {
-		width: 100%;
-	}
-</style>
