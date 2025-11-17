@@ -101,8 +101,7 @@
 			</ul>
 		</nav>
 
-		<div class="max-w-4xl mx-auto">
-			<section
+		<section
 				id="serve-clients"
 				class="bg-white rounded-2xl shadow-lg p-8 md:p-10 mb-12 scroll-mt-24"
 				aria-labelledby="serve-clients-heading"
@@ -328,8 +327,7 @@
 						View Available Properties
 					</a>
 				</div>
-			</section>
-		</div>
+		</section>
 	</div>
 </section>
 

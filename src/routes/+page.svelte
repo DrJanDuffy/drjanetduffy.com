@@ -191,6 +191,9 @@
 							Browse Las Vegas Homes
 						</a>
 					</div>
+					<p class="mt-3 text-sm sm:text-base text-gray-600">
+						Not sure where to begin? Visit the <a href="/get-started" class="text-primary-600 font-semibold hover:underline">Get Started hub</a> to see buyer, seller, investor, and relocation tools in one place.
+					</p>
 					<p class="mt-4 text-sm sm:text-base text-gray-600">
 						Planning a move to Las Vegas? Explore dedicated <a href="/relocation" class="text-primary-600 font-semibold hover:underline">luxury &amp; relocation services</a> tailored for executives, medical professionals, military families, and remote workers.
 					</p>
