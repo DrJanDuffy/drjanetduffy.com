@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Search, Home, Briefcase, TrendingUp, Users, DollarSign, MapPin, Building2, Key, BarChart3 } from 'lucide-svelte';
+	import { Search, Home, Briefcase, TrendingUp, Users, DollarSign, MapPin, Building2, Key, BarChart3, ChevronRight } from 'lucide-svelte';
 	
 	interface ServiceItem {
 		title: string;
@@ -460,9 +460,7 @@
 								</p>
 								<span class="text-primary-600 font-semibold text-sm inline-flex items-center gap-2 group-hover:gap-3 transition-all">
 									Learn More
-									<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-										<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-									</svg>
+									<ChevronRight class="w-4 h-4" />
 								</span>
 							</a>
 						{/each}

@@ -1,5 +1,6 @@
 <script>
 	import { createEventDispatcher } from 'svelte';
+	import { Phone, CheckCircle, X, Loader2 } from 'lucide-svelte';
 	
 	export let title = 'Get In Touch';
 	export let subtitle = 'Ready to start your real estate journey? Contact me today!';
@@ -70,9 +71,7 @@
 						href="tel:+17027667668" 
 						class="inline-flex items-center text-2xl font-bold text-vegas-gold-600 hover:text-vegas-gold-700 transition-colors"
 					>
-						<svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
-							<path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-						</svg>
+						<Phone class="w-4 h-4 mr-2" />
 						Direct: (702) 766-7668
 					</a>
 		</div>
@@ -196,9 +195,7 @@
 		{#if submitStatus === 'success'}
 			<div class="bg-green-50 border border-green-200 rounded-lg p-4 text-center">
 				<div class="flex items-center justify-center mb-2">
-					<svg class="w-6 h-6 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-					</svg>
+					<CheckCircle class="w-5 h-5 text-green-600 mr-2" />
 					<span class="text-green-800 font-semibold">Message sent successfully!</span>
 				</div>
 				<p class="text-green-700 text-sm">I'll get back to you within 24 hours.</p>
@@ -206,9 +203,7 @@
 		{:else if submitStatus === 'error'}
 			<div class="bg-red-50 border border-red-200 rounded-lg p-4 text-center">
 				<div class="flex items-center justify-center mb-2">
-					<svg class="w-6 h-6 text-red-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-					</svg>
+					<X class="w-5 h-5 text-red-600 mr-2" />
 					<span class="text-red-800 font-semibold">Error sending message</span>
 				</div>
 				<p class="text-red-700 text-sm">Please try again or call (702) 766-7668 directly.</p>
@@ -222,10 +217,7 @@
 		>
 			{#if isSubmitting}
 				<div class="flex items-center justify-center">
-					<svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-						<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-						<path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-					</svg>
+					<Loader2 class="animate-spin -ml-1 mr-3 h-4 w-4 text-white" />
 					Sending...
 				</div>
 			{:else}

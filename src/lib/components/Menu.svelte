@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/stores';
+	import { Search, Menu as MenuIcon, X } from 'lucide-svelte';
 	
 	let mobileMenuOpen = false;
 	let searchOpen = false;
@@ -172,9 +173,7 @@
 						class="p-2 text-gray-700 hover:text-primary-600 transition-colors"
 						aria-label="Search properties"
 					>
-						<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-						</svg>
+						<Search class="w-4 h-4" />
 					</button>
 					
 					{#if searchOpen}
@@ -230,13 +229,11 @@ g					href="tel:+17027667668"
 					class="p-2 text-gray-700 hover:text-primary-600 focus:outline-none focus:text-primary-600"
 					aria-label="Toggle mobile menu"
 				>
-					<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						{#if mobileMenuOpen}
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-						{:else}
-							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-						{/if}
-					</svg>
+					{#if mobileMenuOpen}
+						<X class="w-5 h-5" />
+					{:else}
+						<MenuIcon class="w-5 h-5" />
+					{/if}
 				</button>
 			</div>
 		</div>
