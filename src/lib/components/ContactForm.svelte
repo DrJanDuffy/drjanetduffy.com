@@ -1,6 +1,6 @@
 <script>
 	import { createEventDispatcher } from 'svelte';
-	import { Phone, CheckCircle, X, Loader2 } from 'lucide-svelte';
+	import { CheckCircle, X, Loader2 } from 'lucide-svelte';
 	
 	export let title = 'Get In Touch';
 	export let subtitle = 'Ready to start your real estate journey? Contact me today!';
@@ -71,7 +71,6 @@
 						href="tel:+17027667668" 
 						class="inline-flex items-center text-2xl font-bold text-vegas-gold-600 hover:text-vegas-gold-700 transition-colors"
 					>
-						<Phone class="w-4 h-4 mr-2" />
 						Direct: (702) 766-7668
 					</a>
 		</div>

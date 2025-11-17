@@ -1,6 +1,5 @@
 <script>
 	import { page } from '$app/stores';
-	import { Phone } from 'lucide-svelte';
 	
 	const navItems = [
 		{ href: '/', label: 'Home' },
@@ -20,12 +19,9 @@
 			<!-- Phone Number (replacing logo) -->
 			<a
 				href="tel:+17027667668"
-				class="flex items-center space-x-2 sm:space-x-3 flex-shrink-0 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded no-underline"
+				class="flex items-center flex-shrink-0 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded no-underline"
 				aria-label="Call Dr. Janet Duffy"
 			>
-				<div class="w-8 h-8 sm:w-9 sm:h-9 bg-primary-600 rounded-full flex items-center justify-center shadow-sm">
-					<Phone class="w-4 h-4 sm:w-5 sm:h-5 text-white" />
-				</div>
 				<div class="leading-tight">
 					<span class="block text-lg sm:text-xl font-bold text-gray-900">(702) 766-7668</span>
 					<span class="block text-xs sm:text-sm text-gray-500 tracking-wide">Call Now</span>

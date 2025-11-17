@@ -1,6 +1,6 @@
 <script>
 import ContactForm from '$lib/components/ContactForm.svelte';
-import { Phone, Mail, MapPin, Clock, CheckCircle, MessageCircle } from 'lucide-svelte';
+import { Mail, MapPin, Clock, CheckCircle, MessageCircle } from 'lucide-svelte';
 </script>
 
 <svelte:head>
@@ -98,7 +98,6 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, MessageCircle } from 'lucide-s
 					<div class="space-y-6">
 						<a href="tel:+17027667668" class="group flex items-start gap-4 p-4 rounded-2xl hover:bg-white/80 transition-all duration-300 hover:shadow-md">
 							<div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-								<Phone class="w-7 h-7 text-white" />
 							</div>
 							<div class="flex-1">
 								<h3 class="font-display text-xl font-bold mb-1 text-gray-900">Phone</h3>

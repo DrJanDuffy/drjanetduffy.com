@@ -1,5 +1,5 @@
 <script>
-	import { Phone, Mail, MapPin } from 'lucide-svelte';
+	import { Mail, MapPin } from 'lucide-svelte';
 	
 	const currentYear = new Date().getFullYear();
 	
@@ -154,7 +154,6 @@
 					
 					<div class="space-y-4">
 						<div class="flex items-start gap-3">
-							<Phone class="w-4 h-4 text-primary-400 mt-0.5 flex-shrink-0" />
 							<div>
 								<p class="text-sm text-gray-400 mb-1">Phone</p>
 								<a 

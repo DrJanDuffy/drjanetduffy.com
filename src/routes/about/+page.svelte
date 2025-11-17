@@ -1,5 +1,5 @@
 <script>
-import { Star, Award, TrendingUp, Users, CheckCircle, Phone, MapPin } from 'lucide-svelte';
+import { Star, Award, TrendingUp, Users, CheckCircle, MapPin } from 'lucide-svelte';
 import { PhotoGallery } from '$lib';
 import { drDuffyHeadshots } from '$lib/data/photo-galleries';
 
@@ -111,7 +111,6 @@ const certifications = [
 					</p>
 					<div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
 						<a href="/contact" class="inline-flex items-center justify-center rounded-xl bg-primary-600 px-6 py-3 text-base font-semibold text-white shadow-lg hover:bg-primary-700 transition-colors">
-							<Phone class="w-4 h-4 mr-2" />
 							Schedule a call with Dr. Duffy
 						</a>
 					</div>

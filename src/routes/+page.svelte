@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Home, Award, MapPin, Star, DollarSign, BookOpen, HelpCircle, Phone } from 'lucide-svelte';
+	import { Home, Award, MapPin, Star, DollarSign, BookOpen, HelpCircle } from 'lucide-svelte';
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
 
@@ -298,7 +298,6 @@
 						</a>
 					</div>
 					<div class="flex items-center justify-center md:justify-start gap-2 text-sm text-gray-600 mb-4">
-						<Phone class="w-5 h-5 text-primary-600" />
 						<a href="tel:+17027667668" class="font-semibold text-primary-600 hover:underline">(702) 766-7668</a>
 						<span class="text-gray-400">•</span>
 						<span>Available 7 Days a Week</span>

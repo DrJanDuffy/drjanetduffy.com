@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Phone, Mail, Calendar, MapPin } from 'lucide-svelte';
+	import { Mail, Calendar, MapPin } from 'lucide-svelte';
 </script>
 
 <section class="section bg-gradient-to-r from-primary-600 via-primary-500 to-primary-700 text-white">
@@ -21,7 +21,6 @@
 					<div
 						class="mt-1 flex h-9 w-9 items-center justify-center rounded-full bg-white/10 border border-white/20"
 					>
-						<Phone class="w-4 h-4" />
 					</div>
 					<div>
 						<p class="font-semibold">Call / Text</p>
