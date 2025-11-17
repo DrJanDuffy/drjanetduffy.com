@@ -139,7 +139,7 @@ const certifications = [
 			<div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
 				<div class="text-center">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-						<Award class="w-8 h-8 text-primary-600" />
+						<Award class="w-5 h-5 text-primary-600" />
 					</div>
 					<h3 class="text-xl font-bold text-gray-900 mb-2">15+ Years Experience</h3>
 					<p class="text-gray-600">Extensive knowledge of the Las Vegas real estate market</p>
@@ -147,7 +147,7 @@ const certifications = [
 
 				<div class="text-center">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-						<TrendingUp class="w-8 h-8 text-primary-600" />
+						<TrendingUp class="w-5 h-5 text-primary-600" />
 					</div>
 					<h3 class="text-xl font-bold text-gray-900 mb-2">Expert Guidance</h3>
 					<p class="text-gray-600">Personalized service tailored to your unique needs</p>
@@ -155,7 +155,7 @@ const certifications = [
 
 				<div class="text-center">
 					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-						<MapPin class="w-8 h-8 text-primary-600" />
+						<MapPin class="w-5 h-5 text-primary-600" />
 					</div>
 					<h3 class="text-xl font-bold text-gray-900 mb-2">Local Expertise</h3>
 					<p class="text-gray-600">Deep understanding of Las Vegas neighborhoods and communities</p>
@@ -225,28 +225,28 @@ const certifications = [
                 <div class="grid-premium md:grid-cols-4 gap-8">
                     <div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 hover:scale-105 group">
 					<div class="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">
-						<TrendingUp class="w-8 h-8 text-white" />
+						<TrendingUp class="w-5 h-5 text-white" />
 					</div>
 					<h3 class="font-display text-2xl font-bold mb-3 text-gray-900">{achievements[0].title}</h3>
 					<p class="text-gray-600 text-lg">{achievements[0].description}</p>
 				</div>
                     <div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 hover:scale-105 group">
                         <div class="w-16 h-16 bg-gradient-to-br from-primary-600 to-primary-800 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">
-						<Award class="w-8 h-8 text-white" />
+						<Award class="w-5 h-5 text-white" />
 					</div>
 					<h3 class="font-display text-2xl font-bold mb-3 text-gray-900">{achievements[1].title}</h3>
 					<p class="text-gray-600 text-lg">{achievements[1].description}</p>
 				</div>
                     <div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 hover:scale-105 group">
                         <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">
-						<Users class="w-8 h-8 text-white" />
+						<Users class="w-5 h-5 text-white" />
 					</div>
 					<h3 class="font-display text-2xl font-bold mb-3 text-gray-900">{achievements[2].title}</h3>
 					<p class="text-gray-600 text-lg">{achievements[2].description}</p>
 				</div>
                     <div class="text-center bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 hover:scale-105 group">
                         <div class="w-16 h-16 bg-gradient-to-br from-primary-600 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform">
-						<Star class="w-8 h-8 text-white" />
+						<Star class="w-5 h-5 text-white" />
 					</div>
 					<h3 class="font-display text-2xl font-bold mb-3 text-gray-900">{achievements[3].title}</h3>
 					<p class="text-gray-600 text-lg">{achievements[3].description}</p>

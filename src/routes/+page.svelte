@@ -563,22 +563,22 @@
 				</div>
 				<div class="grid md:grid-cols-3 gap-6 mb-8">
 					<div class="text-center p-6 bg-gray-50 rounded-xl">
-						<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-							<Award class="w-8 h-8 text-primary-600" />
+						<div class="inline-flex items-center justify-center w-12 h-12 bg-primary-100 rounded-full mb-4">
+							<Award class="w-5 h-5 text-primary-600" />
 						</div>
 						<h3 class="text-xl font-bold text-gray-900 mb-2">CRS Certified</h3>
 						<p class="text-sm text-gray-600">Certified Residential Specialist - Top 3% of Realtors Nationwide</p>
 					</div>
 					<div class="text-center p-6 bg-gray-50 rounded-xl">
-						<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-							<Star class="w-8 h-8 text-primary-600" />
+						<div class="inline-flex items-center justify-center w-12 h-12 bg-primary-100 rounded-full mb-4">
+							<Star class="w-5 h-5 text-primary-600" />
 						</div>
 						<h3 class="text-xl font-bold text-gray-900 mb-2">ABR Accredited</h3>
 						<p class="text-sm text-gray-600">Accredited Buyer's Representative - Expert Buyer Representation</p>
 					</div>
 					<div class="text-center p-6 bg-gray-50 rounded-xl">
-						<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
-							<BookOpen class="w-8 h-8 text-primary-600" />
+						<div class="inline-flex items-center justify-center w-12 h-12 bg-primary-100 rounded-full mb-4">
+							<BookOpen class="w-5 h-5 text-primary-600" />
 						</div>
 						<h3 class="text-xl font-bold text-gray-900 mb-2">GRI Graduate</h3>
 						<p class="text-sm text-gray-600">Graduate REALTOR Institute - Advanced Real Estate Education</p>
@@ -732,32 +732,32 @@
 			
 			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
 				<a href="/about" class="card text-center hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 group">
-					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
-						<Award class="w-8 h-8 text-primary-600" />
+					<div class="inline-flex items-center justify-center w-12 h-12 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
+						<Award class="w-5 h-5 text-primary-600" />
 					</div>
 					<h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">Why Choose Us</h3>
 					<p class="text-gray-600 text-sm">Experience the difference</p>
 				</a>
 
 				<a href="/services" class="card text-center hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 group">
-					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
-						<Home class="w-8 h-8 text-primary-600" />
+					<div class="inline-flex items-center justify-center w-12 h-12 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
+						<Home class="w-5 h-5 text-primary-600" />
 					</div>
 					<h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">Our Services</h3>
 					<p class="text-gray-600 text-sm">Comprehensive solutions</p>
 				</a>
 
 				<a href="/neighborhoods" class="card text-center hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 group">
-					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
-						<MapPin class="w-8 h-8 text-primary-600" />
+					<div class="inline-flex items-center justify-center w-12 h-12 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
+						<MapPin class="w-5 h-5 text-primary-600" />
 					</div>
 					<h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">Neighborhoods</h3>
 					<p class="text-gray-600 text-sm">Explore Las Vegas</p>
 				</a>
 
 				<a href="/testimonials" class="card text-center hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 group">
-					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
-						<Star class="w-8 h-8 text-primary-600" />
+					<div class="inline-flex items-center justify-center w-12 h-12 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
+						<Star class="w-5 h-5 text-primary-600" />
 					</div>
 					<h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">Testimonials</h3>
 					<p class="text-gray-600 text-sm">Client success stories</p>
@@ -766,32 +766,32 @@
 			
 			<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 				<a href="/buying-guide" class="card text-center hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 group">
-					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
-						<Home class="w-8 h-8 text-primary-600" />
+					<div class="inline-flex items-center justify-center w-12 h-12 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
+						<Home class="w-5 h-5 text-primary-600" />
 					</div>
 					<h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">Buying Guide</h3>
 					<p class="text-gray-600 text-sm">Step-by-step home buying</p>
 				</a>
 
 				<a href="/selling-guide" class="card text-center hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 group">
-					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
-						<DollarSign class="w-8 h-8 text-primary-600" />
+					<div class="inline-flex items-center justify-center w-12 h-12 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
+						<DollarSign class="w-5 h-5 text-primary-600" />
 					</div>
 					<h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">Selling Guide</h3>
 					<p class="text-gray-600 text-sm">Maximize your sale price</p>
 				</a>
 
 				<a href="/resources" class="card text-center hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 group">
-					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
-						<BookOpen class="w-8 h-8 text-primary-600" />
+					<div class="inline-flex items-center justify-center w-12 h-12 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
+						<BookOpen class="w-5 h-5 text-primary-600" />
 					</div>
 					<h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">Resources</h3>
 					<p class="text-gray-600 text-sm">Guides and tools</p>
 				</a>
 
 				<a href="/faq" class="card text-center hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 group">
-					<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
-						<HelpCircle class="w-8 h-8 text-primary-600" />
+					<div class="inline-flex items-center justify-center w-12 h-12 bg-primary-100 rounded-full mb-4 group-hover:bg-primary-200 group-hover:scale-110 transition-all">
+						<HelpCircle class="w-5 h-5 text-primary-600" />
 					</div>
 					<h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">FAQ</h3>
 					<p class="text-gray-600 text-sm">Common questions</p>

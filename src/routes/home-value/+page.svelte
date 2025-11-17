@@ -81,7 +81,7 @@ onMount(() => {
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 					<div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-md">
-						<BarChart3 class="w-6 h-6 text-white" />
+						<BarChart3 class="w-5 h-5 text-white" />
 					</div>
 					<div>
 						<h3 class="font-display text-xl font-bold mb-2 text-gray-900">Market Analysis</h3>
@@ -90,7 +90,7 @@ onMount(() => {
 				</div>
 				<div class="flex items-start gap-4">
 					<div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-md">
-						<Home class="w-6 h-6 text-white" />
+						<Home class="w-5 h-5 text-white" />
 					</div>
 					<div>
 						<h3 class="font-display text-xl font-bold mb-2 text-gray-900">Property Details</h3>
@@ -99,7 +99,7 @@ onMount(() => {
 				</div>
 				<div class="flex items-start gap-4">
 					<div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-md">
-						<TrendingUp class="w-6 h-6 text-white" />
+						<TrendingUp class="w-5 h-5 text-white" />
 					</div>
 						<div>
 							<h3 class="font-display text-xl font-bold mb-2 text-gray-900">Current Market Trends</h3>
@@ -126,7 +126,7 @@ onMount(() => {
 				<div class="space-y-6">
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-							<CheckCircle class="w-6 h-6 text-green-600" />
+							<CheckCircle class="w-5 h-5 text-green-600" />
 						</div>
 						<div>
 							<h3 class="font-display text-xl font-bold mb-2 text-gray-900">Selling Planning</h3>
@@ -135,7 +135,7 @@ onMount(() => {
 					</div>
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-							<CheckCircle class="w-6 h-6 text-green-600" />
+							<CheckCircle class="w-5 h-5 text-green-600" />
 						</div>
 						<div>
 							<h3 class="font-display text-xl font-bold mb-2 text-gray-900">Refinancing Decisions</h3>
@@ -144,7 +144,7 @@ onMount(() => {
 					</div>
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-							<CheckCircle class="w-6 h-6 text-green-600" />
+							<CheckCircle class="w-5 h-5 text-green-600" />
 						</div>
 						<div>
 							<h3 class="font-display text-xl font-bold mb-2 text-gray-900">Investment Tracking</h3>
@@ -153,7 +153,7 @@ onMount(() => {
 					</div>
 					<div class="flex items-start gap-4">
 						<div class="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
-							<CheckCircle class="w-6 h-6 text-green-600" />
+							<CheckCircle class="w-5 h-5 text-green-600" />
 						</div>
 						<div>
 							<h3 class="font-display text-xl font-bold mb-2 text-gray-900">Insurance Purposes</h3>

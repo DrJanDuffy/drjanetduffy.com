@@ -442,7 +442,7 @@
 			{#each filteredServices as category}
 				<div>
 					<div class="flex items-center gap-3 mb-8">
-						<svelte:component this={category.icon} class="w-8 h-8 text-primary-600" />
+						<svelte:component this={category.icon} class="w-5 h-5 text-primary-600" />
 						<h2 class="text-3xl md:text-4xl font-bold text-gray-900">{category.category}</h2>
 					</div>
 					

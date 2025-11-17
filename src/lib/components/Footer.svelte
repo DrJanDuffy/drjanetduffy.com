@@ -154,7 +154,7 @@
 					
 					<div class="space-y-4">
 						<div class="flex items-start gap-3">
-							<Phone class="w-5 h-5 text-primary-400 mt-0.5 flex-shrink-0" />
+							<Phone class="w-4 h-4 text-primary-400 mt-0.5 flex-shrink-0" />
 							<div>
 								<p class="text-sm text-gray-400 mb-1">Phone</p>
 								<a 
@@ -167,7 +167,7 @@
 						</div>
 						
 						<div class="flex items-start gap-3">
-							<Mail class="w-5 h-5 text-primary-400 mt-0.5 flex-shrink-0" />
+							<Mail class="w-4 h-4 text-primary-400 mt-0.5 flex-shrink-0" />
 							<div>
 								<p class="text-sm text-gray-400 mb-1">Email</p>
 								<a 
@@ -180,7 +180,7 @@
 						</div>
 						
 						<div class="flex items-start gap-3">
-							<MapPin class="w-5 h-5 text-primary-400 mt-0.5 flex-shrink-0" />
+							<MapPin class="w-4 h-4 text-primary-400 mt-0.5 flex-shrink-0" />
 							<div>
 								<p class="text-sm text-gray-400 mb-1">Office Location</p>
 								<address class="text-gray-300 text-sm not-italic leading-relaxed">
