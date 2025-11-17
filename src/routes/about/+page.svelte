@@ -72,7 +72,7 @@ const certifications = [
 			"name": "Dr. Jan Duffy",
 			"description": "Licensed REALTOR® with 15+ years of experience in Las Vegas real estate",
 			"url": "https://www.drjanetduffy.com",
-			"telephone": "702-500-1955",
+			"telephone": "(702) 766-7668",
 			"email": "info@DrJanetDuffy.com",
 			"address": {
 				"@type": "PostalAddress",
@@ -445,8 +445,8 @@ const certifications = [
 						<span class="relative z-10">Get in Touch</span>
 						<div class="absolute inset-0 bg-gradient-to-r from-primary-50 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 					</a>
-					<a href="tel:+17025001955" class="group relative overflow-hidden bg-transparent text-white border-2 border-white/50 px-10 py-5 rounded-xl font-bold text-lg backdrop-blur-sm hover:bg-white hover:text-primary-700 transition-all duration-300 hover:scale-110 hover:-translate-y-1">
-						<span class="relative z-10">Call 702-500-1955</span>
+					<a href="tel:+17027667668" class="group relative overflow-hidden bg-transparent text-white border-2 border-white/50 px-10 py-5 rounded-xl font-bold text-lg backdrop-blur-sm hover:bg-white hover:text-primary-700 transition-all duration-300 hover:scale-110 hover:-translate-y-1">
+						<span class="relative z-10">Call (702) 766-7668</span>
 					</a>
 				</div>
 			</div>

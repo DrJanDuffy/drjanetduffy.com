@@ -232,8 +232,8 @@ export const menuStructure = {
   contact: [
     {
       name: 'Call Now',
-      href: 'tel:+17025551234',
-      description: '(702) 555-1234',
+      href: 'tel:+17027667668',
+      description: '(702) 766-7668',
       icon: '📞',
       isPrimary: true
     },

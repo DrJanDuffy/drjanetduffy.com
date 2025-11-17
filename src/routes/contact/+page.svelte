@@ -5,8 +5,8 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, MessageCircle } from 'lucide-s
 
 <svelte:head>
 	<title>Contact Las Vegas Luxury &amp; Relocation REALTOR | Dr. Janet Duffy</title>
-	<meta name="description" content="Contact Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy for concierge-level guidance on buying, selling, or relocating to Las Vegas. Call 702-500-1955 or email info@DrJanetDuffy.com." />
-	<meta name="keywords" content="Dr. Jan Duffy REALTOR, luxury Las Vegas real estate, West Summerlin, executive relocation, 702-500-1955" />
+	<meta name="description" content="Contact Las Vegas Luxury & Relocation REALTOR Dr. Janet Duffy for concierge-level guidance on buying, selling, or relocating to Las Vegas. Call (702) 766-7668 or email info@DrJanetDuffy.com." />
+	<meta name="keywords" content="Dr. Jan Duffy REALTOR, luxury Las Vegas real estate, West Summerlin, executive relocation, (702) 766-7668" />
 	
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />
@@ -28,7 +28,7 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, MessageCircle } from 'lucide-s
 		"mainEntity": {
 			"@type": "RealEstateAgent",
 			"name": "Dr. Jan Duffy",
-			"telephone": "702-500-1955",
+			"telephone": "(702) 766-7668",
 			"email": "info@DrJanetDuffy.com",
 			"address": {
 				"@type": "PostalAddress",
@@ -92,17 +92,17 @@ import { Phone, Mail, MapPin, Clock, CheckCircle, MessageCircle } from 'lucide-s
 				<div class="bg-gradient-to-br from-white via-primary-50/20 to-white rounded-3xl shadow-xl p-8 border border-gray-200/50 backdrop-blur-sm">
 					<h2 class="font-display text-3xl font-bold mb-4 text-gray-900" style="letter-spacing: -0.02em;">How Can You Get in Touch With Dr. Janet Duffy?</h2>
 					<p class="text-gray-700 mb-8 leading-relaxed">
-						Get in touch with Dr. Janet Duffy by phone at 702-500-1955 (available 7 days a week), email at info@DrJanetDuffy.com (response within 24 hours), visiting the office at 1980 Festival Plaza Drive Suite 300 in Las Vegas, or using the contact form to discuss your Las Vegas real estate needs.
+						Get in touch with Dr. Janet Duffy by phone at (702) 766-7668 (available 7 days a week), email at info@DrJanetDuffy.com (response within 24 hours), visiting the office at 1980 Festival Plaza Drive Suite 300 in Las Vegas, or using the contact form to discuss your Las Vegas real estate needs.
 					</p>
 					
 					<div class="space-y-6">
-						<a href="tel:+17025001955" class="group flex items-start gap-4 p-4 rounded-2xl hover:bg-white/80 transition-all duration-300 hover:shadow-md">
+						<a href="tel:+17027667668" class="group flex items-start gap-4 p-4 rounded-2xl hover:bg-white/80 transition-all duration-300 hover:shadow-md">
 							<div class="flex-shrink-0 w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
 								<Phone class="w-7 h-7 text-white" />
 							</div>
 							<div class="flex-1">
 								<h3 class="font-display text-xl font-bold mb-1 text-gray-900">Phone</h3>
-								<p class="text-primary-600 hover:text-primary-700 font-bold text-xl transition-colors">702-500-1955</p>
+								<p class="text-primary-600 hover:text-primary-700 font-bold text-xl transition-colors">(702) 766-7668</p>
 								<p class="text-sm text-gray-600 mt-1">Available 7 days a week</p>
 							</div>
 						</a>

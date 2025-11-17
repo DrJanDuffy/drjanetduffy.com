@@ -137,7 +137,7 @@
 				<div class="space-y-3 text-sm text-gray-400">
 					<div>
 						<p class="font-semibold text-white mb-1">Phone</p>
-						<a href="tel:+17025001955" class="hover:text-white transition-colors">702-500-1955</a>
+						<a href="tel:+17027667668" class="hover:text-white transition-colors">(702) 766-7668</a>
 					</div>
 					<div>
 						<p class="font-semibold text-white mb-1">Email</p>

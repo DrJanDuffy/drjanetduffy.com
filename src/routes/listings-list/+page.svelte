@@ -225,8 +225,8 @@
 					<a href="/contact" class="block bg-primary-600 text-white px-6 py-4 rounded-xl text-center font-bold text-lg shadow-md hover:bg-primary-700 hover:shadow-lg transition-all duration-300 hover:scale-105">
 						Schedule a Showing
 					</a>
-					<a href="tel:+17022221964" class="block border-2 border-primary-600 text-primary-600 px-6 py-4 rounded-xl text-center font-bold text-lg hover:bg-primary-600 hover:text-white transition-all duration-300 hover:scale-105">
-						Call 702-500-1955
+					<a href="tel:+17027667668" class="block border-2 border-primary-600 text-primary-600 px-6 py-4 rounded-xl text-center font-bold text-lg hover:bg-primary-600 hover:text-white transition-all duration-300 hover:scale-105">
+						Call (702) 766-7668
 					</a>
 					<a href="/home-value" class="block bg-gray-100 text-gray-800 px-6 py-4 rounded-xl text-center font-bold text-lg hover:bg-gray-200 transition-all duration-300 hover:scale-105">
 						Get Home Value Estimate

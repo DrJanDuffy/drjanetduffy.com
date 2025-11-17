@@ -118,10 +118,10 @@ function _toggleMobileMenu() {
 					Contact
 				</a>
 				<a 
-					href="tel:+17025551234" 
+					href="tel:+17027667668" 
 					class="bg-primary-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary-700 transition-colors"
 				>
-					(702) 555-1234
+					(702) 766-7668
 				</a>
 			</div>
 			
@@ -184,11 +184,11 @@ function _toggleMobileMenu() {
 						Contact
 					</a>
 					<a 
-						href="tel:+17025551234" 
+						href="tel:+17027667668" 
 						class="bg-primary-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary-700 transition-colors text-center"
 						on:click={() => mobileMenuOpen = false}
 					>
-						(702) 555-1234
+						(702) 766-7668
 					</a>
 				</div>
 			</div>

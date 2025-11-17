@@ -25,7 +25,7 @@
 					</div>
 					<div>
 						<p class="font-semibold">Call / Text</p>
-						<p class="font-medium">702-500-1955</p>
+						<p class="font-medium">(702) 766-7668</p>
 					</div>
 				</div>
 

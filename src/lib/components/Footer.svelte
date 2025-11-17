@@ -64,9 +64,9 @@
 <footer class="bg-gray-900 text-white">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="py-12 lg:py-16">
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+			<div class="flex flex-wrap -mx-4">
 				<!-- Main Navigation -->
-				<div>
+				<div class="w-full sm:w-1/2 lg:w-1/5 px-4 mb-8 lg:mb-0">
 					<h3 class="text-lg font-bold mb-4 text-white">Main</h3>
 					<ul class="space-y-2.5">
 						{#each mainLinks as link}
@@ -83,7 +83,7 @@
 				</div>
 				
 				<!-- Properties -->
-				<div>
+				<div class="w-full sm:w-1/2 lg:w-1/5 px-4 mb-8 lg:mb-0">
 					<h3 class="text-lg font-bold mb-4 text-white">Properties</h3>
 					<ul class="space-y-2.5">
 						{#each propertyLinks as link}
@@ -100,7 +100,7 @@
 				</div>
 				
 				<!-- Communities -->
-				<div>
+				<div class="w-full sm:w-1/2 lg:w-1/5 px-4 mb-8 lg:mb-0">
 					<h3 class="text-lg font-bold mb-4 text-white">Communities</h3>
 					<p class="text-sm text-gray-400 mb-3">Popular Neighborhoods</p>
 					<ul class="space-y-2.5 mb-4">
@@ -124,7 +124,7 @@
 				</div>
 				
 				<!-- Services -->
-				<div>
+				<div class="w-full sm:w-1/2 lg:w-1/5 px-4 mb-8 lg:mb-0">
 					<h3 class="text-lg font-bold mb-4 text-white">Services</h3>
 					<ul class="space-y-2.5">
 						{#each serviceLinks as link}
@@ -141,7 +141,7 @@
 				</div>
 				
 				<!-- Contact Information -->
-				<div>
+				<div class="w-full sm:w-1/2 lg:w-1/5 px-4 mb-8 lg:mb-0">
 					<div class="flex items-center space-x-3 mb-6">
 						<div class="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0">
 							<span class="text-white font-bold text-lg">JD</span>
@@ -158,10 +158,10 @@
 							<div>
 								<p class="text-sm text-gray-400 mb-1">Phone</p>
 								<a 
-									href="tel:+17025001955" 
+									href="tel:+17027667668" 
 									class="text-gray-300 hover:text-primary-400 transition-colors text-sm font-medium"
 								>
-									702-500-1955
+									(702) 766-7668
 								</a>
 							</div>
 						</div>

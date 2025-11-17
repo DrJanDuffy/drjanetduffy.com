@@ -67,13 +67,13 @@
 	{#if showPhone}
 		<div class="text-center mb-8">
 								<a 
-						href="tel:+17022221964" 
+						href="tel:+17027667668" 
 						class="inline-flex items-center text-2xl font-bold text-vegas-gold-600 hover:text-vegas-gold-700 transition-colors"
 					>
 						<svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
 							<path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
 						</svg>
-						Direct: 702-500-1955
+						Direct: (702) 766-7668
 					</a>
 		</div>
 	{/if}
@@ -119,7 +119,7 @@
 					id="phone"
 					bind:value={formData.phone}
 					class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-vegas-gold-500 focus:border-vegas-gold-500 transition-colors"
-					placeholder="(702) 555-1234"
+					placeholder="(702) 766-7668"
 				/>
 			</div>
 			
@@ -211,7 +211,7 @@
 					</svg>
 					<span class="text-red-800 font-semibold">Error sending message</span>
 				</div>
-				<p class="text-red-700 text-sm">Please try again or call 702-500-1955 directly.</p>
+				<p class="text-red-700 text-sm">Please try again or call (702) 766-7668 directly.</p>
 			</div>
 		{/if}
 		

@@ -97,7 +97,7 @@
 		"url": "https://www.drjanetduffy.com",
 		"logo": "https://www.drjanetduffy.com/favicon.png",
 		"image": "https://www.drjanetduffy.com/favicon.png",
-		"telephone": "702-500-1955",
+		"telephone": "(702) 766-7668",
 		"email": "info@DrJanetDuffy.com",
 		"address": {
 			"@type": "PostalAddress",

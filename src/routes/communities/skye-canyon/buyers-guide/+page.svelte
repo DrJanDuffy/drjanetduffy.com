@@ -216,11 +216,11 @@
 					Schedule a Skye Canyon Strategy Call
 				</a>
 				<a
-					href="tel:+17025001955"
+					href="tel:+17027667668"
 					class="inline-flex items-center justify-center gap-2 rounded-full border border-white px-6 py-3 text-sm font-semibold text-white hover:bg-white hover:text-primary-600 transition-colors"
 				>
 					<Phone class="w-4 h-4" />
-					<span>Call Dr. Duffy: 702-500-1955</span>
+					<span>Call Dr. Duffy: (702) 766-7668</span>
 				</a>
 			</div>
 		</div>

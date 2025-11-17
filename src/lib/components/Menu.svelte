@@ -204,10 +204,10 @@
 				
 				<!-- CTA Button -->
 				<a 
-					href="tel:+17022221964" 
+g					href="tel:+17027667668" 
 					class="ml-4 bg-vegas-gold-600 text-vegas-deep-900 px-6 py-2 rounded-lg font-semibold hover:bg-vegas-gold-700 transition-colors shadow-lg hover:shadow-xl"
 				>
-					Call: 702-500-1955
+					Call: (702) 766-7668
 				</a>
 			</div>
 			
@@ -336,11 +336,11 @@
 						<h4 class="text-sm font-semibold text-vegas-gold-600 mb-3">Get In Touch</h4>
 						<div class="space-y-2">
 							<a 
-								href="tel:+17022221964" 
+								href="tel:+17027667668" 
 								class="flex items-center space-x-3 px-3 py-2 text-sm bg-vegas-gold-600 text-vegas-deep-900 hover:bg-vegas-gold-700 transition-colors rounded-md font-semibold"
 								on:click={closeMobileMenu}
 							>
-								<span class="font-medium">Call Direct: 702-500-1955</span>
+								<span class="font-medium">Call Direct: (702) 766-7668</span>
 							</a>
 							<a 
 								href="mailto:info@DrJanetDuffy.com" 

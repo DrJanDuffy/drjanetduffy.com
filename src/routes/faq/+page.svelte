@@ -341,7 +341,7 @@
 			</p>
 			<div class="flex flex-col sm:flex-row gap-4 justify-center">
 				<a href="/contact" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">Contact Me</a>
-				<a href="tel:+17025001955" class="btn-secondary border-white text-white hover:bg-white hover:text-primary-600">Call 702-500-1955</a>
+				<a href="tel:+17027667668" class="btn-secondary border-white text-white hover:bg-white hover:text-primary-600">Call (702) 766-7668</a>
 			</div>
 		</div>
 	</div>

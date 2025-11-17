@@ -16,18 +16,20 @@
 <header class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur border-b border-gray-100">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="flex flex-wrap items-center justify-between gap-3 py-3">
-			<!-- Logo -->
+			<!-- Phone Number (replacing logo) -->
 			<a
-				href="/"
+				href="tel:+17027667668"
 				class="flex items-center space-x-2 sm:space-x-3 flex-shrink-0 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 rounded no-underline"
-				aria-label="Dr. Janet Duffy Home"
+				aria-label="Call Dr. Janet Duffy"
 			>
 				<div class="w-9 h-9 sm:w-11 sm:h-11 bg-primary-600 rounded-full flex items-center justify-center shadow-sm">
-					<span class="text-white font-bold text-sm sm:text-lg tracking-tight">JD</span>
+					<svg class="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+					</svg>
 				</div>
 				<div class="leading-tight">
-					<span class="block text-lg sm:text-xl font-bold text-gray-900">Dr. Janet Duffy</span>
-					<span class="block text-xs sm:text-sm text-gray-500 tracking-wide">REALTOR<sup>®</sup></span>
+					<span class="block text-lg sm:text-xl font-bold text-gray-900">(702) 766-7668</span>
+					<span class="block text-xs sm:text-sm text-gray-500 tracking-wide">Call Now</span>
 				</div>
 			</a>
 
@@ -55,11 +57,11 @@
 					info@DrJanetDuffy.com
 				</a>
 				<a
-					href="tel:+17025001955"
+					href="tel:+17027667668"
 					class="inline-flex items-center gap-2 rounded-full border border-primary-500 px-4 py-2 text-sm font-semibold text-primary-600 hover:bg-primary-50 transition-colors no-underline"
 				>
 					<span>Call</span>
-					<span class="hidden sm:inline">702-500-1955</span>
+					<span class="hidden sm:inline">(702) 766-7668</span>
 				</a>
 			</div>
 		</div>
