@@ -2,7 +2,6 @@
 	import { page } from '$app/stores';
 	
 	const navItems = [
-		{ href: '/', label: 'Home' },
 		{ href: '/get-started', label: 'Get Started' },
 		{ href: '/properties', label: 'Properties' },
 		{ href: '/home-value', label: 'Home Value' },
