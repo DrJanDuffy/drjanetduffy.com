@@ -2,7 +2,7 @@
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
 
-	let mounted = false;
+	let mounted = $state(false);
 
 	interface Props {
 		priceMin?: string;
