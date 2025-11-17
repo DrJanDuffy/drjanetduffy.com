@@ -375,7 +375,9 @@
 	</div>
 </section>
 
-			<!-- Property Search Form -->
+<!-- Property Search Form -->
+<section class="bg-gray-50 py-16 md:py-24">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-5xl mx-auto">
 				<div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100" style="min-height: 200px;">
 					{#if mounted && browser}
@@ -429,7 +431,6 @@
 				</div>
 			</nav>
 		</div>
-	</div>
 </section>
 
 <!-- Family-Owned & Operated Section -->
