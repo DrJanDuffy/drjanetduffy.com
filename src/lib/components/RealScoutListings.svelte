@@ -36,7 +36,7 @@
 		listing-status="For Sale"
 		property-types=",SFR"
 		price-min={priceMin}
-		price-max={priceMax}
+		{...(priceMax ? { 'price-max': priceMax } : {})}
 	></realscout-office-listings>
 {:else}
 	<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
