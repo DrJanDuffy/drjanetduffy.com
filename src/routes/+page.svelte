@@ -273,13 +273,24 @@
 		content: none !important;
 	}
 	
-	/* Hide phone icon images */
+	/* Hide phone icon images - be very specific to catch all variations */
 	img[alt*="phone" i],
 	img[alt*="telephone" i],
 	img[src*="phone" i],
 	img[src*="telephone" i],
-	svg[class*="phone" i] {
+	svg[class*="phone" i],
+	/* Hide any background images with phone in the URL */
+	[style*="phone" i],
+	[style*="telephone" i],
+	/* Hide images in the hero section placeholder area that might be phone icons */
+	.hero-section .relative img,
+	.hero-section .relative [style*="background-image" i] {
 		display: none !important;
+		background-image: none !important;
+		visibility: hidden !important;
+		opacity: 0 !important;
+		height: 0 !important;
+		width: 0 !important;
 	}
 </style>
 
