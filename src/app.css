@@ -1,3 +1,4 @@
+/* Performance: Optimize font loading with font-display: swap */
 @import '@fontsource/inter/400.css';
 @import '@fontsource/inter/500.css';
 @import '@fontsource/inter/600.css';
@@ -8,15 +9,17 @@
 @tailwind components;
 @tailwind utilities;
 
-/* CLS Optimization: Font Display Swap */
+/* CLS Optimization: Font Display Swap - Prevents layout shift */
 @font-face {
   font-family: 'Inter';
   font-display: swap;
+  font-weight: 400 700;
 }
 
 @font-face {
   font-family: 'Playfair Display';
   font-display: swap;
+  font-weight: 400 700;
 }
 
 /* Enhanced Animations */

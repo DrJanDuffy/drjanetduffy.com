@@ -323,15 +323,20 @@
 
 			<!-- Property Search Form -->
 		<div class="max-w-5xl mx-auto">
-				<div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100">
+				<div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100" style="min-height: 200px;">
 					{#if mounted && browser}
 						<realscout-advanced-search 
 							agent-encoded-id="QWdlbnQtMjI1MDUw">
 						</realscout-advanced-search>
 					{:else}
-						<p class="text-sm text-gray-600 text-center">
-							Loading advanced property search...
-						</p>
+						<div class="flex items-center justify-center py-12">
+							<div class="text-center">
+								<div class="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-primary-600 mb-4"></div>
+								<p class="text-sm text-gray-600">
+									Loading advanced property search...
+								</p>
+							</div>
+						</div>
 					{/if}
 				</div>
 
@@ -602,7 +607,7 @@
 			</div>
 
 			{#if mounted && browser}
-				<div class="realscout-wrapper">
+				<div class="realscout-wrapper" style="min-height: 400px;">
 					<realscout-office-listings 
 						agent-encoded-id="QWdlbnQtMjI1MDUw"
 						sort-order="STATUS_AND_SIGNIFICANT_CHANGE"
@@ -612,7 +617,7 @@
 					</realscout-office-listings>
 				</div>
 			{:else}
-				<div class="loading-skeleton">
+				<div class="loading-skeleton" style="min-height: 400px;">
 					<div class="grid md:grid-cols-3 gap-6">
 						{#each Array(3) as _}
 							<div class="animate-pulse bg-white rounded-2xl shadow-lg overflow-hidden">

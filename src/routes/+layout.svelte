@@ -18,17 +18,48 @@
 	<!-- Once verified, uncomment the line below and add your verification code -->
 	<!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" /> -->
 	
-	<!-- Google tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPD9RR8GTX"></script>
+	<!-- Google tag (gtag.js) - Google Analytics - Deferred for performance -->
 	<script>
+		// Defer Google Analytics loading
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-		gtag('config', 'G-CPD9RR8GTX');
+		// Load GA after page is interactive
+		if (document.readyState === 'complete') {
+			loadGA();
+		} else {
+			window.addEventListener('load', loadGA);
+		}
+		function loadGA() {
+			const script = document.createElement('script');
+			script.async = true;
+			script.src = 'https://www.googletagmanager.com/gtag/js?id=G-CPD9RR8GTX';
+			document.head.appendChild(script);
+			gtag('js', new Date());
+			gtag('config', 'G-CPD9RR8GTX', {
+				'send_page_view': false
+			});
+			// Send page view after a short delay
+			setTimeout(() => {
+				gtag('event', 'page_view');
+			}, 100);
+		}
 	</script>
 	
-	<!-- RealScout Widgets Script -->
-	<script async src="https://widgets.realscout.com/js/realscout-widgets.js"></script>
+	<!-- RealScout Widgets Script - Deferred -->
+	<script>
+		// Defer RealScout loading until after initial render
+		if (document.readyState === 'complete') {
+			loadRealScout();
+		} else {
+			window.addEventListener('load', loadRealScout);
+		}
+		function loadRealScout() {
+			const script = document.createElement('script');
+			script.async = true;
+			script.src = 'https://widgets.realscout.com/js/realscout-widgets.js';
+			document.head.appendChild(script);
+		}
+	</script>
 </svelte:head>
 
 <Navigation />
