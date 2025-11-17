@@ -63,8 +63,8 @@
 
 <svelte:head>
 	<title>Las Vegas Luxury &amp; Relocation REALTOR | Dr. Janet Duffy</title>
-	<meta name="description" content="Las Vegas Luxury & Relocation REALTOR helping executives, medical professionals, military families, and investors buy and sell homes with concierge-level service across Summerlin, Skye Canyon, Henderson, and the greater Las Vegas Valley." />
-	<meta name="keywords" content="Las Vegas real estate, Summerlin homes, Skye Canyon real estate, Centennial Hills, North Las Vegas, Henderson, real estate agent, REALTOR, home buying, home selling, property search" />
+	<meta name="description" content="Dr. Janet Duffy - Las Vegas Luxury & Relocation REALTOR® with 15+ years experience. CRS, ABR, GRI certified. Expert in Summerlin, Skye Canyon, Henderson real estate. Buy, sell, or invest in Las Vegas homes. Call (702) 766-7668 for concierge-level service." />
+	<meta name="keywords" content="Las Vegas real estate agent, Summerlin homes for sale, Skye Canyon real estate, Henderson homes, North Las Vegas properties, Centennial Hills homes, Las Vegas REALTOR, luxury homes Las Vegas, Las Vegas home buying, Las Vegas home selling, property search Las Vegas, Las Vegas relocation, executive relocation Las Vegas, military relocation Las Vegas" />
 	<meta name="author" content="Dr. Janet Duffy" />
 	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 	<meta name="googlebot" content="index, follow" />
@@ -76,15 +76,20 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://www.drjanetduffy.com/" />
 	<meta property="og:title" content="Las Vegas Luxury &amp; Relocation REALTOR | Dr. Janet Duffy" />
-	<meta property="og:description" content="Las Vegas Luxury & Relocation REALTOR providing concierge-level real estate services for buyers, sellers, and relocating families across the Las Vegas Valley." />
+	<meta property="og:description" content="Dr. Janet Duffy - Las Vegas Luxury & Relocation REALTOR® with 15+ years experience. CRS, ABR, GRI certified. Expert in Summerlin, Skye Canyon, Henderson real estate. Call (702) 766-7668." />
 	<meta property="og:site_name" content="Las Vegas Luxury & Relocation REALTOR" />
 	<meta property="og:locale" content="en_US" />
+	<meta property="og:image" content="https://www.drjanetduffy.com/favicon.png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:image:alt" content="Dr. Janet Duffy - Las Vegas Luxury & Relocation REALTOR" />
 	
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:url" content="https://www.drjanetduffy.com/" />
 	<meta name="twitter:title" content="Las Vegas Luxury &amp; Relocation REALTOR | Dr. Janet Duffy" />
-	<meta name="twitter:description" content="Las Vegas Luxury & Relocation REALTOR offering calm, strategic guidance for Las Vegas buyers, sellers, and relocation clients." />
+	<meta name="twitter:description" content="Dr. Janet Duffy - Las Vegas Luxury & Relocation REALTOR® with 15+ years experience. CRS, ABR, GRI certified. Expert in Summerlin, Skye Canyon, Henderson real estate. Call (702) 766-7668." />
+	<meta name="twitter:image" content="https://www.drjanetduffy.com/favicon.png" />
 	
 	<!-- Structured Data - Organization -->
 	<script type="application/ld+json">
@@ -168,12 +173,113 @@
 		}
 	}
 	</script>
+	
+	<!-- Structured Data - LocalBusiness -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "LocalBusiness",
+		"@id": "https://www.drjanetduffy.com/#business",
+		"name": "Dr. Janet Duffy Real Estate",
+		"image": "https://www.drjanetduffy.com/favicon.png",
+		"url": "https://www.drjanetduffy.com",
+		"telephone": "(702) 766-7668",
+		"priceRange": "$$",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "1980 Festival Plaza Drive, Suite 300",
+			"addressLocality": "Las Vegas",
+			"addressRegion": "NV",
+			"postalCode": "89135",
+			"addressCountry": "US"
+		},
+		"geo": {
+			"@type": "GeoCoordinates",
+			"latitude": "36.1699",
+			"longitude": "-115.1398"
+		},
+		"openingHoursSpecification": {
+			"@type": "OpeningHoursSpecification",
+			"dayOfWeek": [
+				"Monday",
+				"Tuesday",
+				"Wednesday",
+				"Thursday",
+				"Friday",
+				"Saturday",
+				"Sunday"
+			],
+			"opens": "09:00",
+			"closes": "18:00"
+		},
+		"areaServed": {
+			"@type": "City",
+			"name": "Las Vegas",
+			"addressRegion": "NV"
+		}
+	}
+	</script>
+	
+	<!-- Structured Data - BreadcrumbList -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [
+			{
+				"@type": "ListItem",
+				"position": 1,
+				"name": "Home",
+				"item": "https://www.drjanetduffy.com/"
+			}
+		]
+	}
+	</script>
+	
+	<!-- Structured Data - AggregateRating (for reviews) -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "RealEstateAgent",
+		"@id": "https://www.drjanetduffy.com/#agent",
+		"name": "Dr. Janet Duffy",
+		"aggregateRating": {
+			"@type": "AggregateRating",
+			"ratingValue": "5.0",
+			"reviewCount": "50",
+			"bestRating": "5",
+			"worstRating": "1"
+		}
+	}
+	</script>
 </svelte:head>
 
 <!-- Hero Section with Search -->
 <section class="hero-section bg-gradient-to-b from-gray-50 to-white">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto py-10 md:py-16">
+			<!-- Trust Indicators Bar -->
+			<div class="mb-8 bg-white rounded-xl shadow-md p-4 md:p-6 border border-gray-200">
+				<div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+					<div>
+						<div class="text-2xl md:text-3xl font-bold text-primary-600 mb-1">15+</div>
+						<div class="text-xs md:text-sm text-gray-600">Years Experience</div>
+					</div>
+					<div>
+						<div class="text-2xl md:text-3xl font-bold text-primary-600 mb-1">CRS</div>
+						<div class="text-xs md:text-sm text-gray-600">Certified Specialist</div>
+					</div>
+					<div>
+						<div class="text-2xl md:text-3xl font-bold text-primary-600 mb-1">ABR</div>
+						<div class="text-xs md:text-sm text-gray-600">Buyer Representative</div>
+					</div>
+					<div>
+						<div class="text-2xl md:text-3xl font-bold text-primary-600 mb-1">GRI</div>
+						<div class="text-xs md:text-sm text-gray-600">Graduate REALTOR</div>
+					</div>
+				</div>
+			</div>
+
 			<div class="grid gap-10 lg:gap-14 md:grid-cols-2 items-center mb-10">
 				<div class="text-center md:text-left">
 					<h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4 md:mb-5">
@@ -183,7 +289,7 @@
 					<p class="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto md:mx-0 leading-relaxed mb-6">
 						Your dedicated Las Vegas real estate professional providing comprehensive, personalized service across the valley's most desirable communities. Serving Summerlin, Skye Canyon, Centennial Hills, Henderson, and North Las Vegas, Dr. Janet Duffy Real Estate functions like a personal concierge desk: I book private showings, coordinate vendor access, analyze multiple offers, and keep you informed with real-time market intelligence so you never wonder what comes next. From managing pool inspections and solar transfers to translating HOA bylaws and master-plan design guidelines, every logistical detail is handled with calm precision. Let me introduce you to neighborhoods locals love, unlock builder incentives that rarely appear online, and negotiate with the confidence that only 15+ years of desert market experience can provide.
 					</p>
-					<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+					<div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-4">
 						<a href="/contact" class="btn-primary">
 							Schedule a Consultation
 						</a>
@@ -191,11 +297,16 @@
 							Browse Las Vegas Homes
 						</a>
 					</div>
+					<div class="flex items-center justify-center md:justify-start gap-2 text-sm text-gray-600 mb-4">
+						<svg class="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+						</svg>
+						<a href="tel:+17027667668" class="font-semibold text-primary-600 hover:underline">(702) 766-7668</a>
+						<span class="text-gray-400">•</span>
+						<span>Available 7 Days a Week</span>
+					</div>
 					<p class="mt-3 text-sm sm:text-base text-gray-600">
 						Not sure where to begin? Visit the <a href="/get-started" class="text-primary-600 font-semibold hover:underline">Get Started hub</a> to see buyer, seller, investor, and relocation tools in one place.
-					</p>
-					<p class="mt-4 text-sm sm:text-base text-gray-600">
-						Planning a move to Las Vegas? Explore dedicated <a href="/relocation" class="text-primary-600 font-semibold hover:underline">luxury &amp; relocation services</a> tailored for executives, medical professionals, military families, and remote workers.
 					</p>
 				</div>
 				<div class="relative">
@@ -434,6 +545,48 @@
 	</div>
 </section>
 
+<!-- Agent Credentials & Trust Section -->
+<section class="section bg-gradient-to-br from-primary-50 via-white to-primary-50">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-6xl mx-auto">
+			<div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-gray-200">
+				<div class="text-center mb-8">
+					<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Licensed REALTOR® with Proven Expertise</h2>
+					<p class="text-lg text-gray-600 max-w-3xl mx-auto">
+						Dr. Janet Duffy brings 15+ years of Las Vegas real estate experience with top industry certifications
+					</p>
+				</div>
+				<div class="grid md:grid-cols-3 gap-6 mb-8">
+					<div class="text-center p-6 bg-gray-50 rounded-xl">
+						<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+							<Award class="w-8 h-8 text-primary-600" />
+						</div>
+						<h3 class="text-xl font-bold text-gray-900 mb-2">CRS Certified</h3>
+						<p class="text-sm text-gray-600">Certified Residential Specialist - Top 3% of Realtors Nationwide</p>
+					</div>
+					<div class="text-center p-6 bg-gray-50 rounded-xl">
+						<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+							<Star class="w-8 h-8 text-primary-600" />
+						</div>
+						<h3 class="text-xl font-bold text-gray-900 mb-2">ABR Accredited</h3>
+						<p class="text-sm text-gray-600">Accredited Buyer's Representative - Expert Buyer Representation</p>
+					</div>
+					<div class="text-center p-6 bg-gray-50 rounded-xl">
+						<div class="inline-flex items-center justify-center w-16 h-16 bg-primary-100 rounded-full mb-4">
+							<BookOpen class="w-8 h-8 text-primary-600" />
+						</div>
+						<h3 class="text-xl font-bold text-gray-900 mb-2">GRI Graduate</h3>
+						<p class="text-sm text-gray-600">Graduate REALTOR Institute - Advanced Real Estate Education</p>
+					</div>
+				</div>
+				<div class="text-center">
+					<a href="/about" class="btn-primary">Learn More About Dr. Duffy</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <!-- Featured Properties -->
 <section id="featured-properties" class="section bg-white">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -478,6 +631,42 @@
 			
 			<div class="text-center mt-8">
 				<a href="/properties" class="btn-primary">View All Properties</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Local Market Stats -->
+<section class="section bg-gradient-to-br from-primary-600 to-primary-700 text-white">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-6xl mx-auto">
+			<div class="text-center mb-12">
+				<h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Las Vegas Real Estate Market Overview</h2>
+				<p class="text-lg text-white/90 max-w-3xl mx-auto">
+					Current market insights to help you make informed decisions
+				</p>
+			</div>
+			<div class="grid md:grid-cols-3 gap-6">
+				<div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+					<div class="text-3xl md:text-4xl font-bold text-white mb-2">7,200</div>
+					<div class="text-white/90 text-sm md:text-base">Active Listings Valley-Wide</div>
+					<div class="text-white/70 text-xs mt-2">Down 14% from last spring</div>
+				</div>
+				<div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+					<div class="text-3xl md:text-4xl font-bold text-white mb-2">28</div>
+					<div class="text-white/90 text-sm md:text-base">Avg Days on Market</div>
+					<div class="text-white/70 text-xs mt-2">Properties under $900K</div>
+				</div>
+				<div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
+					<div class="text-3xl md:text-4xl font-bold text-white mb-2">5.9-6.4%</div>
+					<div class="text-white/90 text-sm md:text-base">Mortgage Rates</div>
+					<div class="text-white/70 text-xs mt-2">Current range (Q1 2025)</div>
+				</div>
+			</div>
+			<div class="text-center mt-8">
+				<a href="/market-insights" class="btn-primary bg-white text-primary-600 hover:bg-gray-100">
+					View Detailed Market Insights
+				</a>
 			</div>
 		</div>
 	</div>

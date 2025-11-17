@@ -13,9 +13,10 @@
 	<link rel="icon" href={favicon} />
 	
 	<!-- Google Search Console Verification -->
-	<!-- Replace YOUR_VERIFICATION_CODE with the code from Google Search Console -->
+	<!-- TODO: Replace YOUR_VERIFICATION_CODE with the code from Google Search Console -->
 	<!-- Get your code from: https://search.google.com/search-console -->
-	<meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
+	<!-- Once verified, uncomment the line below and add your verification code -->
+	<!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" /> -->
 	
 	<!-- Google tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CPD9RR8GTX"></script>

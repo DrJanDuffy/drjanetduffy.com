@@ -6,6 +6,7 @@ const siteUrl = 'https://www.drjanetduffy.com'; // Update with your actual domai
 const routes = [
 	// Main Pages
 	{ url: '', priority: '1.0', changefreq: 'weekly' },
+	{ url: 'get-started', priority: '0.9', changefreq: 'weekly' },
 	{ url: 'properties', priority: '0.9', changefreq: 'daily' },
 	{ url: 'home-value', priority: '0.8', changefreq: 'monthly' },
 	{ url: 'rentals', priority: '0.8', changefreq: 'weekly' },
