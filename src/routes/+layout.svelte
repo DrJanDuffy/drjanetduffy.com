@@ -4,6 +4,7 @@
 	import Navigation from '$lib/components/Navigation.svelte';
 	import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
 	import GlobalCTA from '$lib/components/GlobalCTA.svelte';
+	import RealScoutListings from '$lib/components/RealScoutListings.svelte';
 	import { Facebook, Linkedin, Twitter } from 'lucide-svelte';
 
 	let { children } = $props();
@@ -96,6 +97,53 @@
 </main>
 
 <GlobalCTA />
+
+<!-- RealScout Listings - Below the Fold with Different Price Points -->
+<section class="bg-gray-50 py-16 md:py-24">
+	<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="max-w-7xl mx-auto">
+			<!-- Price Range: $500K - $600K -->
+			<div class="mb-16">
+				<RealScoutListings
+					priceMin="500000"
+					priceMax="600000"
+					title="Homes $500K - $600K"
+					subtitle="Discover beautiful single-family homes in this price range"
+				/>
+			</div>
+			
+			<!-- Price Range: $600K - $800K -->
+			<div class="mb-16">
+				<RealScoutListings
+					priceMin="600000"
+					priceMax="800000"
+					title="Homes $600K - $800K"
+					subtitle="Explore premium properties in this mid-range price point"
+				/>
+			</div>
+			
+			<!-- Price Range: $800K - $1M -->
+			<div class="mb-16">
+				<RealScoutListings
+					priceMin="800000"
+					priceMax="1000000"
+					title="Homes $800K - $1M"
+					subtitle="Luxury homes and estates in this upper price range"
+				/>
+			</div>
+			
+			<!-- Price Range: $1M+ -->
+			<div>
+				<RealScoutListings
+					priceMin="1000000"
+					priceMax=""
+					title="Luxury Homes $1M+"
+					subtitle="Premium estates and luxury properties"
+				/>
+			</div>
+		</div>
+	</div>
+</section>
 
 <footer class="bg-gray-900 text-white py-16 mt-16">
 	<div class="container mx-auto px-4">
