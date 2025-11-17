@@ -7,11 +7,11 @@
 	let searchQuery = '';
 	
 	const mainMenu = [
-		{ name: 'Home', href: '/', description: 'Luxury Las Vegas Real Estate' },
+		{ name: 'Get Started', href: '/get-started', description: 'Get Started with Las Vegas Real Estate' },
 		{ name: 'Properties', href: '/properties', description: 'West Summerlin Homes', hasDropdown: true },
 		{ name: 'Home Value', href: '/home-value', description: 'Get Your Home Value' },
 		{ name: 'Rentals', href: '/rentals', description: 'Luxury Rentals' },
-		{ name: 'Quotes', href: '/quotes', description: 'Motivational Quotes' },
+		{ name: 'Blog', href: '/blog', description: 'Real Estate Blog' },
 		{ name: 'About', href: '/about', description: 'Meet Dr. Janet Duffy' },
 		{ name: 'Contact', href: '/contact', description: 'Schedule Consultation' }
 	];
