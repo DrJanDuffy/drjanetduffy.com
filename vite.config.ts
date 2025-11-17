@@ -18,7 +18,9 @@ export default defineConfig({
 		// Optimize asset inlining threshold (4KB)
 		assetsInlineLimit: 4096,
 		// Enable CSS code splitting
-		cssCodeSplit: true
+		cssCodeSplit: true,
+		// Optimize chunk size warnings
+		chunkSizeWarningLimit: 1000
 	},
 	// Optimize dependencies
 	optimizeDeps: {

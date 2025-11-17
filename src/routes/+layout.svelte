@@ -20,16 +20,28 @@
 	
 	<!-- Google tag (gtag.js) - Google Analytics - Deferred for performance -->
 	<script>
-		// Defer Google Analytics loading
+		// Defer Google Analytics loading until after page is interactive
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
-		// Load GA after page is interactive
-		if (document.readyState === 'complete') {
-			loadGA();
-		} else {
-			window.addEventListener('load', loadGA);
-		}
+		// Load GA after page is fully interactive
 		function loadGA() {
+			if (document.readyState === 'complete') {
+				initGA();
+			} else {
+				window.addEventListener('load', initGA, { once: true });
+			}
+		}
+		function initGA() {
+			// Use requestIdleCallback if available, otherwise setTimeout
+			if ('requestIdleCallback' in window) {
+				requestIdleCallback(() => {
+					loadGAScript();
+				}, { timeout: 2000 });
+			} else {
+				setTimeout(loadGAScript, 1000);
+			}
+		}
+		function loadGAScript() {
 			const script = document.createElement('script');
 			script.async = true;
 			script.src = 'https://www.googletagmanager.com/gtag/js?id=G-CPD9RR8GTX';
@@ -38,27 +50,41 @@
 			gtag('config', 'G-CPD9RR8GTX', {
 				'send_page_view': false
 			});
-			// Send page view after a short delay
-			setTimeout(() => {
-				gtag('event', 'page_view');
-			}, 100);
+			// Send page view after idle
+			if ('requestIdleCallback' in window) {
+				requestIdleCallback(() => {
+					gtag('event', 'page_view');
+				});
+			} else {
+				setTimeout(() => gtag('event', 'page_view'), 500);
+			}
 		}
+		loadGA();
 	</script>
 	
-	<!-- RealScout Widgets Script - Deferred -->
+	<!-- RealScout Widgets Script - Deferred until user interaction -->
 	<script>
-		// Defer RealScout loading until after initial render
-		if (document.readyState === 'complete') {
-			loadRealScout();
-		} else {
-			window.addEventListener('load', loadRealScout);
-		}
+		// Defer RealScout loading until after user interaction or idle time
+		let realScoutLoaded = false;
 		function loadRealScout() {
+			if (realScoutLoaded) return;
+			realScoutLoaded = true;
 			const script = document.createElement('script');
 			script.async = true;
 			script.src = 'https://widgets.realscout.com/js/realscout-widgets.js';
 			document.head.appendChild(script);
 		}
+		// Load on user interaction (scroll, click, touch)
+		const events = ['scroll', 'click', 'touchstart', 'mousemove'];
+		const loadOnInteraction = () => {
+			loadRealScout();
+			events.forEach(e => document.removeEventListener(e, loadOnInteraction));
+		};
+		events.forEach(e => document.addEventListener(e, loadOnInteraction, { once: true, passive: true }));
+		// Fallback: load after 3 seconds if no interaction
+		setTimeout(() => {
+			if (!realScoutLoaded) loadRealScout();
+		}, 3000);
 	</script>
 </svelte:head>
 

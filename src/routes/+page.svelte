@@ -254,6 +254,35 @@
 	</script>
 </svelte:head>
 
+<!-- Critical CSS: Inline above-the-fold styles -->
+<style>
+	/* Critical above-the-fold styles to prevent FOUC */
+	.hero-section {
+		min-height: 100vh;
+	}
+	.container {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	/* Remove any phone icons */
+	a[href^="tel:"]::before,
+	a[href^="tel:"]::after {
+		display: none !important;
+		content: none !important;
+	}
+	
+	/* Hide phone icon images */
+	img[alt*="phone" i],
+	img[alt*="telephone" i],
+	img[src*="phone" i],
+	img[src*="telephone" i],
+	svg[class*="phone" i] {
+		display: none !important;
+	}
+</style>
+
 <!-- Hero Section with Search -->
 <section class="hero-section bg-gradient-to-b from-gray-50 to-white">
 	<div class="container mx-auto px-4 sm:px-6 lg:px-8">

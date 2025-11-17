@@ -217,6 +217,21 @@
     color: rgb(3 105 161);
   }
   
+  /* Remove any phone icons from tel: links */
+  a[href^="tel:"]::before,
+  a[href^="tel:"]::after {
+    display: none !important;
+    content: none !important;
+  }
+  
+  /* Hide any phone icon images */
+  img[alt*="phone" i],
+  img[alt*="telephone" i],
+  img[src*="phone" i],
+  img[src*="telephone" i] {
+    display: none !important;
+  }
+  
   button {
     transition-property: all;
     transition-duration: 200ms;
