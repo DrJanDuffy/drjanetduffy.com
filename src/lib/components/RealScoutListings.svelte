@@ -30,14 +30,24 @@
 {/if}
 
 {#if mounted && browser}
-	<realscout-office-listings
-		agent-encoded-id="QWdlbnQtMjI1MDUw"
-		sort-order="NEWEST"
-		listing-status="For Sale"
-		property-types=",SFR"
-		price-min={priceMin}
-		{...(priceMax ? { 'price-max': priceMax } : {})}
-	></realscout-office-listings>
+	{#if priceMax}
+		<realscout-office-listings
+			agent-encoded-id="QWdlbnQtMjI1MDUw"
+			sort-order="NEWEST"
+			listing-status="For Sale"
+			property-types=",SFR"
+			price-min={priceMin}
+			price-max={priceMax}
+		></realscout-office-listings>
+	{:else}
+		<realscout-office-listings
+			agent-encoded-id="QWdlbnQtMjI1MDUw"
+			sort-order="NEWEST"
+			listing-status="For Sale"
+			property-types=",SFR"
+			price-min={priceMin}
+		></realscout-office-listings>
+	{/if}
 {:else}
 	<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 		{#each Array(6) as _}
